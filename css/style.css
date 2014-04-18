@@ -50,21 +50,20 @@ table {
 
 body {
     text-align:center;
-    padding-top:10px;
 }
 
 h3 {
     font-family: "Roboto";
     font-size: 18px;
-    padding: 8px;
-    /*font-weight: 300;*/
+    padding-bottom: 20px;
 }
 
 h6 {
+    padding-top: -100px;
     font-family: "Merriweather Sans";
     font-size: 15px;
     color: rgba(30, 32, 32, 1);
-    padding-top: 20px;
+    padding-bottom: 8px;
     font-weight: 300;
 }
 
@@ -82,11 +81,22 @@ a:hover {
     color: #800000
 }
 
+#mainhead {
+    display: table;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.vertcent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .bottomfix {
     position: absolute;
     text-align: center;
     bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     height: 64px;
     width: 64px;
 }
@@ -95,6 +105,7 @@ a:hover {
     text-align: center;
     width: 700px;
     margin: 0px auto;
+    padding-top: 40px;
 }
 
 h1 {
@@ -103,6 +114,7 @@ h1 {
     font-size: 30px;
     font-weight: 300;
     padding-bottom: 5px;
+    padding-top: 8px;
 }
 
 h4 {
@@ -116,4 +128,12 @@ p {
     font-size: 16px;
     text-align: justify;
     text-justify: inter-word;
+    line-height: 20px;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: "Merriweather Sans";
+    font-size: 12px;
 }
