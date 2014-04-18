@@ -50,6 +50,7 @@ table {
 
 body {
     text-align:center;
+    padding-top:10px;
 }
 
 h3 {
@@ -70,4 +71,49 @@ h6 {
 a {
     text-decoration: none;
     color: #d90000;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+a:hover {
+    color: #800000
+}
+
+.bottomfix {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 20px;
+    height: 64px;
+    width: 64px;
+}
+
+.body {
+    text-align: center;
+    width: 700px;
+    margin: 0px auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Merriweather Sans";
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+h4 {
+    padding-bottom: 20px;
+    font-family: "Merriweather Sans";
+}
+
+p {
+    text-indent: 50px;
+    font-family: "Roboto";
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
 }
