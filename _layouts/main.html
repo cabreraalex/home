@@ -1,7 +1,9 @@
 {% include mainhead.html %}
 {% for post in site.posts %}
-<a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-{{ post.excerpt }}
+<p>{{ post.excerpt }}</p>
+<h5><a href="{{ post.url }}">more</a><h5>
+
 {% endfor %}
 {% include mainfoot.html %}

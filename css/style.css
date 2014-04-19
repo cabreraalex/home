@@ -67,7 +67,7 @@ h6 {
     font-weight: 300;
 }
 
-a {
+h3 a {
     text-decoration: none;
     color: #d90000;
     -o-transition:.5s;
@@ -105,7 +105,7 @@ a:hover {
     text-align: center;
     width: 700px;
     margin: 0px auto;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 h1 {
@@ -129,6 +129,7 @@ p {
     text-align: justify;
     text-justify: inter-word;
     line-height: 20px;
+    letter-spacing: .7px;
 }
 
 footer {
@@ -136,4 +137,42 @@ footer {
     padding-bottom: 10px;
     font-family: "Merriweather Sans";
     font-size: 12px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+h1 a:hover {
+    color: #d90000;
+}
+
+a:visited h1 {
+    color: black;
+}
+
+.body h4 {
+    color: black;
+}
+
+h5 {
+    padding-top: 10px;
+
+}
+
+h5 a {
+    text-decoration: none;
+    color: #d90000;  
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
 }
