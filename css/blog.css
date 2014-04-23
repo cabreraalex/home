@@ -56,15 +56,30 @@ h3 {
     font-family: "Roboto";
     font-size: 18px;
     padding-bottom: 20px;
+    padding-top: 20px;
+    color: #d90000;
 }
 
 h6 {
-    padding-top: -100px;
+    margin: 0px auto;
+    width: 100px;
+    margin-top: 20px;
     font-family: "Merriweather Sans";
     font-size: 15px;
-    color: rgba(30, 32, 32, 1);
-    padding-bottom: 8px;
+    color: #d90000;
+    padding-bottom: 18px;
     font-weight: 300;
+    border-bottom: 2px solid black;
+}
+
+h6 a {
+    text-decoration: none;
+    color: #d90000;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
 
 h3 a {
@@ -113,8 +128,7 @@ h1 {
     font-family: "Merriweather Sans";
     font-size: 30px;
     font-weight: 300;
-    padding-bottom: 5px;
-    padding-top: 8px;
+    padding-top: 20px;
 }
 
 h4 {
@@ -123,6 +137,7 @@ h4 {
 }
 
 p {
+    margin-top:-10px;
     text-indent: 50px;
     font-family: "Roboto";
     font-size: 16px;
@@ -137,6 +152,11 @@ footer {
     padding-bottom: 10px;
     font-family: "Merriweather Sans";
     font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
 }
 
 h1 a {
@@ -204,4 +224,9 @@ a .fa {
 
 .fa a:visited {
     color: black;
+}
+
+h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
