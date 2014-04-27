@@ -126,9 +126,14 @@ a:hover {
 h1 {
     text-align: center;
     font-family: "Merriweather Sans";
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 300;
     padding-top: 20px;
+    padding-bottom: -200px;
+    width: 500px;
+    margin: 0px auto;
+    margin-bottom: -17px;
+    line-height: 35px;
 }
 
 h4 {
@@ -137,7 +142,7 @@ h4 {
 }
 
 p {
-    margin-top:-10px;
+    margin-top:15px;
     text-indent: 50px;
     font-family: "Roboto";
     font-size: 16px;
@@ -148,11 +153,10 @@ p {
 }
 
 footer {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 10px;
     font-family: "Merriweather Sans";
     font-size: 12px;
-    position: absolute;
     left: 0;
     bottom: 0;
     height: 20px;
@@ -227,6 +231,11 @@ a .fa {
 }
 
 h2{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+}
+
+code {
+    color: #d90000;
+    padding: 5px;
 }
