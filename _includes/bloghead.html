@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <title>Alex Cabrera's personal site</title>
         <link rel="icon" type="image/png" href="{{site.baseurl}}res/favicon.png">
-        <link rel="stylesheet" type="text/css" href="{{site.baseurl}}css/blog.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
@@ -17,6 +16,19 @@
             ga('create', 'UA-50459890-1', 'cabrera.io');
             ga('send', 'pageview');
         </script>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'cabreraalex'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <link rel="stylesheet" type="text/css" href="{{site.baseurl}}css/blog.css">
     </head>
     <body>
         <h6><a href="{{site.baseurl}}">Home</a></h6>

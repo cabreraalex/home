@@ -239,3 +239,8 @@ code {
     color: #d90000;
     padding: 5px;
 }
+
+#disqus_thread {
+    padding-top: 30px;
+}
+
