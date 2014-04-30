@@ -85,6 +85,7 @@ a:hover {
     display: table;
     overflow: hidden;
     margin: 0px auto;
+    height: 1000px;
 }
 
 .vertcent {

