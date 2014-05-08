@@ -85,7 +85,7 @@ a:hover {
     display: table;
     overflow: hidden;
     margin: 0px auto;
-    height: 1000px;
+    height: 1500px;
 }
 
 .vertcent {
@@ -205,4 +205,24 @@ a .fa {
 
 .fa a:visited {
     color: black;
+}
+
+p a {
+    text-decoration: none;
+    color: #d90000;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+p a:hover {
+    color: #800000;
+}
+
+.adsbygoogle {
+    margin-top: 25px;
+    margin-bottom: 20px;
+
 }

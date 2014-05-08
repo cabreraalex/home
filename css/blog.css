@@ -148,8 +148,22 @@ p {
     font-size: 16px;
     text-align: justify;
     text-justify: inter-word;
-    line-height: 20px;
+    line-height: 22px;
     letter-spacing: .7px;
+}
+
+p a {
+    text-decoration: none;
+    color: #d90000;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+p a:hover {
+    color: #800000;
 }
 
 footer {
@@ -237,10 +251,27 @@ h2{
 
 code {
     color: #d90000;
-    padding: 5px;
+    padding: 2px;
+    padding-top: 1px;
+    text-align: left;
+    background: #F2F2F2;
+    border-radius: 5px;
+}
+
+.highlight {
+    padding: 20px;
+    margin-top: 15px;
+    text-align: left;
+    background: #F2F2F2;
+    line-height: 18px;
+    letter-spacing: .4px;
+    font-size: 14px;
+    font-family: 'monospace';
+    border-radius: 10px;
 }
 
 #disqus_thread {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
