@@ -50,7 +50,6 @@ table {
 
 body {
     text-align:center;
-    max-width: 800px;
     margin: 0px auto;
 }
 
@@ -61,7 +60,7 @@ h3 {
 }
 
 h6 {
-    padding-top: -100px;
+    /*padding-top: -100px;*/
     font-family: "Merriweather Sans";
     font-size: 15px;
     color: rgba(30, 32, 32, 1);
@@ -87,7 +86,6 @@ a:hover {
     display: table;
     overflow: hidden;
     margin: 0px auto;
-    height: 1500px;
 }
 
 .vertcent {
@@ -100,8 +98,7 @@ a:hover {
     text-align: center;
     bottom: 0;
     padding-bottom: 15px;
-    height: 64px;
-    width: 64px;
+    color: #d90000;
 }
 
 .body {
