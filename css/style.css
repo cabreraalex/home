@@ -94,11 +94,14 @@ a:hover {
 }
 
 .bottomfix {
-    position: absolute;
     text-align: center;
-    bottom: 0;
-    padding-bottom: 15px;
     color: #d90000;
+    width: 100%;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .body {
