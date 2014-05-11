@@ -25,15 +25,19 @@ function create(){
     for (var i = 0; i < 1; i++){
         redpawns[i].inputEnabled = true;
         redpawns[i].input.enableDrag();
+        redpawns[i].input.enableSnap(48, 48, false, true, 14, 14);
         bluepawns[i].inputEnabled = true;
         bluepawns[i].input.enableDrag();
+        bluepawns[i].input.enableSnap(48,48, false, true, 14, 14);
     }
 
     for (var i = 0; i < 1; i++){
         redgenerals[i].inputEnabled = true;
         redgenerals[i].input.enableDrag();
+        redgenerals[i].input.enableSnap(48, 48, false, true, 14, 14);
         bluegenerals[i].inputEnabled = true;
         bluegenerals[i].input.enableDrag();
+        bluegenerals[i].input.enableSnap(48, 48, false, true, 14, 14);
     }
 }
 
