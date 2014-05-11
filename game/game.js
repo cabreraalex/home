@@ -15,6 +15,7 @@ function preload(){
 }
 
 function create(){
+
     game.add.sprite(0, 0, 'grid');
 
     for (var i = 0; i < 8; i++){
@@ -31,11 +32,12 @@ function create(){
     }
 
     for (var i = 0; i < 2; i++){
-        redgenerals[i] = game.add.sprite(0, 45, 'bluegeneral');
+        redgenerals[i] = game.add.sprite(555, 45, 'redgeneral');
         redgenerals[i].inputEnabled = true;
         redgenerals[i].input.enableDrag();
-        redgenerals[i].input.enableSnap(48, 50, false, true, 14, 14);
-        bluegenerals[i] = game.add.sprite(555, 45, 'redgeneral');
+        redgenerals[i].input.enableSnap(48, 48, false, true, 14, 14);
+        redgenerals[i].events.onDragStop.add(redFix);
+        bluegenerals[i] = game.add.sprite(0, 45, 'bluegeneral');
         bluegenerals[i].inputEnabled = true;
         bluegenerals[i].input.enableDrag();
         bluegenerals[i].input.enableSnap(48, 48, false, true, 14, 14);
