@@ -46,16 +46,76 @@ function create(){
 }
 
 
-function update(){}
+function update(){
+
+}
+
 
 function blueFix(item) {
-    if(item.x > 300) {
+    /*if(item.x > 300) {
         item.x = 254;
-    }
+    }*/
+    gridBounds(item);
 }
 
 function redFix(item) {
-    if(item.x < 300) {
+    /*if(item.x < 300) {
         item.x = 300;
+    }*/
+    gridBounds(item);
+}
+
+function gridBounds(item){
+
+    if(item.x < 0){
+        item.x = 14;
+    }
+    if(item.x > 550) {
+        item.x = 542;
+    }
+
+    if(item.x < 60 || item.x > 500) {
+        if(item.y < 300){
+            item.y = 254;
+        }
+        else {
+            item.y = 301;
+        }
+    }
+
+    else if(item.x < 100 || item.x > 480) {
+        if(item.y < 100) {
+            item.y = 158;
+        }
+        else if(item.y > 400) {
+            item.y = 400;
+        }
+    }
+
+    else if(item.x < 150 || item.x > 400){
+        if(item.y < 100) {
+            item.y = 110;
+        }
+        else if(item.y > 425){
+            item.y = 446;
+        }
+    }
+
+    else if(item.x < 225 || item.x > 325) {
+        if(item.y < 100){
+            item.y = 61;
+        }
+        else if(item.y > 450){
+            item.y = 494;
+        }
+    }
+
+    else {
+        if(item.y < 14) {
+            item.y = 14;
+        }
+        else if(item.y > 586) {
+            item.y = 542;
+        }
     }
 }
