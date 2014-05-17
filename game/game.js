@@ -1,6 +1,8 @@
 var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update });
 
 var pieces = [20];
+var mouseY = 0;
+var mouseX = 0;
 
 function preload(){
     game.load.image('grid', 'res/grid.png');
@@ -20,14 +22,14 @@ function create(){
         pieces[i].input.enableDrag();
         pieces[i].input.enableSnap(48, 48, false, true, 14, 14);
         pieces[i].events.onDragStop.add(redFix);
-        pieces[i]['name'] = 'redpawn';
+        pieces[i]['color'] = 'red';
         pieces[i]['id'] = i;
         pieces[i+1] = game.add.sprite(0, 0, 'bluepiece');
         pieces[i+1].inputEnabled = true;
         pieces[i+1].input.enableDrag();
         pieces[i+1].input.enableSnap(48,48, false, true, 14, 14);
         pieces[i+1].events.onDragStop.add(blueFix);
-        pieces[i+1]['name'] = 'bluepawn';
+        pieces[i+1]['color'] = 'blue';
         pieces[i+1]['id'] = i+1;
     }
 
@@ -37,20 +39,21 @@ function create(){
         pieces[i].input.enableDrag();
         pieces[i].input.enableSnap(48, 48, false, true, 14, 14);
         pieces[i].events.onDragStop.add(redFix);
-        pieces[i]['name'] = 'redgeneral';
+        pieces[i]['color'] = 'redg';
         pieces[i]['id'] = i;
         pieces[i+1] = game.add.sprite(0, 45, 'bluegeneral');
         pieces[i+1].inputEnabled = true;
         pieces[i+1].input.enableDrag();
         pieces[i+1].input.enableSnap(48, 48, false, true, 14, 14);
         pieces[i+1].events.onDragStop.add(blueFix);
-        pieces[i+1]['name'] = 'bluegeneral';
+        pieces[i+1]['color'] = 'blue';
         pieces[i+1]['id'] = i+1;
     }
 }
 
 
 function update(){
+
 }
 
 
@@ -128,9 +131,18 @@ function gridBounds(item){
 function itemAction(item){
     for(w = 0; w < 20; w++){
         if(item.x == pieces[w]['x'] && item.y == pieces[w]['y'] && item['id'] != pieces[w]['id']){
-            console.log("overlap");
-            item.x = item.x;
-            item.y = item.y;
+            if(item['color'].localeCompare(pieces[w]['color'])){
+                pieces[w].kill();
+                console.log("lol");
+            }
+            else {
+                if(item.y > 300){
+                    item.y = item.y - 48;
+                }
+                else {
+                    item.y = item.y + 48;
+                }
+            }
         }
     }
 }
