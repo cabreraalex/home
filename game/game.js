@@ -1,10 +1,6 @@
 var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update });
 
-var redpawns = [12];
-var bluepawns = [12];
-
-var redgenerals = [2];
-var bluegenerals = [2];
+var pieces = [20];
 
 function preload(){
     game.load.image('grid', 'res/grid.png');
@@ -18,36 +14,43 @@ function create(){
 
     game.add.sprite(0, 0, 'grid');
 
-    for (var i = 0; i < 8; i++){
-        redpawns[i] = game.add.sprite(555, 0, 'redpiece');
-        redpawns[i].inputEnabled = true;
-        redpawns[i].input.enableDrag();
-        redpawns[i].input.enableSnap(48, 48, false, true, 14, 14);
-        redpawns[i].events.onDragStop.add(redFix);
-        bluepawns[i] = game.add.sprite(0, 0, 'bluepiece');
-        bluepawns[i].inputEnabled = true;
-        bluepawns[i].input.enableDrag();
-        bluepawns[i].input.enableSnap(48,48, false, true, 14, 14);
-        bluepawns[i].events.onDragStop.add(blueFix);
+    for (var i = 0; i < 16; i += 2){
+        pieces[i] = game.add.sprite(555,0,'redpiece');
+        pieces[i].inputEnabled = true;
+        pieces[i].input.enableDrag();
+        pieces[i].input.enableSnap(48, 48, false, true, 14, 14);
+        pieces[i].events.onDragStop.add(redFix);
+        pieces[i]['name'] = 'redpawn';
+        pieces[i]['id'] = i;
+        pieces[i+1] = game.add.sprite(0, 0, 'bluepiece');
+        pieces[i+1].inputEnabled = true;
+        pieces[i+1].input.enableDrag();
+        pieces[i+1].input.enableSnap(48,48, false, true, 14, 14);
+        pieces[i+1].events.onDragStop.add(blueFix);
+        pieces[i+1]['name'] = 'bluepawn';
+        pieces[i+1]['id'] = i+1;
     }
 
-    for (var i = 0; i < 2; i++){
-        redgenerals[i] = game.add.sprite(555, 45, 'redgeneral');
-        redgenerals[i].inputEnabled = true;
-        redgenerals[i].input.enableDrag();
-        redgenerals[i].input.enableSnap(48, 48, false, true, 14, 14);
-        redgenerals[i].events.onDragStop.add(redFix);
-        bluegenerals[i] = game.add.sprite(0, 45, 'bluegeneral');
-        bluegenerals[i].inputEnabled = true;
-        bluegenerals[i].input.enableDrag();
-        bluegenerals[i].input.enableSnap(48, 48, false, true, 14, 14);
-        bluegenerals[i].events.onDragStop.add(blueFix);
+    for (var i = 16; i < 20; i+=2){
+        pieces[i] = game.add.sprite(555, 45, 'redgeneral');
+        pieces[i].inputEnabled = true;
+        pieces[i].input.enableDrag();
+        pieces[i].input.enableSnap(48, 48, false, true, 14, 14);
+        pieces[i].events.onDragStop.add(redFix);
+        pieces[i]['name'] = 'redgeneral';
+        pieces[i]['id'] = i;
+        pieces[i+1] = game.add.sprite(0, 45, 'bluegeneral');
+        pieces[i+1].inputEnabled = true;
+        pieces[i+1].input.enableDrag();
+        pieces[i+1].input.enableSnap(48, 48, false, true, 14, 14);
+        pieces[i+1].events.onDragStop.add(blueFix);
+        pieces[i+1]['name'] = 'bluegeneral';
+        pieces[i+1]['id'] = i+1;
     }
 }
 
 
 function update(){
-
 }
 
 
@@ -56,6 +59,7 @@ function blueFix(item) {
         item.x = 254;
     }*/
     gridBounds(item);
+    itemAction(item);
 }
 
 function redFix(item) {
@@ -63,6 +67,7 @@ function redFix(item) {
         item.x = 300;
     }*/
     gridBounds(item);
+    itemAction(item);
 }
 
 function gridBounds(item){
@@ -116,6 +121,16 @@ function gridBounds(item){
         }
         else if(item.y > 586) {
             item.y = 542;
+        }
+    }
+}
+
+function itemAction(item){
+    for(w = 0; w < 20; w++){
+        if(item.x == pieces[w]['x'] && item.y == pieces[w]['y'] && item['id'] != pieces[w]['id']){
+            console.log("overlap");
+            item.x = item.x;
+            item.y = item.y;
         }
     }
 }
