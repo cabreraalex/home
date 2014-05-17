@@ -1,6 +1,8 @@
 var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update });
 
-var pieces = [20];
+var pieces = [14];
+const BLOCK = 48;
+
 
 function preload(){
     game.load.image('grid', 'res/grid.png');
@@ -14,11 +16,11 @@ function create(){
 
     game.add.sprite(0, 0, 'grid');
 
-    for (var i = 0; i < 16; i += 2){
+    for (var i = 0; i < 5; i += 2){
         pieces[i] = game.add.sprite(555,0,'redpiece');
         pieces[i].inputEnabled = true;
         pieces[i].input.enableDrag();
-        pieces[i].input.enableSnap(48, 48, false, true, 14, 14);
+        pieces[i].input.enableSnap(BLOCK, BLOCK, false, true, 14, 14);
         pieces[i].events.onDragStop.add(redFix);
         pieces[i]['color'] = 'red';
         pieces[i]['id'] = i;
@@ -31,11 +33,11 @@ function create(){
         pieces[i+1]['id'] = i+1;
     }
 
-    for (var i = 16; i < 20; i+=2){
+    for (var i = 5; i < 10; i+=2){
         pieces[i] = game.add.sprite(555, 45, 'redgeneral');
         pieces[i].inputEnabled = true;
         pieces[i].input.enableDrag();
-        pieces[i].input.enableSnap(48, 48, false, true, 14, 14);
+        pieces[i].input.enableSnap(BLOCK, BLOCK, false, true, 14, 14);
         pieces[i].events.onDragStop.add(redFix);
         pieces[i]['color'] = 'red';
         pieces[i]['id'] = i;
@@ -135,10 +137,10 @@ function itemAction(item){
             }
             else {
                 if(item.y > 300){
-                    item.y = item.y - 48;
+                    item.y = item.y - BLOCK;
                 }
                 else {
-                    item.y = item.y + 48;
+                    item.y = item.y + BLOCK;
                 }
             }
         }
