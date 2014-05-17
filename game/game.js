@@ -1,8 +1,11 @@
 var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update });
 
-var pieces = [14];
+var pieces = [16];
 const BLOCK = 48;
-
+var redmoves = 7;
+var bluemoves = 7;
+var bluecount;
+var redcount;
 
 function preload(){
     game.load.image('grid', 'res/grid.png');
@@ -16,7 +19,14 @@ function create(){
 
     game.add.sprite(0, 0, 'grid');
 
-    for (var i = 0; i < 10; i += 2){
+    var style = { font: "22px Arial", fill: "white" };
+
+    bluecount = game.add.text(14, 555, "Spaces: " + bluemoves, style);
+    redcount  = game.add.text(490, 555, "Spaces: " + redmoves, style);
+
+
+
+    for (var i = 0; i < 12; i += 2){
         pieces[i] = game.add.sprite(555,0,'redpiece');
         pieces[i].inputEnabled = true;
         pieces[i].input.enableDrag();
@@ -33,7 +43,7 @@ function create(){
         pieces[i+1]['id'] = i+1;
     }
 
-    for (var i = 10; i < 14; i+=2){
+    for (var i = 12; i < 16; i+=2){
         pieces[i] = game.add.sprite(555, 45, 'redgeneral');
         pieces[i].inputEnabled = true;
         pieces[i].input.enableDrag();
@@ -53,7 +63,9 @@ function create(){
 
 
 function update(){
-
+    if(game.input.onDown) {
+        console.log("i");
+    }
 }
 
 
@@ -63,6 +75,7 @@ function blueFix(item) {
     }*/
     gridBounds(item);
     itemAction(item);
+    bluecount.setText("Spaces: " + (bluemoves - 1) );
 }
 
 function redFix(item) {
@@ -71,6 +84,7 @@ function redFix(item) {
     }*/
     gridBounds(item);
     itemAction(item);
+    redcount.setText("Spaces: " + (redmoves - 1) );
 }
 
 function gridBounds(item){
@@ -91,11 +105,11 @@ function gridBounds(item){
         }
     }
 
-    else if(item.x < 100 || item.x > 480) {
-        if(item.y < 100) {
+    else if(item.x < 100 || item.x > 450) {
+        if(item.y < 150) {
             item.y = 158;
         }
-        else if(item.y > 400) {
+        else if(item.y > 380) {
             item.y = 400;
         }
     }
@@ -129,11 +143,10 @@ function gridBounds(item){
 }
 
 function itemAction(item){
-    for(w = 0; w < 20; w++){
+    for(w = 0; w < 16; w++){
         if(item.x == pieces[w]['x'] && item.y == pieces[w]['y'] && item['id'] != pieces[w]['id']){
             if(item['color'].localeCompare(pieces[w]['color'])){
                 pieces[w].kill();
-                console.log("lol");
             }
             else {
                 if(item.y > 300){
