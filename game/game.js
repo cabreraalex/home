@@ -2,10 +2,12 @@ var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, cr
 
 var pieces = [16];
 const BLOCK = 48;
-var redmoves = 7;
-var bluemoves = 7;
+var redmoves = 5;
+var bluemoves = 5;
 var bluecount;
 var redcount;
+var X;
+var Y;
 
 function preload(){
     game.load.image('grid', 'res/grid.png');
@@ -32,6 +34,7 @@ function create(){
         pieces[i].input.enableDrag();
         pieces[i].input.enableSnap(BLOCK, BLOCK, false, true, 14, 14);
         pieces[i].events.onDragStop.add(redFix);
+        pieces[i].events.onDragStart.add(getLoc);
         pieces[i]['color'] = 'red';
         pieces[i]['id'] = i;
         pieces[i+1] = game.add.sprite(0, 0, 'bluepiece');
@@ -39,6 +42,7 @@ function create(){
         pieces[i+1].input.enableDrag();
         pieces[i+1].input.enableSnap(48,48, false, true, 14, 14);
         pieces[i+1].events.onDragStop.add(blueFix);
+        pieces[i+1].events.onDragStart.add(getLoc);
         pieces[i+1]['color'] = 'blue';
         pieces[i+1]['id'] = i+1;
     }
@@ -51,11 +55,13 @@ function create(){
         pieces[i].events.onDragStop.add(redFix);
         pieces[i]['color'] = 'red';
         pieces[i]['id'] = i;
+        pieces[i].events.onDragStart.add(getLoc);
         pieces[i+1] = game.add.sprite(0, 45, 'bluegeneral');
         pieces[i+1].inputEnabled = true;
         pieces[i+1].input.enableDrag();
         pieces[i+1].input.enableSnap(48, 48, false, true, 14, 14);
         pieces[i+1].events.onDragStop.add(blueFix);
+        pieces[i+1].events.onDragStart.add(getLoc);
         pieces[i+1]['color'] = 'blue';
         pieces[i+1]['id'] = i+1;
     }
@@ -63,9 +69,7 @@ function create(){
 
 
 function update(){
-    if(game.input.onDown) {
-        console.log("i");
-    }
+
 }
 
 
@@ -75,7 +79,12 @@ function blueFix(item) {
     }*/
     gridBounds(item);
     itemAction(item);
-    bluecount.setText("Spaces: " + (bluemoves - 1) );
+    bluemoves--;
+    bluecount.setText("Spaces: " + (bluemoves) );
+    if(bluemoves == 0){
+        bluecount.setText("Done");
+        bluemoves = 5;
+    }
 }
 
 function redFix(item) {
@@ -84,60 +93,65 @@ function redFix(item) {
     }*/
     gridBounds(item);
     itemAction(item);
-    redcount.setText("Spaces: " + (redmoves - 1) );
+    redmoves--;
+    redcount.setText("Spaces: " + (redmoves) );
+    if(redmoves == 0){
+        redcount.setText("Done");
+        redmoves = 5;
+    }
 }
 
 function gridBounds(item){
 
     if(item.x < 0){
-        item.x = 14;
+        resetLoc(item);
     }
     if(item.x > 550) {
-        item.x = 542;
+        resetLoc(item);
     }
 
     if(item.x < 60 || item.x > 500) {
         if(item.y < 300){
-            item.y = 254;
+            item.y = Y;
         }
         else {
-            item.y = 301;
+            item.y = Y;
         }
     }
 
     else if(item.x < 100 || item.x > 450) {
         if(item.y < 150) {
-            item.y = 158;
+            item.y = Y;
         }
         else if(item.y > 380) {
-            item.y = 400;
+            item.y = Y;
         }
     }
 
     else if(item.x < 150 || item.x > 400){
         if(item.y < 100) {
-            item.y = 110;
+            item.y = Y;
         }
         else if(item.y > 425){
-            item.y = 446;
+            item.y = Y;
         }
     }
 
     else if(item.x < 225 || item.x > 325) {
         if(item.y < 100){
-            item.y = 61;
+            item.y = Y;
         }
         else if(item.y > 450){
-            item.y = 494;
+            item.y = Y;
         }
     }
 
     else {
         if(item.y < 14) {
-            item.y = 14;
+            item.y = Y;
         }
         else if(item.y > 586) {
-            item.y = 542;
+            item.y = Y;
         }
     }
 }
@@ -147,15 +161,22 @@ function itemAction(item){
         if(item.x == pieces[w]['x'] && item.y == pieces[w]['y'] && item['id'] != pieces[w]['id']){
             if(item['color'].localeCompare(pieces[w]['color'])){
                 pieces[w].kill();
+                pieces[w] = null;
             }
             else {
-                if(item.y > 300){
-                    item.y = item.y - BLOCK;
-                }
-                else {
-                    item.y = item.y + BLOCK;
-                }
+                item.x = X;
+                item.y = Y;
             }
         }
     }
+}
+
+function getLoc(item){
+    X = item.x;
+    Y = item.y;
+}
+
+function resetLoc(item){
+    item.x = X;
+    item.y = Y;
 }
