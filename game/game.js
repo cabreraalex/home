@@ -16,7 +16,7 @@ function create(){
 
     game.add.sprite(0, 0, 'grid');
 
-    for (var i = 0; i < 5; i += 2){
+    for (var i = 0; i < 10; i += 2){
         pieces[i] = game.add.sprite(555,0,'redpiece');
         pieces[i].inputEnabled = true;
         pieces[i].input.enableDrag();
@@ -33,7 +33,7 @@ function create(){
         pieces[i+1]['id'] = i+1;
     }
 
-    for (var i = 5; i < 10; i+=2){
+    for (var i = 10; i < 14; i+=2){
         pieces[i] = game.add.sprite(555, 45, 'redgeneral');
         pieces[i].inputEnabled = true;
         pieces[i].input.enableDrag();
