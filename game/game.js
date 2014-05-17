@@ -1,8 +1,6 @@
 var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update });
 
 var pieces = [20];
-var mouseY = 0;
-var mouseX = 0;
 
 function preload(){
     game.load.image('grid', 'res/grid.png');
@@ -39,7 +37,7 @@ function create(){
         pieces[i].input.enableDrag();
         pieces[i].input.enableSnap(48, 48, false, true, 14, 14);
         pieces[i].events.onDragStop.add(redFix);
-        pieces[i]['color'] = 'redg';
+        pieces[i]['color'] = 'red';
         pieces[i]['id'] = i;
         pieces[i+1] = game.add.sprite(0, 45, 'bluegeneral');
         pieces[i+1].inputEnabled = true;
