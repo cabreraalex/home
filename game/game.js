@@ -21,7 +21,7 @@ function preload(){
     game.load.image('bluepiece', 'res/bluepiece.png');
     game.load.image('bluegeneral', 'res/bluegeneral.png');
     game.load.image('redgeneral', 'res/redgeneral.png');
-    game.load.image('nextbutton', 'res/button.png');
+    game.load.spritesheet('nextbutton', 'res/button.png', 90, 30, 2);
 }
 
 function create(){
@@ -33,8 +33,8 @@ function create(){
     bluecount = game.add.text(14, 555, "Spaces: " + bluespaces, style);
     redcount  = game.add.text(490, 555, "Spaces: " + redspaces, style);
 
-    bluebutton = game.add.button(20, 520, 'nextbutton', buttonClick, this);
-    redbutton = game.add.button(500, 520, 'nextbutton', buttonClick, this);
+    bluebutton = game.add.button(20, 520, 'nextbutton', buttonClick, this, 1, 0);
+    redbutton = game.add.button(500, 520, 'nextbutton', buttonClick, this, 1, 0);
 
     for (var i = 0; i < 12; i += 2){
         pieces[i] = game.add.sprite(535,0,'redpiece');
