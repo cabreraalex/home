@@ -1,13 +1,19 @@
-var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update, render: render });
+var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create});
+
+const BLOCK = 48;
 
 var pieces = [16];
-const BLOCK = 48;
-var redmoves = 5;
-var bluemoves = 5;
+
+var redspaces = 5;
+var bluespaces = 5;
+
 var bluecount;
 var redcount;
+
 var X;
 var Y;
+
+var pregame = true;
 
 function preload(){
     game.load.image('grid', 'res/grid.png');
@@ -15,6 +21,7 @@ function preload(){
     game.load.image('bluepiece', 'res/bluepiece.png');
     game.load.image('bluegeneral', 'res/bluegeneral.png');
     game.load.image('redgeneral', 'res/redgeneral.png');
+    game.load.image('nextbutton', 'res/button.png');
 }
 
 function create(){
@@ -23,10 +30,11 @@ function create(){
 
     var style = { font: "22px Arial", fill: "white" };
 
-    bluecount = game.add.text(14, 555, "Spaces: " + bluemoves, style);
-    redcount  = game.add.text(490, 555, "Spaces: " + redmoves, style);
+    bluecount = game.add.text(14, 555, "Spaces: " + bluespaces, style);
+    redcount  = game.add.text(490, 555, "Spaces: " + redspaces, style);
 
-
+    bluebutton = game.add.button(20, 520, 'nextbutton', buttonClick, this);
+    redbutton = game.add.button(500, 520, 'nextbutton', buttonClick, this);
 
     for (var i = 0; i < 12; i += 2){
         pieces[i] = game.add.sprite(535,0,'redpiece');
@@ -37,7 +45,7 @@ function create(){
         pieces[i].events.onDragStart.add(getLoc);
         pieces[i]['color'] = 'red';
         pieces[i]['id'] = i;
-        pieces[i+1] = game.add.sprite(0, 0, 'bluepiece');
+        pieces[i+1] = game.add.sprite(14, 0, 'bluepiece');
         pieces[i+1].inputEnabled = true;
         pieces[i+1].input.enableDrag();
         pieces[i+1].input.enableSnap(48,48, false, true, 14, 14);
@@ -56,7 +64,7 @@ function create(){
         pieces[i]['color'] = 'red';
         pieces[i]['id'] = i;
         pieces[i].events.onDragStart.add(getLoc);
-        pieces[i+1] = game.add.sprite(0, 45, 'bluegeneral');
+        pieces[i+1] = game.add.sprite(14, 45, 'bluegeneral');
         pieces[i+1].inputEnabled = true;
         pieces[i+1].input.enableDrag();
         pieces[i+1].input.enableSnap(48, 48, false, true, 14, 14);
@@ -67,26 +75,18 @@ function create(){
     }
 }
 
-
-function update(){
-
-}
-
-function render(){
-}
-
-
 function blueFix(item) {
     /*if(item.x > 300) {
         item.x = 254;
     }*/
     gridBounds(item);
     itemAction(item);
-    bluemoves--;
-    bluecount.setText("Spaces: " + (bluemoves) );
-    if(bluemoves == 0){
+    x = calcDistance(item.x, item.y);
+    bluespaces -= x;
+    bluecount.setText("Spaces: " + (bluespaces) );
+    if(bluespaces == 0){
         bluecount.setText("Done");
-        bluemoves = 5;
+        bluespaces = 5;
     }
 }
 
@@ -96,11 +96,11 @@ function redFix(item) {
     }*/
     gridBounds(item);
     itemAction(item);
-    redmoves--;
-    redcount.setText("Spaces: " + (redmoves) );
-    if(redmoves == 0){
+    redspaces--;
+    redcount.setText("Spaces: " + (redspaces) );
+    if(redspaces == 0){
         redcount.setText("Done");
-        redmoves = 5;
+        redspaces = 5;
     }
 }
 
@@ -182,4 +182,25 @@ function getLoc(item){
 function resetLoc(item){
     item.x = X;
     item.y = Y;
+}
+
+function calcDistance(x, y){
+    if(pregame){
+        return 0;
+    }
+    else {
+        if(Math.abs(y-Y) > Math.abs(x-X)){
+            return Math.abs((y-Y)/48);
+        }
+        else if(Math.abs(y-Y) < Math.abs(x-X)){
+            return Math.abs((x-X)/48);
+        }
+        else{
+            return Math.abs((x-X)/48);
+        }
+    }
+}
+
+function buttonClick(){
+    pregame = !pregame;
 }
