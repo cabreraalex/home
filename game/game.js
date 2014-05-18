@@ -1,4 +1,4 @@
-var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update });
+var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update, render: render });
 
 var pieces = [16];
 const BLOCK = 48;
@@ -29,7 +29,7 @@ function create(){
 
 
     for (var i = 0; i < 12; i += 2){
-        pieces[i] = game.add.sprite(555,0,'redpiece');
+        pieces[i] = game.add.sprite(535,0,'redpiece');
         pieces[i].inputEnabled = true;
         pieces[i].input.enableDrag();
         pieces[i].input.enableSnap(BLOCK, BLOCK, false, true, 14, 14);
@@ -48,7 +48,7 @@ function create(){
     }
 
     for (var i = 12; i < 16; i+=2){
-        pieces[i] = game.add.sprite(555, 45, 'redgeneral');
+        pieces[i] = game.add.sprite(535, 45, 'redgeneral');
         pieces[i].inputEnabled = true;
         pieces[i].input.enableDrag();
         pieces[i].input.enableSnap(BLOCK, BLOCK, false, true, 14, 14);
@@ -70,6 +70,9 @@ function create(){
 
 function update(){
 
+}
+
+function render(){
 }
 
 
@@ -103,55 +106,55 @@ function redFix(item) {
 
 function gridBounds(item){
 
-    if(item.x < 0){
+    if(item.x < 14){
         resetLoc(item);
     }
-    if(item.x > 550) {
+    if(item.x > 590) {
         resetLoc(item);
     }
 
-    if(item.x < 60 || item.x > 500) {
-        if(item.y < 300){
-            item.y = Y;
+    if(item.x < 60 || item.x > 530) {
+        if(item.y < 254){
+            resetLoc(item);
         }
-        else {
-            item.y = Y;
-        }
-    }
-
-    else if(item.x < 100 || item.x > 450) {
-        if(item.y < 150) {
-            item.y = Y;
-        }
-        else if(item.y > 380) {
-            item.y = Y;
+        else if(item.y > 348) {
+            resetLoc(item);
         }
     }
 
-    else if(item.x < 150 || item.x > 400){
-        if(item.y < 100) {
-            item.y = Y;
+    else if(item.x < 109 || item.x > 492) {
+        if(item.y > 445) {
+            resetLoc(item);
         }
-        else if(item.y > 425){
-            item.y = Y;
+        else if(item.y < 155) {
+            resetLoc(item);
         }
     }
 
-    else if(item.x < 225 || item.x > 325) {
-        if(item.y < 100){
-            item.y = Y;
+    else if(item.x < 157 || item.x > 445){
+        if(item.y < 108) {
+            resetLoc(item);
         }
-        else if(item.y > 450){
-            item.y = Y;
+        else if(item.y > 492){
+            resetLoc(item);
+        }
+    }
+
+    else if(item.x < 252 || item.x > 348) {
+        if(item.y < 60){
+            resetLoc(item);
+        }
+        else if(item.y > 540){
+            resetLoc(item);
         }
     }
 
     else {
         if(item.y < 14) {
-            item.y = Y;
+            resetLoc(item);
         }
-        else if(item.y > 586) {
-            item.y = Y;
+        else if(item.y > 588) {
+            resetLoc(item);
         }
     }
 }
