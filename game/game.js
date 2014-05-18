@@ -96,8 +96,9 @@ function redFix(item) {
     }*/
     gridBounds(item);
     itemAction(item);
-    redspaces--;
-    redcount.setText("Spaces: " + (redspaces) );
+    x = calcDistance(item.x, item.y);
+    redspaces -= x;
+    bluecount.setText("Spaces: " + (redspaces) );
     if(redspaces == 0){
         redcount.setText("Done");
         redspaces = 5;
@@ -162,13 +163,12 @@ function gridBounds(item){
 function itemAction(item){
     for(w = 0; w < 16; w++){
         if(item.x == pieces[w]['x'] && item.y == pieces[w]['y'] && item['id'] != pieces[w]['id']){
-            if(item['color'].localeCompare(pieces[w]['color'])){
+            if(item['color'].localeCompare(pieces[w]['color']) != 0){
                 pieces[w].kill();
                 pieces[w] = null;
             }
             else {
-                item.x = X;
-                item.y = Y;
+                resetLoc(item);
             }
         }
     }
