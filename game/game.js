@@ -13,6 +13,8 @@ var redcount;
 var X;
 var Y;
 
+var pregameBlue = true;
+var pregameRed = true;
 var pregame = true;
 
 function preload(){
@@ -33,8 +35,8 @@ function create(){
     bluecount = game.add.text(14, 555, "Spaces: " + bluespaces, style);
     redcount  = game.add.text(490, 555, "Spaces: " + redspaces, style);
 
-    bluebutton = game.add.button(20, 520, 'nextbutton', buttonClick, this, 1, 0);
-    redbutton = game.add.button(500, 520, 'nextbutton', buttonClick, this, 1, 0);
+    bluebutton = game.add.button(20, 520, 'nextbutton', buttonClickBlue, this, 1, 0);
+    redbutton = game.add.button(500, 520, 'nextbutton', buttonClickRed, this, 1, 0);
 
     for (var i = 0; i < 12; i += 2){
         pieces[i] = game.add.sprite(535,0,'redpiece');
@@ -85,11 +87,15 @@ function blueFix(item) {
     }*/
     gridBounds(item);
     itemAction(item);
-    x = calcDistance(item.x, item.y);
+    x = 0;
+    if(!pregameBlue){
+        x = calcDistance(item.x, item.y);
+    }
     bluespaces -= x;
     bluecount.setText("Spaces: " + (bluespaces) );
     if(bluespaces == 0){
         bluecount.setText("Done");
+        redcount.setText("Spaces: " + (redspaces));
         bluespaces = 5;
     }
 }
@@ -100,11 +106,15 @@ function redFix(item) {
     }*/
     gridBounds(item);
     itemAction(item);
-    x = calcDistance(item.x, item.y);
+    x = 0;
+    if(!pregameRed){
+        x = calcDistance(item.x, item.y);
+    }
     redspaces -= x;
-    bluecount.setText("Spaces: " + (redspaces) );
+    redcount.setText("Spaces: " + (redspaces) );
     if(redspaces == 0){
         redcount.setText("Done");
+        bluecount.setText("Spaces: " + (bluespaces));
         redspaces = 5;
     }
 }
@@ -204,22 +214,21 @@ function resetLoc(item){
 }
 
 function calcDistance(x, y){
-    if(pregame){
-        return 0;
+    if(Math.abs(y-Y) > Math.abs(x-X)){
+        return Math.abs((y-Y)/48);
     }
-    else {
-        if(Math.abs(y-Y) > Math.abs(x-X)){
-            return Math.abs((y-Y)/48);
-        }
-        else if(Math.abs(y-Y) < Math.abs(x-X)){
-            return Math.abs((x-X)/48);
-        }
-        else{
-            return Math.abs((x-X)/48);
-        }
+    else if(Math.abs(y-Y) < Math.abs(x-X)){
+        return Math.abs((x-X)/48);
+    }
+    else{
+        return Math.abs((x-X)/48);
     }
 }
 
-function buttonClick(){
-    pregame = !pregame;
+function buttonClickRed(){
+    pregameRed = !pregameRed;
+}
+
+function buttonClickBlue(){
+    pregameBlue = !pregameBlue;
 }
