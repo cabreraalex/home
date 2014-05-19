@@ -45,6 +45,7 @@ function create(){
         pieces[i].events.onDragStart.add(getLoc);
         pieces[i]['color'] = 'red';
         pieces[i]['id'] = i;
+        pieces[i]['type'] = 'pawn';
         pieces[i+1] = game.add.sprite(14, 0, 'bluepiece');
         pieces[i+1].inputEnabled = true;
         pieces[i+1].input.enableDrag();
@@ -53,6 +54,7 @@ function create(){
         pieces[i+1].events.onDragStart.add(getLoc);
         pieces[i+1]['color'] = 'blue';
         pieces[i+1]['id'] = i+1;
+        pieces[i+1]['type'] = 'pawn';
     }
 
     for (var i = 12; i < 16; i+=2){
@@ -64,6 +66,7 @@ function create(){
         pieces[i]['color'] = 'red';
         pieces[i]['id'] = i;
         pieces[i].events.onDragStart.add(getLoc);
+        pieces[i]['type'] = 'general';
         pieces[i+1] = game.add.sprite(14, 45, 'bluegeneral');
         pieces[i+1].inputEnabled = true;
         pieces[i+1].input.enableDrag();
@@ -72,6 +75,7 @@ function create(){
         pieces[i+1].events.onDragStart.add(getLoc);
         pieces[i+1]['color'] = 'blue';
         pieces[i+1]['id'] = i+1;
+        pieces[i+1]['type'] = 'general';
     }
 }
 
@@ -158,6 +162,21 @@ function gridBounds(item){
             resetLoc(item);
         }
     }
+
+    if(item['type'].localeCompare('pawn') == 0 && !pregame){
+        if((Math.abs(item.y - Y) > 20) && Math.abs(item.x - X) > 20){
+            resetLoc(item);
+        }
+    }
+
+    /*
+    else if(item['type'].localeCompare('general') == 0 && !pregame){
+        distance = (Math.sqrt(Math.pow(Math.abs(item.y - Y), 2)) + (Math.pow(Math.abs(item.x -X, 2))));
+        if(Math.abs(item.y - Y) > 20 && Math.abs(item.x - X)){
+            resetLoc(item);
+        }
+    }
+    */
 }
 
 function itemAction(item){
