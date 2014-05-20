@@ -1,4 +1,4 @@
-var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create});
+var game = new Phaser.Game(600, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update});
 
 const BLOCK = 48;
 
@@ -17,12 +17,18 @@ var pregameBlue = true;
 var pregameRed = true;
 var pregame = true;
 
+var foreground;
+var startbutton;
+
 function preload(){
     game.load.image('grid', 'res/grid.png');
     game.load.image('redpiece', 'res/redpiece.png');
     game.load.image('bluepiece', 'res/bluepiece.png');
     game.load.image('bluegeneral', 'res/bluegeneral.png');
     game.load.image('redgeneral', 'res/redgeneral.png');
+    game.load.image('startback', 'res/startback.png');
+    game.load.spritesheet('startbutton', 'res/start.png', 250, 75, 2);
+    game.load.spritesheet('resumebutton', 'res/resume.png', 250, 75, 2);
     game.load.spritesheet('nextbutton', 'res/button.png', 90, 30, 2);
 }
 
@@ -78,6 +84,23 @@ function create(){
         pieces[i+1]['color'] = 'blue';
         pieces[i+1]['id'] = i+1;
         pieces[i+1]['type'] = 'general';
+    }
+
+    foreground = game.add.sprite(0,0,'startback');
+    foreground.inputEnabled = true;
+    startbutton = game.add.button(175, 262.5, 'startbutton', buttonClickStart, this, 1, 0);
+}
+
+function update() {
+    if(game.input.keyboard.isDown(Phaser.Keyboard.ESC)){
+        if(foreground.exists){
+
+        }
+        else{
+            foreground = game.add.image(0,0,'startback');
+            foreground.inputEnabled = true;
+            startbutton = game.add.button(175, 262.5, 'resumebutton', buttonClickStart, this, 1, 0);
+        }
     }
 }
 
@@ -231,4 +254,9 @@ function buttonClickRed(){
 
 function buttonClickBlue(){
     pregameBlue = !pregameBlue;
+}
+
+function buttonClickStart(){
+    foreground.destroy();
+    startbutton.destroy();
 }
