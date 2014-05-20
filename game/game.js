@@ -90,8 +90,8 @@ function create(){
 
     foreground = game.add.sprite(0,0,'startback');
     foreground.inputEnabled = true;
-    start = game.add.sprite(120,40,'title');
-    startbutton = game.add.button(175, 262.5, 'startbutton', buttonClickStart, this, 1, 0);
+    start = game.add.sprite(120,130,'title');
+    startbutton = game.add.button(175, 342.5, 'startbutton', buttonClickStart, this, 1, 0);
 }
 
 function update() {
