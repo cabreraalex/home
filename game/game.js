@@ -194,7 +194,7 @@ function itemAction(item){
         if(item.x == pieces[w]['x'] && item.y == pieces[w]['y'] && item['id'] != pieces[w]['id']){
             if(item['color'].localeCompare(pieces[w]['color']) != 0){
                 pieces[w].kill();
-                pieces[w] = null;
+                pieces[w] = 0;
             }
             else {
                 resetLoc(item);
