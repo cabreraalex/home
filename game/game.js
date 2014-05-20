@@ -19,6 +19,7 @@ var pregame = true;
 
 var foreground;
 var startbutton;
+var title;
 
 function preload(){
     game.load.image('grid', 'res/grid.png');
@@ -27,6 +28,7 @@ function preload(){
     game.load.image('bluegeneral', 'res/bluegeneral.png');
     game.load.image('redgeneral', 'res/redgeneral.png');
     game.load.image('startback', 'res/startback.png');
+    game.load.image('title', 'res/title.png');
     game.load.spritesheet('startbutton', 'res/start.png', 250, 75, 2);
     game.load.spritesheet('resumebutton', 'res/resume.png', 250, 75, 2);
     game.load.spritesheet('nextbutton', 'res/button.png', 90, 30, 2);
@@ -88,6 +90,7 @@ function create(){
 
     foreground = game.add.sprite(0,0,'startback');
     foreground.inputEnabled = true;
+    start = game.add.sprite(120,40,'title');
     startbutton = game.add.button(175, 262.5, 'startbutton', buttonClickStart, this, 1, 0);
 }
 
@@ -100,6 +103,7 @@ function update() {
             foreground = game.add.image(0,0,'startback');
             foreground.inputEnabled = true;
             startbutton = game.add.button(175, 262.5, 'resumebutton', buttonClickStart, this, 1, 0);
+            start = game.add.sprite(120,40,'title');
         }
     }
 }
@@ -259,4 +263,5 @@ function buttonClickBlue(){
 function buttonClickStart(){
     foreground.destroy();
     startbutton.destroy();
+    start.destroy();
 }
