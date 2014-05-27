@@ -1,1 +1,3 @@
-$('#mainhead').css('margin-top', (($( document ).height()/2) - 200) + 'px');
+$(document).ready(function(){
+    $('#mainhead').css('margin-top', (($( document ).height()/2) - 200) + 'px');
+});
