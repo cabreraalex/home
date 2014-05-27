@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -49,22 +49,22 @@ table {
 /******* End Reset, Start Style **********/
 
 body {
-    text-align:center;
+    text-align: center;
     margin: 0px auto;
 }
 
 h3 {
     font-family: "Roboto";
     font-size: 18px;
-    padding-bottom: 20px;
+    font-weight: 400;
+    padding-bottom: 30px;
 }
 
 h6 {
-    /*padding-top: -100px;*/
     font-family: "Merriweather Sans";
     font-size: 15px;
     color: rgba(30, 32, 32, 1);
-    padding-bottom: 8px;
+    padding-bottom: 12px;
     font-weight: 300;
 }
 
@@ -83,34 +83,21 @@ a:hover {
 }
 
 #mainhead {
-    display: table;
-    overflow: hidden;
     margin: 0px auto;
+    text-align: center;
 }
 
 .vertcent {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.bottomfix {
-    text-align: center;
-    color: #d90000;
-    width: 100%;
-    margin-top: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 500px;
+    line-height: 16px;
 }
 
 a {
     text-decoration: none;
 }
 
-.body {
-    text-align: center;
-    width: 728px;
-    min-width: 728px;
-    margin: 0px auto;
-    margin-top: 35px;
-}
 
 h1 {
     text-align: center;
@@ -140,13 +127,6 @@ p {
 
 }
 
-footer {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-family: "Merriweather Sans";
-    font-size: 12px;
-}
-
 h1 a {
     text-decoration: none;
     color: black;
@@ -166,9 +146,7 @@ a:visited h1 {
     color: black;
 }
 
-.body h4 {
-    color: black;
-}
+
 
 h5 {
     padding-top: 0px;
@@ -186,21 +164,6 @@ h5 a {
     -webkit-transition:.5s;
     transition: .5s;
 }
-
-/*.fa {
-    text-decoration: none;
-    color: black;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-}
-
-.fa-angle-double-down {
-    color: black;
-}
-*/
 
 a .fa {
     text-decoration: none;
@@ -230,8 +193,3 @@ p a:hover {
     color: #800000;
 }
 
-.adsbygoogle {
-    margin-top: 25px;
-    margin-bottom: 20px;
-
-}

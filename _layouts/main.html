@@ -1,9 +1,0 @@
-{% include mainhead.html %}
-{% for post in site.posts %}
-<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-<h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-<p>{{ post.excerpt }}</p>
-<h5><a href="{{ post.url }}">...</a><h5>
-
-{% endfor %}
-{% include mainfoot.html %}
