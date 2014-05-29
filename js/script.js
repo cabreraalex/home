@@ -3,7 +3,7 @@ $(document).ready(function(){
     $(function(){
         $("#slides").slidesjs({
             width: 500,
-            height: 18,
+            height: 25,
             navigation: {
                 active: false,
                 effect: "fade"
