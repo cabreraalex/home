@@ -201,3 +201,7 @@ p a:hover {
     padding-left: 10px;
     font-size: 20px;
 }
+
+.slidejs-navigation {
+    padding-bottom: 10px;
+}
