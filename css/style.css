@@ -118,14 +118,13 @@ h4 {
 }
 
 p {
-    text-indent: 50px;
     font-family: "Roboto";
     font-size: 16px;
-    text-align: justify;
-    text-justify: inter-word;
     line-height: 20px;
     letter-spacing: .7px;
-
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
 }
 
 h1 a {
@@ -206,3 +205,31 @@ p a:hover {
     height: 25px;
     margin-bottom: 25px;
 }
+
+table {
+    margin: 0px auto;
+    text-align: center;
+    width: 480px;
+}
+
+td{
+    width: 240px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+td h3 {
+    padding-top: 10px;
+}
+
+#slide {
+    display: none;
+    height: 200px;
+}
+
+#slide img {
+    height: 100px;
+    margin: 0px auto;
+}
+

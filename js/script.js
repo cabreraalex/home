@@ -15,3 +15,6 @@ $(document).ready(function(){
     });
 });
 
+$("#clicktopic").click(function(){
+    $("#slide").slideToggle();
+});
