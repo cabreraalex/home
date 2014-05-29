@@ -68,7 +68,7 @@ function create(){
     }
 
     for (var i = 12; i < 16; i+=2){
-        pieces[i] = game.add.sprite(535, 45, 'redgeneral');
+        pieces[i] = game.add.sprite(535, 50, 'redgeneral');
         pieces[i].inputEnabled = true;
         pieces[i].input.enableDrag();
         pieces[i].input.enableSnap(BLOCK, BLOCK, false, true, 14, 14);
@@ -77,7 +77,7 @@ function create(){
         pieces[i]['id'] = i;
         pieces[i].events.onDragStart.add(getLoc);
         pieces[i]['type'] = 'general';
-        pieces[i+1] = game.add.sprite(14, 45, 'bluegeneral');
+        pieces[i+1] = game.add.sprite(14, 50, 'bluegeneral');
         pieces[i+1].inputEnabled = true;
         pieces[i+1].input.enableDrag();
         pieces[i+1].input.enableSnap(48, 48, false, true, 14, 14);
@@ -102,8 +102,8 @@ function update() {
         else{
             foreground = game.add.image(0,0,'startback');
             foreground.inputEnabled = true;
-            startbutton = game.add.button(175, 262.5, 'resumebutton', buttonClickStart, this, 1, 0);
-            start = game.add.sprite(120,40,'title');
+            startbutton = game.add.button(175, 342.5, 'resumebutton', buttonClickStart, this, 1, 0);
+            start = game.add.sprite(120,130,'title');
         }
     }
 }
@@ -120,7 +120,7 @@ function blueFix(item) {
     }
     bluespaces -= x;
     bluecount.setText("Spaces: " + (bluespaces) );
-    if(bluespaces == 0){
+    if(bluespaces <  0){
         bluecount.setText("Done");
         redcount.setText("Spaces: " + (redspaces));
         bluespaces = 5;
@@ -139,7 +139,7 @@ function redFix(item) {
     }
     redspaces -= x;
     redcount.setText("Spaces: " + (redspaces) );
-    if(redspaces == 0){
+    if(redspaces < 0){
         redcount.setText("Done");
         bluecount.setText("Spaces: " + (bluespaces));
         redspaces = 5;
@@ -233,6 +233,7 @@ function itemAction(item){
 function getLoc(item){
     X = item.x;
     Y = item.y;
+    item.bringToTop();
 }
 
 function resetLoc(item){
