@@ -233,3 +233,6 @@ td h3 {
     margin: 0px auto;
 }
 
+@media all and (max-width: 480px) {
+    width: 500px;
+}
