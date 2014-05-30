@@ -1,0 +1,21 @@
+html {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+body {
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+    background: #0071A4;
+}
+
+#world-map {
+    margin: 0px auto;
+    padding: 20px;
+}
+
+#audio-player {
+    position: absolute;
+    z-index: 9999;
+}

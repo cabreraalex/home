@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Accent Map</title>
+  <link rel="stylesheet" href="jquery-jvectormap-1.2.2.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <script src="jquery-1.11.1.min.js"></script>
+  <script src="jquery-jvectormap-1.2.2.min.js"></script>
+  <script src="jquery-jvectormap-world-mill-en.js"></script>
+</head>
+<body>
+
+    <div id="world-map">
+        <audio id="audio-player" controls="controls" preload="auto">
+            <source src="spanish22.mp3">
+            <source src="spanish21.mp3">
+        </audio>
+    </div>
+
+
+    <script>
+        $(function(){
+            $('#world-map').vectorMap({
+                map: 'world_mill_en',
+                scaleColors: ['#C8EEFF', '#0071A4'],
+                normalizeFunction: 'polynomial',
+                hoverOpacity: 0.7,
+                hoverColor: false,
+                markerStyle: {
+                    initial: {
+                        fill: '#F8E23B',
+                        stroke: '#383f47'
+                    }
+                },
+                backgroundColor: '#383f47',
+                markers: [
+                    {latLng: [40.426565, -3.703873], name: 'Madrid'},
+                    {latLng: [-3.728597, -38.527787], name: 'Fortaleza'}
+                ],
+                onMarkerClick: function(event, index){
+                    var song = $('audio').get(index);
+                    var audio = document.getElementById('audio-player');
+                    if(song.paused){
+                        song.play();
+                    }
+                    else {
+                        song.stop();
+                    }
+                }
+            });
+        });
+        $('#world-map').css('height', $( document ).height() - 40);
+        $('#world-map').css('width', $(document).width() - 40);
+        $('#audio-player').css('margin-left', $(document).width()/2 - 320);
+    </script>
+</body>
+</html>
