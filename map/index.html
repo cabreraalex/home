@@ -11,15 +11,46 @@
 <body>
 
     <div id="world-map">
-        <audio id="audio-player" controls="controls" preload="auto">
-            <source src="spanish22.mp3">
-            <source src="spanish21.mp3">
+        <div id="container">
+        <audio id="audio-player" src="spanish22.mp3" controls="controls" preload="auto">
         </audio>
+    </div>
     </div>
 
 
     <script>
+        var songnames = [
+            "spanish22",
+            "portuguese8",
+            "english144",
+            "wolof2",
+            "indonesian3",
+            "hindi1",
+            "mandarin2"
+        ];
+
+        var agesex = [
+            "female, 32",
+            "male, 26",
+            "male, 24",
+            "male, 37",
+            "female, 32",
+            "male, 27",
+            "female, 38"
+        ]
+
+        var residence = [
+            "USA, 0.8 years",
+            "UK, 8.5 years",
+            "Canada, 24 years",
+            "USA, 8 years",
+            "USA, 0.6 years",
+            "UK/USA, 3.5 years",
+            "USA, 0.8 years",
+        ]
+
         $(function(){
+            var currentsong = -1;
             $('#world-map').vectorMap({
                 map: 'world_mill_en',
                 scaleColors: ['#C8EEFF', '#0071A4'],
@@ -35,16 +66,34 @@
                 backgroundColor: '#383f47',
                 markers: [
                     {latLng: [40.426565, -3.703873], name: 'Madrid'},
-                    {latLng: [-3.728597, -38.527787], name: 'Fortaleza'}
+                    {latLng: [-3.728597, -38.527787], name: 'Fortaleza'},
+                    {latLng: [45.593056, -62.267222], name: 'Barneys River, Nova Scotia'},
+                    {latLng: [14.692778, -17.446667], name: 'Dakar'},
+                    {latLng: [-6.2, 106.8], name: 'Jakarta'},
+                    {latLng: [21.15, 79.09], name: 'Nagpur, Maharashtra'},
+                    {latLng: [32.05, 118.766667], name: 'Nanjing'}
                 ],
+                onMarkerLabelShow: function(event, label, index){
+                    label.html('<b>' + label.html() + '</b><br />' + agesex[index] + '<br />' + residence[index]);
+
+                },
                 onMarkerClick: function(event, index){
-                    var song = $('audio').get(index);
-                    var audio = document.getElementById('audio-player');
-                    if(song.paused){
-                        song.play();
+                    var lol = parseInt(index,10);
+                    if(currentsong==lol){
+                        var audio = document.getElementById('audio-player');
+                        if(audio.paused){
+                            audio.play();
+                        }
+                        else {
+                            audio.pause();
+                        }
                     }
                     else {
-                        song.stop();
+                        $("#container").html("<audio id='audio-player' src='" + songnames[lol] + ".mp3' controls='controls' preload='auto'>");
+                        var audio = document.getElementById('audio-player');
+                        audio.play();
+                        currentsong = lol;
+                        $('#audio-player').css('margin-left', $(document).width()/2 - 320);
                     }
                 }
             });
