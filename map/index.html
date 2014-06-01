@@ -60,7 +60,8 @@
                 markerStyle: {
                     initial: {
                         fill: '#F8E23B',
-                        stroke: '#383f47'
+                        stroke: '#383f47',
+                        r: 8
                     }
                 },
                 backgroundColor: '#383f47',
@@ -93,14 +94,14 @@
                         var audio = document.getElementById('audio-player');
                         audio.play();
                         currentsong = lol;
-                        $('#audio-player').css('margin-left', $(document).width()/2 - 320);
+                        $('#audio-player').css('margin-left', $(document).width()/2 - $('#audio-player').width() -20);
                     }
                 }
             });
         });
         $('#world-map').css('height', $( document ).height() - 40);
         $('#world-map').css('width', $(document).width() - 40);
-        $('#audio-player').css('margin-left', $(document).width()/2 - 320);
+        $('#audio-player').css('margin-left', $(document).width()/2 - $('#audio-player').width() -20);
     </script>
 </body>
 </html>
