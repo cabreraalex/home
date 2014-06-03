@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Interactive Accent Map</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="stylesheet" href="jquery-jvectormap-1.2.2.css" type="text/css" media="screen"/>
   <link rel="stylesheet" href="style.css" type="text/css"/>
   <script src="jquery-1.11.1.min.js"></script>
@@ -26,17 +27,25 @@
             "wolof2",
             "indonesian3",
             "hindi1",
-            "mandarin2"
+            "mandarin2",
+            "spanish3",
+            "bengali2",
+            "spanish21",
+            "english117"
         ];
 
         var agesex = [
-            "female, 32",
-            "male, 26",
-            "male, 24",
-            "male, 37",
-            "female, 32",
-            "male, 27",
-            "female, 38"
+            "Female, 32",
+            "Male, 26",
+            "Male, 24",
+            "Male, 37",
+            "Female, 32",
+            "Male, 27",
+            "Female, 38",
+            "Female, 17",
+            "Female, 25",
+            "Male, 25",
+            "Female, 60"
         ]
 
         var residence = [
@@ -47,7 +56,34 @@
             "USA, 0.6 years",
             "UK/USA, 3.5 years",
             "USA, 0.8 years",
+            "USA, 0.1 years",
+            "USA, 21 years",
+            "None",
+            "USA, 60 years"
         ]
+
+        var nativelang = [
+            "Spanish",
+            "Portugese",
+            "English",
+            "Wolof",
+            "Indonesian",
+            "Hindi",
+            "Mandarin",
+            "Spanish",
+            "Bengali",
+            "Spanish",
+            "English"
+        ]
+
+        var r;
+        if($('#world-map' ).width() > 500) {
+            r = 5;
+        }
+        else {
+            r = 8;
+        }
+
 
         $(function(){
             var currentsong = -1;
@@ -61,7 +97,7 @@
                     initial: {
                         fill: '#F8E23B',
                         stroke: '#383f47',
-                        r: 8
+                        r: r
                     }
                 },
                 backgroundColor: '#383f47',
@@ -72,11 +108,15 @@
                     {latLng: [14.692778, -17.446667], name: 'Dakar'},
                     {latLng: [-6.2, 106.8], name: 'Jakarta'},
                     {latLng: [21.15, 79.09], name: 'Nagpur, Maharashtra'},
-                    {latLng: [32.05, 118.766667], name: 'Nanjing'}
+                    {latLng: [32.05, 118.766667], name: 'Nanjing'},
+                    {latLng: [4.598056, -74.075833], name: 'Bogota'},
+                    {latLng: [-15.416667, 28.283333], name: 'Lusaka'},
+                    {latLng: [-33.45, -70.666667], name: 'Santiago'},
+                    {latLng: [32.542314, -86.315455], name: 'Elmore, Alabama'}
                 ],
                 onMarkerLabelShow: function(event, label, index){
-                    label.html('<b>' + label.html() + '</b><br />' + agesex[index] + '<br />' + residence[index]);
-
+                    label.html('<b>' + label.html() + '</b><br />' + agesex[index] + '<br />' + 'Residence: '
+                            + residence[index] + '<br />' + 'Native Language: ' + nativelang[index]);
                 },
                 onMarkerClick: function(event, index){
                     var lol = parseInt(index,10);
@@ -102,6 +142,12 @@
         $('#world-map').css('height', $( document ).height() - 40);
         $('#world-map').css('width', $(document).width() - 40);
         $('#audio-player').css('margin-left', $(document).width()/2 - $('#audio-player').width() -20);
+        $(window).resize(function () {
+            $('#world-map').css('height', $( document ).height() - 40);
+            $('#world-map').css('width', $(document).width() - 40);
+            $('#audio-player').css('margin-left', $(document).width()/2 - $('#audio-player').width() -20);
+        });
+
     </script>
 </body>
 </html>
