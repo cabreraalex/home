@@ -13,7 +13,7 @@
 
     <div id="world-map">
         <div id="container">
-        <audio id="audio-player" src="spanish22.mp3" controls="controls" preload="auto">
+        <audio id="audio-player" src="" controls="controls" preload="auto">
         </audio>
     </div>
     </div>
@@ -31,7 +31,10 @@
             "spanish3",
             "bengali2",
             "spanish21",
-            "english117"
+            "english117",
+            "yupik1",
+            "english138",
+            "mandarin7"
         ];
 
         var agesex = [
@@ -45,21 +48,27 @@
             "Female, 17",
             "Female, 25",
             "Male, 25",
-            "Female, 60"
+            "Female, 60",
+            "Female, 31",
+            "Female, 25",
+            "Male, 22"
         ]
 
         var residence = [
-            "USA, 0.8 years",
-            "UK, 8.5 years",
-            "Canada, 24 years",
-            "USA, 8 years",
-            "USA, 0.6 years",
-            "UK/USA, 3.5 years",
-            "USA, 0.8 years",
-            "USA, 0.1 years",
-            "USA, 21 years",
-            "None",
-            "USA, 60 years"
+            "USA, 0.8 ",
+            "UK, 8.5",
+            "Canada, 24",
+            "USA, 8",
+            "USA, 0.6",
+            "UK/USA, 3.5",
+            "USA, 0.8",
+            "USA, 0.1",
+            "USA, 21",
+            "0",
+            "USA, 60",
+            "Alaska, 31",
+            "USA, 25",
+            "USA, 22",
         ]
 
         var nativelang = [
@@ -73,7 +82,27 @@
             "Spanish",
             "Bengali",
             "Spanish",
-            "English"
+            "English",
+            "Yupik",
+            "English",
+            "Mandarin"
+        ]
+
+        var method = [
+            "Academic, 11",
+            "Academic, 7",
+            "Naturalistic, 0",
+            "Academic, 11",
+            "Academic, 13",
+            "Academic, 2",
+            "Academic, 14",
+            "Academic, 16",
+            "Naturalistic, 2",
+            "Naturalistic, 18",
+            "Naturalistic, 0",
+            "Naturalistic, 1",
+            "Naturalistic, 0",
+            "Naturalistic, 5"
         ]
 
         var r;
@@ -112,11 +141,13 @@
                     {latLng: [4.598056, -74.075833], name: 'Bogota'},
                     {latLng: [-15.416667, 28.283333], name: 'Lusaka'},
                     {latLng: [-33.45, -70.666667], name: 'Santiago'},
-                    {latLng: [32.542314, -86.315455], name: 'Elmore, Alabama'}
+                    {latLng: [32.542314, -86.315455], name: 'Elmore, Alabama'},
+                    {latLng: [60.792222, -161.755833], name: 'Bethel, Alaska'},
+                    {latLng: [61.601944, -149.117222], name: 'Palmer, Alaska'},
+                    {latLng: [37.871667, -122.272778], name: 'Berkeley, California'}
                 ],
                 onMarkerLabelShow: function(event, label, index){
-                    label.html('<b>' + label.html() + '</b><br />' + agesex[index] + '<br />' + 'Residence: '
-                            + residence[index] + '<br />' + 'Native Language: ' + nativelang[index]);
+                    label.html('<b>Birthplace: </b>' +  label.html() + '<br /><b>Speaker: </b>' + agesex[index] + '<br /><b>Native Language: </b>' + nativelang[index] + '<br /><b>Method/Age: </b>' + method[index] + '<br /><b>English Residence: </b>' + residence[index] + " years");
                 },
                 onMarkerClick: function(event, index){
                     var lol = parseInt(index,10);
