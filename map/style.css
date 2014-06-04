@@ -50,4 +50,6 @@ table.sortable thead {
     color:#666666;
     font-weight: bold;
     cursor: default;
+    padding-left: 10px;
+    padding-right: 10px;
 }
