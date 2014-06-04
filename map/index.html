@@ -38,7 +38,11 @@
             "english43",
             "english179",
             "spanish35",
-            "english119"
+            "english119",
+            "spanish16",
+            "quechua1",
+            "portuguese2",
+            "spanish1"
         ];
 
         var agesex = [
@@ -59,7 +63,11 @@
             "Male, 47",
             "Male, 57",
             "Male, 28",
-            "Female, 32"
+            "Female, 32",
+            "Male, 44",
+            "Female, 53",
+            "Female, 18",
+            "Male, 24"
         ]
 
         var residence = [
@@ -80,7 +88,11 @@
             "Canada, 47",
             "USA, 55",
             "USA, 4.25",
-            "Canada, 32"
+            "Canada, 32",
+            "USA, 19",
+            "USA, 8",
+            "USA, 0.2",
+            "USA, 0.3"
         ]
 
         var nativelang = [
@@ -101,7 +113,11 @@
             "English",
             "English",
             "Spanish",
-            "English"
+            "English",
+            "Spanish",
+            "Quechua",
+            "Portuguese",
+            "Spanish"
         ]
 
         var method = [
@@ -122,7 +138,11 @@
             "Naturalistic, 0",
             "Naturalistic, 0",
             "Academic, 17",
-            "Naturalistic, 0"
+            "Naturalistic, 0",
+            "Naturalistic, 25",
+            "Academic, 15",
+            "Academic, 10",
+            "Academic, 17"
         ]
 
         var r;
@@ -165,7 +185,11 @@
                     {latLng: [49.25, -123.1], name: 'Vancouver, British Columbia'},
                     {latLng: [44.359145, -98.218152], name: 'Huron, South Dakota'},
                     {latLng: [19.433333, -99.133333], name: 'Mexico City'},
-                    {latLng: [52.133333, -106.683333], name: 'Saskatoon, Saskatchewan'}
+                    {latLng: [52.133333, -106.683333], name: 'Saskatoon, Saskatchewan'},
+                    {latLng: [-34.603333, -58.381667], name: 'Buenos Aires'},
+                    {latLng: [-17.383333, -66.166667], name: 'Cochamba'},
+                    {latLng: [-15.798889, -47.866667], name: 'Brasilia'},
+                    {latLng: [10.5, -66.916667], name: 'Caracas'}
                 ],
                 onMarkerLabelShow: function(event, label, index){
                     label.html('<b>Birthplace: </b>' +  label.html() + '<br /><b>Speaker: </b>' + agesex[index] + '<br /><b>Native Language: </b>' + nativelang[index] + '<br /><b>Method/Age: </b>' + method[index] + '<br /><b>English Residence: </b>' + residence[index] + " years");
