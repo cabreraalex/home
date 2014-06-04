@@ -34,7 +34,11 @@
             "english117",
             "yupik1",
             "english138",
-            "mandarin7"
+            "mandarin7",
+            "english43",
+            "english179",
+            "spanish35",
+            "english119"
         ];
 
         var agesex = [
@@ -51,7 +55,11 @@
             "Female, 60",
             "Female, 31",
             "Female, 25",
-            "Male, 22"
+            "Male, 22",
+            "Male, 47",
+            "Male, 57",
+            "Male, 28",
+            "Female, 32"
         ]
 
         var residence = [
@@ -69,6 +77,10 @@
             "Alaska, 31",
             "USA, 25",
             "USA, 22",
+            "Canada, 47",
+            "USA, 55",
+            "USA, 4.25",
+            "Canada, 32"
         ]
 
         var nativelang = [
@@ -85,7 +97,11 @@
             "English",
             "Yupik",
             "English",
-            "Mandarin"
+            "Mandarin",
+            "English",
+            "English",
+            "Spanish",
+            "English"
         ]
 
         var method = [
@@ -102,7 +118,11 @@
             "Naturalistic, 0",
             "Naturalistic, 1",
             "Naturalistic, 0",
-            "Naturalistic, 5"
+            "Naturalistic, 5",
+            "Naturalistic, 0",
+            "Naturalistic, 0",
+            "Academic, 17",
+            "Naturalistic, 0"
         ]
 
         var r;
@@ -118,10 +138,8 @@
             var currentsong = -1;
             $('#world-map').vectorMap({
                 map: 'world_mill_en',
-                scaleColors: ['#C8EEFF', '#0071A4'],
                 normalizeFunction: 'polynomial',
-                hoverOpacity: 0.7,
-                hoverColor: false,
+                backgroundColor: '#0071A4',
                 markerStyle: {
                     initial: {
                         fill: '#F8E23B',
@@ -129,7 +147,6 @@
                         r: r
                     }
                 },
-                backgroundColor: '#383f47',
                 markers: [
                     {latLng: [40.426565, -3.703873], name: 'Madrid'},
                     {latLng: [-3.728597, -38.527787], name: 'Fortaleza'},
@@ -144,7 +161,11 @@
                     {latLng: [32.542314, -86.315455], name: 'Elmore, Alabama'},
                     {latLng: [60.792222, -161.755833], name: 'Bethel, Alaska'},
                     {latLng: [61.601944, -149.117222], name: 'Palmer, Alaska'},
-                    {latLng: [37.871667, -122.272778], name: 'Berkeley, California'}
+                    {latLng: [37.871667, -122.272778], name: 'Berkeley, California'},
+                    {latLng: [49.25, -123.1], name: 'Vancouver, British Columbia'},
+                    {latLng: [44.359145, -98.218152], name: 'Huron, South Dakota'},
+                    {latLng: [19.433333, -99.133333], name: 'Mexico City'},
+                    {latLng: [52.133333, -106.683333], name: 'Saskatoon, Saskatchewan'}
                 ],
                 onMarkerLabelShow: function(event, label, index){
                     label.html('<b>Birthplace: </b>' +  label.html() + '<br /><b>Speaker: </b>' + agesex[index] + '<br /><b>Native Language: </b>' + nativelang[index] + '<br /><b>Method/Age: </b>' + method[index] + '<br /><b>English Residence: </b>' + residence[index] + " years");
