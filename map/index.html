@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Interactive Accent Map</title>
-  <meta name="viewport" content="width=600, user-scalable=no">
+  <meta name="viewport" content="width=1033, user-scalable=no">
   <link rel="stylesheet" href="jquery-jvectormap-1.2.2.css" type="text/css" media="screen"/>
   <link rel="stylesheet" href="style.css" type="text/css"/>
   <script src="jquery-1.11.1.min.js"></script>
@@ -220,6 +220,7 @@
             $('#language-table').html(content);
             var x = document.getElementById('language-table');
             sorttable.makeSortable(x);
+            console.log($('#language-table').width());
         });
 
 
