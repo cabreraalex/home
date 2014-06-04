@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="jquery-jvectormap-1.2.2.css" type="text/css" media="screen"/>
   <link rel="stylesheet" href="style.css" type="text/css"/>
   <script src="jquery-1.11.1.min.js"></script>
+  <script src="sorttable.js"></script>
   <script src="jquery-jvectormap-1.2.2.min.js"></script>
   <script src="jquery-jvectormap-world-mill-en.js"></script>
 </head>
@@ -13,11 +14,13 @@
 
     <div id="world-map">
         <div id="container">
-        <audio id="audio-player" src="" controls="controls" preload="auto">
-        </audio>
+            <audio id="audio-player" src="" controls="controls" preload="auto"></audio>
     </div>
     </div>
-
+    <table id="language-table">
+        <tbody>
+        </tbody>
+    </table>
 
     <script>
         var songnames = [
@@ -42,7 +45,15 @@
             "spanish16",
             "quechua1",
             "portuguese2",
-            "spanish1"
+            "spanish1",
+            "mende1",
+            "bambara2",
+            "sarua1",
+            "yoruba1",
+            "portuguese5",
+            "agni1",
+            "english130",
+            "arabic10"
         ];
 
         var agesex = [
@@ -67,11 +78,19 @@
             "Male, 44",
             "Female, 53",
             "Female, 18",
-            "Male, 24"
+            "Male, 24",
+            "Male, 35",
+            "Female, 26",
+            "Male, 21",
+            "Male, 20",
+            "Male, 31",
+            "Male, 25",
+            "Male, 32",
+            "Male, 26"
         ]
 
         var residence = [
-            "USA, 0.8 ",
+            "USA, 0.8",
             "UK, 8.5",
             "Canada, 24",
             "USA, 8",
@@ -80,7 +99,7 @@
             "USA, 0.8",
             "USA, 0.1",
             "USA, 21",
-            "0",
+            "None, 0",
             "USA, 60",
             "Alaska, 31",
             "USA, 25",
@@ -92,7 +111,15 @@
             "USA, 19",
             "USA, 8",
             "USA, 0.2",
-            "USA, 0.3"
+            "USA, 0.3",
+            "Liberia/USA, 35",
+            "USA, 2",
+            "USA, 0.1",
+            "USA, 0.25",
+            "USA, 1",
+            "USA, 1.2",
+            "South Africa, 32",
+            "USA, 2"
         ]
 
         var nativelang = [
@@ -117,7 +144,15 @@
             "Spanish",
             "Quechua",
             "Portuguese",
-            "Spanish"
+            "Spanish",
+            "Mende",
+            "Bambara",
+            "Sarua",
+            "Yoruba",
+            "Portuguese",
+            "Agni",
+            "English",
+            "Arabic"
         ]
 
         var method = [
@@ -142,7 +177,15 @@
             "Naturalistic, 25",
             "Academic, 15",
             "Academic, 10",
-            "Academic, 17"
+            "Academic, 17",
+            "Academic, 5",
+            "Academic, 18",
+            "Academic, 10",
+            "Academic, 20",
+            "Academic, 13",
+            "Academic, 15",
+            "Naturalistic, 0",
+            "Academic, 5"
         ]
 
         var r;
@@ -152,6 +195,32 @@
         else {
             r = 8;
         }
+
+        $(function(){
+            var x=method.length;
+            var content="<table id='maintable'><thead><tr><td>Audio Clip</td><td>Native Language</td><td>Sex</td><td>Age</td><td>Learning Method</td><td>Age Learning Started</td><td>English-Speaking Residence</td><td>Years in Residence</td></tr></thead>";
+            for(var y = 0; y < x; y++){
+
+                var agesexthis = agesex[y].split(", ");
+                var methodthis = method[y].split(", ");
+                var residencethis = residence[y].split(", ");
+
+                content += "<tr>";
+                content += "<td><audio id='table-player' src='" + songnames[y] + ".mp3' controls='controls' preload='auto'></td>";
+                content += "<td>" + nativelang[y] + "</td>";
+                content += "<td>" + agesexthis[0] + "</td>";
+                content += "<td class='right'>" + agesexthis[1] + "</td>";
+                content += "<td class='right'>" + methodthis[0] + "</td>";
+                content += "<td class='right'>" + methodthis[1] + "</td>";
+                content += "<td class='right'>" + residencethis[0] + "</td>";
+                content += "<td class='right'>" + residencethis[1] + "</td>";
+                content += "</tr>";
+            }
+            content +="</table>"
+            $('#language-table').html(content);
+            var x = document.getElementById('language-table');
+            sorttable.makeSortable(x);
+        });
 
 
         $(function(){
@@ -189,7 +258,15 @@
                     {latLng: [-34.603333, -58.381667], name: 'Buenos Aires'},
                     {latLng: [-17.383333, -66.166667], name: 'Cochamba'},
                     {latLng: [-15.798889, -47.866667], name: 'Brasilia'},
-                    {latLng: [10.5, -66.916667], name: 'Caracas'}
+                    {latLng: [10.5, -66.916667], name: 'Caracas'},
+                    {latLng: [6.283333, -10.35], name: 'Harbel'},
+                    {latLng: [12.65, -8], name: 'Bamako'},
+                    {latLng: [12.113056, 15.049167], name: "N'Djamena"},
+                    {latLng: [6.366667, 2.433333], name: 'Cotonou'},
+                    {latLng: [-14.916667, 13.5], name: 'Lubango'},
+                    {latLng: [7.449624,-5.396004], name: 'Diekabo'},
+                    {latLng: [-33.958056, 25.6], name: 'Port Elizabeth'},
+                    {latLng: [30.05, 31.233333], name: 'Cairo'}
                 ],
                 onMarkerLabelShow: function(event, label, index){
                     label.html('<b>Birthplace: </b>' +  label.html() + '<br /><b>Speaker: </b>' + agesex[index] + '<br /><b>Native Language: </b>' + nativelang[index] + '<br /><b>Method/Age: </b>' + method[index] + '<br /><b>English Residence: </b>' + residence[index] + " years");

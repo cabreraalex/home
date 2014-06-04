@@ -19,3 +19,35 @@ body {
     position: absolute;
     z-index: 9999;
 }
+
+table {
+    color: white;
+    margin: 0 auto;
+}
+
+td {
+    padding: 5px;
+    width: 100px;
+}
+
+thead td{
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+tbody {
+    border-top: 10px solid black;
+}
+.right {
+    text-align: right;
+}
+/* Sortable tables */
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
