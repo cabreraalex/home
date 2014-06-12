@@ -140,6 +140,7 @@ ul {
     float: right;
     padding-top: 53px;
     padding-right: 3px;
+    padding-left: 10px;
 }
 
 header {
@@ -163,7 +164,7 @@ article {
     background: white;
     margin-top: 20px;
     border-radius: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 p {
@@ -173,7 +174,7 @@ p {
 .button {
     text-decoration: none;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 h3 {
@@ -183,7 +184,7 @@ h3 {
     margin: 0px auto;
     margin-bottom: 20px;
     color: white;
-    margin-top: 35px;
+    margin-top: 50px;
     border-radius: 10px;
 }
 
