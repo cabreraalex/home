@@ -208,8 +208,8 @@ table {
 td{
     width: 240px;
     text-align: center;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 td h3 {
@@ -219,9 +219,17 @@ td h3 {
 #slide {
     display: none;
     height: 200px;
+    padding: 1px;
 }
 
 #slide img {
     height: 100px;
     margin: 0px auto;
+}
+
+.topics {
+    width: 10px;
+    padding: 0px;
+    display: table-cell;
+    vertical-align: middle;
 }

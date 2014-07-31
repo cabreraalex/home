@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#mainhead').css('margin-top', (($( document ).height()/2) - 200) + 'px');
+    $('#mainhead').css('margin-top', (($( document ).height()/2) - 250) + 'px');
     if($( document ).height()/2 <= 200) {
         $('#mainhead').css('margin-top', '10px');
     }
