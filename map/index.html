@@ -206,7 +206,7 @@
                 var residencethis = residence[y].split(", ");
 
                 content += "<tr>";
-                content += "<td><audio id='table-player' src='" + songnames[y] + ".mp3' controls='controls' preload='auto'></td>";
+                content += "<td><audio id='table-player' src='" + songnames[y] + ".mp3' controls='controls' preload='none'></td>";
                 content += "<td>" + nativelang[y] + "</td>";
                 content += "<td>" + agesexthis[0] + "</td>";
                 content += "<td class='right'>" + agesexthis[1] + "</td>";
@@ -284,7 +284,7 @@
                         }
                     }
                     else {
-                        $("#container").html("<audio id='audio-player' src='" + songnames[lol] + ".mp3' controls='controls' preload='auto'>");
+                        $("#container").html("<audio id='audio-player' src='" + songnames[lol] + ".mp3' controls='controls' preload='none'>");
                         var audio = document.getElementById('audio-player');
                         audio.play();
                         currentsong = lol;
