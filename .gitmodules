@@ -1,0 +1,3 @@
+[submodule "conquest"]
+	path = conquest
+	url = https://github.com/Wjzard/ConquestofReffendale
