@@ -1,0 +1,18 @@
+html, body {
+  margin: 0px auto;
+  padding-top: 10px;
+  text-align: center;
+  background: #000000;
+}
+
+h2 {
+  color: white;
+  font-family: Impact;
+  letter-spacing: 2px;
+}
+
+input {
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+}
