@@ -13,6 +13,8 @@ context.fillStyle = '#000000';
 context.fill();
 
 var side = 500;
+var iter = 0;
+var rgb = [255, 255, 255, 2];
 
 var points = [];
 points.push([wwidth/2, wheight/2, side]);
@@ -20,7 +22,7 @@ points.push([wwidth/2, wheight/2, side]);
 function drawRect(point, side) {
   context.beginPath();
   context.rect(point[0]-side/2, point[1] - side/2, side, side);
-  context.fillStyle = '#ffffff';
+  context.fillStyle = 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] +')';
   context.fill();
 }
 
@@ -55,7 +57,7 @@ function expand(point, side){
   addQueue(point, side);
 }
 
-function create(iter){
+function square(iter){
   context.beginPath();
   context.rect(0, 0, wwidth, wheight);
   context.fillStyle = '#000000';
@@ -67,7 +69,8 @@ function create(iter){
     x++;
   }
   points = [];
+  rgb = [255, 255, 255, 2];
   points.push([wwidth/2, wheight/2, side]);
 }
 
-create(1);
+square(10);

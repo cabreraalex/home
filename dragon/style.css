@@ -48,7 +48,6 @@ blockquote, q {
 
 html, body {
   margin: 0px auto;
-  padding-top: 10px;
   text-align: center;
   background: #000000;
 }
@@ -59,8 +58,9 @@ h2 {
   letter-spacing: 2px;
 }
 
-canvas {
-  margin-top: 5px;
+#input {
+  margin: 0px auto;
+  height: 50px;
 }
 
 #field {
