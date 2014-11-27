@@ -24,7 +24,7 @@ function drawLine(angle) {
   x = x + Math.round(Math.cos(angle))*side;
   y = y + Math.round(Math.sin(angle))*side;
   context.lineTo(x, y);
-  if(rgb[rgb[3]]-10<0){
+  if(rgb[rgb[3]]-1<0){
     rgb[3]--;
     if(rgb[3]<0){
       rgb[3]=2;
@@ -33,7 +33,7 @@ function drawLine(angle) {
       rgb[2]=255;
     }
   }
-  rgb[rgb[3]] -= 10;
+  rgb[rgb[3]] -= 1;
   context.strokeStyle = 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] +')';
   context.stroke();
 }
@@ -43,7 +43,7 @@ function dragon(iter){
   context.rect(0, 0, wwidth, wheight);
   context.fillStyle = '#000000';
   context.fill();
-  angle = iter*(Math.PI/4);
+  angle = (Math.PI/2);
   var times = 0;
   while(times != iter){
     drawLine(angle);
