@@ -61,4 +61,4 @@ function dragon(iter){
   y = wheight/2;
 }
 
-dragon(100000);
+dragon(10000);
