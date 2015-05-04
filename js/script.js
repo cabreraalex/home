@@ -3,9 +3,6 @@ $(document).ready(function(){
     if($( document ).height()/2 <= 200) {
         $('#mainhead').css('margin-top', '10px');
     }
-    if(getCookie('slide') == 1){
-        $("#slide").slideToggle();
-    }
     $(function(){
         $("#slides").slidesjs({
             width: 500,
@@ -19,6 +16,9 @@ $(document).ready(function(){
             }
         });
     });
+    if(getCookie('slide') == 1){
+        $("#slide").slideToggle();
+    }
 });
 
 function getCookie(cname) {
