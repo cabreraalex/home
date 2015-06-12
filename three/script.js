@@ -75,22 +75,22 @@ function onMouseWheel(e) {
 
 function onKeyDown(e) {
     if( e.keyCode === 87) {
-        camera.position.z-=.1;
-        mesh.position.z -= .1;
+        camera.position.z-=10;
+        mesh.position.z -= 10;
     }
     else if(e.keyCode == 83) {
-        camera.position.z+=.1;
-        mesh.position.z += .1;
+        camera.position.z+=10;
+        mesh.position.z += 10;
     }
     else if(e.keyCode == 65) {
-        camera.position.x-=.1;
+        camera.position.x-=10;
         //mesh.rotateX(.1);
-        mesh.position.x-=.1;
+        mesh.position.x-=10;
         //mesh.rotation.y -= .01;
     }
     else if(e.keyCode == 68) {
-        camera.position.x+=.1;
-        mesh.position.x +=.1;
+        camera.position.x+=1;
+        mesh.position.x +=1;
         //mesh.rotation.z += .01;
     }
     renderer.render(scene,camera);
