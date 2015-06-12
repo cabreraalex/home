@@ -190,11 +190,12 @@
         ]
 
         var r;
-        if($('#world-map' ).width() > 500) {
+        console.log($(document).width());
+        if($(document).width() > 800) {
             r = 5;
         }
         else {
-            r = 8;
+            r = 10;
         }
 
         $(function(){
@@ -221,7 +222,6 @@
             $('#language-table').html(content);
             var x = document.getElementById('language-table');
             sorttable.makeSortable(x);
-            console.log($('#language-table').width());
         });
 
 
