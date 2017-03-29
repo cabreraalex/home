@@ -5,7 +5,7 @@
    ========================================================================== */
 
 body {
-  background-color: #c3a126;
+  background-color: #d9b663;
 }
 
 iframe {
@@ -20,17 +20,35 @@ iframe {
 }
 
 #thank-you {
-  margin-top: -75px;
+  margin-top: -55px;
   margin-bottom: 50px;
   font-size: 36px;
   font-family: 'Anton', sans-serif;
 }
 
-#header-logo {
+.logo .desktop {
   display:block;
   margin: 0px auto;
-  width: 900px;
-  height: 300px ;
+  width: 750px;
+  height: 250px ;
+}
+
+/* hide mobile version by default */
+.logo .mobile {
+  display: none;
+}
+
+/* when screen is less than 600px wide
+   show mobile version and hide desktop */
+@media (max-width: 800px) {
+  .logo .mobile {
+    display: block;
+    margin: 0px auto;
+    width: 400px;
+  }
+  .logo .desktop {
+    display: none;
+  }
 }
 
 #video-block {
