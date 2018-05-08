@@ -1,75 +1,282 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=480, maximum-scale=1.0" />
-        <meta charset="utf-8">
-        <title>Alex Cabrera's personal site</title>
-        <link rel="icon" type="image/png" href="res/favicon.png">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
-        <div id="mainhead">
-                <h3>Alex Cabrera</h3>
-                <h6>currently</h6>
-                <h3>Interning, studying, and working on <a id="clicktopic" href="#">a few projects</a></h3>
-                <h6>career aspiration of the week</h6>
-                <div id="slides">
-                    <h3><a href="" class="slidesjs-previous slidesjs-navigation">&lt</a>7/23/16: Artificial Intelligence Research Professor<a href="" class="slidesjs-next slidesjs-navigation">&gt</a></h3></h3>
-                    <h3><a href="" class="slidesjs-previous slidesjs-navigation">&lt</a>9/15/15: Quantitative Analyst on Wall Street<a href="" class="slidesjs-next slidesjs-navigation">&gt</a></h3></h3>
-                    <h3><a href="" class="slidesjs-previous slidesjs-navigation">&lt</a>5/4/15: Data Scientist for the CIA<a href="" class="slidesjs-next slidesjs-navigation">&gt</a></h3></h3>
-                    <h3><a href="" class="slidesjs-previous slidesjs-navigation">&lt</a>11/21/14: Arch Linux open-source developer<a href="" class="slidesjs-next slidesjs-navigation">&gt</a></h3></h3>
-                    <h3><a href="" class="slidesjs-previous slidesjs-navigation">&lt</a>9/19/14: MD/PhD finding a cure for cancer<a href="" class="slidesjs-next slidesjs-navigation">&gt</a></h3></h3>
-                    <h3><a href="" class="slidesjs-previous slidesjs-navigation">&lt</a>7/28/14: Indie/Underground Musician<a href="" class="slidesjs-next slidesjs-navigation">&gt</a></h3></h3>
-                    <h3><a href="" class="slidesjs-previous slidesjs-navigation">&lt</a>6/8/14: Theoretical Physics Professor<a href="" class="slidesjs-next slidesjs-navigation">&gt</a></h3></h3>
-                    <h3><a href="" class="slidesjs-previous slidesjs-navigation">&lt</a>5/28/14: Correspondent for The Economist<a href="" class="slidesjs-next slidesjs-navigation">&gt</a></h3>
-                    <h3><a href="" class="slidesjs-previous slidesjs-navigation">&lt</a>5/15/14: Rocket scientist at SpaceX<a href="" class="slidesjs-next slidesjs-navigation">&gt</a></h3></h3>
-                </div>
-                <h6 id="padding-top">follow me</h6>
-                <h3><a href="https://github.com/cabreraalex">github</a> | <a href="https://www.linkedin.com/pub/alex-cabrera/91/a26/385">linkedin</a> | <a href="http://blog.cabreraalex.com">blog</a></h3>
-                <div id="slide">
-                    <table>
-                        <tr>
-                            <td>
-                                <h6>CTF Resources</h6>
-                                <p>Crowdsourced repository for information security guides and resources</p>
-                                <h3><a href="https://github.com/ctfs/resources">more</a></h3>
-                            </td>
-                            <td>
-                                <h6>Hashicon</h6>
-                                <p>Create minimalistic icons from text, similar to those found on GitHub</p>
-                                <h3><a href="https://github.com/cabreraalex/hashicon">more</a></h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h6>Fractals</h6>
-                                <p>Simple, interactive implementations of the T-square and Dragon Curve fractals in javascript canvas</p>
-                                <h3><a href="./square/">square</a><a href="./dragon/">&nbsp&nbspdragon</a></h3>
-                            </td>
-                            <td>
-                                <h6>Accents Map</h6>
-                                <p>Interactive map of English accents from accross the world, based off of the <a href="http://accent.gmu.edu/">Speech Accent Archive</a></p>
-                                <h3><a href="./map/">more</a></h3>
-                            </td>
+<!doctype html>
 
-                        </tr>
-                    </table>
-                </div>
-        </div>
-    </body>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.slides.min.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
-        ga('create', 'UA-50459890-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+  <title>Alex Cabrera</title>
+  <meta name="description" content="Personal site for Alex Cabrera">
+  <meta name="author" content="Angel Alexander Cabrera">
+
+  <link rel="stylesheet" media="all" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto:900,400" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div id="container">
+        <main>
+            <p id="links">
+                <a href="http://cabreraalex.com"><i class="fas fa-home"></i> cabreraalex.com </a> &nbsp&nbsp
+                <a href="mailto:alex.cabrera@gmail.com"><i class="fas fa-envelope"></i> alex.cabrera@gmail.com</a> &nbsp&nbsp
+                <a href="https://github.com/cabreraalex"><i class="fab fa-github"></i>  github</a> &nbsp&nbsp
+                <a href="./legacy/"><i class="fas fa-step-backward"></i> legacy </a>
+            </p>
+            <header>
+                <img id="profile" src="profile.jpg">
+                <div id="header-info">
+                    <h3 id="name">Ángel <span class="red">Alex</span>ander <span class="red">Cabrera</span></h3>
+                    <p>I am a fourth year computer science major at <a href="http://www.gatech.edu/" class="gold">Georgia Tech</a> currently interning with the Android Auto team at Google. I have worked on various projects over the past few years, but have recently focused on visualization and machine learning.</p>
+                </div>
+            </header>
+            <table>
+                <!-- EDUCATION -->
+                <tr>
+                    <th class="date"></th>
+                    <th>
+                        <h4 class="header">Education</h4>
+                    </th>
+                </tr>
+                <tr class="item">
+                    <th class="date">August 2015 - Present</th>
+                    <th>
+                        <h5>B.S. in Computer Science</h5>
+                        <h6>Georgia Institute of Technology - Atlanta, GA</h6>
+                        <p class="desc">Overall GPA: 4.0/4.0</p>
+                    </th>
+                </tr>
+                <tr class="item">
+                    <th class="date">Fall 2017</th>
+                    <th>
+                        <h6>Science Po - Paris, France</h6>
+                        <p class="desc">Exchange student studying economics</p>
+                    </th>
+                </tr>
+                <!-- INDUSTRY -->
+                <tr>
+                    <th class="date"></th>
+                    <th>
+                        <h4 class="header">Industry Experience</h4>
+                    </th>
+                </tr>
+                <tr class="item">
+                    <th class="date">May 2017 - August 2017</th>
+                    <th>
+                        <h5>Google</h5>
+                        <h6>Software Engineering Intern</h6>
+                        <p class="desc">Anomaly detection and trend analysis system for Google's data processing pipelines</p>
+                        <div class="tags">
+                            <button>Apache Beam/Cloud DataFlow</button>
+                            <button>Java</button>
+                            <button>C++</button>
+                            <button>SQL</button>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="buffer"></tr>
+                <tr class="item">
+                    <th class="date">May 2016 - August 2016</th>
+                    <th>
+                        <h5>Google</h5>
+                        <h6>Engineering Practicum Intern</h6>
+                        <p class="desc">Analytics and monitoring dashboard for a Google Maps backend system</p>
+                        <div class="tags">
+                            <button>Go</button>
+                            <button>BigQuery</button>
+                            <button>JavaScript</button>
+                        </div>
+                    </th>
+                </tr>
+                <!-- RESEARCH -->
+                <tr>
+                    <th class="date"></th>
+                    <th>
+                        <h4 class="header">Research Experience</h4>
+                    </th>
+                </tr>
+                <tr class="item">
+                    <th class="date">January 2018 - Present</th>
+                    <th>
+                        <h5>Polo Club of Data Science</h5>
+                        <h6>Undergraduate Researcher</h6>
+                        <p class="desc">Interactive systems and visualizations for deep learning understanding and interpretation</p>
+                        <div class="tags">
+                            <a href="https://poloclub.github.io/"><button><i class="fas fa-globe"></i> Polo Club</button></a>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="buffer"></tr>
+                <tr class="item">
+                    <th class="date">September 2015 - May 2017</th>
+                    <th>
+                        <h5>PROX-1 Satellite</h5>
+                        <h6>Flight Software Lead and Researcher</h6>
+                        <p class="desc">Led a team of engineers to develop and deploy software for a fully undergraduate-led satellite mission</p>
+                        <div class="tags">
+                            <a href="http://prox-1.gatech.edu/"><button><i class="fas fa-globe"></i> Website</button></a>
+                            <a href="https://www.ae.gatech.edu/news/2017/05/prox-1-launch-has-launched"><button><i class="far fa-newspaper"></i> Press release</button></a>
+                            <button>C</button>
+                        </div>
+                    </th>
+                </tr>
+                <!-- AWARDS -->
+                <tr>
+                    <th class="date"></th>
+                    <th>
+                        <h4 class="header">Awards</h4>
+                    </th>
+                </tr>
+                <tr class="item">
+                    <th class="date">February 2018</th>
+                    <th>
+                        <h5>The Data Open Datathon</h5>
+                        <h6>Correlation One and Citadel Securities</h6>
+                        <p class="desc">Placed third and won $2,500 for creating a supervised learning system that predicts dangerous road areas</p>
+                        <div class="tags">
+                            <a href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems"><button><i class="far fa-newspaper"></i> Press Release</button></a>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="buffer"></tr>
+                <tr class="item">
+                    <th class="date">August 2015 - Present</th>
+                    <th>
+                        <h5>Stamps President's Scholar</h5>
+                        <h6>Georgia Tech and the Stamps Family Charitable Foundation</h6>
+                        <p class="desc">Full ride scholarship with $15,000 in extracurricular funding awarded to 10 students (27,270 applicants)</p>
+                        <div class="tags">
+                            <a href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems"><button><i class="fas fa-globe"></i> Website</button></a>
+                        </div>
+                    </th>
+                </tr>
+                <!-- TEACHING -->
+                <tr>
+                    <th class="date"></th>
+                    <th>
+                        <h4 class="header">Teaching</h4>
+                    </th>
+                </tr>
+                <tr class="item">
+                    <th class="date">Fall 2016, Spring 2017, Spring 2018</th>
+                    <th>
+                        <h5>Undergraduate Teaching Assistant</h5>
+                        <h6>CS1332 - Data Structures and Algorithms</h6>
+                        <p class="desc">Taught a 1 1/2 hour weekly recitation, graded tests and homework, and helped create assignments</p>
+                    </th>
+                </tr>
+                <tr class="buffer"></tr>
+                <tr class="item">
+                    <th class="date">Fall 2016</th>
+                    <th>
+                        <h5>Team Leader</h5>
+                        <h6>GT 1000 - First-Year Seminar</h6>
+                        <p class="desc">Designed a class curriculum for incoming first years and helped lead a weekly seminar class</p>
+                    </th>
+                </tr>
+                <!-- PUBLICATIONS -->
+                <tr>
+                    <th class="date"></th>
+                    <th>
+                        <h4 class="header">Publications</h4>
+                    </th>
+                </tr>
+                <tr class="item">
+                    <th class="date">June 18, 2018</th>
+                    <th>
+                        <h5>Interactive Classification for Deep Learning Interpretation</h5>
+                        <h6>Angel Cabrera, Fred Hohman, Jason Lin, Duen Horng Chau</h6>
+                        <p class="desc">Demo, Conference on Computer Vision and Pattern Recognition (CVPR). June 18, 2018. Salt Lake City, USA.</p>
+                        <div class="tags">
+                            <a href="#"><button><i class="fas fa-globe"></i> Coming Soon</button></a>
+                        </div>
+                    </th>
+                </tr>
+                <!-- CAMPUS INVOLVEMENT -->
+                <tr>
+                    <th class="date"></th>
+                    <th>
+                        <h4 class="header">Campus Involvement</h4>
+                    </th>
+                </tr>
+                <tr class="item">
+                    <th class="date">September 2015 – April 2017</th>
+                    <th>
+                        <h5>Stamps Scholars National Convention 2017</h5>
+                        <h6>Vice-chair of large events</h6>
+                        <p class="desc">Directed a 13 person committee in organizing hotels, meals, and presentations for over 700 students</p>
+                        <div class="tags">
+                            <a href="http://ssnc.stampsfoundation.org/"><button><i class="fas fa-globe"></i> Website</button></a>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="buffer"></tr>
+                <tr class="item">
+                    <th class="date">Spring 2016</th>
+                    <th>
+                        <h5>Tour Guide</h5>
+                        <p class="desc">Led a tour of campus for visiting families every week</p>
+                        <div class="tags">
+                            <a href="http://admission.gatech.edu/gttours"><button><i class="fas fa-globe"></i> Website</button></a>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="buffer"></tr>
+                <tr class="item">
+                    <th class="date">September 2015 – May 2016</th>
+                    <th>
+                        <h5>Georgia Tech Student Foundation</h5>
+                        <h6>Investments committee and Freshman Leadership Initiative</h6>
+                        <p class="desc">Conducted market research to help manage a $1.2 million endowment and organized fundraising events</p>
+                        <div class="tags">
+                            <a href="http://www.gtsf.gatech.edu/s/1481/alumni/17/home.aspx?sid=1481&gid=42"><button><i class="fas fa-globe"></i> Website</button></a>
+                        </div>
+                    </th>
+                </tr>
+                <!-- SKILLS -->
+                <tr>
+                    <th class="date"></th>
+                    <th>
+                        <h4 class="header">Skills</h4>
+                    </th>
+                </tr>
+                <tr class="item">
+                    <th class="date"></th>
+                    <th>
+                        <h5>Languages</h5>
+                        <div class="tags">
+                            <button>English - Native</button>
+                            <button>Spanish - Native</button>
+                            <button>French - Conversational</button>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="buffer"></tr>
+                <tr class="item">
+                    <th class="date"></th>
+                    <th>
+                        <h5>Technical</h5>
+                        <div class="tags">
+                            <button>Java</button>
+                            <button>Python</button>
+                            <button>Javascript</button>
+                            <button>C/C++</button>
+                            <button>Go</button>
+                            <button>SQL</button>
+                        </div>
+                        <div class="tags">
+                            <button>Cloud Dataflow/MapReduce</button>
+                            <button>Machine Learning</button>
+                            <button>React</button>
+                            <button>Full Stack Development</button>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </main>
+    </div>
+</body>
 </html>
