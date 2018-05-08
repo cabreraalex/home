@@ -136,7 +136,8 @@ main {
     text-align: center;
     padding: 10px;
     margin-top: -15px;
-    margin-bottom: 20px;
+    margin-bottom: 33px;
+    font-size: 15px;
 }
 
 #header-info {
