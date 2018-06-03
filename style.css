@@ -9,7 +9,6 @@ header {
 table {
     text-align: left;
     padding: 0px;
-    margin-left: -163px;
 }
 
 
@@ -55,6 +54,7 @@ button {
     border-radius: 3px;
     padding: 3px;
     background-color: white;
+    margin-right: 4px;
 }
 
 button:hover {
@@ -113,7 +113,7 @@ a button {
 }
 
 main {
-    width: 700px;
+    width: 870px;
     margin: 0px auto;
 }
 
@@ -142,7 +142,7 @@ main {
 }
 
 #header-info {
-    padding-top: 3px;
+    padding-top: 20px;
     margin-left: 30px;
 }
 
@@ -154,4 +154,15 @@ main {
 .gold {
     text-decoration: none;
     color: #B3A369;
+}
+
+.course {
+    font-weight: 300;
+}
+
+footer {
+	text-align: center;
+	margin-top: 70px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
 }
