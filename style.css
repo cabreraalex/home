@@ -29,6 +29,7 @@ h5 {
     font-size: 18px;
     font-family: "Roboto", sans-serif;
     margin: 0px;
+    margin-bottom: 3px;
 }
 
 h6 {
@@ -37,7 +38,6 @@ h6 {
     font-style: italic;
     font-family: "Open Sans", sans-serif;
     margin: 0px;
-    margin-top: 3px;
     margin-bottom: 3px;
 }
 
@@ -81,7 +81,7 @@ a button {
 
 #container {
     margin: 0px auto;
-    width: 990px;
+    width: 717px;
     padding: 18px;
 }
 
@@ -113,7 +113,7 @@ a button {
 }
 
 main {
-    width: 870px;
+    width: 681px;
     margin: 0px auto;
 }
 
@@ -128,21 +128,32 @@ main {
 }
 
 #profile {
-    margin-top: 15px;
     width: 200px;
     height: 182px;
 }
 
-#links {
-    text-align: center;
+#links-l {
+    display: inline-block;
     padding: 10px;
     margin-top: -15px;
     margin-bottom: 33px;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+#links-r {
+    float: right;
+    padding: 10px;
+    margin-top: -15px;
+    margin-bottom: 33px;
+    font-size: 20px;
+}
+
+.fa-home {
+    text-align: left;
 }
 
 #header-info {
-    padding-top: 20px;
+    text-align: justify;
     margin-left: 30px;
 }
 
