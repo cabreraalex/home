@@ -177,3 +177,9 @@ footer {
     font-family: "Roboto", sans-serif;
     font-style: italic;
 }
+
+.thumbnail {
+    border: 1px solid #e3e3e3;
+    width: 517px;
+    margin-top: 10px;
+}
