@@ -89,6 +89,10 @@ a button {
     margin-top: 5px;
 }
 
+.headshot {
+    width: 200px;
+}
+
 .email {
     display: inline;
     font-size: 16px;
