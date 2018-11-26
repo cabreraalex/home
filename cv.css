@@ -1,0 +1,207 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+table {
+    text-align: left;
+    padding: 0px;
+}
+
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    margin: 0px;
+}
+
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+h5 {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    margin-bottom: 3px;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    margin-bottom: 3px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+
+button {
+    border: 1px solid RGBA(0, 0, 0, 0.6);
+    border-radius: 3px;
+    padding: 3px;
+    background-color: white;
+    margin-right: 4px;
+}
+
+button:hover {
+    background-color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E53935;
+}
+
+a button i {
+    color: red;
+}
+
+a button {
+    cursor: pointer;
+}
+
+
+#container {
+    margin: 0px auto;
+    width: 717px;
+}
+
+.tags {
+    margin-top: 5px;
+}
+
+.headshot {
+    width: 200px;
+}
+
+.email {
+    font-size: 16px;
+}
+
+.buffer {
+    height: 20px;
+}
+
+.date {
+    width: 135px;
+    padding-right: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    float: left;
+    text-align: right;
+}
+
+.desc {
+    color: RGBA(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+
+.item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 681px;
+    margin: 0px auto;
+}
+
+.header {
+    border-bottom: 1px solid RGBA(0, 0, 0, 0.7);
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    color: #E53935;
+}
+
+.tagline {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#head {
+    margin-left: 160px;
+}
+
+header .fas {
+    font-size: 20px;
+}
+
+header .fab {
+    font-size: 20px;
+}
+
+header p {
+    margin-top: 7px;
+}
+
+.red {
+    color: #E53935;
+}
+
+#links-l {
+    display: inline-block;
+    padding: 10px;
+    margin-top: -15px;
+    margin-bottom: 33px;
+    font-size: 20px;
+}
+
+#links-r {
+    float: right;
+    padding: 10px;
+    margin-top: -15px;
+    margin-bottom: 33px;
+    font-size: 20px;
+}
+
+.fa-twitter {
+    color:#38A1F3;
+}
+
+#header-info {
+    text-align: justify;
+    margin-right: 30px;
+}
+
+
+#name {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.gold {
+    text-decoration: none;
+    color: #B3A369;
+}
+
+.course {
+    font-weight: 300;
+}
+
+footer {
+	text-align: center;
+	margin-top: 70px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+}
+
+.thumbnail {
+    border: 1px solid #e3e3e3;
+    width: 517px;
+    margin-top: 10px;
+}
