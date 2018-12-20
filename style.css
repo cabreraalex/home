@@ -131,6 +131,8 @@ main {
     padding-bottom: 10px;
     margin-top: 40px;
     margin-bottom: 12px;
+    margin-left: -154px;
+    padding-left: 154px;
     color: #E53935
 }
 
@@ -170,7 +172,7 @@ main {
 
 .gold {
     text-decoration: none;
-    color: #B3A369;
+    color: #c6a117;
 }
 
 .course {
