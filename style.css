@@ -95,12 +95,12 @@ textarea,
 }
 
 #padded-sidebar {
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 #padded-content {
-  margin-left: 20px;
-  padding-left: 20px;
+  /* margin-left: 20px;
+  padding-left: 20px; */
   /* border-left: 2px solid var(--black); */
 }
 
@@ -153,11 +153,11 @@ p {
   text-align: center;
   font-style: italic;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.padded {
-  padding-left: 20px;
+.thumb {
+  margin-right: 20px;
 }
 
 button {
@@ -207,4 +207,20 @@ button:hover {
 .disabled:hover {
     background-color: #ececec80;
     color: black;
+}
+
+.g {
+  color: #4285f4;
+}
+
+.o1, .e {
+  color: #db4437
+}
+
+.o2 {
+  color: #F4b400;
+}
+
+.l {
+  color: #0F9D58;
 }
