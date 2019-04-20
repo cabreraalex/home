@@ -31,12 +31,12 @@ h6 {
 }
 
 .cv {
-    margin: 0px auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: 800;
-    font-size: 16px;
-    padding: 10px;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 10px;
 }
 
 #pubs img {
@@ -200,27 +200,28 @@ button:hover {
 }
 
 .disabled {
-    background-color: #ececec80;
-    color: black;
+  background-color: #ececec80;
+  color: black;
 }
 
 .disabled:hover {
-    background-color: #ececec80;
-    color: black;
+  background-color: #ececec80;
+  color: black;
 }
 
 .g {
   color: #4285f4;
 }
 
-.o1, .e {
-  color: #db4437
+.o1,
+.e {
+  color: #db4437;
 }
 
 .o2 {
-  color: #F4b400;
+  color: #f4b400;
 }
 
 .l {
-  color: #0F9D58;
+  color: #0f9d58;
 }
