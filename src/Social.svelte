@@ -2,7 +2,7 @@
   <a href="https://cabreraalex.com">
   <h3>
     <i class="fas fa-home"></i> 
-    cabreraalex.com
+    &nbsp;cabreraalex.com
 </h3>
   </a>
   <a href="mailto:cabrera@cmu.edu">

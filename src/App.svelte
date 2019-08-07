@@ -3,7 +3,9 @@
   import {link} from 'svelte-spa-router';
   import routes from './routes'
   import news from "./news.js";
-  import pubs from "./pubs.js";
+	import pubs from "./pubs.js";
+	
+	document.title = "Alex Cabrera";
 
 	(function(i, s, o, g, r, a, m) {
 		i["GoogleAnalyticsObject"] = r;
