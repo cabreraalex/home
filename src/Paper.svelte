@@ -62,6 +62,11 @@
     display: inline-flex;
     margin-top: 20px;
   }
+
+  .code {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.05);
+  }
 </style>
 
 <link
@@ -152,6 +157,12 @@
         Website
       </button>
     </a>
+  </div>
+  <h2 class="sec-title">BibTex</h2>
+  <div class="code">
+    <code class="bibtex">
+      {pub.bibtex}
+    </code>
   </div>
   <Footer />
 </div>
