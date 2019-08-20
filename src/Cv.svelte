@@ -1,7 +1,7 @@
 <script>
-  import Intro from "./Intro.svelte";
-  import Social from "./Social.svelte";
-  import pubs from "./pubs.js";
+  import Intro from "./components/Intro.svelte";
+  import Social from "./components/Social.svelte";
+  import pubs from "./data/pubs.js";
 </script>
 
 <style>

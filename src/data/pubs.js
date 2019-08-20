@@ -106,7 +106,7 @@ export default [
         "website": "http://fredhohman.com/papers/interactive-classification",
         "pdf": "https://arxiv.org/abs/1806.05660",
         "video": "https://www.youtube.com/watch?v=llub5GcOF6w",
-        "demo": "https://cabreraalex.com.github.io/interactive-classification",
+        "demo": "https://cabreraalex.github.io/interactive-classification",
         "code": "https://github.com/poloclub/interactive-classification"
     }
 ]

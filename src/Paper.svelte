@@ -1,6 +1,6 @@
 <script>
-  import Footer from "./Footer.svelte";
-  import pubs from "./pubs.js";
+  import Footer from "./components/Footer.svelte";
+  import pubs from "./data/pubs.js";
   export let params = {};
 
   let pub = pubs.find(e => e.id === params.id);

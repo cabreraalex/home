@@ -1,10 +1,10 @@
 <script>
   import { link } from "svelte-spa-router";
-  import news from "./news.js";
-  import pubs from "./pubs.js";
-  import Sidebar from "./Sidebar.svelte";
-  import Intro from "./Intro.svelte";
-  import Footer from "./Footer.svelte";
+  import news from "./data/news.js";
+  import pubs from "./data/pubs.js";
+  import Sidebar from "./components/Sidebar.svelte";
+  import Intro from "./components/Intro.svelte";
+  import Footer from "./components/Footer.svelte";
 
   (function(i, s, o, g, r, a, m) {
     i["GoogleAnalyticsObject"] = r;

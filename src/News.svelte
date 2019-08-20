@@ -1,7 +1,7 @@
 <script>
-  import Sidebar from "./Sidebar.svelte";
-  import Footer from "./Footer.svelte";
-  import news from "./news.js";
+  import Sidebar from "./components/Sidebar.svelte";
+  import Footer from "./components/Footer.svelte";
+  import news from "./data/news.js";
 </script>
 
 <div class="pure-g" id="main-container">
