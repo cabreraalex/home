@@ -41,6 +41,14 @@
                       </button>
                     </a>
                   {/if}
+                  {#if pub.code}
+                    <a href={pub.code}>
+                      <button>
+                        <i class="fab fa-github" />
+                        Code
+                      </button>
+                    </a>
+                  {/if}
                   {#if pub.workshop}
                     <a href={pub.workshop}>
                       <button>
@@ -62,14 +70,6 @@
                       <button>
                         <i class="fas fa-globe" />
                         Demo
-                      </button>
-                    </a>
-                  {/if}
-                  {#if pub.code}
-                    <a href={pub.code}>
-                      <button>
-                        <i class="fab fa-github" />
-                        Code
                       </button>
                     </a>
                   {/if}
