@@ -20,13 +20,12 @@
   }
   h5 {
     margin: 0px;
-    margin-bottom: 3px;
     font-size: 18px;
     font-weight: 700;
   }
   h6 {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 600;
     font-style: italic;
     font-family: "Open Sans", sans-serif;
     margin: 0px;
@@ -40,7 +39,7 @@
   }
 
   th {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
 
   .tags {
@@ -103,8 +102,9 @@
     color: #b3a369;
   }
 
-  .course {
+  .single {
     font-weight: 300;
+    margin-bottom: 0px;
   }
 
   .fas {
@@ -165,6 +165,7 @@
           <h6>Carnegie Mellon University - Pittsburgh, PA</h6>
         </th>
       </tr>
+      <tr class="buffer" />
       <tr class="item">
         <th class="date">
           August 2015
@@ -635,13 +636,13 @@
       <tr>
         <th class="date">October 2019</th>
         <th>
-          <h5 class="course">IEEE Visualization Conference (VIS) 2019</h5>
+          <h5 class="single">IEEE Visualization Conference (VIS) 2019</h5>
         </th>
       </tr>
       <tr>
         <th class="date">January 2019</th>
         <th>
-          <h5 class="course">
+          <h5 class="single">
             Fairness, Accountability, and Transparency (FAT*) 2019
           </h5>
         </th>
@@ -730,7 +731,7 @@
         <th class="date">Fall 2018</th>
         <th>
           <a href="https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/">
-            <h5 class="course">CS 4803/7643 - Deep Learning</h5>
+            <h5 class="single">CS 4803/7643 - Deep Learning</h5>
           </a>
         </th>
       </tr>
@@ -738,21 +739,21 @@
         <th class="date">Spring 2018</th>
         <th>
           <a href="http://poloclub.gatech.edu/cse6242/2018spring">
-            <h5 class="course">CX 4242/CSE 6242 - Data and Visual Analytics</h5>
+            <h5 class="single">CX 4242/CSE 6242 - Data and Visual Analytics</h5>
           </a>
         </th>
       </tr>
       <tr class="item">
         <th class="date">Fall 2017</th>
         <th>
-          <h5 class="course">BECO 1750A - Money and Banking</h5>
+          <h5 class="single">BECO 1750A - Money and Banking</h5>
         </th>
       </tr>
       <tr class="item">
         <th class="date">Spring 2017</th>
         <th>
           <a href="https://www.omscs.gatech.edu/cs-7641-machine-learning">
-            <h5 class="course">CS 4641/7641 - Machine Learning</h5>
+            <h5 class="single">CS 4641/7641 - Machine Learning</h5>
           </a>
         </th>
       </tr>
@@ -760,14 +761,14 @@
         <th class="date">Spring 2017</th>
         <th>
           <a href="http://cx4230.gatech.edu/sp17/">
-            <h5 class="course">CX 4230 - Computer Simulation</h5>
+            <h5 class="single">CX 4230 - Computer Simulation</h5>
           </a>
         </th>
       </tr>
       <tr class="item">
         <th class="date">Spring 2017</th>
         <th>
-          <h5 class="course">CS 3511 - Honors Algorithms</h5>
+          <h5 class="single">CS 3511 - Honors Algorithms</h5>
         </th>
       </tr>
       <!-- SKILLS -->
