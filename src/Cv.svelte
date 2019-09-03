@@ -137,7 +137,8 @@
     <header id="head">
       <h3 id="name">
         Ángel
-        <span class="red">Alex</span>ander
+        <span class="red">Alex</span>
+        ander
         <span class="red">Cabrera</span>
       </h3>
 
@@ -154,24 +155,33 @@
         </th>
       </tr>
       <tr class="item">
-        <th class="date">August 2019<br />- Present</th>
+        <th class="date">
+          August 2019
+          <br />
+          - Present
+        </th>
         <th>
           <h5>PhD in Human-Computer Interaction (HCI)</h5>
           <h6>Carnegie Mellon University - Pittsburgh, PA</h6>
         </th>
       </tr>
       <tr class="item">
-        <th class="date">August 2015<br />- May 2019</th>
+        <th class="date">
+          August 2015
+          <br />
+          - May 2019
+        </th>
         <th>
           <h5>B.S. in Computer Science</h5>
           <h6>
             <span class="gold">Georgia</span>
             Institute of
-            <span class="gold">Tech</span>nology - Atlanta, GA
+            <span class="gold">Tech</span>
+            nology - Atlanta, GA
           </h6>
           <p class="desc">
-            Concentration in intelligence and modeling/simulation. Minor
-            in economics. Overall GPA: 3.97/4.0
+            Concentration in intelligence and modeling/simulation. Minor in
+            economics. Overall GPA: 3.97/4.0
           </p>
         </th>
       </tr>
@@ -198,7 +208,8 @@
             National Science Foundation Graduate Research Fellowship (NSF GRFP)
           </h5>
           <p class="desc">
-            Three-year graduate fellowship for independent research. Full tuition with an annual stipend of $34,000.
+            Three-year graduate fellowship for independent research. Full
+            tuition with an annual stipend of $34,000.
           </p>
           <div class="tags">
             <a href="https://www.nsfgrfp.org/">
@@ -216,10 +227,12 @@
         <th>
           <h5>Love Family Foundation Scholarship</h5>
           <p class="desc">
-            Award for the undergraduate with the most outstanding scholastic record in the graduating class. Co-awarded the $10,000 scholarship.
+            Award for the undergraduate with the most outstanding scholastic
+            record in the graduating class. Co-awarded the $10,000 scholarship.
           </p>
           <div class="tags">
-            <a href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship">
+            <a
+              href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship">
               <button>
                 <i class="fas fa-globe" />
                 Announcement
@@ -227,12 +240,13 @@
             </a>
           </div>
         </th>
+      </tr>
       <tr class="buffer" />
       <tr class="item">
         <th class="date">
           August 2015
           <br />
-          - May 2019 
+          - May 2019
         </th>
         <th>
           <h5>Stamps President's Scholar</h5>
@@ -398,8 +412,9 @@
             a fully undergraduate-led satellite mission.
           </p>
           <div class="tags">
-            <a href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space">
-            <button>In space!</button>
+            <a
+              href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space">
+              <button>In space!</button>
             </a>
             <a href="http://prox-1.gatech.edu/">
               <button>
@@ -604,6 +619,33 @@
           </p>
         </th>
       </tr>
+      <!-- SERVICE -->
+      <tr>
+        <th class="date" />
+        <th>
+          <h4 class="header">Service</h4>
+        </th>
+      </tr>
+      <tr class="item">
+        <th class="date" />
+        <th>
+          <h5>Student Volunteer</h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">October 2019</th>
+        <th>
+          <h5 class="course">IEEE Visualization Conference (VIS) 2019</h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">January 2019</th>
+        <th>
+          <h5 class="course">
+            Fairness, Accountability, and Transparency (FAT*) 2019
+          </h5>
+        </th>
+      </tr>
       <!-- CAMPUS INVOLVEMENT -->
       <tr>
         <th class="date" />
@@ -782,7 +824,7 @@
       <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated August 6, 2019.</p>
+          <p class="desc">Last updated September 3, 2019.</p>
         </th>
       </tr>
     </table>
