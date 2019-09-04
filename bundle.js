@@ -729,7 +729,7 @@ var app = (function () {
     			a0 = element("a");
     			h30 = element("h3");
     			i0 = element("i");
-    			t0 = text(" \n     cabreraalex.com");
+    			t0 = text("\n       cabreraalex.com");
     			t1 = space();
     			a1 = element("a");
     			h31 = element("h3");
@@ -751,32 +751,37 @@ var app = (function () {
     			i4 = element("i");
     			t8 = text("\n       Google Scholar");
     			attr(i0, "class", "fas fa-home");
-    			add_location(i0, file, 3, 4, 66);
-    			add_location(h30, file, 2, 2, 57);
+    			add_location(i0, file, 9, 6, 123);
+    			attr(h30, "class", "svelte-1t8evy3");
+    			add_location(h30, file, 8, 4, 112);
     			attr(a0, "href", "https://cabreraalex.com");
-    			add_location(a0, file, 1, 2, 20);
+    			add_location(a0, file, 7, 2, 73);
     			attr(i1, "class", "fas fa-envelope");
-    			add_location(i1, file, 9, 6, 185);
-    			add_location(h31, file, 8, 4, 174);
+    			add_location(i1, file, 15, 6, 245);
+    			attr(h31, "class", "svelte-1t8evy3");
+    			add_location(h31, file, 14, 4, 234);
     			attr(a1, "href", "mailto:cabrera@cmu.edu");
-    			add_location(a1, file, 7, 2, 136);
+    			add_location(a1, file, 13, 2, 196);
     			attr(i2, "class", "fab fa-twitter social-icon");
-    			add_location(i2, file, 15, 6, 326);
-    			add_location(h32, file, 14, 4, 315);
+    			add_location(i2, file, 21, 6, 386);
+    			attr(h32, "class", "svelte-1t8evy3");
+    			add_location(h32, file, 20, 4, 375);
     			attr(a2, "href", "https://twitter.com/a_a_cabrera");
-    			add_location(a2, file, 13, 2, 268);
+    			add_location(a2, file, 19, 2, 328);
     			attr(i3, "class", "fab fa-github");
-    			add_location(i3, file, 21, 6, 474);
-    			add_location(h33, file, 20, 4, 463);
+    			add_location(i3, file, 27, 6, 534);
+    			attr(h33, "class", "svelte-1t8evy3");
+    			add_location(h33, file, 26, 4, 523);
     			attr(a3, "href", "https://github.com/cabreraalex");
-    			add_location(a3, file, 19, 2, 417);
+    			add_location(a3, file, 25, 2, 477);
     			attr(i4, "class", "fas fa-graduation-cap");
-    			add_location(i4, file, 27, 6, 633);
-    			add_location(h34, file, 26, 4, 622);
+    			add_location(i4, file, 33, 6, 693);
+    			attr(h34, "class", "svelte-1t8evy3");
+    			add_location(h34, file, 32, 4, 682);
     			attr(a4, "href", "https://scholar.google.com/citations?user=r89SDm0AAAAJ&hl=en");
-    			add_location(a4, file, 25, 2, 546);
+    			add_location(a4, file, 31, 2, 606);
     			attr(div, "id", "social");
-    			add_location(div, file, 0, 0, 0);
+    			add_location(div, file, 6, 0, 53);
     		},
 
     		l: function claim(nodes) {
@@ -869,32 +874,32 @@ var app = (function () {
     			attr(link, "href", "https://use.fontawesome.com/releases/v5.0.12/css/all.css");
     			attr(link, "integrity", "sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9");
     			attr(link, "crossorigin", "anonymous");
-    			add_location(link, file$1, 2, 0, 55);
+    			add_location(link, file$1, 4, 0, 60);
     			attr(img, "width", "170px");
     			attr(img, "src", "images/profile.jpg");
     			attr(img, "alt", "profile picture");
-    			add_location(img, file$1, 11, 16, 364);
+    			add_location(img, file$1, 13, 6, 368);
     			attr(a0, "href", "/");
-    			add_location(a0, file$1, 11, 4, 352);
+    			add_location(a0, file$1, 12, 4, 349);
     			attr(span0, "class", "name");
-    			add_location(span0, file$1, 14, 6, 481);
+    			add_location(span0, file$1, 17, 6, 490);
     			attr(span1, "class", "name");
-    			add_location(span1, file$1, 15, 6, 523);
+    			add_location(span1, file$1, 18, 6, 532);
     			attr(h1, "id", "name");
-    			add_location(h1, file$1, 12, 4, 441);
+    			add_location(h1, file$1, 15, 4, 450);
     			attr(button0, "class", "cv");
-    			add_location(button0, file$1, 19, 6, 609);
+    			add_location(button0, file$1, 22, 6, 618);
     			attr(a1, "href", "/#/cv");
-    			add_location(a1, file$1, 18, 4, 586);
+    			add_location(a1, file$1, 21, 4, 595);
     			attr(button1, "class", "cv");
-    			add_location(button1, file$1, 22, 6, 684);
+    			add_location(button1, file$1, 25, 6, 693);
     			attr(a2, "href", "/cv.pdf");
-    			add_location(a2, file$1, 21, 4, 659);
+    			add_location(a2, file$1, 24, 4, 668);
     			attr(div0, "id", "padded-sidebar");
-    			add_location(div0, file$1, 10, 2, 322);
+    			add_location(div0, file$1, 11, 2, 319);
     			attr(div1, "id", "sidebar");
     			attr(div1, "class", "pure-u-1 pure-u-md-1-4");
-    			add_location(div1, file$1, 9, 0, 270);
+    			add_location(div1, file$1, 10, 0, 267);
     		},
 
     		l: function claim(nodes) {
@@ -1250,6 +1255,7 @@ var app = (function () {
             "abstract": "The growing capability and accessibility of machine learning has led to its application to many real-world domains and data about people. Despite the benefits algorithmic systems may bring, models can reflect, inject, or exacerbate implicit and explicit societal biases into their outputs, disadvantaging certain demographic subgroups. Discovering which biases a machine learning model has introduced is a great challenge, due to the numerous definitions of fairness and the large number of potentially impacted subgroups. We present FairVis, a mixed-initiative visual analytics system that integrates a novel subgroup discovery technique for users to audit the fairness of machine learning models. Through FairVis, users can apply domain knowledge to generate and investigate known subgroups, and explore suggested and similar subgroups. FairVis' coordinated views enable users to explore a high-level overview of subgroup performance and subsequently drill down into detailed investigation of specific subgroups. We show how FairVis helps to discover biases in two real datasets used in predicting income and recidivism. As a visual analytics system devoted to discovering bias in machine learning, FairVis demonstrates how interactive visualization may help data scientists and the general public understand and create more equitable algorithmic systems.",
             "demo": "https://poloclub.github.io/FairVis/",
             "code": "https://github.com/poloclub/FairVis",
+            "blog": "https://medium.com/@cabreraalex/fairvis-discovering-bias-in-machine-learning-using-visual-analytics-acbd362a3e2f",
             "pdf": "https://arxiv.org/abs/1904.05419",
         },
         {
@@ -1487,9 +1493,446 @@ var app = (function () {
     	}
     }
 
+    /* src/components/Links.svelte generated by Svelte v3.9.1 */
+
+    const file$5 = "src/components/Links.svelte";
+
+    // (6:2) {#if pub.pdf}
+    function create_if_block_5(ctx) {
+    	var a, button, i, t, a_href_value;
+
+    	return {
+    		c: function create() {
+    			a = element("a");
+    			button = element("button");
+    			i = element("i");
+    			t = text("\n        PDF");
+    			attr(i, "class", "fas fa-file-pdf");
+    			add_location(i, file$5, 8, 8, 124);
+    			add_location(button, file$5, 7, 6, 107);
+    			attr(a, "href", a_href_value = ctx.pub.pdf);
+    			add_location(a, file$5, 6, 4, 82);
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert(target, a, anchor);
+    			append(a, button);
+    			append(button, i);
+    			append(button, t);
+    		},
+
+    		p: function update(changed, ctx) {
+    			if ((changed.pub) && a_href_value !== (a_href_value = ctx.pub.pdf)) {
+    				attr(a, "href", a_href_value);
+    			}
+    		},
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach(a);
+    			}
+    		}
+    	};
+    }
+
+    // (14:2) {#if pub.blog}
+    function create_if_block_4(ctx) {
+    	var a, button, i, t, a_href_value;
+
+    	return {
+    		c: function create() {
+    			a = element("a");
+    			button = element("button");
+    			i = element("i");
+    			t = text("\n        Blog");
+    			attr(i, "class", "fab fa-medium");
+    			add_location(i, file$5, 16, 8, 263);
+    			add_location(button, file$5, 15, 6, 246);
+    			attr(a, "href", a_href_value = ctx.pub.blog);
+    			add_location(a, file$5, 14, 4, 220);
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert(target, a, anchor);
+    			append(a, button);
+    			append(button, i);
+    			append(button, t);
+    		},
+
+    		p: function update(changed, ctx) {
+    			if ((changed.pub) && a_href_value !== (a_href_value = ctx.pub.blog)) {
+    				attr(a, "href", a_href_value);
+    			}
+    		},
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach(a);
+    			}
+    		}
+    	};
+    }
+
+    // (22:2) {#if pub.workshop}
+    function create_if_block_3(ctx) {
+    	var a, button, i, t, a_href_value;
+
+    	return {
+    		c: function create() {
+    			a = element("a");
+    			button = element("button");
+    			i = element("i");
+    			t = text("\n        Workshop");
+    			attr(i, "class", "fas fa-globe");
+    			add_location(i, file$5, 24, 8, 409);
+    			add_location(button, file$5, 23, 6, 392);
+    			attr(a, "href", a_href_value = ctx.pub.workshop);
+    			add_location(a, file$5, 22, 4, 362);
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert(target, a, anchor);
+    			append(a, button);
+    			append(button, i);
+    			append(button, t);
+    		},
+
+    		p: function update(changed, ctx) {
+    			if ((changed.pub) && a_href_value !== (a_href_value = ctx.pub.workshop)) {
+    				attr(a, "href", a_href_value);
+    			}
+    		},
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach(a);
+    			}
+    		}
+    	};
+    }
+
+    // (30:2) {#if pub.video}
+    function create_if_block_2(ctx) {
+    	var a, button, i, t, a_href_value;
+
+    	return {
+    		c: function create() {
+    			a = element("a");
+    			button = element("button");
+    			i = element("i");
+    			t = text("\n        Video");
+    			attr(i, "class", "fab fa-youtube");
+    			add_location(i, file$5, 32, 8, 552);
+    			add_location(button, file$5, 31, 6, 535);
+    			attr(a, "href", a_href_value = ctx.pub.video);
+    			add_location(a, file$5, 30, 4, 508);
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert(target, a, anchor);
+    			append(a, button);
+    			append(button, i);
+    			append(button, t);
+    		},
+
+    		p: function update(changed, ctx) {
+    			if ((changed.pub) && a_href_value !== (a_href_value = ctx.pub.video)) {
+    				attr(a, "href", a_href_value);
+    			}
+    		},
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach(a);
+    			}
+    		}
+    	};
+    }
+
+    // (38:2) {#if pub.demo}
+    function create_if_block_1(ctx) {
+    	var a, button, i, t, a_href_value;
+
+    	return {
+    		c: function create() {
+    			a = element("a");
+    			button = element("button");
+    			i = element("i");
+    			t = text("\n        Demo");
+    			attr(i, "class", "fas fa-globe");
+    			add_location(i, file$5, 40, 8, 692);
+    			add_location(button, file$5, 39, 6, 675);
+    			attr(a, "href", a_href_value = ctx.pub.demo);
+    			add_location(a, file$5, 38, 4, 649);
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert(target, a, anchor);
+    			append(a, button);
+    			append(button, i);
+    			append(button, t);
+    		},
+
+    		p: function update(changed, ctx) {
+    			if ((changed.pub) && a_href_value !== (a_href_value = ctx.pub.demo)) {
+    				attr(a, "href", a_href_value);
+    			}
+    		},
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach(a);
+    			}
+    		}
+    	};
+    }
+
+    // (46:2) {#if pub.code}
+    function create_if_block(ctx) {
+    	var a, button, i, t, a_href_value;
+
+    	return {
+    		c: function create() {
+    			a = element("a");
+    			button = element("button");
+    			i = element("i");
+    			t = text("\n        Code");
+    			attr(i, "class", "fab fa-github");
+    			add_location(i, file$5, 48, 8, 829);
+    			add_location(button, file$5, 47, 6, 812);
+    			attr(a, "href", a_href_value = ctx.pub.code);
+    			add_location(a, file$5, 46, 4, 786);
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert(target, a, anchor);
+    			append(a, button);
+    			append(button, i);
+    			append(button, t);
+    		},
+
+    		p: function update(changed, ctx) {
+    			if ((changed.pub) && a_href_value !== (a_href_value = ctx.pub.code)) {
+    				attr(a, "href", a_href_value);
+    			}
+    		},
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach(a);
+    			}
+    		}
+    	};
+    }
+
+    function create_fragment$6(ctx) {
+    	var div, t0, t1, t2, t3, t4, t5, a, button, i, t6, a_href_value;
+
+    	var if_block0 = (ctx.pub.pdf) && create_if_block_5(ctx);
+
+    	var if_block1 = (ctx.pub.blog) && create_if_block_4(ctx);
+
+    	var if_block2 = (ctx.pub.workshop) && create_if_block_3(ctx);
+
+    	var if_block3 = (ctx.pub.video) && create_if_block_2(ctx);
+
+    	var if_block4 = (ctx.pub.demo) && create_if_block_1(ctx);
+
+    	var if_block5 = (ctx.pub.code) && create_if_block(ctx);
+
+    	return {
+    		c: function create() {
+    			div = element("div");
+    			if (if_block0) if_block0.c();
+    			t0 = space();
+    			if (if_block1) if_block1.c();
+    			t1 = space();
+    			if (if_block2) if_block2.c();
+    			t2 = space();
+    			if (if_block3) if_block3.c();
+    			t3 = space();
+    			if (if_block4) if_block4.c();
+    			t4 = space();
+    			if (if_block5) if_block5.c();
+    			t5 = space();
+    			a = element("a");
+    			button = element("button");
+    			i = element("i");
+    			t6 = text("\n      Website");
+    			attr(i, "class", "fas fa-globe");
+    			add_location(i, file$5, 55, 6, 955);
+    			add_location(button, file$5, 54, 4, 940);
+    			attr(a, "href", a_href_value = '#/paper/' + ctx.pub.id);
+    			add_location(a, file$5, 53, 2, 905);
+    			attr(div, "class", "buttons");
+    			add_location(div, file$5, 4, 0, 40);
+    		},
+
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert(target, div, anchor);
+    			if (if_block0) if_block0.m(div, null);
+    			append(div, t0);
+    			if (if_block1) if_block1.m(div, null);
+    			append(div, t1);
+    			if (if_block2) if_block2.m(div, null);
+    			append(div, t2);
+    			if (if_block3) if_block3.m(div, null);
+    			append(div, t3);
+    			if (if_block4) if_block4.m(div, null);
+    			append(div, t4);
+    			if (if_block5) if_block5.m(div, null);
+    			append(div, t5);
+    			append(div, a);
+    			append(a, button);
+    			append(button, i);
+    			append(button, t6);
+    		},
+
+    		p: function update(changed, ctx) {
+    			if (ctx.pub.pdf) {
+    				if (if_block0) {
+    					if_block0.p(changed, ctx);
+    				} else {
+    					if_block0 = create_if_block_5(ctx);
+    					if_block0.c();
+    					if_block0.m(div, t0);
+    				}
+    			} else if (if_block0) {
+    				if_block0.d(1);
+    				if_block0 = null;
+    			}
+
+    			if (ctx.pub.blog) {
+    				if (if_block1) {
+    					if_block1.p(changed, ctx);
+    				} else {
+    					if_block1 = create_if_block_4(ctx);
+    					if_block1.c();
+    					if_block1.m(div, t1);
+    				}
+    			} else if (if_block1) {
+    				if_block1.d(1);
+    				if_block1 = null;
+    			}
+
+    			if (ctx.pub.workshop) {
+    				if (if_block2) {
+    					if_block2.p(changed, ctx);
+    				} else {
+    					if_block2 = create_if_block_3(ctx);
+    					if_block2.c();
+    					if_block2.m(div, t2);
+    				}
+    			} else if (if_block2) {
+    				if_block2.d(1);
+    				if_block2 = null;
+    			}
+
+    			if (ctx.pub.video) {
+    				if (if_block3) {
+    					if_block3.p(changed, ctx);
+    				} else {
+    					if_block3 = create_if_block_2(ctx);
+    					if_block3.c();
+    					if_block3.m(div, t3);
+    				}
+    			} else if (if_block3) {
+    				if_block3.d(1);
+    				if_block3 = null;
+    			}
+
+    			if (ctx.pub.demo) {
+    				if (if_block4) {
+    					if_block4.p(changed, ctx);
+    				} else {
+    					if_block4 = create_if_block_1(ctx);
+    					if_block4.c();
+    					if_block4.m(div, t4);
+    				}
+    			} else if (if_block4) {
+    				if_block4.d(1);
+    				if_block4 = null;
+    			}
+
+    			if (ctx.pub.code) {
+    				if (if_block5) {
+    					if_block5.p(changed, ctx);
+    				} else {
+    					if_block5 = create_if_block(ctx);
+    					if_block5.c();
+    					if_block5.m(div, t5);
+    				}
+    			} else if (if_block5) {
+    				if_block5.d(1);
+    				if_block5 = null;
+    			}
+
+    			if ((changed.pub) && a_href_value !== (a_href_value = '#/paper/' + ctx.pub.id)) {
+    				attr(a, "href", a_href_value);
+    			}
+    		},
+
+    		i: noop,
+    		o: noop,
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach(div);
+    			}
+
+    			if (if_block0) if_block0.d();
+    			if (if_block1) if_block1.d();
+    			if (if_block2) if_block2.d();
+    			if (if_block3) if_block3.d();
+    			if (if_block4) if_block4.d();
+    			if (if_block5) if_block5.d();
+    		}
+    	};
+    }
+
+    function instance$1($$self, $$props, $$invalidate) {
+    	let { pub } = $$props;
+
+    	const writable_props = ['pub'];
+    	Object.keys($$props).forEach(key => {
+    		if (!writable_props.includes(key) && !key.startsWith('$$')) console.warn(`<Links> was created with unknown prop '${key}'`);
+    	});
+
+    	$$self.$set = $$props => {
+    		if ('pub' in $$props) $$invalidate('pub', pub = $$props.pub);
+    	};
+
+    	return { pub };
+    }
+
+    class Links extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$1, create_fragment$6, safe_not_equal, ["pub"]);
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+    		if (ctx.pub === undefined && !('pub' in props)) {
+    			console.warn("<Links> was created without expected prop 'pub'");
+    		}
+    	}
+
+    	get pub() {
+    		throw new Error("<Links>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set pub(value) {
+    		throw new Error("<Links>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+    }
+
     /* src/Home.svelte generated by Svelte v3.9.1 */
 
-    const file$5 = "src/Home.svelte";
+    const file$6 = "src/Home.svelte";
 
     function get_each_context$1(ctx, list, i) {
     	const child_ctx = Object.create(ctx);
@@ -1504,7 +1947,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (48:8) {#each {length: 3} as _, i}
+    // (49:8) {#each {length: 3} as _, i}
     function create_each_block_1(ctx) {
     	var div, p0, t0_value = news[ctx.i].date + "", t0, t1, p1, raw_value = news[ctx.i].news + "", t2;
 
@@ -1517,11 +1960,11 @@ var app = (function () {
     			p1 = element("p");
     			t2 = space();
     			attr(p0, "class", "pure-u-1 pure-u-md-1-4 date");
-    			add_location(p0, file$5, 49, 12, 1314);
+    			add_location(p0, file$6, 50, 12, 1363);
     			attr(p1, "class", "item pure-u-1 pure-u-md-3-4");
-    			add_location(p1, file$5, 50, 12, 1384);
+    			add_location(p1, file$6, 51, 12, 1433);
     			attr(div, "class", "news-item pure-g");
-    			add_location(div, file$5, 48, 10, 1271);
+    			add_location(div, file$6, 49, 10, 1320);
     		},
 
     		m: function mount(target, anchor) {
@@ -1544,195 +1987,20 @@ var app = (function () {
     	};
     }
 
-    // (86:18) {#if pub.pdf}
-    function create_if_block_4(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                        PDF");
-    			attr(i, "class", "fas fa-file-pdf");
-    			add_location(i, file$5, 88, 24, 2697);
-    			add_location(button, file$5, 87, 22, 2664);
-    			attr(a, "href", a_href_value = ctx.pub.pdf);
-    			add_location(a, file$5, 86, 20, 2623);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (94:18) {#if pub.workshop}
-    function create_if_block_3(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                        Workshop");
-    			attr(i, "class", "fas fa-globe");
-    			add_location(i, file$5, 96, 24, 2972);
-    			add_location(button, file$5, 95, 22, 2939);
-    			attr(a, "href", a_href_value = ctx.pub.workshop);
-    			add_location(a, file$5, 94, 20, 2893);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (102:18) {#if pub.video}
-    function create_if_block_2(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                        Video");
-    			attr(i, "class", "fab fa-youtube");
-    			add_location(i, file$5, 104, 24, 3243);
-    			add_location(button, file$5, 103, 22, 3210);
-    			attr(a, "href", a_href_value = ctx.pub.video);
-    			add_location(a, file$5, 102, 20, 3167);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (110:18) {#if pub.demo}
-    function create_if_block_1(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                        Demo");
-    			attr(i, "class", "fas fa-globe");
-    			add_location(i, file$5, 112, 24, 3511);
-    			add_location(button, file$5, 111, 22, 3478);
-    			attr(a, "href", a_href_value = ctx.pub.demo);
-    			add_location(a, file$5, 110, 20, 3436);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (118:18) {#if pub.code}
-    function create_if_block(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                        Code");
-    			attr(i, "class", "fab fa-github");
-    			add_location(i, file$5, 120, 24, 3776);
-    			add_location(button, file$5, 119, 22, 3743);
-    			attr(a, "href", a_href_value = ctx.pub.code);
-    			add_location(a, file$5, 118, 20, 3701);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (62:8) {#each pubs as pub}
+    // (63:8) {#each pubs as pub}
     function create_each_block$1(ctx) {
-    	var div5, div1, div0, a0, img, img_src_value, a0_href_value, t0, h6, t1_value = ctx.pub.venue + "", t1, t2, div4, div3, a1, h4, t3_value = ctx.pub.title + "", t3, a1_href_value, t4, h5, raw_value = ctx.pub.authors
+    	var div4, div1, div0, a0, img, img_src_value, a0_href_value, t0, h6, t1_value = ctx.pub.venue + "", t1, t2, div3, div2, a1, h4, t3_value = ctx.pub.title + "", t3, a1_href_value, t4, h5, raw_value = ctx.pub.authors
                         .map(func)
-                        .join(', ') + "", t5, div2, t6, t7, t8, t9, t10, a2, button, i, t11, a2_href_value, t12;
+                        .join(', ') + "", t5, t6, current;
 
-    	var if_block0 = (ctx.pub.pdf) && create_if_block_4(ctx);
-
-    	var if_block1 = (ctx.pub.workshop) && create_if_block_3(ctx);
-
-    	var if_block2 = (ctx.pub.video) && create_if_block_2(ctx);
-
-    	var if_block3 = (ctx.pub.demo) && create_if_block_1(ctx);
-
-    	var if_block4 = (ctx.pub.code) && create_if_block(ctx);
+    	var links = new Links({
+    		props: { pub: ctx.pub },
+    		$$inline: true
+    	});
 
     	return {
     		c: function create() {
-    			div5 = element("div");
+    			div4 = element("div");
     			div1 = element("div");
     			div0 = element("div");
     			a0 = element("a");
@@ -1741,181 +2009,94 @@ var app = (function () {
     			h6 = element("h6");
     			t1 = text(t1_value);
     			t2 = space();
-    			div4 = element("div");
     			div3 = element("div");
+    			div2 = element("div");
     			a1 = element("a");
     			h4 = element("h4");
     			t3 = text(t3_value);
     			t4 = space();
     			h5 = element("h5");
     			t5 = space();
-    			div2 = element("div");
-    			if (if_block0) if_block0.c();
+    			links.$$.fragment.c();
     			t6 = space();
-    			if (if_block1) if_block1.c();
-    			t7 = space();
-    			if (if_block2) if_block2.c();
-    			t8 = space();
-    			if (if_block3) if_block3.c();
-    			t9 = space();
-    			if (if_block4) if_block4.c();
-    			t10 = space();
-    			a2 = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t11 = text("\n                      Website");
-    			t12 = space();
     			attr(img, "src", img_src_value = 'images/' + ctx.pub.teaser);
     			attr(img, "class", "thumb");
     			attr(img, "alt", "teaser");
-    			add_location(img, file$5, 66, 18, 1893);
+    			add_location(img, file$6, 67, 18, 1942);
     			attr(a0, "href", a0_href_value = '#/paper/' + ctx.pub.id);
-    			add_location(a0, file$5, 65, 16, 1844);
+    			add_location(a0, file$6, 66, 16, 1893);
     			attr(h6, "class", "venue");
-    			add_location(h6, file$5, 71, 16, 2054);
+    			add_location(h6, file$6, 72, 16, 2103);
     			attr(div0, "class", "thumb");
-    			add_location(div0, file$5, 64, 14, 1808);
+    			add_location(div0, file$6, 65, 14, 1857);
     			attr(div1, "class", "pure-u-1 pure-u-md-1-4");
-    			add_location(div1, file$5, 63, 12, 1757);
-    			add_location(h4, file$5, 77, 18, 2298);
+    			add_location(div1, file$6, 64, 12, 1806);
+    			add_location(h4, file$6, 78, 18, 2347);
     			attr(a1, "href", a1_href_value = '#/paper/' + ctx.pub.id);
     			attr(a1, "class", "paper-title");
-    			add_location(a1, file$5, 76, 16, 2229);
-    			add_location(h5, file$5, 79, 16, 2356);
-    			attr(i, "class", "fas fa-globe");
-    			add_location(i, file$5, 127, 22, 4014);
-    			add_location(button, file$5, 126, 20, 3983);
-    			attr(a2, "href", a2_href_value = '#/paper/' + ctx.pub.id);
-    			add_location(a2, file$5, 125, 18, 3932);
-    			attr(div2, "class", "buttons");
-    			add_location(div2, file$5, 84, 16, 2549);
-    			attr(div3, "class", "padded");
-    			add_location(div3, file$5, 75, 14, 2192);
-    			attr(div4, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div4, file$5, 74, 12, 2141);
-    			attr(div5, "class", "pure-g pub");
-    			add_location(div5, file$5, 62, 10, 1720);
+    			add_location(a1, file$6, 77, 16, 2278);
+    			add_location(h5, file$6, 80, 16, 2405);
+    			attr(div2, "class", "padded");
+    			add_location(div2, file$6, 76, 14, 2241);
+    			attr(div3, "class", "pure-u-1 pure-u-md-3-4");
+    			add_location(div3, file$6, 75, 12, 2190);
+    			attr(div4, "class", "pure-g pub");
+    			add_location(div4, file$6, 63, 10, 1769);
     		},
 
     		m: function mount(target, anchor) {
-    			insert(target, div5, anchor);
-    			append(div5, div1);
+    			insert(target, div4, anchor);
+    			append(div4, div1);
     			append(div1, div0);
     			append(div0, a0);
     			append(a0, img);
     			append(div0, t0);
     			append(div0, h6);
     			append(h6, t1);
-    			append(div5, t2);
-    			append(div5, div4);
+    			append(div4, t2);
     			append(div4, div3);
-    			append(div3, a1);
+    			append(div3, div2);
+    			append(div2, a1);
     			append(a1, h4);
     			append(h4, t3);
-    			append(div3, t4);
-    			append(div3, h5);
+    			append(div2, t4);
+    			append(div2, h5);
     			h5.innerHTML = raw_value;
     			append(div3, t5);
-    			append(div3, div2);
-    			if (if_block0) if_block0.m(div2, null);
-    			append(div2, t6);
-    			if (if_block1) if_block1.m(div2, null);
-    			append(div2, t7);
-    			if (if_block2) if_block2.m(div2, null);
-    			append(div2, t8);
-    			if (if_block3) if_block3.m(div2, null);
-    			append(div2, t9);
-    			if (if_block4) if_block4.m(div2, null);
-    			append(div2, t10);
-    			append(div2, a2);
-    			append(a2, button);
-    			append(button, i);
-    			append(button, t11);
-    			append(div5, t12);
+    			mount_component(links, div3, null);
+    			append(div4, t6);
+    			current = true;
     		},
 
     		p: function update(changed, ctx) {
-    			if (ctx.pub.pdf) {
-    				if (if_block0) {
-    					if_block0.p(changed, ctx);
-    				} else {
-    					if_block0 = create_if_block_4(ctx);
-    					if_block0.c();
-    					if_block0.m(div2, t6);
-    				}
-    			} else if (if_block0) {
-    				if_block0.d(1);
-    				if_block0 = null;
-    			}
+    			var links_changes = {};
+    			if (changed.pubs) links_changes.pub = ctx.pub;
+    			links.$set(links_changes);
+    		},
 
-    			if (ctx.pub.workshop) {
-    				if (if_block1) {
-    					if_block1.p(changed, ctx);
-    				} else {
-    					if_block1 = create_if_block_3(ctx);
-    					if_block1.c();
-    					if_block1.m(div2, t7);
-    				}
-    			} else if (if_block1) {
-    				if_block1.d(1);
-    				if_block1 = null;
-    			}
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(links.$$.fragment, local);
 
-    			if (ctx.pub.video) {
-    				if (if_block2) {
-    					if_block2.p(changed, ctx);
-    				} else {
-    					if_block2 = create_if_block_2(ctx);
-    					if_block2.c();
-    					if_block2.m(div2, t8);
-    				}
-    			} else if (if_block2) {
-    				if_block2.d(1);
-    				if_block2 = null;
-    			}
+    			current = true;
+    		},
 
-    			if (ctx.pub.demo) {
-    				if (if_block3) {
-    					if_block3.p(changed, ctx);
-    				} else {
-    					if_block3 = create_if_block_1(ctx);
-    					if_block3.c();
-    					if_block3.m(div2, t9);
-    				}
-    			} else if (if_block3) {
-    				if_block3.d(1);
-    				if_block3 = null;
-    			}
-
-    			if (ctx.pub.code) {
-    				if (if_block4) {
-    					if_block4.p(changed, ctx);
-    				} else {
-    					if_block4 = create_if_block(ctx);
-    					if_block4.c();
-    					if_block4.m(div2, t10);
-    				}
-    			} else if (if_block4) {
-    				if_block4.d(1);
-    				if_block4 = null;
-    			}
+    		o: function outro(local) {
+    			transition_out(links.$$.fragment, local);
+    			current = false;
     		},
 
     		d: function destroy(detaching) {
     			if (detaching) {
-    				detach(div5);
+    				detach(div4);
     			}
 
-    			if (if_block0) if_block0.d();
-    			if (if_block1) if_block1.d();
-    			if (if_block2) if_block2.d();
-    			if (if_block3) if_block3.d();
-    			if (if_block4) if_block4.d();
+    			destroy_component(links);
     		}
     	};
     }
 
-    function create_fragment$6(ctx) {
+    function create_fragment$7(ctx) {
     	var div5, t0, div4, div3, div0, h20, t1, span, t3, t4, t5, div1, h21, t6, a0, t8, t9, div2, h22, t10, a1, t12, t13, current;
 
     	var sidebar = new Sidebar({ $$inline: true });
@@ -1937,6 +2118,10 @@ var app = (function () {
     	for (var i = 0; i < each_value.length; i += 1) {
     		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
     	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
 
     	var footer = new Footer({ $$inline: true });
 
@@ -1982,32 +2167,32 @@ var app = (function () {
     			t13 = space();
     			footer.$$.fragment.c();
     			attr(span, "class", "name");
-    			add_location(span, file$5, 38, 30, 1013);
-    			add_location(h20, file$5, 37, 8, 978);
+    			add_location(span, file$6, 39, 30, 1062);
+    			add_location(h20, file$6, 38, 8, 1027);
     			attr(div0, "id", "intro");
-    			add_location(div0, file$5, 36, 6, 953);
+    			add_location(div0, file$6, 37, 6, 1002);
     			attr(a0, "class", "right-all");
     			attr(a0, "href", "#/news");
-    			add_location(a0, file$5, 45, 10, 1163);
-    			add_location(h21, file$5, 43, 8, 1133);
+    			add_location(a0, file$6, 46, 10, 1212);
+    			add_location(h21, file$6, 44, 8, 1182);
     			attr(div1, "id", "news");
     			attr(div1, "class", "sect");
-    			add_location(div1, file$5, 42, 6, 1096);
+    			add_location(div1, file$6, 43, 6, 1145);
     			attr(a1, "class", "right-all");
     			attr(a1, "href", "#/pubs");
-    			add_location(a1, file$5, 59, 10, 1612);
-    			add_location(h22, file$5, 57, 8, 1565);
+    			add_location(a1, file$6, 60, 10, 1661);
+    			add_location(h22, file$6, 58, 8, 1614);
     			attr(div2, "id", "pubs");
     			attr(div2, "class", "sect");
-    			add_location(div2, file$5, 56, 6, 1528);
+    			add_location(div2, file$6, 57, 6, 1577);
     			attr(div3, "id", "padded-content");
-    			add_location(div3, file$5, 35, 4, 921);
+    			add_location(div3, file$6, 36, 4, 970);
     			attr(div4, "id", "content");
     			attr(div4, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div4, file$5, 34, 2, 867);
+    			add_location(div4, file$6, 35, 2, 916);
     			attr(div5, "class", "pure-g");
     			attr(div5, "id", "main-container");
-    			add_location(div5, file$5, 32, 0, 810);
+    			add_location(div5, file$6, 33, 0, 859);
     		},
 
     		l: function claim(nodes) {
@@ -2084,17 +2269,18 @@ var app = (function () {
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(changed, child_ctx);
+    						transition_in(each_blocks[i], 1);
     					} else {
     						each_blocks[i] = create_each_block$1(child_ctx);
     						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
     						each_blocks[i].m(div2, null);
     					}
     				}
 
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-    				each_blocks.length = each_value.length;
+    				group_outros();
+    				for (i = each_value.length; i < each_blocks.length; i += 1) out(i);
+    				check_outros();
     			}
     		},
 
@@ -2104,6 +2290,8 @@ var app = (function () {
 
     			transition_in(intro.$$.fragment, local);
 
+    			for (var i = 0; i < each_value.length; i += 1) transition_in(each_blocks[i]);
+
     			transition_in(footer.$$.fragment, local);
 
     			current = true;
@@ -2112,6 +2300,10 @@ var app = (function () {
     		o: function outro(local) {
     			transition_out(sidebar.$$.fragment, local);
     			transition_out(intro.$$.fragment, local);
+
+    			each_blocks = each_blocks.filter(Boolean);
+    			for (let i = 0; i < each_blocks.length; i += 1) transition_out(each_blocks[i]);
+
     			transition_out(footer.$$.fragment, local);
     			current = false;
     		},
@@ -2138,7 +2330,7 @@ var app = (function () {
     	return "<a href='" + p.website + "'>" + p.name + '</a>';
     }
 
-    function instance$1($$self) {
+    function instance$2($$self) {
     	
 
       (function(i, s, o, g, r, a, m) {
@@ -2170,13 +2362,13 @@ var app = (function () {
     class Home extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$1, create_fragment$6, safe_not_equal, []);
+    		init(this, options, instance$2, create_fragment$7, safe_not_equal, []);
     	}
     }
 
     /* src/Pubs.svelte generated by Svelte v3.9.1 */
 
-    const file$6 = "src/Pubs.svelte";
+    const file$7 = "src/Pubs.svelte";
 
     function get_each_context$2(ctx, list, i) {
     	const child_ctx = Object.create(ctx);
@@ -2184,195 +2376,20 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (36:18) {#if pub.pdf}
-    function create_if_block_4$1(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                        PDF");
-    			attr(i, "class", "fas fa-file-pdf");
-    			add_location(i, file$6, 38, 24, 1341);
-    			add_location(button, file$6, 37, 22, 1308);
-    			attr(a, "href", a_href_value = ctx.pub.pdf);
-    			add_location(a, file$6, 36, 20, 1267);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (44:18) {#if pub.code}
-    function create_if_block_3$1(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                        Code");
-    			attr(i, "class", "fab fa-github");
-    			add_location(i, file$6, 46, 24, 1608);
-    			add_location(button, file$6, 45, 22, 1575);
-    			attr(a, "href", a_href_value = ctx.pub.code);
-    			add_location(a, file$6, 44, 20, 1533);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (52:18) {#if pub.workshop}
-    function create_if_block_2$1(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                        Workshop");
-    			attr(i, "class", "fas fa-globe");
-    			add_location(i, file$6, 54, 24, 1882);
-    			add_location(button, file$6, 53, 22, 1849);
-    			attr(a, "href", a_href_value = ctx.pub.workshop);
-    			add_location(a, file$6, 52, 20, 1803);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (60:18) {#if pub.video}
-    function create_if_block_1$1(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                        Video");
-    			attr(i, "class", "fab fa-youtube");
-    			add_location(i, file$6, 62, 24, 2153);
-    			add_location(button, file$6, 61, 22, 2120);
-    			attr(a, "href", a_href_value = ctx.pub.video);
-    			add_location(a, file$6, 60, 20, 2077);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (68:18) {#if pub.demo}
-    function create_if_block$1(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                        Demo");
-    			attr(i, "class", "fas fa-globe");
-    			add_location(i, file$6, 70, 24, 2421);
-    			add_location(button, file$6, 69, 22, 2388);
-    			attr(a, "href", a_href_value = ctx.pub.demo);
-    			add_location(a, file$6, 68, 20, 2346);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (12:8) {#each pubs as pub}
+    // (13:8) {#each pubs as pub}
     function create_each_block$2(ctx) {
-    	var div5, div1, div0, a0, img, img_src_value, a0_href_value, t0, h6, t1_value = ctx.pub.venue + "", t1, t2, div4, div3, a1, h4, t3_value = ctx.pub.title + "", t3, a1_href_value, t4, h5, raw_value = ctx.pub.authors
+    	var div4, div1, div0, a0, img, img_src_value, a0_href_value, t0, h6, t1_value = ctx.pub.venue + "", t1, t2, div3, div2, a1, h4, t3_value = ctx.pub.title + "", t3, a1_href_value, t4, h5, raw_value = ctx.pub.authors
                         .map(func$1)
-                        .join(', ') + "", t5, div2, t6, t7, t8, t9, t10, a2, button, i, t11, a2_href_value, t12;
+                        .join(', ') + "", t5, t6, current;
 
-    	var if_block0 = (ctx.pub.pdf) && create_if_block_4$1(ctx);
-
-    	var if_block1 = (ctx.pub.code) && create_if_block_3$1(ctx);
-
-    	var if_block2 = (ctx.pub.workshop) && create_if_block_2$1(ctx);
-
-    	var if_block3 = (ctx.pub.video) && create_if_block_1$1(ctx);
-
-    	var if_block4 = (ctx.pub.demo) && create_if_block$1(ctx);
+    	var links = new Links({
+    		props: { pub: ctx.pub },
+    		$$inline: true
+    	});
 
     	return {
     		c: function create() {
-    			div5 = element("div");
+    			div4 = element("div");
     			div1 = element("div");
     			div0 = element("div");
     			a0 = element("a");
@@ -2381,181 +2398,94 @@ var app = (function () {
     			h6 = element("h6");
     			t1 = text(t1_value);
     			t2 = space();
-    			div4 = element("div");
     			div3 = element("div");
+    			div2 = element("div");
     			a1 = element("a");
     			h4 = element("h4");
     			t3 = text(t3_value);
     			t4 = space();
     			h5 = element("h5");
     			t5 = space();
-    			div2 = element("div");
-    			if (if_block0) if_block0.c();
+    			links.$$.fragment.c();
     			t6 = space();
-    			if (if_block1) if_block1.c();
-    			t7 = space();
-    			if (if_block2) if_block2.c();
-    			t8 = space();
-    			if (if_block3) if_block3.c();
-    			t9 = space();
-    			if (if_block4) if_block4.c();
-    			t10 = space();
-    			a2 = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t11 = text("\n                      Website");
-    			t12 = space();
     			attr(img, "src", img_src_value = 'images/' + ctx.pub.teaser);
     			attr(img, "class", "thumb");
     			attr(img, "alt", "teaser");
-    			add_location(img, file$6, 16, 18, 537);
+    			add_location(img, file$7, 17, 18, 586);
     			attr(a0, "href", a0_href_value = '#/paper/' + ctx.pub.id);
-    			add_location(a0, file$6, 15, 16, 488);
+    			add_location(a0, file$7, 16, 16, 537);
     			attr(h6, "class", "venue");
-    			add_location(h6, file$6, 21, 16, 698);
+    			add_location(h6, file$7, 22, 16, 747);
     			attr(div0, "class", "thumb");
-    			add_location(div0, file$6, 14, 14, 452);
+    			add_location(div0, file$7, 15, 14, 501);
     			attr(div1, "class", "pure-u-1 pure-u-md-1-4");
-    			add_location(div1, file$6, 13, 12, 401);
-    			add_location(h4, file$6, 27, 18, 942);
+    			add_location(div1, file$7, 14, 12, 450);
+    			add_location(h4, file$7, 28, 18, 991);
     			attr(a1, "href", a1_href_value = '#/paper/' + ctx.pub.id);
     			attr(a1, "class", "paper-title");
-    			add_location(a1, file$6, 26, 16, 873);
-    			add_location(h5, file$6, 29, 16, 1000);
-    			attr(i, "class", "fas fa-globe");
-    			add_location(i, file$6, 77, 22, 2658);
-    			add_location(button, file$6, 76, 20, 2627);
-    			attr(a2, "href", a2_href_value = '#/paper/' + ctx.pub.id);
-    			add_location(a2, file$6, 75, 18, 2576);
-    			attr(div2, "class", "buttons");
-    			add_location(div2, file$6, 34, 16, 1193);
-    			attr(div3, "class", "padded");
-    			add_location(div3, file$6, 25, 14, 836);
-    			attr(div4, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div4, file$6, 24, 12, 785);
-    			attr(div5, "class", "pure-g pub");
-    			add_location(div5, file$6, 12, 10, 364);
+    			add_location(a1, file$7, 27, 16, 922);
+    			add_location(h5, file$7, 30, 16, 1049);
+    			attr(div2, "class", "padded");
+    			add_location(div2, file$7, 26, 14, 885);
+    			attr(div3, "class", "pure-u-1 pure-u-md-3-4");
+    			add_location(div3, file$7, 25, 12, 834);
+    			attr(div4, "class", "pure-g pub");
+    			add_location(div4, file$7, 13, 10, 413);
     		},
 
     		m: function mount(target, anchor) {
-    			insert(target, div5, anchor);
-    			append(div5, div1);
+    			insert(target, div4, anchor);
+    			append(div4, div1);
     			append(div1, div0);
     			append(div0, a0);
     			append(a0, img);
     			append(div0, t0);
     			append(div0, h6);
     			append(h6, t1);
-    			append(div5, t2);
-    			append(div5, div4);
+    			append(div4, t2);
     			append(div4, div3);
-    			append(div3, a1);
+    			append(div3, div2);
+    			append(div2, a1);
     			append(a1, h4);
     			append(h4, t3);
-    			append(div3, t4);
-    			append(div3, h5);
+    			append(div2, t4);
+    			append(div2, h5);
     			h5.innerHTML = raw_value;
-    			append(div3, t5);
-    			append(div3, div2);
-    			if (if_block0) if_block0.m(div2, null);
-    			append(div2, t6);
-    			if (if_block1) if_block1.m(div2, null);
-    			append(div2, t7);
-    			if (if_block2) if_block2.m(div2, null);
-    			append(div2, t8);
-    			if (if_block3) if_block3.m(div2, null);
-    			append(div2, t9);
-    			if (if_block4) if_block4.m(div2, null);
-    			append(div2, t10);
-    			append(div2, a2);
-    			append(a2, button);
-    			append(button, i);
-    			append(button, t11);
-    			append(div5, t12);
+    			append(div2, t5);
+    			mount_component(links, div2, null);
+    			append(div4, t6);
+    			current = true;
     		},
 
     		p: function update(changed, ctx) {
-    			if (ctx.pub.pdf) {
-    				if (if_block0) {
-    					if_block0.p(changed, ctx);
-    				} else {
-    					if_block0 = create_if_block_4$1(ctx);
-    					if_block0.c();
-    					if_block0.m(div2, t6);
-    				}
-    			} else if (if_block0) {
-    				if_block0.d(1);
-    				if_block0 = null;
-    			}
+    			var links_changes = {};
+    			if (changed.pubs) links_changes.pub = ctx.pub;
+    			links.$set(links_changes);
+    		},
 
-    			if (ctx.pub.code) {
-    				if (if_block1) {
-    					if_block1.p(changed, ctx);
-    				} else {
-    					if_block1 = create_if_block_3$1(ctx);
-    					if_block1.c();
-    					if_block1.m(div2, t7);
-    				}
-    			} else if (if_block1) {
-    				if_block1.d(1);
-    				if_block1 = null;
-    			}
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(links.$$.fragment, local);
 
-    			if (ctx.pub.workshop) {
-    				if (if_block2) {
-    					if_block2.p(changed, ctx);
-    				} else {
-    					if_block2 = create_if_block_2$1(ctx);
-    					if_block2.c();
-    					if_block2.m(div2, t8);
-    				}
-    			} else if (if_block2) {
-    				if_block2.d(1);
-    				if_block2 = null;
-    			}
+    			current = true;
+    		},
 
-    			if (ctx.pub.video) {
-    				if (if_block3) {
-    					if_block3.p(changed, ctx);
-    				} else {
-    					if_block3 = create_if_block_1$1(ctx);
-    					if_block3.c();
-    					if_block3.m(div2, t9);
-    				}
-    			} else if (if_block3) {
-    				if_block3.d(1);
-    				if_block3 = null;
-    			}
-
-    			if (ctx.pub.demo) {
-    				if (if_block4) {
-    					if_block4.p(changed, ctx);
-    				} else {
-    					if_block4 = create_if_block$1(ctx);
-    					if_block4.c();
-    					if_block4.m(div2, t10);
-    				}
-    			} else if (if_block4) {
-    				if_block4.d(1);
-    				if_block4 = null;
-    			}
+    		o: function outro(local) {
+    			transition_out(links.$$.fragment, local);
+    			current = false;
     		},
 
     		d: function destroy(detaching) {
     			if (detaching) {
-    				detach(div5);
+    				detach(div4);
     			}
 
-    			if (if_block0) if_block0.d();
-    			if (if_block1) if_block1.d();
-    			if (if_block2) if_block2.d();
-    			if (if_block3) if_block3.d();
-    			if (if_block4) if_block4.d();
+    			destroy_component(links);
     		}
     	};
     }
 
-    function create_fragment$7(ctx) {
+    function create_fragment$8(ctx) {
     	var div2, t0, div1, div0, h1, t2, t3, current;
 
     	var sidebar = new Sidebar({ $$inline: true });
@@ -2567,6 +2497,10 @@ var app = (function () {
     	for (var i = 0; i < each_value.length; i += 1) {
     		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
     	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
 
     	var footer = new Footer({ $$inline: true });
 
@@ -2587,15 +2521,15 @@ var app = (function () {
 
     			t3 = space();
     			footer.$$.fragment.c();
-    			add_location(h1, file$6, 10, 6, 304);
+    			add_location(h1, file$7, 11, 6, 353);
     			attr(div0, "id", "padded-content");
-    			add_location(div0, file$6, 9, 4, 272);
+    			add_location(div0, file$7, 10, 4, 321);
     			attr(div1, "id", "content");
     			attr(div1, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div1, file$6, 8, 2, 218);
+    			add_location(div1, file$7, 9, 2, 267);
     			attr(div2, "class", "pure-g");
     			attr(div2, "id", "main-container");
-    			add_location(div2, file$6, 6, 0, 161);
+    			add_location(div2, file$7, 7, 0, 210);
     		},
 
     		l: function claim(nodes) {
@@ -2629,23 +2563,26 @@ var app = (function () {
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(changed, child_ctx);
+    						transition_in(each_blocks[i], 1);
     					} else {
     						each_blocks[i] = create_each_block$2(child_ctx);
     						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
     						each_blocks[i].m(div0, null);
     					}
     				}
 
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-    				each_blocks.length = each_value.length;
+    				group_outros();
+    				for (i = each_value.length; i < each_blocks.length; i += 1) out(i);
+    				check_outros();
     			}
     		},
 
     		i: function intro(local) {
     			if (current) return;
     			transition_in(sidebar.$$.fragment, local);
+
+    			for (var i = 0; i < each_value.length; i += 1) transition_in(each_blocks[i]);
 
     			transition_in(footer.$$.fragment, local);
 
@@ -2654,6 +2591,10 @@ var app = (function () {
 
     		o: function outro(local) {
     			transition_out(sidebar.$$.fragment, local);
+
+    			each_blocks = each_blocks.filter(Boolean);
+    			for (let i = 0; i < each_blocks.length; i += 1) transition_out(each_blocks[i]);
+
     			transition_out(footer.$$.fragment, local);
     			current = false;
     		},
@@ -2679,200 +2620,25 @@ var app = (function () {
     class Pubs extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$7, safe_not_equal, []);
+    		init(this, options, null, create_fragment$8, safe_not_equal, []);
     	}
     }
 
     /* src/Paper.svelte generated by Svelte v3.9.1 */
 
-    const file$7 = "src/Paper.svelte";
+    const file$8 = "src/Paper.svelte";
 
-    // (114:4) {#if pub.pdf}
-    function create_if_block_4$2(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n          PDF");
-    			attr(i, "class", "fas fa-file-pdf");
-    			add_location(i, file$7, 116, 10, 1973);
-    			add_location(button, file$7, 115, 8, 1954);
-    			attr(a, "href", a_href_value = ctx.pub.pdf);
-    			add_location(a, file$7, 114, 6, 1927);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (122:4) {#if pub.code}
-    function create_if_block_3$2(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n          Code");
-    			attr(i, "class", "fab fa-github");
-    			add_location(i, file$7, 124, 10, 2128);
-    			add_location(button, file$7, 123, 8, 2109);
-    			attr(a, "href", a_href_value = ctx.pub.code);
-    			add_location(a, file$7, 122, 6, 2081);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (130:4) {#if pub.workshop}
-    function create_if_block_2$2(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n          Workshop");
-    			attr(i, "class", "fas fa-globe");
-    			add_location(i, file$7, 132, 10, 2290);
-    			add_location(button, file$7, 131, 8, 2271);
-    			attr(a, "href", a_href_value = ctx.pub.workshop);
-    			add_location(a, file$7, 130, 6, 2239);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (138:4) {#if pub.video}
-    function create_if_block_1$2(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n          Video");
-    			attr(i, "class", "fab fa-youtube");
-    			add_location(i, file$7, 140, 10, 2449);
-    			add_location(button, file$7, 139, 8, 2430);
-    			attr(a, "href", a_href_value = ctx.pub.video);
-    			add_location(a, file$7, 138, 6, 2401);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (146:4) {#if pub.demo}
-    function create_if_block$2(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n          Demo");
-    			attr(i, "class", "fas fa-globe");
-    			add_location(i, file$7, 148, 10, 2605);
-    			add_location(button, file$7, 147, 8, 2586);
-    			attr(a, "href", a_href_value = ctx.pub.demo);
-    			add_location(a, file$7, 146, 6, 2558);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    function create_fragment$8(ctx) {
-    	var link, t0, div2, a0, h40, i0, t1, span0, t3, span1, t5, h1, t6_value = ctx.pub.title + "", t6, t7, h3, raw0_value = ctx.pub.authors
+    function create_fragment$9(ctx) {
+    	var link, t0, div1, a0, h40, i0, t1, span0, t3, span1, t5, h1, t6_value = ctx.pub.title + "", t6, t7, h3, raw0_value = ctx.pub.authors
           .map(func$2)
           .join(', ') + "", t8, h20, t10, p, t11_value = ctx.pub.abstract + "", t11, t12, h21, t14, a1, h41, t15_value = ctx.pub.title + "", t15, a1_href_value, t16, h50, raw1_value = ctx.pub.authors
           .map(func_1)
-          .join(', ') + "", t17, h51, i1, t18_value = ctx.pub.venuelong + "", t18, t19, t20_value = ctx.pub.location + "", t20, t21, t22_value = ctx.pub.year + "", t22, t23, div0, t24, t25, t26, t27, t28, a2, button, i2, t29, a2_href_value, t30, h22, t32, div1, code, t33_value = ctx.pub.bibtex + "", t33, t34, current;
+          .join(', ') + "", t17, h51, i1, t18_value = ctx.pub.venuelong + "", t18, t19, t20_value = ctx.pub.location + "", t20, t21, t22_value = ctx.pub.year + "", t22, t23, t24, h22, t26, div0, code, t27_value = ctx.pub.bibtex + "", t27, t28, current;
 
-    	var if_block0 = (ctx.pub.pdf) && create_if_block_4$2(ctx);
-
-    	var if_block1 = (ctx.pub.code) && create_if_block_3$2(ctx);
-
-    	var if_block2 = (ctx.pub.workshop) && create_if_block_2$2(ctx);
-
-    	var if_block3 = (ctx.pub.video) && create_if_block_1$2(ctx);
-
-    	var if_block4 = (ctx.pub.demo) && create_if_block$2(ctx);
+    	var links = new Links({
+    		props: { pub: ctx.pub },
+    		$$inline: true
+    	});
 
     	var footer = new Footer({ $$inline: true });
 
@@ -2880,7 +2646,7 @@ var app = (function () {
     		c: function create() {
     			link = element("link");
     			t0 = space();
-    			div2 = element("div");
+    			div1 = element("div");
     			a0 = element("a");
     			h40 = element("h4");
     			i0 = element("i");
@@ -2919,82 +2685,61 @@ var app = (function () {
     			t21 = text(", ");
     			t22 = text(t22_value);
     			t23 = space();
-    			div0 = element("div");
-    			if (if_block0) if_block0.c();
+    			links.$$.fragment.c();
     			t24 = space();
-    			if (if_block1) if_block1.c();
-    			t25 = space();
-    			if (if_block2) if_block2.c();
-    			t26 = space();
-    			if (if_block3) if_block3.c();
-    			t27 = space();
-    			if (if_block4) if_block4.c();
-    			t28 = space();
-    			a2 = element("a");
-    			button = element("button");
-    			i2 = element("i");
-    			t29 = text("\n        Website");
-    			t30 = space();
     			h22 = element("h2");
     			h22.textContent = "BibTex";
-    			t32 = space();
-    			div1 = element("div");
+    			t26 = space();
+    			div0 = element("div");
     			code = element("code");
-    			t33 = text(t33_value);
-    			t34 = space();
+    			t27 = text(t27_value);
+    			t28 = space();
     			footer.$$.fragment.c();
     			attr(link, "rel", "stylesheet");
     			attr(link, "href", "https://use.fontawesome.com/releases/v5.0.12/css/all.css");
     			attr(link, "integrity", "sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9");
     			attr(link, "crossorigin", "anonymous");
-    			add_location(link, file$7, 71, 0, 921);
-    			attr(i0, "class", "fas fa-home svelte-1r57gco");
+    			add_location(link, file$8, 55, 0, 801);
+    			attr(i0, "class", "fas fa-home svelte-g8ba2f");
     			attr(i0, "id", "home");
-    			add_location(i0, file$7, 80, 6, 1189);
+    			add_location(i0, file$8, 64, 6, 1069);
     			attr(span0, "class", "name");
-    			add_location(span0, file$7, 82, 6, 1250);
+    			add_location(span0, file$8, 66, 6, 1130);
     			attr(span1, "class", "name");
-    			add_location(span1, file$7, 84, 6, 1299);
+    			add_location(span1, file$8, 68, 6, 1179);
     			attr(h40, "id", "home-link");
-    			attr(h40, "class", "svelte-1r57gco");
-    			add_location(h40, file$7, 79, 4, 1163);
+    			attr(h40, "class", "svelte-g8ba2f");
+    			add_location(h40, file$8, 63, 4, 1043);
     			attr(a0, "href", "/");
-    			add_location(a0, file$7, 78, 2, 1146);
-    			add_location(h1, file$7, 87, 2, 1352);
-    			attr(h3, "class", "svelte-1r57gco");
-    			add_location(h3, file$7, 88, 2, 1375);
-    			attr(h20, "class", "sec-title svelte-1r57gco");
-    			add_location(h20, file$7, 94, 2, 1499);
-    			attr(p, "class", "svelte-1r57gco");
-    			add_location(p, file$7, 95, 2, 1537);
-    			attr(h21, "class", "sec-title svelte-1r57gco");
-    			add_location(h21, file$7, 97, 2, 1562);
-    			attr(h41, "class", "svelte-1r57gco");
-    			add_location(h41, file$7, 99, 4, 1655);
+    			add_location(a0, file$8, 62, 2, 1026);
+    			add_location(h1, file$8, 71, 2, 1232);
+    			attr(h3, "class", "svelte-g8ba2f");
+    			add_location(h3, file$8, 72, 2, 1255);
+    			attr(h20, "class", "sec-title svelte-g8ba2f");
+    			add_location(h20, file$8, 78, 2, 1379);
+    			attr(p, "class", "svelte-g8ba2f");
+    			add_location(p, file$8, 79, 2, 1417);
+    			attr(h21, "class", "sec-title svelte-g8ba2f");
+    			add_location(h21, file$8, 81, 2, 1442);
+    			attr(h41, "class", "svelte-g8ba2f");
+    			add_location(h41, file$8, 83, 4, 1535);
     			attr(a1, "href", a1_href_value = '#/paper/' + ctx.pub.id);
     			attr(a1, "class", "paper-title");
-    			add_location(a1, file$7, 98, 2, 1600);
-    			attr(h50, "class", "svelte-1r57gco");
-    			add_location(h50, file$7, 102, 2, 1686);
-    			add_location(i1, file$7, 109, 4, 1819);
-    			attr(h51, "class", "svelte-1r57gco");
-    			add_location(h51, file$7, 108, 2, 1810);
-    			attr(i2, "class", "fas fa-globe");
-    			add_location(i2, file$7, 155, 8, 2744);
-    			add_location(button, file$7, 154, 6, 2727);
-    			attr(a2, "href", a2_href_value = '#/paper/' + ctx.pub.id);
-    			add_location(a2, file$7, 153, 4, 2690);
-    			attr(div0, "class", "buttons svelte-1r57gco");
-    			add_location(div0, file$7, 112, 2, 1881);
-    			attr(h22, "class", "sec-title svelte-1r57gco");
-    			add_location(h22, file$7, 160, 2, 2823);
+    			add_location(a1, file$8, 82, 2, 1480);
+    			attr(h50, "class", "svelte-g8ba2f");
+    			add_location(h50, file$8, 86, 2, 1566);
+    			add_location(i1, file$8, 93, 4, 1699);
+    			attr(h51, "class", "svelte-g8ba2f");
+    			add_location(h51, file$8, 92, 2, 1690);
+    			attr(h22, "class", "sec-title svelte-g8ba2f");
+    			add_location(h22, file$8, 97, 2, 1779);
     			attr(code, "class", "bibtex");
-    			add_location(code, file$7, 162, 4, 2882);
-    			attr(div1, "class", "code svelte-1r57gco");
-    			add_location(div1, file$7, 161, 2, 2859);
-    			attr(div2, "id", "body");
-    			attr(div2, "class", "svelte-1r57gco");
-    			add_location(div2, file$7, 77, 0, 1128);
+    			add_location(code, file$8, 99, 4, 1838);
+    			attr(div0, "class", "code svelte-g8ba2f");
+    			add_location(div0, file$8, 98, 2, 1815);
+    			attr(div1, "id", "body");
+    			attr(div1, "class", "svelte-g8ba2f");
+    			add_location(div1, file$8, 61, 0, 1008);
     		},
 
     		l: function claim(nodes) {
@@ -3004,144 +2749,72 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert(target, link, anchor);
     			insert(target, t0, anchor);
-    			insert(target, div2, anchor);
-    			append(div2, a0);
+    			insert(target, div1, anchor);
+    			append(div1, a0);
     			append(a0, h40);
     			append(h40, i0);
     			append(h40, t1);
     			append(h40, span0);
     			append(h40, t3);
     			append(h40, span1);
-    			append(div2, t5);
-    			append(div2, h1);
+    			append(div1, t5);
+    			append(div1, h1);
     			append(h1, t6);
-    			append(div2, t7);
-    			append(div2, h3);
+    			append(div1, t7);
+    			append(div1, h3);
     			h3.innerHTML = raw0_value;
-    			append(div2, t8);
-    			append(div2, h20);
-    			append(div2, t10);
-    			append(div2, p);
+    			append(div1, t8);
+    			append(div1, h20);
+    			append(div1, t10);
+    			append(div1, p);
     			append(p, t11);
-    			append(div2, t12);
-    			append(div2, h21);
-    			append(div2, t14);
-    			append(div2, a1);
+    			append(div1, t12);
+    			append(div1, h21);
+    			append(div1, t14);
+    			append(div1, a1);
     			append(a1, h41);
     			append(h41, t15);
-    			append(div2, t16);
-    			append(div2, h50);
+    			append(div1, t16);
+    			append(div1, h50);
     			h50.innerHTML = raw1_value;
-    			append(div2, t17);
-    			append(div2, h51);
+    			append(div1, t17);
+    			append(div1, h51);
     			append(h51, i1);
     			append(i1, t18);
     			append(i1, t19);
     			append(i1, t20);
     			append(i1, t21);
     			append(i1, t22);
-    			append(div2, t23);
-    			append(div2, div0);
-    			if (if_block0) if_block0.m(div0, null);
-    			append(div0, t24);
-    			if (if_block1) if_block1.m(div0, null);
-    			append(div0, t25);
-    			if (if_block2) if_block2.m(div0, null);
-    			append(div0, t26);
-    			if (if_block3) if_block3.m(div0, null);
-    			append(div0, t27);
-    			if (if_block4) if_block4.m(div0, null);
-    			append(div0, t28);
-    			append(div0, a2);
-    			append(a2, button);
-    			append(button, i2);
-    			append(button, t29);
-    			append(div2, t30);
-    			append(div2, h22);
-    			append(div2, t32);
-    			append(div2, div1);
-    			append(div1, code);
-    			append(code, t33);
-    			append(div2, t34);
-    			mount_component(footer, div2, null);
+    			append(div1, t23);
+    			mount_component(links, div1, null);
+    			append(div1, t24);
+    			append(div1, h22);
+    			append(div1, t26);
+    			append(div1, div0);
+    			append(div0, code);
+    			append(code, t27);
+    			append(div1, t28);
+    			mount_component(footer, div1, null);
     			current = true;
     		},
 
     		p: function update(changed, ctx) {
-    			if (ctx.pub.pdf) {
-    				if (if_block0) {
-    					if_block0.p(changed, ctx);
-    				} else {
-    					if_block0 = create_if_block_4$2(ctx);
-    					if_block0.c();
-    					if_block0.m(div0, t24);
-    				}
-    			} else if (if_block0) {
-    				if_block0.d(1);
-    				if_block0 = null;
-    			}
-
-    			if (ctx.pub.code) {
-    				if (if_block1) {
-    					if_block1.p(changed, ctx);
-    				} else {
-    					if_block1 = create_if_block_3$2(ctx);
-    					if_block1.c();
-    					if_block1.m(div0, t25);
-    				}
-    			} else if (if_block1) {
-    				if_block1.d(1);
-    				if_block1 = null;
-    			}
-
-    			if (ctx.pub.workshop) {
-    				if (if_block2) {
-    					if_block2.p(changed, ctx);
-    				} else {
-    					if_block2 = create_if_block_2$2(ctx);
-    					if_block2.c();
-    					if_block2.m(div0, t26);
-    				}
-    			} else if (if_block2) {
-    				if_block2.d(1);
-    				if_block2 = null;
-    			}
-
-    			if (ctx.pub.video) {
-    				if (if_block3) {
-    					if_block3.p(changed, ctx);
-    				} else {
-    					if_block3 = create_if_block_1$2(ctx);
-    					if_block3.c();
-    					if_block3.m(div0, t27);
-    				}
-    			} else if (if_block3) {
-    				if_block3.d(1);
-    				if_block3 = null;
-    			}
-
-    			if (ctx.pub.demo) {
-    				if (if_block4) {
-    					if_block4.p(changed, ctx);
-    				} else {
-    					if_block4 = create_if_block$2(ctx);
-    					if_block4.c();
-    					if_block4.m(div0, t28);
-    				}
-    			} else if (if_block4) {
-    				if_block4.d(1);
-    				if_block4 = null;
-    			}
+    			var links_changes = {};
+    			if (changed.pub) links_changes.pub = ctx.pub;
+    			links.$set(links_changes);
     		},
 
     		i: function intro(local) {
     			if (current) return;
+    			transition_in(links.$$.fragment, local);
+
     			transition_in(footer.$$.fragment, local);
 
     			current = true;
     		},
 
     		o: function outro(local) {
+    			transition_out(links.$$.fragment, local);
     			transition_out(footer.$$.fragment, local);
     			current = false;
     		},
@@ -3150,14 +2823,10 @@ var app = (function () {
     			if (detaching) {
     				detach(link);
     				detach(t0);
-    				detach(div2);
+    				detach(div1);
     			}
 
-    			if (if_block0) if_block0.d();
-    			if (if_block1) if_block1.d();
-    			if (if_block2) if_block2.d();
-    			if (if_block3) if_block3.d();
-    			if (if_block4) if_block4.d();
+    			destroy_component(links);
 
     			destroy_component(footer);
     		}
@@ -3172,7 +2841,7 @@ var app = (function () {
     	return "<a href='" + p.website + "'>" + p.name + '</a>';
     }
 
-    function instance$2($$self, $$props, $$invalidate) {
+    function instance$3($$self, $$props, $$invalidate) {
     	
       let { params = {} } = $$props;
 
@@ -3193,7 +2862,7 @@ var app = (function () {
     class Paper extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$2, create_fragment$8, safe_not_equal, ["params"]);
+    		init(this, options, instance$3, create_fragment$9, safe_not_equal, ["params"]);
     	}
 
     	get params() {
@@ -3207,7 +2876,7 @@ var app = (function () {
 
     /* src/Cv.svelte generated by Svelte v3.9.1 */
 
-    const file$8 = "src/Cv.svelte";
+    const file$9 = "src/Cv.svelte";
 
     function get_each_context$3(ctx, list, i) {
     	const child_ctx = Object.create(ctx);
@@ -3215,191 +2884,16 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (463:14) {#if pub.pdf}
-    function create_if_block_4$3(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                    PDF");
-    			attr(i, "class", "fas fa-file-pdf svelte-fvqcu8");
-    			add_location(i, file$8, 465, 20, 11645);
-    			add_location(button, file$8, 464, 18, 11616);
-    			attr(a, "href", a_href_value = ctx.pub.pdf);
-    			add_location(a, file$8, 463, 16, 11579);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (471:14) {#if pub.code}
-    function create_if_block_3$3(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                    Code");
-    			attr(i, "class", "fab fa-github svelte-fvqcu8");
-    			add_location(i, file$8, 473, 20, 11880);
-    			add_location(button, file$8, 472, 18, 11851);
-    			attr(a, "href", a_href_value = ctx.pub.code);
-    			add_location(a, file$8, 471, 16, 11813);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (479:14) {#if pub.workshop}
-    function create_if_block_2$3(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                    Workshop");
-    			attr(i, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i, file$8, 481, 20, 12122);
-    			add_location(button, file$8, 480, 18, 12093);
-    			attr(a, "href", a_href_value = ctx.pub.workshop);
-    			add_location(a, file$8, 479, 16, 12051);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (487:14) {#if pub.video}
-    function create_if_block_1$3(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                    Video");
-    			attr(i, "class", "fab fa-youtube svelte-fvqcu8");
-    			add_location(i, file$8, 489, 20, 12361);
-    			add_location(button, file$8, 488, 18, 12332);
-    			attr(a, "href", a_href_value = ctx.pub.video);
-    			add_location(a, file$8, 487, 16, 12293);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
-    // (495:14) {#if pub.demo}
-    function create_if_block$3(ctx) {
-    	var a, button, i, t, a_href_value;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			button = element("button");
-    			i = element("i");
-    			t = text("\n                    Demo");
-    			attr(i, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i, file$8, 497, 20, 12597);
-    			add_location(button, file$8, 496, 18, 12568);
-    			attr(a, "href", a_href_value = ctx.pub.demo);
-    			add_location(a, file$8, 495, 16, 12530);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, button);
-    			append(button, i);
-    			append(button, t);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-    		}
-    	};
-    }
-
     // (444:6) {#each pubs as pub}
     function create_each_block$3(ctx) {
-    	var tr0, th0, t0_value = ctx.pub.year + "", t0, t1, th1, a0, h5, t2_value = ctx.pub.title + "", t2, a0_href_value, t3, h6, raw_value = ctx.pub.authors
+    	var tr0, th0, t0_value = ctx.pub.year + "", t0, t1, th1, a, h5, t2_value = ctx.pub.title + "", t2, a_href_value, t3, h6, raw_value = ctx.pub.authors
                     .map(func$3)
-                    .join(', ') + "", t4, p, i0, t5_value = ctx.pub.venuelong + "", t5, t6, t7_value = ctx.pub.location + "", t7, t8, t9_value = ctx.pub.year + "", t9, t10, t11, div, t12, t13, t14, t15, t16, a1, button, i1, t17, a1_href_value, t18, tr1;
+                    .join(', ') + "", t4, p, i, t5_value = ctx.pub.venuelong + "", t5, t6, t7_value = ctx.pub.location + "", t7, t8, t9_value = ctx.pub.year + "", t9, t10, t11, t12, tr1, current;
 
-    	var if_block0 = (ctx.pub.pdf) && create_if_block_4$3(ctx);
-
-    	var if_block1 = (ctx.pub.code) && create_if_block_3$3(ctx);
-
-    	var if_block2 = (ctx.pub.workshop) && create_if_block_2$3(ctx);
-
-    	var if_block3 = (ctx.pub.video) && create_if_block_1$3(ctx);
-
-    	var if_block4 = (ctx.pub.demo) && create_if_block$3(ctx);
+    	var links = new Links({
+    		props: { pub: ctx.pub },
+    		$$inline: true
+    	});
 
     	return {
     		c: function create() {
@@ -3408,14 +2902,14 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			th1 = element("th");
-    			a0 = element("a");
+    			a = element("a");
     			h5 = element("h5");
     			t2 = text(t2_value);
     			t3 = space();
     			h6 = element("h6");
     			t4 = space();
     			p = element("p");
-    			i0 = element("i");
+    			i = element("i");
     			t5 = text(t5_value);
     			t6 = text(". ");
     			t7 = text(t7_value);
@@ -3423,48 +2917,27 @@ var app = (function () {
     			t9 = text(t9_value);
     			t10 = text(".");
     			t11 = space();
-    			div = element("div");
-    			if (if_block0) if_block0.c();
+    			links.$$.fragment.c();
     			t12 = space();
-    			if (if_block1) if_block1.c();
-    			t13 = space();
-    			if (if_block2) if_block2.c();
-    			t14 = space();
-    			if (if_block3) if_block3.c();
-    			t15 = space();
-    			if (if_block4) if_block4.c();
-    			t16 = space();
-    			a1 = element("a");
-    			button = element("button");
-    			i1 = element("i");
-    			t17 = text("\n                  Website");
-    			t18 = space();
     			tr1 = element("tr");
     			attr(th0, "class", "date svelte-fvqcu8");
-    			add_location(th0, file$8, 445, 10, 11050);
+    			add_location(th0, file$9, 445, 10, 11086);
     			attr(h5, "class", "svelte-fvqcu8");
-    			add_location(h5, file$8, 448, 14, 11175);
-    			attr(a0, "href", a0_href_value = '#/paper/' + ctx.pub.id);
-    			attr(a0, "class", "paper-title");
-    			add_location(a0, file$8, 447, 12, 11110);
+    			add_location(h5, file$9, 448, 14, 11211);
+    			attr(a, "href", a_href_value = '#/paper/' + ctx.pub.id);
+    			attr(a, "class", "paper-title");
+    			add_location(a, file$9, 447, 12, 11146);
     			attr(h6, "class", "svelte-fvqcu8");
-    			add_location(h6, file$8, 451, 12, 11226);
-    			add_location(i0, file$8, 458, 14, 11431);
+    			add_location(h6, file$9, 451, 12, 11262);
+    			add_location(i, file$9, 458, 14, 11467);
     			attr(p, "class", "desc svelte-fvqcu8");
-    			add_location(p, file$8, 457, 12, 11400);
-    			attr(i1, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i1, file$8, 504, 18, 12806);
-    			add_location(button, file$8, 503, 16, 12779);
-    			attr(a1, "href", a1_href_value = '#/paper/' + ctx.pub.id);
-    			add_location(a1, file$8, 502, 14, 12732);
-    			attr(div, "class", "buttons");
-    			add_location(div, file$8, 461, 12, 11513);
+    			add_location(p, file$9, 457, 12, 11436);
     			attr(th1, "class", "svelte-fvqcu8");
-    			add_location(th1, file$8, 446, 10, 11093);
+    			add_location(th1, file$9, 446, 10, 11129);
     			attr(tr0, "class", "item svelte-fvqcu8");
-    			add_location(tr0, file$8, 444, 8, 11022);
+    			add_location(tr0, file$9, 444, 8, 11058);
     			attr(tr1, "class", "buffer svelte-fvqcu8");
-    			add_location(tr1, file$8, 511, 8, 12961);
+    			add_location(tr1, file$9, 464, 8, 11607);
     		},
 
     		m: function mount(target, anchor) {
@@ -3473,106 +2946,44 @@ var app = (function () {
     			append(th0, t0);
     			append(tr0, t1);
     			append(tr0, th1);
-    			append(th1, a0);
-    			append(a0, h5);
+    			append(th1, a);
+    			append(a, h5);
     			append(h5, t2);
     			append(th1, t3);
     			append(th1, h6);
     			h6.innerHTML = raw_value;
     			append(th1, t4);
     			append(th1, p);
-    			append(p, i0);
-    			append(i0, t5);
-    			append(i0, t6);
-    			append(i0, t7);
-    			append(i0, t8);
-    			append(i0, t9);
-    			append(i0, t10);
+    			append(p, i);
+    			append(i, t5);
+    			append(i, t6);
+    			append(i, t7);
+    			append(i, t8);
+    			append(i, t9);
+    			append(i, t10);
     			append(th1, t11);
-    			append(th1, div);
-    			if (if_block0) if_block0.m(div, null);
-    			append(div, t12);
-    			if (if_block1) if_block1.m(div, null);
-    			append(div, t13);
-    			if (if_block2) if_block2.m(div, null);
-    			append(div, t14);
-    			if (if_block3) if_block3.m(div, null);
-    			append(div, t15);
-    			if (if_block4) if_block4.m(div, null);
-    			append(div, t16);
-    			append(div, a1);
-    			append(a1, button);
-    			append(button, i1);
-    			append(button, t17);
-    			insert(target, t18, anchor);
+    			mount_component(links, th1, null);
+    			insert(target, t12, anchor);
     			insert(target, tr1, anchor);
+    			current = true;
     		},
 
     		p: function update(changed, ctx) {
-    			if (ctx.pub.pdf) {
-    				if (if_block0) {
-    					if_block0.p(changed, ctx);
-    				} else {
-    					if_block0 = create_if_block_4$3(ctx);
-    					if_block0.c();
-    					if_block0.m(div, t12);
-    				}
-    			} else if (if_block0) {
-    				if_block0.d(1);
-    				if_block0 = null;
-    			}
+    			var links_changes = {};
+    			if (changed.pubs) links_changes.pub = ctx.pub;
+    			links.$set(links_changes);
+    		},
 
-    			if (ctx.pub.code) {
-    				if (if_block1) {
-    					if_block1.p(changed, ctx);
-    				} else {
-    					if_block1 = create_if_block_3$3(ctx);
-    					if_block1.c();
-    					if_block1.m(div, t13);
-    				}
-    			} else if (if_block1) {
-    				if_block1.d(1);
-    				if_block1 = null;
-    			}
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(links.$$.fragment, local);
 
-    			if (ctx.pub.workshop) {
-    				if (if_block2) {
-    					if_block2.p(changed, ctx);
-    				} else {
-    					if_block2 = create_if_block_2$3(ctx);
-    					if_block2.c();
-    					if_block2.m(div, t14);
-    				}
-    			} else if (if_block2) {
-    				if_block2.d(1);
-    				if_block2 = null;
-    			}
+    			current = true;
+    		},
 
-    			if (ctx.pub.video) {
-    				if (if_block3) {
-    					if_block3.p(changed, ctx);
-    				} else {
-    					if_block3 = create_if_block_1$3(ctx);
-    					if_block3.c();
-    					if_block3.m(div, t15);
-    				}
-    			} else if (if_block3) {
-    				if_block3.d(1);
-    				if_block3 = null;
-    			}
-
-    			if (ctx.pub.demo) {
-    				if (if_block4) {
-    					if_block4.p(changed, ctx);
-    				} else {
-    					if_block4 = create_if_block$3(ctx);
-    					if_block4.c();
-    					if_block4.m(div, t16);
-    				}
-    			} else if (if_block4) {
-    				if_block4.d(1);
-    				if_block4 = null;
-    			}
+    		o: function outro(local) {
+    			transition_out(links.$$.fragment, local);
+    			current = false;
     		},
 
     		d: function destroy(detaching) {
@@ -3580,21 +2991,17 @@ var app = (function () {
     				detach(tr0);
     			}
 
-    			if (if_block0) if_block0.d();
-    			if (if_block1) if_block1.d();
-    			if (if_block2) if_block2.d();
-    			if (if_block3) if_block3.d();
-    			if (if_block4) if_block4.d();
+    			destroy_component(links);
 
     			if (detaching) {
-    				detach(t18);
+    				detach(t12);
     				detach(tr1);
     			}
     		}
     	};
     }
 
-    function create_fragment$9(ctx) {
+    function create_fragment$a(ctx) {
     	var link0, t0, link1, t1, div18, main, header, h3, t2, span0, t4, span1, t6, t7, t8, table, tr0, th0, t9, th1, h40, t11, tr1, th2, t12, br0, t13, t14, th3, h50, t16, h60, t18, tr2, t19, tr3, th4, t20, br1, t21, t22, th5, h51, t24, h61, span2, t26, span3, t28, t29, p0, t31, tr4, th6, t33, th7, h62, t35, p1, t37, tr5, th8, t38, th9, h41, t40, tr6, th10, t42, th11, h52, t44, p2, t46, div0, a0, button0, i0, t47, t48, tr7, t49, tr8, th12, t51, th13, h53, t53, p3, t55, div1, a1, button1, i1, t56, t57, tr9, t58, tr10, th14, t59, br2, t60, t61, th15, h54, t63, h63, t65, p4, t67, div2, a2, button2, i2, t68, t69, tr11, t70, tr12, th16, t72, th17, h55, t74, h64, t76, p5, t78, div3, a3, button3, i3, t79, t80, tr13, th18, t81, th19, h42, t83, tr14, th20, t84, br3, t85, t86, th21, h56, t88, h65, t90, p6, t92, div4, a4, button4, i4, t93, t94, button5, t96, button6, t98, button7, t100, button8, t102, tr15, t103, tr16, th22, t104, br4, t105, t106, th23, h57, t108, h66, t110, p7, t112, div5, button9, t114, button10, t116, button11, t118, button12, t120, tr17, t121, tr18, th24, t122, br5, t123, t124, th25, h58, t126, h67, t128, p8, t130, div6, button13, t132, button14, t134, button15, t136, tr19, th26, t137, th27, h43, t139, tr20, th28, t140, br6, t141, t142, th29, h59, t144, h68, t146, p9, t148, div7, a5, button16, i5, t149, t150, tr21, t151, tr22, th30, t152, br7, t153, t154, th31, h510, t156, h69, t158, p10, t160, div8, a6, button17, t162, a7, button18, i6, t163, t164, a8, button19, i7, t165, t166, button20, t168, tr23, th32, t169, th33, h44, t171, t172, tr24, th34, t173, th35, h45, t175, tr25, th36, t177, th37, h511, t179, h610, t181, p11, t183, div9, a9, button21, i8, t184, t185, tr26, t186, tr27, th38, t188, th39, h512, t190, p12, t192, div10, a10, button22, i9, t193, t194, a11, button23, i10, t195, t196, tr28, t197, tr29, th40, t199, th41, h513, t201, p13, t203, div11, a12, button24, i11, t204, t205, a13, button25, i12, t206, t207, tr30, th42, t208, th43, h46, t210, tr31, th44, t212, th45, h514, t214, h611, t216, p14, t218, tr32, t219, tr33, th46, t221, th47, h515, t223, h612, t225, p15, t227, tr34, th48, t228, th49, h47, t230, tr35, th50, t231, th51, h516, t233, tr36, th52, t235, th53, h517, t237, tr37, th54, t239, th55, h518, t241, tr38, th56, t242, th57, h48, t244, tr39, th58, t245, br8, t246, t247, th59, h519, t249, h613, t251, p16, t253, div12, a14, button26, i13, t254, t255, tr40, t256, tr41, th60, t258, th61, h520, t260, p17, t262, div13, a15, button27, i14, t263, t264, tr42, t265, tr43, th62, t266, br9, t267, t268, th63, h521, t270, h614, t272, p18, t274, div14, a16, button28, i15, t275, t276, tr44, th64, t277, th65, h49, t279, tr45, th66, t281, th67, a17, h522, t283, tr46, th68, t285, th69, a18, h523, t287, tr47, th70, t289, th71, h524, t291, tr48, th72, t293, th73, a19, h525, t295, tr49, th74, t297, th75, a20, h526, t299, tr50, th76, t301, th77, h527, t303, tr51, th78, t304, th79, h410, t306, tr52, th80, t307, th81, h528, t309, div15, button29, t311, button30, t313, button31, t315, tr53, t316, tr54, th82, t317, th83, h529, t319, div16, button32, t321, button33, t323, button34, t325, button35, t327, button36, t329, button37, t331, tr55, t332, tr56, th84, t333, th85, h530, t335, div17, button38, t337, button39, t339, button40, t341, button41, t343, button42, t345, button43, t347, button44, t349, button45, t351, tr57, t352, tr58, th86, t353, th87, p19, current;
 
     	var intro = new Intro({ $$inline: true });
@@ -3608,6 +3015,10 @@ var app = (function () {
     	for (var i = 0; i < each_value.length; i += 1) {
     		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
     	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
 
     	return {
     		c: function create() {
@@ -3669,7 +3080,7 @@ var app = (function () {
     			t26 = text("\n            Institute of\n            ");
     			span3 = element("span");
     			span3.textContent = "Tech";
-    			t28 = text("\n            nology - Atlanta, GA");
+    			t28 = text("nology - Atlanta, GA");
     			t29 = space();
     			p0 = element("p");
     			p0.textContent = "Concentration in intelligence and modeling/simulation. Minor in\n            economics. Overall GPA: 3.97/4.0";
@@ -4321,633 +3732,633 @@ var app = (function () {
     			p19.textContent = "Last updated September 3, 2019.";
     			attr(link0, "href", "https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto:900,400");
     			attr(link0, "rel", "stylesheet");
-    			add_location(link0, file$8, 125, 0, 1733);
+    			add_location(link0, file$9, 126, 0, 1782);
     			attr(link1, "rel", "stylesheet");
     			attr(link1, "href", "https://use.fontawesome.com/releases/v5.0.12/css/all.css");
     			attr(link1, "integrity", "sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9");
     			attr(link1, "crossorigin", "anonymous");
-    			add_location(link1, file$8, 128, 0, 1839);
+    			add_location(link1, file$9, 129, 0, 1888);
     			attr(span0, "class", "red svelte-fvqcu8");
-    			add_location(span0, file$8, 139, 8, 2142);
+    			add_location(span0, file$9, 140, 8, 2191);
     			attr(span1, "class", "red svelte-fvqcu8");
-    			add_location(span1, file$8, 141, 8, 2194);
+    			add_location(span1, file$9, 142, 8, 2243);
     			attr(h3, "id", "name");
     			attr(h3, "class", "svelte-fvqcu8");
-    			add_location(h3, file$8, 137, 6, 2105);
+    			add_location(h3, file$9, 138, 6, 2154);
     			attr(header, "id", "head");
     			attr(header, "class", "svelte-fvqcu8");
-    			add_location(header, file$8, 136, 4, 2080);
+    			add_location(header, file$9, 137, 4, 2129);
     			attr(th0, "class", "date svelte-fvqcu8");
-    			add_location(th0, file$8, 151, 8, 2344);
+    			add_location(th0, file$9, 152, 8, 2393);
     			attr(h40, "class", "header svelte-fvqcu8");
-    			add_location(h40, file$8, 153, 10, 2387);
+    			add_location(h40, file$9, 154, 10, 2436);
     			attr(th1, "class", "svelte-fvqcu8");
-    			add_location(th1, file$8, 152, 8, 2372);
-    			add_location(tr0, file$8, 150, 6, 2331);
-    			add_location(br0, file$8, 159, 10, 2529);
+    			add_location(th1, file$9, 153, 8, 2421);
+    			add_location(tr0, file$9, 151, 6, 2380);
+    			add_location(br0, file$9, 160, 10, 2578);
     			attr(th2, "class", "date svelte-fvqcu8");
-    			add_location(th2, file$8, 157, 8, 2479);
+    			add_location(th2, file$9, 158, 8, 2528);
     			attr(h50, "class", "svelte-fvqcu8");
-    			add_location(h50, file$8, 163, 10, 2593);
+    			add_location(h50, file$9, 164, 10, 2642);
     			attr(h60, "class", "svelte-fvqcu8");
-    			add_location(h60, file$8, 164, 10, 2652);
+    			add_location(h60, file$9, 165, 10, 2701);
     			attr(th3, "class", "svelte-fvqcu8");
-    			add_location(th3, file$8, 162, 8, 2578);
+    			add_location(th3, file$9, 163, 8, 2627);
     			attr(tr1, "class", "item svelte-fvqcu8");
-    			add_location(tr1, file$8, 156, 6, 2453);
+    			add_location(tr1, file$9, 157, 6, 2502);
     			attr(tr2, "class", "buffer svelte-fvqcu8");
-    			add_location(tr2, file$8, 167, 6, 2737);
-    			add_location(br1, file$8, 171, 10, 2841);
+    			add_location(tr2, file$9, 168, 6, 2786);
+    			add_location(br1, file$9, 172, 10, 2890);
     			attr(th4, "class", "date svelte-fvqcu8");
-    			add_location(th4, file$8, 169, 8, 2791);
+    			add_location(th4, file$9, 170, 8, 2840);
     			attr(h51, "class", "svelte-fvqcu8");
-    			add_location(h51, file$8, 175, 10, 2906);
+    			add_location(h51, file$9, 176, 10, 2955);
     			attr(span2, "class", "gold svelte-fvqcu8");
-    			add_location(span2, file$8, 177, 12, 2967);
+    			add_location(span2, file$9, 178, 12, 3016);
     			attr(span3, "class", "gold svelte-fvqcu8");
-    			add_location(span3, file$8, 179, 12, 3038);
+    			add_location(span3, file$9, 180, 12, 3087);
     			attr(h61, "class", "svelte-fvqcu8");
-    			add_location(h61, file$8, 176, 10, 2950);
+    			add_location(h61, file$9, 177, 10, 2999);
     			attr(p0, "class", "desc svelte-fvqcu8");
-    			add_location(p0, file$8, 182, 10, 3128);
+    			add_location(p0, file$9, 182, 10, 3164);
     			attr(th5, "class", "svelte-fvqcu8");
-    			add_location(th5, file$8, 174, 8, 2891);
+    			add_location(th5, file$9, 175, 8, 2940);
     			attr(tr3, "class", "item svelte-fvqcu8");
-    			add_location(tr3, file$8, 168, 6, 2765);
+    			add_location(tr3, file$9, 169, 6, 2814);
     			attr(th6, "class", "date svelte-fvqcu8");
-    			add_location(th6, file$8, 189, 8, 3339);
+    			add_location(th6, file$9, 189, 8, 3375);
     			attr(h62, "class", "svelte-fvqcu8");
-    			add_location(h62, file$8, 191, 10, 3394);
+    			add_location(h62, file$9, 191, 10, 3430);
     			attr(p1, "class", "desc svelte-fvqcu8");
-    			add_location(p1, file$8, 192, 10, 3441);
+    			add_location(p1, file$9, 192, 10, 3477);
     			attr(th7, "class", "svelte-fvqcu8");
-    			add_location(th7, file$8, 190, 8, 3379);
+    			add_location(th7, file$9, 190, 8, 3415);
     			attr(tr4, "class", "item svelte-fvqcu8");
-    			add_location(tr4, file$8, 188, 6, 3313);
+    			add_location(tr4, file$9, 188, 6, 3349);
     			attr(th8, "class", "date svelte-fvqcu8");
-    			add_location(th8, file$8, 199, 8, 3618);
+    			add_location(th8, file$9, 199, 8, 3654);
     			attr(h41, "class", "header svelte-fvqcu8");
-    			add_location(h41, file$8, 201, 10, 3661);
+    			add_location(h41, file$9, 201, 10, 3697);
     			attr(th9, "class", "svelte-fvqcu8");
-    			add_location(th9, file$8, 200, 8, 3646);
-    			add_location(tr5, file$8, 198, 6, 3605);
+    			add_location(th9, file$9, 200, 8, 3682);
+    			add_location(tr5, file$9, 198, 6, 3641);
     			attr(th10, "class", "date svelte-fvqcu8");
-    			add_location(th10, file$8, 205, 8, 3750);
+    			add_location(th10, file$9, 205, 8, 3786);
     			attr(h52, "class", "svelte-fvqcu8");
-    			add_location(h52, file$8, 207, 10, 3804);
+    			add_location(h52, file$9, 207, 10, 3840);
     			attr(p2, "class", "desc svelte-fvqcu8");
-    			add_location(p2, file$8, 210, 10, 3915);
+    			add_location(p2, file$9, 210, 10, 3951);
     			attr(i0, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i0, file$8, 217, 16, 4192);
-    			add_location(button0, file$8, 216, 14, 4167);
+    			add_location(i0, file$9, 217, 16, 4228);
+    			add_location(button0, file$9, 216, 14, 4203);
     			attr(a0, "href", "https://www.nsfgrfp.org/");
-    			add_location(a0, file$8, 215, 12, 4117);
+    			add_location(a0, file$9, 215, 12, 4153);
     			attr(div0, "class", "tags svelte-fvqcu8");
-    			add_location(div0, file$8, 214, 10, 4086);
+    			add_location(div0, file$9, 214, 10, 4122);
     			attr(th11, "class", "svelte-fvqcu8");
-    			add_location(th11, file$8, 206, 8, 3789);
+    			add_location(th11, file$9, 206, 8, 3825);
     			attr(tr6, "class", "item svelte-fvqcu8");
-    			add_location(tr6, file$8, 204, 6, 3724);
+    			add_location(tr6, file$9, 204, 6, 3760);
     			attr(tr7, "class", "buffer svelte-fvqcu8");
-    			add_location(tr7, file$8, 224, 6, 4333);
+    			add_location(tr7, file$9, 224, 6, 4369);
     			attr(th12, "class", "date svelte-fvqcu8");
-    			add_location(th12, file$8, 226, 8, 4387);
+    			add_location(th12, file$9, 226, 8, 4423);
     			attr(h53, "class", "svelte-fvqcu8");
-    			add_location(h53, file$8, 228, 10, 4441);
+    			add_location(h53, file$9, 228, 10, 4477);
     			attr(p3, "class", "desc svelte-fvqcu8");
-    			add_location(p3, file$8, 229, 10, 4495);
+    			add_location(p3, file$9, 229, 10, 4531);
     			attr(i1, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i1, file$8, 237, 16, 4907);
-    			add_location(button1, file$8, 236, 14, 4882);
+    			add_location(i1, file$9, 237, 16, 4943);
+    			add_location(button1, file$9, 236, 14, 4918);
     			attr(a1, "href", "https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship");
-    			add_location(a1, file$8, 234, 12, 4725);
+    			add_location(a1, file$9, 234, 12, 4761);
     			attr(div1, "class", "tags svelte-fvqcu8");
-    			add_location(div1, file$8, 233, 10, 4694);
+    			add_location(div1, file$9, 233, 10, 4730);
     			attr(th13, "class", "svelte-fvqcu8");
-    			add_location(th13, file$8, 227, 8, 4426);
+    			add_location(th13, file$9, 227, 8, 4462);
     			attr(tr8, "class", "item svelte-fvqcu8");
-    			add_location(tr8, file$8, 225, 6, 4361);
+    			add_location(tr8, file$9, 225, 6, 4397);
     			attr(tr9, "class", "buffer svelte-fvqcu8");
-    			add_location(tr9, file$8, 244, 6, 5053);
-    			add_location(br2, file$8, 248, 10, 5157);
+    			add_location(tr9, file$9, 244, 6, 5089);
+    			add_location(br2, file$9, 248, 10, 5193);
     			attr(th14, "class", "date svelte-fvqcu8");
-    			add_location(th14, file$8, 246, 8, 5107);
+    			add_location(th14, file$9, 246, 8, 5143);
     			attr(h54, "class", "svelte-fvqcu8");
-    			add_location(h54, file$8, 252, 10, 5222);
+    			add_location(h54, file$9, 252, 10, 5258);
     			attr(h63, "class", "svelte-fvqcu8");
-    			add_location(h63, file$8, 253, 10, 5268);
+    			add_location(h63, file$9, 253, 10, 5304);
     			attr(p4, "class", "desc svelte-fvqcu8");
-    			add_location(p4, file$8, 254, 10, 5344);
+    			add_location(p4, file$9, 254, 10, 5380);
     			attr(i2, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i2, file$8, 261, 16, 5626);
-    			add_location(button2, file$8, 260, 14, 5601);
+    			add_location(i2, file$9, 261, 16, 5662);
+    			add_location(button2, file$9, 260, 14, 5637);
     			attr(a2, "href", "https://stampsps.gatech.edu/");
-    			add_location(a2, file$8, 259, 12, 5547);
+    			add_location(a2, file$9, 259, 12, 5583);
     			attr(div2, "class", "tags svelte-fvqcu8");
-    			add_location(div2, file$8, 258, 10, 5516);
+    			add_location(div2, file$9, 258, 10, 5552);
     			attr(th15, "class", "svelte-fvqcu8");
-    			add_location(th15, file$8, 251, 8, 5207);
+    			add_location(th15, file$9, 251, 8, 5243);
     			attr(tr10, "class", "item svelte-fvqcu8");
-    			add_location(tr10, file$8, 245, 6, 5081);
+    			add_location(tr10, file$9, 245, 6, 5117);
     			attr(tr11, "class", "buffer svelte-fvqcu8");
-    			add_location(tr11, file$8, 268, 6, 5767);
+    			add_location(tr11, file$9, 268, 6, 5803);
     			attr(th16, "class", "date svelte-fvqcu8");
-    			add_location(th16, file$8, 270, 8, 5821);
+    			add_location(th16, file$9, 270, 8, 5857);
     			attr(h55, "class", "svelte-fvqcu8");
-    			add_location(h55, file$8, 272, 10, 5883);
+    			add_location(h55, file$9, 272, 10, 5919);
     			attr(h64, "class", "svelte-fvqcu8");
-    			add_location(h64, file$8, 273, 10, 5925);
+    			add_location(h64, file$9, 273, 10, 5961);
     			attr(p5, "class", "desc svelte-fvqcu8");
-    			add_location(p5, file$8, 274, 10, 5983);
+    			add_location(p5, file$9, 274, 10, 6019);
     			attr(i3, "class", "far fa-newspaper svelte-fvqcu8");
-    			add_location(i3, file$8, 282, 16, 6354);
-    			add_location(button3, file$8, 281, 14, 6329);
+    			add_location(i3, file$9, 282, 16, 6390);
+    			add_location(button3, file$9, 281, 14, 6365);
     			attr(a3, "href", "https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems");
-    			add_location(a3, file$8, 279, 12, 6186);
+    			add_location(a3, file$9, 279, 12, 6222);
     			attr(div3, "class", "tags svelte-fvqcu8");
-    			add_location(div3, file$8, 278, 10, 6155);
+    			add_location(div3, file$9, 278, 10, 6191);
     			attr(th17, "class", "svelte-fvqcu8");
-    			add_location(th17, file$8, 271, 8, 5868);
+    			add_location(th17, file$9, 271, 8, 5904);
     			attr(tr12, "class", "item svelte-fvqcu8");
-    			add_location(tr12, file$8, 269, 6, 5795);
+    			add_location(tr12, file$9, 269, 6, 5831);
     			attr(th18, "class", "date svelte-fvqcu8");
-    			add_location(th18, file$8, 291, 8, 6542);
+    			add_location(th18, file$9, 291, 8, 6578);
     			attr(h42, "class", "header svelte-fvqcu8");
-    			add_location(h42, file$8, 293, 10, 6585);
+    			add_location(h42, file$9, 293, 10, 6621);
     			attr(th19, "class", "svelte-fvqcu8");
-    			add_location(th19, file$8, 292, 8, 6570);
-    			add_location(tr13, file$8, 290, 6, 6529);
-    			add_location(br3, file$8, 299, 10, 6734);
+    			add_location(th19, file$9, 292, 8, 6606);
+    			add_location(tr13, file$9, 290, 6, 6565);
+    			add_location(br3, file$9, 299, 10, 6770);
     			attr(th20, "class", "date svelte-fvqcu8");
-    			add_location(th20, file$8, 297, 8, 6687);
+    			add_location(th20, file$9, 297, 8, 6723);
     			attr(h56, "class", "svelte-fvqcu8");
-    			add_location(h56, file$8, 303, 10, 6802);
+    			add_location(h56, file$9, 303, 10, 6838);
     			attr(h65, "class", "svelte-fvqcu8");
-    			add_location(h65, file$8, 304, 10, 6828);
+    			add_location(h65, file$9, 304, 10, 6864);
     			attr(p6, "class", "desc svelte-fvqcu8");
-    			add_location(p6, file$8, 305, 10, 6875);
+    			add_location(p6, file$9, 305, 10, 6911);
     			attr(i4, "class", "far fa-newspaper svelte-fvqcu8");
-    			add_location(i4, file$8, 315, 16, 7301);
-    			add_location(button4, file$8, 314, 14, 7276);
+    			add_location(i4, file$9, 315, 16, 7337);
+    			add_location(button4, file$9, 314, 14, 7312);
     			attr(a4, "href", "https://www.wsj.com/articles/google-to-partner-with-biggest-car-alliance-1537243260\n              ");
-    			add_location(a4, file$8, 311, 12, 7138);
-    			add_location(button5, file$8, 319, 12, 7413);
-    			add_location(button6, file$8, 320, 12, 7455);
-    			add_location(button7, file$8, 321, 12, 7489);
-    			add_location(button8, file$8, 322, 12, 7522);
+    			add_location(a4, file$9, 311, 12, 7174);
+    			add_location(button5, file$9, 319, 12, 7449);
+    			add_location(button6, file$9, 320, 12, 7491);
+    			add_location(button7, file$9, 321, 12, 7525);
+    			add_location(button8, file$9, 322, 12, 7558);
     			attr(div4, "class", "tags svelte-fvqcu8");
-    			add_location(div4, file$8, 310, 10, 7107);
+    			add_location(div4, file$9, 310, 10, 7143);
     			attr(th21, "class", "svelte-fvqcu8");
-    			add_location(th21, file$8, 302, 8, 6787);
+    			add_location(th21, file$9, 302, 8, 6823);
     			attr(tr14, "class", "item svelte-fvqcu8");
-    			add_location(tr14, file$8, 296, 6, 6661);
+    			add_location(tr14, file$9, 296, 6, 6697);
     			attr(tr15, "class", "buffer svelte-fvqcu8");
-    			add_location(tr15, file$8, 326, 6, 7605);
-    			add_location(br4, file$8, 330, 10, 7706);
+    			add_location(tr15, file$9, 326, 6, 7641);
+    			add_location(br4, file$9, 330, 10, 7742);
     			attr(th22, "class", "date svelte-fvqcu8");
-    			add_location(th22, file$8, 328, 8, 7659);
+    			add_location(th22, file$9, 328, 8, 7695);
     			attr(h57, "class", "svelte-fvqcu8");
-    			add_location(h57, file$8, 334, 10, 7774);
+    			add_location(h57, file$9, 334, 10, 7810);
     			attr(h66, "class", "svelte-fvqcu8");
-    			add_location(h66, file$8, 335, 10, 7800);
+    			add_location(h66, file$9, 335, 10, 7836);
     			attr(p7, "class", "desc svelte-fvqcu8");
-    			add_location(p7, file$8, 336, 10, 7847);
-    			add_location(button9, file$8, 341, 12, 8064);
-    			add_location(button10, file$8, 342, 12, 8120);
-    			add_location(button11, file$8, 343, 12, 8154);
-    			add_location(button12, file$8, 344, 12, 8187);
+    			add_location(p7, file$9, 336, 10, 7883);
+    			add_location(button9, file$9, 341, 12, 8100);
+    			add_location(button10, file$9, 342, 12, 8156);
+    			add_location(button11, file$9, 343, 12, 8190);
+    			add_location(button12, file$9, 344, 12, 8223);
     			attr(div5, "class", "tags svelte-fvqcu8");
-    			add_location(div5, file$8, 340, 10, 8033);
+    			add_location(div5, file$9, 340, 10, 8069);
     			attr(th23, "class", "svelte-fvqcu8");
-    			add_location(th23, file$8, 333, 8, 7759);
+    			add_location(th23, file$9, 333, 8, 7795);
     			attr(tr16, "class", "item svelte-fvqcu8");
-    			add_location(tr16, file$8, 327, 6, 7633);
+    			add_location(tr16, file$9, 327, 6, 7669);
     			attr(tr17, "class", "buffer svelte-fvqcu8");
-    			add_location(tr17, file$8, 348, 6, 8257);
-    			add_location(br5, file$8, 352, 10, 8358);
+    			add_location(tr17, file$9, 348, 6, 8293);
+    			add_location(br5, file$9, 352, 10, 8394);
     			attr(th24, "class", "date svelte-fvqcu8");
-    			add_location(th24, file$8, 350, 8, 8311);
+    			add_location(th24, file$9, 350, 8, 8347);
     			attr(h58, "class", "svelte-fvqcu8");
-    			add_location(h58, file$8, 356, 10, 8426);
+    			add_location(h58, file$9, 356, 10, 8462);
     			attr(h67, "class", "svelte-fvqcu8");
-    			add_location(h67, file$8, 357, 10, 8452);
+    			add_location(h67, file$9, 357, 10, 8488);
     			attr(p8, "class", "desc svelte-fvqcu8");
-    			add_location(p8, file$8, 358, 10, 8500);
-    			add_location(button13, file$8, 363, 12, 8685);
-    			add_location(button14, file$8, 364, 12, 8717);
-    			add_location(button15, file$8, 365, 12, 8755);
+    			add_location(p8, file$9, 358, 10, 8536);
+    			add_location(button13, file$9, 363, 12, 8721);
+    			add_location(button14, file$9, 364, 12, 8753);
+    			add_location(button15, file$9, 365, 12, 8791);
     			attr(div6, "class", "tags svelte-fvqcu8");
-    			add_location(div6, file$8, 362, 10, 8654);
+    			add_location(div6, file$9, 362, 10, 8690);
     			attr(th25, "class", "svelte-fvqcu8");
-    			add_location(th25, file$8, 355, 8, 8411);
+    			add_location(th25, file$9, 355, 8, 8447);
     			attr(tr18, "class", "item svelte-fvqcu8");
-    			add_location(tr18, file$8, 349, 6, 8285);
+    			add_location(tr18, file$9, 349, 6, 8321);
     			attr(th26, "class", "date svelte-fvqcu8");
-    			add_location(th26, file$8, 371, 8, 8869);
+    			add_location(th26, file$9, 371, 8, 8905);
     			attr(h43, "class", "header svelte-fvqcu8");
-    			add_location(h43, file$8, 373, 10, 8912);
+    			add_location(h43, file$9, 373, 10, 8948);
     			attr(th27, "class", "svelte-fvqcu8");
-    			add_location(th27, file$8, 372, 8, 8897);
-    			add_location(tr19, file$8, 370, 6, 8856);
-    			add_location(br6, file$8, 379, 10, 9065);
+    			add_location(th27, file$9, 372, 8, 8933);
+    			add_location(tr19, file$9, 370, 6, 8892);
+    			add_location(br6, file$9, 379, 10, 9101);
     			attr(th28, "class", "date svelte-fvqcu8");
-    			add_location(th28, file$8, 377, 8, 9014);
+    			add_location(th28, file$9, 377, 8, 9050);
     			attr(h59, "class", "svelte-fvqcu8");
-    			add_location(h59, file$8, 383, 10, 9129);
+    			add_location(h59, file$9, 383, 10, 9165);
     			attr(h68, "class", "svelte-fvqcu8");
-    			add_location(h68, file$8, 384, 10, 9174);
+    			add_location(h68, file$9, 384, 10, 9210);
     			attr(p9, "class", "desc svelte-fvqcu8");
-    			add_location(p9, file$8, 385, 10, 9218);
+    			add_location(p9, file$9, 385, 10, 9254);
     			attr(i5, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i5, file$8, 393, 16, 9547);
-    			add_location(button16, file$8, 392, 14, 9522);
+    			add_location(i5, file$9, 393, 16, 9583);
+    			add_location(button16, file$9, 392, 14, 9558);
     			attr(a5, "href", "https://poloclub.github.io/");
-    			add_location(a5, file$8, 391, 12, 9469);
+    			add_location(a5, file$9, 391, 12, 9505);
     			attr(div7, "class", "tags svelte-fvqcu8");
-    			add_location(div7, file$8, 390, 10, 9438);
+    			add_location(div7, file$9, 390, 10, 9474);
     			attr(th29, "class", "svelte-fvqcu8");
-    			add_location(th29, file$8, 382, 8, 9114);
+    			add_location(th29, file$9, 382, 8, 9150);
     			attr(tr20, "class", "item svelte-fvqcu8");
-    			add_location(tr20, file$8, 376, 6, 8988);
+    			add_location(tr20, file$9, 376, 6, 9024);
     			attr(tr21, "class", "buffer svelte-fvqcu8");
-    			add_location(tr21, file$8, 400, 6, 9690);
-    			add_location(br7, file$8, 404, 10, 9797);
+    			add_location(tr21, file$9, 400, 6, 9726);
+    			add_location(br7, file$9, 404, 10, 9833);
     			attr(th30, "class", "date svelte-fvqcu8");
-    			add_location(th30, file$8, 402, 8, 9744);
+    			add_location(th30, file$9, 402, 8, 9780);
     			attr(h510, "class", "svelte-fvqcu8");
-    			add_location(h510, file$8, 408, 10, 9862);
+    			add_location(h510, file$9, 408, 10, 9898);
     			attr(h69, "class", "svelte-fvqcu8");
-    			add_location(h69, file$8, 409, 10, 9898);
+    			add_location(h69, file$9, 409, 10, 9934);
     			attr(p10, "class", "desc svelte-fvqcu8");
-    			add_location(p10, file$8, 410, 10, 9953);
-    			add_location(button17, file$8, 417, 14, 10293);
+    			add_location(p10, file$9, 410, 10, 9989);
+    			add_location(button17, file$9, 417, 14, 10329);
     			attr(a6, "href", "https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space");
-    			add_location(a6, file$8, 415, 12, 10164);
+    			add_location(a6, file$9, 415, 12, 10200);
     			attr(i6, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i6, file$8, 421, 16, 10425);
-    			add_location(button18, file$8, 420, 14, 10400);
+    			add_location(i6, file$9, 421, 16, 10461);
+    			add_location(button18, file$9, 420, 14, 10436);
     			attr(a7, "href", "http://prox-1.gatech.edu/");
-    			add_location(a7, file$8, 419, 12, 10349);
+    			add_location(a7, file$9, 419, 12, 10385);
     			attr(i7, "class", "far fa-newspaper svelte-fvqcu8");
-    			add_location(i7, file$8, 428, 16, 10659);
-    			add_location(button19, file$8, 427, 14, 10634);
+    			add_location(i7, file$9, 428, 16, 10695);
+    			add_location(button19, file$9, 427, 14, 10670);
     			attr(a8, "href", "https://www.ae.gatech.edu/news/2017/05/prox-1-launch-has-launched");
-    			add_location(a8, file$8, 425, 12, 10529);
-    			add_location(button20, file$8, 432, 12, 10773);
+    			add_location(a8, file$9, 425, 12, 10565);
+    			add_location(button20, file$9, 432, 12, 10809);
     			attr(div8, "class", "tags svelte-fvqcu8");
-    			add_location(div8, file$8, 414, 10, 10133);
+    			add_location(div8, file$9, 414, 10, 10169);
     			attr(th31, "class", "svelte-fvqcu8");
-    			add_location(th31, file$8, 407, 8, 9847);
+    			add_location(th31, file$9, 407, 8, 9883);
     			attr(tr22, "class", "item svelte-fvqcu8");
-    			add_location(tr22, file$8, 401, 6, 9718);
+    			add_location(tr22, file$9, 401, 6, 9754);
     			attr(th32, "class", "date svelte-fvqcu8");
-    			add_location(th32, file$8, 438, 8, 10882);
+    			add_location(th32, file$9, 438, 8, 10918);
     			attr(h44, "class", "header svelte-fvqcu8");
-    			add_location(h44, file$8, 440, 10, 10925);
+    			add_location(h44, file$9, 440, 10, 10961);
     			attr(th33, "class", "svelte-fvqcu8");
-    			add_location(th33, file$8, 439, 8, 10910);
-    			add_location(tr23, file$8, 437, 6, 10869);
+    			add_location(th33, file$9, 439, 8, 10946);
+    			add_location(tr23, file$9, 437, 6, 10905);
     			attr(th34, "class", "date svelte-fvqcu8");
-    			add_location(th34, file$8, 515, 8, 13040);
+    			add_location(th34, file$9, 468, 8, 11686);
     			attr(h45, "class", "header svelte-fvqcu8");
-    			add_location(h45, file$8, 517, 10, 13083);
+    			add_location(h45, file$9, 470, 10, 11729);
     			attr(th35, "class", "svelte-fvqcu8");
-    			add_location(th35, file$8, 516, 8, 13068);
-    			add_location(tr24, file$8, 514, 6, 13027);
+    			add_location(th35, file$9, 469, 8, 11714);
+    			add_location(tr24, file$9, 467, 6, 11673);
     			attr(th36, "class", "date svelte-fvqcu8");
-    			add_location(th36, file$8, 521, 8, 13174);
+    			add_location(th36, file$9, 474, 8, 11820);
     			attr(h511, "class", "svelte-fvqcu8");
-    			add_location(h511, file$8, 523, 10, 13229);
+    			add_location(h511, file$9, 476, 10, 11875);
     			attr(h610, "class", "svelte-fvqcu8");
-    			add_location(h610, file$8, 524, 10, 13282);
+    			add_location(h610, file$9, 477, 10, 11928);
     			attr(p11, "class", "desc svelte-fvqcu8");
-    			add_location(p11, file$8, 528, 10, 13413);
+    			add_location(p11, file$9, 481, 10, 12059);
     			attr(i8, "class", "fab fa-github svelte-fvqcu8");
-    			add_location(i8, file$8, 535, 16, 13728);
-    			add_location(button21, file$8, 534, 14, 13703);
+    			add_location(i8, file$9, 488, 16, 12374);
+    			add_location(button21, file$9, 487, 14, 12349);
     			attr(a9, "href", "https://github.com/cabreraalex/private-fair-GAN");
-    			add_location(a9, file$8, 533, 12, 13630);
+    			add_location(a9, file$9, 486, 12, 12276);
     			attr(div9, "class", "tags svelte-fvqcu8");
-    			add_location(div9, file$8, 532, 10, 13599);
+    			add_location(div9, file$9, 485, 10, 12245);
     			attr(th37, "class", "svelte-fvqcu8");
-    			add_location(th37, file$8, 522, 8, 13214);
+    			add_location(th37, file$9, 475, 8, 11860);
     			attr(tr25, "class", "item svelte-fvqcu8");
-    			add_location(tr25, file$8, 520, 6, 13148);
+    			add_location(tr25, file$9, 473, 6, 11794);
     			attr(tr26, "class", "buffer svelte-fvqcu8");
-    			add_location(tr26, file$8, 542, 6, 13869);
+    			add_location(tr26, file$9, 495, 6, 12515);
     			attr(th38, "class", "date svelte-fvqcu8");
-    			add_location(th38, file$8, 544, 8, 13923);
+    			add_location(th38, file$9, 497, 8, 12569);
     			attr(h512, "class", "svelte-fvqcu8");
-    			add_location(h512, file$8, 546, 10, 13980);
+    			add_location(h512, file$9, 499, 10, 12626);
     			attr(p12, "class", "desc svelte-fvqcu8");
-    			add_location(p12, file$8, 547, 10, 14032);
+    			add_location(p12, file$9, 500, 10, 12678);
     			attr(i9, "class", "fas fa-file-pdf svelte-fvqcu8");
-    			add_location(i9, file$8, 554, 16, 14305);
-    			add_location(button22, file$8, 553, 14, 14280);
+    			add_location(i9, file$9, 507, 16, 12951);
+    			add_location(button22, file$9, 506, 14, 12926);
     			attr(a10, "href", "./gt_bus_analysis.pdf");
-    			add_location(a10, file$8, 552, 12, 14233);
+    			add_location(a10, file$9, 505, 12, 12879);
     			attr(i10, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i10, file$8, 560, 16, 14508);
-    			add_location(button23, file$8, 559, 14, 14483);
+    			add_location(i10, file$9, 513, 16, 13154);
+    			add_location(button23, file$9, 512, 14, 13129);
     			attr(a11, "href", "http://poloclub.gatech.edu/cse6242/2018spring/");
-    			add_location(a11, file$8, 558, 12, 14411);
+    			add_location(a11, file$9, 511, 12, 13057);
     			attr(div10, "class", "tags svelte-fvqcu8");
-    			add_location(div10, file$8, 551, 10, 14202);
+    			add_location(div10, file$9, 504, 10, 12848);
     			attr(th39, "class", "svelte-fvqcu8");
-    			add_location(th39, file$8, 545, 8, 13965);
+    			add_location(th39, file$9, 498, 8, 12611);
     			attr(tr27, "class", "item svelte-fvqcu8");
-    			add_location(tr27, file$8, 543, 6, 13897);
+    			add_location(tr27, file$9, 496, 6, 12543);
     			attr(tr28, "class", "buffer svelte-fvqcu8");
-    			add_location(tr28, file$8, 567, 6, 14647);
+    			add_location(tr28, file$9, 520, 6, 13293);
     			attr(th40, "class", "date svelte-fvqcu8");
-    			add_location(th40, file$8, 569, 8, 14701);
+    			add_location(th40, file$9, 522, 8, 13347);
     			attr(h513, "class", "svelte-fvqcu8");
-    			add_location(h513, file$8, 571, 10, 14758);
+    			add_location(h513, file$9, 524, 10, 13404);
     			attr(p13, "class", "desc svelte-fvqcu8");
-    			add_location(p13, file$8, 572, 10, 14791);
+    			add_location(p13, file$9, 525, 10, 13437);
     			attr(i11, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i11, file$8, 579, 16, 15075);
-    			add_location(button24, file$8, 578, 14, 15050);
+    			add_location(i11, file$9, 532, 16, 13721);
+    			add_location(button24, file$9, 531, 14, 13696);
     			attr(a12, "href", "http://ctfs.github.io/resources/");
-    			add_location(a12, file$8, 577, 12, 14992);
+    			add_location(a12, file$9, 530, 12, 13638);
     			attr(i12, "class", "fab fa-github svelte-fvqcu8");
-    			add_location(i12, file$8, 585, 16, 15263);
-    			add_location(button25, file$8, 584, 14, 15238);
+    			add_location(i12, file$9, 538, 16, 13909);
+    			add_location(button25, file$9, 537, 14, 13884);
     			attr(a13, "href", "https://github.com/ctfs/resources");
-    			add_location(a13, file$8, 583, 12, 15179);
+    			add_location(a13, file$9, 536, 12, 13825);
     			attr(div11, "class", "tags svelte-fvqcu8");
-    			add_location(div11, file$8, 576, 10, 14961);
+    			add_location(div11, file$9, 529, 10, 13607);
     			attr(th41, "class", "svelte-fvqcu8");
-    			add_location(th41, file$8, 570, 8, 14743);
+    			add_location(th41, file$9, 523, 8, 13389);
     			attr(tr29, "class", "item svelte-fvqcu8");
-    			add_location(tr29, file$8, 568, 6, 14675);
+    			add_location(tr29, file$9, 521, 6, 13321);
     			attr(th42, "class", "date svelte-fvqcu8");
-    			add_location(th42, file$8, 594, 8, 15441);
+    			add_location(th42, file$9, 547, 8, 14087);
     			attr(h46, "class", "header svelte-fvqcu8");
-    			add_location(h46, file$8, 596, 10, 15484);
+    			add_location(h46, file$9, 549, 10, 14130);
     			attr(th43, "class", "svelte-fvqcu8");
-    			add_location(th43, file$8, 595, 8, 15469);
-    			add_location(tr30, file$8, 593, 6, 15428);
+    			add_location(th43, file$9, 548, 8, 14115);
+    			add_location(tr30, file$9, 546, 6, 14074);
     			attr(th44, "class", "date svelte-fvqcu8");
-    			add_location(th44, file$8, 600, 8, 15575);
+    			add_location(th44, file$9, 553, 8, 14221);
     			attr(h514, "class", "svelte-fvqcu8");
-    			add_location(h514, file$8, 602, 10, 15656);
+    			add_location(h514, file$9, 555, 10, 14302);
     			attr(h611, "class", "svelte-fvqcu8");
-    			add_location(h611, file$8, 603, 10, 15708);
+    			add_location(h611, file$9, 556, 10, 14354);
     			attr(p14, "class", "desc svelte-fvqcu8");
-    			add_location(p14, file$8, 604, 10, 15767);
+    			add_location(p14, file$9, 557, 10, 14413);
     			attr(th45, "class", "svelte-fvqcu8");
-    			add_location(th45, file$8, 601, 8, 15641);
+    			add_location(th45, file$9, 554, 8, 14287);
     			attr(tr31, "class", "item svelte-fvqcu8");
-    			add_location(tr31, file$8, 599, 6, 15549);
+    			add_location(tr31, file$9, 552, 6, 14195);
     			attr(tr32, "class", "buffer svelte-fvqcu8");
-    			add_location(tr32, file$8, 610, 6, 15952);
+    			add_location(tr32, file$9, 563, 6, 14598);
     			attr(th46, "class", "date svelte-fvqcu8");
-    			add_location(th46, file$8, 612, 8, 16006);
+    			add_location(th46, file$9, 565, 8, 14652);
     			attr(h515, "class", "svelte-fvqcu8");
-    			add_location(h515, file$8, 614, 10, 16061);
+    			add_location(h515, file$9, 567, 10, 14707);
     			attr(h612, "class", "svelte-fvqcu8");
-    			add_location(h612, file$8, 615, 10, 16092);
+    			add_location(h612, file$9, 568, 10, 14738);
     			attr(p15, "class", "desc svelte-fvqcu8");
-    			add_location(p15, file$8, 616, 10, 16140);
+    			add_location(p15, file$9, 569, 10, 14786);
     			attr(th47, "class", "svelte-fvqcu8");
-    			add_location(th47, file$8, 613, 8, 16046);
+    			add_location(th47, file$9, 566, 8, 14692);
     			attr(tr33, "class", "item svelte-fvqcu8");
-    			add_location(tr33, file$8, 611, 6, 15980);
+    			add_location(tr33, file$9, 564, 6, 14626);
     			attr(th48, "class", "date svelte-fvqcu8");
-    			add_location(th48, file$8, 624, 8, 16357);
+    			add_location(th48, file$9, 577, 8, 15003);
     			attr(h47, "class", "header svelte-fvqcu8");
-    			add_location(h47, file$8, 626, 10, 16400);
+    			add_location(h47, file$9, 579, 10, 15046);
     			attr(th49, "class", "svelte-fvqcu8");
-    			add_location(th49, file$8, 625, 8, 16385);
-    			add_location(tr34, file$8, 623, 6, 16344);
+    			add_location(th49, file$9, 578, 8, 15031);
+    			add_location(tr34, file$9, 576, 6, 14990);
     			attr(th50, "class", "date svelte-fvqcu8");
-    			add_location(th50, file$8, 630, 8, 16490);
+    			add_location(th50, file$9, 583, 8, 15136);
     			attr(h516, "class", "svelte-fvqcu8");
-    			add_location(h516, file$8, 632, 10, 16533);
+    			add_location(h516, file$9, 585, 10, 15179);
     			attr(th51, "class", "svelte-fvqcu8");
-    			add_location(th51, file$8, 631, 8, 16518);
+    			add_location(th51, file$9, 584, 8, 15164);
     			attr(tr35, "class", "item svelte-fvqcu8");
-    			add_location(tr35, file$8, 629, 6, 16464);
+    			add_location(tr35, file$9, 582, 6, 15110);
     			attr(th52, "class", "date svelte-fvqcu8");
-    			add_location(th52, file$8, 636, 8, 16605);
+    			add_location(th52, file$9, 589, 8, 15251);
     			attr(h517, "class", "single svelte-fvqcu8");
-    			add_location(h517, file$8, 638, 10, 16663);
+    			add_location(h517, file$9, 591, 10, 15309);
     			attr(th53, "class", "svelte-fvqcu8");
-    			add_location(th53, file$8, 637, 8, 16648);
-    			add_location(tr36, file$8, 635, 6, 16592);
+    			add_location(th53, file$9, 590, 8, 15294);
+    			add_location(tr36, file$9, 588, 6, 15238);
     			attr(th54, "class", "date svelte-fvqcu8");
-    			add_location(th54, file$8, 642, 8, 16773);
+    			add_location(th54, file$9, 595, 8, 15419);
     			attr(h518, "class", "single svelte-fvqcu8");
-    			add_location(h518, file$8, 644, 10, 16831);
+    			add_location(h518, file$9, 597, 10, 15477);
     			attr(th55, "class", "svelte-fvqcu8");
-    			add_location(th55, file$8, 643, 8, 16816);
-    			add_location(tr37, file$8, 641, 6, 16760);
+    			add_location(th55, file$9, 596, 8, 15462);
+    			add_location(tr37, file$9, 594, 6, 15406);
     			attr(th56, "class", "date svelte-fvqcu8");
-    			add_location(th56, file$8, 651, 8, 17013);
+    			add_location(th56, file$9, 604, 8, 15659);
     			attr(h48, "class", "header svelte-fvqcu8");
-    			add_location(h48, file$8, 653, 10, 17056);
+    			add_location(h48, file$9, 606, 10, 15702);
     			attr(th57, "class", "svelte-fvqcu8");
-    			add_location(th57, file$8, 652, 8, 17041);
-    			add_location(tr38, file$8, 650, 6, 17000);
-    			add_location(br8, file$8, 659, 10, 17210);
+    			add_location(th57, file$9, 605, 8, 15687);
+    			add_location(tr38, file$9, 603, 6, 15646);
+    			add_location(br8, file$9, 612, 10, 15856);
     			attr(th58, "class", "date svelte-fvqcu8");
-    			add_location(th58, file$8, 657, 8, 17157);
+    			add_location(th58, file$9, 610, 8, 15803);
     			attr(h519, "class", "svelte-fvqcu8");
-    			add_location(h519, file$8, 663, 10, 17277);
+    			add_location(h519, file$9, 616, 10, 15923);
     			attr(h613, "class", "svelte-fvqcu8");
-    			add_location(h613, file$8, 664, 10, 17337);
+    			add_location(h613, file$9, 617, 10, 15983);
     			attr(p16, "class", "desc svelte-fvqcu8");
-    			add_location(p16, file$8, 665, 10, 17383);
+    			add_location(p16, file$9, 618, 10, 16029);
     			attr(i13, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i13, file$8, 672, 16, 17665);
-    			add_location(button26, file$8, 671, 14, 17640);
+    			add_location(i13, file$9, 625, 16, 16311);
+    			add_location(button26, file$9, 624, 14, 16286);
     			attr(a14, "href", "http://ssnc.stampsfoundation.org/");
-    			add_location(a14, file$8, 670, 12, 17581);
+    			add_location(a14, file$9, 623, 12, 16227);
     			attr(div12, "class", "tags svelte-fvqcu8");
-    			add_location(div12, file$8, 669, 10, 17550);
+    			add_location(div12, file$9, 622, 10, 16196);
     			attr(th59, "class", "svelte-fvqcu8");
-    			add_location(th59, file$8, 662, 8, 17262);
+    			add_location(th59, file$9, 615, 8, 15908);
     			attr(tr39, "class", "item svelte-fvqcu8");
-    			add_location(tr39, file$8, 656, 6, 17131);
+    			add_location(tr39, file$9, 609, 6, 15777);
     			attr(tr40, "class", "buffer svelte-fvqcu8");
-    			add_location(tr40, file$8, 679, 6, 17806);
+    			add_location(tr40, file$9, 632, 6, 16452);
     			attr(th60, "class", "date svelte-fvqcu8");
-    			add_location(th60, file$8, 681, 8, 17860);
+    			add_location(th60, file$9, 634, 8, 16506);
     			attr(h520, "class", "svelte-fvqcu8");
-    			add_location(h520, file$8, 683, 10, 17917);
+    			add_location(h520, file$9, 636, 10, 16563);
     			attr(p17, "class", "desc svelte-fvqcu8");
-    			add_location(p17, file$8, 684, 10, 17947);
+    			add_location(p17, file$9, 637, 10, 16593);
     			attr(i14, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i14, file$8, 690, 16, 18173);
-    			add_location(button27, file$8, 689, 14, 18148);
+    			add_location(i14, file$9, 643, 16, 16819);
+    			add_location(button27, file$9, 642, 14, 16794);
     			attr(a15, "href", "http://admission.gatech.edu/gttours");
-    			add_location(a15, file$8, 688, 12, 18087);
+    			add_location(a15, file$9, 641, 12, 16733);
     			attr(div13, "class", "tags svelte-fvqcu8");
-    			add_location(div13, file$8, 687, 10, 18056);
+    			add_location(div13, file$9, 640, 10, 16702);
     			attr(th61, "class", "svelte-fvqcu8");
-    			add_location(th61, file$8, 682, 8, 17902);
+    			add_location(th61, file$9, 635, 8, 16548);
     			attr(tr41, "class", "item svelte-fvqcu8");
-    			add_location(tr41, file$8, 680, 6, 17834);
+    			add_location(tr41, file$9, 633, 6, 16480);
     			attr(tr42, "class", "buffer svelte-fvqcu8");
-    			add_location(tr42, file$8, 697, 6, 18314);
-    			add_location(br9, file$8, 701, 10, 18421);
+    			add_location(tr42, file$9, 650, 6, 16960);
+    			add_location(br9, file$9, 654, 10, 17067);
     			attr(th62, "class", "date svelte-fvqcu8");
-    			add_location(th62, file$8, 699, 8, 18368);
+    			add_location(th62, file$9, 652, 8, 17014);
     			attr(h521, "class", "svelte-fvqcu8");
-    			add_location(h521, file$8, 705, 10, 18486);
+    			add_location(h521, file$9, 658, 10, 17132);
     			attr(h614, "class", "svelte-fvqcu8");
-    			add_location(h614, file$8, 706, 10, 18537);
+    			add_location(h614, file$9, 659, 10, 17183);
     			attr(p18, "class", "desc svelte-fvqcu8");
-    			add_location(p18, file$8, 707, 10, 18613);
+    			add_location(p18, file$9, 660, 10, 17259);
     			attr(i15, "class", "fas fa-globe svelte-fvqcu8");
-    			add_location(i15, file$8, 715, 16, 18944);
-    			add_location(button28, file$8, 714, 14, 18919);
+    			add_location(i15, file$9, 668, 16, 17590);
+    			add_location(button28, file$9, 667, 14, 17565);
     			attr(a16, "href", "http://www.gtsf.gatech.edu/s/1481/alumni/17/home.aspx?sid=1481&gid=42");
-    			add_location(a16, file$8, 712, 12, 18810);
+    			add_location(a16, file$9, 665, 12, 17456);
     			attr(div14, "class", "tags svelte-fvqcu8");
-    			add_location(div14, file$8, 711, 10, 18779);
+    			add_location(div14, file$9, 664, 10, 17425);
     			attr(th63, "class", "svelte-fvqcu8");
-    			add_location(th63, file$8, 704, 8, 18471);
+    			add_location(th63, file$9, 657, 8, 17117);
     			attr(tr43, "class", "item svelte-fvqcu8");
-    			add_location(tr43, file$8, 698, 6, 18342);
+    			add_location(tr43, file$9, 651, 6, 16988);
     			attr(th64, "class", "date svelte-fvqcu8");
-    			add_location(th64, file$8, 724, 8, 19128);
+    			add_location(th64, file$9, 677, 8, 17774);
     			attr(h49, "class", "header svelte-fvqcu8");
-    			add_location(h49, file$8, 726, 10, 19171);
+    			add_location(h49, file$9, 679, 10, 17817);
     			attr(th65, "class", "svelte-fvqcu8");
-    			add_location(th65, file$8, 725, 8, 19156);
-    			add_location(tr44, file$8, 723, 6, 19115);
+    			add_location(th65, file$9, 678, 8, 17802);
+    			add_location(tr44, file$9, 676, 6, 17761);
     			attr(th66, "class", "date svelte-fvqcu8");
-    			add_location(th66, file$8, 730, 8, 19270);
+    			add_location(th66, file$9, 683, 8, 17916);
     			attr(h522, "class", "single svelte-fvqcu8");
-    			add_location(h522, file$8, 733, 12, 19402);
+    			add_location(h522, file$9, 686, 12, 18048);
     			attr(a17, "href", "https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/");
-    			add_location(a17, file$8, 732, 10, 19325);
+    			add_location(a17, file$9, 685, 10, 17971);
     			attr(th67, "class", "svelte-fvqcu8");
-    			add_location(th67, file$8, 731, 8, 19310);
+    			add_location(th67, file$9, 684, 8, 17956);
     			attr(tr45, "class", "item svelte-fvqcu8");
-    			add_location(tr45, file$8, 729, 6, 19244);
+    			add_location(tr45, file$9, 682, 6, 17890);
     			attr(th68, "class", "date svelte-fvqcu8");
-    			add_location(th68, file$8, 738, 8, 19528);
+    			add_location(th68, file$9, 691, 8, 18174);
     			attr(h523, "class", "single svelte-fvqcu8");
-    			add_location(h523, file$8, 741, 12, 19654);
+    			add_location(h523, file$9, 694, 12, 18300);
     			attr(a18, "href", "http://poloclub.gatech.edu/cse6242/2018spring");
-    			add_location(a18, file$8, 740, 10, 19585);
+    			add_location(a18, file$9, 693, 10, 18231);
     			attr(th69, "class", "svelte-fvqcu8");
-    			add_location(th69, file$8, 739, 8, 19570);
+    			add_location(th69, file$9, 692, 8, 18216);
     			attr(tr46, "class", "item svelte-fvqcu8");
-    			add_location(tr46, file$8, 737, 6, 19502);
+    			add_location(tr46, file$9, 690, 6, 18148);
     			attr(th70, "class", "date svelte-fvqcu8");
-    			add_location(th70, file$8, 746, 8, 19796);
+    			add_location(th70, file$9, 699, 8, 18442);
     			attr(h524, "class", "single svelte-fvqcu8");
-    			add_location(h524, file$8, 748, 10, 19851);
+    			add_location(h524, file$9, 701, 10, 18497);
     			attr(th71, "class", "svelte-fvqcu8");
-    			add_location(th71, file$8, 747, 8, 19836);
+    			add_location(th71, file$9, 700, 8, 18482);
     			attr(tr47, "class", "item svelte-fvqcu8");
-    			add_location(tr47, file$8, 745, 6, 19770);
+    			add_location(tr47, file$9, 698, 6, 18416);
     			attr(th72, "class", "date svelte-fvqcu8");
-    			add_location(th72, file$8, 752, 8, 19964);
+    			add_location(th72, file$9, 705, 8, 18610);
     			attr(h525, "class", "single svelte-fvqcu8");
-    			add_location(h525, file$8, 755, 12, 20098);
+    			add_location(h525, file$9, 708, 12, 18744);
     			attr(a19, "href", "https://www.omscs.gatech.edu/cs-7641-machine-learning");
-    			add_location(a19, file$8, 754, 10, 20021);
+    			add_location(a19, file$9, 707, 10, 18667);
     			attr(th73, "class", "svelte-fvqcu8");
-    			add_location(th73, file$8, 753, 8, 20006);
+    			add_location(th73, file$9, 706, 8, 18652);
     			attr(tr48, "class", "item svelte-fvqcu8");
-    			add_location(tr48, file$8, 751, 6, 19938);
+    			add_location(tr48, file$9, 704, 6, 18584);
     			attr(th74, "class", "date svelte-fvqcu8");
-    			add_location(th74, file$8, 760, 8, 20227);
+    			add_location(th74, file$9, 713, 8, 18873);
     			attr(h526, "class", "single svelte-fvqcu8");
-    			add_location(h526, file$8, 763, 12, 20338);
+    			add_location(h526, file$9, 716, 12, 18984);
     			attr(a20, "href", "http://cx4230.gatech.edu/sp17/");
-    			add_location(a20, file$8, 762, 10, 20284);
+    			add_location(a20, file$9, 715, 10, 18930);
     			attr(th75, "class", "svelte-fvqcu8");
-    			add_location(th75, file$8, 761, 8, 20269);
+    			add_location(th75, file$9, 714, 8, 18915);
     			attr(tr49, "class", "item svelte-fvqcu8");
-    			add_location(tr49, file$8, 759, 6, 20201);
+    			add_location(tr49, file$9, 712, 6, 18847);
     			attr(th76, "class", "date svelte-fvqcu8");
-    			add_location(th76, file$8, 768, 8, 20465);
+    			add_location(th76, file$9, 721, 8, 19111);
     			attr(h527, "class", "single svelte-fvqcu8");
-    			add_location(h527, file$8, 770, 10, 20522);
+    			add_location(h527, file$9, 723, 10, 19168);
     			attr(th77, "class", "svelte-fvqcu8");
-    			add_location(th77, file$8, 769, 8, 20507);
+    			add_location(th77, file$9, 722, 8, 19153);
     			attr(tr50, "class", "item svelte-fvqcu8");
-    			add_location(tr50, file$8, 767, 6, 20439);
+    			add_location(tr50, file$9, 720, 6, 19085);
     			attr(th78, "class", "date svelte-fvqcu8");
-    			add_location(th78, file$8, 775, 8, 20641);
+    			add_location(th78, file$9, 728, 8, 19287);
     			attr(h410, "class", "header svelte-fvqcu8");
-    			add_location(h410, file$8, 777, 10, 20684);
+    			add_location(h410, file$9, 730, 10, 19330);
     			attr(th79, "class", "svelte-fvqcu8");
-    			add_location(th79, file$8, 776, 8, 20669);
-    			add_location(tr51, file$8, 774, 6, 20628);
+    			add_location(th79, file$9, 729, 8, 19315);
+    			add_location(tr51, file$9, 727, 6, 19274);
     			attr(th80, "class", "date svelte-fvqcu8");
-    			add_location(th80, file$8, 781, 8, 20773);
+    			add_location(th80, file$9, 734, 8, 19419);
     			attr(h528, "class", "svelte-fvqcu8");
-    			add_location(h528, file$8, 783, 10, 20816);
-    			add_location(button29, file$8, 785, 12, 20876);
-    			add_location(button30, file$8, 786, 12, 20922);
-    			add_location(button31, file$8, 787, 12, 20968);
+    			add_location(h528, file$9, 736, 10, 19462);
+    			add_location(button29, file$9, 738, 12, 19522);
+    			add_location(button30, file$9, 739, 12, 19568);
+    			add_location(button31, file$9, 740, 12, 19614);
     			attr(div15, "class", "tags svelte-fvqcu8");
-    			add_location(div15, file$8, 784, 10, 20845);
+    			add_location(div15, file$9, 737, 10, 19491);
     			attr(th81, "class", "svelte-fvqcu8");
-    			add_location(th81, file$8, 782, 8, 20801);
+    			add_location(th81, file$9, 735, 8, 19447);
     			attr(tr52, "class", "item svelte-fvqcu8");
-    			add_location(tr52, file$8, 780, 6, 20747);
+    			add_location(tr52, file$9, 733, 6, 19393);
     			attr(tr53, "class", "buffer svelte-fvqcu8");
-    			add_location(tr53, file$8, 791, 6, 21063);
+    			add_location(tr53, file$9, 744, 6, 19709);
     			attr(th82, "class", "date svelte-fvqcu8");
-    			add_location(th82, file$8, 793, 8, 21117);
+    			add_location(th82, file$9, 746, 8, 19763);
     			attr(h529, "class", "svelte-fvqcu8");
-    			add_location(h529, file$8, 795, 10, 21160);
-    			add_location(button32, file$8, 797, 12, 21232);
-    			add_location(button33, file$8, 798, 12, 21266);
-    			add_location(button34, file$8, 799, 12, 21306);
-    			add_location(button35, file$8, 800, 12, 21342);
-    			add_location(button36, file$8, 801, 12, 21377);
-    			add_location(button37, file$8, 802, 12, 21410);
+    			add_location(h529, file$9, 748, 10, 19806);
+    			add_location(button32, file$9, 750, 12, 19878);
+    			add_location(button33, file$9, 751, 12, 19912);
+    			add_location(button34, file$9, 752, 12, 19952);
+    			add_location(button35, file$9, 753, 12, 19988);
+    			add_location(button36, file$9, 754, 12, 20023);
+    			add_location(button37, file$9, 755, 12, 20056);
     			attr(div16, "class", "tags svelte-fvqcu8");
-    			add_location(div16, file$8, 796, 10, 21201);
+    			add_location(div16, file$9, 749, 10, 19847);
     			attr(th83, "class", "svelte-fvqcu8");
-    			add_location(th83, file$8, 794, 8, 21145);
+    			add_location(th83, file$9, 747, 8, 19791);
     			attr(tr54, "class", "item svelte-fvqcu8");
-    			add_location(tr54, file$8, 792, 6, 21091);
+    			add_location(tr54, file$9, 745, 6, 19737);
     			attr(tr55, "class", "buffer svelte-fvqcu8");
-    			add_location(tr55, file$8, 806, 6, 21479);
+    			add_location(tr55, file$9, 759, 6, 20125);
     			attr(th84, "class", "date svelte-fvqcu8");
-    			add_location(th84, file$8, 808, 8, 21533);
+    			add_location(th84, file$9, 761, 8, 20179);
     			attr(h530, "class", "svelte-fvqcu8");
-    			add_location(h530, file$8, 810, 10, 21576);
-    			add_location(button38, file$8, 812, 12, 21639);
-    			add_location(button39, file$8, 813, 12, 21685);
-    			add_location(button40, file$8, 814, 12, 21737);
-    			add_location(button41, file$8, 815, 12, 21772);
-    			add_location(button42, file$8, 816, 12, 21808);
-    			add_location(button43, file$8, 817, 12, 21842);
-    			add_location(button44, file$8, 818, 12, 21874);
-    			add_location(button45, file$8, 819, 12, 21911);
+    			add_location(h530, file$9, 763, 10, 20222);
+    			add_location(button38, file$9, 765, 12, 20285);
+    			add_location(button39, file$9, 766, 12, 20331);
+    			add_location(button40, file$9, 767, 12, 20383);
+    			add_location(button41, file$9, 768, 12, 20418);
+    			add_location(button42, file$9, 769, 12, 20454);
+    			add_location(button43, file$9, 770, 12, 20488);
+    			add_location(button44, file$9, 771, 12, 20520);
+    			add_location(button45, file$9, 772, 12, 20557);
     			attr(div17, "class", "tags svelte-fvqcu8");
-    			add_location(div17, file$8, 811, 10, 21608);
+    			add_location(div17, file$9, 764, 10, 20254);
     			attr(th85, "class", "svelte-fvqcu8");
-    			add_location(th85, file$8, 809, 8, 21561);
+    			add_location(th85, file$9, 762, 8, 20207);
     			attr(tr56, "class", "item svelte-fvqcu8");
-    			add_location(tr56, file$8, 807, 6, 21507);
+    			add_location(tr56, file$9, 760, 6, 20153);
     			attr(tr57, "class", "buffer svelte-fvqcu8");
-    			add_location(tr57, file$8, 823, 6, 22002);
+    			add_location(tr57, file$9, 776, 6, 20648);
     			attr(th86, "class", "date svelte-fvqcu8");
-    			add_location(th86, file$8, 825, 8, 22056);
+    			add_location(th86, file$9, 778, 8, 20702);
     			attr(p19, "class", "desc svelte-fvqcu8");
-    			add_location(p19, file$8, 827, 10, 22099);
+    			add_location(p19, file$9, 780, 10, 20745);
     			attr(th87, "class", "svelte-fvqcu8");
-    			add_location(th87, file$8, 826, 8, 22084);
+    			add_location(th87, file$9, 779, 8, 20730);
     			attr(tr58, "class", "item svelte-fvqcu8");
-    			add_location(tr58, file$8, 824, 6, 22030);
+    			add_location(tr58, file$9, 777, 6, 20676);
     			attr(table, "class", "svelte-fvqcu8");
-    			add_location(table, file$8, 148, 4, 2292);
+    			add_location(table, file$9, 149, 4, 2341);
     			attr(main, "class", "svelte-fvqcu8");
-    			add_location(main, file$8, 135, 2, 2069);
+    			add_location(main, file$9, 136, 2, 2118);
     			attr(div18, "id", "container");
-    			add_location(div18, file$8, 134, 0, 2046);
+    			add_location(div18, file$9, 135, 0, 2095);
     		},
 
     		l: function claim(nodes) {
@@ -5547,17 +4958,18 @@ var app = (function () {
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(changed, child_ctx);
+    						transition_in(each_blocks[i], 1);
     					} else {
     						each_blocks[i] = create_each_block$3(child_ctx);
     						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
     						each_blocks[i].m(table, t172);
     					}
     				}
 
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-    				each_blocks.length = each_value.length;
+    				group_outros();
+    				for (i = each_value.length; i < each_blocks.length; i += 1) out(i);
+    				check_outros();
     			}
     		},
 
@@ -5567,12 +4979,18 @@ var app = (function () {
 
     			transition_in(social.$$.fragment, local);
 
+    			for (var i = 0; i < each_value.length; i += 1) transition_in(each_blocks[i]);
+
     			current = true;
     		},
 
     		o: function outro(local) {
     			transition_out(intro.$$.fragment, local);
     			transition_out(social.$$.fragment, local);
+
+    			each_blocks = each_blocks.filter(Boolean);
+    			for (let i = 0; i < each_blocks.length; i += 1) transition_out(each_blocks[i]);
+
     			current = false;
     		},
 
@@ -5601,7 +5019,7 @@ var app = (function () {
     class Cv extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$9, safe_not_equal, []);
+    		init(this, options, null, create_fragment$a, safe_not_equal, []);
     	}
     }
 
@@ -5615,7 +5033,7 @@ var app = (function () {
 
     /* src/App.svelte generated by Svelte v3.9.1 */
 
-    function create_fragment$a(ctx) {
+    function create_fragment$b(ctx) {
     	var current;
 
     	var router = new Router({
@@ -5661,7 +5079,7 @@ var app = (function () {
     	};
     }
 
-    function instance$3($$self) {
+    function instance$4($$self) {
     	
 
       document.title = "Alex Cabrera";
@@ -5695,7 +5113,7 @@ var app = (function () {
     class App extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$3, create_fragment$a, safe_not_equal, []);
+    		init(this, options, instance$4, create_fragment$b, safe_not_equal, []);
     	}
     }
 
