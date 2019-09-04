@@ -1,6 +1,7 @@
 <script>
   import Footer from "./components/Footer.svelte";
   import pubs from "./data/pubs.js";
+  import Links from "./components/Links.svelte";
   export let params = {};
 
   let pub = pubs.find(e => e.id === params.id);
@@ -24,10 +25,6 @@
     margin-top: 2px;
   }
 
-  .buttons {
-    margin-top: 2px;
-  }
-
   #body {
     margin-right: 20px;
     margin-left: 20px;
@@ -48,19 +45,6 @@
   .sec-title {
     margin-top: 20px;
     margin-bottom: 10px;
-  }
-
-  #teaser {
-    width: 100%;
-  }
-
-  .half {
-    width: 50%;
-  }
-
-  #header {
-    display: inline-flex;
-    margin-top: 20px;
   }
 
   .code {
@@ -110,59 +94,10 @@
     <i>{pub.venuelong}. {pub.location}, {pub.year}</i>
   </h5>
 
-  <div class="buttons">
-    {#if pub.pdf}
-      <a href={pub.pdf}>
-        <button>
-          <i class="fas fa-file-pdf" />
-          PDF
-        </button>
-      </a>
-    {/if}
-    {#if pub.code}
-      <a href={pub.code}>
-        <button>
-          <i class="fab fa-github" />
-          Code
-        </button>
-      </a>
-    {/if}
-    {#if pub.workshop}
-      <a href={pub.workshop}>
-        <button>
-          <i class="fas fa-globe" />
-          Workshop
-        </button>
-      </a>
-    {/if}
-    {#if pub.video}
-      <a href={pub.video}>
-        <button>
-          <i class="fab fa-youtube" />
-          Video
-        </button>
-      </a>
-    {/if}
-    {#if pub.demo}
-      <a href={pub.demo}>
-        <button>
-          <i class="fas fa-globe" />
-          Demo
-        </button>
-      </a>
-    {/if}
-    <a href={'#/paper/' + pub.id}>
-      <button>
-        <i class="fas fa-globe" />
-        Website
-      </button>
-    </a>
-  </div>
+  <Links {pub} />
   <h2 class="sec-title">BibTex</h2>
   <div class="code">
-    <code class="bibtex">
-      {pub.bibtex}
-    </code>
+    <code class="bibtex">{pub.bibtex}</code>
   </div>
   <Footer />
 </div>

@@ -1,9 +1,15 @@
+<style>
+  h3 {
+    margin-bottom: 0px;
+  }
+</style>
+
 <div id="social">
   <a href="https://cabreraalex.com">
-  <h3>
-    <i class="fas fa-home"></i> 
-    &nbsp;cabreraalex.com
-</h3>
+    <h3>
+      <i class="fas fa-home" />
+      &nbsp;cabreraalex.com
+    </h3>
   </a>
   <a href="mailto:cabrera@cmu.edu">
     <h3>

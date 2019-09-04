@@ -1,6 +1,7 @@
 <script>
   import Intro from "./components/Intro.svelte";
   import Social from "./components/Social.svelte";
+  import Links from "./components/Links.svelte";
   import pubs from "./data/pubs.js";
 </script>
 
@@ -177,8 +178,7 @@
           <h6>
             <span class="gold">Georgia</span>
             Institute of
-            <span class="gold">Tech</span>
-            nology - Atlanta, GA
+            <span class="gold">Tech</span>nology - Atlanta, GA
           </h6>
           <p class="desc">
             Concentration in intelligence and modeling/simulation. Minor in
@@ -459,54 +459,7 @@
               <i>{pub.venuelong}. {pub.location}, {pub.year}.</i>
             </p>
 
-            <div class="buttons">
-              {#if pub.pdf}
-                <a href={pub.pdf}>
-                  <button>
-                    <i class="fas fa-file-pdf" />
-                    PDF
-                  </button>
-                </a>
-              {/if}
-              {#if pub.code}
-                <a href={pub.code}>
-                  <button>
-                    <i class="fab fa-github" />
-                    Code
-                  </button>
-                </a>
-              {/if}
-              {#if pub.workshop}
-                <a href={pub.workshop}>
-                  <button>
-                    <i class="fas fa-globe" />
-                    Workshop
-                  </button>
-                </a>
-              {/if}
-              {#if pub.video}
-                <a href={pub.video}>
-                  <button>
-                    <i class="fab fa-youtube" />
-                    Video
-                  </button>
-                </a>
-              {/if}
-              {#if pub.demo}
-                <a href={pub.demo}>
-                  <button>
-                    <i class="fas fa-globe" />
-                    Demo
-                  </button>
-                </a>
-              {/if}
-              <a href={'#/paper/' + pub.id}>
-                <button>
-                  <i class="fas fa-globe" />
-                  Website
-                </button>
-              </a>
-            </div>
+            <Links pub={pub} />
           </th>
         </tr>
         <tr class="buffer" />
