@@ -10,34 +10,31 @@
   <div id="content" class="pure-u-1 pure-u-md-3-4">
     <div id="padded-content">
       <h1>Publications</h1>
-        {#each pubs as pub}
-          <div class="pure-g pub">
-            <div class="pure-u-1 pure-u-md-1-4">
-              <div class="thumb">
-                <a href={'#/paper/' + pub.id}>
-                  <img
-                    src={'images/' + pub.teaser}
-                    class="thumb"
-                    alt="teaser" />
-                </a>
-                <h6 class="venue">{pub.venue}</h6>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-md-3-4">
-              <div class="padded">
-                <a href={'#/paper/' + pub.id} class="paper-title">
-                  <h4>{pub.title}</h4>
-                </a>
-                <h5>
-                  {@html pub.authors
-                    .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
-                    .join(', ')}
-                </h5>
-            <Links pub={pub} />
-              </div>
+      {#each pubs as pub}
+        <div class="pure-g pub">
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="thumb">
+              <a href={'#/paper/' + pub.id}>
+                <img src={'images/' + pub.teaser} class="thumb" alt="teaser" />
+              </a>
+              <h6 class="venue">{pub.venue}</h6>
             </div>
           </div>
-        {/each}
+          <div class="pure-u-1 pure-u-md-2-3">
+            <div class="padded">
+              <a href={'#/paper/' + pub.id} class="paper-title">
+                <h4>{pub.title}</h4>
+              </a>
+              <h5>
+                {@html pub.authors
+                  .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
+                  .join(', ')}
+              </h5>
+              <Links {pub} />
+            </div>
+          </div>
+        </div>
+      {/each}
     </div>
     <Footer />
   </div>

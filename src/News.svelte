@@ -11,8 +11,8 @@
       <h1>News</h1>
       {#each news as n}
         <div class="news-item pure-g">
-          <p class="pure-u-1 pure-u-md-1-4 date">{n.date}</p>
-          <p class="item pure-u-1 pure-u-md-3-4">
+          <p class="pure-u-1 pure-u-md-1-5 date">{n.date}</p>
+          <p class="item pure-u-1 pure-u-md-4-5">
             {@html n.news}
           </p>
         </div>

@@ -48,8 +48,8 @@
         </h2>
         {#each {length: 3} as _, i}
           <div class="news-item pure-g">
-            <p class="pure-u-1 pure-u-md-1-4 date">{news[i].date}</p>
-            <p class="item pure-u-1 pure-u-md-3-4">
+            <p class="pure-u-1 pure-u-md-1-5 date">{news[i].date}</p>
+            <p class="item pure-u-1 pure-u-md-4-5">
               {@html news[i].news}
             </p>
           </div>
@@ -62,7 +62,7 @@
         </h2>
         {#each pubs as pub}
           <div class="pure-g pub">
-            <div class="pure-u-1 pure-u-md-1-4">
+            <div class="pure-u-1 pure-u-md-1-3">
               <div class="thumb">
                 <a href={'#/paper/' + pub.id}>
                   <img
@@ -73,7 +73,7 @@
                 <h6 class="venue">{pub.venue}</h6>
               </div>
             </div>
-            <div class="pure-u-1 pure-u-md-3-4">
+            <div class="pure-u-1 pure-u-md-2-3">
               <div class="padded">
                 <a href={'#/paper/' + pub.id} class="paper-title">
                   <h4>{pub.title}</h4>

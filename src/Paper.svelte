@@ -11,9 +11,12 @@
   p {
     font-size: 18px;
   }
+  
+  h1 {font-size: 1.75em}
 
   h3 {
     font-size: 20px;
+    margin: 0px;
   }
 
   h4 {
@@ -51,6 +54,19 @@
     padding: 10px;
     background: rgba(0, 0, 0, 0.05);
   }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .teaser {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25)
+  }
+
+  #info {padding-right:20px}
 </style>
 
 <link
@@ -69,12 +85,19 @@
       <span class="name">Cabrera</span>
     </h4>
   </a>
-  <h1>{pub.title}</h1>
-  <h3>
-    {@html pub.authors
-      .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
-      .join(', ')}
-  </h3>
+  <div class="flex">
+    <div class="pure-u-1-2" id="info">
+      <h1>{pub.title}</h1>
+      <h3>
+        {@html pub.authors
+          .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
+          .join(', ')}
+      </h3>
+    </div>
+    <div class="pure-u-1-2">
+      <img src={'images/' + pub.teaser} class="teaser" alt="teaser" />
+    </div>
+  </div>
 
   <h2 class="sec-title">Abstract</h2>
   <p>{pub.abstract}</p>
