@@ -52,7 +52,6 @@ h4 {
 
 h5 {
   font-size: 16px;
-  margin-top: 8px;
   font-weight: lighter;
 }
 
@@ -148,7 +147,6 @@ textarea,
 
 h3 {
   font-size: 16px;
-  margin-top: 6px;
   font-weight: 300;
 }
 
@@ -171,7 +169,7 @@ p {
 }
 
 .pub {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -225,7 +223,6 @@ a button:hover {
 .buttons {
   flex-flow: wrap;
   display: inline-flex;
-  margin-top: 8px;
 }
 
 .buttons i {
