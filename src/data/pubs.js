@@ -3,7 +3,7 @@ export default [
     title:
       "FairVis: Visual Analytics for Discovering Intersectional Bias in Machine Learning",
     desc:
-      "FairVis is a visual analytics system that enables data scientists to find potential biases in their machine learning models. It allows users to split their data into subgroups of different features to see how vulnerable groups are performing for various fairness metrics. Additionally, it suggests groups that may be biased and can find similar groups.",
+      "FairVis is a visual analytics system that enables data scientists to find potential biases in their machine learning models. It allows users to split their data into subgroups of different features to see how vulnerable groups are performing for various fairness metrics. Additionally, it suggests groups that may be underperforming and can find similar groups.",
     id: "fairvis",
     teaser: "fairvis.png",
     venue: "IEEE VIS'19",
