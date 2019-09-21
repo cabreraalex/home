@@ -6,6 +6,11 @@
 </script>
 
 <style>
+  #container {
+    font-family: "Roboto";
+    line-height: 1.2;
+  }
+
   table {
     text-align: left;
     padding: 0px;
@@ -26,14 +31,12 @@
   }
   h6 {
     font-size: 14px;
-    font-weight: 600;
     font-style: italic;
-    font-family: "Open Sans", sans-serif;
     margin: 0px;
+    margin-top: 3px;
   }
 
   p {
-    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 300;
     margin: 0px;
@@ -54,7 +57,6 @@
   .date {
     width: 135px;
     padding-right: 20px;
-    font-family: "Open Sans", sans-serif;
     font-weight: 200;
     float: left;
     text-align: right;
@@ -63,6 +65,8 @@
   .desc {
     color: RGBA(0, 0, 0, 0.7);
     font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 7px;
   }
 
   .item {
@@ -95,6 +99,10 @@
 
   #name {
     margin-bottom: 10px;
+    font-size: 0px;
+  }
+
+  .color {
     font-size: 30px;
   }
 
@@ -124,23 +132,14 @@
   }
 </style>
 
-<link
-  href="https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto:900,400"
-  rel="stylesheet" />
-<link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
-  integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
-  crossorigin="anonymous" />
-
 <div id="container">
   <main>
     <header id="head">
       <h3 id="name">
-        Ángel
-        <span class="red">Alex</span>
-        ander
-        <span class="red">Cabrera</span>
+        <span class="color">Ángel&nbsp;</span>
+        <span class="color red">Alex</span>
+        <span class="color">ander&nbsp;</span>
+        <span class="color red">Cabrera</span>
       </h3>
 
       <Intro />
@@ -175,14 +174,10 @@
         </th>
         <th>
           <h5>B.S. in Computer Science</h5>
-          <h6>
-            <span class="gold">Georgia</span>
-            Institute of
-            <span class="gold">Tech</span>nology - Atlanta, GA
-          </h6>
+          <h6>Georgia Institute of Technology - Atlanta, GA</h6>
           <p class="desc">
             Concentration in intelligence and modeling/simulation. Minor in
-            economics. Overall GPA: 3.97/4.0
+            economics.
           </p>
         </th>
       </tr>
@@ -415,7 +410,10 @@
           <div class="tags">
             <a
               href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space">
-              <button>In space!</button>
+              <button>
+                <i class="fas fa-rocket" />
+                In space!
+              </button>
             </a>
             <a href="http://prox-1.gatech.edu/">
               <button>
@@ -430,7 +428,6 @@
                 Press release
               </button>
             </a>
-            <button>C</button>
           </div>
         </th>
       </tr>
@@ -443,7 +440,7 @@
       </tr>
       {#each pubs as pub}
         <tr class="item">
-          <th class="date">{pub.year}</th>
+          <th class="date">{pub.month} {pub.year}</th>
           <th>
             <a href={'#/paper/' + pub.id} class="paper-title">
               <h5>{pub.title}</h5>
@@ -459,7 +456,7 @@
               <i>{pub.venuelong}. {pub.location}, {pub.year}.</i>
             </p>
 
-            <Links pub={pub} />
+            <Links {pub} />
           </th>
         </tr>
         <tr class="buffer" />
@@ -778,7 +775,7 @@
       <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated September 3, 2019.</p>
+          <p class="desc">Last updated September 21, 2019.</p>
         </th>
       </tr>
     </table>

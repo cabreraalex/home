@@ -12,7 +12,7 @@
       <h1>Publications</h1>
       {#each pubs as pub}
         <div class="pure-g pub">
-          <div class="pure-u-1 pure-u-md-1-3">
+          <div class="pure-u-1 pure-u-md-1-3 thumb-box">
             <div class="thumb">
               <a href={'#/paper/' + pub.id}>
                 <img src={'images/' + pub.teaser} class="thumb" alt="teaser" />
@@ -25,13 +25,14 @@
               <a href={'#/paper/' + pub.id} class="paper-title">
                 <h4>{pub.title}</h4>
               </a>
-              <h5>
+              <h5 class="authors">
                 {@html pub.authors
                   .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
                   .join(', ')}
               </h5>
-              <Links {pub} />
+              <p class="desc">{pub.desc}</p>
             </div>
+            <Links {pub} />
           </div>
         </div>
       {/each}
