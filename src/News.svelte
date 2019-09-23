@@ -2,6 +2,9 @@
   import Sidebar from "./components/Sidebar.svelte";
   import Footer from "./components/Footer.svelte";
   import news from "./data/news.js";
+  import { onMount } from "svelte";
+
+  onMount(() => window.scrollTo(0, 0));
 </script>
 
 <div class="pure-g" id="main-container">
@@ -18,6 +21,6 @@
         </div>
       {/each}
     </div>
-  <Footer />
+    <Footer />
   </div>
 </div>

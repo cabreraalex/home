@@ -6,6 +6,9 @@
   import Intro from "./components/Intro.svelte";
   import Footer from "./components/Footer.svelte";
   import Links from "./components/Links.svelte";
+  import { onMount } from "svelte";
+
+  onMount(() => window.scrollTo(0, 0));
 </script>
 
 <div class="pure-g" id="main-container">

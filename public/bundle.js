@@ -76,6 +76,14 @@ var app = (function () {
     function set_current_component(component) {
         current_component = component;
     }
+    function get_current_component() {
+        if (!current_component)
+            throw new Error(`Function called outside component initialization`);
+        return current_component;
+    }
+    function onMount(fn) {
+        get_current_component().$$.on_mount.push(fn);
+    }
 
     const dirty_components = [];
     const binding_callbacks = [];
@@ -1062,7 +1070,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (12:6) {#each news as n}
+    // (15:6) {#each news as n}
     function create_each_block(ctx) {
     	var div, p0, t0_value = ctx.n.date + "", t0, t1, p1, raw_value = ctx.n.news + "", t2;
 
@@ -1075,11 +1083,11 @@ var app = (function () {
     			p1 = element("p");
     			t2 = space();
     			attr(p0, "class", "pure-u-1 pure-u-md-1-5 date");
-    			add_location(p0, file$3, 13, 10, 391);
+    			add_location(p0, file$3, 16, 10, 468);
     			attr(p1, "class", "item pure-u-1 pure-u-md-4-5");
-    			add_location(p1, file$3, 14, 10, 453);
+    			add_location(p1, file$3, 17, 10, 530);
     			attr(div, "class", "news-item pure-g");
-    			add_location(div, file$3, 12, 8, 350);
+    			add_location(div, file$3, 15, 8, 427);
     		},
 
     		m: function mount(target, anchor) {
@@ -1134,15 +1142,15 @@ var app = (function () {
 
     			t3 = space();
     			footer.$$.fragment.c();
-    			add_location(h1, file$3, 10, 6, 304);
+    			add_location(h1, file$3, 13, 6, 381);
     			attr(div0, "id", "padded-content");
-    			add_location(div0, file$3, 9, 4, 272);
+    			add_location(div0, file$3, 12, 4, 349);
     			attr(div1, "id", "content");
     			attr(div1, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div1, file$3, 8, 2, 218);
+    			add_location(div1, file$3, 11, 2, 295);
     			attr(div2, "class", "pure-g");
     			attr(div2, "id", "main-container");
-    			add_location(div2, file$3, 6, 0, 161);
+    			add_location(div2, file$3, 9, 0, 238);
     		},
 
     		l: function claim(nodes) {
@@ -1219,10 +1227,18 @@ var app = (function () {
     	};
     }
 
+    function instance$1($$self) {
+    	
+
+      onMount(() => window.scrollTo(0, 0));
+
+    	return {};
+    }
+
     class News extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$4, safe_not_equal, []);
+    		init(this, options, instance$1, create_fragment$4, safe_not_equal, []);
     	}
     }
 
@@ -1931,7 +1947,7 @@ var app = (function () {
     	};
     }
 
-    function instance$1($$self, $$props, $$invalidate) {
+    function instance$2($$self, $$props, $$invalidate) {
     	let { pub } = $$props;
 
     	const writable_props = ['pub'];
@@ -1949,7 +1965,7 @@ var app = (function () {
     class Links extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$1, create_fragment$6, safe_not_equal, ["pub"]);
+    		init(this, options, instance$2, create_fragment$6, safe_not_equal, ["pub"]);
 
     		const { ctx } = this.$$;
     		const props = options.props || {};
@@ -1984,7 +2000,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (27:8) {#each { length: 3 } as _, i}
+    // (30:8) {#each { length: 3 } as _, i}
     function create_each_block_1(ctx) {
     	var div, p0, t0_value = news[ctx.i].date + "", t0, t1, p1, raw_value = news[ctx.i].news + "", t2;
 
@@ -1997,11 +2013,11 @@ var app = (function () {
     			p1 = element("p");
     			t2 = space();
     			attr(p0, "class", "pure-u-1 pure-u-md-1-5 date");
-    			add_location(p0, file$6, 28, 12, 855);
+    			add_location(p0, file$6, 31, 12, 932);
     			attr(p1, "class", "item pure-u-1 pure-u-md-4-5");
-    			add_location(p1, file$6, 29, 12, 925);
+    			add_location(p1, file$6, 32, 12, 1002);
     			attr(div, "class", "news-item pure-g");
-    			add_location(div, file$6, 27, 10, 812);
+    			add_location(div, file$6, 30, 10, 889);
     		},
 
     		m: function mount(target, anchor) {
@@ -2024,7 +2040,7 @@ var app = (function () {
     	};
     }
 
-    // (41:8) {#each pubs as pub}
+    // (44:8) {#each pubs as pub}
     function create_each_block$1(ctx) {
     	var div4, div1, div0, a0, img, img_src_value, a0_href_value, t0, h6, t1_value = ctx.pub.venue + "", t1, t2, div3, div2, a1, h4, t3_value = ctx.pub.title + "", t3, a1_href_value, t4, h5, raw_value = ctx.pub.authors
                         .map(func)
@@ -2062,29 +2078,29 @@ var app = (function () {
     			attr(img, "src", img_src_value = 'images/' + ctx.pub.teaser);
     			attr(img, "class", "thumb");
     			attr(img, "alt", "teaser");
-    			add_location(img, file$6, 45, 18, 1444);
+    			add_location(img, file$6, 48, 18, 1521);
     			attr(a0, "href", a0_href_value = '#/paper/' + ctx.pub.id);
-    			add_location(a0, file$6, 44, 16, 1395);
+    			add_location(a0, file$6, 47, 16, 1472);
     			attr(h6, "class", "venue");
-    			add_location(h6, file$6, 50, 16, 1605);
+    			add_location(h6, file$6, 53, 16, 1682);
     			attr(div0, "class", "thumb");
-    			add_location(div0, file$6, 43, 14, 1359);
+    			add_location(div0, file$6, 46, 14, 1436);
     			attr(div1, "class", "thumb-box pure-u-1 pure-u-md-1-3");
-    			add_location(div1, file$6, 42, 12, 1298);
-    			add_location(h4, file$6, 56, 18, 1849);
+    			add_location(div1, file$6, 45, 12, 1375);
+    			add_location(h4, file$6, 59, 18, 1926);
     			attr(a1, "href", a1_href_value = '#/paper/' + ctx.pub.id);
     			attr(a1, "class", "paper-title");
-    			add_location(a1, file$6, 55, 16, 1780);
+    			add_location(a1, file$6, 58, 16, 1857);
     			attr(h5, "class", "authors");
-    			add_location(h5, file$6, 58, 16, 1907);
+    			add_location(h5, file$6, 61, 16, 1984);
     			attr(p, "class", "desc");
-    			add_location(p, file$6, 63, 16, 2116);
+    			add_location(p, file$6, 66, 16, 2193);
     			attr(div2, "class", "padded");
-    			add_location(div2, file$6, 54, 14, 1743);
+    			add_location(div2, file$6, 57, 14, 1820);
     			attr(div3, "class", "pure-u-1 pure-u-md-2-3");
-    			add_location(div3, file$6, 53, 12, 1692);
+    			add_location(div3, file$6, 56, 12, 1769);
     			attr(div4, "class", "pure-g pub");
-    			add_location(div4, file$6, 41, 10, 1261);
+    			add_location(div4, file$6, 44, 10, 1338);
     		},
 
     		m: function mount(target, anchor) {
@@ -2212,32 +2228,32 @@ var app = (function () {
     			t12 = space();
     			footer.$$.fragment.c();
     			attr(span, "class", "name");
-    			add_location(span, file$6, 17, 10, 553);
-    			add_location(h20, file$6, 15, 8, 508);
+    			add_location(span, file$6, 20, 10, 630);
+    			add_location(h20, file$6, 18, 8, 585);
     			attr(div0, "id", "intro");
-    			add_location(div0, file$6, 14, 6, 483);
+    			add_location(div0, file$6, 17, 6, 560);
     			attr(a0, "class", "right-all");
     			attr(a0, "href", "#/news");
-    			add_location(a0, file$6, 24, 10, 702);
-    			add_location(h21, file$6, 22, 8, 672);
+    			add_location(a0, file$6, 27, 10, 779);
+    			add_location(h21, file$6, 25, 8, 749);
     			attr(div1, "id", "news");
     			attr(div1, "class", "sect");
-    			add_location(div1, file$6, 21, 6, 635);
+    			add_location(div1, file$6, 24, 6, 712);
     			attr(a1, "class", "right-all");
     			attr(a1, "href", "#/pubs");
-    			add_location(a1, file$6, 38, 10, 1153);
-    			add_location(h22, file$6, 36, 8, 1106);
+    			add_location(a1, file$6, 41, 10, 1230);
+    			add_location(h22, file$6, 39, 8, 1183);
     			attr(div2, "id", "pubs");
     			attr(div2, "class", "sect");
-    			add_location(div2, file$6, 35, 6, 1069);
+    			add_location(div2, file$6, 38, 6, 1146);
     			attr(div3, "id", "padded-content");
-    			add_location(div3, file$6, 13, 4, 451);
+    			add_location(div3, file$6, 16, 4, 528);
     			attr(div4, "id", "content");
     			attr(div4, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div4, file$6, 12, 2, 397);
+    			add_location(div4, file$6, 15, 2, 474);
     			attr(div5, "class", "pure-g");
     			attr(div5, "id", "main-container");
-    			add_location(div5, file$6, 10, 0, 340);
+    			add_location(div5, file$6, 13, 0, 417);
     		},
 
     		l: function claim(nodes) {
@@ -2374,10 +2390,18 @@ var app = (function () {
     	return "<a href='" + p.website + "'>" + p.name + '</a>';
     }
 
+    function instance$3($$self) {
+    	
+
+      onMount(() => window.scrollTo(0, 0));
+
+    	return {};
+    }
+
     class Home extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$7, safe_not_equal, []);
+    		init(this, options, instance$3, create_fragment$7, safe_not_equal, []);
     	}
     }
 
@@ -2391,7 +2415,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (13:6) {#each pubs as pub}
+    // (16:6) {#each pubs as pub}
     function create_each_block$2(ctx) {
     	var div4, div1, div0, a0, img, img_src_value, a0_href_value, t0, h6, t1_value = ctx.pub.venue + "", t1, t2, div3, div2, a1, h4, t3_value = ctx.pub.title + "", t3, a1_href_value, t4, h5, raw_value = ctx.pub.authors
                       .map(func$1)
@@ -2429,29 +2453,29 @@ var app = (function () {
     			attr(img, "src", img_src_value = 'images/' + ctx.pub.teaser);
     			attr(img, "class", "thumb");
     			attr(img, "alt", "teaser");
-    			add_location(img, file$7, 17, 16, 584);
+    			add_location(img, file$7, 20, 16, 661);
     			attr(a0, "href", a0_href_value = '#/paper/' + ctx.pub.id);
-    			add_location(a0, file$7, 16, 14, 537);
+    			add_location(a0, file$7, 19, 14, 614);
     			attr(h6, "class", "venue");
-    			add_location(h6, file$7, 19, 14, 681);
+    			add_location(h6, file$7, 22, 14, 758);
     			attr(div0, "class", "thumb");
-    			add_location(div0, file$7, 15, 12, 503);
+    			add_location(div0, file$7, 18, 12, 580);
     			attr(div1, "class", "pure-u-1 pure-u-md-1-3 thumb-box");
-    			add_location(div1, file$7, 14, 10, 444);
-    			add_location(h4, file$7, 25, 16, 913);
+    			add_location(div1, file$7, 17, 10, 521);
+    			add_location(h4, file$7, 28, 16, 990);
     			attr(a1, "href", a1_href_value = '#/paper/' + ctx.pub.id);
     			attr(a1, "class", "paper-title");
-    			add_location(a1, file$7, 24, 14, 846);
+    			add_location(a1, file$7, 27, 14, 923);
     			attr(h5, "class", "authors");
-    			add_location(h5, file$7, 27, 14, 967);
+    			add_location(h5, file$7, 30, 14, 1044);
     			attr(p, "class", "desc");
-    			add_location(p, file$7, 32, 14, 1166);
+    			add_location(p, file$7, 35, 14, 1243);
     			attr(div2, "class", "padded");
-    			add_location(div2, file$7, 23, 12, 811);
+    			add_location(div2, file$7, 26, 12, 888);
     			attr(div3, "class", "pure-u-1 pure-u-md-2-3");
-    			add_location(div3, file$7, 22, 10, 762);
+    			add_location(div3, file$7, 25, 10, 839);
     			attr(div4, "class", "pure-g pub");
-    			add_location(div4, file$7, 13, 8, 409);
+    			add_location(div4, file$7, 16, 8, 486);
     		},
 
     		m: function mount(target, anchor) {
@@ -2545,15 +2569,15 @@ var app = (function () {
 
     			t3 = space();
     			footer.$$.fragment.c();
-    			add_location(h1, file$7, 11, 6, 353);
+    			add_location(h1, file$7, 14, 6, 430);
     			attr(div0, "id", "padded-content");
-    			add_location(div0, file$7, 10, 4, 321);
+    			add_location(div0, file$7, 13, 4, 398);
     			attr(div1, "id", "content");
     			attr(div1, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div1, file$7, 9, 2, 267);
+    			add_location(div1, file$7, 12, 2, 344);
     			attr(div2, "class", "pure-g");
     			attr(div2, "id", "main-container");
-    			add_location(div2, file$7, 7, 0, 210);
+    			add_location(div2, file$7, 10, 0, 287);
     		},
 
     		l: function claim(nodes) {
@@ -2641,10 +2665,18 @@ var app = (function () {
     	return "<a href='" + p.website + "'>" + p.name + '</a>';
     }
 
+    function instance$4($$self) {
+    	
+
+      onMount(() => window.scrollTo(0, 0));
+
+    	return {};
+    }
+
     class Pubs extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$8, safe_not_equal, []);
+    		init(this, options, instance$4, create_fragment$8, safe_not_equal, []);
     	}
     }
 
@@ -2734,64 +2766,64 @@ var app = (function () {
     			footer.$$.fragment.c();
     			attr(i0, "class", "fas fa-home svelte-vur8sy");
     			attr(i0, "id", "home");
-    			add_location(i0, file$8, 102, 6, 1525);
+    			add_location(i0, file$8, 104, 6, 1601);
     			attr(span0, "class", "color svelte-vur8sy");
-    			add_location(span0, file$8, 103, 6, 1567);
+    			add_location(span0, file$8, 105, 6, 1643);
     			attr(span1, "class", "color red svelte-vur8sy");
-    			add_location(span1, file$8, 104, 6, 1612);
+    			add_location(span1, file$8, 106, 6, 1688);
     			attr(span2, "class", "color svelte-vur8sy");
-    			add_location(span2, file$8, 105, 6, 1654);
+    			add_location(span2, file$8, 107, 6, 1730);
     			attr(span3, "class", "color red svelte-vur8sy");
-    			add_location(span3, file$8, 106, 6, 1699);
+    			add_location(span3, file$8, 108, 6, 1775);
     			attr(h40, "id", "home-link");
     			attr(h40, "class", "svelte-vur8sy");
-    			add_location(h40, file$8, 101, 4, 1499);
+    			add_location(h40, file$8, 103, 4, 1575);
     			attr(a0, "href", "/");
-    			add_location(a0, file$8, 100, 2, 1482);
+    			add_location(a0, file$8, 102, 2, 1558);
     			attr(h1, "class", "svelte-vur8sy");
-    			add_location(h1, file$8, 109, 2, 1757);
+    			add_location(h1, file$8, 111, 2, 1833);
     			attr(h3, "class", "svelte-vur8sy");
-    			add_location(h3, file$8, 111, 4, 1800);
+    			add_location(h3, file$8, 113, 4, 1876);
     			attr(div0, "id", "info");
     			attr(div0, "class", "svelte-vur8sy");
-    			add_location(div0, file$8, 110, 2, 1780);
+    			add_location(div0, file$8, 112, 2, 1856);
     			attr(img, "src", img_src_value = 'images/' + ctx.pub.teaser);
     			attr(img, "class", "teaser svelte-vur8sy");
     			attr(img, "alt", "teaser");
-    			add_location(img, file$8, 119, 6, 2013);
+    			add_location(img, file$8, 121, 6, 2089);
     			attr(div1, "class", "pure-u-1 pure-u-md-1-2");
-    			add_location(div1, file$8, 118, 4, 1970);
+    			add_location(div1, file$8, 120, 4, 2046);
     			attr(p0, "class", "desc svelte-vur8sy");
-    			add_location(p0, file$8, 122, 6, 2136);
+    			add_location(p0, file$8, 124, 6, 2212);
     			attr(div2, "class", "pure-u-1 pure-u-md-1-2");
-    			add_location(div2, file$8, 121, 4, 2093);
+    			add_location(div2, file$8, 123, 4, 2169);
     			attr(div3, "class", "flex pure-g svelte-vur8sy");
-    			add_location(div3, file$8, 117, 2, 1940);
+    			add_location(div3, file$8, 119, 2, 2016);
     			attr(h20, "class", "sec-title svelte-vur8sy");
-    			add_location(h20, file$8, 126, 2, 2190);
+    			add_location(h20, file$8, 128, 2, 2266);
     			attr(p1, "class", "svelte-vur8sy");
-    			add_location(p1, file$8, 127, 2, 2228);
+    			add_location(p1, file$8, 129, 2, 2304);
     			attr(h21, "class", "sec-title svelte-vur8sy");
-    			add_location(h21, file$8, 129, 2, 2253);
+    			add_location(h21, file$8, 131, 2, 2329);
     			attr(h41, "class", "svelte-vur8sy");
-    			add_location(h41, file$8, 131, 4, 2346);
+    			add_location(h41, file$8, 133, 4, 2422);
     			attr(a1, "href", a1_href_value = '#/paper/' + ctx.pub.id);
     			attr(a1, "class", "paper-title");
-    			add_location(a1, file$8, 130, 2, 2291);
+    			add_location(a1, file$8, 132, 2, 2367);
     			attr(h50, "class", "svelte-vur8sy");
-    			add_location(h50, file$8, 134, 2, 2377);
-    			add_location(i1, file$8, 141, 4, 2510);
+    			add_location(h50, file$8, 136, 2, 2453);
+    			add_location(i1, file$8, 143, 4, 2586);
     			attr(h51, "class", "svelte-vur8sy");
-    			add_location(h51, file$8, 140, 2, 2501);
+    			add_location(h51, file$8, 142, 2, 2577);
     			attr(h22, "class", "sec-title svelte-vur8sy");
-    			add_location(h22, file$8, 145, 2, 2590);
+    			add_location(h22, file$8, 147, 2, 2666);
     			attr(code, "class", "bibtex");
-    			add_location(code, file$8, 147, 4, 2649);
+    			add_location(code, file$8, 149, 4, 2725);
     			attr(div4, "class", "code svelte-vur8sy");
-    			add_location(div4, file$8, 146, 2, 2626);
+    			add_location(div4, file$8, 148, 2, 2702);
     			attr(div5, "id", "body");
     			attr(div5, "class", "svelte-vur8sy");
-    			add_location(div5, file$8, 99, 0, 1464);
+    			add_location(div5, file$8, 101, 0, 1540);
     		},
 
     		l: function claim(nodes) {
@@ -2902,11 +2934,12 @@ var app = (function () {
     	return "<a href='" + p.website + "'>" + p.name + '</a>';
     }
 
-    function instance$2($$self, $$props, $$invalidate) {
+    function instance$5($$self, $$props, $$invalidate) {
     	
       let { params = {} } = $$props;
 
       let pub = pubs.find(e => e.id === params.id);
+      onMount(() => window.scrollTo(0, 0));
 
     	const writable_props = ['params'];
     	Object.keys($$props).forEach(key => {
@@ -2923,7 +2956,7 @@ var app = (function () {
     class Paper extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$2, create_fragment$9, safe_not_equal, ["params"]);
+    		init(this, options, instance$5, create_fragment$9, safe_not_equal, ["params"]);
     	}
 
     	get params() {
@@ -2945,7 +2978,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (441:6) {#each pubs as pub}
+    // (444:6) {#each pubs as pub}
     function create_each_block$3(ctx) {
     	var tr0, th0, t0_value = ctx.pub.month + "", t0, t1, t2_value = ctx.pub.year + "", t2, t3, th1, a, h5, t4_value = ctx.pub.title + "", t4, a_href_value, t5, h6, raw_value = ctx.pub.authors
                     .map(func$3)
@@ -2984,23 +3017,23 @@ var app = (function () {
     			t14 = space();
     			tr1 = element("tr");
     			attr(th0, "class", "date svelte-y2s0f9");
-    			add_location(th0, file$9, 442, 10, 10797);
+    			add_location(th0, file$9, 445, 10, 10874);
     			attr(h5, "class", "svelte-y2s0f9");
-    			add_location(h5, file$9, 445, 14, 10934);
+    			add_location(h5, file$9, 448, 14, 11011);
     			attr(a, "href", a_href_value = '#/paper/' + ctx.pub.id);
     			attr(a, "class", "paper-title");
-    			add_location(a, file$9, 444, 12, 10869);
+    			add_location(a, file$9, 447, 12, 10946);
     			attr(h6, "class", "svelte-y2s0f9");
-    			add_location(h6, file$9, 448, 12, 10985);
-    			add_location(i, file$9, 455, 14, 11190);
+    			add_location(h6, file$9, 451, 12, 11062);
+    			add_location(i, file$9, 458, 14, 11267);
     			attr(p, "class", "desc svelte-y2s0f9");
-    			add_location(p, file$9, 454, 12, 11159);
+    			add_location(p, file$9, 457, 12, 11236);
     			attr(th1, "class", "svelte-y2s0f9");
-    			add_location(th1, file$9, 443, 10, 10852);
+    			add_location(th1, file$9, 446, 10, 10929);
     			attr(tr0, "class", "item svelte-y2s0f9");
-    			add_location(tr0, file$9, 441, 8, 10769);
+    			add_location(tr0, file$9, 444, 8, 10846);
     			attr(tr1, "class", "buffer svelte-y2s0f9");
-    			add_location(tr1, file$9, 461, 8, 11326);
+    			add_location(tr1, file$9, 464, 8, 11403);
     		},
 
     		m: function mount(target, anchor) {
@@ -3790,628 +3823,628 @@ var app = (function () {
     			p19 = element("p");
     			p19.textContent = "Last updated September 21, 2019.";
     			attr(span0, "class", "color svelte-y2s0f9");
-    			add_location(span0, file$9, 138, 8, 1887);
+    			add_location(span0, file$9, 141, 8, 1964);
     			attr(span1, "class", "color red svelte-y2s0f9");
-    			add_location(span1, file$9, 139, 8, 1934);
+    			add_location(span1, file$9, 142, 8, 2011);
     			attr(span2, "class", "color svelte-y2s0f9");
-    			add_location(span2, file$9, 140, 8, 1978);
+    			add_location(span2, file$9, 143, 8, 2055);
     			attr(span3, "class", "color red svelte-y2s0f9");
-    			add_location(span3, file$9, 141, 8, 2025);
+    			add_location(span3, file$9, 144, 8, 2102);
     			attr(h3, "id", "name");
     			attr(h3, "class", "svelte-y2s0f9");
-    			add_location(h3, file$9, 137, 6, 1864);
+    			add_location(h3, file$9, 140, 6, 1941);
     			attr(header, "id", "head");
     			attr(header, "class", "svelte-y2s0f9");
-    			add_location(header, file$9, 136, 4, 1839);
+    			add_location(header, file$9, 139, 4, 1916);
     			attr(th0, "class", "date svelte-y2s0f9");
-    			add_location(th0, file$9, 151, 8, 2181);
+    			add_location(th0, file$9, 154, 8, 2258);
     			attr(h40, "class", "header svelte-y2s0f9");
-    			add_location(h40, file$9, 153, 10, 2224);
+    			add_location(h40, file$9, 156, 10, 2301);
     			attr(th1, "class", "svelte-y2s0f9");
-    			add_location(th1, file$9, 152, 8, 2209);
-    			add_location(tr0, file$9, 150, 6, 2168);
-    			add_location(br0, file$9, 159, 10, 2366);
+    			add_location(th1, file$9, 155, 8, 2286);
+    			add_location(tr0, file$9, 153, 6, 2245);
+    			add_location(br0, file$9, 162, 10, 2443);
     			attr(th2, "class", "date svelte-y2s0f9");
-    			add_location(th2, file$9, 157, 8, 2316);
+    			add_location(th2, file$9, 160, 8, 2393);
     			attr(h50, "class", "svelte-y2s0f9");
-    			add_location(h50, file$9, 163, 10, 2430);
+    			add_location(h50, file$9, 166, 10, 2507);
     			attr(h60, "class", "svelte-y2s0f9");
-    			add_location(h60, file$9, 164, 10, 2489);
+    			add_location(h60, file$9, 167, 10, 2566);
     			attr(th3, "class", "svelte-y2s0f9");
-    			add_location(th3, file$9, 162, 8, 2415);
+    			add_location(th3, file$9, 165, 8, 2492);
     			attr(tr1, "class", "item svelte-y2s0f9");
-    			add_location(tr1, file$9, 156, 6, 2290);
+    			add_location(tr1, file$9, 159, 6, 2367);
     			attr(tr2, "class", "buffer svelte-y2s0f9");
-    			add_location(tr2, file$9, 167, 6, 2574);
-    			add_location(br1, file$9, 171, 10, 2678);
+    			add_location(tr2, file$9, 170, 6, 2651);
+    			add_location(br1, file$9, 174, 10, 2755);
     			attr(th4, "class", "date svelte-y2s0f9");
-    			add_location(th4, file$9, 169, 8, 2628);
+    			add_location(th4, file$9, 172, 8, 2705);
     			attr(h51, "class", "svelte-y2s0f9");
-    			add_location(h51, file$9, 175, 10, 2743);
+    			add_location(h51, file$9, 178, 10, 2820);
     			attr(h61, "class", "svelte-y2s0f9");
-    			add_location(h61, file$9, 176, 10, 2787);
+    			add_location(h61, file$9, 179, 10, 2864);
     			attr(p0, "class", "desc svelte-y2s0f9");
-    			add_location(p0, file$9, 177, 10, 2852);
+    			add_location(p0, file$9, 180, 10, 2929);
     			attr(th5, "class", "svelte-y2s0f9");
-    			add_location(th5, file$9, 174, 8, 2728);
+    			add_location(th5, file$9, 177, 8, 2805);
     			attr(tr3, "class", "item svelte-y2s0f9");
-    			add_location(tr3, file$9, 168, 6, 2602);
+    			add_location(tr3, file$9, 171, 6, 2679);
     			attr(th6, "class", "date svelte-y2s0f9");
-    			add_location(th6, file$9, 184, 8, 3041);
+    			add_location(th6, file$9, 187, 8, 3118);
     			attr(h62, "class", "svelte-y2s0f9");
-    			add_location(h62, file$9, 186, 10, 3096);
+    			add_location(h62, file$9, 189, 10, 3173);
     			attr(p1, "class", "desc svelte-y2s0f9");
-    			add_location(p1, file$9, 187, 10, 3143);
+    			add_location(p1, file$9, 190, 10, 3220);
     			attr(th7, "class", "svelte-y2s0f9");
-    			add_location(th7, file$9, 185, 8, 3081);
+    			add_location(th7, file$9, 188, 8, 3158);
     			attr(tr4, "class", "item svelte-y2s0f9");
-    			add_location(tr4, file$9, 183, 6, 3015);
+    			add_location(tr4, file$9, 186, 6, 3092);
     			attr(th8, "class", "date svelte-y2s0f9");
-    			add_location(th8, file$9, 194, 8, 3320);
+    			add_location(th8, file$9, 197, 8, 3397);
     			attr(h41, "class", "header svelte-y2s0f9");
-    			add_location(h41, file$9, 196, 10, 3363);
+    			add_location(h41, file$9, 199, 10, 3440);
     			attr(th9, "class", "svelte-y2s0f9");
-    			add_location(th9, file$9, 195, 8, 3348);
-    			add_location(tr5, file$9, 193, 6, 3307);
+    			add_location(th9, file$9, 198, 8, 3425);
+    			add_location(tr5, file$9, 196, 6, 3384);
     			attr(th10, "class", "date svelte-y2s0f9");
-    			add_location(th10, file$9, 200, 8, 3452);
+    			add_location(th10, file$9, 203, 8, 3529);
     			attr(h52, "class", "svelte-y2s0f9");
-    			add_location(h52, file$9, 202, 10, 3506);
+    			add_location(h52, file$9, 205, 10, 3583);
     			attr(p2, "class", "desc svelte-y2s0f9");
-    			add_location(p2, file$9, 205, 10, 3617);
+    			add_location(p2, file$9, 208, 10, 3694);
     			attr(i0, "class", "fas fa-globe svelte-y2s0f9");
-    			add_location(i0, file$9, 212, 16, 3894);
-    			add_location(button0, file$9, 211, 14, 3869);
+    			add_location(i0, file$9, 215, 16, 3971);
+    			add_location(button0, file$9, 214, 14, 3946);
     			attr(a0, "href", "https://www.nsfgrfp.org/");
-    			add_location(a0, file$9, 210, 12, 3819);
+    			add_location(a0, file$9, 213, 12, 3896);
     			attr(div0, "class", "tags svelte-y2s0f9");
-    			add_location(div0, file$9, 209, 10, 3788);
+    			add_location(div0, file$9, 212, 10, 3865);
     			attr(th11, "class", "svelte-y2s0f9");
-    			add_location(th11, file$9, 201, 8, 3491);
+    			add_location(th11, file$9, 204, 8, 3568);
     			attr(tr6, "class", "item svelte-y2s0f9");
-    			add_location(tr6, file$9, 199, 6, 3426);
+    			add_location(tr6, file$9, 202, 6, 3503);
     			attr(tr7, "class", "buffer svelte-y2s0f9");
-    			add_location(tr7, file$9, 219, 6, 4035);
+    			add_location(tr7, file$9, 222, 6, 4112);
     			attr(th12, "class", "date svelte-y2s0f9");
-    			add_location(th12, file$9, 221, 8, 4089);
+    			add_location(th12, file$9, 224, 8, 4166);
     			attr(h53, "class", "svelte-y2s0f9");
-    			add_location(h53, file$9, 223, 10, 4143);
+    			add_location(h53, file$9, 226, 10, 4220);
     			attr(p3, "class", "desc svelte-y2s0f9");
-    			add_location(p3, file$9, 224, 10, 4197);
+    			add_location(p3, file$9, 227, 10, 4274);
     			attr(i1, "class", "fas fa-globe svelte-y2s0f9");
-    			add_location(i1, file$9, 232, 16, 4609);
-    			add_location(button1, file$9, 231, 14, 4584);
+    			add_location(i1, file$9, 235, 16, 4686);
+    			add_location(button1, file$9, 234, 14, 4661);
     			attr(a1, "href", "https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship");
-    			add_location(a1, file$9, 229, 12, 4427);
+    			add_location(a1, file$9, 232, 12, 4504);
     			attr(div1, "class", "tags svelte-y2s0f9");
-    			add_location(div1, file$9, 228, 10, 4396);
+    			add_location(div1, file$9, 231, 10, 4473);
     			attr(th13, "class", "svelte-y2s0f9");
-    			add_location(th13, file$9, 222, 8, 4128);
+    			add_location(th13, file$9, 225, 8, 4205);
     			attr(tr8, "class", "item svelte-y2s0f9");
-    			add_location(tr8, file$9, 220, 6, 4063);
+    			add_location(tr8, file$9, 223, 6, 4140);
     			attr(tr9, "class", "buffer svelte-y2s0f9");
-    			add_location(tr9, file$9, 239, 6, 4755);
-    			add_location(br2, file$9, 243, 10, 4859);
+    			add_location(tr9, file$9, 242, 6, 4832);
+    			add_location(br2, file$9, 246, 10, 4936);
     			attr(th14, "class", "date svelte-y2s0f9");
-    			add_location(th14, file$9, 241, 8, 4809);
+    			add_location(th14, file$9, 244, 8, 4886);
     			attr(h54, "class", "svelte-y2s0f9");
-    			add_location(h54, file$9, 247, 10, 4924);
+    			add_location(h54, file$9, 250, 10, 5001);
     			attr(h63, "class", "svelte-y2s0f9");
-    			add_location(h63, file$9, 248, 10, 4970);
+    			add_location(h63, file$9, 251, 10, 5047);
     			attr(p4, "class", "desc svelte-y2s0f9");
-    			add_location(p4, file$9, 249, 10, 5046);
+    			add_location(p4, file$9, 252, 10, 5123);
     			attr(i2, "class", "fas fa-globe svelte-y2s0f9");
-    			add_location(i2, file$9, 256, 16, 5328);
-    			add_location(button2, file$9, 255, 14, 5303);
+    			add_location(i2, file$9, 259, 16, 5405);
+    			add_location(button2, file$9, 258, 14, 5380);
     			attr(a2, "href", "https://stampsps.gatech.edu/");
-    			add_location(a2, file$9, 254, 12, 5249);
+    			add_location(a2, file$9, 257, 12, 5326);
     			attr(div2, "class", "tags svelte-y2s0f9");
-    			add_location(div2, file$9, 253, 10, 5218);
+    			add_location(div2, file$9, 256, 10, 5295);
     			attr(th15, "class", "svelte-y2s0f9");
-    			add_location(th15, file$9, 246, 8, 4909);
+    			add_location(th15, file$9, 249, 8, 4986);
     			attr(tr10, "class", "item svelte-y2s0f9");
-    			add_location(tr10, file$9, 240, 6, 4783);
+    			add_location(tr10, file$9, 243, 6, 4860);
     			attr(tr11, "class", "buffer svelte-y2s0f9");
-    			add_location(tr11, file$9, 263, 6, 5469);
+    			add_location(tr11, file$9, 266, 6, 5546);
     			attr(th16, "class", "date svelte-y2s0f9");
-    			add_location(th16, file$9, 265, 8, 5523);
+    			add_location(th16, file$9, 268, 8, 5600);
     			attr(h55, "class", "svelte-y2s0f9");
-    			add_location(h55, file$9, 267, 10, 5585);
+    			add_location(h55, file$9, 270, 10, 5662);
     			attr(h64, "class", "svelte-y2s0f9");
-    			add_location(h64, file$9, 268, 10, 5627);
+    			add_location(h64, file$9, 271, 10, 5704);
     			attr(p5, "class", "desc svelte-y2s0f9");
-    			add_location(p5, file$9, 269, 10, 5685);
+    			add_location(p5, file$9, 272, 10, 5762);
     			attr(i3, "class", "far fa-newspaper svelte-y2s0f9");
-    			add_location(i3, file$9, 277, 16, 6056);
-    			add_location(button3, file$9, 276, 14, 6031);
+    			add_location(i3, file$9, 280, 16, 6133);
+    			add_location(button3, file$9, 279, 14, 6108);
     			attr(a3, "href", "https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems");
-    			add_location(a3, file$9, 274, 12, 5888);
+    			add_location(a3, file$9, 277, 12, 5965);
     			attr(div3, "class", "tags svelte-y2s0f9");
-    			add_location(div3, file$9, 273, 10, 5857);
+    			add_location(div3, file$9, 276, 10, 5934);
     			attr(th17, "class", "svelte-y2s0f9");
-    			add_location(th17, file$9, 266, 8, 5570);
+    			add_location(th17, file$9, 269, 8, 5647);
     			attr(tr12, "class", "item svelte-y2s0f9");
-    			add_location(tr12, file$9, 264, 6, 5497);
+    			add_location(tr12, file$9, 267, 6, 5574);
     			attr(th18, "class", "date svelte-y2s0f9");
-    			add_location(th18, file$9, 286, 8, 6244);
+    			add_location(th18, file$9, 289, 8, 6321);
     			attr(h42, "class", "header svelte-y2s0f9");
-    			add_location(h42, file$9, 288, 10, 6287);
+    			add_location(h42, file$9, 291, 10, 6364);
     			attr(th19, "class", "svelte-y2s0f9");
-    			add_location(th19, file$9, 287, 8, 6272);
-    			add_location(tr13, file$9, 285, 6, 6231);
-    			add_location(br3, file$9, 294, 10, 6436);
+    			add_location(th19, file$9, 290, 8, 6349);
+    			add_location(tr13, file$9, 288, 6, 6308);
+    			add_location(br3, file$9, 297, 10, 6513);
     			attr(th20, "class", "date svelte-y2s0f9");
-    			add_location(th20, file$9, 292, 8, 6389);
+    			add_location(th20, file$9, 295, 8, 6466);
     			attr(h56, "class", "svelte-y2s0f9");
-    			add_location(h56, file$9, 298, 10, 6504);
+    			add_location(h56, file$9, 301, 10, 6581);
     			attr(h65, "class", "svelte-y2s0f9");
-    			add_location(h65, file$9, 299, 10, 6530);
+    			add_location(h65, file$9, 302, 10, 6607);
     			attr(p6, "class", "desc svelte-y2s0f9");
-    			add_location(p6, file$9, 300, 10, 6577);
+    			add_location(p6, file$9, 303, 10, 6654);
     			attr(i4, "class", "far fa-newspaper svelte-y2s0f9");
-    			add_location(i4, file$9, 310, 16, 7003);
-    			add_location(button4, file$9, 309, 14, 6978);
+    			add_location(i4, file$9, 313, 16, 7080);
+    			add_location(button4, file$9, 312, 14, 7055);
     			attr(a4, "href", "https://www.wsj.com/articles/google-to-partner-with-biggest-car-alliance-1537243260\n              ");
-    			add_location(a4, file$9, 306, 12, 6840);
-    			add_location(button5, file$9, 314, 12, 7115);
-    			add_location(button6, file$9, 315, 12, 7157);
-    			add_location(button7, file$9, 316, 12, 7191);
-    			add_location(button8, file$9, 317, 12, 7224);
+    			add_location(a4, file$9, 309, 12, 6917);
+    			add_location(button5, file$9, 317, 12, 7192);
+    			add_location(button6, file$9, 318, 12, 7234);
+    			add_location(button7, file$9, 319, 12, 7268);
+    			add_location(button8, file$9, 320, 12, 7301);
     			attr(div4, "class", "tags svelte-y2s0f9");
-    			add_location(div4, file$9, 305, 10, 6809);
+    			add_location(div4, file$9, 308, 10, 6886);
     			attr(th21, "class", "svelte-y2s0f9");
-    			add_location(th21, file$9, 297, 8, 6489);
+    			add_location(th21, file$9, 300, 8, 6566);
     			attr(tr14, "class", "item svelte-y2s0f9");
-    			add_location(tr14, file$9, 291, 6, 6363);
+    			add_location(tr14, file$9, 294, 6, 6440);
     			attr(tr15, "class", "buffer svelte-y2s0f9");
-    			add_location(tr15, file$9, 321, 6, 7307);
-    			add_location(br4, file$9, 325, 10, 7408);
+    			add_location(tr15, file$9, 324, 6, 7384);
+    			add_location(br4, file$9, 328, 10, 7485);
     			attr(th22, "class", "date svelte-y2s0f9");
-    			add_location(th22, file$9, 323, 8, 7361);
+    			add_location(th22, file$9, 326, 8, 7438);
     			attr(h57, "class", "svelte-y2s0f9");
-    			add_location(h57, file$9, 329, 10, 7476);
+    			add_location(h57, file$9, 332, 10, 7553);
     			attr(h66, "class", "svelte-y2s0f9");
-    			add_location(h66, file$9, 330, 10, 7502);
+    			add_location(h66, file$9, 333, 10, 7579);
     			attr(p7, "class", "desc svelte-y2s0f9");
-    			add_location(p7, file$9, 331, 10, 7549);
-    			add_location(button9, file$9, 336, 12, 7766);
-    			add_location(button10, file$9, 337, 12, 7822);
-    			add_location(button11, file$9, 338, 12, 7856);
-    			add_location(button12, file$9, 339, 12, 7889);
+    			add_location(p7, file$9, 334, 10, 7626);
+    			add_location(button9, file$9, 339, 12, 7843);
+    			add_location(button10, file$9, 340, 12, 7899);
+    			add_location(button11, file$9, 341, 12, 7933);
+    			add_location(button12, file$9, 342, 12, 7966);
     			attr(div5, "class", "tags svelte-y2s0f9");
-    			add_location(div5, file$9, 335, 10, 7735);
+    			add_location(div5, file$9, 338, 10, 7812);
     			attr(th23, "class", "svelte-y2s0f9");
-    			add_location(th23, file$9, 328, 8, 7461);
+    			add_location(th23, file$9, 331, 8, 7538);
     			attr(tr16, "class", "item svelte-y2s0f9");
-    			add_location(tr16, file$9, 322, 6, 7335);
+    			add_location(tr16, file$9, 325, 6, 7412);
     			attr(tr17, "class", "buffer svelte-y2s0f9");
-    			add_location(tr17, file$9, 343, 6, 7959);
-    			add_location(br5, file$9, 347, 10, 8060);
+    			add_location(tr17, file$9, 346, 6, 8036);
+    			add_location(br5, file$9, 350, 10, 8137);
     			attr(th24, "class", "date svelte-y2s0f9");
-    			add_location(th24, file$9, 345, 8, 8013);
+    			add_location(th24, file$9, 348, 8, 8090);
     			attr(h58, "class", "svelte-y2s0f9");
-    			add_location(h58, file$9, 351, 10, 8128);
+    			add_location(h58, file$9, 354, 10, 8205);
     			attr(h67, "class", "svelte-y2s0f9");
-    			add_location(h67, file$9, 352, 10, 8154);
+    			add_location(h67, file$9, 355, 10, 8231);
     			attr(p8, "class", "desc svelte-y2s0f9");
-    			add_location(p8, file$9, 353, 10, 8202);
-    			add_location(button13, file$9, 358, 12, 8387);
-    			add_location(button14, file$9, 359, 12, 8419);
-    			add_location(button15, file$9, 360, 12, 8457);
+    			add_location(p8, file$9, 356, 10, 8279);
+    			add_location(button13, file$9, 361, 12, 8464);
+    			add_location(button14, file$9, 362, 12, 8496);
+    			add_location(button15, file$9, 363, 12, 8534);
     			attr(div6, "class", "tags svelte-y2s0f9");
-    			add_location(div6, file$9, 357, 10, 8356);
+    			add_location(div6, file$9, 360, 10, 8433);
     			attr(th25, "class", "svelte-y2s0f9");
-    			add_location(th25, file$9, 350, 8, 8113);
+    			add_location(th25, file$9, 353, 8, 8190);
     			attr(tr18, "class", "item svelte-y2s0f9");
-    			add_location(tr18, file$9, 344, 6, 7987);
+    			add_location(tr18, file$9, 347, 6, 8064);
     			attr(th26, "class", "date svelte-y2s0f9");
-    			add_location(th26, file$9, 366, 8, 8571);
+    			add_location(th26, file$9, 369, 8, 8648);
     			attr(h43, "class", "header svelte-y2s0f9");
-    			add_location(h43, file$9, 368, 10, 8614);
+    			add_location(h43, file$9, 371, 10, 8691);
     			attr(th27, "class", "svelte-y2s0f9");
-    			add_location(th27, file$9, 367, 8, 8599);
-    			add_location(tr19, file$9, 365, 6, 8558);
-    			add_location(br6, file$9, 374, 10, 8767);
+    			add_location(th27, file$9, 370, 8, 8676);
+    			add_location(tr19, file$9, 368, 6, 8635);
+    			add_location(br6, file$9, 377, 10, 8844);
     			attr(th28, "class", "date svelte-y2s0f9");
-    			add_location(th28, file$9, 372, 8, 8716);
+    			add_location(th28, file$9, 375, 8, 8793);
     			attr(h59, "class", "svelte-y2s0f9");
-    			add_location(h59, file$9, 378, 10, 8831);
+    			add_location(h59, file$9, 381, 10, 8908);
     			attr(h68, "class", "svelte-y2s0f9");
-    			add_location(h68, file$9, 379, 10, 8876);
+    			add_location(h68, file$9, 382, 10, 8953);
     			attr(p9, "class", "desc svelte-y2s0f9");
-    			add_location(p9, file$9, 380, 10, 8920);
+    			add_location(p9, file$9, 383, 10, 8997);
     			attr(i5, "class", "fas fa-globe svelte-y2s0f9");
-    			add_location(i5, file$9, 388, 16, 9249);
-    			add_location(button16, file$9, 387, 14, 9224);
+    			add_location(i5, file$9, 391, 16, 9326);
+    			add_location(button16, file$9, 390, 14, 9301);
     			attr(a5, "href", "https://poloclub.github.io/");
-    			add_location(a5, file$9, 386, 12, 9171);
+    			add_location(a5, file$9, 389, 12, 9248);
     			attr(div7, "class", "tags svelte-y2s0f9");
-    			add_location(div7, file$9, 385, 10, 9140);
+    			add_location(div7, file$9, 388, 10, 9217);
     			attr(th29, "class", "svelte-y2s0f9");
-    			add_location(th29, file$9, 377, 8, 8816);
+    			add_location(th29, file$9, 380, 8, 8893);
     			attr(tr20, "class", "item svelte-y2s0f9");
-    			add_location(tr20, file$9, 371, 6, 8690);
+    			add_location(tr20, file$9, 374, 6, 8767);
     			attr(tr21, "class", "buffer svelte-y2s0f9");
-    			add_location(tr21, file$9, 395, 6, 9392);
-    			add_location(br7, file$9, 399, 10, 9499);
+    			add_location(tr21, file$9, 398, 6, 9469);
+    			add_location(br7, file$9, 402, 10, 9576);
     			attr(th30, "class", "date svelte-y2s0f9");
-    			add_location(th30, file$9, 397, 8, 9446);
+    			add_location(th30, file$9, 400, 8, 9523);
     			attr(h510, "class", "svelte-y2s0f9");
-    			add_location(h510, file$9, 403, 10, 9564);
+    			add_location(h510, file$9, 406, 10, 9641);
     			attr(h69, "class", "svelte-y2s0f9");
-    			add_location(h69, file$9, 404, 10, 9600);
+    			add_location(h69, file$9, 407, 10, 9677);
     			attr(p10, "class", "desc svelte-y2s0f9");
-    			add_location(p10, file$9, 405, 10, 9655);
+    			add_location(p10, file$9, 408, 10, 9732);
     			attr(i6, "class", "fas fa-rocket svelte-y2s0f9");
-    			add_location(i6, file$9, 413, 16, 10020);
-    			add_location(button17, file$9, 412, 14, 9995);
+    			add_location(i6, file$9, 416, 16, 10097);
+    			add_location(button17, file$9, 415, 14, 10072);
     			attr(a6, "href", "https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space");
-    			add_location(a6, file$9, 410, 12, 9866);
+    			add_location(a6, file$9, 413, 12, 9943);
     			attr(i7, "class", "fas fa-globe svelte-y2s0f9");
-    			add_location(i7, file$9, 419, 16, 10203);
-    			add_location(button18, file$9, 418, 14, 10178);
+    			add_location(i7, file$9, 422, 16, 10280);
+    			add_location(button18, file$9, 421, 14, 10255);
     			attr(a7, "href", "http://prox-1.gatech.edu/");
-    			add_location(a7, file$9, 417, 12, 10127);
+    			add_location(a7, file$9, 420, 12, 10204);
     			attr(i8, "class", "far fa-newspaper svelte-y2s0f9");
-    			add_location(i8, file$9, 426, 16, 10437);
-    			add_location(button19, file$9, 425, 14, 10412);
+    			add_location(i8, file$9, 429, 16, 10514);
+    			add_location(button19, file$9, 428, 14, 10489);
     			attr(a8, "href", "https://www.ae.gatech.edu/news/2017/05/prox-1-launch-has-launched");
-    			add_location(a8, file$9, 423, 12, 10307);
+    			add_location(a8, file$9, 426, 12, 10384);
     			attr(div8, "class", "tags svelte-y2s0f9");
-    			add_location(div8, file$9, 409, 10, 9835);
+    			add_location(div8, file$9, 412, 10, 9912);
     			attr(th31, "class", "svelte-y2s0f9");
-    			add_location(th31, file$9, 402, 8, 9549);
+    			add_location(th31, file$9, 405, 8, 9626);
     			attr(tr22, "class", "item svelte-y2s0f9");
-    			add_location(tr22, file$9, 396, 6, 9420);
+    			add_location(tr22, file$9, 399, 6, 9497);
     			attr(th32, "class", "date svelte-y2s0f9");
-    			add_location(th32, file$9, 435, 8, 10629);
+    			add_location(th32, file$9, 438, 8, 10706);
     			attr(h44, "class", "header svelte-y2s0f9");
-    			add_location(h44, file$9, 437, 10, 10672);
+    			add_location(h44, file$9, 440, 10, 10749);
     			attr(th33, "class", "svelte-y2s0f9");
-    			add_location(th33, file$9, 436, 8, 10657);
-    			add_location(tr23, file$9, 434, 6, 10616);
+    			add_location(th33, file$9, 439, 8, 10734);
+    			add_location(tr23, file$9, 437, 6, 10693);
     			attr(th34, "class", "date svelte-y2s0f9");
-    			add_location(th34, file$9, 465, 8, 11405);
+    			add_location(th34, file$9, 468, 8, 11482);
     			attr(h45, "class", "header svelte-y2s0f9");
-    			add_location(h45, file$9, 467, 10, 11448);
+    			add_location(h45, file$9, 470, 10, 11525);
     			attr(th35, "class", "svelte-y2s0f9");
-    			add_location(th35, file$9, 466, 8, 11433);
-    			add_location(tr24, file$9, 464, 6, 11392);
+    			add_location(th35, file$9, 469, 8, 11510);
+    			add_location(tr24, file$9, 467, 6, 11469);
     			attr(th36, "class", "date svelte-y2s0f9");
-    			add_location(th36, file$9, 471, 8, 11539);
+    			add_location(th36, file$9, 474, 8, 11616);
     			attr(h511, "class", "svelte-y2s0f9");
-    			add_location(h511, file$9, 473, 10, 11594);
+    			add_location(h511, file$9, 476, 10, 11671);
     			attr(h610, "class", "svelte-y2s0f9");
-    			add_location(h610, file$9, 474, 10, 11647);
+    			add_location(h610, file$9, 477, 10, 11724);
     			attr(p11, "class", "desc svelte-y2s0f9");
-    			add_location(p11, file$9, 478, 10, 11778);
+    			add_location(p11, file$9, 481, 10, 11855);
     			attr(i9, "class", "fab fa-github svelte-y2s0f9");
-    			add_location(i9, file$9, 485, 16, 12093);
-    			add_location(button20, file$9, 484, 14, 12068);
+    			add_location(i9, file$9, 488, 16, 12170);
+    			add_location(button20, file$9, 487, 14, 12145);
     			attr(a9, "href", "https://github.com/cabreraalex/private-fair-GAN");
-    			add_location(a9, file$9, 483, 12, 11995);
+    			add_location(a9, file$9, 486, 12, 12072);
     			attr(div9, "class", "tags svelte-y2s0f9");
-    			add_location(div9, file$9, 482, 10, 11964);
+    			add_location(div9, file$9, 485, 10, 12041);
     			attr(th37, "class", "svelte-y2s0f9");
-    			add_location(th37, file$9, 472, 8, 11579);
+    			add_location(th37, file$9, 475, 8, 11656);
     			attr(tr25, "class", "item svelte-y2s0f9");
-    			add_location(tr25, file$9, 470, 6, 11513);
+    			add_location(tr25, file$9, 473, 6, 11590);
     			attr(tr26, "class", "buffer svelte-y2s0f9");
-    			add_location(tr26, file$9, 492, 6, 12234);
+    			add_location(tr26, file$9, 495, 6, 12311);
     			attr(th38, "class", "date svelte-y2s0f9");
-    			add_location(th38, file$9, 494, 8, 12288);
+    			add_location(th38, file$9, 497, 8, 12365);
     			attr(h512, "class", "svelte-y2s0f9");
-    			add_location(h512, file$9, 496, 10, 12345);
+    			add_location(h512, file$9, 499, 10, 12422);
     			attr(p12, "class", "desc svelte-y2s0f9");
-    			add_location(p12, file$9, 497, 10, 12397);
+    			add_location(p12, file$9, 500, 10, 12474);
     			attr(i10, "class", "fas fa-file-pdf svelte-y2s0f9");
-    			add_location(i10, file$9, 504, 16, 12670);
-    			add_location(button21, file$9, 503, 14, 12645);
+    			add_location(i10, file$9, 507, 16, 12747);
+    			add_location(button21, file$9, 506, 14, 12722);
     			attr(a10, "href", "./gt_bus_analysis.pdf");
-    			add_location(a10, file$9, 502, 12, 12598);
+    			add_location(a10, file$9, 505, 12, 12675);
     			attr(i11, "class", "fas fa-globe svelte-y2s0f9");
-    			add_location(i11, file$9, 510, 16, 12873);
-    			add_location(button22, file$9, 509, 14, 12848);
+    			add_location(i11, file$9, 513, 16, 12950);
+    			add_location(button22, file$9, 512, 14, 12925);
     			attr(a11, "href", "http://poloclub.gatech.edu/cse6242/2018spring/");
-    			add_location(a11, file$9, 508, 12, 12776);
+    			add_location(a11, file$9, 511, 12, 12853);
     			attr(div10, "class", "tags svelte-y2s0f9");
-    			add_location(div10, file$9, 501, 10, 12567);
+    			add_location(div10, file$9, 504, 10, 12644);
     			attr(th39, "class", "svelte-y2s0f9");
-    			add_location(th39, file$9, 495, 8, 12330);
+    			add_location(th39, file$9, 498, 8, 12407);
     			attr(tr27, "class", "item svelte-y2s0f9");
-    			add_location(tr27, file$9, 493, 6, 12262);
+    			add_location(tr27, file$9, 496, 6, 12339);
     			attr(tr28, "class", "buffer svelte-y2s0f9");
-    			add_location(tr28, file$9, 517, 6, 13012);
+    			add_location(tr28, file$9, 520, 6, 13089);
     			attr(th40, "class", "date svelte-y2s0f9");
-    			add_location(th40, file$9, 519, 8, 13066);
+    			add_location(th40, file$9, 522, 8, 13143);
     			attr(h513, "class", "svelte-y2s0f9");
-    			add_location(h513, file$9, 521, 10, 13123);
+    			add_location(h513, file$9, 524, 10, 13200);
     			attr(p13, "class", "desc svelte-y2s0f9");
-    			add_location(p13, file$9, 522, 10, 13156);
+    			add_location(p13, file$9, 525, 10, 13233);
     			attr(i12, "class", "fas fa-globe svelte-y2s0f9");
-    			add_location(i12, file$9, 529, 16, 13440);
-    			add_location(button23, file$9, 528, 14, 13415);
+    			add_location(i12, file$9, 532, 16, 13517);
+    			add_location(button23, file$9, 531, 14, 13492);
     			attr(a12, "href", "http://ctfs.github.io/resources/");
-    			add_location(a12, file$9, 527, 12, 13357);
+    			add_location(a12, file$9, 530, 12, 13434);
     			attr(i13, "class", "fab fa-github svelte-y2s0f9");
-    			add_location(i13, file$9, 535, 16, 13628);
-    			add_location(button24, file$9, 534, 14, 13603);
+    			add_location(i13, file$9, 538, 16, 13705);
+    			add_location(button24, file$9, 537, 14, 13680);
     			attr(a13, "href", "https://github.com/ctfs/resources");
-    			add_location(a13, file$9, 533, 12, 13544);
+    			add_location(a13, file$9, 536, 12, 13621);
     			attr(div11, "class", "tags svelte-y2s0f9");
-    			add_location(div11, file$9, 526, 10, 13326);
+    			add_location(div11, file$9, 529, 10, 13403);
     			attr(th41, "class", "svelte-y2s0f9");
-    			add_location(th41, file$9, 520, 8, 13108);
+    			add_location(th41, file$9, 523, 8, 13185);
     			attr(tr29, "class", "item svelte-y2s0f9");
-    			add_location(tr29, file$9, 518, 6, 13040);
+    			add_location(tr29, file$9, 521, 6, 13117);
     			attr(th42, "class", "date svelte-y2s0f9");
-    			add_location(th42, file$9, 544, 8, 13806);
+    			add_location(th42, file$9, 547, 8, 13883);
     			attr(h46, "class", "header svelte-y2s0f9");
-    			add_location(h46, file$9, 546, 10, 13849);
+    			add_location(h46, file$9, 549, 10, 13926);
     			attr(th43, "class", "svelte-y2s0f9");
-    			add_location(th43, file$9, 545, 8, 13834);
-    			add_location(tr30, file$9, 543, 6, 13793);
+    			add_location(th43, file$9, 548, 8, 13911);
+    			add_location(tr30, file$9, 546, 6, 13870);
     			attr(th44, "class", "date svelte-y2s0f9");
-    			add_location(th44, file$9, 550, 8, 13940);
+    			add_location(th44, file$9, 553, 8, 14017);
     			attr(h514, "class", "svelte-y2s0f9");
-    			add_location(h514, file$9, 552, 10, 14021);
+    			add_location(h514, file$9, 555, 10, 14098);
     			attr(h611, "class", "svelte-y2s0f9");
-    			add_location(h611, file$9, 553, 10, 14073);
+    			add_location(h611, file$9, 556, 10, 14150);
     			attr(p14, "class", "desc svelte-y2s0f9");
-    			add_location(p14, file$9, 554, 10, 14132);
+    			add_location(p14, file$9, 557, 10, 14209);
     			attr(th45, "class", "svelte-y2s0f9");
-    			add_location(th45, file$9, 551, 8, 14006);
+    			add_location(th45, file$9, 554, 8, 14083);
     			attr(tr31, "class", "item svelte-y2s0f9");
-    			add_location(tr31, file$9, 549, 6, 13914);
+    			add_location(tr31, file$9, 552, 6, 13991);
     			attr(tr32, "class", "buffer svelte-y2s0f9");
-    			add_location(tr32, file$9, 560, 6, 14317);
+    			add_location(tr32, file$9, 563, 6, 14394);
     			attr(th46, "class", "date svelte-y2s0f9");
-    			add_location(th46, file$9, 562, 8, 14371);
+    			add_location(th46, file$9, 565, 8, 14448);
     			attr(h515, "class", "svelte-y2s0f9");
-    			add_location(h515, file$9, 564, 10, 14426);
+    			add_location(h515, file$9, 567, 10, 14503);
     			attr(h612, "class", "svelte-y2s0f9");
-    			add_location(h612, file$9, 565, 10, 14457);
+    			add_location(h612, file$9, 568, 10, 14534);
     			attr(p15, "class", "desc svelte-y2s0f9");
-    			add_location(p15, file$9, 566, 10, 14505);
+    			add_location(p15, file$9, 569, 10, 14582);
     			attr(th47, "class", "svelte-y2s0f9");
-    			add_location(th47, file$9, 563, 8, 14411);
+    			add_location(th47, file$9, 566, 8, 14488);
     			attr(tr33, "class", "item svelte-y2s0f9");
-    			add_location(tr33, file$9, 561, 6, 14345);
+    			add_location(tr33, file$9, 564, 6, 14422);
     			attr(th48, "class", "date svelte-y2s0f9");
-    			add_location(th48, file$9, 574, 8, 14722);
+    			add_location(th48, file$9, 577, 8, 14799);
     			attr(h47, "class", "header svelte-y2s0f9");
-    			add_location(h47, file$9, 576, 10, 14765);
+    			add_location(h47, file$9, 579, 10, 14842);
     			attr(th49, "class", "svelte-y2s0f9");
-    			add_location(th49, file$9, 575, 8, 14750);
-    			add_location(tr34, file$9, 573, 6, 14709);
+    			add_location(th49, file$9, 578, 8, 14827);
+    			add_location(tr34, file$9, 576, 6, 14786);
     			attr(th50, "class", "date svelte-y2s0f9");
-    			add_location(th50, file$9, 580, 8, 14855);
+    			add_location(th50, file$9, 583, 8, 14932);
     			attr(h516, "class", "svelte-y2s0f9");
-    			add_location(h516, file$9, 582, 10, 14898);
+    			add_location(h516, file$9, 585, 10, 14975);
     			attr(th51, "class", "svelte-y2s0f9");
-    			add_location(th51, file$9, 581, 8, 14883);
+    			add_location(th51, file$9, 584, 8, 14960);
     			attr(tr35, "class", "item svelte-y2s0f9");
-    			add_location(tr35, file$9, 579, 6, 14829);
+    			add_location(tr35, file$9, 582, 6, 14906);
     			attr(th52, "class", "date svelte-y2s0f9");
-    			add_location(th52, file$9, 586, 8, 14970);
+    			add_location(th52, file$9, 589, 8, 15047);
     			attr(h517, "class", "single svelte-y2s0f9");
-    			add_location(h517, file$9, 588, 10, 15028);
+    			add_location(h517, file$9, 591, 10, 15105);
     			attr(th53, "class", "svelte-y2s0f9");
-    			add_location(th53, file$9, 587, 8, 15013);
-    			add_location(tr36, file$9, 585, 6, 14957);
+    			add_location(th53, file$9, 590, 8, 15090);
+    			add_location(tr36, file$9, 588, 6, 15034);
     			attr(th54, "class", "date svelte-y2s0f9");
-    			add_location(th54, file$9, 592, 8, 15138);
+    			add_location(th54, file$9, 595, 8, 15215);
     			attr(h518, "class", "single svelte-y2s0f9");
-    			add_location(h518, file$9, 594, 10, 15196);
+    			add_location(h518, file$9, 597, 10, 15273);
     			attr(th55, "class", "svelte-y2s0f9");
-    			add_location(th55, file$9, 593, 8, 15181);
-    			add_location(tr37, file$9, 591, 6, 15125);
+    			add_location(th55, file$9, 596, 8, 15258);
+    			add_location(tr37, file$9, 594, 6, 15202);
     			attr(th56, "class", "date svelte-y2s0f9");
-    			add_location(th56, file$9, 601, 8, 15378);
+    			add_location(th56, file$9, 604, 8, 15455);
     			attr(h48, "class", "header svelte-y2s0f9");
-    			add_location(h48, file$9, 603, 10, 15421);
+    			add_location(h48, file$9, 606, 10, 15498);
     			attr(th57, "class", "svelte-y2s0f9");
-    			add_location(th57, file$9, 602, 8, 15406);
-    			add_location(tr38, file$9, 600, 6, 15365);
-    			add_location(br8, file$9, 609, 10, 15575);
+    			add_location(th57, file$9, 605, 8, 15483);
+    			add_location(tr38, file$9, 603, 6, 15442);
+    			add_location(br8, file$9, 612, 10, 15652);
     			attr(th58, "class", "date svelte-y2s0f9");
-    			add_location(th58, file$9, 607, 8, 15522);
+    			add_location(th58, file$9, 610, 8, 15599);
     			attr(h519, "class", "svelte-y2s0f9");
-    			add_location(h519, file$9, 613, 10, 15642);
+    			add_location(h519, file$9, 616, 10, 15719);
     			attr(h613, "class", "svelte-y2s0f9");
-    			add_location(h613, file$9, 614, 10, 15702);
+    			add_location(h613, file$9, 617, 10, 15779);
     			attr(p16, "class", "desc svelte-y2s0f9");
-    			add_location(p16, file$9, 615, 10, 15748);
+    			add_location(p16, file$9, 618, 10, 15825);
     			attr(i14, "class", "fas fa-globe svelte-y2s0f9");
-    			add_location(i14, file$9, 622, 16, 16030);
-    			add_location(button25, file$9, 621, 14, 16005);
+    			add_location(i14, file$9, 625, 16, 16107);
+    			add_location(button25, file$9, 624, 14, 16082);
     			attr(a14, "href", "http://ssnc.stampsfoundation.org/");
-    			add_location(a14, file$9, 620, 12, 15946);
+    			add_location(a14, file$9, 623, 12, 16023);
     			attr(div12, "class", "tags svelte-y2s0f9");
-    			add_location(div12, file$9, 619, 10, 15915);
+    			add_location(div12, file$9, 622, 10, 15992);
     			attr(th59, "class", "svelte-y2s0f9");
-    			add_location(th59, file$9, 612, 8, 15627);
+    			add_location(th59, file$9, 615, 8, 15704);
     			attr(tr39, "class", "item svelte-y2s0f9");
-    			add_location(tr39, file$9, 606, 6, 15496);
+    			add_location(tr39, file$9, 609, 6, 15573);
     			attr(tr40, "class", "buffer svelte-y2s0f9");
-    			add_location(tr40, file$9, 629, 6, 16171);
+    			add_location(tr40, file$9, 632, 6, 16248);
     			attr(th60, "class", "date svelte-y2s0f9");
-    			add_location(th60, file$9, 631, 8, 16225);
+    			add_location(th60, file$9, 634, 8, 16302);
     			attr(h520, "class", "svelte-y2s0f9");
-    			add_location(h520, file$9, 633, 10, 16282);
+    			add_location(h520, file$9, 636, 10, 16359);
     			attr(p17, "class", "desc svelte-y2s0f9");
-    			add_location(p17, file$9, 634, 10, 16312);
+    			add_location(p17, file$9, 637, 10, 16389);
     			attr(i15, "class", "fas fa-globe svelte-y2s0f9");
-    			add_location(i15, file$9, 640, 16, 16538);
-    			add_location(button26, file$9, 639, 14, 16513);
+    			add_location(i15, file$9, 643, 16, 16615);
+    			add_location(button26, file$9, 642, 14, 16590);
     			attr(a15, "href", "http://admission.gatech.edu/gttours");
-    			add_location(a15, file$9, 638, 12, 16452);
+    			add_location(a15, file$9, 641, 12, 16529);
     			attr(div13, "class", "tags svelte-y2s0f9");
-    			add_location(div13, file$9, 637, 10, 16421);
+    			add_location(div13, file$9, 640, 10, 16498);
     			attr(th61, "class", "svelte-y2s0f9");
-    			add_location(th61, file$9, 632, 8, 16267);
+    			add_location(th61, file$9, 635, 8, 16344);
     			attr(tr41, "class", "item svelte-y2s0f9");
-    			add_location(tr41, file$9, 630, 6, 16199);
+    			add_location(tr41, file$9, 633, 6, 16276);
     			attr(tr42, "class", "buffer svelte-y2s0f9");
-    			add_location(tr42, file$9, 647, 6, 16679);
-    			add_location(br9, file$9, 651, 10, 16786);
+    			add_location(tr42, file$9, 650, 6, 16756);
+    			add_location(br9, file$9, 654, 10, 16863);
     			attr(th62, "class", "date svelte-y2s0f9");
-    			add_location(th62, file$9, 649, 8, 16733);
+    			add_location(th62, file$9, 652, 8, 16810);
     			attr(h521, "class", "svelte-y2s0f9");
-    			add_location(h521, file$9, 655, 10, 16851);
+    			add_location(h521, file$9, 658, 10, 16928);
     			attr(h614, "class", "svelte-y2s0f9");
-    			add_location(h614, file$9, 656, 10, 16902);
+    			add_location(h614, file$9, 659, 10, 16979);
     			attr(p18, "class", "desc svelte-y2s0f9");
-    			add_location(p18, file$9, 657, 10, 16978);
+    			add_location(p18, file$9, 660, 10, 17055);
     			attr(i16, "class", "fas fa-globe svelte-y2s0f9");
-    			add_location(i16, file$9, 665, 16, 17309);
-    			add_location(button27, file$9, 664, 14, 17284);
+    			add_location(i16, file$9, 668, 16, 17386);
+    			add_location(button27, file$9, 667, 14, 17361);
     			attr(a16, "href", "http://www.gtsf.gatech.edu/s/1481/alumni/17/home.aspx?sid=1481&gid=42");
-    			add_location(a16, file$9, 662, 12, 17175);
+    			add_location(a16, file$9, 665, 12, 17252);
     			attr(div14, "class", "tags svelte-y2s0f9");
-    			add_location(div14, file$9, 661, 10, 17144);
+    			add_location(div14, file$9, 664, 10, 17221);
     			attr(th63, "class", "svelte-y2s0f9");
-    			add_location(th63, file$9, 654, 8, 16836);
+    			add_location(th63, file$9, 657, 8, 16913);
     			attr(tr43, "class", "item svelte-y2s0f9");
-    			add_location(tr43, file$9, 648, 6, 16707);
+    			add_location(tr43, file$9, 651, 6, 16784);
     			attr(th64, "class", "date svelte-y2s0f9");
-    			add_location(th64, file$9, 674, 8, 17493);
+    			add_location(th64, file$9, 677, 8, 17570);
     			attr(h49, "class", "header svelte-y2s0f9");
-    			add_location(h49, file$9, 676, 10, 17536);
+    			add_location(h49, file$9, 679, 10, 17613);
     			attr(th65, "class", "svelte-y2s0f9");
-    			add_location(th65, file$9, 675, 8, 17521);
-    			add_location(tr44, file$9, 673, 6, 17480);
+    			add_location(th65, file$9, 678, 8, 17598);
+    			add_location(tr44, file$9, 676, 6, 17557);
     			attr(th66, "class", "date svelte-y2s0f9");
-    			add_location(th66, file$9, 680, 8, 17635);
+    			add_location(th66, file$9, 683, 8, 17712);
     			attr(h522, "class", "single svelte-y2s0f9");
-    			add_location(h522, file$9, 683, 12, 17767);
+    			add_location(h522, file$9, 686, 12, 17844);
     			attr(a17, "href", "https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/");
-    			add_location(a17, file$9, 682, 10, 17690);
+    			add_location(a17, file$9, 685, 10, 17767);
     			attr(th67, "class", "svelte-y2s0f9");
-    			add_location(th67, file$9, 681, 8, 17675);
+    			add_location(th67, file$9, 684, 8, 17752);
     			attr(tr45, "class", "item svelte-y2s0f9");
-    			add_location(tr45, file$9, 679, 6, 17609);
+    			add_location(tr45, file$9, 682, 6, 17686);
     			attr(th68, "class", "date svelte-y2s0f9");
-    			add_location(th68, file$9, 688, 8, 17893);
+    			add_location(th68, file$9, 691, 8, 17970);
     			attr(h523, "class", "single svelte-y2s0f9");
-    			add_location(h523, file$9, 691, 12, 18019);
+    			add_location(h523, file$9, 694, 12, 18096);
     			attr(a18, "href", "http://poloclub.gatech.edu/cse6242/2018spring");
-    			add_location(a18, file$9, 690, 10, 17950);
+    			add_location(a18, file$9, 693, 10, 18027);
     			attr(th69, "class", "svelte-y2s0f9");
-    			add_location(th69, file$9, 689, 8, 17935);
+    			add_location(th69, file$9, 692, 8, 18012);
     			attr(tr46, "class", "item svelte-y2s0f9");
-    			add_location(tr46, file$9, 687, 6, 17867);
+    			add_location(tr46, file$9, 690, 6, 17944);
     			attr(th70, "class", "date svelte-y2s0f9");
-    			add_location(th70, file$9, 696, 8, 18161);
+    			add_location(th70, file$9, 699, 8, 18238);
     			attr(h524, "class", "single svelte-y2s0f9");
-    			add_location(h524, file$9, 698, 10, 18216);
+    			add_location(h524, file$9, 701, 10, 18293);
     			attr(th71, "class", "svelte-y2s0f9");
-    			add_location(th71, file$9, 697, 8, 18201);
+    			add_location(th71, file$9, 700, 8, 18278);
     			attr(tr47, "class", "item svelte-y2s0f9");
-    			add_location(tr47, file$9, 695, 6, 18135);
+    			add_location(tr47, file$9, 698, 6, 18212);
     			attr(th72, "class", "date svelte-y2s0f9");
-    			add_location(th72, file$9, 702, 8, 18329);
+    			add_location(th72, file$9, 705, 8, 18406);
     			attr(h525, "class", "single svelte-y2s0f9");
-    			add_location(h525, file$9, 705, 12, 18463);
+    			add_location(h525, file$9, 708, 12, 18540);
     			attr(a19, "href", "https://www.omscs.gatech.edu/cs-7641-machine-learning");
-    			add_location(a19, file$9, 704, 10, 18386);
+    			add_location(a19, file$9, 707, 10, 18463);
     			attr(th73, "class", "svelte-y2s0f9");
-    			add_location(th73, file$9, 703, 8, 18371);
+    			add_location(th73, file$9, 706, 8, 18448);
     			attr(tr48, "class", "item svelte-y2s0f9");
-    			add_location(tr48, file$9, 701, 6, 18303);
+    			add_location(tr48, file$9, 704, 6, 18380);
     			attr(th74, "class", "date svelte-y2s0f9");
-    			add_location(th74, file$9, 710, 8, 18592);
+    			add_location(th74, file$9, 713, 8, 18669);
     			attr(h526, "class", "single svelte-y2s0f9");
-    			add_location(h526, file$9, 713, 12, 18703);
+    			add_location(h526, file$9, 716, 12, 18780);
     			attr(a20, "href", "http://cx4230.gatech.edu/sp17/");
-    			add_location(a20, file$9, 712, 10, 18649);
+    			add_location(a20, file$9, 715, 10, 18726);
     			attr(th75, "class", "svelte-y2s0f9");
-    			add_location(th75, file$9, 711, 8, 18634);
+    			add_location(th75, file$9, 714, 8, 18711);
     			attr(tr49, "class", "item svelte-y2s0f9");
-    			add_location(tr49, file$9, 709, 6, 18566);
+    			add_location(tr49, file$9, 712, 6, 18643);
     			attr(th76, "class", "date svelte-y2s0f9");
-    			add_location(th76, file$9, 718, 8, 18830);
+    			add_location(th76, file$9, 721, 8, 18907);
     			attr(h527, "class", "single svelte-y2s0f9");
-    			add_location(h527, file$9, 720, 10, 18887);
+    			add_location(h527, file$9, 723, 10, 18964);
     			attr(th77, "class", "svelte-y2s0f9");
-    			add_location(th77, file$9, 719, 8, 18872);
+    			add_location(th77, file$9, 722, 8, 18949);
     			attr(tr50, "class", "item svelte-y2s0f9");
-    			add_location(tr50, file$9, 717, 6, 18804);
+    			add_location(tr50, file$9, 720, 6, 18881);
     			attr(th78, "class", "date svelte-y2s0f9");
-    			add_location(th78, file$9, 725, 8, 19006);
+    			add_location(th78, file$9, 728, 8, 19083);
     			attr(h410, "class", "header svelte-y2s0f9");
-    			add_location(h410, file$9, 727, 10, 19049);
+    			add_location(h410, file$9, 730, 10, 19126);
     			attr(th79, "class", "svelte-y2s0f9");
-    			add_location(th79, file$9, 726, 8, 19034);
-    			add_location(tr51, file$9, 724, 6, 18993);
+    			add_location(th79, file$9, 729, 8, 19111);
+    			add_location(tr51, file$9, 727, 6, 19070);
     			attr(th80, "class", "date svelte-y2s0f9");
-    			add_location(th80, file$9, 731, 8, 19138);
+    			add_location(th80, file$9, 734, 8, 19215);
     			attr(h528, "class", "svelte-y2s0f9");
-    			add_location(h528, file$9, 733, 10, 19181);
-    			add_location(button28, file$9, 735, 12, 19241);
-    			add_location(button29, file$9, 736, 12, 19287);
-    			add_location(button30, file$9, 737, 12, 19333);
+    			add_location(h528, file$9, 736, 10, 19258);
+    			add_location(button28, file$9, 738, 12, 19318);
+    			add_location(button29, file$9, 739, 12, 19364);
+    			add_location(button30, file$9, 740, 12, 19410);
     			attr(div15, "class", "tags svelte-y2s0f9");
-    			add_location(div15, file$9, 734, 10, 19210);
+    			add_location(div15, file$9, 737, 10, 19287);
     			attr(th81, "class", "svelte-y2s0f9");
-    			add_location(th81, file$9, 732, 8, 19166);
+    			add_location(th81, file$9, 735, 8, 19243);
     			attr(tr52, "class", "item svelte-y2s0f9");
-    			add_location(tr52, file$9, 730, 6, 19112);
+    			add_location(tr52, file$9, 733, 6, 19189);
     			attr(tr53, "class", "buffer svelte-y2s0f9");
-    			add_location(tr53, file$9, 741, 6, 19428);
+    			add_location(tr53, file$9, 744, 6, 19505);
     			attr(th82, "class", "date svelte-y2s0f9");
-    			add_location(th82, file$9, 743, 8, 19482);
+    			add_location(th82, file$9, 746, 8, 19559);
     			attr(h529, "class", "svelte-y2s0f9");
-    			add_location(h529, file$9, 745, 10, 19525);
-    			add_location(button31, file$9, 747, 12, 19597);
-    			add_location(button32, file$9, 748, 12, 19631);
-    			add_location(button33, file$9, 749, 12, 19671);
-    			add_location(button34, file$9, 750, 12, 19707);
-    			add_location(button35, file$9, 751, 12, 19742);
-    			add_location(button36, file$9, 752, 12, 19775);
+    			add_location(h529, file$9, 748, 10, 19602);
+    			add_location(button31, file$9, 750, 12, 19674);
+    			add_location(button32, file$9, 751, 12, 19708);
+    			add_location(button33, file$9, 752, 12, 19748);
+    			add_location(button34, file$9, 753, 12, 19784);
+    			add_location(button35, file$9, 754, 12, 19819);
+    			add_location(button36, file$9, 755, 12, 19852);
     			attr(div16, "class", "tags svelte-y2s0f9");
-    			add_location(div16, file$9, 746, 10, 19566);
+    			add_location(div16, file$9, 749, 10, 19643);
     			attr(th83, "class", "svelte-y2s0f9");
-    			add_location(th83, file$9, 744, 8, 19510);
+    			add_location(th83, file$9, 747, 8, 19587);
     			attr(tr54, "class", "item svelte-y2s0f9");
-    			add_location(tr54, file$9, 742, 6, 19456);
+    			add_location(tr54, file$9, 745, 6, 19533);
     			attr(tr55, "class", "buffer svelte-y2s0f9");
-    			add_location(tr55, file$9, 756, 6, 19844);
+    			add_location(tr55, file$9, 759, 6, 19921);
     			attr(th84, "class", "date svelte-y2s0f9");
-    			add_location(th84, file$9, 758, 8, 19898);
+    			add_location(th84, file$9, 761, 8, 19975);
     			attr(h530, "class", "svelte-y2s0f9");
-    			add_location(h530, file$9, 760, 10, 19941);
-    			add_location(button37, file$9, 762, 12, 20004);
-    			add_location(button38, file$9, 763, 12, 20050);
-    			add_location(button39, file$9, 764, 12, 20102);
-    			add_location(button40, file$9, 765, 12, 20137);
-    			add_location(button41, file$9, 766, 12, 20173);
-    			add_location(button42, file$9, 767, 12, 20207);
-    			add_location(button43, file$9, 768, 12, 20239);
-    			add_location(button44, file$9, 769, 12, 20276);
+    			add_location(h530, file$9, 763, 10, 20018);
+    			add_location(button37, file$9, 765, 12, 20081);
+    			add_location(button38, file$9, 766, 12, 20127);
+    			add_location(button39, file$9, 767, 12, 20179);
+    			add_location(button40, file$9, 768, 12, 20214);
+    			add_location(button41, file$9, 769, 12, 20250);
+    			add_location(button42, file$9, 770, 12, 20284);
+    			add_location(button43, file$9, 771, 12, 20316);
+    			add_location(button44, file$9, 772, 12, 20353);
     			attr(div17, "class", "tags svelte-y2s0f9");
-    			add_location(div17, file$9, 761, 10, 19973);
+    			add_location(div17, file$9, 764, 10, 20050);
     			attr(th85, "class", "svelte-y2s0f9");
-    			add_location(th85, file$9, 759, 8, 19926);
+    			add_location(th85, file$9, 762, 8, 20003);
     			attr(tr56, "class", "item svelte-y2s0f9");
-    			add_location(tr56, file$9, 757, 6, 19872);
+    			add_location(tr56, file$9, 760, 6, 19949);
     			attr(tr57, "class", "buffer svelte-y2s0f9");
-    			add_location(tr57, file$9, 773, 6, 20367);
+    			add_location(tr57, file$9, 776, 6, 20444);
     			attr(th86, "class", "date svelte-y2s0f9");
-    			add_location(th86, file$9, 775, 8, 20421);
+    			add_location(th86, file$9, 778, 8, 20498);
     			attr(p19, "class", "desc svelte-y2s0f9");
-    			add_location(p19, file$9, 777, 10, 20464);
+    			add_location(p19, file$9, 780, 10, 20541);
     			attr(th87, "class", "svelte-y2s0f9");
-    			add_location(th87, file$9, 776, 8, 20449);
+    			add_location(th87, file$9, 779, 8, 20526);
     			attr(tr58, "class", "item svelte-y2s0f9");
-    			add_location(tr58, file$9, 774, 6, 20395);
+    			add_location(tr58, file$9, 777, 6, 20472);
     			attr(table, "class", "svelte-y2s0f9");
-    			add_location(table, file$9, 148, 4, 2129);
+    			add_location(table, file$9, 151, 4, 2206);
     			attr(main, "class", "svelte-y2s0f9");
-    			add_location(main, file$9, 135, 2, 1828);
+    			add_location(main, file$9, 138, 2, 1905);
     			attr(div18, "id", "container");
     			attr(div18, "class", "svelte-y2s0f9");
-    			add_location(div18, file$9, 134, 0, 1805);
+    			add_location(div18, file$9, 137, 0, 1882);
     		},
 
     		l: function claim(nodes) {
@@ -5060,10 +5093,18 @@ var app = (function () {
     	return "<a href='" + p.website + "'>" + p.name + '</a>';
     }
 
+    function instance$6($$self) {
+    	
+
+      onMount(() => window.scrollTo(0, 0));
+
+    	return {};
+    }
+
     class Cv extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$a, safe_not_equal, []);
+    		init(this, options, instance$6, create_fragment$a, safe_not_equal, []);
     	}
     }
 
@@ -5168,7 +5209,7 @@ var app = (function () {
     	};
     }
 
-    function instance$3($$self) {
+    function instance$7($$self) {
     	
 
       (function(i, s, o, g, r, a, m) {
@@ -5199,7 +5240,7 @@ var app = (function () {
     class App extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$3, create_fragment$b, safe_not_equal, []);
+    		init(this, options, instance$7, create_fragment$b, safe_not_equal, []);
     	}
     }
 

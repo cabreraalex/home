@@ -3,6 +3,9 @@
   import Social from "./components/Social.svelte";
   import Links from "./components/Links.svelte";
   import pubs from "./data/pubs.js";
+  import { onMount } from "svelte";
+
+  onMount(() => window.scrollTo(0, 0));
 </script>
 
 <style>

@@ -2,9 +2,11 @@
   import Footer from "./components/Footer.svelte";
   import pubs from "./data/pubs.js";
   import Links from "./components/Links.svelte";
+  import { onMount } from "svelte";
   export let params = {};
 
   let pub = pubs.find(e => e.id === params.id);
+  onMount(() => window.scrollTo(0, 0));
 </script>
 
 <style>
