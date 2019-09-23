@@ -21,8 +21,8 @@
 
 <p>
   My research focus is broadly
-  <b>human-centered AI</b>
-  , specifically in applying techniques from
+  <b>human-centered AI,</b>
+  specifically in applying techniques from
   <b>HCI</b>
   and
   <b>visualization</b>
@@ -33,14 +33,14 @@
 
 <p>
   Before CMU, I graduated with a B.S. in Computer Science from
-  <a href="https://www.gatech.edu/">Georgia Tech</a>
-  , where I was a member of the
+  <a href="https://www.gatech.edu/">Georgia Tech,</a>
+  where I was a member of the
   <a href="https://poloclub.github.io/">Polo Club of Data Science</a>
   and worked with
   <a href="https://www.cc.gatech.edu/~dchau/">Polo Chau</a>
   and
-  <a href="http://jamiemorgenstern.com/">Jamie Morgenstern</a>
-  . I also spent a few summers as a software engineering intern at
+  <a href="http://jamiemorgenstern.com/">Jamie Morgenstern.</a>
+  I also spent a few summers as a software engineering intern at
   <b class="google">
     <span class="letter g">G</span>
     <span class="letter o1">o</span>
