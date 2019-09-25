@@ -11,6 +11,16 @@
   onMount(() => window.scrollTo(0, 0));
 </script>
 
+<style>
+  .inline {
+    display: inline-flex;
+    align-items: center;
+  }
+  .header {
+    margin-right: 30px;
+  }
+</style>
+
 <div class="pure-g" id="main-container">
   <Sidebar />
   <div id="content" class="pure-u-1 pure-u-md-3-4">
@@ -23,10 +33,10 @@
         <Intro />
       </div>
       <div id="news" class="sect">
-        <h2>
-          News
+        <div class="inline">
+          <h2 class="header">News</h2>
           <a class="right-all" href="#/news">all news</a>
-        </h2>
+        </div>
         {#each { length: 3 } as _, i}
           <div class="news-item pure-g">
             <p class="pure-u-1 pure-u-md-1-5 date">{news[i].date}</p>
@@ -37,10 +47,10 @@
         {/each}
       </div>
       <div id="pubs" class="sect">
-        <h2>
-          Selected Publications
+        <div class="inline">
+          <h2 class="header">Selected Publications</h2>
           <a class="right-all" href="#/pubs">all publications</a>
-        </h2>
+        </div>
         {#each pubs as pub}
           <div class="pure-g pub">
             <div class="thumb-box pure-u-1 pure-u-md-1-3">

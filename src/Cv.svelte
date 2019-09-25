@@ -12,6 +12,8 @@
   #container {
     font-family: "Roboto";
     line-height: 1.2;
+    max-width: 700px;
+    margin: 0px auto;
   }
 
   table {
@@ -78,7 +80,6 @@
   }
 
   main {
-    width: 681px;
     margin: 0px auto;
   }
 
@@ -87,13 +88,7 @@
     padding-bottom: 10px;
     margin-top: 40px;
     margin-bottom: 12px;
-    margin-left: -154px;
-    padding-left: 154px;
     color: #e53935;
-  }
-
-  #head {
-    margin-left: 160px;
   }
 
   .red {
@@ -107,11 +102,6 @@
 
   .color {
     font-size: 30px;
-  }
-
-  .gold {
-    text-decoration: none;
-    color: #b3a369;
   }
 
   .single {
@@ -137,19 +127,22 @@
 
 <div id="container">
   <main>
-    <header id="head">
-      <h3 id="name">
-        <span class="color">Ángel&nbsp;</span>
-        <span class="color red">Alex</span>
-        <span class="color">ander&nbsp;</span>
-        <span class="color red">Cabrera</span>
-      </h3>
-
-      <Intro />
-      <Social />
-
-    </header>
     <table>
+      <tr>
+        <th class="date" />
+        <th class="intro">
+          <h3 id="name">
+            <span class="color">Ángel&nbsp;</span>
+            <span class="color red">Alex</span>
+            <span class="color">ander&nbsp;</span>
+            <span class="color red">Cabrera</span>
+          </h3>
+
+          <Intro />
+          <Social />
+
+        </th>
+      </tr>
       <!-- EDUCATION -->
       <tr>
         <th class="date" />

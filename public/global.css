@@ -19,6 +19,7 @@
 
 p {
   margin: 0px;
+  line-height: 21px;
 }
 
 h4 {
@@ -52,8 +53,6 @@ h6 {
 .right-all {
   font-weight: 100;
   font-size: 17px;
-  float: right;
-  padding-top: 6px;
 }
 
 .cv {
@@ -100,7 +99,7 @@ a:hover {
 body {
   margin: 0px auto;
   margin-top: 40px;
-  padding: 50px;
+  padding: 20px;
   font-family: "Karla", sans-serif;
   max-width: 1300px;
 }
@@ -117,8 +116,9 @@ textarea,
 }
 
 #main-container {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0px auto;
+  padding: 20px;
+  max-width: 1000px;
 }
 
 #name {

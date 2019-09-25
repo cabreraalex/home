@@ -94,7 +94,8 @@
   }
   .desc {
     font-size: 25px;
-    padding-left: 40px;
+    line-height: 29px;
+    padding: 10px;
     text-align: center;
   }
 </style>
