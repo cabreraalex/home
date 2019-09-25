@@ -17,7 +17,11 @@
     Human Computer Interaction Institute (HCII)
   </a>
   at
-  <a href="https://www.cmu.edu/">Carnegie Mellon University.</a>
+  <a href="https://www.cmu.edu/">Carnegie Mellon University,</a>
+  advised by
+  <a href="http://perer.org">Adam Perer</a>
+  and
+  <a href="http://www.cs.cmu.edu/~jasonh/">Jason Hong.</a>
 </p>
 
 <p>
