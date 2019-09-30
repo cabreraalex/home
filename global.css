@@ -39,19 +39,13 @@ h4 {
   margin-bottom: 7px;
 }
 
-.thumb-box {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-
 h6 {
   font-weight: lighter;
   font-size: 12px;
 }
 
 .right-all {
-  font-weight: 100;
+  font-weight: 400;
   font-size: 17px;
 }
 
@@ -101,7 +95,6 @@ body {
   margin-top: 40px;
   padding: 20px;
   font-family: "Karla", sans-serif;
-  max-width: 1300px;
 }
 
 html,
@@ -142,14 +135,22 @@ p {
   font-size: 18px;
 }
 
-.fab {
-  font-size: 22px;
-  vertical-align: middle;
+button p {
+  font-size: 13px;
+  line-height: 22px;
+  margin-right: 1px;
 }
-
 .fas {
-  font-size: 22px;
-  vertical-align: middle;
+  font-size: 19px;
+  line-height: 1.1;
+}
+.fab {
+  font-size: 19px;
+  line-height: 1.1;
+}
+.button-link {
+  display: inline-flex;
+  justify-items: center;
 }
 
 .date {
@@ -162,7 +163,7 @@ p {
 }
 
 .pub {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 60px;
 }
 
