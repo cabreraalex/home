@@ -1,60 +1,81 @@
 <script>
-    export let pub;
+  export let pub;
 </script>
+
+<style>
+  button p {
+    font-size: 13px;
+    line-height: 22px;
+    margin-right: 1px;
+  }
+  .fas {
+    font-size: 19px;
+    line-height: 1.1;
+  }
+  .fab {
+    font-size: 19px;
+    line-height: 1.1;
+  }
+  .button-link {
+    padding: 3px;
+    display: inline-flex;
+    justify-items: center;
+  }
+</style>
 
 <div class="buttons">
   {#if pub.pdf}
     <a href={pub.pdf}>
-      <button>
+      <button class="button-link">
         <i class="fas fa-file-pdf" />
-        PDF
+        <p>PDF</p>
       </button>
     </a>
   {/if}
   {#if pub.blog}
     <a href={pub.blog}>
-      <button>
+      <button class="button-link">
         <i class="fab fa-medium" />
-        Blog
+        <p>Blog</p>
       </button>
     </a>
   {/if}
   {#if pub.workshop}
     <a href={pub.workshop}>
-      <button>
+      <button class="button-link">
         <i class="fas fa-globe" />
-        Workshop
+        <p>Workshop</p>
       </button>
     </a>
   {/if}
   {#if pub.video}
     <a href={pub.video}>
-      <button>
+      <button class="button-link">
         <i class="fab fa-youtube" />
-        Video
+        <p>Video</p>
       </button>
     </a>
   {/if}
   {#if pub.demo}
     <a href={pub.demo}>
-      <button>
+      <button class="button-link">
         <i class="fas fa-globe" />
-        Demo
+        <p>Demo</p>
       </button>
     </a>
   {/if}
   {#if pub.code}
     <a href={pub.code}>
-      <button>
+      <button class="button-link">
         <i class="fab fa-github" />
-        Code
+        <p>Code</p>
       </button>
     </a>
   {/if}
   <a href={'#/paper/' + pub.id}>
-    <button>
+    <button class="button-link">
       <i class="fas fa-globe" />
-      Website
+      <p>Website</p>
     </button>
   </a>
 </div>

@@ -37,6 +37,7 @@
           <h2 class="header">News</h2>
           <a class="right-all" href="#/news">all news</a>
         </div>
+        <hr />
         {#each { length: 3 } as _, i}
           <div class="news-item pure-g">
             <p class="pure-u-1 pure-u-md-1-5 date">{news[i].date}</p>
@@ -51,6 +52,7 @@
           <h2 class="header">Selected Publications</h2>
           <a class="right-all" href="#/pubs">all publications</a>
         </div>
+        <hr />
         {#each pubs as pub}
           <div class="pure-g pub">
             <div class="thumb-box pure-u-1 pure-u-md-1-3">

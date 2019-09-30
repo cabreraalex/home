@@ -41,12 +41,6 @@
     margin-top: 3px;
   }
 
-  p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0px;
-  }
-
   th {
     padding-bottom: 5px;
   }
@@ -72,6 +66,7 @@
     font-size: 14px;
     margin-top: 5px;
     margin-bottom: 7px;
+    font-weight: 400;
   }
 
   .item {
@@ -582,14 +577,29 @@
       <tr>
         <th class="date">October 2019</th>
         <th>
-          <h5 class="single">IEEE Visualization Conference (VIS) 2019</h5>
+          <h5 class="single">IEEE Visualization Conference (VIS)</h5>
         </th>
       </tr>
       <tr>
         <th class="date">January 2019</th>
         <th>
           <h5 class="single">
-            Fairness, Accountability, and Transparency (FAT*) 2019
+            Fairness, Accountability, and Transparency (FAT*)
+          </h5>
+        </th>
+      </tr>
+      <br />
+      <tr class="item">
+        <th class="date" />
+        <th>
+          <h5>Reviewer</h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2019</th>
+        <th>
+          <h5 class="single">
+            IEEE Transactions on Visualization and Computer Graphics (TVCG)
           </h5>
         </th>
       </tr>

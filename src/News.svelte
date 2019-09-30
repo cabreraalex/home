@@ -7,11 +7,18 @@
   onMount(() => window.scrollTo(0, 0));
 </script>
 
+<style>
+  h1 {
+    margin: 0px;
+  }
+</style>
+
 <div class="pure-g" id="main-container">
   <Sidebar />
   <div id="content" class="pure-u-1 pure-u-md-3-4">
     <div id="padded-content">
       <h1>News</h1>
+      <hr />
       {#each news as n}
         <div class="news-item pure-g">
           <p class="pure-u-1 pure-u-md-1-5 date">{n.date}</p>

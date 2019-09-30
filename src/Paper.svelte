@@ -10,14 +10,17 @@
 </script>
 
 <style>
+  #body {
+    max-width: 900px;
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .color {
     font-size: 22px;
   }
   .red {
     color: #e53935;
-  }
-  #name {
-    font-size: 0px;
   }
   p {
     font-size: 18px;
@@ -46,24 +49,25 @@
     font-size: 16px;
   }
 
-  #body {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-
   #home {
     font-size: 18px;
     margin-right: 15px;
   }
 
   #home-link {
-    color: var(--black);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    margin-bottom: 30px;
-    padding-bottom: 10px;
     font-size: 0px;
     display: flex;
+    margin-top: 5px;
     align-items: center;
+  }
+
+  .home {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    color: var(--black);
   }
 
   .sec-title {
@@ -93,23 +97,24 @@
     padding-right: 20px;
   }
   .desc {
-    font-size: 25px;
-    line-height: 29px;
-    padding: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 15px;
     text-align: center;
   }
 </style>
 
 <div id="body">
-  <a href="/">
+  <a href="/" class="home">
+    <i class="fas fa-home" id="home" />
     <h4 id="home-link">
-      <i class="fas fa-home" id="home" />
       <span class="color">Ángel&nbsp;</span>
       <span class="color red">Alex</span>
       <span class="color">ander&nbsp;</span>
       <span class="color red">Cabrera</span>
     </h4>
   </a>
+  <hr />
   <h1>{pub.title}</h1>
   <div id="info">
     <h3>

@@ -1,7 +1,7 @@
 <style>
   p {
     margin-bottom: 30px;
-    font-weight: 100;
+    font-weight: 400;
   }
   .google {
     font-size: 0px;
