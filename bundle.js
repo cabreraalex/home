@@ -1295,7 +1295,8 @@ var app = (function () {
         code: "https://github.com/poloclub/FairVis",
         blog:
           "https://medium.com/@cabreraalex/fairvis-discovering-bias-in-machine-learning-using-visual-analytics-acbd362a3e2f",
-        pdf: "https://arxiv.org/abs/1904.05419"
+        pdf: "https://arxiv.org/abs/1904.05419",
+        slides: "./fairvis/index.html"
       },
       {
         title:
@@ -1390,7 +1391,7 @@ var app = (function () {
     	return {
     		c: function create() {
     			p0 = element("p");
-    			t0 = text("I am a first year PhD student in the\n  ");
+    			t0 = text("I am a PhD student in the\n  ");
     			a0 = element("a");
     			a0.textContent = "Human Computer Interaction Institute (HCII)";
     			t2 = text("\n  at\n  ");
@@ -1451,46 +1452,46 @@ var app = (function () {
     			span5.textContent = "e";
     			t38 = text("\n  working on Google Maps, Cloud Dataflow, and Android Auto.");
     			attr(a0, "href", "https://hcii.cmu.edu/");
-    			add_location(a0, file$4, 15, 2, 193);
+    			add_location(a0, file$4, 15, 2, 182);
     			attr(a1, "href", "https://www.cmu.edu/");
-    			add_location(a1, file$4, 19, 2, 288);
+    			add_location(a1, file$4, 19, 2, 277);
     			attr(a2, "href", "http://perer.org");
-    			add_location(a2, file$4, 21, 2, 366);
+    			add_location(a2, file$4, 21, 2, 355);
     			attr(a3, "href", "http://www.cs.cmu.edu/~jasonh/");
-    			add_location(a3, file$4, 23, 2, 416);
+    			add_location(a3, file$4, 23, 2, 405);
     			attr(p0, "class", "svelte-1i8r28u");
     			add_location(p0, file$4, 13, 0, 148);
-    			add_location(b0, file$4, 28, 2, 516);
-    			add_location(b1, file$4, 30, 2, 587);
-    			add_location(b2, file$4, 32, 2, 606);
+    			add_location(b0, file$4, 28, 2, 505);
+    			add_location(b1, file$4, 30, 2, 576);
+    			add_location(b2, file$4, 32, 2, 595);
     			attr(a4, "href", "https://www.nsfgrfp.org/");
-    			add_location(a4, file$4, 35, 2, 723);
+    			add_location(a4, file$4, 35, 2, 712);
     			attr(p1, "class", "svelte-1i8r28u");
-    			add_location(p1, file$4, 26, 0, 479);
+    			add_location(p1, file$4, 26, 0, 468);
     			attr(a5, "href", "https://www.gatech.edu/");
-    			add_location(a5, file$4, 40, 2, 871);
+    			add_location(a5, file$4, 40, 2, 860);
     			attr(a6, "href", "https://poloclub.github.io/");
-    			add_location(a6, file$4, 42, 2, 955);
+    			add_location(a6, file$4, 42, 2, 944);
     			attr(a7, "href", "https://www.cc.gatech.edu/~dchau/");
-    			add_location(a7, file$4, 44, 2, 1043);
+    			add_location(a7, file$4, 44, 2, 1032);
     			attr(a8, "href", "http://jamiemorgenstern.com/");
-    			add_location(a8, file$4, 46, 2, 1109);
+    			add_location(a8, file$4, 46, 2, 1098);
     			attr(span0, "class", "letter g svelte-1i8r28u");
-    			add_location(span0, file$4, 49, 4, 1261);
+    			add_location(span0, file$4, 49, 4, 1250);
     			attr(span1, "class", "letter o1 svelte-1i8r28u");
-    			add_location(span1, file$4, 50, 4, 1297);
+    			add_location(span1, file$4, 50, 4, 1286);
     			attr(span2, "class", "letter o2 svelte-1i8r28u");
-    			add_location(span2, file$4, 51, 4, 1334);
+    			add_location(span2, file$4, 51, 4, 1323);
     			attr(span3, "class", "letter g svelte-1i8r28u");
-    			add_location(span3, file$4, 52, 4, 1371);
+    			add_location(span3, file$4, 52, 4, 1360);
     			attr(span4, "class", "letter l svelte-1i8r28u");
-    			add_location(span4, file$4, 53, 4, 1407);
+    			add_location(span4, file$4, 53, 4, 1396);
     			attr(span5, "class", "letter e svelte-1i8r28u");
-    			add_location(span5, file$4, 54, 4, 1443);
+    			add_location(span5, file$4, 54, 4, 1432);
     			attr(b3, "class", "google svelte-1i8r28u");
-    			add_location(b3, file$4, 48, 2, 1238);
+    			add_location(b3, file$4, 48, 2, 1227);
     			attr(p2, "class", "svelte-1i8r28u");
-    			add_location(p2, file$4, 38, 0, 802);
+    			add_location(p2, file$4, 38, 0, 791);
     		},
 
     		l: function claim(nodes) {
@@ -1571,7 +1572,7 @@ var app = (function () {
     const file$5 = "src/components/Links.svelte";
 
     // (27:2) {#if pub.pdf}
-    function create_if_block_5(ctx) {
+    function create_if_block_6(ctx) {
     	var a, button, i, t, p, a_href_value;
 
     	return {
@@ -1615,7 +1616,7 @@ var app = (function () {
     }
 
     // (35:2) {#if pub.blog}
-    function create_if_block_4(ctx) {
+    function create_if_block_5(ctx) {
     	var a, button, i, t, p, a_href_value;
 
     	return {
@@ -1659,7 +1660,7 @@ var app = (function () {
     }
 
     // (43:2) {#if pub.workshop}
-    function create_if_block_3(ctx) {
+    function create_if_block_4(ctx) {
     	var a, button, i, t, p, a_href_value;
 
     	return {
@@ -1703,7 +1704,7 @@ var app = (function () {
     }
 
     // (51:2) {#if pub.video}
-    function create_if_block_2(ctx) {
+    function create_if_block_3(ctx) {
     	var a, button, i, t, p, a_href_value;
 
     	return {
@@ -1747,7 +1748,7 @@ var app = (function () {
     }
 
     // (59:2) {#if pub.demo}
-    function create_if_block_1(ctx) {
+    function create_if_block_2(ctx) {
     	var a, button, i, t, p, a_href_value;
 
     	return {
@@ -1791,7 +1792,7 @@ var app = (function () {
     }
 
     // (67:2) {#if pub.code}
-    function create_if_block(ctx) {
+    function create_if_block_1(ctx) {
     	var a, button, i, t, p, a_href_value;
 
     	return {
@@ -1834,20 +1835,66 @@ var app = (function () {
     	};
     }
 
+    // (75:2) {#if pub.slides}
+    function create_if_block(ctx) {
+    	var a, button, i, t, p, a_href_value;
+
+    	return {
+    		c: function create() {
+    			a = element("a");
+    			button = element("button");
+    			i = element("i");
+    			t = space();
+    			p = element("p");
+    			p.textContent = "Slides";
+    			attr(i, "class", "fas fa-file-powerpoint svelte-1ryagh7");
+    			add_location(i, file$5, 77, 8, 1457);
+    			attr(p, "class", "svelte-1ryagh7");
+    			add_location(p, file$5, 78, 8, 1502);
+    			attr(button, "class", "button-link svelte-1ryagh7");
+    			add_location(button, file$5, 76, 6, 1420);
+    			attr(a, "href", a_href_value = ctx.pub.slides);
+    			add_location(a, file$5, 75, 4, 1392);
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert(target, a, anchor);
+    			append(a, button);
+    			append(button, i);
+    			append(button, t);
+    			append(button, p);
+    		},
+
+    		p: function update(changed, ctx) {
+    			if ((changed.pub) && a_href_value !== (a_href_value = ctx.pub.slides)) {
+    				attr(a, "href", a_href_value);
+    			}
+    		},
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach(a);
+    			}
+    		}
+    	};
+    }
+
     function create_fragment$6(ctx) {
-    	var div, t0, t1, t2, t3, t4, t5, a, button, i, t6, p, a_href_value;
+    	var div, t0, t1, t2, t3, t4, t5, t6, a, button, i, t7, p, a_href_value;
 
-    	var if_block0 = (ctx.pub.pdf) && create_if_block_5(ctx);
+    	var if_block0 = (ctx.pub.pdf) && create_if_block_6(ctx);
 
-    	var if_block1 = (ctx.pub.blog) && create_if_block_4(ctx);
+    	var if_block1 = (ctx.pub.blog) && create_if_block_5(ctx);
 
-    	var if_block2 = (ctx.pub.workshop) && create_if_block_3(ctx);
+    	var if_block2 = (ctx.pub.workshop) && create_if_block_4(ctx);
 
-    	var if_block3 = (ctx.pub.video) && create_if_block_2(ctx);
+    	var if_block3 = (ctx.pub.video) && create_if_block_3(ctx);
 
-    	var if_block4 = (ctx.pub.demo) && create_if_block_1(ctx);
+    	var if_block4 = (ctx.pub.demo) && create_if_block_2(ctx);
 
-    	var if_block5 = (ctx.pub.code) && create_if_block(ctx);
+    	var if_block5 = (ctx.pub.code) && create_if_block_1(ctx);
+
+    	var if_block6 = (ctx.pub.slides) && create_if_block(ctx);
 
     	return {
     		c: function create() {
@@ -1864,20 +1911,22 @@ var app = (function () {
     			t4 = space();
     			if (if_block5) if_block5.c();
     			t5 = space();
+    			if (if_block6) if_block6.c();
+    			t6 = space();
     			a = element("a");
     			button = element("button");
     			i = element("i");
-    			t6 = space();
+    			t7 = space();
     			p = element("p");
     			p.textContent = "Website";
     			attr(i, "class", "fas fa-globe svelte-1ryagh7");
-    			add_location(i, file$5, 76, 6, 1441);
+    			add_location(i, file$5, 84, 6, 1621);
     			attr(p, "class", "svelte-1ryagh7");
-    			add_location(p, file$5, 77, 6, 1474);
+    			add_location(p, file$5, 85, 6, 1654);
     			attr(button, "class", "button-link svelte-1ryagh7");
-    			add_location(button, file$5, 75, 4, 1406);
+    			add_location(button, file$5, 83, 4, 1586);
     			attr(a, "href", a_href_value = '#/paper/' + ctx.pub.id);
-    			add_location(a, file$5, 74, 2, 1371);
+    			add_location(a, file$5, 82, 2, 1551);
     			attr(div, "class", "buttons");
     			add_location(div, file$5, 25, 0, 344);
     		},
@@ -1900,10 +1949,12 @@ var app = (function () {
     			append(div, t4);
     			if (if_block5) if_block5.m(div, null);
     			append(div, t5);
+    			if (if_block6) if_block6.m(div, null);
+    			append(div, t6);
     			append(div, a);
     			append(a, button);
     			append(button, i);
-    			append(button, t6);
+    			append(button, t7);
     			append(button, p);
     		},
 
@@ -1912,7 +1963,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(changed, ctx);
     				} else {
-    					if_block0 = create_if_block_5(ctx);
+    					if_block0 = create_if_block_6(ctx);
     					if_block0.c();
     					if_block0.m(div, t0);
     				}
@@ -1925,7 +1976,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(changed, ctx);
     				} else {
-    					if_block1 = create_if_block_4(ctx);
+    					if_block1 = create_if_block_5(ctx);
     					if_block1.c();
     					if_block1.m(div, t1);
     				}
@@ -1938,7 +1989,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(changed, ctx);
     				} else {
-    					if_block2 = create_if_block_3(ctx);
+    					if_block2 = create_if_block_4(ctx);
     					if_block2.c();
     					if_block2.m(div, t2);
     				}
@@ -1951,7 +2002,7 @@ var app = (function () {
     				if (if_block3) {
     					if_block3.p(changed, ctx);
     				} else {
-    					if_block3 = create_if_block_2(ctx);
+    					if_block3 = create_if_block_3(ctx);
     					if_block3.c();
     					if_block3.m(div, t3);
     				}
@@ -1964,7 +2015,7 @@ var app = (function () {
     				if (if_block4) {
     					if_block4.p(changed, ctx);
     				} else {
-    					if_block4 = create_if_block_1(ctx);
+    					if_block4 = create_if_block_2(ctx);
     					if_block4.c();
     					if_block4.m(div, t4);
     				}
@@ -1977,13 +2028,26 @@ var app = (function () {
     				if (if_block5) {
     					if_block5.p(changed, ctx);
     				} else {
-    					if_block5 = create_if_block(ctx);
+    					if_block5 = create_if_block_1(ctx);
     					if_block5.c();
     					if_block5.m(div, t5);
     				}
     			} else if (if_block5) {
     				if_block5.d(1);
     				if_block5 = null;
+    			}
+
+    			if (ctx.pub.slides) {
+    				if (if_block6) {
+    					if_block6.p(changed, ctx);
+    				} else {
+    					if_block6 = create_if_block(ctx);
+    					if_block6.c();
+    					if_block6.m(div, t6);
+    				}
+    			} else if (if_block6) {
+    				if_block6.d(1);
+    				if_block6 = null;
     			}
 
     			if ((changed.pub) && a_href_value !== (a_href_value = '#/paper/' + ctx.pub.id)) {
@@ -2005,6 +2069,7 @@ var app = (function () {
     			if (if_block3) if_block3.d();
     			if (if_block4) if_block4.d();
     			if (if_block5) if_block5.d();
+    			if (if_block6) if_block6.d();
     		}
     	};
     }
