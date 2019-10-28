@@ -72,6 +72,14 @@
       </button>
     </a>
   {/if}
+  {#if pub.slides}
+    <a href={pub.slides}>
+      <button class="button-link">
+        <i class="fas fa-file-powerpoint" />
+        <p>Slides</p>
+      </button>
+    </a>
+  {/if}
   <a href={'#/paper/' + pub.id}>
     <button class="button-link">
       <i class="fas fa-globe" />

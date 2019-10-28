@@ -12,7 +12,7 @@
 </style>
 
 <p>
-  I am a first year PhD student in the
+  I am a PhD student in the
   <a href="https://hcii.cmu.edu/">
     Human Computer Interaction Institute (HCII)
   </a>

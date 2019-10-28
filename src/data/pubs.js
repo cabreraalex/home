@@ -45,7 +45,8 @@ export default [
     code: "https://github.com/poloclub/FairVis",
     blog:
       "https://medium.com/@cabreraalex/fairvis-discovering-bias-in-machine-learning-using-visual-analytics-acbd362a3e2f",
-    pdf: "https://arxiv.org/abs/1904.05419"
+    pdf: "https://arxiv.org/abs/1904.05419",
+    slides: "./fairvis/index.html"
   },
   {
     title:
