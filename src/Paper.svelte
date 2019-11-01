@@ -43,8 +43,6 @@
   }
 
   h5 {
-    margin-top: 4px;
-    margin-bottom: 4px;
     font-weight: 100;
     font-size: 16px;
   }

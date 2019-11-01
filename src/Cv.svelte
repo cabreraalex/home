@@ -35,10 +35,11 @@
     font-weight: 700;
   }
   h6 {
-    font-size: 14px;
+    font-size: 16px;
     font-style: italic;
     margin: 0px;
     margin-top: 3px;
+    color: rgba(0, 0, 0, 0.7);
   }
 
   th {
@@ -59,14 +60,16 @@
     font-weight: 200;
     float: left;
     text-align: right;
+    line-height: 27px;
   }
 
   .desc {
     color: RGBA(0, 0, 0, 0.7);
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5px;
     margin-bottom: 7px;
-    font-weight: 400;
+    font-weight: 100;
+    line-height: 20px;
   }
 
   .item {
@@ -464,7 +467,7 @@
         <th>
           <h5>ICLR'19 Reproducibility Challenge</h5>
           <h6>
-            Generative Adversarial Models For Learning Private And Fair
+            Generative Adversarial Models for Learning Private and Fair
             Representations
           </h6>
           <p class="desc">
@@ -513,7 +516,7 @@
           <h5>CTF Resources</h5>
           <p class="desc">
             Introductory guide and resources for capture the flag (CTF)
-            competitions with over 800 stars on GitHub.
+            competitions with over 900 stars on GitHub.
           </p>
           <div class="tags">
             <a href="http://ctfs.github.io/resources/">
@@ -781,7 +784,7 @@
       <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated September 21, 2019.</p>
+          <p class="desc">Last updated November 1, 2019.</p>
         </th>
       </tr>
     </table>

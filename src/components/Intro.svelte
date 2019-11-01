@@ -1,10 +1,9 @@
 <style>
   p {
-    margin-bottom: 30px;
-    font-weight: 400;
+    margin-bottom: 20px;
   }
   .google {
-    font-size: 0px;
+    letter-spacing: -2px;
   }
   .letter {
     font-size: 18px;
