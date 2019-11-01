@@ -19,11 +19,16 @@
 
 p {
   margin: 0px;
-  line-height: 21px;
+  line-height: 27px;
+  font-weight: 350;
+}
+h5 {
+  line-height: 27px;
 }
 
 h4 {
   font-size: 22px;
+  line-height: 27px;
 }
 
 .authors {
@@ -51,8 +56,8 @@ h6 {
 
 .cv {
   margin: 0px auto;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   margin-right: 7px;
   font-size: 16px;
   font-weight: 400;
@@ -129,6 +134,7 @@ textarea,
 h3 {
   font-size: 16px;
   font-weight: 300;
+  line-height: 27px;
 }
 
 p {
@@ -173,6 +179,7 @@ button p {
   font-size: 16px;
   margin: 0px;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .thumb {
