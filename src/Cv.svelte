@@ -42,6 +42,10 @@
     color: rgba(0, 0, 0, 0.7);
   }
 
+  a h6 {
+    font-style: none;
+  }
+
   th {
     padding-bottom: 5px;
   }
@@ -86,11 +90,11 @@
     padding-bottom: 10px;
     margin-top: 40px;
     margin-bottom: 12px;
-    color: #e53935;
+    color: var(--secondary);
   }
 
   .red {
-    color: #e53935;
+    color: var(--secondary);
   }
 
   #name {
@@ -120,6 +124,10 @@
   .far {
     font-size: 16px;
     margin-right: 4px;
+  }
+
+  .authors {
+    font-style: normal;
   }
 </style>
 
@@ -440,7 +448,7 @@
               <h5>{pub.title}</h5>
             </a>
 
-            <h6>
+            <h6 class="authors">
               {@html pub.authors
                 .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
                 .join(', ')}

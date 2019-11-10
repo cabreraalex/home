@@ -12,7 +12,7 @@
 
 :root {
   --primary: #3c88d4;
-  --secondary: #ff3334;
+  --secondary: #e53935;
   --black: RGBA(1, 1, 1, 0.8);
   --light-black: RGBA(1, 1, 1, 0.5);
 }
@@ -100,6 +100,7 @@ body {
   margin-top: 40px;
   padding: 20px;
   font-family: "Karla", sans-serif;
+  border-top: 5px solid var(--secondary);
 }
 
 html,
