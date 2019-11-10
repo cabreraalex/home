@@ -19,6 +19,12 @@
   .header {
     margin-right: 30px;
   }
+  @media only screen and (max-width: 769px) {
+    #hello {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
 </style>
 
 <div class="pure-g" id="main-container">
@@ -26,7 +32,7 @@
   <div id="content" class="pure-u-1 pure-u-md-3-4">
     <div id="padded-content">
       <div id="intro">
-        <h2>
+        <h2 id="hello">
           Hi! You can call me
           <span class="name">Alex</span>
         </h2>

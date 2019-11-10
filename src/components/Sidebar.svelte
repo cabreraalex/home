@@ -15,6 +15,11 @@
   #padded-sidebar {
     padding-right: 30px;
   }
+  @media only screen and (max-width: 769px) {
+    #padded-sidebar {
+      text-align: center;
+    }
+  }
 </style>
 
 <div id="sidebar" class="pure-u-1 pure-u-md-1-4">

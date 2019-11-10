@@ -1003,36 +1003,36 @@ var app = (function () {
     			attr_dev(img, "width", "170px");
     			attr_dev(img, "src", "images/profile.jpg");
     			attr_dev(img, "alt", "profile picture");
-    			add_location(img, file$1, 22, 6, 331);
+    			add_location(img, file$1, 27, 6, 435);
     			attr_dev(a0, "href", "/");
-    			add_location(a0, file$1, 21, 4, 312);
-    			attr_dev(span0, "class", "color svelte-zh09u5");
-    			add_location(span0, file$1, 25, 6, 434);
-    			add_location(br0, file$1, 26, 6, 479);
-    			attr_dev(span1, "class", "color red svelte-zh09u5");
-    			add_location(span1, file$1, 27, 6, 492);
-    			attr_dev(span2, "class", "color svelte-zh09u5");
-    			add_location(span2, file$1, 28, 6, 534);
-    			add_location(br1, file$1, 29, 6, 573);
-    			attr_dev(span3, "class", "color red svelte-zh09u5");
-    			add_location(span3, file$1, 30, 6, 586);
+    			add_location(a0, file$1, 26, 4, 416);
+    			attr_dev(span0, "class", "color svelte-ydo7v3");
+    			add_location(span0, file$1, 30, 6, 538);
+    			add_location(br0, file$1, 31, 6, 583);
+    			attr_dev(span1, "class", "color red svelte-ydo7v3");
+    			add_location(span1, file$1, 32, 6, 596);
+    			attr_dev(span2, "class", "color svelte-ydo7v3");
+    			add_location(span2, file$1, 33, 6, 638);
+    			add_location(br1, file$1, 34, 6, 677);
+    			attr_dev(span3, "class", "color red svelte-ydo7v3");
+    			add_location(span3, file$1, 35, 6, 690);
     			attr_dev(h1, "id", "name");
-    			attr_dev(h1, "class", "svelte-zh09u5");
-    			add_location(h1, file$1, 24, 4, 413);
+    			attr_dev(h1, "class", "svelte-ydo7v3");
+    			add_location(h1, file$1, 29, 4, 517);
     			attr_dev(button0, "class", "cv");
-    			add_location(button0, file$1, 34, 6, 677);
+    			add_location(button0, file$1, 39, 6, 781);
     			attr_dev(a1, "href", "/#/cv");
-    			add_location(a1, file$1, 33, 4, 654);
+    			add_location(a1, file$1, 38, 4, 758);
     			attr_dev(button1, "class", "cv");
-    			add_location(button1, file$1, 37, 6, 752);
+    			add_location(button1, file$1, 42, 6, 856);
     			attr_dev(a2, "href", "/cv.pdf");
-    			add_location(a2, file$1, 36, 4, 727);
+    			add_location(a2, file$1, 41, 4, 831);
     			attr_dev(div0, "id", "padded-sidebar");
-    			attr_dev(div0, "class", "svelte-zh09u5");
-    			add_location(div0, file$1, 20, 2, 282);
+    			attr_dev(div0, "class", "svelte-ydo7v3");
+    			add_location(div0, file$1, 25, 2, 386);
     			attr_dev(div1, "id", "sidebar");
     			attr_dev(div1, "class", "pure-u-1 pure-u-md-1-4");
-    			add_location(div1, file$1, 19, 0, 230);
+    			add_location(div1, file$1, 24, 0, 334);
     		},
 
     		l: function claim(nodes) {
@@ -2291,7 +2291,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (41:8) {#each { length: 3 } as _, i}
+    // (47:8) {#each { length: 3 } as _, i}
     function create_each_block_1(ctx) {
     	var div, p0, t0_value = news[ctx.i].date + "", t0, t1, p1, raw_value = news[ctx.i].news + "", t2;
 
@@ -2304,11 +2304,11 @@ var app = (function () {
     			p1 = element("p");
     			t2 = space();
     			attr_dev(p0, "class", "pure-u-1 pure-u-md-1-5 date");
-    			add_location(p0, file$6, 42, 12, 1113);
+    			add_location(p0, file$6, 48, 12, 1243);
     			attr_dev(p1, "class", "item pure-u-1 pure-u-md-4-5");
-    			add_location(p1, file$6, 43, 12, 1183);
+    			add_location(p1, file$6, 49, 12, 1313);
     			attr_dev(div, "class", "news-item pure-g");
-    			add_location(div, file$6, 41, 10, 1070);
+    			add_location(div, file$6, 47, 10, 1200);
     		},
 
     		m: function mount(target, anchor) {
@@ -2329,11 +2329,11 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block_1.name, type: "each", source: "(41:8) {#each { length: 3 } as _, i}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block_1.name, type: "each", source: "(47:8) {#each { length: 3 } as _, i}", ctx });
     	return block;
     }
 
-    // (56:8) {#each pubs as pub}
+    // (62:8) {#each pubs as pub}
     function create_each_block$1(ctx) {
     	var div4, div1, div0, a0, img, t0, h6, t1_value = ctx.pub.venue + "", t1, t2, div3, div2, a1, h4, t3_value = ctx.pub.title + "", t3, t4, h5, raw_value = ctx.pub.authors
                         .map(func)
@@ -2371,29 +2371,29 @@ var app = (function () {
     			attr_dev(img, "src", 'images/' + ctx.pub.teaser);
     			attr_dev(img, "class", "thumb");
     			attr_dev(img, "alt", "teaser");
-    			add_location(img, file$6, 60, 18, 1758);
+    			add_location(img, file$6, 66, 18, 1888);
     			attr_dev(a0, "href", '#/paper/' + ctx.pub.id);
-    			add_location(a0, file$6, 59, 16, 1709);
+    			add_location(a0, file$6, 65, 16, 1839);
     			attr_dev(h6, "class", "venue");
-    			add_location(h6, file$6, 65, 16, 1919);
+    			add_location(h6, file$6, 71, 16, 2049);
     			attr_dev(div0, "class", "thumb");
-    			add_location(div0, file$6, 58, 14, 1673);
+    			add_location(div0, file$6, 64, 14, 1803);
     			attr_dev(div1, "class", "thumb-box pure-u-1 pure-u-md-1-3");
-    			add_location(div1, file$6, 57, 12, 1612);
-    			add_location(h4, file$6, 71, 18, 2163);
+    			add_location(div1, file$6, 63, 12, 1742);
+    			add_location(h4, file$6, 77, 18, 2293);
     			attr_dev(a1, "href", '#/paper/' + ctx.pub.id);
     			attr_dev(a1, "class", "paper-title");
-    			add_location(a1, file$6, 70, 16, 2094);
+    			add_location(a1, file$6, 76, 16, 2224);
     			attr_dev(h5, "class", "authors");
-    			add_location(h5, file$6, 73, 16, 2221);
+    			add_location(h5, file$6, 79, 16, 2351);
     			attr_dev(p, "class", "desc");
-    			add_location(p, file$6, 78, 16, 2430);
+    			add_location(p, file$6, 84, 16, 2560);
     			attr_dev(div2, "class", "padded");
-    			add_location(div2, file$6, 69, 14, 2057);
+    			add_location(div2, file$6, 75, 14, 2187);
     			attr_dev(div3, "class", "pure-u-1 pure-u-md-2-3");
-    			add_location(div3, file$6, 68, 12, 2006);
+    			add_location(div3, file$6, 74, 12, 2136);
     			attr_dev(div4, "class", "pure-g pub");
-    			add_location(div4, file$6, 56, 10, 1575);
+    			add_location(div4, file$6, 62, 10, 1705);
     		},
 
     		m: function mount(target, anchor) {
@@ -2445,7 +2445,7 @@ var app = (function () {
     			destroy_component(links);
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block$1.name, type: "each", source: "(56:8) {#each pubs as pub}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block$1.name, type: "each", source: "(62:8) {#each pubs as pub}", ctx });
     	return block;
     }
 
@@ -2527,40 +2527,42 @@ var app = (function () {
     			t16 = space();
     			footer.$$.fragment.c();
     			attr_dev(span, "class", "name");
-    			add_location(span, file$6, 30, 10, 755);
-    			add_location(h20, file$6, 28, 8, 710);
+    			add_location(span, file$6, 36, 10, 885);
+    			attr_dev(h20, "id", "hello");
+    			attr_dev(h20, "class", "svelte-14nm4zk");
+    			add_location(h20, file$6, 34, 8, 829);
     			attr_dev(div0, "id", "intro");
-    			add_location(div0, file$6, 27, 6, 685);
-    			attr_dev(h21, "class", "header svelte-w4flg6");
-    			add_location(h21, file$6, 36, 10, 905);
+    			add_location(div0, file$6, 33, 6, 804);
+    			attr_dev(h21, "class", "header svelte-14nm4zk");
+    			add_location(h21, file$6, 42, 10, 1035);
     			attr_dev(a0, "class", "right-all");
     			attr_dev(a0, "href", "#/news");
-    			add_location(a0, file$6, 37, 10, 944);
-    			attr_dev(div1, "class", "inline svelte-w4flg6");
-    			add_location(div1, file$6, 35, 8, 874);
-    			add_location(hr0, file$6, 39, 8, 1015);
+    			add_location(a0, file$6, 43, 10, 1074);
+    			attr_dev(div1, "class", "inline svelte-14nm4zk");
+    			add_location(div1, file$6, 41, 8, 1004);
+    			add_location(hr0, file$6, 45, 8, 1145);
     			attr_dev(div2, "id", "news");
     			attr_dev(div2, "class", "sect");
-    			add_location(div2, file$6, 34, 6, 837);
-    			attr_dev(h22, "class", "header svelte-w4flg6");
-    			add_location(h22, file$6, 51, 10, 1395);
+    			add_location(div2, file$6, 40, 6, 967);
+    			attr_dev(h22, "class", "header svelte-14nm4zk");
+    			add_location(h22, file$6, 57, 10, 1525);
     			attr_dev(a1, "class", "right-all");
     			attr_dev(a1, "href", "#/pubs");
-    			add_location(a1, file$6, 52, 10, 1451);
-    			attr_dev(div3, "class", "inline svelte-w4flg6");
-    			add_location(div3, file$6, 50, 8, 1364);
-    			add_location(hr1, file$6, 54, 8, 1530);
+    			add_location(a1, file$6, 58, 10, 1581);
+    			attr_dev(div3, "class", "inline svelte-14nm4zk");
+    			add_location(div3, file$6, 56, 8, 1494);
+    			add_location(hr1, file$6, 60, 8, 1660);
     			attr_dev(div4, "id", "pubs");
     			attr_dev(div4, "class", "sect");
-    			add_location(div4, file$6, 49, 6, 1327);
+    			add_location(div4, file$6, 55, 6, 1457);
     			attr_dev(div5, "id", "padded-content");
-    			add_location(div5, file$6, 26, 4, 653);
+    			add_location(div5, file$6, 32, 4, 772);
     			attr_dev(div6, "id", "content");
     			attr_dev(div6, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div6, file$6, 25, 2, 599);
+    			add_location(div6, file$6, 31, 2, 718);
     			attr_dev(div7, "class", "pure-g");
     			attr_dev(div7, "id", "main-container");
-    			add_location(div7, file$6, 23, 0, 542);
+    			add_location(div7, file$6, 29, 0, 661);
     		},
 
     		l: function claim(nodes) {
