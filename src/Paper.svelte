@@ -24,11 +24,13 @@
   }
   p {
     font-size: 18px;
+    line-height: 22px;
   }
 
   h1 {
     font-size: 1.75em;
     margin: 0px;
+    margin-top: 15px;
     margin-bottom: 10px;
   }
 
@@ -94,9 +96,10 @@
   #info {
     padding-right: 20px;
   }
+
   .desc {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 24px;
     padding: 15px;
     text-align: center;
   }

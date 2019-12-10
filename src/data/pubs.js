@@ -57,7 +57,7 @@ export default [
     id: "subgroup-gen",
     teaser: "iclr.png",
     venue: "Workshop, ICLR'19",
-    venuelong: "Debugging Machine Learning Models Workshop at ICLR (Debug ML)",
+    venuelong: "Debugging Machine Learning Models Workshop (Debug ML) at ICLR",
     year: "2019",
     month: "May",
     location: "New Orleans, Louisiana, USA",

@@ -196,7 +196,7 @@
       <tr>
         <th class="date" />
         <th>
-          <h4 class="header">Awards</h4>
+          <h4 class="header">Awards and Fellowships</h4>
         </th>
       </tr>
       <tr class="item">
@@ -375,7 +375,7 @@
         <th class="date">
           January 2018
           <br />
-          - Present
+          - May 2019
         </th>
         <th>
           <h5>Polo Club of Data Science</h5>
@@ -595,7 +595,7 @@
         <th class="date">January 2019</th>
         <th>
           <h5 class="single">
-            Fairness, Accountability, and Transparency (FAT*)
+            ACM Fairness, Accountability, and Transparency (FAT*)
           </h5>
         </th>
       </tr>

@@ -30,17 +30,15 @@
   <b>HCI</b>
   and
   <b>visualization</b>
-  to help people better understand and develop machine learning models. I am
-  supported by a
+  to help people develop machine learning models that are better aligned with
+  human values. I am supported by a
   <a href="https://www.nsfgrfp.org/">NSF Graduate Research Fellowship.</a>
 </p>
 
 <p>
   Before CMU, I graduated with a B.S. in Computer Science from
   <a href="https://www.gatech.edu/">Georgia Tech,</a>
-  where I was a member of the
-  <a href="https://poloclub.github.io/">Polo Club of Data Science</a>
-  and worked with
+  where I worked with
   <a href="https://www.cc.gatech.edu/~dchau/">Polo Chau</a>
   and
   <a href="http://jamiemorgenstern.com/">Jamie Morgenstern.</a>
