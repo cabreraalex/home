@@ -120,7 +120,9 @@
   <div id="info">
     <h3>
       {@html pub.authors
-        .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
+        .map(
+          p => "<a class='press' href='" + p.website + "'>" + p.name + '</a>'
+        )
         .join(', ')}
     </h3>
   </div>
@@ -143,7 +145,7 @@
 
   <h5>
     {@html pub.authors
-      .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
+      .map(p => "<a class='press' href='" + p.website + "'>" + p.name + '</a>')
       .join(', ')}
   </h5>
 

@@ -12,7 +12,7 @@
   #container {
     font-family: "Roboto";
     line-height: 1.2;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0px auto;
   }
 
@@ -29,29 +29,24 @@
     font-size: 20px;
     font-weight: 400;
   }
+
   h5 {
     margin: 0px;
     font-size: 18px;
     font-weight: 700;
+    line-height: 24px;
   }
+
   h6 {
     font-size: 16px;
     font-style: italic;
     margin: 0px;
-    margin-top: 3px;
+    margin-bottom: 5px;
     color: rgba(0, 0, 0, 0.7);
-  }
-
-  a h6 {
-    font-style: none;
   }
 
   th {
     padding-bottom: 5px;
-  }
-
-  .tags {
-    margin-top: 5px;
   }
 
   .buffer {
@@ -64,14 +59,12 @@
     font-weight: 200;
     float: left;
     text-align: right;
-    line-height: 27px;
+    line-height: 24px;
   }
 
   .desc {
     color: RGBA(0, 0, 0, 0.7);
     font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 7px;
     font-weight: 100;
     line-height: 20px;
   }
@@ -225,8 +218,8 @@
         <th>
           <h5>Love Family Foundation Scholarship</h5>
           <p class="desc">
-            Award for the undergraduate with the most outstanding scholastic
-            record in the graduating class. Co-awarded the $10,000 scholarship.
+            Co-awarded the $10,000 scholarship for the undergraduate with the
+            most outstanding scholastic record.
           </p>
           <div class="tags">
             <a
@@ -270,8 +263,8 @@
           <h5>The Data Open Datathon</h5>
           <h6>Correlation One and Citadel Securities</h6>
           <p class="desc">
-            Placed third and won $2,500 for creating a supervised learning
-            system that predicts dangerous road areas.
+            Placed third and won $2,500 for creating a ML system to predict
+            dangerous road areas.
           </p>
           <div class="tags">
             <a
@@ -332,8 +325,8 @@
           <h5>Google</h5>
           <h6>Software Engineering Intern</h6>
           <p class="desc">
-            Designed and implemented an anomaly detection and trend analysis
-            system for Google's primary data processing pipelines.
+            Created an anomaly detection and trend analysis system for Google's
+            data processing pipelines.
           </p>
           <div class="tags">
             <button>Apache Beam/Cloud DataFlow</button>
@@ -373,6 +366,26 @@
       </tr>
       <tr class="item">
         <th class="date">
+          August 2019
+          <br />
+          - Present
+        </th>
+        <th>
+          <h5>Carnegie Mellon Human Computer Interaction Institute (HCII)</h5>
+          <h6>Graduate Research Assistant</h6>
+          <div class="tags">
+            <a href="https://dig.cmu.edu/">
+              <button>
+                <i class="fas fa-globe" />
+                CMU Data Interaction Group
+              </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
+      <tr class="item">
+        <th class="date">
           January 2018
           <br />
           - May 2019
@@ -380,11 +393,6 @@
         <th>
           <h5>Polo Club of Data Science</h5>
           <h6>Undergraduate Researcher</h6>
-          <p class="desc">
-            Applying human computer interaction and visualization techniques to
-            help people understand and design more equitable machine learning
-            models.
-          </p>
           <div class="tags">
             <a href="https://poloclub.github.io/">
               <button>
@@ -406,8 +414,8 @@
           <h5>PROX-1 Satellite</h5>
           <h6>Flight Software Lead and Researcher</h6>
           <p class="desc">
-            Led a team of engineers in developing and deploying the software for
-            a fully undergraduate-led satellite mission.
+            Led a team of engineers in developing the software for a fully
+            undergraduate-led satellite mission.
           </p>
           <div class="tags">
             <a
@@ -463,85 +471,6 @@
         </tr>
         <tr class="buffer" />
       {/each}
-      <!-- PROJECTS -->
-      <tr>
-        <th class="date" />
-        <th>
-          <h4 class="header">Projects</h4>
-        </th>
-      </tr>
-      <tr class="item">
-        <th class="date">Fall 2018</th>
-        <th>
-          <h5>ICLR'19 Reproducibility Challenge</h5>
-          <h6>
-            Generative Adversarial Models for Learning Private and Fair
-            Representations
-          </h6>
-          <p class="desc">
-            Implemented the architecture and reproduced results for an ICLR'19
-            submission using GANs to decorrelate sensitive data.
-          </p>
-          <div class="tags">
-            <a href="https://github.com/cabreraalex/private-fair-GAN">
-              <button>
-                <i class="fab fa-github" />
-                GitHub
-              </button>
-            </a>
-          </div>
-        </th>
-      </tr>
-      <tr class="buffer" />
-      <tr class="item">
-        <th class="date">Spring 2018</th>
-        <th>
-          <h5>Georgia Tech Bus System Analysis</h5>
-          <p class="desc">
-            System that combines Google Maps and graph algorithms to include
-            Georgia Tech bus routes in navigation.
-          </p>
-          <div class="tags">
-            <a href="./gt_bus_analysis.pdf">
-              <button>
-                <i class="fas fa-file-pdf" />
-                Poster
-              </button>
-            </a>
-            <a href="http://poloclub.gatech.edu/cse6242/2018spring/">
-              <button>
-                <i class="fas fa-globe" />
-                Class
-              </button>
-            </a>
-          </div>
-        </th>
-      </tr>
-      <tr class="buffer" />
-      <tr class="item">
-        <th class="date">Spring 2014</th>
-        <th>
-          <h5>CTF Resources</h5>
-          <p class="desc">
-            Introductory guide and resources for capture the flag (CTF)
-            competitions with over 900 stars on GitHub.
-          </p>
-          <div class="tags">
-            <a href="http://ctfs.github.io/resources/">
-              <button>
-                <i class="fas fa-globe" />
-                Website
-              </button>
-            </a>
-            <a href="https://github.com/ctfs/resources">
-              <button>
-                <i class="fab fa-github" />
-                GitHub
-              </button>
-            </a>
-          </div>
-        </th>
-      </tr>
       <!-- TEACHING -->
       <tr>
         <th class="date" />
@@ -614,7 +543,154 @@
           </h5>
         </th>
       </tr>
-      <!-- CAMPUS INVOLVEMENT -->
+      <tr>
+        <th class="date">2019</th>
+        <th>
+          <h5 class="single">
+            ACM Transactions on Interactive Intelligent Systems (TiiS)
+          </h5>
+        </th>
+      </tr>
+      <!-- PRESS -->
+      <tr>
+        <th class="date" />
+        <th>
+          <h4 class="header">Press</h4>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2019</th>
+        <th>
+          <h5 class="single press">
+            <a
+              href="https://datastori.es/156-fairness-in-machine-learning-with-yongsu-ahn-and-alex-cabrera/">
+              "Visualizing Fairness in Machine Learning"
+            </a>
+            -
+            <i>Data Stories Podcast</i>
+          </h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2019</th>
+        <th>
+          <h5 class="single press">
+            <a
+              href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship">
+              "Alex Cabrera Wins Love Family Foundation Scholarship"
+            </a>
+            -
+            <i>GT SCS</i>
+          </h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2019</th>
+        <th>
+          <h5 class="single press">
+            <a
+              href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space">
+              "Georgia Tech Satellite Successfully Launched Into Space "
+            </a>
+            -
+            <i>Georgia Tech</i>
+          </h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2018</th>
+        <th>
+          <h5 class="single press">
+            <a
+              href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems">
+              "Datathon Challenges Students to Create Solutions to Real-World
+              Problems"
+            </a>
+            -
+            <i>GT SCS</i>
+          </h5>
+        </th>
+      </tr>
+      <!-- PROJECTS -->
+      <tr>
+        <th class="date" />
+        <th>
+          <h4 class="header">Projects</h4>
+        </th>
+      </tr>
+      <tr class="item">
+        <th class="date">Fall 2018</th>
+        <th>
+          <h5>ICLR'19 Reproducibility Challenge</h5>
+          <h6>
+            Generative Adversarial Models for Learning Private and Fair
+            Representations
+          </h6>
+          <p class="desc">
+            Implemented and reproduced an ICLR'19 submission using GANs to
+            decorrelate sensitive data.
+          </p>
+          <div class="tags">
+            <a href="https://github.com/cabreraalex/private-fair-GAN">
+              <button>
+                <i class="fab fa-github" />
+                GitHub
+              </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
+      <tr class="item">
+        <th class="date">Spring 2018</th>
+        <th>
+          <h5>Georgia Tech Bus System Analysis</h5>
+          <p class="desc">
+            System that combines Google Maps and graph algorithms to enable
+            navigation for GT buses.
+          </p>
+          <div class="tags">
+            <a href="./gt_bus_analysis.pdf">
+              <button>
+                <i class="fas fa-file-pdf" />
+                Poster
+              </button>
+            </a>
+            <a href="http://poloclub.gatech.edu/cse6242/2018spring/">
+              <button>
+                <i class="fas fa-globe" />
+                Class
+              </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
+      <tr class="item">
+        <th class="date">Spring 2014</th>
+        <th>
+          <h5>CTF Resources</h5>
+          <p class="desc">
+            Guide and resources for capture the flag (CTF) competitions with
+            over 1,000 stars on GitHub.
+          </p>
+          <div class="tags">
+            <a href="http://ctfs.github.io/resources/">
+              <button>
+                <i class="fas fa-globe" />
+                Website
+              </button>
+            </a>
+            <a href="https://github.com/ctfs/resources">
+              <button>
+                <i class="fab fa-github" />
+                GitHub
+              </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <!-- CAMPUS INVOLVEMENT
       <tr>
         <th class="date" />
         <th>
@@ -686,7 +762,7 @@
             </a>
           </div>
         </th>
-      </tr>
+      </tr> -->
       <!-- SELECT CLASSES -->
       <tr>
         <th class="date" />
@@ -785,6 +861,7 @@
             <button>D3</button>
             <button>PyTorch</button>
             <button>Cloud Dataflow/MapReduce</button>
+            <button>Amazon Mechanical Turk</button>
           </div>
         </th>
       </tr>
@@ -792,7 +869,7 @@
       <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated November 1, 2019.</p>
+          <p class="desc">Last updated March 6, 2020.</p>
         </th>
       </tr>
     </table>

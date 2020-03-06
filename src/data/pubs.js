@@ -7,7 +7,8 @@ export default [
     id: "fairvis",
     teaser: "fairvis.png",
     venue: "IEEE VIS'19",
-    venuelong: "IEEE Transactions on Visualization and Computer Graphics",
+    venuelong:
+      "IEEE Conference on Visual Analytics Science and Technology (VAST)",
     year: "2019",
     month: "October",
     location: "Vancouver, Canada",

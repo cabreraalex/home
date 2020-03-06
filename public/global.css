@@ -24,6 +24,7 @@ p {
 }
 h5 {
   line-height: 27px;
+  margin-bottom: 2px;
 }
 
 h4 {
@@ -41,14 +42,19 @@ h4 {
 .desc {
   color: rgba(0, 0, 0, 0.75);
   font-size: 17px;
-  margin-top: 7px;
-  margin-bottom: 7px;
   line-height: 22px;
+  margin-bottom: 2px;
 }
 
 h6 {
   font-weight: lighter;
   font-size: 12px;
+}
+.press a {
+  color: black;
+}
+.press a:hover {
+  color: var(--primary);
 }
 
 .right-all {
