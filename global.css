@@ -19,22 +19,24 @@
 
 p {
   margin: 0px;
-  line-height: 27px;
+  line-height: 23px;
   font-weight: 350;
 }
 h5 {
+  font-size: 16px;
   line-height: 27px;
   margin-bottom: 2px;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 27px;
+  font-weight: 500;
 }
 
 .authors {
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 300;
   margin-top: 5px;
   line-height: 23px;
 }
@@ -78,13 +80,18 @@ h6 {
 }
 
 .sect {
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 #content h4,
 h5,
 h2 {
   margin: 0px;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 a {
@@ -109,6 +116,7 @@ body {
   padding: 20px;
   font-family: "Karla", sans-serif;
   border-top: 5px solid var(--secondary);
+  border-bottom: 5px solid var(--secondary);
 }
 
 html,
@@ -147,7 +155,7 @@ h3 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 button p {
@@ -178,8 +186,7 @@ button p {
 }
 
 .pub {
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin-top: 40px;
 }
 
 .venue {
@@ -202,6 +209,7 @@ button p {
 
 .paper-title {
   color: var(--black);
+  font-weight: 400;
 }
 
 a button {
