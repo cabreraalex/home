@@ -1424,7 +1424,7 @@ var app = (function () {
           }
         ],
         bibtex:
-          "@article{cabrera2019fairvis, title={FairVis: Visual Analytics for Discovering Intersectional Bias in Machine Learning}, author={Cabrera, {'A}ngel Alexander and Epperson, Will and Hohman, Fred and Kahng, Minsuk and Morgenstern, Jamie and Chau, Duen Horng}, journal={IEEE Conference on Visual Analytics Science and Technology (VAST)}, year={2019}, publisher={IEEE}}",
+          "@INPROCEEDINGS{8986948, author={Á. A. {Cabrera} and W. {Epperson} and F. {Hohman} and M. {Kahng} and J. {Morgenstern} and D. H. {Chau}}, booktitle={2019 IEEE Conference on Visual Analytics Science and Technology (VAST)}, title={FAIRVIS: Visual Analytics for Discovering Intersectional Bias in Machine Learning}, year={2019}, volume={}, number={}, pages={46-56},}",
         abstract:
           "The growing capability and accessibility of machine learning has led to its application to many real-world domains and data about people. Despite the benefits algorithmic systems may bring, models can reflect, inject, or exacerbate implicit and explicit societal biases into their outputs, disadvantaging certain demographic subgroups. Discovering which biases a machine learning model has introduced is a great challenge, due to the numerous definitions of fairness and the large number of potentially impacted subgroups. We present FairVis, a mixed-initiative visual analytics system that integrates a novel subgroup discovery technique for users to audit the fairness of machine learning models. Through FairVis, users can apply domain knowledge to generate and investigate known subgroups, and explore suggested and similar subgroups. FairVis' coordinated views enable users to explore a high-level overview of subgroup performance and subsequently drill down into detailed investigation of specific subgroups. We show how FairVis helps to discover biases in two real datasets used in predicting income and recidivism. As a visual analytics system devoted to discovering bias in machine learning, FairVis demonstrates how interactive visualization may help data scientists and the general public understand and create more equitable algorithmic systems.",
         demo: "https://poloclub.github.io/FairVis/",
@@ -1432,8 +1432,54 @@ var app = (function () {
         blog:
           "https://medium.com/@cabreraalex/fairvis-discovering-bias-in-machine-learning-using-visual-analytics-acbd362a3e2f",
         pdf: "https://arxiv.org/abs/1904.05419",
-        video: "https://vimeo.com/showcase/6524122/video/368702211",
-        slides: "./FairVis.pdf"
+        video: "https://vimeo.com/showcase/6524122/video/368702211"
+        // slides: "./FairVis.pdf"
+      }
+    ];
+
+    var other = [
+      {
+        title: "Regularizing Black-box Models for Improved Interpretability",
+        desc:
+          "We introduce a new regularization method for training deep learning models that improves the stability and fidelity of post-hoc explanantion methods like LIME. Through a user study we show that the regularized model empirically improves the quality of explainations.",
+        id: "expo",
+        teaser: "expo.png",
+        venue: "Under Review",
+        venuelong: "Under Review",
+        year: "2020",
+        month: "",
+        location: "",
+        authors: [
+          {
+            name: "Gregory Plumb",
+            website: "https://gdplumb.github.io/"
+          },
+          {
+            name: "Maruan Al-Shedivat",
+            website: "https://www.cs.cmu.edu/~mshediva/"
+          },
+          {
+            name: "Ángel Alexander Cabrera",
+            website: "https://cabreraalex.com"
+          },
+          {
+            name: "Adam Perer",
+            website: "http://perer.org/"
+          },
+          {
+            name: "Eric Xing",
+            website: "http://www.cs.cmu.edu/~epxing/"
+          },
+          {
+            name: "Ameet Talwalkar",
+            website: "https://www.cs.cmu.edu/~atalwalk/"
+          }
+        ],
+        bibtex:
+          "@article{plumb2019regularizing, title={Regularizing Black-box Models for Improved Interpretability}, author={Plumb, Gregory and Al-Shedivat, Maruan and Cabrera, Ángel Alexander, and Perer, Adam and Xing, Eric and Talwalkar, Ameet}, journal={arXiv preprint arXiv:1902.06787}, year={2020}}",
+        abstract:
+          "Most of the work on interpretable machine learning has focused on designing either inherently interpretable models, which typically trade-off accuracy for interpretability, or post-hoc explanation systems, which tend to lack guarantees about the quality of their explanations. We explore a hybridization of these approaches by directly regularizing a black-box model for interpretability at training time - a method we call ExpO. We find that post-hoc explanations of an ExpO-regularized model are consistently more stable and of higher fidelity, which we show theoretically and support empirically. Critically, we also find ExpO leads to explanations that are more actionable, significantly more useful, and more intuitive as supported by a user study.",
+        pdf: "https://arxiv.org/pdf/1902.06787.pdf"
       },
       {
         title:
@@ -1470,7 +1516,7 @@ var app = (function () {
           }
         ],
         bibtex:
-          "@article{cabrera2019discovery, title={Discovery of Intersectional Bias in Machine Learning Using Automatic Subgroup Generation}, author={Cabrera, {'A}ngel Alexander and Kahng, Minsuk and Hohman, Fred and Morgenstern, Jamie and Chau, Duen Horng}, journal={Debugging Machine Learning Models Workshop (Debug ML) at ICLR}, year={2019}}",
+          "@article{cabrera2019discovery, title={Discovery of Intersectional Bias in Machine Learning Using Automatic Subgroup Generation}, author={Cabrera, Ángel Alexander and Kahng, Minsuk and Hohman, Fred and Morgenstern, Jamie and Chau, Duen Horng}, journal={Debugging Machine Learning Models Workshop (Debug ML) at ICLR}, year={2019}}",
         abstract:
           "As machine learning is applied to data about people, it is crucial to understand how learned models treat different demographic groups. Many factors, including what training data and class of models are used, can encode biased behavior into learned outcomes. These biases are often small when considering a single feature (e.g., sex or race) in isolation, but appear more blatantly at the intersection of multiple features. We present our ongoing work of designing automatic techniques and interactive tools to help users discover subgroups of data instances on which a model underperforms. Using a bottom-up clustering technique for subgroup generation, users can quickly find areas of a dataset in which their models are encoding bias. Our work presents some of the first user-focused, interactive methods for discovering bias in machine learning models.",
         pdf:
@@ -1507,7 +1553,7 @@ var app = (function () {
           }
         ],
         bibtex:
-          "@article{cabrera2018interactive, title={Interactive Classification for Deep Learning Interpretation}, author={Cabrera, {'A}ngel Alexander and Hohman, Fred and Lin, Jason and Chau, Duen Horng}, journal={Demo, IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, year={2018}, organization={IEEE}}",
+          "@article{cabrera2018interactive, title={Interactive Classification for Deep Learning Interpretation}, author={Cabrera, Ángel Alexander and Hohman, Fred and Lin, Jason and Chau, Duen Horng}, journal={Demo, IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, year={2018}, organization={IEEE}}",
         abstract:
           "We present an interactive system enabling users to manipulate images to explore the robustness and sensitivity of deep learning image classifiers. Using modern web technologies to run in-browser inference, users can remove image features using inpainting algorithms to obtain new classifications in real time. This system allows users to compare and contrast what image regions humans and machine learning models use for classification.",
         website: "http://fredhohman.com/papers/interactive-classification",
@@ -2280,13 +2326,19 @@ var app = (function () {
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = Object.create(ctx);
+    	child_ctx.pub = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_2(ctx, list, i) {
+    	const child_ctx = Object.create(ctx);
     	child_ctx._ = list[i];
     	child_ctx.i = i;
     	return child_ctx;
     }
 
-    // (47:8) {#each { length: 3 } as _, i}
-    function create_each_block_1(ctx) {
+    // (48:8) {#each { length: 3 } as _, i}
+    function create_each_block_2(ctx) {
     	var div, p0, t0_value = news[ctx.i].date + "", t0, t1, p1, raw_value = news[ctx.i].news + "", t2;
 
     	const block = {
@@ -2298,11 +2350,11 @@ var app = (function () {
     			p1 = element("p");
     			t2 = space();
     			attr_dev(p0, "class", "pure-u-1 pure-u-md-1-5 date");
-    			add_location(p0, file$6, 48, 12, 1243);
+    			add_location(p0, file$6, 49, 12, 1281);
     			attr_dev(p1, "class", "item pure-u-1 pure-u-md-4-5");
-    			add_location(p1, file$6, 49, 12, 1313);
+    			add_location(p1, file$6, 50, 12, 1351);
     			attr_dev(div, "class", "news-item pure-g");
-    			add_location(div, file$6, 47, 10, 1200);
+    			add_location(div, file$6, 48, 10, 1238);
     		},
 
     		m: function mount(target, anchor) {
@@ -2323,15 +2375,15 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block_1.name, type: "each", source: "(47:8) {#each { length: 3 } as _, i}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block_2.name, type: "each", source: "(48:8) {#each { length: 3 } as _, i}", ctx });
     	return block;
     }
 
-    // (62:8) {#each pubs as pub}
-    function create_each_block$1(ctx) {
+    // (63:8) {#each pubs as pub}
+    function create_each_block_1(ctx) {
     	var div4, div1, div0, a0, img, t0, h6, t1_value = ctx.pub.venue + "", t1, t2, div3, div2, a1, h4, t3_value = ctx.pub.title + "", t3, t4, h5, raw_value = ctx.pub.authors
                         .map(func)
-                        .join(', ') + "", t5, p, t6_value = ctx.pub.desc + "", t6, t7, t8, current;
+                        .join(', ') + "", t5, t6, current;
 
     	var links = new Links({
     		props: { pub: ctx.pub },
@@ -2357,37 +2409,32 @@ var app = (function () {
     			t4 = space();
     			h5 = element("h5");
     			t5 = space();
-    			p = element("p");
-    			t6 = text(t6_value);
-    			t7 = space();
     			links.$$.fragment.c();
-    			t8 = space();
+    			t6 = space();
     			attr_dev(img, "src", 'images/' + ctx.pub.teaser);
     			attr_dev(img, "class", "thumb");
     			attr_dev(img, "alt", "teaser");
-    			add_location(img, file$6, 66, 18, 1888);
+    			add_location(img, file$6, 67, 18, 1926);
     			attr_dev(a0, "href", '#/paper/' + ctx.pub.id);
-    			add_location(a0, file$6, 65, 16, 1839);
+    			add_location(a0, file$6, 66, 16, 1877);
     			attr_dev(h6, "class", "venue");
-    			add_location(h6, file$6, 71, 16, 2049);
+    			add_location(h6, file$6, 72, 16, 2087);
     			attr_dev(div0, "class", "thumb");
-    			add_location(div0, file$6, 64, 14, 1803);
+    			add_location(div0, file$6, 65, 14, 1841);
     			attr_dev(div1, "class", "thumb-box pure-u-1 pure-u-md-1-3");
-    			add_location(div1, file$6, 63, 12, 1742);
-    			add_location(h4, file$6, 77, 18, 2293);
+    			add_location(div1, file$6, 64, 12, 1780);
+    			add_location(h4, file$6, 78, 18, 2331);
     			attr_dev(a1, "href", '#/paper/' + ctx.pub.id);
     			attr_dev(a1, "class", "paper-title");
-    			add_location(a1, file$6, 76, 16, 2224);
+    			add_location(a1, file$6, 77, 16, 2262);
     			attr_dev(h5, "class", "authors");
-    			add_location(h5, file$6, 79, 16, 2351);
-    			attr_dev(p, "class", "desc");
-    			add_location(p, file$6, 84, 16, 2560);
+    			add_location(h5, file$6, 80, 16, 2389);
     			attr_dev(div2, "class", "padded");
-    			add_location(div2, file$6, 75, 14, 2187);
+    			add_location(div2, file$6, 76, 14, 2225);
     			attr_dev(div3, "class", "pure-u-1 pure-u-md-2-3");
-    			add_location(div3, file$6, 74, 12, 2136);
+    			add_location(div3, file$6, 75, 12, 2174);
     			attr_dev(div4, "class", "pure-g pub");
-    			add_location(div4, file$6, 62, 10, 1705);
+    			add_location(div4, file$6, 63, 10, 1743);
     		},
 
     		m: function mount(target, anchor) {
@@ -2408,12 +2455,9 @@ var app = (function () {
     			append_dev(div2, t4);
     			append_dev(div2, h5);
     			h5.innerHTML = raw_value;
-    			append_dev(div2, t5);
-    			append_dev(div2, p);
-    			append_dev(p, t6);
-    			append_dev(div3, t7);
+    			append_dev(div3, t5);
     			mount_component(links, div3, null);
-    			append_dev(div4, t8);
+    			append_dev(div4, t6);
     			current = true;
     		},
 
@@ -2439,18 +2483,134 @@ var app = (function () {
     			destroy_component(links);
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block$1.name, type: "each", source: "(62:8) {#each pubs as pub}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block_1.name, type: "each", source: "(63:8) {#each pubs as pub}", ctx });
+    	return block;
+    }
+
+    // (99:8) {#each other as pub}
+    function create_each_block$1(ctx) {
+    	var div4, div1, div0, a0, img, t0, h6, t1_value = ctx.pub.venue + "", t1, t2, div3, div2, a1, h4, t3_value = ctx.pub.title + "", t3, t4, h5, raw_value = ctx.pub.authors
+                        .map(func_1)
+                        .join(', ') + "", t5, t6, current;
+
+    	var links = new Links({
+    		props: { pub: ctx.pub },
+    		$$inline: true
+    	});
+
+    	const block = {
+    		c: function create() {
+    			div4 = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
+    			a0 = element("a");
+    			img = element("img");
+    			t0 = space();
+    			h6 = element("h6");
+    			t1 = text(t1_value);
+    			t2 = space();
+    			div3 = element("div");
+    			div2 = element("div");
+    			a1 = element("a");
+    			h4 = element("h4");
+    			t3 = text(t3_value);
+    			t4 = space();
+    			h5 = element("h5");
+    			t5 = space();
+    			links.$$.fragment.c();
+    			t6 = space();
+    			attr_dev(img, "src", 'images/' + ctx.pub.teaser);
+    			attr_dev(img, "class", "thumb");
+    			attr_dev(img, "alt", "teaser");
+    			add_location(img, file$6, 103, 18, 3211);
+    			attr_dev(a0, "href", '#/paper/' + ctx.pub.id);
+    			add_location(a0, file$6, 102, 16, 3162);
+    			attr_dev(h6, "class", "venue");
+    			add_location(h6, file$6, 108, 16, 3372);
+    			attr_dev(div0, "class", "thumb");
+    			add_location(div0, file$6, 101, 14, 3126);
+    			attr_dev(div1, "class", "thumb-box pure-u-1 pure-u-md-1-3");
+    			add_location(div1, file$6, 100, 12, 3065);
+    			add_location(h4, file$6, 114, 18, 3616);
+    			attr_dev(a1, "href", '#/paper/' + ctx.pub.id);
+    			attr_dev(a1, "class", "paper-title");
+    			add_location(a1, file$6, 113, 16, 3547);
+    			attr_dev(h5, "class", "authors");
+    			add_location(h5, file$6, 116, 16, 3674);
+    			attr_dev(div2, "class", "padded");
+    			add_location(div2, file$6, 112, 14, 3510);
+    			attr_dev(div3, "class", "pure-u-1 pure-u-md-2-3");
+    			add_location(div3, file$6, 111, 12, 3459);
+    			attr_dev(div4, "class", "pure-g pub");
+    			add_location(div4, file$6, 99, 10, 3028);
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div1);
+    			append_dev(div1, div0);
+    			append_dev(div0, a0);
+    			append_dev(a0, img);
+    			append_dev(div0, t0);
+    			append_dev(div0, h6);
+    			append_dev(h6, t1);
+    			append_dev(div4, t2);
+    			append_dev(div4, div3);
+    			append_dev(div3, div2);
+    			append_dev(div2, a1);
+    			append_dev(a1, h4);
+    			append_dev(h4, t3);
+    			append_dev(div2, t4);
+    			append_dev(div2, h5);
+    			h5.innerHTML = raw_value;
+    			append_dev(div3, t5);
+    			mount_component(links, div3, null);
+    			append_dev(div4, t6);
+    			current = true;
+    		},
+
+    		p: noop,
+
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(links.$$.fragment, local);
+
+    			current = true;
+    		},
+
+    		o: function outro(local) {
+    			transition_out(links.$$.fragment, local);
+    			current = false;
+    		},
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach_dev(div4);
+    			}
+
+    			destroy_component(links);
+    		}
+    	};
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block$1.name, type: "each", source: "(99:8) {#each other as pub}", ctx });
     	return block;
     }
 
     function create_fragment$7(ctx) {
-    	var div7, t0, div6, div5, div0, h20, t1, span, t3, t4, div2, div1, h21, t6, a0, t8, hr0, t9, t10, div4, div3, h22, t12, a1, t14, hr1, t15, t16, current;
+    	var div9, t0, div8, div7, div0, h20, t1, span, t3, t4, div2, div1, h21, t6, a, t8, hr0, t9, t10, div4, div3, h22, t12, hr1, t13, t14, div6, div5, h23, t16, hr2, t17, t18, current;
 
     	var sidebar = new Sidebar({ $$inline: true });
 
     	var intro = new Intro({ $$inline: true });
 
-    	let each_value_1 = { length: 3 };
+    	let each_value_2 = { length: 3 };
+
+    	let each_blocks_2 = [];
+
+    	for (let i = 0; i < each_value_2.length; i += 1) {
+    		each_blocks_2[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+    	}
+
+    	let each_value_1 = pubs;
 
     	let each_blocks_1 = [];
 
@@ -2458,7 +2618,11 @@ var app = (function () {
     		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
     	}
 
-    	let each_value = pubs;
+    	const out = i => transition_out(each_blocks_1[i], 1, 1, () => {
+    		each_blocks_1[i] = null;
+    	});
+
+    	let each_value = other;
 
     	let each_blocks = [];
 
@@ -2466,7 +2630,7 @@ var app = (function () {
     		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
     	}
 
-    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    	const out_1 = i => transition_out(each_blocks[i], 1, 1, () => {
     		each_blocks[i] = null;
     	});
 
@@ -2474,11 +2638,11 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div7 = element("div");
+    			div9 = element("div");
     			sidebar.$$.fragment.c();
     			t0 = space();
-    			div6 = element("div");
-    			div5 = element("div");
+    			div8 = element("div");
+    			div7 = element("div");
     			div0 = element("div");
     			h20 = element("h2");
     			t1 = text("Hi! You can call me\n          ");
@@ -2492,71 +2656,86 @@ var app = (function () {
     			h21 = element("h2");
     			h21.textContent = "News";
     			t6 = space();
-    			a0 = element("a");
-    			a0.textContent = "all news";
+    			a = element("a");
+    			a.textContent = "see all";
     			t8 = space();
     			hr0 = element("hr");
     			t9 = space();
 
-    			for (let i = 0; i < each_blocks_1.length; i += 1) {
-    				each_blocks_1[i].c();
+    			for (let i = 0; i < each_blocks_2.length; i += 1) {
+    				each_blocks_2[i].c();
     			}
 
     			t10 = space();
     			div4 = element("div");
     			div3 = element("div");
     			h22 = element("h2");
-    			h22.textContent = "Selected Publications";
+    			h22.textContent = "Refereed Publications";
     			t12 = space();
-    			a1 = element("a");
-    			a1.textContent = "all publications";
-    			t14 = space();
     			hr1 = element("hr");
-    			t15 = space();
+    			t13 = space();
+
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].c();
+    			}
+
+    			t14 = space();
+    			div6 = element("div");
+    			div5 = element("div");
+    			h23 = element("h2");
+    			h23.textContent = "Workshops, Demos, Posters, and Preprints";
+    			t16 = space();
+    			hr2 = element("hr");
+    			t17 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t16 = space();
+    			t18 = space();
     			footer.$$.fragment.c();
     			attr_dev(span, "class", "name");
-    			add_location(span, file$6, 36, 10, 885);
+    			add_location(span, file$6, 37, 10, 924);
     			attr_dev(h20, "id", "hello");
     			attr_dev(h20, "class", "svelte-14nm4zk");
-    			add_location(h20, file$6, 34, 8, 829);
+    			add_location(h20, file$6, 35, 8, 868);
     			attr_dev(div0, "id", "intro");
-    			add_location(div0, file$6, 33, 6, 804);
+    			add_location(div0, file$6, 34, 6, 843);
     			attr_dev(h21, "class", "header svelte-14nm4zk");
-    			add_location(h21, file$6, 42, 10, 1035);
-    			attr_dev(a0, "class", "right-all");
-    			attr_dev(a0, "href", "#/news");
-    			add_location(a0, file$6, 43, 10, 1074);
+    			add_location(h21, file$6, 43, 10, 1074);
+    			attr_dev(a, "class", "right-all");
+    			attr_dev(a, "href", "#/news");
+    			add_location(a, file$6, 44, 10, 1113);
     			attr_dev(div1, "class", "inline svelte-14nm4zk");
-    			add_location(div1, file$6, 41, 8, 1004);
-    			add_location(hr0, file$6, 45, 8, 1145);
+    			add_location(div1, file$6, 42, 8, 1043);
+    			add_location(hr0, file$6, 46, 8, 1183);
     			attr_dev(div2, "id", "news");
     			attr_dev(div2, "class", "sect");
-    			add_location(div2, file$6, 40, 6, 967);
+    			add_location(div2, file$6, 41, 6, 1006);
     			attr_dev(h22, "class", "header svelte-14nm4zk");
-    			add_location(h22, file$6, 57, 10, 1525);
-    			attr_dev(a1, "class", "right-all");
-    			attr_dev(a1, "href", "#/pubs");
-    			add_location(a1, file$6, 58, 10, 1581);
+    			add_location(h22, file$6, 58, 10, 1563);
     			attr_dev(div3, "class", "inline svelte-14nm4zk");
-    			add_location(div3, file$6, 56, 8, 1494);
-    			add_location(hr1, file$6, 60, 8, 1660);
+    			add_location(div3, file$6, 57, 8, 1532);
+    			add_location(hr1, file$6, 61, 8, 1698);
     			attr_dev(div4, "id", "pubs");
     			attr_dev(div4, "class", "sect");
-    			add_location(div4, file$6, 55, 6, 1457);
-    			attr_dev(div5, "id", "padded-content");
-    			add_location(div5, file$6, 32, 4, 772);
-    			attr_dev(div6, "id", "content");
-    			attr_dev(div6, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div6, file$6, 31, 2, 718);
-    			attr_dev(div7, "class", "pure-g");
-    			attr_dev(div7, "id", "main-container");
-    			add_location(div7, file$6, 29, 0, 661);
+    			add_location(div4, file$6, 56, 6, 1495);
+    			attr_dev(h23, "class", "header svelte-14nm4zk");
+    			add_location(h23, file$6, 94, 10, 2828);
+    			attr_dev(div5, "class", "inline svelte-14nm4zk");
+    			add_location(div5, file$6, 93, 8, 2797);
+    			add_location(hr2, file$6, 97, 8, 2982);
+    			attr_dev(div6, "id", "pubs");
+    			attr_dev(div6, "class", "sect");
+    			add_location(div6, file$6, 92, 6, 2760);
+    			attr_dev(div7, "id", "padded-content");
+    			add_location(div7, file$6, 33, 4, 811);
+    			attr_dev(div8, "id", "content");
+    			attr_dev(div8, "class", "pure-u-1 pure-u-md-3-4");
+    			add_location(div8, file$6, 32, 2, 757);
+    			attr_dev(div9, "class", "pure-g");
+    			attr_dev(div9, "id", "main-container");
+    			add_location(div9, file$6, 30, 0, 700);
     		},
 
     		l: function claim(nodes) {
@@ -2564,53 +2743,85 @@ var app = (function () {
     		},
 
     		m: function mount(target, anchor) {
-    			insert_dev(target, div7, anchor);
-    			mount_component(sidebar, div7, null);
-    			append_dev(div7, t0);
-    			append_dev(div7, div6);
-    			append_dev(div6, div5);
-    			append_dev(div5, div0);
+    			insert_dev(target, div9, anchor);
+    			mount_component(sidebar, div9, null);
+    			append_dev(div9, t0);
+    			append_dev(div9, div8);
+    			append_dev(div8, div7);
+    			append_dev(div7, div0);
     			append_dev(div0, h20);
     			append_dev(h20, t1);
     			append_dev(h20, span);
     			append_dev(div0, t3);
     			mount_component(intro, div0, null);
-    			append_dev(div5, t4);
-    			append_dev(div5, div2);
+    			append_dev(div7, t4);
+    			append_dev(div7, div2);
     			append_dev(div2, div1);
     			append_dev(div1, h21);
     			append_dev(div1, t6);
-    			append_dev(div1, a0);
+    			append_dev(div1, a);
     			append_dev(div2, t8);
     			append_dev(div2, hr0);
     			append_dev(div2, t9);
 
-    			for (let i = 0; i < each_blocks_1.length; i += 1) {
-    				each_blocks_1[i].m(div2, null);
+    			for (let i = 0; i < each_blocks_2.length; i += 1) {
+    				each_blocks_2[i].m(div2, null);
     			}
 
-    			append_dev(div5, t10);
-    			append_dev(div5, div4);
+    			append_dev(div7, t10);
+    			append_dev(div7, div4);
     			append_dev(div4, div3);
     			append_dev(div3, h22);
-    			append_dev(div3, t12);
-    			append_dev(div3, a1);
-    			append_dev(div4, t14);
+    			append_dev(div4, t12);
     			append_dev(div4, hr1);
-    			append_dev(div4, t15);
+    			append_dev(div4, t13);
 
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div4, null);
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].m(div4, null);
     			}
 
+    			append_dev(div7, t14);
+    			append_dev(div7, div6);
+    			append_dev(div6, div5);
+    			append_dev(div5, h23);
     			append_dev(div6, t16);
-    			mount_component(footer, div6, null);
+    			append_dev(div6, hr2);
+    			append_dev(div6, t17);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div6, null);
+    			}
+
+    			append_dev(div8, t18);
+    			mount_component(footer, div8, null);
     			current = true;
     		},
 
     		p: function update(changed, ctx) {
     			if (changed.news) {
-    				each_value_1 = { length: 3 };
+    				each_value_2 = { length: 3 };
+
+    				let i;
+    				for (i = 0; i < each_value_2.length; i += 1) {
+    					const child_ctx = get_each_context_2(ctx, each_value_2, i);
+
+    					if (each_blocks_2[i]) {
+    						each_blocks_2[i].p(changed, child_ctx);
+    					} else {
+    						each_blocks_2[i] = create_each_block_2(child_ctx);
+    						each_blocks_2[i].c();
+    						each_blocks_2[i].m(div2, null);
+    					}
+    				}
+
+    				for (; i < each_blocks_2.length; i += 1) {
+    					each_blocks_2[i].d(1);
+    				}
+    				each_blocks_2.length = each_value_2.length;
+    			}
+
+    			if (changed.pubs) {
+    				each_value_1 = pubs;
 
     				let i;
     				for (i = 0; i < each_value_1.length; i += 1) {
@@ -2618,21 +2829,24 @@ var app = (function () {
 
     					if (each_blocks_1[i]) {
     						each_blocks_1[i].p(changed, child_ctx);
+    						transition_in(each_blocks_1[i], 1);
     					} else {
     						each_blocks_1[i] = create_each_block_1(child_ctx);
     						each_blocks_1[i].c();
-    						each_blocks_1[i].m(div2, null);
+    						transition_in(each_blocks_1[i], 1);
+    						each_blocks_1[i].m(div4, null);
     					}
     				}
 
-    				for (; i < each_blocks_1.length; i += 1) {
-    					each_blocks_1[i].d(1);
+    				group_outros();
+    				for (i = each_value_1.length; i < each_blocks_1.length; i += 1) {
+    					out(i);
     				}
-    				each_blocks_1.length = each_value_1.length;
+    				check_outros();
     			}
 
-    			if (changed.pubs) {
-    				each_value = pubs;
+    			if (changed.other) {
+    				each_value = other;
 
     				let i;
     				for (i = 0; i < each_value.length; i += 1) {
@@ -2645,13 +2859,13 @@ var app = (function () {
     						each_blocks[i] = create_each_block$1(child_ctx);
     						each_blocks[i].c();
     						transition_in(each_blocks[i], 1);
-    						each_blocks[i].m(div4, null);
+    						each_blocks[i].m(div6, null);
     					}
     				}
 
     				group_outros();
     				for (i = each_value.length; i < each_blocks.length; i += 1) {
-    					out(i);
+    					out_1(i);
     				}
     				check_outros();
     			}
@@ -2662,6 +2876,10 @@ var app = (function () {
     			transition_in(sidebar.$$.fragment, local);
 
     			transition_in(intro.$$.fragment, local);
+
+    			for (let i = 0; i < each_value_1.length; i += 1) {
+    				transition_in(each_blocks_1[i]);
+    			}
 
     			for (let i = 0; i < each_value.length; i += 1) {
     				transition_in(each_blocks[i]);
@@ -2676,6 +2894,11 @@ var app = (function () {
     			transition_out(sidebar.$$.fragment, local);
     			transition_out(intro.$$.fragment, local);
 
+    			each_blocks_1 = each_blocks_1.filter(Boolean);
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				transition_out(each_blocks_1[i]);
+    			}
+
     			each_blocks = each_blocks.filter(Boolean);
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				transition_out(each_blocks[i]);
@@ -2687,12 +2910,14 @@ var app = (function () {
 
     		d: function destroy(detaching) {
     			if (detaching) {
-    				detach_dev(div7);
+    				detach_dev(div9);
     			}
 
     			destroy_component(sidebar);
 
     			destroy_component(intro);
+
+    			destroy_each(each_blocks_2, detaching);
 
     			destroy_each(each_blocks_1, detaching);
 
@@ -2706,6 +2931,8 @@ var app = (function () {
     }
 
     const func = (p) => "<a href='" + p.website + "'>" + p.name + '</a>';
+
+    const func_1 = (p) => "<a href='" + p.website + "'>" + p.name + '</a>';
 
     function instance$3($$self) {
     	
@@ -2777,29 +3004,29 @@ var app = (function () {
     			attr_dev(img, "src", 'images/' + ctx.pub.teaser);
     			attr_dev(img, "class", "thumb");
     			attr_dev(img, "alt", "teaser");
-    			add_location(img, file$7, 27, 16, 725);
+    			add_location(img, file$7, 27, 16, 720);
     			attr_dev(a0, "href", '#/paper/' + ctx.pub.id);
-    			add_location(a0, file$7, 26, 14, 678);
+    			add_location(a0, file$7, 26, 14, 673);
     			attr_dev(h6, "class", "venue");
-    			add_location(h6, file$7, 29, 14, 822);
+    			add_location(h6, file$7, 29, 14, 817);
     			attr_dev(div0, "class", "thumb");
-    			add_location(div0, file$7, 25, 12, 644);
+    			add_location(div0, file$7, 25, 12, 639);
     			attr_dev(div1, "class", "pure-u-1 pure-u-md-1-3 thumb-box");
-    			add_location(div1, file$7, 24, 10, 585);
-    			add_location(h4, file$7, 35, 16, 1054);
+    			add_location(div1, file$7, 24, 10, 580);
+    			add_location(h4, file$7, 35, 16, 1049);
     			attr_dev(a1, "href", '#/paper/' + ctx.pub.id);
     			attr_dev(a1, "class", "paper-title");
-    			add_location(a1, file$7, 34, 14, 987);
+    			add_location(a1, file$7, 34, 14, 982);
     			attr_dev(h5, "class", "authors");
-    			add_location(h5, file$7, 37, 14, 1108);
+    			add_location(h5, file$7, 37, 14, 1103);
     			attr_dev(p, "class", "desc");
-    			add_location(p, file$7, 42, 14, 1307);
+    			add_location(p, file$7, 42, 14, 1302);
     			attr_dev(div2, "class", "padded");
-    			add_location(div2, file$7, 33, 12, 952);
+    			add_location(div2, file$7, 33, 12, 947);
     			attr_dev(div3, "class", "pure-u-1 pure-u-md-2-3");
-    			add_location(div3, file$7, 32, 10, 903);
+    			add_location(div3, file$7, 32, 10, 898);
     			attr_dev(div4, "class", "pure-g pub");
-    			add_location(div4, file$7, 23, 8, 550);
+    			add_location(div4, file$7, 23, 8, 545);
     		},
 
     		m: function mount(target, anchor) {
@@ -2893,17 +3120,17 @@ var app = (function () {
 
     			t4 = space();
     			footer.$$.fragment.c();
-    			attr_dev(h1, "class", "svelte-yks1gl");
-    			add_location(h1, file$7, 20, 6, 481);
-    			add_location(hr, file$7, 21, 6, 509);
+    			attr_dev(h1, "class", "svelte-y6vncv");
+    			add_location(h1, file$7, 20, 6, 476);
+    			add_location(hr, file$7, 21, 6, 504);
     			attr_dev(div0, "id", "padded-content");
-    			add_location(div0, file$7, 19, 4, 449);
+    			add_location(div0, file$7, 19, 4, 444);
     			attr_dev(div1, "id", "content");
     			attr_dev(div1, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div1, file$7, 18, 2, 395);
+    			add_location(div1, file$7, 18, 2, 390);
     			attr_dev(div2, "class", "pure-g");
     			attr_dev(div2, "id", "main-container");
-    			add_location(div2, file$7, 16, 0, 338);
+    			add_location(div2, file$7, 16, 0, 333);
     		},
 
     		l: function claim(nodes) {
@@ -3032,7 +3259,7 @@ var app = (function () {
               func$2
             )
             .join(', ') + "", t12, div3, div1, img, t13, div2, p0, t14_value = ctx.pub.desc + "", t14, t15, h20, t17, p1, t18_value = ctx.pub.abstract + "", t18, t19, h21, t21, a1, h41, t22_value = ctx.pub.title + "", t22, t23, h50, raw1_value = ctx.pub.authors
-          .map(func_1)
+          .map(func_1$1)
           .join(', ') + "", t24, h51, i1, t25_value = ctx.pub.venuelong + "", t25, t26, t27_value = ctx.pub.location + "", t27, t28, t29_value = ctx.pub.year + "", t29, t30, t31, h22, t33, div4, code, t34_value = ctx.pub.bibtex + "", t34, t35, current;
 
     	var links = new Links({
@@ -3110,68 +3337,68 @@ var app = (function () {
     			t34 = text(t34_value);
     			t35 = space();
     			footer.$$.fragment.c();
-    			attr_dev(i0, "class", "fas fa-home svelte-1vc1r0n");
+    			attr_dev(i0, "class", "fas fa-home svelte-guv41u");
     			attr_dev(i0, "id", "home");
-    			add_location(i0, file$8, 109, 4, 1673);
-    			attr_dev(span0, "class", "color svelte-1vc1r0n");
-    			add_location(span0, file$8, 111, 6, 1739);
-    			attr_dev(span1, "class", "color red svelte-1vc1r0n");
-    			add_location(span1, file$8, 112, 6, 1784);
-    			attr_dev(span2, "class", "color svelte-1vc1r0n");
-    			add_location(span2, file$8, 113, 6, 1826);
-    			attr_dev(span3, "class", "color red svelte-1vc1r0n");
-    			add_location(span3, file$8, 114, 6, 1871);
+    			add_location(i0, file$8, 111, 4, 1748);
+    			attr_dev(span0, "class", "color svelte-guv41u");
+    			add_location(span0, file$8, 113, 6, 1814);
+    			attr_dev(span1, "class", "color red svelte-guv41u");
+    			add_location(span1, file$8, 114, 6, 1859);
+    			attr_dev(span2, "class", "color svelte-guv41u");
+    			add_location(span2, file$8, 115, 6, 1901);
+    			attr_dev(span3, "class", "color red svelte-guv41u");
+    			add_location(span3, file$8, 116, 6, 1946);
     			attr_dev(h40, "id", "home-link");
-    			attr_dev(h40, "class", "svelte-1vc1r0n");
-    			add_location(h40, file$8, 110, 4, 1713);
+    			attr_dev(h40, "class", "svelte-guv41u");
+    			add_location(h40, file$8, 112, 4, 1788);
     			attr_dev(a0, "href", "/");
-    			attr_dev(a0, "class", "home svelte-1vc1r0n");
-    			add_location(a0, file$8, 108, 2, 1643);
-    			add_location(hr, file$8, 117, 2, 1929);
-    			attr_dev(h1, "class", "svelte-1vc1r0n");
-    			add_location(h1, file$8, 118, 2, 1938);
-    			attr_dev(h3, "class", "svelte-1vc1r0n");
-    			add_location(h3, file$8, 120, 4, 1981);
+    			attr_dev(a0, "class", "home svelte-guv41u");
+    			add_location(a0, file$8, 110, 2, 1718);
+    			add_location(hr, file$8, 119, 2, 2004);
+    			attr_dev(h1, "class", "svelte-guv41u");
+    			add_location(h1, file$8, 120, 2, 2013);
+    			attr_dev(h3, "class", "svelte-guv41u");
+    			add_location(h3, file$8, 122, 4, 2056);
     			attr_dev(div0, "id", "info");
-    			attr_dev(div0, "class", "svelte-1vc1r0n");
-    			add_location(div0, file$8, 119, 2, 1961);
+    			attr_dev(div0, "class", "svelte-guv41u");
+    			add_location(div0, file$8, 121, 2, 2036);
     			attr_dev(img, "src", 'images/' + ctx.pub.teaser);
-    			attr_dev(img, "class", "teaser svelte-1vc1r0n");
+    			attr_dev(img, "class", "teaser svelte-guv41u");
     			attr_dev(img, "alt", "teaser");
-    			add_location(img, file$8, 130, 6, 2228);
+    			add_location(img, file$8, 132, 6, 2303);
     			attr_dev(div1, "class", "pure-u-1 pure-u-md-1-2");
-    			add_location(div1, file$8, 129, 4, 2185);
-    			attr_dev(p0, "class", "desc svelte-1vc1r0n");
-    			add_location(p0, file$8, 133, 6, 2351);
+    			add_location(div1, file$8, 131, 4, 2260);
+    			attr_dev(p0, "class", "desc svelte-guv41u");
+    			add_location(p0, file$8, 135, 6, 2426);
     			attr_dev(div2, "class", "pure-u-1 pure-u-md-1-2");
-    			add_location(div2, file$8, 132, 4, 2308);
-    			attr_dev(div3, "class", "flex pure-g svelte-1vc1r0n");
-    			add_location(div3, file$8, 128, 2, 2155);
-    			attr_dev(h20, "class", "sec-title svelte-1vc1r0n");
-    			add_location(h20, file$8, 137, 2, 2405);
-    			attr_dev(p1, "class", "svelte-1vc1r0n");
-    			add_location(p1, file$8, 138, 2, 2443);
-    			attr_dev(h21, "class", "sec-title svelte-1vc1r0n");
-    			add_location(h21, file$8, 140, 2, 2468);
-    			attr_dev(h41, "class", "svelte-1vc1r0n");
-    			add_location(h41, file$8, 142, 4, 2561);
+    			add_location(div2, file$8, 134, 4, 2383);
+    			attr_dev(div3, "class", "flex pure-g svelte-guv41u");
+    			add_location(div3, file$8, 130, 2, 2230);
+    			attr_dev(h20, "class", "sec-title svelte-guv41u");
+    			add_location(h20, file$8, 139, 2, 2480);
+    			attr_dev(p1, "class", "svelte-guv41u");
+    			add_location(p1, file$8, 140, 2, 2518);
+    			attr_dev(h21, "class", "sec-title svelte-guv41u");
+    			add_location(h21, file$8, 142, 2, 2543);
+    			attr_dev(h41, "class", "svelte-guv41u");
+    			add_location(h41, file$8, 144, 4, 2636);
     			attr_dev(a1, "href", '#/paper/' + ctx.pub.id);
     			attr_dev(a1, "class", "paper-title");
-    			add_location(a1, file$8, 141, 2, 2506);
-    			attr_dev(h50, "class", "svelte-1vc1r0n");
-    			add_location(h50, file$8, 145, 2, 2592);
-    			add_location(i1, file$8, 152, 4, 2739);
-    			attr_dev(h51, "class", "svelte-1vc1r0n");
-    			add_location(h51, file$8, 151, 2, 2730);
-    			attr_dev(h22, "class", "sec-title svelte-1vc1r0n");
-    			add_location(h22, file$8, 156, 2, 2819);
+    			add_location(a1, file$8, 143, 2, 2581);
+    			attr_dev(h50, "class", "svelte-guv41u");
+    			add_location(h50, file$8, 147, 2, 2667);
+    			add_location(i1, file$8, 154, 4, 2814);
+    			attr_dev(h51, "class", "svelte-guv41u");
+    			add_location(h51, file$8, 153, 2, 2805);
+    			attr_dev(h22, "class", "sec-title svelte-guv41u");
+    			add_location(h22, file$8, 158, 2, 2894);
     			attr_dev(code, "class", "bibtex");
-    			add_location(code, file$8, 158, 4, 2878);
-    			attr_dev(div4, "class", "code svelte-1vc1r0n");
-    			add_location(div4, file$8, 157, 2, 2855);
+    			add_location(code, file$8, 160, 4, 2953);
+    			attr_dev(div4, "class", "code svelte-guv41u");
+    			add_location(div4, file$8, 159, 2, 2930);
     			attr_dev(div5, "id", "body");
-    			attr_dev(div5, "class", "svelte-1vc1r0n");
-    			add_location(div5, file$8, 107, 0, 1625);
+    			attr_dev(div5, "class", "svelte-guv41u");
+    			add_location(div5, file$8, 109, 0, 1700);
     		},
 
     		l: function claim(nodes) {
@@ -3276,13 +3503,13 @@ var app = (function () {
 
     const func$2 = (p) => "<a class='press' href='" + p.website + "'>" + p.name + '</a>';
 
-    const func_1 = (p) => "<a class='press' href='" + p.website + "'>" + p.name + '</a>';
+    const func_1$1 = (p) => "<a class='press' href='" + p.website + "'>" + p.name + '</a>';
 
     function instance$5($$self, $$props, $$invalidate) {
     	
       let { params = {} } = $$props;
 
-      let pub = pubs.find(e => e.id === params.id);
+      let pub = pubs.concat(other).find(e => e.id === params.id);
       onMount(() => window.scrollTo(0, 0));
 
     	const writable_props = ['params'];
@@ -3332,8 +3559,14 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (451:6) {#each pubs as pub}
-    function create_each_block$3(ctx) {
+    function get_each_context_1$1(ctx, list, i) {
+    	const child_ctx = Object.create(ctx);
+    	child_ctx.pub = list[i];
+    	return child_ctx;
+    }
+
+    // (453:6) {#each pubs as pub}
+    function create_each_block_1$1(ctx) {
     	var tr0, th0, t0_value = ctx.pub.month + "", t0, t1, t2_value = ctx.pub.year + "", t2, t3, th1, a, h5, t4_value = ctx.pub.title + "", t4, t5, h6, raw_value = ctx.pub.authors
                     .map(func$3)
                     .join(', ') + "", t6, p, i, t7_value = ctx.pub.venuelong + "", t7, t8, t9_value = ctx.pub.location + "", t9, t10, t11_value = ctx.pub.year + "", t11, t12, t13, t14, tr1, current;
@@ -3370,24 +3603,24 @@ var app = (function () {
     			links.$$.fragment.c();
     			t14 = space();
     			tr1 = element("tr");
-    			attr_dev(th0, "class", "date svelte-ccym40");
-    			add_location(th0, file$9, 452, 10, 11134);
-    			attr_dev(h5, "class", "svelte-ccym40");
-    			add_location(h5, file$9, 455, 14, 11271);
+    			attr_dev(th0, "class", "date svelte-qaq4cq");
+    			add_location(th0, file$9, 454, 10, 11178);
+    			attr_dev(h5, "class", "svelte-qaq4cq");
+    			add_location(h5, file$9, 457, 14, 11315);
     			attr_dev(a, "href", '#/paper/' + ctx.pub.id);
     			attr_dev(a, "class", "paper-title");
-    			add_location(a, file$9, 454, 12, 11206);
-    			attr_dev(h6, "class", "authors svelte-ccym40");
-    			add_location(h6, file$9, 458, 12, 11322);
-    			add_location(i, file$9, 465, 14, 11543);
-    			attr_dev(p, "class", "desc svelte-ccym40");
-    			add_location(p, file$9, 464, 12, 11512);
-    			attr_dev(th1, "class", "svelte-ccym40");
-    			add_location(th1, file$9, 453, 10, 11189);
-    			attr_dev(tr0, "class", "item svelte-ccym40");
-    			add_location(tr0, file$9, 451, 8, 11106);
-    			attr_dev(tr1, "class", "buffer svelte-ccym40");
-    			add_location(tr1, file$9, 471, 8, 11679);
+    			add_location(a, file$9, 456, 12, 11250);
+    			attr_dev(h6, "class", "authors svelte-qaq4cq");
+    			add_location(h6, file$9, 460, 12, 11366);
+    			add_location(i, file$9, 467, 14, 11587);
+    			attr_dev(p, "class", "desc svelte-qaq4cq");
+    			add_location(p, file$9, 466, 12, 11556);
+    			attr_dev(th1, "class", "svelte-qaq4cq");
+    			add_location(th1, file$9, 455, 10, 11233);
+    			attr_dev(tr0, "class", "item svelte-qaq4cq");
+    			add_location(tr0, file$9, 453, 8, 11150);
+    			attr_dev(tr1, "class", "buffer svelte-qaq4cq");
+    			add_location(tr1, file$9, 473, 8, 11723);
     		},
 
     		m: function mount(target, anchor) {
@@ -3447,18 +3680,149 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block$3.name, type: "each", source: "(451:6) {#each pubs as pub}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block_1$1.name, type: "each", source: "(453:6) {#each pubs as pub}", ctx });
+    	return block;
+    }
+
+    // (483:6) {#each other as pub}
+    function create_each_block$3(ctx) {
+    	var tr0, th0, t0_value = ctx.pub.month + "", t0, t1, t2_value = ctx.pub.year + "", t2, t3, th1, a, h5, t4_value = ctx.pub.title + "", t4, t5, h6, raw_value = ctx.pub.authors
+                    .map(func_1$2)
+                    .join(', ') + "", t6, p, i, t7_value = ctx.pub.venuelong + "", t7, t8, t9_value = ctx.pub.location + "", t9, t10, t11_value = ctx.pub.year + "", t11, t12, t13, t14, tr1, current;
+
+    	var links = new Links({
+    		props: { pub: ctx.pub },
+    		$$inline: true
+    	});
+
+    	const block = {
+    		c: function create() {
+    			tr0 = element("tr");
+    			th0 = element("th");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
+    			th1 = element("th");
+    			a = element("a");
+    			h5 = element("h5");
+    			t4 = text(t4_value);
+    			t5 = space();
+    			h6 = element("h6");
+    			t6 = space();
+    			p = element("p");
+    			i = element("i");
+    			t7 = text(t7_value);
+    			t8 = text(". ");
+    			t9 = text(t9_value);
+    			t10 = text(", ");
+    			t11 = text(t11_value);
+    			t12 = text(".");
+    			t13 = space();
+    			links.$$.fragment.c();
+    			t14 = space();
+    			tr1 = element("tr");
+    			attr_dev(th0, "class", "date svelte-qaq4cq");
+    			add_location(th0, file$9, 484, 10, 12001);
+    			attr_dev(h5, "class", "svelte-qaq4cq");
+    			add_location(h5, file$9, 487, 14, 12138);
+    			attr_dev(a, "href", '#/paper/' + ctx.pub.id);
+    			attr_dev(a, "class", "paper-title");
+    			add_location(a, file$9, 486, 12, 12073);
+    			attr_dev(h6, "class", "authors svelte-qaq4cq");
+    			add_location(h6, file$9, 490, 12, 12189);
+    			add_location(i, file$9, 497, 14, 12410);
+    			attr_dev(p, "class", "desc svelte-qaq4cq");
+    			add_location(p, file$9, 496, 12, 12379);
+    			attr_dev(th1, "class", "svelte-qaq4cq");
+    			add_location(th1, file$9, 485, 10, 12056);
+    			attr_dev(tr0, "class", "item svelte-qaq4cq");
+    			add_location(tr0, file$9, 483, 8, 11973);
+    			attr_dev(tr1, "class", "buffer svelte-qaq4cq");
+    			add_location(tr1, file$9, 503, 8, 12546);
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert_dev(target, tr0, anchor);
+    			append_dev(tr0, th0);
+    			append_dev(th0, t0);
+    			append_dev(th0, t1);
+    			append_dev(th0, t2);
+    			append_dev(tr0, t3);
+    			append_dev(tr0, th1);
+    			append_dev(th1, a);
+    			append_dev(a, h5);
+    			append_dev(h5, t4);
+    			append_dev(th1, t5);
+    			append_dev(th1, h6);
+    			h6.innerHTML = raw_value;
+    			append_dev(th1, t6);
+    			append_dev(th1, p);
+    			append_dev(p, i);
+    			append_dev(i, t7);
+    			append_dev(i, t8);
+    			append_dev(i, t9);
+    			append_dev(i, t10);
+    			append_dev(i, t11);
+    			append_dev(i, t12);
+    			append_dev(th1, t13);
+    			mount_component(links, th1, null);
+    			insert_dev(target, t14, anchor);
+    			insert_dev(target, tr1, anchor);
+    			current = true;
+    		},
+
+    		p: noop,
+
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(links.$$.fragment, local);
+
+    			current = true;
+    		},
+
+    		o: function outro(local) {
+    			transition_out(links.$$.fragment, local);
+    			current = false;
+    		},
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach_dev(tr0);
+    			}
+
+    			destroy_component(links);
+
+    			if (detaching) {
+    				detach_dev(t14);
+    				detach_dev(tr1);
+    			}
+    		}
+    	};
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block$3.name, type: "each", source: "(483:6) {#each other as pub}", ctx });
     	return block;
     }
 
     function create_fragment$a(ctx) {
-    	var div16, main, table, tr0, th0, t0, th1, h3, span0, t2, span1, t4, span2, t6, span3, t8, t9, t10, tr1, th2, t11, th3, h40, t13, tr2, th4, t14, br0, t15, t16, th5, h50, t18, h60, t20, tr3, t21, tr4, th6, t22, br1, t23, t24, th7, h51, t26, h61, t28, p0, t30, tr5, th8, t32, th9, h62, t34, p1, t36, tr6, th10, t37, th11, h41, t39, tr7, th12, t41, th13, h52, t43, p2, t45, div0, a0, button0, i0, t46, t47, tr8, t48, tr9, th14, t50, th15, h53, t52, p3, t54, div1, a1, button1, i1, t55, t56, tr10, t57, tr11, th16, t58, br2, t59, t60, th17, h54, t62, h63, t64, p4, t66, div2, a2, button2, i2, t67, t68, tr12, t69, tr13, th18, t71, th19, h55, t73, h64, t75, p5, t77, div3, a3, button3, i3, t78, t79, tr14, th20, t80, th21, h42, t82, tr15, th22, t83, br3, t84, t85, th23, h56, t87, h65, t89, p6, t91, div4, a4, button4, i4, t92, t93, button5, t95, button6, t97, button7, t99, button8, t101, tr16, t102, tr17, th24, t103, br4, t104, t105, th25, h57, t107, h66, t109, p7, t111, div5, button9, t113, button10, t115, button11, t117, button12, t119, tr18, t120, tr19, th26, t121, br5, t122, t123, th27, h58, t125, h67, t127, p8, t129, div6, button13, t131, button14, t133, button15, t135, tr20, th28, t136, th29, h43, t138, tr21, th30, t139, br6, t140, t141, th31, h59, t143, h68, t145, div7, a5, button16, i5, t146, t147, tr22, t148, tr23, th32, t149, br7, t150, t151, th33, h510, t153, h69, t155, div8, a6, button17, i6, t156, t157, tr24, t158, tr25, th34, t159, br8, t160, t161, th35, h511, t163, h610, t165, p9, t167, div9, a7, button18, i7, t168, t169, a8, button19, i8, t170, t171, a9, button20, i9, t172, t173, tr26, th36, t174, th37, h44, t176, t177, tr27, th38, t178, th39, h45, t180, tr28, th40, t182, th41, h512, t184, h611, t186, p10, t188, tr29, t189, tr30, th42, t191, th43, h513, t193, h612, t195, p11, t197, tr31, th44, t198, th45, h46, t200, tr32, th46, t201, th47, h514, t203, tr33, th48, t205, th49, h515, t207, tr34, th50, t209, th51, h516, t211, br9, t212, tr35, th52, t213, th53, h517, t215, tr36, th54, t217, th55, h518, t219, tr37, th56, t221, th57, h519, t223, tr38, th58, t224, th59, h47, t226, tr39, th60, t228, th61, h520, a10, t230, i10, t232, tr40, th62, t234, th63, h521, a11, t236, i11, t238, tr41, th64, t240, th65, h522, a12, t242, i12, t244, tr42, th66, t246, th67, h523, a13, t248, i13, t250, tr43, th68, t251, th69, h48, t253, tr44, th70, t255, th71, h524, t257, h613, t259, p12, t261, div10, a14, button21, i14, t262, t263, tr45, t264, tr46, th72, t266, th73, h525, t268, p13, t270, div11, a15, button22, i15, t271, t272, a16, button23, i16, t273, t274, tr47, t275, tr48, th74, t277, th75, h526, t279, p14, t281, div12, a17, button24, i17, t282, t283, a18, button25, i18, t284, t285, tr49, th76, t286, th77, h49, t288, tr50, th78, t290, th79, a19, h527, t292, tr51, th80, t294, th81, a20, h528, t296, tr52, th82, t298, th83, h529, t300, tr53, th84, t302, th85, a21, h530, t304, tr54, th86, t306, th87, a22, h531, t308, tr55, th88, t310, th89, h532, t312, tr56, th90, t313, th91, h410, t315, tr57, th92, t316, th93, h533, t318, div13, button26, t320, button27, t322, button28, t324, tr58, t325, tr59, th94, t326, th95, h534, t328, div14, button29, t330, button30, t332, button31, t334, button32, t336, button33, t338, button34, t340, tr60, t341, tr61, th96, t342, th97, h535, t344, div15, button35, t346, button36, t348, button37, t350, button38, t352, button39, t354, button40, t356, button41, t358, button42, t360, button43, t362, tr62, t363, tr63, th98, t364, th99, p15, current;
+    	var div16, main, table, tr0, th0, t0, th1, h3, span0, t2, span1, t4, span2, t6, span3, t8, t9, t10, tr1, th2, t11, th3, h40, t13, tr2, th4, t14, br0, t15, t16, th5, h50, t18, h60, t20, tr3, t21, tr4, th6, t22, br1, t23, t24, th7, h51, t26, h61, t28, p0, t29, br2, t30, t31, tr5, th8, t33, th9, h62, t35, p1, t37, tr6, th10, t38, th11, h41, t40, tr7, th12, t42, th13, h52, t44, p2, t46, div0, a0, button0, i0, t47, t48, tr8, t49, tr9, th14, t51, th15, h53, t53, p3, t55, div1, a1, button1, i1, t56, t57, tr10, t58, tr11, th16, t59, br3, t60, t61, th17, h54, t63, h63, t65, p4, t67, div2, a2, button2, i2, t68, t69, tr12, t70, tr13, th18, t72, th19, h55, t74, h64, t76, p5, t78, div3, a3, button3, i3, t79, t80, tr14, th20, t81, th21, h42, t83, tr15, th22, t84, br4, t85, t86, th23, h56, t88, h65, t90, p6, t92, div4, a4, button4, i4, t93, t94, button5, t96, button6, t98, button7, t100, button8, t102, tr16, t103, tr17, th24, t104, br5, t105, t106, th25, h57, t108, h66, t110, p7, t112, div5, button9, t114, button10, t116, button11, t118, button12, t120, tr18, t121, tr19, th26, t122, br6, t123, t124, th27, h58, t126, h67, t128, p8, t130, div6, button13, t132, button14, t134, button15, t136, tr20, th28, t137, th29, h43, t139, tr21, th30, t140, br7, t141, t142, th31, h59, t144, h68, t146, div7, a5, button16, i5, t147, t148, tr22, t149, tr23, th32, t150, br8, t151, t152, th33, h510, t154, h69, t156, div8, a6, button17, i6, t157, t158, tr24, t159, tr25, th34, t160, br9, t161, t162, th35, h511, t164, h610, t166, p9, t168, div9, a7, button18, i7, t169, t170, a8, button19, i8, t171, t172, a9, button20, i9, t173, t174, tr26, th36, t175, th37, h44, t177, t178, tr27, th38, t179, th39, h45, t181, t182, tr28, th40, t183, th41, h46, t185, tr29, th42, t186, br10, t187, br11, t188, t189, th43, h512, t191, h611, t193, p10, t195, tr30, t196, tr31, th44, t198, th45, h513, t200, h612, t202, p11, t204, tr32, th46, t205, th47, h47, t207, tr33, th48, t208, th49, h514, t210, tr34, th50, t212, th51, h515, t214, tr35, th52, t216, th53, h516, t218, br12, t219, tr36, th54, t220, th55, h517, t222, tr37, th56, t224, th57, h518, t226, tr38, th58, t228, th59, h519, t230, tr39, th60, t231, th61, h48, t233, tr40, th62, t235, th63, h520, a10, t237, i10, t239, tr41, th64, t241, th65, h521, a11, t243, i11, t245, tr42, th66, t247, th67, h522, a12, t249, i12, t251, tr43, th68, t253, th69, h523, a13, t255, i13, t257, tr44, th70, t258, th71, h49, t260, tr45, th72, t262, th73, h524, t264, h613, t266, p12, t268, div10, a14, button21, i14, t269, t270, tr46, t271, tr47, th74, t273, th75, h525, t275, p13, t277, div11, a15, button22, i15, t278, t279, a16, button23, i16, t280, t281, tr48, t282, tr49, th76, t284, th77, h526, t286, p14, t288, div12, a17, button24, i17, t289, t290, a18, button25, i18, t291, t292, tr50, th78, t293, th79, h410, t295, tr51, th80, t297, th81, a19, h527, t299, tr52, th82, t301, th83, a20, h528, t303, tr53, th84, t305, th85, a21, h529, t307, tr54, th86, t309, th87, h530, t311, tr55, th88, t313, th89, a22, h531, t315, tr56, th90, t317, th91, a23, h532, t319, tr57, th92, t321, th93, h533, t323, tr58, th94, t324, th95, h411, t326, tr59, th96, t327, th97, h534, t329, div13, button26, t331, button27, t333, button28, t335, tr60, t336, tr61, th98, t337, th99, h535, t339, div14, button29, t341, button30, t343, button31, t345, button32, t347, button33, t349, button34, t351, tr62, t352, tr63, th100, t353, th101, h536, t355, div15, button35, t357, button36, t359, button37, t361, button38, t363, button39, t365, button40, t367, button41, t369, button42, t371, button43, t373, tr64, t374, tr65, th102, t375, th103, p15, current;
 
     	var intro = new Intro({ $$inline: true });
 
     	var social = new Social({ $$inline: true });
 
-    	let each_value = pubs;
+    	let each_value_1 = pubs;
+
+    	let each_blocks_1 = [];
+
+    	for (let i = 0; i < each_value_1.length; i += 1) {
+    		each_blocks_1[i] = create_each_block_1$1(get_each_context_1$1(ctx, each_value_1, i));
+    	}
+
+    	const out = i => transition_out(each_blocks_1[i], 1, 1, () => {
+    		each_blocks_1[i] = null;
+    	});
+
+    	let each_value = other;
 
     	let each_blocks = [];
 
@@ -3466,7 +3830,7 @@ var app = (function () {
     		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
     	}
 
-    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    	const out_1 = i => transition_out(each_blocks[i], 1, 1, () => {
     		each_blocks[i] = null;
     	});
 
@@ -3514,7 +3878,7 @@ var app = (function () {
     			h50.textContent = "PhD in Human-Computer Interaction (HCI)";
     			t18 = space();
     			h60 = element("h6");
-    			h60.textContent = "Carnegie Mellon University - Pittsburgh, PA";
+    			h60.textContent = "Carnegie Mellon University";
     			t20 = space();
     			tr3 = element("tr");
     			t21 = space();
@@ -3529,1329 +3893,1377 @@ var app = (function () {
     			h51.textContent = "B.S. in Computer Science";
     			t26 = space();
     			h61 = element("h6");
-    			h61.textContent = "Georgia Institute of Technology - Atlanta, GA";
+    			h61.textContent = "Georgia Institute of Technology";
     			t28 = space();
     			p0 = element("p");
-    			p0.textContent = "Concentration in intelligence and modeling/simulation. Minor in\n            economics.";
-    			t30 = space();
+    			t29 = text("Concentration in intelligence and modeling/simulation.\n            ");
+    			br2 = element("br");
+    			t30 = text("\n            Minor in economics.");
+    			t31 = space();
     			tr5 = element("tr");
     			th8 = element("th");
     			th8.textContent = "Fall 2017";
-    			t32 = space();
+    			t33 = space();
     			th9 = element("th");
     			h62 = element("h6");
     			h62.textContent = "Sciences Po - Paris, France";
-    			t34 = space();
+    			t35 = space();
     			p1 = element("p");
     			p1.textContent = "Exchange program with a focus on economics and political science.";
-    			t36 = space();
+    			t37 = space();
     			tr6 = element("tr");
     			th10 = element("th");
-    			t37 = space();
+    			t38 = space();
     			th11 = element("th");
     			h41 = element("h4");
     			h41.textContent = "Awards and Fellowships";
-    			t39 = space();
+    			t40 = space();
     			tr7 = element("tr");
     			th12 = element("th");
     			th12.textContent = "May 2019";
-    			t41 = space();
+    			t42 = space();
     			th13 = element("th");
     			h52 = element("h5");
     			h52.textContent = "National Science Foundation Graduate Research Fellowship (NSF GRFP)";
-    			t43 = space();
+    			t44 = space();
     			p2 = element("p");
     			p2.textContent = "Three-year graduate fellowship for independent research. Full\n            tuition with an annual stipend of $34,000.";
-    			t45 = space();
+    			t46 = space();
     			div0 = element("div");
     			a0 = element("a");
     			button0 = element("button");
     			i0 = element("i");
-    			t46 = text("\n                Website");
-    			t47 = space();
-    			tr8 = element("tr");
+    			t47 = text("\n                Website");
     			t48 = space();
+    			tr8 = element("tr");
+    			t49 = space();
     			tr9 = element("tr");
     			th14 = element("th");
     			th14.textContent = "May 2019";
-    			t50 = space();
+    			t51 = space();
     			th15 = element("th");
     			h53 = element("h5");
     			h53.textContent = "Love Family Foundation Scholarship";
-    			t52 = space();
+    			t53 = space();
     			p3 = element("p");
     			p3.textContent = "Co-awarded the $10,000 scholarship for the undergraduate with the\n            most outstanding scholastic record.";
-    			t54 = space();
+    			t55 = space();
     			div1 = element("div");
     			a1 = element("a");
     			button1 = element("button");
     			i1 = element("i");
-    			t55 = text("\n                Announcement");
-    			t56 = space();
-    			tr10 = element("tr");
+    			t56 = text("\n                Announcement");
     			t57 = space();
+    			tr10 = element("tr");
+    			t58 = space();
     			tr11 = element("tr");
     			th16 = element("th");
-    			t58 = text("August 2015\n          ");
-    			br2 = element("br");
-    			t59 = text("\n          - May 2019");
-    			t60 = space();
+    			t59 = text("August 2015\n          ");
+    			br3 = element("br");
+    			t60 = text("\n          - May 2019");
+    			t61 = space();
     			th17 = element("th");
     			h54 = element("h5");
     			h54.textContent = "Stamps President's Scholar";
-    			t62 = space();
+    			t63 = space();
     			h63 = element("h6");
     			h63.textContent = "Georgia Tech and the Stamps Family Charitable Foundation";
-    			t64 = space();
+    			t65 = space();
     			p4 = element("p");
     			p4.textContent = "Full ride scholarship with $15,000 in extracurricular funding\n            awarded to 10 students (27,270 applicants).";
-    			t66 = space();
+    			t67 = space();
     			div2 = element("div");
     			a2 = element("a");
     			button2 = element("button");
     			i2 = element("i");
-    			t67 = text("\n                Website");
-    			t68 = space();
-    			tr12 = element("tr");
+    			t68 = text("\n                Website");
     			t69 = space();
+    			tr12 = element("tr");
+    			t70 = space();
     			tr13 = element("tr");
     			th18 = element("th");
     			th18.textContent = "February 3, 2018";
-    			t71 = space();
+    			t72 = space();
     			th19 = element("th");
     			h55 = element("h5");
     			h55.textContent = "The Data Open Datathon";
-    			t73 = space();
+    			t74 = space();
     			h64 = element("h6");
     			h64.textContent = "Correlation One and Citadel Securities";
-    			t75 = space();
+    			t76 = space();
     			p5 = element("p");
     			p5.textContent = "Placed third and won $2,500 for creating a ML system to predict\n            dangerous road areas.";
-    			t77 = space();
+    			t78 = space();
     			div3 = element("div");
     			a3 = element("a");
     			button3 = element("button");
     			i3 = element("i");
-    			t78 = text("\n                Press Release");
-    			t79 = space();
+    			t79 = text("\n                Press Release");
+    			t80 = space();
     			tr14 = element("tr");
     			th20 = element("th");
-    			t80 = space();
+    			t81 = space();
     			th21 = element("th");
     			h42 = element("h4");
     			h42.textContent = "Industry Experience";
-    			t82 = space();
+    			t83 = space();
     			tr15 = element("tr");
     			th22 = element("th");
-    			t83 = text("May 2018\n          ");
-    			br3 = element("br");
-    			t84 = text("\n          - August 2018");
-    			t85 = space();
+    			t84 = text("May 2018\n          ");
+    			br4 = element("br");
+    			t85 = text("\n          - August 2018");
+    			t86 = space();
     			th23 = element("th");
     			h56 = element("h5");
     			h56.textContent = "Google";
-    			t87 = space();
+    			t88 = space();
     			h65 = element("h6");
     			h65.textContent = "Software Engineering Intern";
-    			t89 = space();
+    			t90 = space();
     			p6 = element("p");
     			p6.textContent = "Researched and prototyped improvements for automated driver\n            assistance systems and hyperlocal weather prediction for the next\n            generation of Android Auto.";
-    			t91 = space();
+    			t92 = space();
     			div4 = element("div");
     			a4 = element("a");
     			button4 = element("button");
     			i4 = element("i");
-    			t92 = text("\n                WSJ Article");
-    			t93 = space();
+    			t93 = text("\n                WSJ Article");
+    			t94 = space();
     			button5 = element("button");
     			button5.textContent = "Android Auto";
-    			t95 = space();
+    			t96 = space();
     			button6 = element("button");
     			button6.textContent = "Java";
-    			t97 = space();
+    			t98 = space();
     			button7 = element("button");
     			button7.textContent = "C++";
-    			t99 = space();
+    			t100 = space();
     			button8 = element("button");
     			button8.textContent = "Protocol Buffers";
-    			t101 = space();
-    			tr16 = element("tr");
     			t102 = space();
+    			tr16 = element("tr");
+    			t103 = space();
     			tr17 = element("tr");
     			th24 = element("th");
-    			t103 = text("May 2017\n          ");
-    			br4 = element("br");
-    			t104 = text("\n          - August 2017");
-    			t105 = space();
+    			t104 = text("May 2017\n          ");
+    			br5 = element("br");
+    			t105 = text("\n          - August 2017");
+    			t106 = space();
     			th25 = element("th");
     			h57 = element("h5");
     			h57.textContent = "Google";
-    			t107 = space();
+    			t108 = space();
     			h66 = element("h6");
     			h66.textContent = "Software Engineering Intern";
-    			t109 = space();
+    			t110 = space();
     			p7 = element("p");
     			p7.textContent = "Created an anomaly detection and trend analysis system for Google's\n            data processing pipelines.";
-    			t111 = space();
+    			t112 = space();
     			div5 = element("div");
     			button9 = element("button");
     			button9.textContent = "Apache Beam/Cloud DataFlow";
-    			t113 = space();
+    			t114 = space();
     			button10 = element("button");
     			button10.textContent = "Java";
-    			t115 = space();
+    			t116 = space();
     			button11 = element("button");
     			button11.textContent = "C++";
-    			t117 = space();
+    			t118 = space();
     			button12 = element("button");
     			button12.textContent = "SQL";
-    			t119 = space();
-    			tr18 = element("tr");
     			t120 = space();
+    			tr18 = element("tr");
+    			t121 = space();
     			tr19 = element("tr");
     			th26 = element("th");
-    			t121 = text("May 2016\n          ");
-    			br5 = element("br");
-    			t122 = text("\n          - August 2016");
-    			t123 = space();
+    			t122 = text("May 2016\n          ");
+    			br6 = element("br");
+    			t123 = text("\n          - August 2016");
+    			t124 = space();
     			th27 = element("th");
     			h58 = element("h5");
     			h58.textContent = "Google";
-    			t125 = space();
+    			t126 = space();
     			h67 = element("h6");
     			h67.textContent = "Engineering Practicum Intern";
-    			t127 = space();
+    			t128 = space();
     			p8 = element("p");
     			p8.textContent = "Built an analytics platform for monitoring and catching erroneous\n            edits to Google Maps.";
-    			t129 = space();
+    			t130 = space();
     			div6 = element("div");
     			button13 = element("button");
     			button13.textContent = "Go";
-    			t131 = space();
+    			t132 = space();
     			button14 = element("button");
     			button14.textContent = "BigQuery";
-    			t133 = space();
+    			t134 = space();
     			button15 = element("button");
     			button15.textContent = "JavaScript";
-    			t135 = space();
+    			t136 = space();
     			tr20 = element("tr");
     			th28 = element("th");
-    			t136 = space();
+    			t137 = space();
     			th29 = element("th");
     			h43 = element("h4");
     			h43.textContent = "Research Experience";
-    			t138 = space();
+    			t139 = space();
     			tr21 = element("tr");
     			th30 = element("th");
-    			t139 = text("August 2019\n          ");
-    			br6 = element("br");
-    			t140 = text("\n          - Present");
-    			t141 = space();
+    			t140 = text("August 2019\n          ");
+    			br7 = element("br");
+    			t141 = text("\n          - Present");
+    			t142 = space();
     			th31 = element("th");
     			h59 = element("h5");
     			h59.textContent = "Carnegie Mellon Human Computer Interaction Institute (HCII)";
-    			t143 = space();
+    			t144 = space();
     			h68 = element("h6");
     			h68.textContent = "Graduate Research Assistant";
-    			t145 = space();
+    			t146 = space();
     			div7 = element("div");
     			a5 = element("a");
     			button16 = element("button");
     			i5 = element("i");
-    			t146 = text("\n                CMU Data Interaction Group");
-    			t147 = space();
-    			tr22 = element("tr");
+    			t147 = text("\n                CMU Data Interaction Group");
     			t148 = space();
+    			tr22 = element("tr");
+    			t149 = space();
     			tr23 = element("tr");
     			th32 = element("th");
-    			t149 = text("January 2018\n          ");
-    			br7 = element("br");
-    			t150 = text("\n          - May 2019");
-    			t151 = space();
+    			t150 = text("January 2018\n          ");
+    			br8 = element("br");
+    			t151 = text("\n          - May 2019");
+    			t152 = space();
     			th33 = element("th");
     			h510 = element("h5");
     			h510.textContent = "Polo Club of Data Science";
-    			t153 = space();
+    			t154 = space();
     			h69 = element("h6");
-    			h69.textContent = "Undergraduate Researcher";
-    			t155 = space();
+    			h69.textContent = "Undergraduate Research Assistant";
+    			t156 = space();
     			div8 = element("div");
     			a6 = element("a");
     			button17 = element("button");
     			i6 = element("i");
-    			t156 = text("\n                Polo Club");
-    			t157 = space();
-    			tr24 = element("tr");
+    			t157 = text("\n                Polo Club");
     			t158 = space();
+    			tr24 = element("tr");
+    			t159 = space();
     			tr25 = element("tr");
     			th34 = element("th");
-    			t159 = text("September 2015\n          ");
-    			br8 = element("br");
-    			t160 = text("\n          - May 2017");
-    			t161 = space();
+    			t160 = text("September 2015\n          ");
+    			br9 = element("br");
+    			t161 = text("\n          - May 2017");
+    			t162 = space();
     			th35 = element("th");
     			h511 = element("h5");
     			h511.textContent = "PROX-1 Satellite";
-    			t163 = space();
+    			t164 = space();
     			h610 = element("h6");
     			h610.textContent = "Flight Software Lead and Researcher";
-    			t165 = space();
+    			t166 = space();
     			p9 = element("p");
     			p9.textContent = "Led a team of engineers in developing the software for a fully\n            undergraduate-led satellite mission.";
-    			t167 = space();
+    			t168 = space();
     			div9 = element("div");
     			a7 = element("a");
     			button18 = element("button");
     			i7 = element("i");
-    			t168 = text("\n                In space!");
-    			t169 = space();
+    			t169 = text("\n                In space!");
+    			t170 = space();
     			a8 = element("a");
     			button19 = element("button");
     			i8 = element("i");
-    			t170 = text("\n                Website");
-    			t171 = space();
+    			t171 = text("\n                Website");
+    			t172 = space();
     			a9 = element("a");
     			button20 = element("button");
     			i9 = element("i");
-    			t172 = text("\n                Press release");
-    			t173 = space();
+    			t173 = text("\n                Press release");
+    			t174 = space();
     			tr26 = element("tr");
     			th36 = element("th");
-    			t174 = space();
+    			t175 = space();
     			th37 = element("th");
     			h44 = element("h4");
-    			h44.textContent = "Publications";
-    			t176 = space();
+    			h44.textContent = "Refereed Publications";
+    			t177 = space();
+
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].c();
+    			}
+
+    			t178 = space();
+    			tr27 = element("tr");
+    			th38 = element("th");
+    			t179 = space();
+    			th39 = element("th");
+    			h45 = element("h4");
+    			h45.textContent = "Workshops, Demos, Posters, and Preprints";
+    			t181 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t177 = space();
-    			tr27 = element("tr");
-    			th38 = element("th");
-    			t178 = space();
-    			th39 = element("th");
-    			h45 = element("h4");
-    			h45.textContent = "Teaching";
-    			t180 = space();
+    			t182 = space();
     			tr28 = element("tr");
     			th40 = element("th");
-    			th40.textContent = "Fall 2016, Spring 2017, Spring 2018";
-    			t182 = space();
+    			t183 = space();
     			th41 = element("th");
+    			h46 = element("h4");
+    			h46.textContent = "Teaching";
+    			t185 = space();
+    			tr29 = element("tr");
+    			th42 = element("th");
+    			t186 = text("Fall 2016\n          ");
+    			br10 = element("br");
+    			t187 = text("\n          Spring 2017\n          ");
+    			br11 = element("br");
+    			t188 = text("\n          Spring 2018");
+    			t189 = space();
+    			th43 = element("th");
     			h512 = element("h5");
-    			h512.textContent = "Undergraduate Teaching Assistant";
-    			t184 = space();
+    			h512.textContent = "CS1332 - Data Structures and Algorithms";
+    			t191 = space();
     			h611 = element("h6");
-    			h611.textContent = "CS1332 - Data Structures and Algorithms";
-    			t186 = space();
+    			h611.textContent = "Undergraduate Teaching Assistant";
+    			t193 = space();
     			p10 = element("p");
     			p10.textContent = "Taught a 1 1/2 hour weekly recitation, graded tests and homework,\n            and helped create assignments.";
-    			t188 = space();
-    			tr29 = element("tr");
-    			t189 = space();
-    			tr30 = element("tr");
-    			th42 = element("th");
-    			th42.textContent = "Fall 2016";
-    			t191 = space();
-    			th43 = element("th");
-    			h513 = element("h5");
-    			h513.textContent = "Team Leader";
-    			t193 = space();
-    			h612 = element("h6");
-    			h612.textContent = "GT 1000 - First-Year Seminar";
     			t195 = space();
-    			p11 = element("p");
-    			p11.textContent = "Designed a class curriculum for incoming first years and helped lead\n            a weekly seminar class.";
-    			t197 = space();
+    			tr30 = element("tr");
+    			t196 = space();
     			tr31 = element("tr");
     			th44 = element("th");
+    			th44.textContent = "Fall 2016";
     			t198 = space();
     			th45 = element("th");
-    			h46 = element("h4");
-    			h46.textContent = "Service";
+    			h513 = element("h5");
+    			h513.textContent = "GT 1000 - First-Year Seminar";
     			t200 = space();
+    			h612 = element("h6");
+    			h612.textContent = "Team Leader";
+    			t202 = space();
+    			p11 = element("p");
+    			p11.textContent = "Designed a class curriculum for incoming first years and helped lead\n            a weekly seminar class.";
+    			t204 = space();
     			tr32 = element("tr");
     			th46 = element("th");
-    			t201 = space();
+    			t205 = space();
     			th47 = element("th");
-    			h514 = element("h5");
-    			h514.textContent = "Student Volunteer";
-    			t203 = space();
+    			h47 = element("h4");
+    			h47.textContent = "Service";
+    			t207 = space();
     			tr33 = element("tr");
     			th48 = element("th");
-    			th48.textContent = "October 2019";
-    			t205 = space();
+    			t208 = space();
     			th49 = element("th");
-    			h515 = element("h5");
-    			h515.textContent = "IEEE Visualization Conference (VIS)";
-    			t207 = space();
+    			h514 = element("h5");
+    			h514.textContent = "Student Volunteer";
+    			t210 = space();
     			tr34 = element("tr");
     			th50 = element("th");
-    			th50.textContent = "January 2019";
-    			t209 = space();
-    			th51 = element("th");
-    			h516 = element("h5");
-    			h516.textContent = "ACM Fairness, Accountability, and Transparency (FAT*)";
-    			t211 = space();
-    			br9 = element("br");
+    			th50.textContent = "October 2019";
     			t212 = space();
+    			th51 = element("th");
+    			h515 = element("h5");
+    			h515.textContent = "IEEE Visualization Conference (VIS)";
+    			t214 = space();
     			tr35 = element("tr");
     			th52 = element("th");
-    			t213 = space();
+    			th52.textContent = "January 2019";
+    			t216 = space();
     			th53 = element("th");
-    			h517 = element("h5");
-    			h517.textContent = "Reviewer";
-    			t215 = space();
+    			h516 = element("h5");
+    			h516.textContent = "ACM Fairness, Accountability, and Transparency (FAT*)";
+    			t218 = space();
+    			br12 = element("br");
+    			t219 = space();
     			tr36 = element("tr");
     			th54 = element("th");
-    			th54.textContent = "2019";
-    			t217 = space();
+    			t220 = space();
     			th55 = element("th");
-    			h518 = element("h5");
-    			h518.textContent = "IEEE Transactions on Visualization and Computer Graphics (TVCG)";
-    			t219 = space();
+    			h517 = element("h5");
+    			h517.textContent = "Reviewer";
+    			t222 = space();
     			tr37 = element("tr");
     			th56 = element("th");
     			th56.textContent = "2019";
-    			t221 = space();
+    			t224 = space();
     			th57 = element("th");
-    			h519 = element("h5");
-    			h519.textContent = "ACM Transactions on Interactive Intelligent Systems (TiiS)";
-    			t223 = space();
+    			h518 = element("h5");
+    			h518.textContent = "IEEE Transactions on Visualization and Computer Graphics (TVCG)";
+    			t226 = space();
     			tr38 = element("tr");
     			th58 = element("th");
-    			t224 = space();
+    			th58.textContent = "2019";
+    			t228 = space();
     			th59 = element("th");
-    			h47 = element("h4");
-    			h47.textContent = "Press";
-    			t226 = space();
+    			h519 = element("h5");
+    			h519.textContent = "ACM Transactions on Interactive Intelligent Systems (TiiS)";
+    			t230 = space();
     			tr39 = element("tr");
     			th60 = element("th");
-    			th60.textContent = "2019";
-    			t228 = space();
+    			t231 = space();
     			th61 = element("th");
-    			h520 = element("h5");
-    			a10 = element("a");
-    			a10.textContent = "\"Visualizing Fairness in Machine Learning\"";
-    			t230 = text("\n            -\n            ");
-    			i10 = element("i");
-    			i10.textContent = "Data Stories Podcast";
-    			t232 = space();
+    			h48 = element("h4");
+    			h48.textContent = "Press";
+    			t233 = space();
     			tr40 = element("tr");
     			th62 = element("th");
     			th62.textContent = "2019";
-    			t234 = space();
+    			t235 = space();
     			th63 = element("th");
-    			h521 = element("h5");
-    			a11 = element("a");
-    			a11.textContent = "\"Alex Cabrera Wins Love Family Foundation Scholarship\"";
-    			t236 = text("\n            -\n            ");
-    			i11 = element("i");
-    			i11.textContent = "GT SCS";
-    			t238 = space();
+    			h520 = element("h5");
+    			a10 = element("a");
+    			a10.textContent = "\"Visualizing Fairness in Machine Learning\"";
+    			t237 = text("\n            -\n            ");
+    			i10 = element("i");
+    			i10.textContent = "Data Stories Podcast";
+    			t239 = space();
     			tr41 = element("tr");
     			th64 = element("th");
     			th64.textContent = "2019";
-    			t240 = space();
+    			t241 = space();
     			th65 = element("th");
+    			h521 = element("h5");
+    			a11 = element("a");
+    			a11.textContent = "\"Alex Cabrera Wins Love Family Foundation Scholarship\"";
+    			t243 = text("\n            -\n            ");
+    			i11 = element("i");
+    			i11.textContent = "GT SCS";
+    			t245 = space();
+    			tr42 = element("tr");
+    			th66 = element("th");
+    			th66.textContent = "2019";
+    			t247 = space();
+    			th67 = element("th");
     			h522 = element("h5");
     			a12 = element("a");
     			a12.textContent = "\"Georgia Tech Satellite Successfully Launched Into Space \"";
-    			t242 = text("\n            -\n            ");
+    			t249 = text("\n            -\n            ");
     			i12 = element("i");
     			i12.textContent = "Georgia Tech";
-    			t244 = space();
-    			tr42 = element("tr");
-    			th66 = element("th");
-    			th66.textContent = "2018";
-    			t246 = space();
-    			th67 = element("th");
+    			t251 = space();
+    			tr43 = element("tr");
+    			th68 = element("th");
+    			th68.textContent = "2018";
+    			t253 = space();
+    			th69 = element("th");
     			h523 = element("h5");
     			a13 = element("a");
     			a13.textContent = "\"Datathon Challenges Students to Create Solutions to Real-World\n              Problems\"";
-    			t248 = text("\n            -\n            ");
+    			t255 = text("\n            -\n            ");
     			i13 = element("i");
     			i13.textContent = "GT SCS";
-    			t250 = space();
-    			tr43 = element("tr");
-    			th68 = element("th");
-    			t251 = space();
-    			th69 = element("th");
-    			h48 = element("h4");
-    			h48.textContent = "Projects";
-    			t253 = space();
+    			t257 = space();
     			tr44 = element("tr");
     			th70 = element("th");
-    			th70.textContent = "Fall 2018";
-    			t255 = space();
+    			t258 = space();
     			th71 = element("th");
+    			h49 = element("h4");
+    			h49.textContent = "Projects";
+    			t260 = space();
+    			tr45 = element("tr");
+    			th72 = element("th");
+    			th72.textContent = "Fall 2018";
+    			t262 = space();
+    			th73 = element("th");
     			h524 = element("h5");
     			h524.textContent = "ICLR'19 Reproducibility Challenge";
-    			t257 = space();
+    			t264 = space();
     			h613 = element("h6");
     			h613.textContent = "Generative Adversarial Models for Learning Private and Fair\n            Representations";
-    			t259 = space();
+    			t266 = space();
     			p12 = element("p");
     			p12.textContent = "Implemented and reproduced an ICLR'19 submission using GANs to\n            decorrelate sensitive data.";
-    			t261 = space();
+    			t268 = space();
     			div10 = element("div");
     			a14 = element("a");
     			button21 = element("button");
     			i14 = element("i");
-    			t262 = text("\n                GitHub");
-    			t263 = space();
-    			tr45 = element("tr");
-    			t264 = space();
+    			t269 = text("\n                GitHub");
+    			t270 = space();
     			tr46 = element("tr");
-    			th72 = element("th");
-    			th72.textContent = "Spring 2018";
-    			t266 = space();
-    			th73 = element("th");
+    			t271 = space();
+    			tr47 = element("tr");
+    			th74 = element("th");
+    			th74.textContent = "Spring 2018";
+    			t273 = space();
+    			th75 = element("th");
     			h525 = element("h5");
     			h525.textContent = "Georgia Tech Bus System Analysis";
-    			t268 = space();
+    			t275 = space();
     			p13 = element("p");
     			p13.textContent = "System that combines Google Maps and graph algorithms to enable\n            navigation for GT buses.";
-    			t270 = space();
+    			t277 = space();
     			div11 = element("div");
     			a15 = element("a");
     			button22 = element("button");
     			i15 = element("i");
-    			t271 = text("\n                Poster");
-    			t272 = space();
+    			t278 = text("\n                Poster");
+    			t279 = space();
     			a16 = element("a");
     			button23 = element("button");
     			i16 = element("i");
-    			t273 = text("\n                Class");
-    			t274 = space();
-    			tr47 = element("tr");
-    			t275 = space();
+    			t280 = text("\n                Class");
+    			t281 = space();
     			tr48 = element("tr");
-    			th74 = element("th");
-    			th74.textContent = "Spring 2014";
-    			t277 = space();
-    			th75 = element("th");
+    			t282 = space();
+    			tr49 = element("tr");
+    			th76 = element("th");
+    			th76.textContent = "Spring 2014";
+    			t284 = space();
+    			th77 = element("th");
     			h526 = element("h5");
     			h526.textContent = "CTF Resources";
-    			t279 = space();
+    			t286 = space();
     			p14 = element("p");
     			p14.textContent = "Guide and resources for capture the flag (CTF) competitions with\n            over 1,000 stars on GitHub.";
-    			t281 = space();
+    			t288 = space();
     			div12 = element("div");
     			a17 = element("a");
     			button24 = element("button");
     			i17 = element("i");
-    			t282 = text("\n                Website");
-    			t283 = space();
+    			t289 = text("\n                Website");
+    			t290 = space();
     			a18 = element("a");
     			button25 = element("button");
     			i18 = element("i");
-    			t284 = text("\n                GitHub");
-    			t285 = space();
-    			tr49 = element("tr");
-    			th76 = element("th");
-    			t286 = space();
-    			th77 = element("th");
-    			h49 = element("h4");
-    			h49.textContent = "Selected Classes";
-    			t288 = space();
+    			t291 = text("\n                GitHub");
+    			t292 = space();
     			tr50 = element("tr");
     			th78 = element("th");
-    			th78.textContent = "Fall 2018";
-    			t290 = space();
+    			t293 = space();
     			th79 = element("th");
-    			a19 = element("a");
-    			h527 = element("h5");
-    			h527.textContent = "CS 4803/7643 - Deep Learning";
-    			t292 = space();
+    			h410 = element("h4");
+    			h410.textContent = "Selected Classes";
+    			t295 = space();
     			tr51 = element("tr");
     			th80 = element("th");
-    			th80.textContent = "Spring 2018";
-    			t294 = space();
+    			th80.textContent = "Spring 2019";
+    			t297 = space();
     			th81 = element("th");
-    			a20 = element("a");
-    			h528 = element("h5");
-    			h528.textContent = "CX 4242/CSE 6242 - Data and Visual Analytics";
-    			t296 = space();
+    			a19 = element("a");
+    			h527 = element("h5");
+    			h527.textContent = "Applied Research Methods";
+    			t299 = space();
     			tr52 = element("tr");
     			th82 = element("th");
-    			th82.textContent = "Fall 2017";
-    			t298 = space();
+    			th82.textContent = "Fall 2018";
+    			t301 = space();
     			th83 = element("th");
-    			h529 = element("h5");
-    			h529.textContent = "BECO 1750A - Money and Banking";
-    			t300 = space();
+    			a20 = element("a");
+    			h528 = element("h5");
+    			h528.textContent = "Deep Learning";
+    			t303 = space();
     			tr53 = element("tr");
     			th84 = element("th");
-    			th84.textContent = "Spring 2017";
-    			t302 = space();
+    			th84.textContent = "Spring 2018";
+    			t305 = space();
     			th85 = element("th");
     			a21 = element("a");
-    			h530 = element("h5");
-    			h530.textContent = "CS 4641/7641 - Machine Learning";
-    			t304 = space();
+    			h529 = element("h5");
+    			h529.textContent = "Data and Visual Analytics";
+    			t307 = space();
     			tr54 = element("tr");
     			th86 = element("th");
-    			th86.textContent = "Spring 2017";
-    			t306 = space();
+    			th86.textContent = "Fall 2017";
+    			t309 = space();
     			th87 = element("th");
-    			a22 = element("a");
-    			h531 = element("h5");
-    			h531.textContent = "CX 4230 - Computer Simulation";
-    			t308 = space();
+    			h530 = element("h5");
+    			h530.textContent = "Money and Banking";
+    			t311 = space();
     			tr55 = element("tr");
     			th88 = element("th");
     			th88.textContent = "Spring 2017";
-    			t310 = space();
+    			t313 = space();
     			th89 = element("th");
-    			h532 = element("h5");
-    			h532.textContent = "CS 3511 - Honors Algorithms";
-    			t312 = space();
+    			a22 = element("a");
+    			h531 = element("h5");
+    			h531.textContent = "Machine Learning";
+    			t315 = space();
     			tr56 = element("tr");
     			th90 = element("th");
-    			t313 = space();
+    			th90.textContent = "Spring 2017";
+    			t317 = space();
     			th91 = element("th");
-    			h410 = element("h4");
-    			h410.textContent = "Skills";
-    			t315 = space();
+    			a23 = element("a");
+    			h532 = element("h5");
+    			h532.textContent = "Computer Simulation";
+    			t319 = space();
     			tr57 = element("tr");
     			th92 = element("th");
-    			t316 = space();
+    			th92.textContent = "Spring 2017";
+    			t321 = space();
     			th93 = element("th");
     			h533 = element("h5");
-    			h533.textContent = "Languages";
-    			t318 = space();
+    			h533.textContent = "Honors Algorithms";
+    			t323 = space();
+    			tr58 = element("tr");
+    			th94 = element("th");
+    			t324 = space();
+    			th95 = element("th");
+    			h411 = element("h4");
+    			h411.textContent = "Skills";
+    			t326 = space();
+    			tr59 = element("tr");
+    			th96 = element("th");
+    			t327 = space();
+    			th97 = element("th");
+    			h534 = element("h5");
+    			h534.textContent = "Languages";
+    			t329 = space();
     			div13 = element("div");
     			button26 = element("button");
     			button26.textContent = "English - Native";
-    			t320 = space();
+    			t331 = space();
     			button27 = element("button");
     			button27.textContent = "Spanish - Native";
-    			t322 = space();
+    			t333 = space();
     			button28 = element("button");
     			button28.textContent = "French - Conversational (B1)";
-    			t324 = space();
-    			tr58 = element("tr");
-    			t325 = space();
-    			tr59 = element("tr");
-    			th94 = element("th");
-    			t326 = space();
-    			th95 = element("th");
-    			h534 = element("h5");
-    			h534.textContent = "Programming Languages";
-    			t328 = space();
+    			t335 = space();
+    			tr60 = element("tr");
+    			t336 = space();
+    			tr61 = element("tr");
+    			th98 = element("th");
+    			t337 = space();
+    			th99 = element("th");
+    			h535 = element("h5");
+    			h535.textContent = "Programming Languages";
+    			t339 = space();
     			div14 = element("div");
     			button29 = element("button");
     			button29.textContent = "Java";
-    			t330 = space();
+    			t341 = space();
     			button30 = element("button");
     			button30.textContent = "Javascript";
-    			t332 = space();
+    			t343 = space();
     			button31 = element("button");
     			button31.textContent = "Python";
-    			t334 = space();
+    			t345 = space();
     			button32 = element("button");
     			button32.textContent = "C/C++";
-    			t336 = space();
+    			t347 = space();
     			button33 = element("button");
     			button33.textContent = "SQL";
-    			t338 = space();
+    			t349 = space();
     			button34 = element("button");
     			button34.textContent = "Go";
-    			t340 = space();
-    			tr60 = element("tr");
-    			t341 = space();
-    			tr61 = element("tr");
-    			th96 = element("th");
-    			t342 = space();
-    			th97 = element("th");
-    			h535 = element("h5");
-    			h535.textContent = "Technologies";
-    			t344 = space();
+    			t351 = space();
+    			tr62 = element("tr");
+    			t352 = space();
+    			tr63 = element("tr");
+    			th100 = element("th");
+    			t353 = space();
+    			th101 = element("th");
+    			h536 = element("h5");
+    			h536.textContent = "Technologies";
+    			t355 = space();
     			div15 = element("div");
     			button35 = element("button");
     			button35.textContent = "Machine Learning";
-    			t346 = space();
+    			t357 = space();
     			button36 = element("button");
     			button36.textContent = "Full Stack Development";
-    			t348 = space();
+    			t359 = space();
     			button37 = element("button");
     			button37.textContent = "React";
-    			t350 = space();
+    			t361 = space();
     			button38 = element("button");
     			button38.textContent = "Svelte";
-    			t352 = space();
+    			t363 = space();
     			button39 = element("button");
     			button39.textContent = "Vega";
-    			t354 = space();
+    			t365 = space();
     			button40 = element("button");
     			button40.textContent = "D3";
-    			t356 = space();
+    			t367 = space();
     			button41 = element("button");
     			button41.textContent = "PyTorch";
-    			t358 = space();
+    			t369 = space();
     			button42 = element("button");
     			button42.textContent = "Cloud Dataflow/MapReduce";
-    			t360 = space();
+    			t371 = space();
     			button43 = element("button");
     			button43.textContent = "Amazon Mechanical Turk";
-    			t362 = space();
-    			tr62 = element("tr");
-    			t363 = space();
-    			tr63 = element("tr");
-    			th98 = element("th");
-    			t364 = space();
-    			th99 = element("th");
+    			t373 = space();
+    			tr64 = element("tr");
+    			t374 = space();
+    			tr65 = element("tr");
+    			th102 = element("th");
+    			t375 = space();
+    			th103 = element("th");
     			p15 = element("p");
-    			p15.textContent = "Last updated March 6, 2020.";
-    			attr_dev(th0, "class", "date svelte-ccym40");
-    			add_location(th0, file$9, 130, 8, 1853);
-    			attr_dev(span0, "class", "color svelte-ccym40");
-    			add_location(span0, file$9, 133, 12, 1937);
-    			attr_dev(span1, "class", "color red svelte-ccym40");
-    			add_location(span1, file$9, 134, 12, 1988);
-    			attr_dev(span2, "class", "color svelte-ccym40");
-    			add_location(span2, file$9, 135, 12, 2036);
-    			attr_dev(span3, "class", "color red svelte-ccym40");
-    			add_location(span3, file$9, 136, 12, 2087);
+    			p15.textContent = "Last updated April 1, 2020.";
+    			attr_dev(th0, "class", "date svelte-qaq4cq");
+    			add_location(th0, file$9, 131, 8, 1892);
+    			attr_dev(span0, "class", "color svelte-qaq4cq");
+    			add_location(span0, file$9, 134, 12, 1976);
+    			attr_dev(span1, "class", "color red svelte-qaq4cq");
+    			add_location(span1, file$9, 135, 12, 2027);
+    			attr_dev(span2, "class", "color svelte-qaq4cq");
+    			add_location(span2, file$9, 136, 12, 2075);
+    			attr_dev(span3, "class", "color red svelte-qaq4cq");
+    			add_location(span3, file$9, 137, 12, 2126);
     			attr_dev(h3, "id", "name");
-    			attr_dev(h3, "class", "svelte-ccym40");
-    			add_location(h3, file$9, 132, 10, 1910);
-    			attr_dev(th1, "class", "intro svelte-ccym40");
-    			add_location(th1, file$9, 131, 8, 1881);
-    			add_location(tr0, file$9, 129, 6, 1840);
-    			attr_dev(th2, "class", "date svelte-ccym40");
-    			add_location(th2, file$9, 146, 8, 2255);
-    			attr_dev(h40, "class", "header svelte-ccym40");
-    			add_location(h40, file$9, 148, 10, 2298);
-    			attr_dev(th3, "class", "svelte-ccym40");
-    			add_location(th3, file$9, 147, 8, 2283);
-    			add_location(tr1, file$9, 145, 6, 2242);
-    			add_location(br0, file$9, 154, 10, 2440);
-    			attr_dev(th4, "class", "date svelte-ccym40");
-    			add_location(th4, file$9, 152, 8, 2390);
-    			attr_dev(h50, "class", "svelte-ccym40");
-    			add_location(h50, file$9, 158, 10, 2504);
-    			attr_dev(h60, "class", "svelte-ccym40");
-    			add_location(h60, file$9, 159, 10, 2563);
-    			attr_dev(th5, "class", "svelte-ccym40");
-    			add_location(th5, file$9, 157, 8, 2489);
-    			attr_dev(tr2, "class", "item svelte-ccym40");
-    			add_location(tr2, file$9, 151, 6, 2364);
-    			attr_dev(tr3, "class", "buffer svelte-ccym40");
-    			add_location(tr3, file$9, 162, 6, 2648);
-    			add_location(br1, file$9, 166, 10, 2752);
-    			attr_dev(th6, "class", "date svelte-ccym40");
-    			add_location(th6, file$9, 164, 8, 2702);
-    			attr_dev(h51, "class", "svelte-ccym40");
-    			add_location(h51, file$9, 170, 10, 2817);
-    			attr_dev(h61, "class", "svelte-ccym40");
-    			add_location(h61, file$9, 171, 10, 2861);
-    			attr_dev(p0, "class", "desc svelte-ccym40");
-    			add_location(p0, file$9, 172, 10, 2926);
-    			attr_dev(th7, "class", "svelte-ccym40");
-    			add_location(th7, file$9, 169, 8, 2802);
-    			attr_dev(tr4, "class", "item svelte-ccym40");
-    			add_location(tr4, file$9, 163, 6, 2676);
-    			attr_dev(th8, "class", "date svelte-ccym40");
-    			add_location(th8, file$9, 179, 8, 3115);
-    			attr_dev(h62, "class", "svelte-ccym40");
-    			add_location(h62, file$9, 181, 10, 3170);
-    			attr_dev(p1, "class", "desc svelte-ccym40");
-    			add_location(p1, file$9, 182, 10, 3217);
-    			attr_dev(th9, "class", "svelte-ccym40");
-    			add_location(th9, file$9, 180, 8, 3155);
-    			attr_dev(tr5, "class", "item svelte-ccym40");
-    			add_location(tr5, file$9, 178, 6, 3089);
-    			attr_dev(th10, "class", "date svelte-ccym40");
-    			add_location(th10, file$9, 189, 8, 3394);
-    			attr_dev(h41, "class", "header svelte-ccym40");
-    			add_location(h41, file$9, 191, 10, 3437);
-    			attr_dev(th11, "class", "svelte-ccym40");
-    			add_location(th11, file$9, 190, 8, 3422);
-    			add_location(tr6, file$9, 188, 6, 3381);
-    			attr_dev(th12, "class", "date svelte-ccym40");
-    			add_location(th12, file$9, 195, 8, 3542);
-    			attr_dev(h52, "class", "svelte-ccym40");
-    			add_location(h52, file$9, 197, 10, 3596);
-    			attr_dev(p2, "class", "desc svelte-ccym40");
-    			add_location(p2, file$9, 200, 10, 3707);
-    			attr_dev(i0, "class", "fas fa-globe svelte-ccym40");
-    			add_location(i0, file$9, 207, 16, 3984);
-    			add_location(button0, file$9, 206, 14, 3959);
+    			attr_dev(h3, "class", "svelte-qaq4cq");
+    			add_location(h3, file$9, 133, 10, 1949);
+    			attr_dev(th1, "class", "intro svelte-qaq4cq");
+    			add_location(th1, file$9, 132, 8, 1920);
+    			add_location(tr0, file$9, 130, 6, 1879);
+    			attr_dev(th2, "class", "date svelte-qaq4cq");
+    			add_location(th2, file$9, 147, 8, 2294);
+    			attr_dev(h40, "class", "header svelte-qaq4cq");
+    			add_location(h40, file$9, 149, 10, 2337);
+    			attr_dev(th3, "class", "svelte-qaq4cq");
+    			add_location(th3, file$9, 148, 8, 2322);
+    			add_location(tr1, file$9, 146, 6, 2281);
+    			add_location(br0, file$9, 155, 10, 2479);
+    			attr_dev(th4, "class", "date svelte-qaq4cq");
+    			add_location(th4, file$9, 153, 8, 2429);
+    			attr_dev(h50, "class", "svelte-qaq4cq");
+    			add_location(h50, file$9, 159, 10, 2543);
+    			attr_dev(h60, "class", "svelte-qaq4cq");
+    			add_location(h60, file$9, 160, 10, 2602);
+    			attr_dev(th5, "class", "svelte-qaq4cq");
+    			add_location(th5, file$9, 158, 8, 2528);
+    			attr_dev(tr2, "class", "item svelte-qaq4cq");
+    			add_location(tr2, file$9, 152, 6, 2403);
+    			attr_dev(tr3, "class", "buffer svelte-qaq4cq");
+    			add_location(tr3, file$9, 163, 6, 2670);
+    			add_location(br1, file$9, 167, 10, 2774);
+    			attr_dev(th6, "class", "date svelte-qaq4cq");
+    			add_location(th6, file$9, 165, 8, 2724);
+    			attr_dev(h51, "class", "svelte-qaq4cq");
+    			add_location(h51, file$9, 171, 10, 2839);
+    			attr_dev(h61, "class", "svelte-qaq4cq");
+    			add_location(h61, file$9, 172, 10, 2883);
+    			add_location(br2, file$9, 175, 12, 3030);
+    			attr_dev(p0, "class", "desc svelte-qaq4cq");
+    			add_location(p0, file$9, 173, 10, 2934);
+    			attr_dev(th7, "class", "svelte-qaq4cq");
+    			add_location(th7, file$9, 170, 8, 2824);
+    			attr_dev(tr4, "class", "item svelte-qaq4cq");
+    			add_location(tr4, file$9, 164, 6, 2698);
+    			attr_dev(th8, "class", "date svelte-qaq4cq");
+    			add_location(th8, file$9, 181, 8, 3142);
+    			attr_dev(h62, "class", "svelte-qaq4cq");
+    			add_location(h62, file$9, 183, 10, 3197);
+    			attr_dev(p1, "class", "desc svelte-qaq4cq");
+    			add_location(p1, file$9, 184, 10, 3244);
+    			attr_dev(th9, "class", "svelte-qaq4cq");
+    			add_location(th9, file$9, 182, 8, 3182);
+    			attr_dev(tr5, "class", "item svelte-qaq4cq");
+    			add_location(tr5, file$9, 180, 6, 3116);
+    			attr_dev(th10, "class", "date svelte-qaq4cq");
+    			add_location(th10, file$9, 191, 8, 3421);
+    			attr_dev(h41, "class", "header svelte-qaq4cq");
+    			add_location(h41, file$9, 193, 10, 3464);
+    			attr_dev(th11, "class", "svelte-qaq4cq");
+    			add_location(th11, file$9, 192, 8, 3449);
+    			add_location(tr6, file$9, 190, 6, 3408);
+    			attr_dev(th12, "class", "date svelte-qaq4cq");
+    			add_location(th12, file$9, 197, 8, 3569);
+    			attr_dev(h52, "class", "svelte-qaq4cq");
+    			add_location(h52, file$9, 199, 10, 3623);
+    			attr_dev(p2, "class", "desc svelte-qaq4cq");
+    			add_location(p2, file$9, 202, 10, 3734);
+    			attr_dev(i0, "class", "fas fa-globe svelte-qaq4cq");
+    			add_location(i0, file$9, 209, 16, 4011);
+    			add_location(button0, file$9, 208, 14, 3986);
     			attr_dev(a0, "href", "https://www.nsfgrfp.org/");
-    			add_location(a0, file$9, 205, 12, 3909);
+    			add_location(a0, file$9, 207, 12, 3936);
     			attr_dev(div0, "class", "tags");
-    			add_location(div0, file$9, 204, 10, 3878);
-    			attr_dev(th13, "class", "svelte-ccym40");
-    			add_location(th13, file$9, 196, 8, 3581);
-    			attr_dev(tr7, "class", "item svelte-ccym40");
-    			add_location(tr7, file$9, 194, 6, 3516);
-    			attr_dev(tr8, "class", "buffer svelte-ccym40");
-    			add_location(tr8, file$9, 214, 6, 4125);
-    			attr_dev(th14, "class", "date svelte-ccym40");
-    			add_location(th14, file$9, 216, 8, 4179);
-    			attr_dev(h53, "class", "svelte-ccym40");
-    			add_location(h53, file$9, 218, 10, 4233);
-    			attr_dev(p3, "class", "desc svelte-ccym40");
-    			add_location(p3, file$9, 219, 10, 4287);
-    			attr_dev(i1, "class", "fas fa-globe svelte-ccym40");
-    			add_location(i1, file$9, 227, 16, 4668);
-    			add_location(button1, file$9, 226, 14, 4643);
+    			add_location(div0, file$9, 206, 10, 3905);
+    			attr_dev(th13, "class", "svelte-qaq4cq");
+    			add_location(th13, file$9, 198, 8, 3608);
+    			attr_dev(tr7, "class", "item svelte-qaq4cq");
+    			add_location(tr7, file$9, 196, 6, 3543);
+    			attr_dev(tr8, "class", "buffer svelte-qaq4cq");
+    			add_location(tr8, file$9, 216, 6, 4152);
+    			attr_dev(th14, "class", "date svelte-qaq4cq");
+    			add_location(th14, file$9, 218, 8, 4206);
+    			attr_dev(h53, "class", "svelte-qaq4cq");
+    			add_location(h53, file$9, 220, 10, 4260);
+    			attr_dev(p3, "class", "desc svelte-qaq4cq");
+    			add_location(p3, file$9, 221, 10, 4314);
+    			attr_dev(i1, "class", "fas fa-globe svelte-qaq4cq");
+    			add_location(i1, file$9, 229, 16, 4695);
+    			add_location(button1, file$9, 228, 14, 4670);
     			attr_dev(a1, "href", "https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship");
-    			add_location(a1, file$9, 224, 12, 4486);
+    			add_location(a1, file$9, 226, 12, 4513);
     			attr_dev(div1, "class", "tags");
-    			add_location(div1, file$9, 223, 10, 4455);
-    			attr_dev(th15, "class", "svelte-ccym40");
-    			add_location(th15, file$9, 217, 8, 4218);
-    			attr_dev(tr9, "class", "item svelte-ccym40");
-    			add_location(tr9, file$9, 215, 6, 4153);
-    			attr_dev(tr10, "class", "buffer svelte-ccym40");
-    			add_location(tr10, file$9, 234, 6, 4814);
-    			add_location(br2, file$9, 238, 10, 4918);
-    			attr_dev(th16, "class", "date svelte-ccym40");
-    			add_location(th16, file$9, 236, 8, 4868);
-    			attr_dev(h54, "class", "svelte-ccym40");
-    			add_location(h54, file$9, 242, 10, 4983);
-    			attr_dev(h63, "class", "svelte-ccym40");
-    			add_location(h63, file$9, 243, 10, 5029);
-    			attr_dev(p4, "class", "desc svelte-ccym40");
-    			add_location(p4, file$9, 244, 10, 5105);
-    			attr_dev(i2, "class", "fas fa-globe svelte-ccym40");
-    			add_location(i2, file$9, 251, 16, 5387);
-    			add_location(button2, file$9, 250, 14, 5362);
+    			add_location(div1, file$9, 225, 10, 4482);
+    			attr_dev(th15, "class", "svelte-qaq4cq");
+    			add_location(th15, file$9, 219, 8, 4245);
+    			attr_dev(tr9, "class", "item svelte-qaq4cq");
+    			add_location(tr9, file$9, 217, 6, 4180);
+    			attr_dev(tr10, "class", "buffer svelte-qaq4cq");
+    			add_location(tr10, file$9, 236, 6, 4841);
+    			add_location(br3, file$9, 240, 10, 4945);
+    			attr_dev(th16, "class", "date svelte-qaq4cq");
+    			add_location(th16, file$9, 238, 8, 4895);
+    			attr_dev(h54, "class", "svelte-qaq4cq");
+    			add_location(h54, file$9, 244, 10, 5010);
+    			attr_dev(h63, "class", "svelte-qaq4cq");
+    			add_location(h63, file$9, 245, 10, 5056);
+    			attr_dev(p4, "class", "desc svelte-qaq4cq");
+    			add_location(p4, file$9, 246, 10, 5132);
+    			attr_dev(i2, "class", "fas fa-globe svelte-qaq4cq");
+    			add_location(i2, file$9, 253, 16, 5414);
+    			add_location(button2, file$9, 252, 14, 5389);
     			attr_dev(a2, "href", "https://stampsps.gatech.edu/");
-    			add_location(a2, file$9, 249, 12, 5308);
+    			add_location(a2, file$9, 251, 12, 5335);
     			attr_dev(div2, "class", "tags");
-    			add_location(div2, file$9, 248, 10, 5277);
-    			attr_dev(th17, "class", "svelte-ccym40");
-    			add_location(th17, file$9, 241, 8, 4968);
-    			attr_dev(tr11, "class", "item svelte-ccym40");
-    			add_location(tr11, file$9, 235, 6, 4842);
-    			attr_dev(tr12, "class", "buffer svelte-ccym40");
-    			add_location(tr12, file$9, 258, 6, 5528);
-    			attr_dev(th18, "class", "date svelte-ccym40");
-    			add_location(th18, file$9, 260, 8, 5582);
-    			attr_dev(h55, "class", "svelte-ccym40");
-    			add_location(h55, file$9, 262, 10, 5644);
-    			attr_dev(h64, "class", "svelte-ccym40");
-    			add_location(h64, file$9, 263, 10, 5686);
-    			attr_dev(p5, "class", "desc svelte-ccym40");
-    			add_location(p5, file$9, 264, 10, 5744);
-    			attr_dev(i3, "class", "far fa-newspaper svelte-ccym40");
-    			add_location(i3, file$9, 272, 16, 6095);
-    			add_location(button3, file$9, 271, 14, 6070);
+    			add_location(div2, file$9, 250, 10, 5304);
+    			attr_dev(th17, "class", "svelte-qaq4cq");
+    			add_location(th17, file$9, 243, 8, 4995);
+    			attr_dev(tr11, "class", "item svelte-qaq4cq");
+    			add_location(tr11, file$9, 237, 6, 4869);
+    			attr_dev(tr12, "class", "buffer svelte-qaq4cq");
+    			add_location(tr12, file$9, 260, 6, 5555);
+    			attr_dev(th18, "class", "date svelte-qaq4cq");
+    			add_location(th18, file$9, 262, 8, 5609);
+    			attr_dev(h55, "class", "svelte-qaq4cq");
+    			add_location(h55, file$9, 264, 10, 5671);
+    			attr_dev(h64, "class", "svelte-qaq4cq");
+    			add_location(h64, file$9, 265, 10, 5713);
+    			attr_dev(p5, "class", "desc svelte-qaq4cq");
+    			add_location(p5, file$9, 266, 10, 5771);
+    			attr_dev(i3, "class", "far fa-newspaper svelte-qaq4cq");
+    			add_location(i3, file$9, 274, 16, 6122);
+    			add_location(button3, file$9, 273, 14, 6097);
     			attr_dev(a3, "href", "https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems");
-    			add_location(a3, file$9, 269, 12, 5927);
+    			add_location(a3, file$9, 271, 12, 5954);
     			attr_dev(div3, "class", "tags");
-    			add_location(div3, file$9, 268, 10, 5896);
-    			attr_dev(th19, "class", "svelte-ccym40");
-    			add_location(th19, file$9, 261, 8, 5629);
-    			attr_dev(tr13, "class", "item svelte-ccym40");
-    			add_location(tr13, file$9, 259, 6, 5556);
-    			attr_dev(th20, "class", "date svelte-ccym40");
-    			add_location(th20, file$9, 281, 8, 6283);
-    			attr_dev(h42, "class", "header svelte-ccym40");
-    			add_location(h42, file$9, 283, 10, 6326);
-    			attr_dev(th21, "class", "svelte-ccym40");
-    			add_location(th21, file$9, 282, 8, 6311);
-    			add_location(tr14, file$9, 280, 6, 6270);
-    			add_location(br3, file$9, 289, 10, 6475);
-    			attr_dev(th22, "class", "date svelte-ccym40");
-    			add_location(th22, file$9, 287, 8, 6428);
-    			attr_dev(h56, "class", "svelte-ccym40");
-    			add_location(h56, file$9, 293, 10, 6543);
-    			attr_dev(h65, "class", "svelte-ccym40");
-    			add_location(h65, file$9, 294, 10, 6569);
-    			attr_dev(p6, "class", "desc svelte-ccym40");
-    			add_location(p6, file$9, 295, 10, 6616);
-    			attr_dev(i4, "class", "far fa-newspaper svelte-ccym40");
-    			add_location(i4, file$9, 305, 16, 7042);
-    			add_location(button4, file$9, 304, 14, 7017);
+    			add_location(div3, file$9, 270, 10, 5923);
+    			attr_dev(th19, "class", "svelte-qaq4cq");
+    			add_location(th19, file$9, 263, 8, 5656);
+    			attr_dev(tr13, "class", "item svelte-qaq4cq");
+    			add_location(tr13, file$9, 261, 6, 5583);
+    			attr_dev(th20, "class", "date svelte-qaq4cq");
+    			add_location(th20, file$9, 283, 8, 6310);
+    			attr_dev(h42, "class", "header svelte-qaq4cq");
+    			add_location(h42, file$9, 285, 10, 6353);
+    			attr_dev(th21, "class", "svelte-qaq4cq");
+    			add_location(th21, file$9, 284, 8, 6338);
+    			add_location(tr14, file$9, 282, 6, 6297);
+    			add_location(br4, file$9, 291, 10, 6502);
+    			attr_dev(th22, "class", "date svelte-qaq4cq");
+    			add_location(th22, file$9, 289, 8, 6455);
+    			attr_dev(h56, "class", "svelte-qaq4cq");
+    			add_location(h56, file$9, 295, 10, 6570);
+    			attr_dev(h65, "class", "svelte-qaq4cq");
+    			add_location(h65, file$9, 296, 10, 6596);
+    			attr_dev(p6, "class", "desc svelte-qaq4cq");
+    			add_location(p6, file$9, 297, 10, 6643);
+    			attr_dev(i4, "class", "far fa-newspaper svelte-qaq4cq");
+    			add_location(i4, file$9, 307, 16, 7069);
+    			add_location(button4, file$9, 306, 14, 7044);
     			attr_dev(a4, "href", "https://www.wsj.com/articles/google-to-partner-with-biggest-car-alliance-1537243260\n              ");
-    			add_location(a4, file$9, 301, 12, 6879);
-    			add_location(button5, file$9, 309, 12, 7154);
-    			add_location(button6, file$9, 310, 12, 7196);
-    			add_location(button7, file$9, 311, 12, 7230);
-    			add_location(button8, file$9, 312, 12, 7263);
+    			add_location(a4, file$9, 303, 12, 6906);
+    			add_location(button5, file$9, 311, 12, 7181);
+    			add_location(button6, file$9, 312, 12, 7223);
+    			add_location(button7, file$9, 313, 12, 7257);
+    			add_location(button8, file$9, 314, 12, 7290);
     			attr_dev(div4, "class", "tags");
-    			add_location(div4, file$9, 300, 10, 6848);
-    			attr_dev(th23, "class", "svelte-ccym40");
-    			add_location(th23, file$9, 292, 8, 6528);
-    			attr_dev(tr15, "class", "item svelte-ccym40");
-    			add_location(tr15, file$9, 286, 6, 6402);
-    			attr_dev(tr16, "class", "buffer svelte-ccym40");
-    			add_location(tr16, file$9, 316, 6, 7346);
-    			add_location(br4, file$9, 320, 10, 7447);
-    			attr_dev(th24, "class", "date svelte-ccym40");
-    			add_location(th24, file$9, 318, 8, 7400);
-    			attr_dev(h57, "class", "svelte-ccym40");
-    			add_location(h57, file$9, 324, 10, 7515);
-    			attr_dev(h66, "class", "svelte-ccym40");
-    			add_location(h66, file$9, 325, 10, 7541);
-    			attr_dev(p7, "class", "desc svelte-ccym40");
-    			add_location(p7, file$9, 326, 10, 7588);
-    			add_location(button9, file$9, 331, 12, 7780);
-    			add_location(button10, file$9, 332, 12, 7836);
-    			add_location(button11, file$9, 333, 12, 7870);
-    			add_location(button12, file$9, 334, 12, 7903);
+    			add_location(div4, file$9, 302, 10, 6875);
+    			attr_dev(th23, "class", "svelte-qaq4cq");
+    			add_location(th23, file$9, 294, 8, 6555);
+    			attr_dev(tr15, "class", "item svelte-qaq4cq");
+    			add_location(tr15, file$9, 288, 6, 6429);
+    			attr_dev(tr16, "class", "buffer svelte-qaq4cq");
+    			add_location(tr16, file$9, 318, 6, 7373);
+    			add_location(br5, file$9, 322, 10, 7474);
+    			attr_dev(th24, "class", "date svelte-qaq4cq");
+    			add_location(th24, file$9, 320, 8, 7427);
+    			attr_dev(h57, "class", "svelte-qaq4cq");
+    			add_location(h57, file$9, 326, 10, 7542);
+    			attr_dev(h66, "class", "svelte-qaq4cq");
+    			add_location(h66, file$9, 327, 10, 7568);
+    			attr_dev(p7, "class", "desc svelte-qaq4cq");
+    			add_location(p7, file$9, 328, 10, 7615);
+    			add_location(button9, file$9, 333, 12, 7807);
+    			add_location(button10, file$9, 334, 12, 7863);
+    			add_location(button11, file$9, 335, 12, 7897);
+    			add_location(button12, file$9, 336, 12, 7930);
     			attr_dev(div5, "class", "tags");
-    			add_location(div5, file$9, 330, 10, 7749);
-    			attr_dev(th25, "class", "svelte-ccym40");
-    			add_location(th25, file$9, 323, 8, 7500);
-    			attr_dev(tr17, "class", "item svelte-ccym40");
-    			add_location(tr17, file$9, 317, 6, 7374);
-    			attr_dev(tr18, "class", "buffer svelte-ccym40");
-    			add_location(tr18, file$9, 338, 6, 7973);
-    			add_location(br5, file$9, 342, 10, 8074);
-    			attr_dev(th26, "class", "date svelte-ccym40");
-    			add_location(th26, file$9, 340, 8, 8027);
-    			attr_dev(h58, "class", "svelte-ccym40");
-    			add_location(h58, file$9, 346, 10, 8142);
-    			attr_dev(h67, "class", "svelte-ccym40");
-    			add_location(h67, file$9, 347, 10, 8168);
-    			attr_dev(p8, "class", "desc svelte-ccym40");
-    			add_location(p8, file$9, 348, 10, 8216);
-    			add_location(button13, file$9, 353, 12, 8401);
-    			add_location(button14, file$9, 354, 12, 8433);
-    			add_location(button15, file$9, 355, 12, 8471);
+    			add_location(div5, file$9, 332, 10, 7776);
+    			attr_dev(th25, "class", "svelte-qaq4cq");
+    			add_location(th25, file$9, 325, 8, 7527);
+    			attr_dev(tr17, "class", "item svelte-qaq4cq");
+    			add_location(tr17, file$9, 319, 6, 7401);
+    			attr_dev(tr18, "class", "buffer svelte-qaq4cq");
+    			add_location(tr18, file$9, 340, 6, 8000);
+    			add_location(br6, file$9, 344, 10, 8101);
+    			attr_dev(th26, "class", "date svelte-qaq4cq");
+    			add_location(th26, file$9, 342, 8, 8054);
+    			attr_dev(h58, "class", "svelte-qaq4cq");
+    			add_location(h58, file$9, 348, 10, 8169);
+    			attr_dev(h67, "class", "svelte-qaq4cq");
+    			add_location(h67, file$9, 349, 10, 8195);
+    			attr_dev(p8, "class", "desc svelte-qaq4cq");
+    			add_location(p8, file$9, 350, 10, 8243);
+    			add_location(button13, file$9, 355, 12, 8428);
+    			add_location(button14, file$9, 356, 12, 8460);
+    			add_location(button15, file$9, 357, 12, 8498);
     			attr_dev(div6, "class", "tags");
-    			add_location(div6, file$9, 352, 10, 8370);
-    			attr_dev(th27, "class", "svelte-ccym40");
-    			add_location(th27, file$9, 345, 8, 8127);
-    			attr_dev(tr19, "class", "item svelte-ccym40");
-    			add_location(tr19, file$9, 339, 6, 8001);
-    			attr_dev(th28, "class", "date svelte-ccym40");
-    			add_location(th28, file$9, 361, 8, 8585);
-    			attr_dev(h43, "class", "header svelte-ccym40");
-    			add_location(h43, file$9, 363, 10, 8628);
-    			attr_dev(th29, "class", "svelte-ccym40");
-    			add_location(th29, file$9, 362, 8, 8613);
-    			add_location(tr20, file$9, 360, 6, 8572);
-    			add_location(br6, file$9, 369, 10, 8780);
-    			attr_dev(th30, "class", "date svelte-ccym40");
-    			add_location(th30, file$9, 367, 8, 8730);
-    			attr_dev(h59, "class", "svelte-ccym40");
-    			add_location(h59, file$9, 373, 10, 8844);
-    			attr_dev(h68, "class", "svelte-ccym40");
-    			add_location(h68, file$9, 374, 10, 8923);
-    			attr_dev(i5, "class", "fas fa-globe svelte-ccym40");
-    			add_location(i5, file$9, 378, 16, 9072);
-    			add_location(button16, file$9, 377, 14, 9047);
+    			add_location(div6, file$9, 354, 10, 8397);
+    			attr_dev(th27, "class", "svelte-qaq4cq");
+    			add_location(th27, file$9, 347, 8, 8154);
+    			attr_dev(tr19, "class", "item svelte-qaq4cq");
+    			add_location(tr19, file$9, 341, 6, 8028);
+    			attr_dev(th28, "class", "date svelte-qaq4cq");
+    			add_location(th28, file$9, 363, 8, 8612);
+    			attr_dev(h43, "class", "header svelte-qaq4cq");
+    			add_location(h43, file$9, 365, 10, 8655);
+    			attr_dev(th29, "class", "svelte-qaq4cq");
+    			add_location(th29, file$9, 364, 8, 8640);
+    			add_location(tr20, file$9, 362, 6, 8599);
+    			add_location(br7, file$9, 371, 10, 8807);
+    			attr_dev(th30, "class", "date svelte-qaq4cq");
+    			add_location(th30, file$9, 369, 8, 8757);
+    			attr_dev(h59, "class", "svelte-qaq4cq");
+    			add_location(h59, file$9, 375, 10, 8871);
+    			attr_dev(h68, "class", "svelte-qaq4cq");
+    			add_location(h68, file$9, 376, 10, 8950);
+    			attr_dev(i5, "class", "fas fa-globe svelte-qaq4cq");
+    			add_location(i5, file$9, 380, 16, 9099);
+    			add_location(button16, file$9, 379, 14, 9074);
     			attr_dev(a5, "href", "https://dig.cmu.edu/");
-    			add_location(a5, file$9, 376, 12, 9001);
+    			add_location(a5, file$9, 378, 12, 9028);
     			attr_dev(div7, "class", "tags");
-    			add_location(div7, file$9, 375, 10, 8970);
-    			attr_dev(th31, "class", "svelte-ccym40");
-    			add_location(th31, file$9, 372, 8, 8829);
-    			attr_dev(tr21, "class", "item svelte-ccym40");
-    			add_location(tr21, file$9, 366, 6, 8704);
-    			attr_dev(tr22, "class", "buffer svelte-ccym40");
-    			add_location(tr22, file$9, 385, 6, 9232);
-    			add_location(br7, file$9, 389, 10, 9337);
-    			attr_dev(th32, "class", "date svelte-ccym40");
-    			add_location(th32, file$9, 387, 8, 9286);
-    			attr_dev(h510, "class", "svelte-ccym40");
-    			add_location(h510, file$9, 393, 10, 9402);
-    			attr_dev(h69, "class", "svelte-ccym40");
-    			add_location(h69, file$9, 394, 10, 9447);
-    			attr_dev(i6, "class", "fas fa-globe svelte-ccym40");
-    			add_location(i6, file$9, 398, 16, 9600);
-    			add_location(button17, file$9, 397, 14, 9575);
+    			add_location(div7, file$9, 377, 10, 8997);
+    			attr_dev(th31, "class", "svelte-qaq4cq");
+    			add_location(th31, file$9, 374, 8, 8856);
+    			attr_dev(tr21, "class", "item svelte-qaq4cq");
+    			add_location(tr21, file$9, 368, 6, 8731);
+    			attr_dev(tr22, "class", "buffer svelte-qaq4cq");
+    			add_location(tr22, file$9, 387, 6, 9259);
+    			add_location(br8, file$9, 391, 10, 9364);
+    			attr_dev(th32, "class", "date svelte-qaq4cq");
+    			add_location(th32, file$9, 389, 8, 9313);
+    			attr_dev(h510, "class", "svelte-qaq4cq");
+    			add_location(h510, file$9, 395, 10, 9429);
+    			attr_dev(h69, "class", "svelte-qaq4cq");
+    			add_location(h69, file$9, 396, 10, 9474);
+    			attr_dev(i6, "class", "fas fa-globe svelte-qaq4cq");
+    			add_location(i6, file$9, 400, 16, 9635);
+    			add_location(button17, file$9, 399, 14, 9610);
     			attr_dev(a6, "href", "https://poloclub.github.io/");
-    			add_location(a6, file$9, 396, 12, 9522);
+    			add_location(a6, file$9, 398, 12, 9557);
     			attr_dev(div8, "class", "tags");
-    			add_location(div8, file$9, 395, 10, 9491);
-    			attr_dev(th33, "class", "svelte-ccym40");
-    			add_location(th33, file$9, 392, 8, 9387);
-    			attr_dev(tr23, "class", "item svelte-ccym40");
-    			add_location(tr23, file$9, 386, 6, 9260);
-    			attr_dev(tr24, "class", "buffer svelte-ccym40");
-    			add_location(tr24, file$9, 405, 6, 9743);
-    			add_location(br8, file$9, 409, 10, 9850);
-    			attr_dev(th34, "class", "date svelte-ccym40");
-    			add_location(th34, file$9, 407, 8, 9797);
-    			attr_dev(h511, "class", "svelte-ccym40");
-    			add_location(h511, file$9, 413, 10, 9915);
-    			attr_dev(h610, "class", "svelte-ccym40");
-    			add_location(h610, file$9, 414, 10, 9951);
-    			attr_dev(p9, "class", "desc svelte-ccym40");
-    			add_location(p9, file$9, 415, 10, 10006);
-    			attr_dev(i7, "class", "fas fa-rocket svelte-ccym40");
-    			add_location(i7, file$9, 423, 16, 10357);
-    			add_location(button18, file$9, 422, 14, 10332);
+    			add_location(div8, file$9, 397, 10, 9526);
+    			attr_dev(th33, "class", "svelte-qaq4cq");
+    			add_location(th33, file$9, 394, 8, 9414);
+    			attr_dev(tr23, "class", "item svelte-qaq4cq");
+    			add_location(tr23, file$9, 388, 6, 9287);
+    			attr_dev(tr24, "class", "buffer svelte-qaq4cq");
+    			add_location(tr24, file$9, 407, 6, 9778);
+    			add_location(br9, file$9, 411, 10, 9885);
+    			attr_dev(th34, "class", "date svelte-qaq4cq");
+    			add_location(th34, file$9, 409, 8, 9832);
+    			attr_dev(h511, "class", "svelte-qaq4cq");
+    			add_location(h511, file$9, 415, 10, 9950);
+    			attr_dev(h610, "class", "svelte-qaq4cq");
+    			add_location(h610, file$9, 416, 10, 9986);
+    			attr_dev(p9, "class", "desc svelte-qaq4cq");
+    			add_location(p9, file$9, 417, 10, 10041);
+    			attr_dev(i7, "class", "fas fa-rocket svelte-qaq4cq");
+    			add_location(i7, file$9, 425, 16, 10392);
+    			add_location(button18, file$9, 424, 14, 10367);
     			attr_dev(a7, "href", "https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space");
-    			add_location(a7, file$9, 420, 12, 10203);
-    			attr_dev(i8, "class", "fas fa-globe svelte-ccym40");
-    			add_location(i8, file$9, 429, 16, 10540);
-    			add_location(button19, file$9, 428, 14, 10515);
+    			add_location(a7, file$9, 422, 12, 10238);
+    			attr_dev(i8, "class", "fas fa-globe svelte-qaq4cq");
+    			add_location(i8, file$9, 431, 16, 10575);
+    			add_location(button19, file$9, 430, 14, 10550);
     			attr_dev(a8, "href", "http://prox-1.gatech.edu/");
-    			add_location(a8, file$9, 427, 12, 10464);
-    			attr_dev(i9, "class", "far fa-newspaper svelte-ccym40");
-    			add_location(i9, file$9, 436, 16, 10774);
-    			add_location(button20, file$9, 435, 14, 10749);
+    			add_location(a8, file$9, 429, 12, 10499);
+    			attr_dev(i9, "class", "far fa-newspaper svelte-qaq4cq");
+    			add_location(i9, file$9, 438, 16, 10809);
+    			add_location(button20, file$9, 437, 14, 10784);
     			attr_dev(a9, "href", "https://www.ae.gatech.edu/news/2017/05/prox-1-launch-has-launched");
-    			add_location(a9, file$9, 433, 12, 10644);
+    			add_location(a9, file$9, 435, 12, 10679);
     			attr_dev(div9, "class", "tags");
-    			add_location(div9, file$9, 419, 10, 10172);
-    			attr_dev(th35, "class", "svelte-ccym40");
-    			add_location(th35, file$9, 412, 8, 9900);
-    			attr_dev(tr25, "class", "item svelte-ccym40");
-    			add_location(tr25, file$9, 406, 6, 9771);
-    			attr_dev(th36, "class", "date svelte-ccym40");
-    			add_location(th36, file$9, 445, 8, 10966);
-    			attr_dev(h44, "class", "header svelte-ccym40");
-    			add_location(h44, file$9, 447, 10, 11009);
-    			attr_dev(th37, "class", "svelte-ccym40");
-    			add_location(th37, file$9, 446, 8, 10994);
-    			add_location(tr26, file$9, 444, 6, 10953);
-    			attr_dev(th38, "class", "date svelte-ccym40");
-    			add_location(th38, file$9, 475, 8, 11758);
-    			attr_dev(h45, "class", "header svelte-ccym40");
-    			add_location(h45, file$9, 477, 10, 11801);
-    			attr_dev(th39, "class", "svelte-ccym40");
-    			add_location(th39, file$9, 476, 8, 11786);
-    			add_location(tr27, file$9, 474, 6, 11745);
-    			attr_dev(th40, "class", "date svelte-ccym40");
-    			add_location(th40, file$9, 481, 8, 11892);
-    			attr_dev(h512, "class", "svelte-ccym40");
-    			add_location(h512, file$9, 483, 10, 11973);
-    			attr_dev(h611, "class", "svelte-ccym40");
-    			add_location(h611, file$9, 484, 10, 12025);
-    			attr_dev(p10, "class", "desc svelte-ccym40");
-    			add_location(p10, file$9, 485, 10, 12084);
-    			attr_dev(th41, "class", "svelte-ccym40");
-    			add_location(th41, file$9, 482, 8, 11958);
-    			attr_dev(tr28, "class", "item svelte-ccym40");
-    			add_location(tr28, file$9, 480, 6, 11866);
-    			attr_dev(tr29, "class", "buffer svelte-ccym40");
-    			add_location(tr29, file$9, 491, 6, 12269);
-    			attr_dev(th42, "class", "date svelte-ccym40");
-    			add_location(th42, file$9, 493, 8, 12323);
-    			attr_dev(h513, "class", "svelte-ccym40");
-    			add_location(h513, file$9, 495, 10, 12378);
-    			attr_dev(h612, "class", "svelte-ccym40");
-    			add_location(h612, file$9, 496, 10, 12409);
-    			attr_dev(p11, "class", "desc svelte-ccym40");
-    			add_location(p11, file$9, 497, 10, 12457);
-    			attr_dev(th43, "class", "svelte-ccym40");
-    			add_location(th43, file$9, 494, 8, 12363);
-    			attr_dev(tr30, "class", "item svelte-ccym40");
-    			add_location(tr30, file$9, 492, 6, 12297);
-    			attr_dev(th44, "class", "date svelte-ccym40");
-    			add_location(th44, file$9, 505, 8, 12674);
-    			attr_dev(h46, "class", "header svelte-ccym40");
-    			add_location(h46, file$9, 507, 10, 12717);
-    			attr_dev(th45, "class", "svelte-ccym40");
-    			add_location(th45, file$9, 506, 8, 12702);
-    			add_location(tr31, file$9, 504, 6, 12661);
-    			attr_dev(th46, "class", "date svelte-ccym40");
-    			add_location(th46, file$9, 511, 8, 12807);
-    			attr_dev(h514, "class", "svelte-ccym40");
-    			add_location(h514, file$9, 513, 10, 12850);
-    			attr_dev(th47, "class", "svelte-ccym40");
-    			add_location(th47, file$9, 512, 8, 12835);
-    			attr_dev(tr32, "class", "item svelte-ccym40");
-    			add_location(tr32, file$9, 510, 6, 12781);
-    			attr_dev(th48, "class", "date svelte-ccym40");
-    			add_location(th48, file$9, 517, 8, 12922);
-    			attr_dev(h515, "class", "single svelte-ccym40");
-    			add_location(h515, file$9, 519, 10, 12980);
-    			attr_dev(th49, "class", "svelte-ccym40");
-    			add_location(th49, file$9, 518, 8, 12965);
-    			add_location(tr33, file$9, 516, 6, 12909);
-    			attr_dev(th50, "class", "date svelte-ccym40");
-    			add_location(th50, file$9, 523, 8, 13085);
-    			attr_dev(h516, "class", "single svelte-ccym40");
-    			add_location(h516, file$9, 525, 10, 13143);
-    			attr_dev(th51, "class", "svelte-ccym40");
-    			add_location(th51, file$9, 524, 8, 13128);
-    			add_location(tr34, file$9, 522, 6, 13072);
-    			add_location(br9, file$9, 530, 6, 13277);
-    			attr_dev(th52, "class", "date svelte-ccym40");
-    			add_location(th52, file$9, 532, 8, 13316);
-    			attr_dev(h517, "class", "svelte-ccym40");
-    			add_location(h517, file$9, 534, 10, 13359);
-    			attr_dev(th53, "class", "svelte-ccym40");
-    			add_location(th53, file$9, 533, 8, 13344);
-    			attr_dev(tr35, "class", "item svelte-ccym40");
-    			add_location(tr35, file$9, 531, 6, 13290);
-    			attr_dev(th54, "class", "date svelte-ccym40");
-    			add_location(th54, file$9, 538, 8, 13422);
-    			attr_dev(h518, "class", "single svelte-ccym40");
-    			add_location(h518, file$9, 540, 10, 13472);
-    			attr_dev(th55, "class", "svelte-ccym40");
-    			add_location(th55, file$9, 539, 8, 13457);
-    			add_location(tr36, file$9, 537, 6, 13409);
-    			attr_dev(th56, "class", "date svelte-ccym40");
-    			add_location(th56, file$9, 546, 8, 13629);
-    			attr_dev(h519, "class", "single svelte-ccym40");
-    			add_location(h519, file$9, 548, 10, 13679);
-    			attr_dev(th57, "class", "svelte-ccym40");
-    			add_location(th57, file$9, 547, 8, 13664);
-    			add_location(tr37, file$9, 545, 6, 13616);
-    			attr_dev(th58, "class", "date svelte-ccym40");
-    			add_location(th58, file$9, 555, 8, 13852);
-    			attr_dev(h47, "class", "header svelte-ccym40");
-    			add_location(h47, file$9, 557, 10, 13895);
-    			attr_dev(th59, "class", "svelte-ccym40");
-    			add_location(th59, file$9, 556, 8, 13880);
-    			add_location(tr38, file$9, 554, 6, 13839);
-    			attr_dev(th60, "class", "date svelte-ccym40");
-    			add_location(th60, file$9, 561, 8, 13970);
+    			add_location(div9, file$9, 421, 10, 10207);
+    			attr_dev(th35, "class", "svelte-qaq4cq");
+    			add_location(th35, file$9, 414, 8, 9935);
+    			attr_dev(tr25, "class", "item svelte-qaq4cq");
+    			add_location(tr25, file$9, 408, 6, 9806);
+    			attr_dev(th36, "class", "date svelte-qaq4cq");
+    			add_location(th36, file$9, 447, 8, 11001);
+    			attr_dev(h44, "class", "header svelte-qaq4cq");
+    			add_location(h44, file$9, 449, 10, 11044);
+    			attr_dev(th37, "class", "svelte-qaq4cq");
+    			add_location(th37, file$9, 448, 8, 11029);
+    			add_location(tr26, file$9, 446, 6, 10988);
+    			attr_dev(th38, "class", "date svelte-qaq4cq");
+    			add_location(th38, file$9, 477, 8, 11804);
+    			attr_dev(h45, "class", "header svelte-qaq4cq");
+    			add_location(h45, file$9, 479, 10, 11847);
+    			attr_dev(th39, "class", "svelte-qaq4cq");
+    			add_location(th39, file$9, 478, 8, 11832);
+    			add_location(tr27, file$9, 476, 6, 11791);
+    			attr_dev(th40, "class", "date svelte-qaq4cq");
+    			add_location(th40, file$9, 507, 8, 12625);
+    			attr_dev(h46, "class", "header svelte-qaq4cq");
+    			add_location(h46, file$9, 509, 10, 12668);
+    			attr_dev(th41, "class", "svelte-qaq4cq");
+    			add_location(th41, file$9, 508, 8, 12653);
+    			add_location(tr28, file$9, 506, 6, 12612);
+    			add_location(br10, file$9, 515, 10, 12807);
+    			add_location(br11, file$9, 517, 10, 12846);
+    			attr_dev(th42, "class", "date svelte-qaq4cq");
+    			add_location(th42, file$9, 513, 8, 12759);
+    			attr_dev(h512, "class", "svelte-qaq4cq");
+    			add_location(h512, file$9, 521, 10, 12912);
+    			attr_dev(h611, "class", "svelte-qaq4cq");
+    			add_location(h611, file$9, 522, 10, 12971);
+    			attr_dev(p10, "class", "desc svelte-qaq4cq");
+    			add_location(p10, file$9, 523, 10, 13023);
+    			attr_dev(th43, "class", "svelte-qaq4cq");
+    			add_location(th43, file$9, 520, 8, 12897);
+    			attr_dev(tr29, "class", "item svelte-qaq4cq");
+    			add_location(tr29, file$9, 512, 6, 12733);
+    			attr_dev(tr30, "class", "buffer svelte-qaq4cq");
+    			add_location(tr30, file$9, 529, 6, 13208);
+    			attr_dev(th44, "class", "date svelte-qaq4cq");
+    			add_location(th44, file$9, 531, 8, 13262);
+    			attr_dev(h513, "class", "svelte-qaq4cq");
+    			add_location(h513, file$9, 533, 10, 13317);
+    			attr_dev(h612, "class", "svelte-qaq4cq");
+    			add_location(h612, file$9, 534, 10, 13365);
+    			attr_dev(p11, "class", "desc svelte-qaq4cq");
+    			add_location(p11, file$9, 535, 10, 13396);
+    			attr_dev(th45, "class", "svelte-qaq4cq");
+    			add_location(th45, file$9, 532, 8, 13302);
+    			attr_dev(tr31, "class", "item svelte-qaq4cq");
+    			add_location(tr31, file$9, 530, 6, 13236);
+    			attr_dev(th46, "class", "date svelte-qaq4cq");
+    			add_location(th46, file$9, 543, 8, 13613);
+    			attr_dev(h47, "class", "header svelte-qaq4cq");
+    			add_location(h47, file$9, 545, 10, 13656);
+    			attr_dev(th47, "class", "svelte-qaq4cq");
+    			add_location(th47, file$9, 544, 8, 13641);
+    			add_location(tr32, file$9, 542, 6, 13600);
+    			attr_dev(th48, "class", "date svelte-qaq4cq");
+    			add_location(th48, file$9, 549, 8, 13746);
+    			attr_dev(h514, "class", "svelte-qaq4cq");
+    			add_location(h514, file$9, 551, 10, 13789);
+    			attr_dev(th49, "class", "svelte-qaq4cq");
+    			add_location(th49, file$9, 550, 8, 13774);
+    			attr_dev(tr33, "class", "item svelte-qaq4cq");
+    			add_location(tr33, file$9, 548, 6, 13720);
+    			attr_dev(th50, "class", "date svelte-qaq4cq");
+    			add_location(th50, file$9, 555, 8, 13861);
+    			attr_dev(h515, "class", "single svelte-qaq4cq");
+    			add_location(h515, file$9, 557, 10, 13919);
+    			attr_dev(th51, "class", "svelte-qaq4cq");
+    			add_location(th51, file$9, 556, 8, 13904);
+    			add_location(tr34, file$9, 554, 6, 13848);
+    			attr_dev(th52, "class", "date svelte-qaq4cq");
+    			add_location(th52, file$9, 561, 8, 14024);
+    			attr_dev(h516, "class", "single svelte-qaq4cq");
+    			add_location(h516, file$9, 563, 10, 14082);
+    			attr_dev(th53, "class", "svelte-qaq4cq");
+    			add_location(th53, file$9, 562, 8, 14067);
+    			add_location(tr35, file$9, 560, 6, 14011);
+    			add_location(br12, file$9, 568, 6, 14216);
+    			attr_dev(th54, "class", "date svelte-qaq4cq");
+    			add_location(th54, file$9, 570, 8, 14255);
+    			attr_dev(h517, "class", "svelte-qaq4cq");
+    			add_location(h517, file$9, 572, 10, 14298);
+    			attr_dev(th55, "class", "svelte-qaq4cq");
+    			add_location(th55, file$9, 571, 8, 14283);
+    			attr_dev(tr36, "class", "item svelte-qaq4cq");
+    			add_location(tr36, file$9, 569, 6, 14229);
+    			attr_dev(th56, "class", "date svelte-qaq4cq");
+    			add_location(th56, file$9, 576, 8, 14361);
+    			attr_dev(h518, "class", "single svelte-qaq4cq");
+    			add_location(h518, file$9, 578, 10, 14411);
+    			attr_dev(th57, "class", "svelte-qaq4cq");
+    			add_location(th57, file$9, 577, 8, 14396);
+    			add_location(tr37, file$9, 575, 6, 14348);
+    			attr_dev(th58, "class", "date svelte-qaq4cq");
+    			add_location(th58, file$9, 584, 8, 14568);
+    			attr_dev(h519, "class", "single svelte-qaq4cq");
+    			add_location(h519, file$9, 586, 10, 14618);
+    			attr_dev(th59, "class", "svelte-qaq4cq");
+    			add_location(th59, file$9, 585, 8, 14603);
+    			add_location(tr38, file$9, 583, 6, 14555);
+    			attr_dev(th60, "class", "date svelte-qaq4cq");
+    			add_location(th60, file$9, 593, 8, 14791);
+    			attr_dev(h48, "class", "header svelte-qaq4cq");
+    			add_location(h48, file$9, 595, 10, 14834);
+    			attr_dev(th61, "class", "svelte-qaq4cq");
+    			add_location(th61, file$9, 594, 8, 14819);
+    			add_location(tr39, file$9, 592, 6, 14778);
+    			attr_dev(th62, "class", "date svelte-qaq4cq");
+    			add_location(th62, file$9, 599, 8, 14909);
     			attr_dev(a10, "href", "https://datastori.es/156-fairness-in-machine-learning-with-yongsu-ahn-and-alex-cabrera/");
-    			add_location(a10, file$9, 564, 12, 14058);
-    			add_location(i10, file$9, 569, 12, 14271);
-    			attr_dev(h520, "class", "single press svelte-ccym40");
-    			add_location(h520, file$9, 563, 10, 14020);
-    			attr_dev(th61, "class", "svelte-ccym40");
-    			add_location(th61, file$9, 562, 8, 14005);
-    			add_location(tr39, file$9, 560, 6, 13957);
-    			attr_dev(th62, "class", "date svelte-ccym40");
-    			add_location(th62, file$9, 574, 8, 14360);
+    			add_location(a10, file$9, 602, 12, 14997);
+    			add_location(i10, file$9, 607, 12, 15210);
+    			attr_dev(h520, "class", "single press svelte-qaq4cq");
+    			add_location(h520, file$9, 601, 10, 14959);
+    			attr_dev(th63, "class", "svelte-qaq4cq");
+    			add_location(th63, file$9, 600, 8, 14944);
+    			add_location(tr40, file$9, 598, 6, 14896);
+    			attr_dev(th64, "class", "date svelte-qaq4cq");
+    			add_location(th64, file$9, 612, 8, 15299);
     			attr_dev(a11, "href", "https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship");
-    			add_location(a11, file$9, 577, 12, 14448);
-    			add_location(i11, file$9, 582, 12, 14703);
-    			attr_dev(h521, "class", "single press svelte-ccym40");
-    			add_location(h521, file$9, 576, 10, 14410);
-    			attr_dev(th63, "class", "svelte-ccym40");
-    			add_location(th63, file$9, 575, 8, 14395);
-    			add_location(tr40, file$9, 573, 6, 14347);
-    			attr_dev(th64, "class", "date svelte-ccym40");
-    			add_location(th64, file$9, 587, 8, 14778);
+    			add_location(a11, file$9, 615, 12, 15387);
+    			add_location(i11, file$9, 620, 12, 15642);
+    			attr_dev(h521, "class", "single press svelte-qaq4cq");
+    			add_location(h521, file$9, 614, 10, 15349);
+    			attr_dev(th65, "class", "svelte-qaq4cq");
+    			add_location(th65, file$9, 613, 8, 15334);
+    			add_location(tr41, file$9, 611, 6, 15286);
+    			attr_dev(th66, "class", "date svelte-qaq4cq");
+    			add_location(th66, file$9, 625, 8, 15717);
     			attr_dev(a12, "href", "https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space");
-    			add_location(a12, file$9, 590, 12, 14866);
-    			add_location(i12, file$9, 595, 12, 15097);
-    			attr_dev(h522, "class", "single press svelte-ccym40");
-    			add_location(h522, file$9, 589, 10, 14828);
-    			attr_dev(th65, "class", "svelte-ccym40");
-    			add_location(th65, file$9, 588, 8, 14813);
-    			add_location(tr41, file$9, 586, 6, 14765);
-    			attr_dev(th66, "class", "date svelte-ccym40");
-    			add_location(th66, file$9, 600, 8, 15178);
+    			add_location(a12, file$9, 628, 12, 15805);
+    			add_location(i12, file$9, 633, 12, 16036);
+    			attr_dev(h522, "class", "single press svelte-qaq4cq");
+    			add_location(h522, file$9, 627, 10, 15767);
+    			attr_dev(th67, "class", "svelte-qaq4cq");
+    			add_location(th67, file$9, 626, 8, 15752);
+    			add_location(tr42, file$9, 624, 6, 15704);
+    			attr_dev(th68, "class", "date svelte-qaq4cq");
+    			add_location(th68, file$9, 638, 8, 16117);
     			attr_dev(a13, "href", "https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems");
-    			add_location(a13, file$9, 603, 12, 15266);
-    			add_location(i13, file$9, 609, 12, 15540);
-    			attr_dev(h523, "class", "single press svelte-ccym40");
-    			add_location(h523, file$9, 602, 10, 15228);
-    			attr_dev(th67, "class", "svelte-ccym40");
-    			add_location(th67, file$9, 601, 8, 15213);
-    			add_location(tr42, file$9, 599, 6, 15165);
-    			attr_dev(th68, "class", "date svelte-ccym40");
-    			add_location(th68, file$9, 615, 8, 15639);
-    			attr_dev(h48, "class", "header svelte-ccym40");
-    			add_location(h48, file$9, 617, 10, 15682);
-    			attr_dev(th69, "class", "svelte-ccym40");
-    			add_location(th69, file$9, 616, 8, 15667);
-    			add_location(tr43, file$9, 614, 6, 15626);
-    			attr_dev(th70, "class", "date svelte-ccym40");
-    			add_location(th70, file$9, 621, 8, 15773);
-    			attr_dev(h524, "class", "svelte-ccym40");
-    			add_location(h524, file$9, 623, 10, 15828);
-    			attr_dev(h613, "class", "svelte-ccym40");
-    			add_location(h613, file$9, 624, 10, 15881);
-    			attr_dev(p12, "class", "desc svelte-ccym40");
-    			add_location(p12, file$9, 628, 10, 16012);
-    			attr_dev(i14, "class", "fab fa-github svelte-ccym40");
-    			add_location(i14, file$9, 635, 16, 16298);
-    			add_location(button21, file$9, 634, 14, 16273);
+    			add_location(a13, file$9, 641, 12, 16205);
+    			add_location(i13, file$9, 647, 12, 16479);
+    			attr_dev(h523, "class", "single press svelte-qaq4cq");
+    			add_location(h523, file$9, 640, 10, 16167);
+    			attr_dev(th69, "class", "svelte-qaq4cq");
+    			add_location(th69, file$9, 639, 8, 16152);
+    			add_location(tr43, file$9, 637, 6, 16104);
+    			attr_dev(th70, "class", "date svelte-qaq4cq");
+    			add_location(th70, file$9, 653, 8, 16578);
+    			attr_dev(h49, "class", "header svelte-qaq4cq");
+    			add_location(h49, file$9, 655, 10, 16621);
+    			attr_dev(th71, "class", "svelte-qaq4cq");
+    			add_location(th71, file$9, 654, 8, 16606);
+    			add_location(tr44, file$9, 652, 6, 16565);
+    			attr_dev(th72, "class", "date svelte-qaq4cq");
+    			add_location(th72, file$9, 659, 8, 16712);
+    			attr_dev(h524, "class", "svelte-qaq4cq");
+    			add_location(h524, file$9, 661, 10, 16767);
+    			attr_dev(h613, "class", "svelte-qaq4cq");
+    			add_location(h613, file$9, 662, 10, 16820);
+    			attr_dev(p12, "class", "desc svelte-qaq4cq");
+    			add_location(p12, file$9, 666, 10, 16951);
+    			attr_dev(i14, "class", "fab fa-github svelte-qaq4cq");
+    			add_location(i14, file$9, 673, 16, 17237);
+    			add_location(button21, file$9, 672, 14, 17212);
     			attr_dev(a14, "href", "https://github.com/cabreraalex/private-fair-GAN");
-    			add_location(a14, file$9, 633, 12, 16200);
+    			add_location(a14, file$9, 671, 12, 17139);
     			attr_dev(div10, "class", "tags");
-    			add_location(div10, file$9, 632, 10, 16169);
-    			attr_dev(th71, "class", "svelte-ccym40");
-    			add_location(th71, file$9, 622, 8, 15813);
-    			attr_dev(tr44, "class", "item svelte-ccym40");
-    			add_location(tr44, file$9, 620, 6, 15747);
-    			attr_dev(tr45, "class", "buffer svelte-ccym40");
-    			add_location(tr45, file$9, 642, 6, 16439);
-    			attr_dev(th72, "class", "date svelte-ccym40");
-    			add_location(th72, file$9, 644, 8, 16493);
-    			attr_dev(h525, "class", "svelte-ccym40");
-    			add_location(h525, file$9, 646, 10, 16550);
-    			attr_dev(p13, "class", "desc svelte-ccym40");
-    			add_location(p13, file$9, 647, 10, 16602);
-    			attr_dev(i15, "class", "fas fa-file-pdf svelte-ccym40");
-    			add_location(i15, file$9, 654, 16, 16860);
-    			add_location(button22, file$9, 653, 14, 16835);
+    			add_location(div10, file$9, 670, 10, 17108);
+    			attr_dev(th73, "class", "svelte-qaq4cq");
+    			add_location(th73, file$9, 660, 8, 16752);
+    			attr_dev(tr45, "class", "item svelte-qaq4cq");
+    			add_location(tr45, file$9, 658, 6, 16686);
+    			attr_dev(tr46, "class", "buffer svelte-qaq4cq");
+    			add_location(tr46, file$9, 680, 6, 17378);
+    			attr_dev(th74, "class", "date svelte-qaq4cq");
+    			add_location(th74, file$9, 682, 8, 17432);
+    			attr_dev(h525, "class", "svelte-qaq4cq");
+    			add_location(h525, file$9, 684, 10, 17489);
+    			attr_dev(p13, "class", "desc svelte-qaq4cq");
+    			add_location(p13, file$9, 685, 10, 17541);
+    			attr_dev(i15, "class", "fas fa-file-pdf svelte-qaq4cq");
+    			add_location(i15, file$9, 692, 16, 17799);
+    			add_location(button22, file$9, 691, 14, 17774);
     			attr_dev(a15, "href", "./gt_bus_analysis.pdf");
-    			add_location(a15, file$9, 652, 12, 16788);
-    			attr_dev(i16, "class", "fas fa-globe svelte-ccym40");
-    			add_location(i16, file$9, 660, 16, 17063);
-    			add_location(button23, file$9, 659, 14, 17038);
+    			add_location(a15, file$9, 690, 12, 17727);
+    			attr_dev(i16, "class", "fas fa-globe svelte-qaq4cq");
+    			add_location(i16, file$9, 698, 16, 18002);
+    			add_location(button23, file$9, 697, 14, 17977);
     			attr_dev(a16, "href", "http://poloclub.gatech.edu/cse6242/2018spring/");
-    			add_location(a16, file$9, 658, 12, 16966);
+    			add_location(a16, file$9, 696, 12, 17905);
     			attr_dev(div11, "class", "tags");
-    			add_location(div11, file$9, 651, 10, 16757);
-    			attr_dev(th73, "class", "svelte-ccym40");
-    			add_location(th73, file$9, 645, 8, 16535);
-    			attr_dev(tr46, "class", "item svelte-ccym40");
-    			add_location(tr46, file$9, 643, 6, 16467);
-    			attr_dev(tr47, "class", "buffer svelte-ccym40");
-    			add_location(tr47, file$9, 667, 6, 17202);
-    			attr_dev(th74, "class", "date svelte-ccym40");
-    			add_location(th74, file$9, 669, 8, 17256);
-    			attr_dev(h526, "class", "svelte-ccym40");
-    			add_location(h526, file$9, 671, 10, 17313);
-    			attr_dev(p14, "class", "desc svelte-ccym40");
-    			add_location(p14, file$9, 672, 10, 17346);
-    			attr_dev(i17, "class", "fas fa-globe svelte-ccym40");
-    			add_location(i17, file$9, 679, 16, 17619);
-    			add_location(button24, file$9, 678, 14, 17594);
+    			add_location(div11, file$9, 689, 10, 17696);
+    			attr_dev(th75, "class", "svelte-qaq4cq");
+    			add_location(th75, file$9, 683, 8, 17474);
+    			attr_dev(tr47, "class", "item svelte-qaq4cq");
+    			add_location(tr47, file$9, 681, 6, 17406);
+    			attr_dev(tr48, "class", "buffer svelte-qaq4cq");
+    			add_location(tr48, file$9, 705, 6, 18141);
+    			attr_dev(th76, "class", "date svelte-qaq4cq");
+    			add_location(th76, file$9, 707, 8, 18195);
+    			attr_dev(h526, "class", "svelte-qaq4cq");
+    			add_location(h526, file$9, 709, 10, 18252);
+    			attr_dev(p14, "class", "desc svelte-qaq4cq");
+    			add_location(p14, file$9, 710, 10, 18285);
+    			attr_dev(i17, "class", "fas fa-globe svelte-qaq4cq");
+    			add_location(i17, file$9, 717, 16, 18558);
+    			add_location(button24, file$9, 716, 14, 18533);
     			attr_dev(a17, "href", "http://ctfs.github.io/resources/");
-    			add_location(a17, file$9, 677, 12, 17536);
-    			attr_dev(i18, "class", "fab fa-github svelte-ccym40");
-    			add_location(i18, file$9, 685, 16, 17807);
-    			add_location(button25, file$9, 684, 14, 17782);
+    			add_location(a17, file$9, 715, 12, 18475);
+    			attr_dev(i18, "class", "fab fa-github svelte-qaq4cq");
+    			add_location(i18, file$9, 723, 16, 18746);
+    			add_location(button25, file$9, 722, 14, 18721);
     			attr_dev(a18, "href", "https://github.com/ctfs/resources");
-    			add_location(a18, file$9, 683, 12, 17723);
+    			add_location(a18, file$9, 721, 12, 18662);
     			attr_dev(div12, "class", "tags");
-    			add_location(div12, file$9, 676, 10, 17505);
-    			attr_dev(th75, "class", "svelte-ccym40");
-    			add_location(th75, file$9, 670, 8, 17298);
-    			attr_dev(tr48, "class", "item svelte-ccym40");
-    			add_location(tr48, file$9, 668, 6, 17230);
-    			attr_dev(th76, "class", "date svelte-ccym40");
-    			add_location(th76, file$9, 767, 8, 20110);
-    			attr_dev(h49, "class", "header svelte-ccym40");
-    			add_location(h49, file$9, 769, 10, 20153);
-    			attr_dev(th77, "class", "svelte-ccym40");
-    			add_location(th77, file$9, 768, 8, 20138);
-    			add_location(tr49, file$9, 766, 6, 20097);
-    			attr_dev(th78, "class", "date svelte-ccym40");
-    			add_location(th78, file$9, 773, 8, 20252);
-    			attr_dev(h527, "class", "single svelte-ccym40");
-    			add_location(h527, file$9, 776, 12, 20384);
-    			attr_dev(a19, "href", "https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/");
-    			add_location(a19, file$9, 775, 10, 20307);
-    			attr_dev(th79, "class", "svelte-ccym40");
-    			add_location(th79, file$9, 774, 8, 20292);
-    			attr_dev(tr50, "class", "item svelte-ccym40");
-    			add_location(tr50, file$9, 772, 6, 20226);
-    			attr_dev(th80, "class", "date svelte-ccym40");
-    			add_location(th80, file$9, 781, 8, 20510);
-    			attr_dev(h528, "class", "single svelte-ccym40");
-    			add_location(h528, file$9, 784, 12, 20636);
-    			attr_dev(a20, "href", "http://poloclub.gatech.edu/cse6242/2018spring");
-    			add_location(a20, file$9, 783, 10, 20567);
-    			attr_dev(th81, "class", "svelte-ccym40");
-    			add_location(th81, file$9, 782, 8, 20552);
-    			attr_dev(tr51, "class", "item svelte-ccym40");
-    			add_location(tr51, file$9, 780, 6, 20484);
-    			attr_dev(th82, "class", "date svelte-ccym40");
-    			add_location(th82, file$9, 789, 8, 20778);
-    			attr_dev(h529, "class", "single svelte-ccym40");
-    			add_location(h529, file$9, 791, 10, 20833);
-    			attr_dev(th83, "class", "svelte-ccym40");
-    			add_location(th83, file$9, 790, 8, 20818);
-    			attr_dev(tr52, "class", "item svelte-ccym40");
-    			add_location(tr52, file$9, 788, 6, 20752);
-    			attr_dev(th84, "class", "date svelte-ccym40");
-    			add_location(th84, file$9, 795, 8, 20946);
-    			attr_dev(h530, "class", "single svelte-ccym40");
-    			add_location(h530, file$9, 798, 12, 21080);
-    			attr_dev(a21, "href", "https://www.omscs.gatech.edu/cs-7641-machine-learning");
-    			add_location(a21, file$9, 797, 10, 21003);
-    			attr_dev(th85, "class", "svelte-ccym40");
-    			add_location(th85, file$9, 796, 8, 20988);
-    			attr_dev(tr53, "class", "item svelte-ccym40");
-    			add_location(tr53, file$9, 794, 6, 20920);
-    			attr_dev(th86, "class", "date svelte-ccym40");
-    			add_location(th86, file$9, 803, 8, 21209);
-    			attr_dev(h531, "class", "single svelte-ccym40");
-    			add_location(h531, file$9, 806, 12, 21320);
-    			attr_dev(a22, "href", "http://cx4230.gatech.edu/sp17/");
-    			add_location(a22, file$9, 805, 10, 21266);
-    			attr_dev(th87, "class", "svelte-ccym40");
-    			add_location(th87, file$9, 804, 8, 21251);
-    			attr_dev(tr54, "class", "item svelte-ccym40");
-    			add_location(tr54, file$9, 802, 6, 21183);
-    			attr_dev(th88, "class", "date svelte-ccym40");
-    			add_location(th88, file$9, 811, 8, 21447);
-    			attr_dev(h532, "class", "single svelte-ccym40");
-    			add_location(h532, file$9, 813, 10, 21504);
-    			attr_dev(th89, "class", "svelte-ccym40");
-    			add_location(th89, file$9, 812, 8, 21489);
-    			attr_dev(tr55, "class", "item svelte-ccym40");
-    			add_location(tr55, file$9, 810, 6, 21421);
-    			attr_dev(th90, "class", "date svelte-ccym40");
-    			add_location(th90, file$9, 818, 8, 21623);
-    			attr_dev(h410, "class", "header svelte-ccym40");
-    			add_location(h410, file$9, 820, 10, 21666);
-    			attr_dev(th91, "class", "svelte-ccym40");
-    			add_location(th91, file$9, 819, 8, 21651);
-    			add_location(tr56, file$9, 817, 6, 21610);
-    			attr_dev(th92, "class", "date svelte-ccym40");
-    			add_location(th92, file$9, 824, 8, 21755);
-    			attr_dev(h533, "class", "svelte-ccym40");
-    			add_location(h533, file$9, 826, 10, 21798);
-    			add_location(button26, file$9, 828, 12, 21858);
-    			add_location(button27, file$9, 829, 12, 21904);
-    			add_location(button28, file$9, 830, 12, 21950);
+    			add_location(div12, file$9, 714, 10, 18444);
+    			attr_dev(th77, "class", "svelte-qaq4cq");
+    			add_location(th77, file$9, 708, 8, 18237);
+    			attr_dev(tr49, "class", "item svelte-qaq4cq");
+    			add_location(tr49, file$9, 706, 6, 18169);
+    			attr_dev(th78, "class", "date svelte-qaq4cq");
+    			add_location(th78, file$9, 805, 8, 21049);
+    			attr_dev(h410, "class", "header svelte-qaq4cq");
+    			add_location(h410, file$9, 807, 10, 21092);
+    			attr_dev(th79, "class", "svelte-qaq4cq");
+    			add_location(th79, file$9, 806, 8, 21077);
+    			add_location(tr50, file$9, 804, 6, 21036);
+    			attr_dev(th80, "class", "date svelte-qaq4cq");
+    			add_location(th80, file$9, 811, 8, 21191);
+    			attr_dev(h527, "class", "single svelte-qaq4cq");
+    			add_location(h527, file$9, 814, 12, 21329);
+    			attr_dev(a19, "href", "https://www.hcii.cmu.edu/courses/applied-research-methods");
+    			add_location(a19, file$9, 813, 10, 21248);
+    			attr_dev(th81, "class", "svelte-qaq4cq");
+    			add_location(th81, file$9, 812, 8, 21233);
+    			attr_dev(tr51, "class", "item svelte-qaq4cq");
+    			add_location(tr51, file$9, 810, 6, 21165);
+    			attr_dev(th82, "class", "date svelte-qaq4cq");
+    			add_location(th82, file$9, 819, 8, 21451);
+    			attr_dev(h528, "class", "single svelte-qaq4cq");
+    			add_location(h528, file$9, 822, 12, 21583);
+    			attr_dev(a20, "href", "https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/");
+    			add_location(a20, file$9, 821, 10, 21506);
+    			attr_dev(th83, "class", "svelte-qaq4cq");
+    			add_location(th83, file$9, 820, 8, 21491);
+    			attr_dev(tr52, "class", "item svelte-qaq4cq");
+    			add_location(tr52, file$9, 818, 6, 21425);
+    			attr_dev(th84, "class", "date svelte-qaq4cq");
+    			add_location(th84, file$9, 827, 8, 21694);
+    			attr_dev(h529, "class", "single svelte-qaq4cq");
+    			add_location(h529, file$9, 830, 12, 21820);
+    			attr_dev(a21, "href", "http://poloclub.gatech.edu/cse6242/2018spring");
+    			add_location(a21, file$9, 829, 10, 21751);
+    			attr_dev(th85, "class", "svelte-qaq4cq");
+    			add_location(th85, file$9, 828, 8, 21736);
+    			attr_dev(tr53, "class", "item svelte-qaq4cq");
+    			add_location(tr53, file$9, 826, 6, 21668);
+    			attr_dev(th86, "class", "date svelte-qaq4cq");
+    			add_location(th86, file$9, 835, 8, 21943);
+    			attr_dev(h530, "class", "single svelte-qaq4cq");
+    			add_location(h530, file$9, 837, 10, 21998);
+    			attr_dev(th87, "class", "svelte-qaq4cq");
+    			add_location(th87, file$9, 836, 8, 21983);
+    			attr_dev(tr54, "class", "item svelte-qaq4cq");
+    			add_location(tr54, file$9, 834, 6, 21917);
+    			attr_dev(th88, "class", "date svelte-qaq4cq");
+    			add_location(th88, file$9, 841, 8, 22098);
+    			attr_dev(h531, "class", "single svelte-qaq4cq");
+    			add_location(h531, file$9, 844, 12, 22232);
+    			attr_dev(a22, "href", "https://www.omscs.gatech.edu/cs-7641-machine-learning");
+    			add_location(a22, file$9, 843, 10, 22155);
+    			attr_dev(th89, "class", "svelte-qaq4cq");
+    			add_location(th89, file$9, 842, 8, 22140);
+    			attr_dev(tr55, "class", "item svelte-qaq4cq");
+    			add_location(tr55, file$9, 840, 6, 22072);
+    			attr_dev(th90, "class", "date svelte-qaq4cq");
+    			add_location(th90, file$9, 849, 8, 22346);
+    			attr_dev(h532, "class", "single svelte-qaq4cq");
+    			add_location(h532, file$9, 852, 12, 22457);
+    			attr_dev(a23, "href", "http://cx4230.gatech.edu/sp17/");
+    			add_location(a23, file$9, 851, 10, 22403);
+    			attr_dev(th91, "class", "svelte-qaq4cq");
+    			add_location(th91, file$9, 850, 8, 22388);
+    			attr_dev(tr56, "class", "item svelte-qaq4cq");
+    			add_location(tr56, file$9, 848, 6, 22320);
+    			attr_dev(th92, "class", "date svelte-qaq4cq");
+    			add_location(th92, file$9, 857, 8, 22574);
+    			attr_dev(h533, "class", "single svelte-qaq4cq");
+    			add_location(h533, file$9, 859, 10, 22631);
+    			attr_dev(th93, "class", "svelte-qaq4cq");
+    			add_location(th93, file$9, 858, 8, 22616);
+    			attr_dev(tr57, "class", "item svelte-qaq4cq");
+    			add_location(tr57, file$9, 856, 6, 22548);
+    			attr_dev(th94, "class", "date svelte-qaq4cq");
+    			add_location(th94, file$9, 864, 8, 22740);
+    			attr_dev(h411, "class", "header svelte-qaq4cq");
+    			add_location(h411, file$9, 866, 10, 22783);
+    			attr_dev(th95, "class", "svelte-qaq4cq");
+    			add_location(th95, file$9, 865, 8, 22768);
+    			add_location(tr58, file$9, 863, 6, 22727);
+    			attr_dev(th96, "class", "date svelte-qaq4cq");
+    			add_location(th96, file$9, 870, 8, 22872);
+    			attr_dev(h534, "class", "svelte-qaq4cq");
+    			add_location(h534, file$9, 872, 10, 22915);
+    			add_location(button26, file$9, 874, 12, 22975);
+    			add_location(button27, file$9, 875, 12, 23021);
+    			add_location(button28, file$9, 876, 12, 23067);
     			attr_dev(div13, "class", "tags");
-    			add_location(div13, file$9, 827, 10, 21827);
-    			attr_dev(th93, "class", "svelte-ccym40");
-    			add_location(th93, file$9, 825, 8, 21783);
-    			attr_dev(tr57, "class", "item svelte-ccym40");
-    			add_location(tr57, file$9, 823, 6, 21729);
-    			attr_dev(tr58, "class", "buffer svelte-ccym40");
-    			add_location(tr58, file$9, 834, 6, 22045);
-    			attr_dev(th94, "class", "date svelte-ccym40");
-    			add_location(th94, file$9, 836, 8, 22099);
-    			attr_dev(h534, "class", "svelte-ccym40");
-    			add_location(h534, file$9, 838, 10, 22142);
-    			add_location(button29, file$9, 840, 12, 22214);
-    			add_location(button30, file$9, 841, 12, 22248);
-    			add_location(button31, file$9, 842, 12, 22288);
-    			add_location(button32, file$9, 843, 12, 22324);
-    			add_location(button33, file$9, 844, 12, 22359);
-    			add_location(button34, file$9, 845, 12, 22392);
+    			add_location(div13, file$9, 873, 10, 22944);
+    			attr_dev(th97, "class", "svelte-qaq4cq");
+    			add_location(th97, file$9, 871, 8, 22900);
+    			attr_dev(tr59, "class", "item svelte-qaq4cq");
+    			add_location(tr59, file$9, 869, 6, 22846);
+    			attr_dev(tr60, "class", "buffer svelte-qaq4cq");
+    			add_location(tr60, file$9, 880, 6, 23162);
+    			attr_dev(th98, "class", "date svelte-qaq4cq");
+    			add_location(th98, file$9, 882, 8, 23216);
+    			attr_dev(h535, "class", "svelte-qaq4cq");
+    			add_location(h535, file$9, 884, 10, 23259);
+    			add_location(button29, file$9, 886, 12, 23331);
+    			add_location(button30, file$9, 887, 12, 23365);
+    			add_location(button31, file$9, 888, 12, 23405);
+    			add_location(button32, file$9, 889, 12, 23441);
+    			add_location(button33, file$9, 890, 12, 23476);
+    			add_location(button34, file$9, 891, 12, 23509);
     			attr_dev(div14, "class", "tags");
-    			add_location(div14, file$9, 839, 10, 22183);
-    			attr_dev(th95, "class", "svelte-ccym40");
-    			add_location(th95, file$9, 837, 8, 22127);
-    			attr_dev(tr59, "class", "item svelte-ccym40");
-    			add_location(tr59, file$9, 835, 6, 22073);
-    			attr_dev(tr60, "class", "buffer svelte-ccym40");
-    			add_location(tr60, file$9, 849, 6, 22461);
-    			attr_dev(th96, "class", "date svelte-ccym40");
-    			add_location(th96, file$9, 851, 8, 22515);
-    			attr_dev(h535, "class", "svelte-ccym40");
-    			add_location(h535, file$9, 853, 10, 22558);
-    			add_location(button35, file$9, 855, 12, 22621);
-    			add_location(button36, file$9, 856, 12, 22667);
-    			add_location(button37, file$9, 857, 12, 22719);
-    			add_location(button38, file$9, 858, 12, 22754);
-    			add_location(button39, file$9, 859, 12, 22790);
-    			add_location(button40, file$9, 860, 12, 22824);
-    			add_location(button41, file$9, 861, 12, 22856);
-    			add_location(button42, file$9, 862, 12, 22893);
-    			add_location(button43, file$9, 863, 12, 22947);
+    			add_location(div14, file$9, 885, 10, 23300);
+    			attr_dev(th99, "class", "svelte-qaq4cq");
+    			add_location(th99, file$9, 883, 8, 23244);
+    			attr_dev(tr61, "class", "item svelte-qaq4cq");
+    			add_location(tr61, file$9, 881, 6, 23190);
+    			attr_dev(tr62, "class", "buffer svelte-qaq4cq");
+    			add_location(tr62, file$9, 895, 6, 23578);
+    			attr_dev(th100, "class", "date svelte-qaq4cq");
+    			add_location(th100, file$9, 897, 8, 23632);
+    			attr_dev(h536, "class", "svelte-qaq4cq");
+    			add_location(h536, file$9, 899, 10, 23675);
+    			add_location(button35, file$9, 901, 12, 23738);
+    			add_location(button36, file$9, 902, 12, 23784);
+    			add_location(button37, file$9, 903, 12, 23836);
+    			add_location(button38, file$9, 904, 12, 23871);
+    			add_location(button39, file$9, 905, 12, 23907);
+    			add_location(button40, file$9, 906, 12, 23941);
+    			add_location(button41, file$9, 907, 12, 23973);
+    			add_location(button42, file$9, 908, 12, 24010);
+    			add_location(button43, file$9, 909, 12, 24064);
     			attr_dev(div15, "class", "tags");
-    			add_location(div15, file$9, 854, 10, 22590);
-    			attr_dev(th97, "class", "svelte-ccym40");
-    			add_location(th97, file$9, 852, 8, 22543);
-    			attr_dev(tr61, "class", "item svelte-ccym40");
-    			add_location(tr61, file$9, 850, 6, 22489);
-    			attr_dev(tr62, "class", "buffer svelte-ccym40");
-    			add_location(tr62, file$9, 867, 6, 23036);
-    			attr_dev(th98, "class", "date svelte-ccym40");
-    			add_location(th98, file$9, 869, 8, 23090);
-    			attr_dev(p15, "class", "desc svelte-ccym40");
-    			add_location(p15, file$9, 871, 10, 23133);
-    			attr_dev(th99, "class", "svelte-ccym40");
-    			add_location(th99, file$9, 870, 8, 23118);
-    			attr_dev(tr63, "class", "item svelte-ccym40");
-    			add_location(tr63, file$9, 868, 6, 23064);
-    			attr_dev(table, "class", "svelte-ccym40");
-    			add_location(table, file$9, 128, 4, 1826);
-    			attr_dev(main, "class", "svelte-ccym40");
-    			add_location(main, file$9, 127, 2, 1815);
+    			add_location(div15, file$9, 900, 10, 23707);
+    			attr_dev(th101, "class", "svelte-qaq4cq");
+    			add_location(th101, file$9, 898, 8, 23660);
+    			attr_dev(tr63, "class", "item svelte-qaq4cq");
+    			add_location(tr63, file$9, 896, 6, 23606);
+    			attr_dev(tr64, "class", "buffer svelte-qaq4cq");
+    			add_location(tr64, file$9, 913, 6, 24153);
+    			attr_dev(th102, "class", "date svelte-qaq4cq");
+    			add_location(th102, file$9, 915, 8, 24207);
+    			attr_dev(p15, "class", "desc svelte-qaq4cq");
+    			add_location(p15, file$9, 917, 10, 24250);
+    			attr_dev(th103, "class", "svelte-qaq4cq");
+    			add_location(th103, file$9, 916, 8, 24235);
+    			attr_dev(tr65, "class", "item svelte-qaq4cq");
+    			add_location(tr65, file$9, 914, 6, 24181);
+    			attr_dev(table, "class", "svelte-qaq4cq");
+    			add_location(table, file$9, 129, 4, 1865);
+    			attr_dev(main, "class", "svelte-qaq4cq");
+    			add_location(main, file$9, 128, 2, 1854);
     			attr_dev(div16, "id", "container");
-    			attr_dev(div16, "class", "svelte-ccym40");
-    			add_location(div16, file$9, 126, 0, 1792);
+    			attr_dev(div16, "class", "svelte-qaq4cq");
+    			add_location(div16, file$9, 127, 0, 1831);
     		},
 
     		l: function claim(nodes) {
@@ -4910,558 +5322,610 @@ var app = (function () {
     			append_dev(th7, h61);
     			append_dev(th7, t28);
     			append_dev(th7, p0);
-    			append_dev(table, t30);
+    			append_dev(p0, t29);
+    			append_dev(p0, br2);
+    			append_dev(p0, t30);
+    			append_dev(table, t31);
     			append_dev(table, tr5);
     			append_dev(tr5, th8);
-    			append_dev(tr5, t32);
+    			append_dev(tr5, t33);
     			append_dev(tr5, th9);
     			append_dev(th9, h62);
-    			append_dev(th9, t34);
+    			append_dev(th9, t35);
     			append_dev(th9, p1);
-    			append_dev(table, t36);
+    			append_dev(table, t37);
     			append_dev(table, tr6);
     			append_dev(tr6, th10);
-    			append_dev(tr6, t37);
+    			append_dev(tr6, t38);
     			append_dev(tr6, th11);
     			append_dev(th11, h41);
-    			append_dev(table, t39);
+    			append_dev(table, t40);
     			append_dev(table, tr7);
     			append_dev(tr7, th12);
-    			append_dev(tr7, t41);
+    			append_dev(tr7, t42);
     			append_dev(tr7, th13);
     			append_dev(th13, h52);
-    			append_dev(th13, t43);
+    			append_dev(th13, t44);
     			append_dev(th13, p2);
-    			append_dev(th13, t45);
+    			append_dev(th13, t46);
     			append_dev(th13, div0);
     			append_dev(div0, a0);
     			append_dev(a0, button0);
     			append_dev(button0, i0);
-    			append_dev(button0, t46);
-    			append_dev(table, t47);
-    			append_dev(table, tr8);
+    			append_dev(button0, t47);
     			append_dev(table, t48);
+    			append_dev(table, tr8);
+    			append_dev(table, t49);
     			append_dev(table, tr9);
     			append_dev(tr9, th14);
-    			append_dev(tr9, t50);
+    			append_dev(tr9, t51);
     			append_dev(tr9, th15);
     			append_dev(th15, h53);
-    			append_dev(th15, t52);
+    			append_dev(th15, t53);
     			append_dev(th15, p3);
-    			append_dev(th15, t54);
+    			append_dev(th15, t55);
     			append_dev(th15, div1);
     			append_dev(div1, a1);
     			append_dev(a1, button1);
     			append_dev(button1, i1);
-    			append_dev(button1, t55);
-    			append_dev(table, t56);
-    			append_dev(table, tr10);
+    			append_dev(button1, t56);
     			append_dev(table, t57);
+    			append_dev(table, tr10);
+    			append_dev(table, t58);
     			append_dev(table, tr11);
     			append_dev(tr11, th16);
-    			append_dev(th16, t58);
-    			append_dev(th16, br2);
     			append_dev(th16, t59);
-    			append_dev(tr11, t60);
+    			append_dev(th16, br3);
+    			append_dev(th16, t60);
+    			append_dev(tr11, t61);
     			append_dev(tr11, th17);
     			append_dev(th17, h54);
-    			append_dev(th17, t62);
+    			append_dev(th17, t63);
     			append_dev(th17, h63);
-    			append_dev(th17, t64);
+    			append_dev(th17, t65);
     			append_dev(th17, p4);
-    			append_dev(th17, t66);
+    			append_dev(th17, t67);
     			append_dev(th17, div2);
     			append_dev(div2, a2);
     			append_dev(a2, button2);
     			append_dev(button2, i2);
-    			append_dev(button2, t67);
-    			append_dev(table, t68);
-    			append_dev(table, tr12);
+    			append_dev(button2, t68);
     			append_dev(table, t69);
+    			append_dev(table, tr12);
+    			append_dev(table, t70);
     			append_dev(table, tr13);
     			append_dev(tr13, th18);
-    			append_dev(tr13, t71);
+    			append_dev(tr13, t72);
     			append_dev(tr13, th19);
     			append_dev(th19, h55);
-    			append_dev(th19, t73);
+    			append_dev(th19, t74);
     			append_dev(th19, h64);
-    			append_dev(th19, t75);
+    			append_dev(th19, t76);
     			append_dev(th19, p5);
-    			append_dev(th19, t77);
+    			append_dev(th19, t78);
     			append_dev(th19, div3);
     			append_dev(div3, a3);
     			append_dev(a3, button3);
     			append_dev(button3, i3);
-    			append_dev(button3, t78);
-    			append_dev(table, t79);
+    			append_dev(button3, t79);
+    			append_dev(table, t80);
     			append_dev(table, tr14);
     			append_dev(tr14, th20);
-    			append_dev(tr14, t80);
+    			append_dev(tr14, t81);
     			append_dev(tr14, th21);
     			append_dev(th21, h42);
-    			append_dev(table, t82);
+    			append_dev(table, t83);
     			append_dev(table, tr15);
     			append_dev(tr15, th22);
-    			append_dev(th22, t83);
-    			append_dev(th22, br3);
     			append_dev(th22, t84);
-    			append_dev(tr15, t85);
+    			append_dev(th22, br4);
+    			append_dev(th22, t85);
+    			append_dev(tr15, t86);
     			append_dev(tr15, th23);
     			append_dev(th23, h56);
-    			append_dev(th23, t87);
+    			append_dev(th23, t88);
     			append_dev(th23, h65);
-    			append_dev(th23, t89);
+    			append_dev(th23, t90);
     			append_dev(th23, p6);
-    			append_dev(th23, t91);
+    			append_dev(th23, t92);
     			append_dev(th23, div4);
     			append_dev(div4, a4);
     			append_dev(a4, button4);
     			append_dev(button4, i4);
-    			append_dev(button4, t92);
-    			append_dev(div4, t93);
+    			append_dev(button4, t93);
+    			append_dev(div4, t94);
     			append_dev(div4, button5);
-    			append_dev(div4, t95);
+    			append_dev(div4, t96);
     			append_dev(div4, button6);
-    			append_dev(div4, t97);
+    			append_dev(div4, t98);
     			append_dev(div4, button7);
-    			append_dev(div4, t99);
+    			append_dev(div4, t100);
     			append_dev(div4, button8);
-    			append_dev(table, t101);
-    			append_dev(table, tr16);
     			append_dev(table, t102);
+    			append_dev(table, tr16);
+    			append_dev(table, t103);
     			append_dev(table, tr17);
     			append_dev(tr17, th24);
-    			append_dev(th24, t103);
-    			append_dev(th24, br4);
     			append_dev(th24, t104);
-    			append_dev(tr17, t105);
+    			append_dev(th24, br5);
+    			append_dev(th24, t105);
+    			append_dev(tr17, t106);
     			append_dev(tr17, th25);
     			append_dev(th25, h57);
-    			append_dev(th25, t107);
+    			append_dev(th25, t108);
     			append_dev(th25, h66);
-    			append_dev(th25, t109);
+    			append_dev(th25, t110);
     			append_dev(th25, p7);
-    			append_dev(th25, t111);
+    			append_dev(th25, t112);
     			append_dev(th25, div5);
     			append_dev(div5, button9);
-    			append_dev(div5, t113);
+    			append_dev(div5, t114);
     			append_dev(div5, button10);
-    			append_dev(div5, t115);
+    			append_dev(div5, t116);
     			append_dev(div5, button11);
-    			append_dev(div5, t117);
+    			append_dev(div5, t118);
     			append_dev(div5, button12);
-    			append_dev(table, t119);
-    			append_dev(table, tr18);
     			append_dev(table, t120);
+    			append_dev(table, tr18);
+    			append_dev(table, t121);
     			append_dev(table, tr19);
     			append_dev(tr19, th26);
-    			append_dev(th26, t121);
-    			append_dev(th26, br5);
     			append_dev(th26, t122);
-    			append_dev(tr19, t123);
+    			append_dev(th26, br6);
+    			append_dev(th26, t123);
+    			append_dev(tr19, t124);
     			append_dev(tr19, th27);
     			append_dev(th27, h58);
-    			append_dev(th27, t125);
+    			append_dev(th27, t126);
     			append_dev(th27, h67);
-    			append_dev(th27, t127);
+    			append_dev(th27, t128);
     			append_dev(th27, p8);
-    			append_dev(th27, t129);
+    			append_dev(th27, t130);
     			append_dev(th27, div6);
     			append_dev(div6, button13);
-    			append_dev(div6, t131);
+    			append_dev(div6, t132);
     			append_dev(div6, button14);
-    			append_dev(div6, t133);
+    			append_dev(div6, t134);
     			append_dev(div6, button15);
-    			append_dev(table, t135);
+    			append_dev(table, t136);
     			append_dev(table, tr20);
     			append_dev(tr20, th28);
-    			append_dev(tr20, t136);
+    			append_dev(tr20, t137);
     			append_dev(tr20, th29);
     			append_dev(th29, h43);
-    			append_dev(table, t138);
+    			append_dev(table, t139);
     			append_dev(table, tr21);
     			append_dev(tr21, th30);
-    			append_dev(th30, t139);
-    			append_dev(th30, br6);
     			append_dev(th30, t140);
-    			append_dev(tr21, t141);
+    			append_dev(th30, br7);
+    			append_dev(th30, t141);
+    			append_dev(tr21, t142);
     			append_dev(tr21, th31);
     			append_dev(th31, h59);
-    			append_dev(th31, t143);
+    			append_dev(th31, t144);
     			append_dev(th31, h68);
-    			append_dev(th31, t145);
+    			append_dev(th31, t146);
     			append_dev(th31, div7);
     			append_dev(div7, a5);
     			append_dev(a5, button16);
     			append_dev(button16, i5);
-    			append_dev(button16, t146);
-    			append_dev(table, t147);
-    			append_dev(table, tr22);
+    			append_dev(button16, t147);
     			append_dev(table, t148);
+    			append_dev(table, tr22);
+    			append_dev(table, t149);
     			append_dev(table, tr23);
     			append_dev(tr23, th32);
-    			append_dev(th32, t149);
-    			append_dev(th32, br7);
     			append_dev(th32, t150);
-    			append_dev(tr23, t151);
+    			append_dev(th32, br8);
+    			append_dev(th32, t151);
+    			append_dev(tr23, t152);
     			append_dev(tr23, th33);
     			append_dev(th33, h510);
-    			append_dev(th33, t153);
+    			append_dev(th33, t154);
     			append_dev(th33, h69);
-    			append_dev(th33, t155);
+    			append_dev(th33, t156);
     			append_dev(th33, div8);
     			append_dev(div8, a6);
     			append_dev(a6, button17);
     			append_dev(button17, i6);
-    			append_dev(button17, t156);
-    			append_dev(table, t157);
-    			append_dev(table, tr24);
+    			append_dev(button17, t157);
     			append_dev(table, t158);
+    			append_dev(table, tr24);
+    			append_dev(table, t159);
     			append_dev(table, tr25);
     			append_dev(tr25, th34);
-    			append_dev(th34, t159);
-    			append_dev(th34, br8);
     			append_dev(th34, t160);
-    			append_dev(tr25, t161);
+    			append_dev(th34, br9);
+    			append_dev(th34, t161);
+    			append_dev(tr25, t162);
     			append_dev(tr25, th35);
     			append_dev(th35, h511);
-    			append_dev(th35, t163);
+    			append_dev(th35, t164);
     			append_dev(th35, h610);
-    			append_dev(th35, t165);
+    			append_dev(th35, t166);
     			append_dev(th35, p9);
-    			append_dev(th35, t167);
+    			append_dev(th35, t168);
     			append_dev(th35, div9);
     			append_dev(div9, a7);
     			append_dev(a7, button18);
     			append_dev(button18, i7);
-    			append_dev(button18, t168);
-    			append_dev(div9, t169);
+    			append_dev(button18, t169);
+    			append_dev(div9, t170);
     			append_dev(div9, a8);
     			append_dev(a8, button19);
     			append_dev(button19, i8);
-    			append_dev(button19, t170);
-    			append_dev(div9, t171);
+    			append_dev(button19, t171);
+    			append_dev(div9, t172);
     			append_dev(div9, a9);
     			append_dev(a9, button20);
     			append_dev(button20, i9);
-    			append_dev(button20, t172);
-    			append_dev(table, t173);
+    			append_dev(button20, t173);
+    			append_dev(table, t174);
     			append_dev(table, tr26);
     			append_dev(tr26, th36);
-    			append_dev(tr26, t174);
+    			append_dev(tr26, t175);
     			append_dev(tr26, th37);
     			append_dev(th37, h44);
-    			append_dev(table, t176);
+    			append_dev(table, t177);
+
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].m(table, null);
+    			}
+
+    			append_dev(table, t178);
+    			append_dev(table, tr27);
+    			append_dev(tr27, th38);
+    			append_dev(tr27, t179);
+    			append_dev(tr27, th39);
+    			append_dev(th39, h45);
+    			append_dev(table, t181);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(table, null);
     			}
 
-    			append_dev(table, t177);
-    			append_dev(table, tr27);
-    			append_dev(tr27, th38);
-    			append_dev(tr27, t178);
-    			append_dev(tr27, th39);
-    			append_dev(th39, h45);
-    			append_dev(table, t180);
+    			append_dev(table, t182);
     			append_dev(table, tr28);
     			append_dev(tr28, th40);
-    			append_dev(tr28, t182);
+    			append_dev(tr28, t183);
     			append_dev(tr28, th41);
-    			append_dev(th41, h512);
-    			append_dev(th41, t184);
-    			append_dev(th41, h611);
-    			append_dev(th41, t186);
-    			append_dev(th41, p10);
-    			append_dev(table, t188);
+    			append_dev(th41, h46);
+    			append_dev(table, t185);
     			append_dev(table, tr29);
-    			append_dev(table, t189);
-    			append_dev(table, tr30);
-    			append_dev(tr30, th42);
-    			append_dev(tr30, t191);
-    			append_dev(tr30, th43);
-    			append_dev(th43, h513);
+    			append_dev(tr29, th42);
+    			append_dev(th42, t186);
+    			append_dev(th42, br10);
+    			append_dev(th42, t187);
+    			append_dev(th42, br11);
+    			append_dev(th42, t188);
+    			append_dev(tr29, t189);
+    			append_dev(tr29, th43);
+    			append_dev(th43, h512);
+    			append_dev(th43, t191);
+    			append_dev(th43, h611);
     			append_dev(th43, t193);
-    			append_dev(th43, h612);
-    			append_dev(th43, t195);
-    			append_dev(th43, p11);
-    			append_dev(table, t197);
+    			append_dev(th43, p10);
+    			append_dev(table, t195);
+    			append_dev(table, tr30);
+    			append_dev(table, t196);
     			append_dev(table, tr31);
     			append_dev(tr31, th44);
     			append_dev(tr31, t198);
     			append_dev(tr31, th45);
-    			append_dev(th45, h46);
-    			append_dev(table, t200);
+    			append_dev(th45, h513);
+    			append_dev(th45, t200);
+    			append_dev(th45, h612);
+    			append_dev(th45, t202);
+    			append_dev(th45, p11);
+    			append_dev(table, t204);
     			append_dev(table, tr32);
     			append_dev(tr32, th46);
-    			append_dev(tr32, t201);
+    			append_dev(tr32, t205);
     			append_dev(tr32, th47);
-    			append_dev(th47, h514);
-    			append_dev(table, t203);
+    			append_dev(th47, h47);
+    			append_dev(table, t207);
     			append_dev(table, tr33);
     			append_dev(tr33, th48);
-    			append_dev(tr33, t205);
+    			append_dev(tr33, t208);
     			append_dev(tr33, th49);
-    			append_dev(th49, h515);
-    			append_dev(table, t207);
+    			append_dev(th49, h514);
+    			append_dev(table, t210);
     			append_dev(table, tr34);
     			append_dev(tr34, th50);
-    			append_dev(tr34, t209);
+    			append_dev(tr34, t212);
     			append_dev(tr34, th51);
-    			append_dev(th51, h516);
-    			append_dev(table, t211);
-    			append_dev(table, br9);
-    			append_dev(table, t212);
+    			append_dev(th51, h515);
+    			append_dev(table, t214);
     			append_dev(table, tr35);
     			append_dev(tr35, th52);
-    			append_dev(tr35, t213);
+    			append_dev(tr35, t216);
     			append_dev(tr35, th53);
-    			append_dev(th53, h517);
-    			append_dev(table, t215);
+    			append_dev(th53, h516);
+    			append_dev(table, t218);
+    			append_dev(table, br12);
+    			append_dev(table, t219);
     			append_dev(table, tr36);
     			append_dev(tr36, th54);
-    			append_dev(tr36, t217);
+    			append_dev(tr36, t220);
     			append_dev(tr36, th55);
-    			append_dev(th55, h518);
-    			append_dev(table, t219);
+    			append_dev(th55, h517);
+    			append_dev(table, t222);
     			append_dev(table, tr37);
     			append_dev(tr37, th56);
-    			append_dev(tr37, t221);
+    			append_dev(tr37, t224);
     			append_dev(tr37, th57);
-    			append_dev(th57, h519);
-    			append_dev(table, t223);
+    			append_dev(th57, h518);
+    			append_dev(table, t226);
     			append_dev(table, tr38);
     			append_dev(tr38, th58);
-    			append_dev(tr38, t224);
+    			append_dev(tr38, t228);
     			append_dev(tr38, th59);
-    			append_dev(th59, h47);
-    			append_dev(table, t226);
+    			append_dev(th59, h519);
+    			append_dev(table, t230);
     			append_dev(table, tr39);
     			append_dev(tr39, th60);
-    			append_dev(tr39, t228);
+    			append_dev(tr39, t231);
     			append_dev(tr39, th61);
-    			append_dev(th61, h520);
-    			append_dev(h520, a10);
-    			append_dev(h520, t230);
-    			append_dev(h520, i10);
-    			append_dev(table, t232);
+    			append_dev(th61, h48);
+    			append_dev(table, t233);
     			append_dev(table, tr40);
     			append_dev(tr40, th62);
-    			append_dev(tr40, t234);
+    			append_dev(tr40, t235);
     			append_dev(tr40, th63);
-    			append_dev(th63, h521);
-    			append_dev(h521, a11);
-    			append_dev(h521, t236);
-    			append_dev(h521, i11);
-    			append_dev(table, t238);
+    			append_dev(th63, h520);
+    			append_dev(h520, a10);
+    			append_dev(h520, t237);
+    			append_dev(h520, i10);
+    			append_dev(table, t239);
     			append_dev(table, tr41);
     			append_dev(tr41, th64);
-    			append_dev(tr41, t240);
+    			append_dev(tr41, t241);
     			append_dev(tr41, th65);
-    			append_dev(th65, h522);
-    			append_dev(h522, a12);
-    			append_dev(h522, t242);
-    			append_dev(h522, i12);
-    			append_dev(table, t244);
+    			append_dev(th65, h521);
+    			append_dev(h521, a11);
+    			append_dev(h521, t243);
+    			append_dev(h521, i11);
+    			append_dev(table, t245);
     			append_dev(table, tr42);
     			append_dev(tr42, th66);
-    			append_dev(tr42, t246);
+    			append_dev(tr42, t247);
     			append_dev(tr42, th67);
-    			append_dev(th67, h523);
-    			append_dev(h523, a13);
-    			append_dev(h523, t248);
-    			append_dev(h523, i13);
-    			append_dev(table, t250);
+    			append_dev(th67, h522);
+    			append_dev(h522, a12);
+    			append_dev(h522, t249);
+    			append_dev(h522, i12);
+    			append_dev(table, t251);
     			append_dev(table, tr43);
     			append_dev(tr43, th68);
-    			append_dev(tr43, t251);
+    			append_dev(tr43, t253);
     			append_dev(tr43, th69);
-    			append_dev(th69, h48);
-    			append_dev(table, t253);
+    			append_dev(th69, h523);
+    			append_dev(h523, a13);
+    			append_dev(h523, t255);
+    			append_dev(h523, i13);
+    			append_dev(table, t257);
     			append_dev(table, tr44);
     			append_dev(tr44, th70);
-    			append_dev(tr44, t255);
+    			append_dev(tr44, t258);
     			append_dev(tr44, th71);
-    			append_dev(th71, h524);
-    			append_dev(th71, t257);
-    			append_dev(th71, h613);
-    			append_dev(th71, t259);
-    			append_dev(th71, p12);
-    			append_dev(th71, t261);
-    			append_dev(th71, div10);
+    			append_dev(th71, h49);
+    			append_dev(table, t260);
+    			append_dev(table, tr45);
+    			append_dev(tr45, th72);
+    			append_dev(tr45, t262);
+    			append_dev(tr45, th73);
+    			append_dev(th73, h524);
+    			append_dev(th73, t264);
+    			append_dev(th73, h613);
+    			append_dev(th73, t266);
+    			append_dev(th73, p12);
+    			append_dev(th73, t268);
+    			append_dev(th73, div10);
     			append_dev(div10, a14);
     			append_dev(a14, button21);
     			append_dev(button21, i14);
-    			append_dev(button21, t262);
-    			append_dev(table, t263);
-    			append_dev(table, tr45);
-    			append_dev(table, t264);
+    			append_dev(button21, t269);
+    			append_dev(table, t270);
     			append_dev(table, tr46);
-    			append_dev(tr46, th72);
-    			append_dev(tr46, t266);
-    			append_dev(tr46, th73);
-    			append_dev(th73, h525);
-    			append_dev(th73, t268);
-    			append_dev(th73, p13);
-    			append_dev(th73, t270);
-    			append_dev(th73, div11);
+    			append_dev(table, t271);
+    			append_dev(table, tr47);
+    			append_dev(tr47, th74);
+    			append_dev(tr47, t273);
+    			append_dev(tr47, th75);
+    			append_dev(th75, h525);
+    			append_dev(th75, t275);
+    			append_dev(th75, p13);
+    			append_dev(th75, t277);
+    			append_dev(th75, div11);
     			append_dev(div11, a15);
     			append_dev(a15, button22);
     			append_dev(button22, i15);
-    			append_dev(button22, t271);
-    			append_dev(div11, t272);
+    			append_dev(button22, t278);
+    			append_dev(div11, t279);
     			append_dev(div11, a16);
     			append_dev(a16, button23);
     			append_dev(button23, i16);
-    			append_dev(button23, t273);
-    			append_dev(table, t274);
-    			append_dev(table, tr47);
-    			append_dev(table, t275);
+    			append_dev(button23, t280);
+    			append_dev(table, t281);
     			append_dev(table, tr48);
-    			append_dev(tr48, th74);
-    			append_dev(tr48, t277);
-    			append_dev(tr48, th75);
-    			append_dev(th75, h526);
-    			append_dev(th75, t279);
-    			append_dev(th75, p14);
-    			append_dev(th75, t281);
-    			append_dev(th75, div12);
+    			append_dev(table, t282);
+    			append_dev(table, tr49);
+    			append_dev(tr49, th76);
+    			append_dev(tr49, t284);
+    			append_dev(tr49, th77);
+    			append_dev(th77, h526);
+    			append_dev(th77, t286);
+    			append_dev(th77, p14);
+    			append_dev(th77, t288);
+    			append_dev(th77, div12);
     			append_dev(div12, a17);
     			append_dev(a17, button24);
     			append_dev(button24, i17);
-    			append_dev(button24, t282);
-    			append_dev(div12, t283);
+    			append_dev(button24, t289);
+    			append_dev(div12, t290);
     			append_dev(div12, a18);
     			append_dev(a18, button25);
     			append_dev(button25, i18);
-    			append_dev(button25, t284);
-    			append_dev(table, t285);
-    			append_dev(table, tr49);
-    			append_dev(tr49, th76);
-    			append_dev(tr49, t286);
-    			append_dev(tr49, th77);
-    			append_dev(th77, h49);
-    			append_dev(table, t288);
+    			append_dev(button25, t291);
+    			append_dev(table, t292);
     			append_dev(table, tr50);
     			append_dev(tr50, th78);
-    			append_dev(tr50, t290);
+    			append_dev(tr50, t293);
     			append_dev(tr50, th79);
-    			append_dev(th79, a19);
-    			append_dev(a19, h527);
-    			append_dev(table, t292);
+    			append_dev(th79, h410);
+    			append_dev(table, t295);
     			append_dev(table, tr51);
     			append_dev(tr51, th80);
-    			append_dev(tr51, t294);
+    			append_dev(tr51, t297);
     			append_dev(tr51, th81);
-    			append_dev(th81, a20);
-    			append_dev(a20, h528);
-    			append_dev(table, t296);
+    			append_dev(th81, a19);
+    			append_dev(a19, h527);
+    			append_dev(table, t299);
     			append_dev(table, tr52);
     			append_dev(tr52, th82);
-    			append_dev(tr52, t298);
+    			append_dev(tr52, t301);
     			append_dev(tr52, th83);
-    			append_dev(th83, h529);
-    			append_dev(table, t300);
+    			append_dev(th83, a20);
+    			append_dev(a20, h528);
+    			append_dev(table, t303);
     			append_dev(table, tr53);
     			append_dev(tr53, th84);
-    			append_dev(tr53, t302);
+    			append_dev(tr53, t305);
     			append_dev(tr53, th85);
     			append_dev(th85, a21);
-    			append_dev(a21, h530);
-    			append_dev(table, t304);
+    			append_dev(a21, h529);
+    			append_dev(table, t307);
     			append_dev(table, tr54);
     			append_dev(tr54, th86);
-    			append_dev(tr54, t306);
+    			append_dev(tr54, t309);
     			append_dev(tr54, th87);
-    			append_dev(th87, a22);
-    			append_dev(a22, h531);
-    			append_dev(table, t308);
+    			append_dev(th87, h530);
+    			append_dev(table, t311);
     			append_dev(table, tr55);
     			append_dev(tr55, th88);
-    			append_dev(tr55, t310);
+    			append_dev(tr55, t313);
     			append_dev(tr55, th89);
-    			append_dev(th89, h532);
-    			append_dev(table, t312);
+    			append_dev(th89, a22);
+    			append_dev(a22, h531);
+    			append_dev(table, t315);
     			append_dev(table, tr56);
     			append_dev(tr56, th90);
-    			append_dev(tr56, t313);
+    			append_dev(tr56, t317);
     			append_dev(tr56, th91);
-    			append_dev(th91, h410);
-    			append_dev(table, t315);
+    			append_dev(th91, a23);
+    			append_dev(a23, h532);
+    			append_dev(table, t319);
     			append_dev(table, tr57);
     			append_dev(tr57, th92);
-    			append_dev(tr57, t316);
+    			append_dev(tr57, t321);
     			append_dev(tr57, th93);
     			append_dev(th93, h533);
-    			append_dev(th93, t318);
-    			append_dev(th93, div13);
-    			append_dev(div13, button26);
-    			append_dev(div13, t320);
-    			append_dev(div13, button27);
-    			append_dev(div13, t322);
-    			append_dev(div13, button28);
-    			append_dev(table, t324);
+    			append_dev(table, t323);
     			append_dev(table, tr58);
-    			append_dev(table, t325);
+    			append_dev(tr58, th94);
+    			append_dev(tr58, t324);
+    			append_dev(tr58, th95);
+    			append_dev(th95, h411);
+    			append_dev(table, t326);
     			append_dev(table, tr59);
-    			append_dev(tr59, th94);
-    			append_dev(tr59, t326);
-    			append_dev(tr59, th95);
-    			append_dev(th95, h534);
-    			append_dev(th95, t328);
-    			append_dev(th95, div14);
-    			append_dev(div14, button29);
-    			append_dev(div14, t330);
-    			append_dev(div14, button30);
-    			append_dev(div14, t332);
-    			append_dev(div14, button31);
-    			append_dev(div14, t334);
-    			append_dev(div14, button32);
-    			append_dev(div14, t336);
-    			append_dev(div14, button33);
-    			append_dev(div14, t338);
-    			append_dev(div14, button34);
-    			append_dev(table, t340);
+    			append_dev(tr59, th96);
+    			append_dev(tr59, t327);
+    			append_dev(tr59, th97);
+    			append_dev(th97, h534);
+    			append_dev(th97, t329);
+    			append_dev(th97, div13);
+    			append_dev(div13, button26);
+    			append_dev(div13, t331);
+    			append_dev(div13, button27);
+    			append_dev(div13, t333);
+    			append_dev(div13, button28);
+    			append_dev(table, t335);
     			append_dev(table, tr60);
-    			append_dev(table, t341);
+    			append_dev(table, t336);
     			append_dev(table, tr61);
-    			append_dev(tr61, th96);
-    			append_dev(tr61, t342);
-    			append_dev(tr61, th97);
-    			append_dev(th97, h535);
-    			append_dev(th97, t344);
-    			append_dev(th97, div15);
-    			append_dev(div15, button35);
-    			append_dev(div15, t346);
-    			append_dev(div15, button36);
-    			append_dev(div15, t348);
-    			append_dev(div15, button37);
-    			append_dev(div15, t350);
-    			append_dev(div15, button38);
-    			append_dev(div15, t352);
-    			append_dev(div15, button39);
-    			append_dev(div15, t354);
-    			append_dev(div15, button40);
-    			append_dev(div15, t356);
-    			append_dev(div15, button41);
-    			append_dev(div15, t358);
-    			append_dev(div15, button42);
-    			append_dev(div15, t360);
-    			append_dev(div15, button43);
-    			append_dev(table, t362);
+    			append_dev(tr61, th98);
+    			append_dev(tr61, t337);
+    			append_dev(tr61, th99);
+    			append_dev(th99, h535);
+    			append_dev(th99, t339);
+    			append_dev(th99, div14);
+    			append_dev(div14, button29);
+    			append_dev(div14, t341);
+    			append_dev(div14, button30);
+    			append_dev(div14, t343);
+    			append_dev(div14, button31);
+    			append_dev(div14, t345);
+    			append_dev(div14, button32);
+    			append_dev(div14, t347);
+    			append_dev(div14, button33);
+    			append_dev(div14, t349);
+    			append_dev(div14, button34);
+    			append_dev(table, t351);
     			append_dev(table, tr62);
-    			append_dev(table, t363);
+    			append_dev(table, t352);
     			append_dev(table, tr63);
-    			append_dev(tr63, th98);
-    			append_dev(tr63, t364);
-    			append_dev(tr63, th99);
-    			append_dev(th99, p15);
+    			append_dev(tr63, th100);
+    			append_dev(tr63, t353);
+    			append_dev(tr63, th101);
+    			append_dev(th101, h536);
+    			append_dev(th101, t355);
+    			append_dev(th101, div15);
+    			append_dev(div15, button35);
+    			append_dev(div15, t357);
+    			append_dev(div15, button36);
+    			append_dev(div15, t359);
+    			append_dev(div15, button37);
+    			append_dev(div15, t361);
+    			append_dev(div15, button38);
+    			append_dev(div15, t363);
+    			append_dev(div15, button39);
+    			append_dev(div15, t365);
+    			append_dev(div15, button40);
+    			append_dev(div15, t367);
+    			append_dev(div15, button41);
+    			append_dev(div15, t369);
+    			append_dev(div15, button42);
+    			append_dev(div15, t371);
+    			append_dev(div15, button43);
+    			append_dev(table, t373);
+    			append_dev(table, tr64);
+    			append_dev(table, t374);
+    			append_dev(table, tr65);
+    			append_dev(tr65, th102);
+    			append_dev(tr65, t375);
+    			append_dev(tr65, th103);
+    			append_dev(th103, p15);
     			current = true;
     		},
 
     		p: function update(changed, ctx) {
     			if (changed.pubs) {
-    				each_value = pubs;
+    				each_value_1 = pubs;
+
+    				let i;
+    				for (i = 0; i < each_value_1.length; i += 1) {
+    					const child_ctx = get_each_context_1$1(ctx, each_value_1, i);
+
+    					if (each_blocks_1[i]) {
+    						each_blocks_1[i].p(changed, child_ctx);
+    						transition_in(each_blocks_1[i], 1);
+    					} else {
+    						each_blocks_1[i] = create_each_block_1$1(child_ctx);
+    						each_blocks_1[i].c();
+    						transition_in(each_blocks_1[i], 1);
+    						each_blocks_1[i].m(table, t178);
+    					}
+    				}
+
+    				group_outros();
+    				for (i = each_value_1.length; i < each_blocks_1.length; i += 1) {
+    					out(i);
+    				}
+    				check_outros();
+    			}
+
+    			if (changed.other) {
+    				each_value = other;
 
     				let i;
     				for (i = 0; i < each_value.length; i += 1) {
@@ -5474,13 +5938,13 @@ var app = (function () {
     						each_blocks[i] = create_each_block$3(child_ctx);
     						each_blocks[i].c();
     						transition_in(each_blocks[i], 1);
-    						each_blocks[i].m(table, t177);
+    						each_blocks[i].m(table, t182);
     					}
     				}
 
     				group_outros();
     				for (i = each_value.length; i < each_blocks.length; i += 1) {
-    					out(i);
+    					out_1(i);
     				}
     				check_outros();
     			}
@@ -5492,6 +5956,10 @@ var app = (function () {
 
     			transition_in(social.$$.fragment, local);
 
+    			for (let i = 0; i < each_value_1.length; i += 1) {
+    				transition_in(each_blocks_1[i]);
+    			}
+
     			for (let i = 0; i < each_value.length; i += 1) {
     				transition_in(each_blocks[i]);
     			}
@@ -5502,6 +5970,11 @@ var app = (function () {
     		o: function outro(local) {
     			transition_out(intro.$$.fragment, local);
     			transition_out(social.$$.fragment, local);
+
+    			each_blocks_1 = each_blocks_1.filter(Boolean);
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				transition_out(each_blocks_1[i]);
+    			}
 
     			each_blocks = each_blocks.filter(Boolean);
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -5520,6 +5993,8 @@ var app = (function () {
 
     			destroy_component(social);
 
+    			destroy_each(each_blocks_1, detaching);
+
     			destroy_each(each_blocks, detaching);
     		}
     	};
@@ -5528,6 +6003,8 @@ var app = (function () {
     }
 
     const func$3 = (p) => "<a href='" + p.website + "'>" + p.name + '</a>';
+
+    const func_1$2 = (p) => "<a href='" + p.website + "'>" + p.name + '</a>';
 
     function instance$6($$self) {
     	
@@ -5552,11 +6029,11 @@ var app = (function () {
     }
 
     var routes = {
-        '/': Home,
-        '/news': News,
-        '/pubs': Pubs,
-        '/cv': Cv,
-        '/paper/:id': Paper,
+      "/": Home,
+      "/news": News,
+      "/pubs": Pubs,
+      "/cv": Cv,
+      "/paper/:id": Paper
     };
 
     /* src/App.svelte generated by Svelte v3.12.1 */

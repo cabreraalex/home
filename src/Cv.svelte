@@ -3,6 +3,7 @@
   import Social from "./components/Social.svelte";
   import Links from "./components/Links.svelte";
   import pubs from "./data/pubs.js";
+  import other from "./data/other.js";
   import { onMount } from "svelte";
 
   onMount(() => window.scrollTo(0, 0));
@@ -32,7 +33,7 @@
 
   h5 {
     margin: 0px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 24px;
   }
@@ -157,7 +158,7 @@
         </th>
         <th>
           <h5>PhD in Human-Computer Interaction (HCI)</h5>
-          <h6>Carnegie Mellon University - Pittsburgh, PA</h6>
+          <h6>Carnegie Mellon University</h6>
         </th>
       </tr>
       <tr class="buffer" />
@@ -169,10 +170,11 @@
         </th>
         <th>
           <h5>B.S. in Computer Science</h5>
-          <h6>Georgia Institute of Technology - Atlanta, GA</h6>
+          <h6>Georgia Institute of Technology</h6>
           <p class="desc">
-            Concentration in intelligence and modeling/simulation. Minor in
-            economics.
+            Concentration in intelligence and modeling/simulation.
+            <br />
+            Minor in economics.
           </p>
         </th>
       </tr>
@@ -392,7 +394,7 @@
         </th>
         <th>
           <h5>Polo Club of Data Science</h5>
-          <h6>Undergraduate Researcher</h6>
+          <h6>Undergraduate Research Assistant</h6>
           <div class="tags">
             <a href="https://poloclub.github.io/">
               <button>
@@ -445,10 +447,40 @@
       <tr>
         <th class="date" />
         <th>
-          <h4 class="header">Publications</h4>
+          <h4 class="header">Refereed Publications</h4>
         </th>
       </tr>
       {#each pubs as pub}
+        <tr class="item">
+          <th class="date">{pub.month} {pub.year}</th>
+          <th>
+            <a href={'#/paper/' + pub.id} class="paper-title">
+              <h5>{pub.title}</h5>
+            </a>
+
+            <h6 class="authors">
+              {@html pub.authors
+                .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
+                .join(', ')}
+            </h6>
+
+            <p class="desc">
+              <i>{pub.venuelong}. {pub.location}, {pub.year}.</i>
+            </p>
+
+            <Links {pub} />
+          </th>
+        </tr>
+        <tr class="buffer" />
+      {/each}
+      <!-- OTHER PUBS -->
+      <tr>
+        <th class="date" />
+        <th>
+          <h4 class="header">Workshops, Demos, Posters, and Preprints</h4>
+        </th>
+      </tr>
+      {#each other as pub}
         <tr class="item">
           <th class="date">{pub.month} {pub.year}</th>
           <th>
@@ -479,10 +511,16 @@
         </th>
       </tr>
       <tr class="item">
-        <th class="date">Fall 2016, Spring 2017, Spring 2018</th>
+        <th class="date">
+          Fall 2016
+          <br />
+          Spring 2017
+          <br />
+          Spring 2018
+        </th>
         <th>
-          <h5>Undergraduate Teaching Assistant</h5>
-          <h6>CS1332 - Data Structures and Algorithms</h6>
+          <h5>CS1332 - Data Structures and Algorithms</h5>
+          <h6>Undergraduate Teaching Assistant</h6>
           <p class="desc">
             Taught a 1 1/2 hour weekly recitation, graded tests and homework,
             and helped create assignments.
@@ -493,8 +531,8 @@
       <tr class="item">
         <th class="date">Fall 2016</th>
         <th>
-          <h5>Team Leader</h5>
-          <h6>GT 1000 - First-Year Seminar</h6>
+          <h5>GT 1000 - First-Year Seminar</h5>
+          <h6>Team Leader</h6>
           <p class="desc">
             Designed a class curriculum for incoming first years and helped lead
             a weekly seminar class.
@@ -771,10 +809,18 @@
         </th>
       </tr>
       <tr class="item">
+        <th class="date">Spring 2019</th>
+        <th>
+          <a href="https://www.hcii.cmu.edu/courses/applied-research-methods">
+            <h5 class="single">Applied Research Methods</h5>
+          </a>
+        </th>
+      </tr>
+      <tr class="item">
         <th class="date">Fall 2018</th>
         <th>
           <a href="https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/">
-            <h5 class="single">CS 4803/7643 - Deep Learning</h5>
+            <h5 class="single">Deep Learning</h5>
           </a>
         </th>
       </tr>
@@ -782,21 +828,21 @@
         <th class="date">Spring 2018</th>
         <th>
           <a href="http://poloclub.gatech.edu/cse6242/2018spring">
-            <h5 class="single">CX 4242/CSE 6242 - Data and Visual Analytics</h5>
+            <h5 class="single">Data and Visual Analytics</h5>
           </a>
         </th>
       </tr>
       <tr class="item">
         <th class="date">Fall 2017</th>
         <th>
-          <h5 class="single">BECO 1750A - Money and Banking</h5>
+          <h5 class="single">Money and Banking</h5>
         </th>
       </tr>
       <tr class="item">
         <th class="date">Spring 2017</th>
         <th>
           <a href="https://www.omscs.gatech.edu/cs-7641-machine-learning">
-            <h5 class="single">CS 4641/7641 - Machine Learning</h5>
+            <h5 class="single">Machine Learning</h5>
           </a>
         </th>
       </tr>
@@ -804,14 +850,14 @@
         <th class="date">Spring 2017</th>
         <th>
           <a href="http://cx4230.gatech.edu/sp17/">
-            <h5 class="single">CX 4230 - Computer Simulation</h5>
+            <h5 class="single">Computer Simulation</h5>
           </a>
         </th>
       </tr>
       <tr class="item">
         <th class="date">Spring 2017</th>
         <th>
-          <h5 class="single">CS 3511 - Honors Algorithms</h5>
+          <h5 class="single">Honors Algorithms</h5>
         </th>
       </tr>
       <!-- SKILLS -->
@@ -869,7 +915,7 @@
       <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated March 6, 2020.</p>
+          <p class="desc">Last updated April 1, 2020.</p>
         </th>
       </tr>
     </table>

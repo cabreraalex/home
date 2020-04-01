@@ -1,11 +1,12 @@
 <script>
   import Footer from "./components/Footer.svelte";
   import pubs from "./data/pubs.js";
+  import other from "./data/other.js";
   import Links from "./components/Links.svelte";
   import { onMount } from "svelte";
   export let params = {};
 
-  let pub = pubs.find(e => e.id === params.id);
+  let pub = pubs.concat(other).find(e => e.id === params.id);
   onMount(() => window.scrollTo(0, 0));
 </script>
 
@@ -28,9 +29,10 @@
   }
 
   h1 {
-    font-size: 1.75em;
+    font-size: 1.55em;
+    font-weight: 500;
     margin: 0px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 10px;
   }
 
@@ -101,7 +103,7 @@
     font-size: 20px;
     line-height: 24px;
     padding: 15px;
-    text-align: center;
+    padding-left: 30px;
   }
 </style>
 

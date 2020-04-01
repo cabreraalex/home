@@ -2,6 +2,7 @@
   import { link } from "svelte-spa-router";
   import news from "./data/news.js";
   import pubs from "./data/pubs.js";
+  import other from "./data/other.js";
   import Sidebar from "./components/Sidebar.svelte";
   import Intro from "./components/Intro.svelte";
   import Footer from "./components/Footer.svelte";
@@ -41,7 +42,7 @@
       <div id="news" class="sect">
         <div class="inline">
           <h2 class="header">News</h2>
-          <a class="right-all" href="#/news">all news</a>
+          <a class="right-all" href="#/news">see all</a>
         </div>
         <hr />
         {#each { length: 3 } as _, i}
@@ -55,8 +56,8 @@
       </div>
       <div id="pubs" class="sect">
         <div class="inline">
-          <h2 class="header">Selected Publications</h2>
-          <a class="right-all" href="#/pubs">all publications</a>
+          <h2 class="header">Refereed Publications</h2>
+          <!-- <a class="right-all" href="#/pubs">see all</a> -->
         </div>
         <hr />
         {#each pubs as pub}
@@ -82,7 +83,43 @@
                     .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
                     .join(', ')}
                 </h5>
-                <p class="desc">{pub.desc}</p>
+                <!-- <p class="desc">{pub.desc}</p> -->
+              </div>
+              <Links {pub} />
+            </div>
+          </div>
+        {/each}
+      </div>
+      <div id="pubs" class="sect">
+        <div class="inline">
+          <h2 class="header">Workshops, Demos, Posters, and Preprints</h2>
+          <!-- <a class="right-all" href="#/pubs">see all</a> -->
+        </div>
+        <hr />
+        {#each other as pub}
+          <div class="pure-g pub">
+            <div class="thumb-box pure-u-1 pure-u-md-1-3">
+              <div class="thumb">
+                <a href={'#/paper/' + pub.id}>
+                  <img
+                    src={'images/' + pub.teaser}
+                    class="thumb"
+                    alt="teaser" />
+                </a>
+                <h6 class="venue">{pub.venue}</h6>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-2-3">
+              <div class="padded">
+                <a href={'#/paper/' + pub.id} class="paper-title">
+                  <h4>{pub.title}</h4>
+                </a>
+                <h5 class="authors">
+                  {@html pub.authors
+                    .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
+                    .join(', ')}
+                </h5>
+                <!-- <p class="desc">{pub.desc}</p> -->
               </div>
               <Links {pub} />
             </div>
