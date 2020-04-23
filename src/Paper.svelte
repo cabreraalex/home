@@ -24,20 +24,20 @@
     color: #e53935;
   }
   p {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 23px;
   }
 
   h1 {
-    font-size: 1.55em;
+    font-size: 20px;
     font-weight: 500;
     margin: 0px;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0px;
   }
 
@@ -100,7 +100,8 @@
   }
 
   .desc {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 24px;
     padding: 15px;
     padding-left: 30px;

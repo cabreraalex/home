@@ -60,7 +60,7 @@
     font-weight: 200;
     float: left;
     text-align: right;
-    line-height: 24px;
+    line-height: 22px;
   }
 
   .desc {
@@ -597,7 +597,20 @@
         </th>
       </tr>
       <tr>
-        <th class="date">2019</th>
+        <th class="date">2020</th>
+        <th>
+          <h5 class="single press">
+            <a
+              href="https://www.cmu.edu/news/stories/archives/2020/april/cmu-unveils-covidcast-maps.html">
+              "Carnegie Mellon Unveils Five Interactive COVID-19 Maps"
+            </a>
+            -
+            <i>Carnegie Mellon</i>
+          </h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2020</th>
         <th>
           <h5 class="single press">
             <a
@@ -656,6 +669,25 @@
           <h4 class="header">Projects</h4>
         </th>
       </tr>
+      <tr class="item">
+        <th class="date">Spring 2020</th>
+        <th>
+          <h5>COVIDcast Visualization of COVID Symptoms</h5>
+          <p class="desc">
+            An interactive visualization for multiple indicators of COVID
+            symptoms collected by the CMU Delphi research group.
+          </p>
+          <div class="tags">
+            <a href="https://covidcast.cmu.edu/">
+              <button>
+                <i class="fas fa-globe" />
+                Website
+              </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
       <tr class="item">
         <th class="date">Fall 2018</th>
         <th>
@@ -915,7 +947,7 @@
       <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated April 1, 2020.</p>
+          <p class="desc">Last updated April 23, 2020.</p>
         </th>
       </tr>
     </table>
