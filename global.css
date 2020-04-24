@@ -198,12 +198,22 @@ button p {
 }
 
 .thumb {
-  width: calc(100% - 8px);
+  height: 100%;
+  min-height: 125px;
   margin-right: 20px;
+  /* /* width: 10rem; */
+  background-size: cover;
+  background-position: top left;
+  transition-property: background;
+  transition-duration: 1.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  border: 1px solid var(--light-black);
+  border-radius: 2px;
 }
 
-.thumb img {
-  border: 1px solid var(--light-black);
+.thumb:hover {
+  background-position: bottom right;
 }
 
 .paper-title {
