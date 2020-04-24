@@ -1206,7 +1206,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (22:6) {#each news as n}
+    // (23:6) {#each news as n}
     function create_each_block(ctx) {
     	var div, p0, t0_value = ctx.n.date + "", t0, t1, p1, raw_value = ctx.n.news + "", t2;
 
@@ -1219,11 +1219,11 @@ var app = (function () {
     			p1 = element("p");
     			t2 = space();
     			attr_dev(p0, "class", "pure-u-1 pure-u-md-1-5 date");
-    			add_location(p0, file$3, 23, 10, 527);
+    			add_location(p0, file$3, 24, 10, 548);
     			attr_dev(p1, "class", "item pure-u-1 pure-u-md-4-5");
-    			add_location(p1, file$3, 24, 10, 589);
+    			add_location(p1, file$3, 25, 10, 610);
     			attr_dev(div, "class", "news-item pure-g");
-    			add_location(div, file$3, 22, 8, 486);
+    			add_location(div, file$3, 23, 8, 507);
     		},
 
     		m: function mount(target, anchor) {
@@ -1244,7 +1244,7 @@ var app = (function () {
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block.name, type: "each", source: "(22:6) {#each news as n}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block.name, type: "each", source: "(23:6) {#each news as n}", ctx });
     	return block;
     }
 
@@ -1282,17 +1282,17 @@ var app = (function () {
 
     			t4 = space();
     			footer.$$.fragment.c();
-    			attr_dev(h1, "class", "svelte-y6vncv");
-    			add_location(h1, file$3, 19, 6, 427);
-    			add_location(hr, file$3, 20, 6, 447);
+    			attr_dev(h1, "class", "svelte-151t33z");
+    			add_location(h1, file$3, 20, 6, 448);
+    			add_location(hr, file$3, 21, 6, 468);
     			attr_dev(div0, "id", "padded-content");
-    			add_location(div0, file$3, 18, 4, 395);
+    			add_location(div0, file$3, 19, 4, 416);
     			attr_dev(div1, "id", "content");
     			attr_dev(div1, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div1, file$3, 17, 2, 341);
+    			add_location(div1, file$3, 18, 2, 362);
     			attr_dev(div2, "class", "pure-g");
     			attr_dev(div2, "id", "main-container");
-    			add_location(div2, file$3, 15, 0, 284);
+    			add_location(div2, file$3, 16, 0, 305);
     		},
 
     		l: function claim(nodes) {
