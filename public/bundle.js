@@ -1123,13 +1123,13 @@ var app = (function () {
     			a1 = element("a");
     			a1.textContent = "Pure CSS";
     			attr_dev(a0, "href", "https://svelte.dev");
-    			add_location(a0, file$2, 10, 4, 186);
+    			add_location(a0, file$2, 9, 4, 161);
     			attr_dev(a1, "href", "https://purecss.io");
-    			add_location(a1, file$2, 12, 4, 238);
+    			add_location(a1, file$2, 11, 4, 213);
     			attr_dev(p, "id", "copyright");
-    			add_location(p, file$2, 8, 2, 104);
-    			attr_dev(div, "class", "footer svelte-wg51xb");
-    			add_location(div, file$2, 7, 0, 81);
+    			add_location(p, file$2, 7, 2, 79);
+    			attr_dev(div, "class", "footer svelte-qsjnhq");
+    			add_location(div, file$2, 6, 0, 56);
     		},
 
     		l: function claim(nodes) {

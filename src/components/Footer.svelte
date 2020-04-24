@@ -1,7 +1,6 @@
 <style>
   .footer {
     margin-top: 30px;
-    margin-bottom: 40px;
   }
 </style>
 
