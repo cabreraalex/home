@@ -150,7 +150,6 @@ textarea,
 h3 {
   font-size: 16px;
   font-weight: 300;
-  line-height: 27px;
 }
 
 p {
@@ -284,7 +283,6 @@ a button:hover {
 
 #copyright {
   margin-top: 50px;
-  margin-bottom: 50px;
   text-align: center;
 }
 
