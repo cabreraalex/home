@@ -13,6 +13,13 @@
 </script>
 
 <style>
+  .thumb-box {
+    height: 100%;
+  }
+
+  h6 {
+    margin-bottom: 10px;
+  }
   .inline {
     display: inline-flex;
     align-items: center;
@@ -21,6 +28,9 @@
     margin-right: 30px;
   }
   @media only screen and (max-width: 769px) {
+    h6 {
+      text-align: left;
+    }
     #hello {
       margin-top: 20px;
       text-align: center;
@@ -63,13 +73,13 @@
         {#each pubs as pub}
           <div class="pure-g pub">
             <div class="thumb-box pure-u-1 pure-u-md-1-3">
-              <div class="thumb">
-                <a href={'#/paper/' + pub.id}>
-                  <img
-                    src={'images/' + pub.teaser}
-                    class="thumb"
-                    alt="teaser" />
-                </a>
+              <a href={'#/paper/' + pub.id}>
+                <div
+                  style="background-image: url({'images/' + pub.teaser})"
+                  class="thumb"
+                  alt="teaser" />
+              </a>
+              <div>
                 <h6 class="venue">{pub.venue}</h6>
               </div>
             </div>
@@ -99,15 +109,13 @@
         {#each other as pub}
           <div class="pure-g pub">
             <div class="thumb-box pure-u-1 pure-u-md-1-3">
-              <div class="thumb">
-                <a href={'#/paper/' + pub.id}>
-                  <img
-                    src={'images/' + pub.teaser}
-                    class="thumb"
-                    alt="teaser" />
-                </a>
-                <h6 class="venue">{pub.venue}</h6>
-              </div>
+              <a href={'#/paper/' + pub.id}>
+                <div
+                  style="background-image: url({'images/' + pub.teaser})"
+                  class="thumb"
+                  alt="teaser" />
+              </a>
+              <h6 class="venue">{pub.venue}</h6>
             </div>
             <div class="pure-u-1 pure-u-md-2-3">
               <div class="padded">
