@@ -10,6 +10,7 @@
 <style>
   h1 {
     margin: 0px;
+    font-size: 20px;
   }
 </style>
 
