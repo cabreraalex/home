@@ -601,6 +601,33 @@
         <th>
           <h5 class="single press">
             <a
+              href="https://www.cnn.com/us/live-news/us-coronavirus-update-04-23-20/h_473c68f3d0cea263896b85e12aec7d13">
+              "New forecasting data could help public health officials prepare
+              for what's next in the coronavirus pandemic"
+            </a>
+            -
+            <i>CNN</i>
+          </h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2020</th>
+        <th>
+          <h5 class="single press">
+            <a
+              href="https://www.wired.com/story/survey-data-facebook-google-map-covid-19-carnegie-mellon/">
+              "Facebook and Google Survey Data May Help Map Covid-19's Spread"
+            </a>
+            -
+            <i>Wired</i>
+          </h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2020</th>
+        <th>
+          <h5 class="single press">
+            <a
               href="https://www.cmu.edu/news/stories/archives/2020/april/cmu-unveils-covidcast-maps.html">
               "Carnegie Mellon Unveils Five Interactive COVID-19 Maps"
             </a>
