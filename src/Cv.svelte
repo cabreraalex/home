@@ -11,8 +11,6 @@
 
 <style>
   #container {
-    font-family: "Roboto";
-    line-height: 1.2;
     max-width: 900px;
     margin: 0px auto;
   }
