@@ -121,6 +121,9 @@
   .authors {
     font-style: normal;
   }
+  .tags {
+    line-height: 16px;
+  }
 </style>
 
 <div id="container">
@@ -569,6 +572,12 @@
         <th class="date" />
         <th>
           <h5>Reviewer</h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2020</th>
+        <th>
+          <h5 class="single">IEEE VIS</h5>
         </th>
       </tr>
       <tr>

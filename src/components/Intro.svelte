@@ -42,14 +42,15 @@
   <a href="https://www.cc.gatech.edu/~dchau/">Polo Chau</a>
   and
   <a href="http://jamiemorgenstern.com/">Jamie Morgenstern.</a>
-  I also spent a few summers as a software engineering intern at
-  <b class="google">
-    <span class="letter g">G</span>
-    <span class="letter o1">o</span>
-    <span class="letter o2">o</span>
-    <span class="letter g">g</span>
-    <span class="letter l">l</span>
-    <span class="letter e">e</span>
-  </b>
-  working on Google Maps, Cloud Dataflow, and Android Auto.
+  I've spent time at
+  <img
+    style="width: 16px; padding-left: 5px; margin-bottom: -2px"
+    src="/images/microsoft.svg"
+    alt="microsoft" />
+  Microsoft Research and a few summers as a software engineering intern at
+  <img
+    style="width: 16px; padding-left: 5px; margin-bottom: -2px"
+    src="/images/google.svg"
+    alt="google" />
+  Google working on Google Maps, Cloud Dataflow, and Android Auto.
 </p>
