@@ -15,9 +15,7 @@
   <a href="https://hcii.cmu.edu/">
     Human Computer Interaction Institute (HCII)
   </a>
-  at
-  <a href="https://www.cmu.edu/">Carnegie Mellon University,</a>
-  advised by
+  at Carnegie Mellon University, advised by
   <a href="http://perer.org">Adam Perer</a>
   and
   <a href="http://www.cs.cmu.edu/~jasonh/">Jason Hong.</a>
@@ -36,8 +34,7 @@
 </p>
 
 <p>
-  Before CMU, I graduated with a B.S. in Computer Science from
-  <a href="https://www.gatech.edu/">Georgia Tech,</a>
+  Before CMU, I graduated with a B.S. in Computer Science from Georgia Tech,
   where I worked with
   <a href="https://www.cc.gatech.edu/~dchau/">Polo Chau</a>
   and

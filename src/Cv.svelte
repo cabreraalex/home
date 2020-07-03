@@ -289,6 +289,33 @@
       </tr>
       <tr class="item">
         <th class="date">
+          May 2020
+          <br />
+          - Present
+        </th>
+        <th>
+          <h5>Microsoft Research</h5>
+          <h6>Research Intern</h6>
+          <p class="desc">
+            Working with
+            <a href="https://www.microsoft.com/en-us/research/people/sdrucker/">
+              Steven Drucker
+            </a>
+            on xAI and visualization.
+          </p>
+          <div class="tags">
+            <a href="https://www.microsoft.com/en-us/research/group/vida/">
+              <button>
+                <i class="fas fa-globe" />
+                VIDA Group
+              </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
+      <tr class="item">
+        <th class="date">
           May 2018
           <br />
           - August 2018
@@ -875,7 +902,13 @@
         </th>
       </tr>
       <tr class="item">
-        <th class="date">Spring 2019</th>
+        <th class="date">Spring 2020</th>
+        <th>
+          <h5 class="single">Human Judgement and Decision Making</h5>
+        </th>
+      </tr>
+      <tr class="item">
+        <th class="date">Fall 2019</th>
         <th>
           <a href="https://www.hcii.cmu.edu/courses/applied-research-methods">
             <h5 class="single">Applied Research Methods</h5>
