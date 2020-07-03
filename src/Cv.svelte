@@ -1014,7 +1014,7 @@
       <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated April 23, 2020.</p>
+          <p class="desc">Last updated July 3, 2020.</p>
         </th>
       </tr>
     </table>
