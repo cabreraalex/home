@@ -291,7 +291,7 @@
         <th class="date">
           May 2020
           <br />
-          - Present
+          - August 2020
         </th>
         <th>
           <h5>Microsoft Research</h5>
@@ -1014,7 +1014,7 @@
       <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated July 3, 2020.</p>
+          <p class="desc">Last updated August 9, 2020.</p>
         </th>
       </tr>
     </table>
