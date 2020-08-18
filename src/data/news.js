@@ -2,7 +2,7 @@ export default [
   {
     date: "May 18, 2020",
     news:
-      "Excited to spend the summer doing a ~virtual~ internship at Microsoft Research with <a href='https://www.microsoft.com/en-us/research/people/sdrucker/'>Steven Drucker</a> at the <a href='https://www.microsoft.com/en-us/research/group/vida/'>VIDA group!</a>",
+      "Excited to spend the summer doing a ~virtual~ internship at Microsoft Research with <a href='https://www.microsoft.com/en-us/research/people/sdrucker/'>Steven Drucker</a> at the <a href='https://www.microsoft.com/en-us/research/group/vida/'>VIDA group.</a>",
   },
   {
     date: "April 23, 2020",
@@ -16,7 +16,7 @@ export default [
   },
   {
     date: "July 23, 2019",
-    news: "We will be presenting FairVis as a conference paper at VIS'19!",
+    news: "We will be presenting FairVis as a conference paper at VIS'19.",
   },
   {
     date: "May 6, 2019",

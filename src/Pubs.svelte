@@ -37,7 +37,12 @@
               </a>
               <h5 class="authors">
                 {@html pub.authors
-                  .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
+                  .map(
+                    p =>
+                      `<a class='${
+                        p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
+                      }' href='${p.website}'>${p.name}</a>`
+                  )
                   .join(', ')}
               </h5>
               <p class="desc">{pub.desc}</p>

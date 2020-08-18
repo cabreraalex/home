@@ -5,21 +5,15 @@
 <style>
   button p {
     font-size: 13px;
-    line-height: 22px;
     margin-right: 1px;
   }
-  .fas {
-    font-size: 19px;
-    line-height: 1.1;
-  }
-  .fab {
-    font-size: 19px;
-    line-height: 1.1;
-  }
+
   .button-link {
     padding: 3px;
     display: inline-flex;
-    justify-items: center;
+    align-items: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
 </style>
 

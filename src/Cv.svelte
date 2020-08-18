@@ -32,16 +32,17 @@
   h5 {
     margin: 0px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 24px;
   }
 
   h6 {
-    font-size: 16px;
-    font-style: italic;
+    font-size: 14px;
     margin: 0px;
+    margin-bottom: 0px;
     margin-bottom: 5px;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 300;
   }
 
   th {
@@ -104,25 +105,19 @@
   }
 
   .fas {
-    font-size: 16px;
     margin-right: 4px;
   }
 
   .fab {
-    font-size: 16px;
     margin-right: 4px;
   }
 
   .far {
-    font-size: 16px;
     margin-right: 4px;
   }
 
   .authors {
     font-style: normal;
-  }
-  .tags {
-    line-height: 16px;
   }
 </style>
 
@@ -329,14 +324,14 @@
             generation of Android Auto.
           </p>
           <div class="tags">
-            <a
-              href="https://www.wsj.com/articles/google-to-partner-with-biggest-car-alliance-1537243260
-              ">
-              <button>
+            <button>
+              <a
+                href="https://www.wsj.com/articles/google-to-partner-with-biggest-car-alliance-1537243260
+                ">
                 <i class="far fa-newspaper" />
                 WSJ Article
-              </button>
-            </a>
+              </a>
+            </button>
             <button>Android Auto</button>
             <button>Java</button>
             <button>C++</button>
@@ -488,7 +483,12 @@
 
             <h6 class="authors">
               {@html pub.authors
-                .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
+                .map(
+                  p =>
+                    `<a class='${
+                      p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
+                    }' href='${p.website}'>${p.name}</a>`
+                )
                 .join(', ')}
             </h6>
 
@@ -518,7 +518,12 @@
 
             <h6 class="authors">
               {@html pub.authors
-                .map(p => "<a href='" + p.website + "'>" + p.name + '</a>')
+                .map(
+                  p =>
+                    `<a class='${
+                      p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
+                    }' href='${p.website}'>${p.name}</a>`
+                )
                 .join(', ')}
             </h6>
 
@@ -567,6 +572,28 @@
           </p>
         </th>
       </tr>
+      <!-- MENTORING -->
+      <tr>
+        <th class="date" />
+        <th>
+          <h4 class="header">Mentoring</h4>
+        </th>
+      </tr>
+      <tr class="item">
+        <th class="date">
+          Spring 2020
+          <br />
+          - Present
+        </th>
+        <th>
+          <h5>Abraham Druck</h5>
+          <h6>B.S. in Mathematical Sciences, Carnegie Mellon</h6>
+          <p class="desc">
+            Crowdsourced discovery of ML blind spots for image captioning.
+          </p>
+        </th>
+      </tr>
+      <tr class="buffer" />
       <!-- SERVICE -->
       <tr>
         <th class="date" />
