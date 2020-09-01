@@ -292,11 +292,11 @@
           <h5>Microsoft Research</h5>
           <h6>Research Intern</h6>
           <p class="desc">
-            Working with
+            Conducted research on behavioral model comparison at the VIDA group
+            with
             <a href="https://www.microsoft.com/en-us/research/people/sdrucker/">
-              Steven Drucker
+              Steven Drucker.
             </a>
-            on xAI and visualization.
           </p>
           <div class="tags">
             <a href="https://www.microsoft.com/en-us/research/group/vida/">
@@ -386,7 +386,7 @@
       <tr>
         <th class="date" />
         <th>
-          <h4 class="header">Research Experience</h4>
+          <h4 class="header">Academic Research Experience</h4>
         </th>
       </tr>
       <tr class="item">
@@ -553,7 +553,7 @@
         </th>
         <th>
           <h5>CS1332 - Data Structures and Algorithms</h5>
-          <h6>Undergraduate Teaching Assistant</h6>
+          <h6>Undergraduate Teaching Assistant @ Georgia Tech</h6>
           <p class="desc">
             Taught a 1 1/2 hour weekly recitation, graded tests and homework,
             and helped create assignments.
@@ -565,7 +565,7 @@
         <th class="date">Fall 2016</th>
         <th>
           <h5>GT 1000 - First-Year Seminar</h5>
-          <h6>Team Leader</h6>
+          <h6>Team Leader @ Georgia Tech</h6>
           <p class="desc">
             Designed a class curriculum for incoming first years and helped lead
             a weekly seminar class.
@@ -593,7 +593,13 @@
           </p>
         </th>
       </tr>
-      <tr class="buffer" />
+      <br />
+      <tr class="item">
+        <th class="date">Fall 2020</th>
+        <th>
+          <h5>CMU AI Mentoring Program</h5>
+        </th>
+      </tr>
       <!-- SERVICE -->
       <tr>
         <th class="date" />
@@ -610,7 +616,7 @@
       <tr>
         <th class="date">October 2019</th>
         <th>
-          <h5 class="single">IEEE Visualization Conference (VIS)</h5>
+          <h5 class="single">IEEE Visualization (VIS)</h5>
         </th>
       </tr>
       <tr>
@@ -631,11 +637,11 @@
       <tr>
         <th class="date">2020</th>
         <th>
-          <h5 class="single">IEEE VIS</h5>
+          <h5 class="single">IEEE Visualization (VIS)</h5>
         </th>
       </tr>
       <tr>
-        <th class="date">2019</th>
+        <th class="date">2019, 2020</th>
         <th>
           <h5 class="single">
             IEEE Transactions on Visualization and Computer Graphics (TVCG)
@@ -929,60 +935,29 @@
         </th>
       </tr>
       <tr class="item">
-        <th class="date">Spring 2020</th>
+        <th class="date">PhD</th>
         <th>
           <h5 class="single">Human Judgement and Decision Making</h5>
-        </th>
-      </tr>
-      <tr class="item">
-        <th class="date">Fall 2019</th>
-        <th>
           <a href="https://www.hcii.cmu.edu/courses/applied-research-methods">
             <h5 class="single">Applied Research Methods</h5>
           </a>
         </th>
       </tr>
       <tr class="item">
-        <th class="date">Fall 2018</th>
+        <th class="date">B.S.</th>
         <th>
           <a href="https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/">
             <h5 class="single">Deep Learning</h5>
           </a>
-        </th>
-      </tr>
-      <tr class="item">
-        <th class="date">Spring 2018</th>
-        <th>
           <a href="http://poloclub.gatech.edu/cse6242/2018spring">
             <h5 class="single">Data and Visual Analytics</h5>
           </a>
-        </th>
-      </tr>
-      <tr class="item">
-        <th class="date">Fall 2017</th>
-        <th>
-          <h5 class="single">Money and Banking</h5>
-        </th>
-      </tr>
-      <tr class="item">
-        <th class="date">Spring 2017</th>
-        <th>
           <a href="https://www.omscs.gatech.edu/cs-7641-machine-learning">
             <h5 class="single">Machine Learning</h5>
           </a>
-        </th>
-      </tr>
-      <tr class="item">
-        <th class="date">Spring 2017</th>
-        <th>
           <a href="http://cx4230.gatech.edu/sp17/">
             <h5 class="single">Computer Simulation</h5>
           </a>
-        </th>
-      </tr>
-      <tr class="item">
-        <th class="date">Spring 2017</th>
-        <th>
           <h5 class="single">Honors Algorithms</h5>
         </th>
       </tr>
@@ -1010,9 +985,10 @@
         <th>
           <h5>Programming Languages</h5>
           <div class="tags">
-            <button>Java</button>
-            <button>Javascript</button>
             <button>Python</button>
+            <button>JavaScript</button>
+            <button>TypeScript</button>
+            <button>Java</button>
             <button>C/C++</button>
             <button>SQL</button>
             <button>Go</button>
@@ -1027,11 +1003,13 @@
           <div class="tags">
             <button>Machine Learning</button>
             <button>Full Stack Development</button>
-            <button>React</button>
-            <button>Svelte</button>
-            <button>Vega</button>
-            <button>D3</button>
             <button>PyTorch</button>
+            <button>D3</button>
+            <button>Vega</button>
+            <button>Svelte</button>
+            <button>React</button>
+            <button>Jupyter Widgets</button>
+            <button>AWS/Azure/Google Cloud</button>
             <button>Cloud Dataflow/MapReduce</button>
             <button>Amazon Mechanical Turk</button>
           </div>

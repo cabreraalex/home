@@ -9,5 +9,5 @@ export default {
   "/news": News,
   "/pubs": Pubs,
   "/cv": Cv,
-  "/paper/:id": Paper
+  "/paper/:id": Paper,
 };
