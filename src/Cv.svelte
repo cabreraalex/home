@@ -6,7 +6,11 @@
   import other from "./data/other.js";
   import { onMount } from "svelte";
 
-  onMount(() => window.scrollTo(0, 0));
+  onMount(() => {
+    const mvp = document.getElementById("viewport");
+    mvp.setAttribute("content", "width=500");
+    window.scrollTo(0, 0);
+  });
 </script>
 
 <style>
@@ -33,7 +37,7 @@
     margin: 0px;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 22px;
   }
 
   h6 {
@@ -117,7 +121,12 @@
   }
 
   .authors {
+    margin-top: 3px;
     font-style: normal;
+  }
+
+  .tags button {
+    margin-top: 1px;
   }
 </style>
 
@@ -242,7 +251,7 @@
           <h6>Georgia Tech and the Stamps Family Charitable Foundation</h6>
           <p class="desc">
             Full ride scholarship with $15,000 in extracurricular funding
-            awarded to 10 students (27,270 applicants).
+            awarded to 10 incoming students.
           </p>
           <div class="tags">
             <a href="https://stampsps.gatech.edu/">
@@ -292,10 +301,13 @@
           <h5>Microsoft Research</h5>
           <h6>Research Intern</h6>
           <p class="desc">
-            Conducted research on behavioral model comparison at the VIDA group
-            with
+            Worked on behavioral model understanding with
             <a href="https://www.microsoft.com/en-us/research/people/sdrucker/">
-              Steven Drucker.
+              Steven Drucker
+            </a>
+            and
+            <a href="https://homes.cs.washington.edu/~marcotcr/">
+              Marco Tulio Ribeiro.
             </a>
           </p>
           <div class="tags">
@@ -766,7 +778,7 @@
       <tr class="item">
         <th class="date">Spring 2020</th>
         <th>
-          <h5>COVIDcast Visualization of COVID Symptoms</h5>
+          <h5>COVIDCast Visualization of COVID Symptoms</h5>
           <p class="desc">
             An interactive visualization for multiple indicators of COVID
             symptoms collected by the CMU Delphi research group.
@@ -1019,7 +1031,7 @@
       <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated August 9, 2020.</p>
+          <p class="desc">Last updated September 18, 2020.</p>
         </th>
       </tr>
     </table>

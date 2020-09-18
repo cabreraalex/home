@@ -25,7 +25,7 @@
   }
   p {
     font-size: 16px;
-    line-height: 23px;
+    /* line-height: 23px; */
   }
 
   h1 {
@@ -42,7 +42,7 @@
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0px;
   }
 
@@ -65,7 +65,7 @@
 
   .home {
     font-size: 20px;
-    line-height: 25px;
+    /* line-height: 25px; */
     text-align: center;
     display: inline-flex;
     align-items: center;
@@ -102,7 +102,7 @@
   .desc {
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    /* line-height: 24px; */
     padding: 15px;
     padding-left: 30px;
   }
