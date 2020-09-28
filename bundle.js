@@ -1673,6 +1673,49 @@ var app = (function () {
 
     var pubs = [
       {
+        title: "Regularizing Black-box Models for Improved Interpretability",
+        desc:
+          "We introduce a new regularization method for training deep learning models that improves the stability and fidelity of post-hoc explanantion methods like LIME. Through a user study we show that the regularized model empirically improves the quality of explainations.",
+        id: "expo",
+        teaser: "expo.png",
+        venue: "NeurIPS'20",
+        venuelong: "Conference on Neural Information Processing Systems (NeurIPS)",
+        year: "2020",
+        month: "December",
+        location: "Vancouver",
+        authors: [
+          {
+            name: "Gregory Plumb",
+            website: "https://gdplumb.github.io/",
+          },
+          {
+            name: "Maruan Al-Shedivat",
+            website: "https://www.cs.cmu.edu/~mshediva/",
+          },
+          {
+            name: "Ángel Alexander Cabrera",
+            website: "https://cabreraalex.com",
+          },
+          {
+            name: "Adam Perer",
+            website: "http://perer.org/",
+          },
+          {
+            name: "Eric Xing",
+            website: "http://www.cs.cmu.edu/~epxing/",
+          },
+          {
+            name: "Ameet Talwalkar",
+            website: "https://www.cs.cmu.edu/~atalwalk/",
+          },
+        ],
+        bibtex:
+          "@article{plumb2020regularizing, title={Regularizing Black-box Models for Improved Interpretability}, author={Plumb, Gregory and Al-Shedivat, Maruan and Cabrera, Ángel Alexander, and Perer, Adam and Xing, Eric and Talwalkar, Ameet}, journal={NeurIPS}, year={2020}}",
+        abstract:
+          "Most of the work on interpretable machine learning has focused on designing either inherently interpretable models, which typically trade-off accuracy for interpretability, or post-hoc explanation systems, which tend to lack guarantees about the quality of their explanations. We explore a hybridization of these approaches by directly regularizing a black-box model for interpretability at training time - a method we call ExpO. We find that post-hoc explanations of an ExpO-regularized model are consistently more stable and of higher fidelity, which we show theoretically and support empirically. Critically, we also find ExpO leads to explanations that are more actionable, significantly more useful, and more intuitive as supported by a user study.",
+        pdf: "https://arxiv.org/pdf/1902.06787.pdf",
+      },
+      {
         title:
           "Designing Alternative Representations of Confusion Matrices to Support Non-Expert Public Understanding of Algorithm Performance",
         desc:
@@ -1724,7 +1767,7 @@ var app = (function () {
           "FairVis is a visual analytics system that enables data scientists to find potential biases in their machine learning models. It allows users to split their data into subgroups of different features to see how vulnerable groups are performing for various fairness metrics. Additionally, it suggests groups that may be underperforming and can find similar groups.",
         id: "fairvis",
         teaser: "fairvis.png",
-        venue: "IEEE VIS'19",
+        venue: "VIS'19",
         venuelong:
           "IEEE Conference on Visual Analytics Science and Technology (VAST)",
         year: "2019",
@@ -1771,49 +1814,6 @@ var app = (function () {
     ];
 
     var other = [
-      {
-        title: "Regularizing Black-box Models for Improved Interpretability",
-        desc:
-          "We introduce a new regularization method for training deep learning models that improves the stability and fidelity of post-hoc explanantion methods like LIME. Through a user study we show that the regularized model empirically improves the quality of explainations.",
-        id: "expo",
-        teaser: "expo.png",
-        venue: "Under Review",
-        venuelong: "Under Review",
-        year: "2020",
-        month: "",
-        location: "",
-        authors: [
-          {
-            name: "Gregory Plumb",
-            website: "https://gdplumb.github.io/",
-          },
-          {
-            name: "Maruan Al-Shedivat",
-            website: "https://www.cs.cmu.edu/~mshediva/",
-          },
-          {
-            name: "Ángel Alexander Cabrera",
-            website: "https://cabreraalex.com",
-          },
-          {
-            name: "Adam Perer",
-            website: "http://perer.org/",
-          },
-          {
-            name: "Eric Xing",
-            website: "http://www.cs.cmu.edu/~epxing/",
-          },
-          {
-            name: "Ameet Talwalkar",
-            website: "https://www.cs.cmu.edu/~atalwalk/",
-          },
-        ],
-        bibtex:
-          "@article{plumb2019regularizing, title={Regularizing Black-box Models for Improved Interpretability}, author={Plumb, Gregory and Al-Shedivat, Maruan and Cabrera, Ángel Alexander, and Perer, Adam and Xing, Eric and Talwalkar, Ameet}, journal={arXiv preprint arXiv:1902.06787}, year={2020}}",
-        abstract:
-          "Most of the work on interpretable machine learning has focused on designing either inherently interpretable models, which typically trade-off accuracy for interpretability, or post-hoc explanation systems, which tend to lack guarantees about the quality of their explanations. We explore a hybridization of these approaches by directly regularizing a black-box model for interpretability at training time - a method we call ExpO. We find that post-hoc explanations of an ExpO-regularized model are consistently more stable and of higher fidelity, which we show theoretically and support empirically. Critically, we also find ExpO leads to explanations that are more actionable, significantly more useful, and more intuitive as supported by a user study.",
-        pdf: "https://arxiv.org/pdf/1902.06787.pdf",
-      },
       {
         title:
           '"Public(s)-in-the-Loop": Facilitating Deliberation of Algorithmic Decisions in Contentious Public Policy Domains',
@@ -2790,7 +2790,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (58:8) {#each { length: 3 } as _, i}
+    // (59:8) {#each { length: 3 } as _, i}
     function create_each_block_2(ctx) {
     	let div;
     	let p0;
@@ -2810,11 +2810,11 @@ var app = (function () {
     			p1 = element("p");
     			t2 = space();
     			attr_dev(p0, "class", "pure-u-1 pure-u-md-1-5 date");
-    			add_location(p0, file$6, 59, 12, 1394);
+    			add_location(p0, file$6, 60, 12, 1416);
     			attr_dev(p1, "class", "item pure-u-1 pure-u-md-4-5");
-    			add_location(p1, file$6, 60, 12, 1464);
+    			add_location(p1, file$6, 61, 12, 1486);
     			attr_dev(div, "class", "news-item pure-g");
-    			add_location(div, file$6, 58, 10, 1351);
+    			add_location(div, file$6, 59, 10, 1373);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2835,14 +2835,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(58:8) {#each { length: 3 } as _, i}",
+    		source: "(59:8) {#each { length: 3 } as _, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (73:8) {#each pubs as pub}
+    // (74:8) {#each pubs as pub}
     function create_each_block_1(ctx) {
     	let div5;
     	let div2;
@@ -2899,26 +2899,26 @@ var app = (function () {
     			set_style(div0, "background-image", "url(" + ("images/" + /*pub*/ ctx[0].teaser) + ")");
     			attr_dev(div0, "class", "thumb");
     			attr_dev(div0, "alt", "teaser");
-    			add_location(div0, file$6, 76, 16, 2001);
+    			add_location(div0, file$6, 77, 16, 2023);
     			attr_dev(a0, "href", a0_href_value = "#/paper/" + /*pub*/ ctx[0].id);
-    			add_location(a0, file$6, 75, 14, 1954);
-    			attr_dev(h6, "class", "venue svelte-1h5ckrj");
-    			add_location(h6, file$6, 82, 16, 2201);
-    			add_location(div1, file$6, 81, 14, 2179);
-    			attr_dev(div2, "class", "thumb-box pure-u-1 pure-u-md-1-3 svelte-1h5ckrj");
-    			add_location(div2, file$6, 74, 12, 1893);
-    			add_location(h4, file$6, 88, 18, 2445);
+    			add_location(a0, file$6, 76, 14, 1976);
+    			attr_dev(h6, "class", "venue svelte-13to5kp");
+    			add_location(h6, file$6, 83, 16, 2223);
+    			add_location(div1, file$6, 82, 14, 2201);
+    			attr_dev(div2, "class", "thumb-box pure-u-1 pure-u-md-1-3 svelte-13to5kp");
+    			add_location(div2, file$6, 75, 12, 1915);
+    			add_location(h4, file$6, 89, 18, 2467);
     			attr_dev(a1, "href", a1_href_value = "#/paper/" + /*pub*/ ctx[0].id);
     			attr_dev(a1, "class", "paper-title");
-    			add_location(a1, file$6, 87, 16, 2376);
+    			add_location(a1, file$6, 88, 16, 2398);
     			attr_dev(h5, "class", "authors");
-    			add_location(h5, file$6, 90, 16, 2503);
+    			add_location(h5, file$6, 91, 16, 2525);
     			attr_dev(div3, "class", "padded");
-    			add_location(div3, file$6, 86, 14, 2339);
+    			add_location(div3, file$6, 87, 14, 2361);
     			attr_dev(div4, "class", "pure-u-1 pure-u-md-2-3");
-    			add_location(div4, file$6, 85, 12, 2288);
+    			add_location(div4, file$6, 86, 12, 2310);
     			attr_dev(div5, "class", "pure-g pub");
-    			add_location(div5, file$6, 73, 10, 1856);
+    			add_location(div5, file$6, 74, 10, 1878);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div5, anchor);
@@ -2963,14 +2963,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(73:8) {#each pubs as pub}",
+    		source: "(74:8) {#each pubs as pub}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (114:8) {#each other as pub}
+    // (115:8) {#each other as pub}
     function create_each_block$1(ctx) {
     	let div4;
     	let div1;
@@ -3025,25 +3025,25 @@ var app = (function () {
     			set_style(div0, "background-image", "url(" + ("images/" + /*pub*/ ctx[0].teaser) + ")");
     			attr_dev(div0, "class", "thumb");
     			attr_dev(div0, "alt", "teaser");
-    			add_location(div0, file$6, 117, 16, 3457);
+    			add_location(div0, file$6, 118, 16, 3479);
     			attr_dev(a0, "href", a0_href_value = "#/paper/" + /*pub*/ ctx[0].id);
-    			add_location(a0, file$6, 116, 14, 3410);
-    			attr_dev(h6, "class", "venue svelte-1h5ckrj");
-    			add_location(h6, file$6, 122, 14, 3635);
-    			attr_dev(div1, "class", "thumb-box pure-u-1 pure-u-md-1-3 svelte-1h5ckrj");
-    			add_location(div1, file$6, 115, 12, 3349);
-    			add_location(h4, file$6, 127, 18, 3858);
+    			add_location(a0, file$6, 117, 14, 3432);
+    			attr_dev(h6, "class", "venue svelte-13to5kp");
+    			add_location(h6, file$6, 123, 14, 3657);
+    			attr_dev(div1, "class", "thumb-box pure-u-1 pure-u-md-1-3 svelte-13to5kp");
+    			add_location(div1, file$6, 116, 12, 3371);
+    			add_location(h4, file$6, 128, 18, 3880);
     			attr_dev(a1, "href", a1_href_value = "#/paper/" + /*pub*/ ctx[0].id);
     			attr_dev(a1, "class", "paper-title");
-    			add_location(a1, file$6, 126, 16, 3789);
+    			add_location(a1, file$6, 127, 16, 3811);
     			attr_dev(h5, "class", "authors");
-    			add_location(h5, file$6, 129, 16, 3916);
+    			add_location(h5, file$6, 130, 16, 3938);
     			attr_dev(div2, "class", "padded");
-    			add_location(div2, file$6, 125, 14, 3752);
+    			add_location(div2, file$6, 126, 14, 3774);
     			attr_dev(div3, "class", "pure-u-1 pure-u-md-2-3");
-    			add_location(div3, file$6, 124, 12, 3701);
+    			add_location(div3, file$6, 125, 12, 3723);
     			attr_dev(div4, "class", "pure-g pub");
-    			add_location(div4, file$6, 114, 10, 3312);
+    			add_location(div4, file$6, 115, 10, 3334);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div4, anchor);
@@ -3087,7 +3087,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(114:8) {#each other as pub}",
+    		source: "(115:8) {#each other as pub}",
     		ctx
     	});
 
@@ -3227,47 +3227,47 @@ var app = (function () {
     			t18 = space();
     			create_component(footer.$$.fragment);
     			attr_dev(span, "class", "name");
-    			add_location(span, file$6, 47, 10, 1037);
+    			add_location(span, file$6, 48, 10, 1059);
     			attr_dev(h20, "id", "hello");
-    			attr_dev(h20, "class", "svelte-1h5ckrj");
-    			add_location(h20, file$6, 45, 8, 981);
+    			attr_dev(h20, "class", "svelte-13to5kp");
+    			add_location(h20, file$6, 46, 8, 1003);
     			attr_dev(div0, "id", "intro");
-    			add_location(div0, file$6, 44, 6, 956);
-    			attr_dev(h21, "class", "header svelte-1h5ckrj");
-    			add_location(h21, file$6, 53, 10, 1187);
+    			add_location(div0, file$6, 45, 6, 978);
+    			attr_dev(h21, "class", "header svelte-13to5kp");
+    			add_location(h21, file$6, 54, 10, 1209);
     			attr_dev(a, "class", "right-all");
     			attr_dev(a, "href", "#/news");
-    			add_location(a, file$6, 54, 10, 1226);
-    			attr_dev(div1, "class", "inline svelte-1h5ckrj");
-    			add_location(div1, file$6, 52, 8, 1156);
-    			add_location(hr0, file$6, 56, 8, 1296);
+    			add_location(a, file$6, 55, 10, 1248);
+    			attr_dev(div1, "class", "inline svelte-13to5kp");
+    			add_location(div1, file$6, 53, 8, 1178);
+    			add_location(hr0, file$6, 57, 8, 1318);
     			attr_dev(div2, "id", "news");
     			attr_dev(div2, "class", "sect");
-    			add_location(div2, file$6, 51, 6, 1119);
-    			attr_dev(h22, "class", "header svelte-1h5ckrj");
-    			add_location(h22, file$6, 68, 10, 1676);
-    			attr_dev(div3, "class", "inline svelte-1h5ckrj");
-    			add_location(div3, file$6, 67, 8, 1645);
-    			add_location(hr1, file$6, 71, 8, 1811);
+    			add_location(div2, file$6, 52, 6, 1141);
+    			attr_dev(h22, "class", "header svelte-13to5kp");
+    			add_location(h22, file$6, 69, 10, 1698);
+    			attr_dev(div3, "class", "inline svelte-13to5kp");
+    			add_location(div3, file$6, 68, 8, 1667);
+    			add_location(hr1, file$6, 72, 8, 1833);
     			attr_dev(div4, "id", "pubs");
     			attr_dev(div4, "class", "sect");
-    			add_location(div4, file$6, 66, 6, 1608);
-    			attr_dev(h23, "class", "header svelte-1h5ckrj");
-    			add_location(h23, file$6, 109, 10, 3112);
-    			attr_dev(div5, "class", "inline svelte-1h5ckrj");
-    			add_location(div5, file$6, 108, 8, 3081);
-    			add_location(hr2, file$6, 112, 8, 3266);
+    			add_location(div4, file$6, 67, 6, 1630);
+    			attr_dev(h23, "class", "header svelte-13to5kp");
+    			add_location(h23, file$6, 110, 10, 3134);
+    			attr_dev(div5, "class", "inline svelte-13to5kp");
+    			add_location(div5, file$6, 109, 8, 3103);
+    			add_location(hr2, file$6, 113, 8, 3288);
     			attr_dev(div6, "id", "pubs");
     			attr_dev(div6, "class", "sect");
-    			add_location(div6, file$6, 107, 6, 3044);
+    			add_location(div6, file$6, 108, 6, 3066);
     			attr_dev(div7, "id", "padded-content");
-    			add_location(div7, file$6, 43, 4, 924);
+    			add_location(div7, file$6, 44, 4, 946);
     			attr_dev(div8, "id", "content");
     			attr_dev(div8, "class", "pure-u-1 pure-u-md-3-4");
-    			add_location(div8, file$6, 42, 2, 870);
+    			add_location(div8, file$6, 43, 2, 892);
     			attr_dev(div9, "class", "pure-g");
     			attr_dev(div9, "id", "main-container");
-    			add_location(div9, file$6, 40, 0, 813);
+    			add_location(div9, file$6, 41, 0, 835);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3886,14 +3886,14 @@ var app = (function () {
     	let t24;
     	let h51;
     	let i1;
-    	let t30;
-    	let links;
     	let t31;
+    	let links;
+    	let t32;
     	let h22;
-    	let t33;
+    	let t34;
     	let div4;
     	let code;
-    	let t35;
+    	let t36;
     	let footer;
     	let current;
 
@@ -3956,17 +3956,17 @@ var app = (function () {
     			t24 = space();
     			h51 = element("h5");
     			i1 = element("i");
-    			i1.textContent = `${/*pub*/ ctx[0].venuelong}. ${/*pub*/ ctx[0].location}, ${/*pub*/ ctx[0].year}`;
-    			t30 = space();
-    			create_component(links.$$.fragment);
+    			i1.textContent = `${/*pub*/ ctx[0].venuelong}. ${/*pub*/ ctx[0].location}, ${/*pub*/ ctx[0].year}.`;
     			t31 = space();
+    			create_component(links.$$.fragment);
+    			t32 = space();
     			h22 = element("h2");
     			h22.textContent = "BibTex";
-    			t33 = space();
+    			t34 = space();
     			div4 = element("div");
     			code = element("code");
     			code.textContent = `${/*pub*/ ctx[0].bibtex}`;
-    			t35 = space();
+    			t36 = space();
     			create_component(footer.$$.fragment);
     			attr_dev(i0, "class", "fas fa-home svelte-eaksx");
     			attr_dev(i0, "id", "home");
@@ -3996,37 +3996,37 @@ var app = (function () {
     			if (img.src !== (img_src_value = "images/" + /*pub*/ ctx[0].teaser)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "class", "teaser svelte-eaksx");
     			attr_dev(img, "alt", "teaser");
-    			add_location(img, file$8, 133, 6, 2340);
+    			add_location(img, file$8, 136, 6, 2416);
     			attr_dev(div1, "class", "pure-u-1 pure-u-md-1-2");
-    			add_location(div1, file$8, 132, 4, 2297);
+    			add_location(div1, file$8, 135, 4, 2373);
     			attr_dev(p0, "class", "desc svelte-eaksx");
-    			add_location(p0, file$8, 136, 6, 2463);
+    			add_location(p0, file$8, 139, 6, 2539);
     			attr_dev(div2, "class", "pure-u-1 pure-u-md-1-2");
-    			add_location(div2, file$8, 135, 4, 2420);
+    			add_location(div2, file$8, 138, 4, 2496);
     			attr_dev(div3, "class", "flex pure-g svelte-eaksx");
-    			add_location(div3, file$8, 131, 2, 2267);
+    			add_location(div3, file$8, 134, 2, 2343);
     			attr_dev(h20, "class", "sec-title svelte-eaksx");
-    			add_location(h20, file$8, 140, 2, 2517);
+    			add_location(h20, file$8, 143, 2, 2593);
     			attr_dev(p1, "class", "svelte-eaksx");
-    			add_location(p1, file$8, 141, 2, 2555);
+    			add_location(p1, file$8, 144, 2, 2631);
     			attr_dev(h21, "class", "sec-title svelte-eaksx");
-    			add_location(h21, file$8, 143, 2, 2580);
+    			add_location(h21, file$8, 146, 2, 2656);
     			attr_dev(h41, "class", "svelte-eaksx");
-    			add_location(h41, file$8, 145, 4, 2673);
+    			add_location(h41, file$8, 148, 4, 2749);
     			attr_dev(a1, "href", a1_href_value = "#/paper/" + /*pub*/ ctx[0].id);
     			attr_dev(a1, "class", "paper-title");
-    			add_location(a1, file$8, 144, 2, 2618);
+    			add_location(a1, file$8, 147, 2, 2694);
     			attr_dev(h50, "class", "svelte-eaksx");
-    			add_location(h50, file$8, 148, 2, 2704);
-    			add_location(i1, file$8, 155, 4, 2851);
+    			add_location(h50, file$8, 151, 2, 2780);
+    			add_location(i1, file$8, 163, 4, 3013);
     			attr_dev(h51, "class", "svelte-eaksx");
-    			add_location(h51, file$8, 154, 2, 2842);
+    			add_location(h51, file$8, 162, 2, 3004);
     			attr_dev(h22, "class", "sec-title svelte-eaksx");
-    			add_location(h22, file$8, 159, 2, 2931);
+    			add_location(h22, file$8, 167, 2, 3094);
     			attr_dev(code, "class", "bibtex");
-    			add_location(code, file$8, 161, 4, 2990);
+    			add_location(code, file$8, 169, 4, 3153);
     			attr_dev(div4, "class", "code svelte-eaksx");
-    			add_location(div4, file$8, 160, 2, 2967);
+    			add_location(div4, file$8, 168, 2, 3130);
     			attr_dev(div5, "id", "body");
     			attr_dev(div5, "class", "svelte-eaksx");
     			add_location(div5, file$8, 110, 0, 1737);
@@ -4077,14 +4077,14 @@ var app = (function () {
     			append_dev(div5, t24);
     			append_dev(div5, h51);
     			append_dev(h51, i1);
-    			append_dev(div5, t30);
-    			mount_component(links, div5, null);
     			append_dev(div5, t31);
+    			mount_component(links, div5, null);
+    			append_dev(div5, t32);
     			append_dev(div5, h22);
-    			append_dev(div5, t33);
+    			append_dev(div5, t34);
     			append_dev(div5, div4);
     			append_dev(div4, code);
-    			append_dev(div5, t35);
+    			append_dev(div5, t36);
     			mount_component(footer, div5, null);
     			current = true;
     		},
@@ -4118,8 +4118,8 @@ var app = (function () {
     	return block;
     }
 
-    const func$2 = p => "<a class='press' href='" + p.website + "'>" + p.name + "</a>";
-    const func_1$1 = p => "<a class='press' href='" + p.website + "'>" + p.name + "</a>";
+    const func$2 = p => `<a class='${p.name === "Ángel Alexander Cabrera" ? "me" : ""}' href='${p.website}'>${p.name}</a>`;
+    const func_1$1 = p => `<a class='${p.name === "Ángel Alexander Cabrera" ? "me" : ""}' href='${p.website}'>${p.name}</a>`;
 
     function instance$9($$self, $$props, $$invalidate) {
     	let { params = {} } = $$props;
