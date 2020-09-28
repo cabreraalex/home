@@ -19,6 +19,7 @@
 
   h6 {
     margin-bottom: 10px;
+    margin-top: 10px;
   }
   .inline {
     display: inline-flex;

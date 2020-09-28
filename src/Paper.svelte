@@ -124,7 +124,10 @@
     <h3>
       {@html pub.authors
         .map(
-          p => "<a class='press' href='" + p.website + "'>" + p.name + '</a>'
+          p =>
+            `<a class='${
+              p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
+            }' href='${p.website}'>${p.name}</a>`
         )
         .join(', ')}
     </h3>
@@ -148,12 +151,17 @@
 
   <h5>
     {@html pub.authors
-      .map(p => "<a class='press' href='" + p.website + "'>" + p.name + '</a>')
+      .map(
+        p =>
+          `<a class='${
+            p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
+          }' href='${p.website}'>${p.name}</a>`
+      )
       .join(', ')}
   </h5>
 
   <h5>
-    <i>{pub.venuelong}. {pub.location}, {pub.year}</i>
+    <i>{pub.venuelong}. {pub.location}, {pub.year}.</i>
   </h5>
 
   <Links {pub} />

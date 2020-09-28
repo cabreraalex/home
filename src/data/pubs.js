@@ -1,5 +1,48 @@
 export default [
   {
+    title: "Regularizing Black-box Models for Improved Interpretability",
+    desc:
+      "We introduce a new regularization method for training deep learning models that improves the stability and fidelity of post-hoc explanantion methods like LIME. Through a user study we show that the regularized model empirically improves the quality of explainations.",
+    id: "expo",
+    teaser: "expo.png",
+    venue: "NeurIPS'20",
+    venuelong: "Conference on Neural Information Processing Systems (NeurIPS)",
+    year: "2020",
+    month: "December",
+    location: "Vancouver",
+    authors: [
+      {
+        name: "Gregory Plumb",
+        website: "https://gdplumb.github.io/",
+      },
+      {
+        name: "Maruan Al-Shedivat",
+        website: "https://www.cs.cmu.edu/~mshediva/",
+      },
+      {
+        name: "Ángel Alexander Cabrera",
+        website: "https://cabreraalex.com",
+      },
+      {
+        name: "Adam Perer",
+        website: "http://perer.org/",
+      },
+      {
+        name: "Eric Xing",
+        website: "http://www.cs.cmu.edu/~epxing/",
+      },
+      {
+        name: "Ameet Talwalkar",
+        website: "https://www.cs.cmu.edu/~atalwalk/",
+      },
+    ],
+    bibtex:
+      "@article{plumb2020regularizing, title={Regularizing Black-box Models for Improved Interpretability}, author={Plumb, Gregory and Al-Shedivat, Maruan and Cabrera, Ángel Alexander, and Perer, Adam and Xing, Eric and Talwalkar, Ameet}, journal={NeurIPS}, year={2020}}",
+    abstract:
+      "Most of the work on interpretable machine learning has focused on designing either inherently interpretable models, which typically trade-off accuracy for interpretability, or post-hoc explanation systems, which tend to lack guarantees about the quality of their explanations. We explore a hybridization of these approaches by directly regularizing a black-box model for interpretability at training time - a method we call ExpO. We find that post-hoc explanations of an ExpO-regularized model are consistently more stable and of higher fidelity, which we show theoretically and support empirically. Critically, we also find ExpO leads to explanations that are more actionable, significantly more useful, and more intuitive as supported by a user study.",
+    pdf: "https://arxiv.org/pdf/1902.06787.pdf",
+  },
+  {
     title:
       "Designing Alternative Representations of Confusion Matrices to Support Non-Expert Public Understanding of Algorithm Performance",
     desc:
@@ -51,7 +94,7 @@ export default [
       "FairVis is a visual analytics system that enables data scientists to find potential biases in their machine learning models. It allows users to split their data into subgroups of different features to see how vulnerable groups are performing for various fairness metrics. Additionally, it suggests groups that may be underperforming and can find similar groups.",
     id: "fairvis",
     teaser: "fairvis.png",
-    venue: "IEEE VIS'19",
+    venue: "VIS'19",
     venuelong:
       "IEEE Conference on Visual Analytics Science and Technology (VAST)",
     year: "2019",
