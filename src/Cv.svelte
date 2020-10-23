@@ -145,7 +145,6 @@
 
           <Intro />
           <Social />
-
         </th>
       </tr>
       <!-- EDUCATION -->
@@ -156,11 +155,7 @@
         </th>
       </tr>
       <tr class="item">
-        <th class="date">
-          August 2019
-          <br />
-          - Present
-        </th>
+        <th class="date">August 2019 <br /> - Present</th>
         <th>
           <h5>PhD in Human-Computer Interaction (HCI)</h5>
           <h6>Carnegie Mellon University</h6>
@@ -168,11 +163,7 @@
       </tr>
       <tr class="buffer" />
       <tr class="item">
-        <th class="date">
-          August 2015
-          <br />
-          - May 2019
-        </th>
+        <th class="date">August 2015 <br /> - May 2019</th>
         <th>
           <h5>B.S. in Computer Science</h5>
           <h6>Georgia Institute of Technology</h6>
@@ -211,10 +202,7 @@
           </p>
           <div class="tags">
             <a href="https://www.nsfgrfp.org/">
-              <button>
-                <i class="fas fa-globe" />
-                Website
-              </button>
+              <button> <i class="fas fa-globe" /> Website </button>
             </a>
           </div>
         </th>
@@ -231,21 +219,14 @@
           <div class="tags">
             <a
               href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship">
-              <button>
-                <i class="fas fa-globe" />
-                Announcement
-              </button>
+              <button> <i class="fas fa-globe" /> Announcement </button>
             </a>
           </div>
         </th>
       </tr>
       <tr class="buffer" />
       <tr class="item">
-        <th class="date">
-          August 2015
-          <br />
-          - May 2019
-        </th>
+        <th class="date">August 2015 <br /> - May 2019</th>
         <th>
           <h5>Stamps President's Scholar</h5>
           <h6>Georgia Tech and the Stamps Family Charitable Foundation</h6>
@@ -255,10 +236,7 @@
           </p>
           <div class="tags">
             <a href="https://stampsps.gatech.edu/">
-              <button>
-                <i class="fas fa-globe" />
-                Website
-              </button>
+              <button> <i class="fas fa-globe" /> Website </button>
             </a>
           </div>
         </th>
@@ -276,10 +254,7 @@
           <div class="tags">
             <a
               href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems">
-              <button>
-                <i class="far fa-newspaper" />
-                Press Release
-              </button>
+              <button> <i class="far fa-newspaper" /> Press Release </button>
             </a>
           </div>
         </th>
@@ -292,11 +267,7 @@
         </th>
       </tr>
       <tr class="item">
-        <th class="date">
-          May 2020
-          <br />
-          - August 2020
-        </th>
+        <th class="date">May 2020 <br /> - August 2020</th>
         <th>
           <h5>Microsoft Research</h5>
           <h6>Research Intern</h6>
@@ -312,21 +283,14 @@
           </p>
           <div class="tags">
             <a href="https://www.microsoft.com/en-us/research/group/vida/">
-              <button>
-                <i class="fas fa-globe" />
-                VIDA Group
-              </button>
+              <button> <i class="fas fa-globe" /> VIDA Group </button>
             </a>
           </div>
         </th>
       </tr>
       <tr class="buffer" />
       <tr class="item">
-        <th class="date">
-          May 2018
-          <br />
-          - August 2018
-        </th>
+        <th class="date">May 2018 <br /> - August 2018</th>
         <th>
           <h5>Google</h5>
           <h6>Software Engineering Intern</h6>
@@ -353,11 +317,7 @@
       </tr>
       <tr class="buffer" />
       <tr class="item">
-        <th class="date">
-          May 2017
-          <br />
-          - August 2017
-        </th>
+        <th class="date">May 2017 <br /> - August 2017</th>
         <th>
           <h5>Google</h5>
           <h6>Software Engineering Intern</h6>
@@ -375,11 +335,7 @@
       </tr>
       <tr class="buffer" />
       <tr class="item">
-        <th class="date">
-          May 2016
-          <br />
-          - August 2016
-        </th>
+        <th class="date">May 2016 <br /> - August 2016</th>
         <th>
           <h5>Google</h5>
           <h6>Engineering Practicum Intern</h6>
@@ -402,11 +358,7 @@
         </th>
       </tr>
       <tr class="item">
-        <th class="date">
-          August 2019
-          <br />
-          - Present
-        </th>
+        <th class="date">August 2019 <br /> - Present</th>
         <th>
           <h5>Carnegie Mellon Human Computer Interaction Institute (HCII)</h5>
           <h6>Graduate Research Assistant</h6>
@@ -422,31 +374,20 @@
       </tr>
       <tr class="buffer" />
       <tr class="item">
-        <th class="date">
-          January 2018
-          <br />
-          - May 2019
-        </th>
+        <th class="date">January 2018 <br /> - May 2019</th>
         <th>
           <h5>Polo Club of Data Science</h5>
           <h6>Undergraduate Research Assistant</h6>
           <div class="tags">
             <a href="https://poloclub.github.io/">
-              <button>
-                <i class="fas fa-globe" />
-                Polo Club
-              </button>
+              <button> <i class="fas fa-globe" /> Polo Club </button>
             </a>
           </div>
         </th>
       </tr>
       <tr class="buffer" />
       <tr class="item">
-        <th class="date">
-          September 2015
-          <br />
-          - May 2017
-        </th>
+        <th class="date">September 2015 <br /> - May 2017</th>
         <th>
           <h5>PROX-1 Satellite</h5>
           <h6>Flight Software Lead and Researcher</h6>
@@ -457,23 +398,14 @@
           <div class="tags">
             <a
               href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space">
-              <button>
-                <i class="fas fa-rocket" />
-                In space!
-              </button>
+              <button> <i class="fas fa-rocket" /> In space! </button>
             </a>
             <a href="http://prox-1.gatech.edu/">
-              <button>
-                <i class="fas fa-globe" />
-                Website
-              </button>
+              <button> <i class="fas fa-globe" /> Website </button>
             </a>
             <a
               href="https://www.ae.gatech.edu/news/2017/05/prox-1-launch-has-launched">
-              <button>
-                <i class="far fa-newspaper" />
-                Press release
-              </button>
+              <button> <i class="far fa-newspaper" /> Press release </button>
             </a>
           </div>
         </th>
@@ -496,7 +428,7 @@
             <h6 class="authors">
               {@html pub.authors
                 .map(
-                  p =>
+                  (p) =>
                     `<a class='${
                       p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
                     }' href='${p.website}'>${p.name}</a>`
@@ -531,7 +463,7 @@
             <h6 class="authors">
               {@html pub.authors
                 .map(
-                  p =>
+                  (p) =>
                     `<a class='${
                       p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
                     }' href='${p.website}'>${p.name}</a>`
@@ -556,13 +488,7 @@
         </th>
       </tr>
       <tr class="item">
-        <th class="date">
-          Fall 2016
-          <br />
-          Spring 2017
-          <br />
-          Spring 2018
-        </th>
+        <th class="date">Fall 2016 <br /> Spring 2017 <br /> Spring 2018</th>
         <th>
           <h5>CS1332 - Data Structures and Algorithms</h5>
           <h6>Undergraduate Teaching Assistant @ Georgia Tech</h6>
@@ -592,11 +518,7 @@
         </th>
       </tr>
       <tr class="item">
-        <th class="date">
-          Spring 2020
-          <br />
-          - Present
-        </th>
+        <th class="date">Spring 2020 <br /> - Present</th>
         <th>
           <h5>Abraham Druck</h5>
           <h6>B.S. in Mathematical Sciences, Carnegie Mellon</h6>
@@ -644,6 +566,14 @@
         <th class="date" />
         <th>
           <h5>Reviewer</h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2021</th>
+        <th>
+          <h5 class="single">
+            ACM Conference on Human Factors in Computing Systems (CHI)
+          </h5>
         </th>
       </tr>
       <tr>
@@ -785,10 +715,7 @@
           </p>
           <div class="tags">
             <a href="https://covidcast.cmu.edu/">
-              <button>
-                <i class="fas fa-globe" />
-                Website
-              </button>
+              <button> <i class="fas fa-globe" /> Website </button>
             </a>
           </div>
         </th>
@@ -808,10 +735,7 @@
           </p>
           <div class="tags">
             <a href="https://github.com/cabreraalex/private-fair-GAN">
-              <button>
-                <i class="fab fa-github" />
-                GitHub
-              </button>
+              <button> <i class="fab fa-github" /> GitHub </button>
             </a>
           </div>
         </th>
@@ -827,16 +751,10 @@
           </p>
           <div class="tags">
             <a href="./gt_bus_analysis.pdf">
-              <button>
-                <i class="fas fa-file-pdf" />
-                Poster
-              </button>
+              <button> <i class="fas fa-file-pdf" /> Poster </button>
             </a>
             <a href="http://poloclub.gatech.edu/cse6242/2018spring/">
-              <button>
-                <i class="fas fa-globe" />
-                Class
-              </button>
+              <button> <i class="fas fa-globe" /> Class </button>
             </a>
           </div>
         </th>
@@ -852,16 +770,10 @@
           </p>
           <div class="tags">
             <a href="http://ctfs.github.io/resources/">
-              <button>
-                <i class="fas fa-globe" />
-                Website
-              </button>
+              <button> <i class="fas fa-globe" /> Website </button>
             </a>
             <a href="https://github.com/ctfs/resources">
-              <button>
-                <i class="fab fa-github" />
-                GitHub
-              </button>
+              <button> <i class="fab fa-github" /> GitHub </button>
             </a>
           </div>
         </th>
