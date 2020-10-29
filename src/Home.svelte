@@ -27,6 +27,7 @@
   }
   .header {
     margin-right: 30px;
+    font-weight: 400;
   }
   @media only screen and (max-width: 769px) {
     h6 {
@@ -44,10 +45,7 @@
   <div id="content" class="pure-u-1 pure-u-md-3-4">
     <div id="padded-content">
       <div id="intro">
-        <h2 id="hello">
-          Hi! You can call me
-          <span class="name">Alex</span>
-        </h2>
+        <h2 id="hello">Hi! You can call me <span class="name">Alex</span></h2>
         <Intro />
       </div>
       <div id="news" class="sect">
@@ -92,7 +90,7 @@
                 <h5 class="authors">
                   {@html pub.authors
                     .map(
-                      p =>
+                      (p) =>
                         `<a class='${
                           p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
                         }' href='${p.website}'>${p.name}</a>`
@@ -131,7 +129,7 @@
                 <h5 class="authors">
                   {@html pub.authors
                     .map(
-                      p =>
+                      (p) =>
                         `<a class='${
                           p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
                         }' href='${p.website}'>${p.name}</a>`

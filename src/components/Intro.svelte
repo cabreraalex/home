@@ -19,9 +19,6 @@
   <a href="http://perer.org">Adam Perer</a>
   and
   <a href="http://www.cs.cmu.edu/~jasonh/">Jason Hong.</a>
-</p>
-
-<p>
   My research focus is broadly
   <b>human-centered AI,</b>
   specifically in applying techniques from
@@ -34,20 +31,21 @@
 </p>
 
 <p>
-  Before CMU, I graduated with a B.S. in Computer Science from Georgia Tech,
+  Before CMU, I graduated with a B.S. in Computer Science from Georgia Tech.
+  <!-- ,
   where I worked with
-  <a href="https://www.cc.gatech.edu/~dchau/">Polo Chau</a>
+  <!-- <a href="https://www.cc.gatech.edu/~dchau/">Polo Chau</a> 
   and
-  <a href="http://jamiemorgenstern.com/">Jamie Morgenstern.</a>
+  <a href="http://jamiemorgenstern.com/">Jamie Morgenstern.</a> -->
   I've spent time at
-  <img
+  <!-- <img
     style="width: 16px; padding-left: 5px; margin-bottom: -2px"
     src="/images/microsoft.svg"
-    alt="microsoft" />
+    alt="microsoft" /> -->
   Microsoft Research and a few summers as a software engineering intern at
-  <img
+  <!-- <img
     style="width: 16px; padding-left: 5px; margin-bottom: -2px"
     src="/images/google.svg"
-    alt="google" />
+    alt="google" /> -->
   Google working on Google Maps, Cloud Dataflow, and Android Auto.
 </p>

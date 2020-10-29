@@ -97,6 +97,7 @@
   #name {
     margin-bottom: 10px;
     font-size: 0px;
+    font-weight: 400;
   }
 
   .color {
@@ -159,6 +160,20 @@
         <th>
           <h5>PhD in Human-Computer Interaction (HCI)</h5>
           <h6>Carnegie Mellon University</h6>
+          <p class="desc">
+            Advised by
+            <a href="http://perer.org">Adam Perer</a>
+            and
+            <a href="http://www.cs.cmu.edu/~jasonh/">Jason Hong.</a>
+          </p>
+          <div class="tags">
+            <a href="https://dig.cmu.edu/">
+              <button>
+                <i class="fas fa-globe" />
+                Data Interaction Group
+              </button>
+            </a>
+          </div>
         </th>
       </tr>
       <tr class="buffer" />
@@ -183,87 +198,11 @@
           </p>
         </th>
       </tr>
-      <!-- AWARDS -->
-      <tr>
-        <th class="date" />
-        <th>
-          <h4 class="header">Awards and Fellowships</h4>
-        </th>
-      </tr>
-      <tr class="item">
-        <th class="date">May 2019</th>
-        <th>
-          <h5>
-            National Science Foundation Graduate Research Fellowship (NSF GRFP)
-          </h5>
-          <p class="desc">
-            Three-year graduate fellowship for independent research. Full
-            tuition with an annual stipend of $34,000.
-          </p>
-          <div class="tags">
-            <a href="https://www.nsfgrfp.org/">
-              <button> <i class="fas fa-globe" /> Website </button>
-            </a>
-          </div>
-        </th>
-      </tr>
-      <tr class="buffer" />
-      <tr class="item">
-        <th class="date">May 2019</th>
-        <th>
-          <h5>Love Family Foundation Scholarship</h5>
-          <p class="desc">
-            Co-awarded the $10,000 scholarship for the undergraduate with the
-            most outstanding scholastic record.
-          </p>
-          <div class="tags">
-            <a
-              href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship">
-              <button> <i class="fas fa-globe" /> Announcement </button>
-            </a>
-          </div>
-        </th>
-      </tr>
-      <tr class="buffer" />
-      <tr class="item">
-        <th class="date">August 2015 <br /> - May 2019</th>
-        <th>
-          <h5>Stamps President's Scholar</h5>
-          <h6>Georgia Tech and the Stamps Family Charitable Foundation</h6>
-          <p class="desc">
-            Full ride scholarship with $15,000 in extracurricular funding
-            awarded to 10 incoming students.
-          </p>
-          <div class="tags">
-            <a href="https://stampsps.gatech.edu/">
-              <button> <i class="fas fa-globe" /> Website </button>
-            </a>
-          </div>
-        </th>
-      </tr>
-      <tr class="buffer" />
-      <tr class="item">
-        <th class="date">February 3, 2018</th>
-        <th>
-          <h5>The Data Open Datathon</h5>
-          <h6>Correlation One and Citadel Securities</h6>
-          <p class="desc">
-            Placed third and won $2,500 for creating a ML system to predict
-            dangerous road areas.
-          </p>
-          <div class="tags">
-            <a
-              href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems">
-              <button> <i class="far fa-newspaper" /> Press Release </button>
-            </a>
-          </div>
-        </th>
-      </tr>
       <!-- INDUSTRY -->
       <tr>
         <th class="date" />
         <th>
-          <h4 class="header">Industry Experience</h4>
+          <h4 class="header">Work Experience</h4>
         </th>
       </tr>
       <tr class="item">
@@ -350,8 +289,84 @@
           </div>
         </th>
       </tr>
-      <!-- RESEARCH -->
+      <!-- AWARDS -->
       <tr>
+        <th class="date" />
+        <th>
+          <h4 class="header">Awards</h4>
+        </th>
+      </tr>
+      <tr class="item">
+        <th class="date">May 2019</th>
+        <th>
+          <h5>
+            National Science Foundation Graduate Research Fellowship (NSF GRFP)
+          </h5>
+          <p class="desc">
+            Three-year graduate fellowship for independent research. Full
+            tuition with an annual stipend of $34,000.
+          </p>
+          <div class="tags">
+            <a href="https://www.nsfgrfp.org/">
+              <button> <i class="fas fa-globe" /> Website </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
+      <tr class="item">
+        <th class="date">May 2019</th>
+        <th>
+          <h5>Love Family Foundation Scholarship</h5>
+          <p class="desc">
+            Co-awarded the $10,000 scholarship for the undergraduate with the
+            most outstanding scholastic record.
+          </p>
+          <div class="tags">
+            <a
+              href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship">
+              <button> <i class="fas fa-globe" /> Announcement </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
+      <tr class="item">
+        <th class="date">August 2015 <br /> - May 2019</th>
+        <th>
+          <h5>Stamps President's Scholar</h5>
+          <h6>Georgia Tech and the Stamps Family Charitable Foundation</h6>
+          <p class="desc">
+            Full ride scholarship with $15,000 in extracurricular funding
+            awarded to 10 incoming students.
+          </p>
+          <div class="tags">
+            <a href="https://stampsps.gatech.edu/">
+              <button> <i class="fas fa-globe" /> Website </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
+      <tr class="item">
+        <th class="date">February 3, 2018</th>
+        <th>
+          <h5>The Data Open Datathon</h5>
+          <h6>Correlation One and Citadel Securities</h6>
+          <p class="desc">
+            Placed third and won $2,500 for creating a ML system to predict
+            dangerous road areas.
+          </p>
+          <div class="tags">
+            <a
+              href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems">
+              <button> <i class="far fa-newspaper" /> Press Release </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <!-- RESEARCH -->
+      <!-- <tr>
         <th class="date" />
         <th>
           <h4 class="header">Academic Research Experience</h4>
@@ -385,31 +400,7 @@
           </div>
         </th>
       </tr>
-      <tr class="buffer" />
-      <tr class="item">
-        <th class="date">September 2015 <br /> - May 2017</th>
-        <th>
-          <h5>PROX-1 Satellite</h5>
-          <h6>Flight Software Lead and Researcher</h6>
-          <p class="desc">
-            Led a team of engineers in developing the software for a fully
-            undergraduate-led satellite mission.
-          </p>
-          <div class="tags">
-            <a
-              href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space">
-              <button> <i class="fas fa-rocket" /> In space! </button>
-            </a>
-            <a href="http://prox-1.gatech.edu/">
-              <button> <i class="fas fa-globe" /> Website </button>
-            </a>
-            <a
-              href="https://www.ae.gatech.edu/news/2017/05/prox-1-launch-has-launched">
-              <button> <i class="far fa-newspaper" /> Press release </button>
-            </a>
-          </div>
-        </th>
-      </tr>
+      <tr class="buffer" /> -->
       <!-- PUBLICATIONS -->
       <tr>
         <th class="date" />
@@ -755,6 +746,31 @@
             </a>
             <a href="http://poloclub.gatech.edu/cse6242/2018spring/">
               <button> <i class="fas fa-globe" /> Class </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
+      <tr class="item">
+        <th class="date">September 2015 <br /> - May 2017</th>
+        <th>
+          <h5>PROX-1 Satellite</h5>
+          <h6>Flight Software Lead and Researcher</h6>
+          <p class="desc">
+            Led a team of engineers in developing the software for a fully
+            undergraduate-led satellite mission.
+          </p>
+          <div class="tags">
+            <a
+              href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space">
+              <button> <i class="fas fa-rocket" /> In space! </button>
+            </a>
+            <a href="http://prox-1.gatech.edu/">
+              <button> <i class="fas fa-globe" /> Website </button>
+            </a>
+            <a
+              href="https://www.ae.gatech.edu/news/2017/05/prox-1-launch-has-launched">
+              <button> <i class="far fa-newspaper" /> Press release </button>
             </a>
           </div>
         </th>
