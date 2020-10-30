@@ -145,7 +145,7 @@
           </h3>
 
           <Intro />
-          <Social />
+          <Social home={false} />
         </th>
       </tr>
       <!-- EDUCATION -->

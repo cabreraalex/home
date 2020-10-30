@@ -35,12 +35,8 @@
       <br />
       <span class="color red">Cabrera</span>
     </h1>
-    <Social />
-    <a href="/#/cv">
-      <button class="cv">CV (web)</button>
-    </a>
-    <a href="/cv.pdf">
-      <button class="cv">CV (pdf)</button>
-    </a>
+    <Social home={true} />
+    <a href="/#/cv"> <button class="cv">CV (web)</button> </a>
+    <a href="/cv.pdf"> <button class="cv">CV (pdf)</button> </a>
   </div>
 </div>
