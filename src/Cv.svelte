@@ -563,6 +563,15 @@
         <th class="date">2021</th>
         <th>
           <h5 class="single">
+            ACM Conference on Computer-Supported Cooperative Work and Social
+            Computing (CSCW)
+          </h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2021</th>
+        <th>
+          <h5 class="single">
             ACM Conference on Human Factors in Computing Systems (CHI)
           </h5>
         </th>
@@ -959,7 +968,7 @@
       <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated September 18, 2020.</p>
+          <p class="desc">Last updated November 5, 2020.</p>
         </th>
       </tr>
     </table>
