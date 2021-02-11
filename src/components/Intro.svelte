@@ -1,15 +1,3 @@
-<style>
-  p {
-    margin-bottom: 20px;
-  }
-  .google {
-    letter-spacing: -2px;
-  }
-  .letter {
-    font-size: 18px;
-  }
-</style>
-
 <p>
   I am a PhD student in the
   <a href="https://hcii.cmu.edu/">
@@ -25,18 +13,17 @@
   <b>HCI</b>
   and
   <b>visualization</b>
-  to help people develop machine learning models that are better aligned with
-  human values. I am supported by a
+  to help people better understand and improve their machine learning models. I am
+  supported by a
   <a href="https://www.nsfgrfp.org/">NSF Graduate Research Fellowship.</a>
 </p>
 
 <p>
-  Before CMU, I graduated with a B.S. in Computer Science from Georgia Tech.
-  <!-- ,
+  Before CMU, I graduated with a B.S. in Computer Science from Georgia Tech
   where I worked with
-  <!-- <a href="https://www.cc.gatech.edu/~dchau/">Polo Chau</a> 
+  <a href="https://www.cc.gatech.edu/~dchau/">Polo Chau</a>
   and
-  <a href="http://jamiemorgenstern.com/">Jamie Morgenstern.</a> -->
+  <a href="http://jamiemorgenstern.com/">Jamie Morgenstern.</a>
   I've spent time at
   <!-- <img
     style="width: 16px; padding-left: 5px; margin-bottom: -2px"
@@ -49,3 +36,15 @@
     alt="google" /> -->
   Google working on Google Maps, Cloud Dataflow, and Android Auto.
 </p>
+
+<style>
+  p {
+    margin-bottom: 20px;
+  }
+  .google {
+    letter-spacing: -2px;
+  }
+  .letter {
+    font-size: 18px;
+  }
+</style>

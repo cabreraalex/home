@@ -520,7 +520,7 @@
       </tr>
       <br />
       <tr class="item">
-        <th class="date">Fall 2020</th>
+        <th class="date">Fall 2020 <br /> Spring 2020</th>
         <th>
           <h5>CMU AI Mentoring Program</h5>
         </th>
@@ -886,6 +886,7 @@
       <tr class="item">
         <th class="date">PhD</th>
         <th>
+          <h5 class="single">Causality and Machine Learning</h5>
           <h5 class="single">Human Judgement and Decision Making</h5>
           <a href="https://www.hcii.cmu.edu/courses/applied-research-methods">
             <h5 class="single">Applied Research Methods</h5>
