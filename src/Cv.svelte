@@ -13,124 +13,6 @@
   });
 </script>
 
-<style>
-  #container {
-    max-width: 900px;
-    margin: 0px auto;
-  }
-
-  table {
-    text-align: left;
-    padding: 0px;
-  }
-
-  h3 {
-    font-size: 40px;
-  }
-
-  h4 {
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  h5 {
-    margin: 0px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-  }
-
-  h6 {
-    font-size: 14px;
-    margin: 0px;
-    margin-bottom: 0px;
-    margin-bottom: 5px;
-    color: rgba(0, 0, 0, 0.5);
-    font-weight: 300;
-  }
-
-  th {
-    padding-bottom: 5px;
-  }
-
-  .buffer {
-    height: 20px;
-  }
-
-  .date {
-    width: 135px;
-    padding-right: 20px;
-    font-weight: 200;
-    float: left;
-    text-align: right;
-    line-height: 22px;
-  }
-
-  .desc {
-    color: RGBA(0, 0, 0, 0.7);
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 20px;
-  }
-
-  .item {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  main {
-    margin: 0px auto;
-  }
-
-  .header {
-    border-bottom: 1px solid RGBA(0, 0, 0, 0.7);
-    padding-bottom: 10px;
-    margin-top: 40px;
-    margin-bottom: 12px;
-    color: var(--secondary);
-  }
-
-  .red {
-    color: var(--secondary);
-  }
-
-  #name {
-    margin-bottom: 10px;
-    font-size: 0px;
-    font-weight: 400;
-  }
-
-  .color {
-    font-size: 30px;
-  }
-
-  .single {
-    font-weight: 300;
-    margin-bottom: 0px;
-  }
-
-  .fas {
-    margin-right: 4px;
-  }
-
-  .fab {
-    margin-right: 4px;
-  }
-
-  .far {
-    margin-right: 4px;
-  }
-
-  .authors {
-    margin-top: 3px;
-    font-style: normal;
-  }
-
-  .tags button {
-    margin-top: 1px;
-  }
-</style>
-
 <div id="container">
   <main>
     <table>
@@ -242,7 +124,8 @@
             <button>
               <a
                 href="https://www.wsj.com/articles/google-to-partner-with-biggest-car-alliance-1537243260
-                ">
+                "
+              >
                 <i class="far fa-newspaper" />
                 WSJ Article
               </a>
@@ -324,7 +207,8 @@
           </p>
           <div class="tags">
             <a
-              href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship">
+              href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship"
+            >
               <button> <i class="fas fa-globe" /> Announcement </button>
             </a>
           </div>
@@ -359,7 +243,8 @@
           </p>
           <div class="tags">
             <a
-              href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems">
+              href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems"
+            >
               <button> <i class="far fa-newspaper" /> Press Release </button>
             </a>
           </div>
@@ -412,7 +297,7 @@
         <tr class="item">
           <th class="date">{pub.month} {pub.year}</th>
           <th>
-            <a href={'#/paper/' + pub.id} class="paper-title">
+            <a href={"#/paper/" + pub.id} class="paper-title">
               <h5>{pub.title}</h5>
             </a>
 
@@ -421,10 +306,10 @@
                 .map(
                   (p) =>
                     `<a class='${
-                      p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
+                      p.name === "Ángel Alexander Cabrera" ? "me" : ""
                     }' href='${p.website}'>${p.name}</a>`
                 )
-                .join(', ')}
+                .join(", ")}
             </h6>
 
             <p class="desc">
@@ -447,7 +332,7 @@
         <tr class="item">
           <th class="date">{pub.month} {pub.year}</th>
           <th>
-            <a href={'#/paper/' + pub.id} class="paper-title">
+            <a href={"#/paper/" + pub.id} class="paper-title">
               <h5>{pub.title}</h5>
             </a>
 
@@ -456,10 +341,10 @@
                 .map(
                   (p) =>
                     `<a class='${
-                      p.name === 'Ángel Alexander Cabrera' ? 'me' : ''
+                      p.name === "Ángel Alexander Cabrera" ? "me" : ""
                     }' href='${p.website}'>${p.name}</a>`
                 )
-                .join(', ')}
+                .join(", ")}
             </h6>
 
             <p class="desc">
@@ -506,6 +391,14 @@
         <th class="date" />
         <th>
           <h4 class="header">Mentoring</h4>
+        </th>
+      </tr>
+      <tr class="item">
+        <th class="date">Spring 2021 <br /> - Present</th>
+        <th>
+          <h5>Kazi Jawad</h5>
+          <h6>B.S. in Statistics and Machine Learning, Carnegie Mellon</h6>
+          <p class="desc">Interactive tagging of images.</p>
         </th>
       </tr>
       <tr class="item">
@@ -610,7 +503,8 @@
         <th>
           <h5 class="single press">
             <a
-              href="https://www.cnn.com/us/live-news/us-coronavirus-update-04-23-20/h_473c68f3d0cea263896b85e12aec7d13">
+              href="https://www.cnn.com/us/live-news/us-coronavirus-update-04-23-20/h_473c68f3d0cea263896b85e12aec7d13"
+            >
               "New forecasting data could help public health officials prepare
               for what's next in the coronavirus pandemic"
             </a>
@@ -624,7 +518,8 @@
         <th>
           <h5 class="single press">
             <a
-              href="https://www.wired.com/story/survey-data-facebook-google-map-covid-19-carnegie-mellon/">
+              href="https://www.wired.com/story/survey-data-facebook-google-map-covid-19-carnegie-mellon/"
+            >
               "Facebook and Google Survey Data May Help Map Covid-19's Spread"
             </a>
             -
@@ -637,7 +532,8 @@
         <th>
           <h5 class="single press">
             <a
-              href="https://www.cmu.edu/news/stories/archives/2020/april/cmu-unveils-covidcast-maps.html">
+              href="https://www.cmu.edu/news/stories/archives/2020/april/cmu-unveils-covidcast-maps.html"
+            >
               "Carnegie Mellon Unveils Five Interactive COVID-19 Maps"
             </a>
             -
@@ -650,7 +546,8 @@
         <th>
           <h5 class="single press">
             <a
-              href="https://datastori.es/156-fairness-in-machine-learning-with-yongsu-ahn-and-alex-cabrera/">
+              href="https://datastori.es/156-fairness-in-machine-learning-with-yongsu-ahn-and-alex-cabrera/"
+            >
               "Visualizing Fairness in Machine Learning"
             </a>
             -
@@ -663,7 +560,8 @@
         <th>
           <h5 class="single press">
             <a
-              href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship">
+              href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship"
+            >
               "Alex Cabrera Wins Love Family Foundation Scholarship"
             </a>
             -
@@ -676,7 +574,8 @@
         <th>
           <h5 class="single press">
             <a
-              href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space">
+              href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space"
+            >
               "Georgia Tech Satellite Successfully Launched Into Space "
             </a>
             -
@@ -689,7 +588,8 @@
         <th>
           <h5 class="single press">
             <a
-              href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems">
+              href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems"
+            >
               "Datathon Challenges Students to Create Solutions to Real-World
               Problems"
             </a>
@@ -771,14 +671,16 @@
           </p>
           <div class="tags">
             <a
-              href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space">
+              href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space"
+            >
               <button> <i class="fas fa-rocket" /> In space! </button>
             </a>
             <a href="http://prox-1.gatech.edu/">
               <button> <i class="fas fa-globe" /> Website </button>
             </a>
             <a
-              href="https://www.ae.gatech.edu/news/2017/05/prox-1-launch-has-launched">
+              href="https://www.ae.gatech.edu/news/2017/05/prox-1-launch-has-launched"
+            >
               <button> <i class="far fa-newspaper" /> Press release </button>
             </a>
           </div>
@@ -975,3 +877,121 @@
     </table>
   </main>
 </div>
+
+<style>
+  #container {
+    max-width: 900px;
+    margin: 0px auto;
+  }
+
+  table {
+    text-align: left;
+    padding: 0px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  h5 {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  h6 {
+    font-size: 14px;
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+  }
+
+  th {
+    padding-bottom: 5px;
+  }
+
+  .buffer {
+    height: 20px;
+  }
+
+  .date {
+    width: 135px;
+    padding-right: 20px;
+    font-weight: 200;
+    float: left;
+    text-align: right;
+    line-height: 22px;
+  }
+
+  .desc {
+    color: RGBA(0, 0, 0, 0.7);
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 20px;
+  }
+
+  .item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  main {
+    margin: 0px auto;
+  }
+
+  .header {
+    border-bottom: 1px solid RGBA(0, 0, 0, 0.7);
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    color: var(--secondary);
+  }
+
+  .red {
+    color: var(--secondary);
+  }
+
+  #name {
+    margin-bottom: 10px;
+    font-size: 0px;
+    font-weight: 400;
+  }
+
+  .color {
+    font-size: 30px;
+  }
+
+  .single {
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+
+  .fas {
+    margin-right: 4px;
+  }
+
+  .fab {
+    margin-right: 4px;
+  }
+
+  .far {
+    margin-right: 4px;
+  }
+
+  .authors {
+    margin-top: 3px;
+    font-style: normal;
+  }
+
+  .tags button {
+    margin-top: 1px;
+  }
+</style>
