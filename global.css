@@ -10,105 +10,6 @@
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-:root {
-  --primary: #3c88d4;
-  --secondary: #e53935;
-  --black: RGBA(1, 1, 1, 0.8);
-  --light-black: RGBA(1, 1, 1, 0.5);
-}
-
-p {
-  margin: 0px;
-  line-height: 22px;
-  font-weight: 350;
-}
-h5 {
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 2px;
-}
-
-h4 {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 22px;
-}
-
-.authors {
-  font-size: 16px;
-  font-weight: 300;
-  margin-top: 5px;
-  /* line-height: 23px; */
-}
-
-.desc {
-  color: rgba(0, 0, 0, 0.75);
-  font-size: 17px;
-  /* line-height: 22px; */
-  margin-bottom: 2px;
-}
-
-h6 {
-  font-weight: lighter;
-  font-size: 12px;
-}
-.press a {
-  color: black;
-}
-.press a:hover {
-  color: var(--primary);
-}
-
-.right-all {
-  font-weight: 400;
-  font-size: 17px;
-}
-
-.cv {
-  margin: 0px auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-right: 7px;
-  font-size: 16px;
-  padding: 7px;
-}
-
-#intro p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.sect {
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
-
-#content h4,
-h5,
-h2 {
-  margin: 0px;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-a {
-  color: var(--primary);
-  text-decoration: none; /* no underline */
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  /* ...and now for the proper property */
-  transition: 0.5s;
-}
-
-a:hover {
-  text-decoration: none;
-  color: var(--secondary);
-}
-
 body {
   min-width: min-content;
   margin: 0px auto;
@@ -130,6 +31,98 @@ textarea,
   color: var(--black);
 }
 
+:root {
+  --primary: #3c88d4;
+  --secondary: #e53935;
+  --black: RGBA(1, 1, 1, 0.8);
+  --light-black: RGBA(1, 1, 1, 0.5);
+}
+
+p {
+  margin: 0px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.paper-title {
+  color: black;
+  font-weight: 500;
+}
+
+h4 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+h5 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 2px;
+}
+
+h6 {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.entry-link {
+  margin-top: 3px;
+  margin-left: 0px;
+  border: none;
+  padding-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cv {
+  margin: 0px auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 7px;
+  font-size: 16px;
+  padding: 7px;
+}
+
+#intro p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sect {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none; /* no underline */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  /* ...and now for the proper property */
+  transition: 0.5s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
 #main-container {
   margin: 0px auto;
   padding: 20px;
@@ -146,11 +139,6 @@ textarea,
 
 #social {
   margin-top: 20px;
-}
-
-h3 {
-  font-size: 16px;
-  font-weight: 300;
 }
 
 p {
@@ -188,20 +176,29 @@ button p {
   margin-top: 20px;
 }
 
+.author {
+  color: black;
+}
+.authors {
+  margin-top: 5px;
+}
+
+.me {
+  font-weight: 500;
+}
+
 .venue {
-  text-align: center;
-  font-style: italic;
-  font-size: 16px;
+  text-align: left;
+  /* font-style: italic; */
   margin: 0px;
   margin-bottom: 20px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .thumb {
   height: 100%;
   min-height: 125px;
   margin-right: 20px;
-  /* /* width: 10rem; */
   background-size: cover;
   background-position: top left;
   transition-property: background;
@@ -214,11 +211,6 @@ button p {
 
 .thumb:hover {
   background-position: bottom right;
-}
-
-.paper-title {
-  color: var(--black);
-  font-weight: 400;
 }
 
 a button {
@@ -245,21 +237,6 @@ button {
   display: inline-flex;
 }
 
-.tags button {
-  font-size: 13px;
-  font-weight: 100;
-  border: 1px solid RGBA(0, 0, 0, 0.6);
-  border-radius: 3px;
-  padding: 4px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  background-color: white;
-  margin-right: 6px;
-  margin-top: 6px;
-  display: inline-flex;
-  align-items: center;
-}
-
 a button {
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
@@ -267,7 +244,7 @@ a button {
   -webkit-transition: 0.5s;
   /* ...and now for the proper property */
   transition: 0.5s;
-  color: var(--primary);
+  /* color: var(--primary); */
 }
 
 a button:hover {
@@ -298,25 +275,4 @@ a button:hover {
 .disabled:hover {
   background-color: #ececec80;
   color: black;
-}
-
-.g {
-  color: #4285f4;
-}
-
-.o1,
-.e {
-  color: #db4437;
-}
-
-.o2 {
-  color: #f4b400;
-}
-
-.l {
-  color: #0f9d58;
-}
-
-.me {
-  font-weight: 400;
 }
