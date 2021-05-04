@@ -50,7 +50,7 @@
           </p>
           <div class="tags">
             <a href="https://dig.cmu.edu/">
-              <button>
+              <button class="entry-link">
                 <i class="fas fa-globe" />
                 Data Interaction Group
               </button>
@@ -104,7 +104,9 @@
           </p>
           <div class="tags">
             <a href="https://www.microsoft.com/en-us/research/group/vida/">
-              <button> <i class="fas fa-globe" /> VIDA Group </button>
+              <button class="entry-link">
+                <i class="fas fa-globe" /> VIDA Group
+              </button>
             </a>
           </div>
         </th>
@@ -121,19 +123,15 @@
             generation of Android Auto.
           </p>
           <div class="tags">
-            <button>
-              <a
-                href="https://www.wsj.com/articles/google-to-partner-with-biggest-car-alliance-1537243260
+            <a
+              href="https://www.wsj.com/articles/google-to-partner-with-biggest-car-alliance-1537243260
                 "
-              >
+            >
+              <button class="entry-link">
                 <i class="far fa-newspaper" />
                 WSJ Article
-              </a>
-            </button>
-            <button>Android Auto</button>
-            <button>Java</button>
-            <button>C++</button>
-            <button>Protocol Buffers</button>
+              </button>
+            </a>
           </div>
         </th>
       </tr>
@@ -147,12 +145,6 @@
             Created an anomaly detection and trend analysis system for Google's
             data processing pipelines.
           </p>
-          <div class="tags">
-            <button>Apache Beam/Cloud DataFlow</button>
-            <button>Java</button>
-            <button>C++</button>
-            <button>SQL</button>
-          </div>
         </th>
       </tr>
       <tr class="buffer" />
@@ -165,11 +157,6 @@
             Built an analytics platform for monitoring and catching erroneous
             edits to Google Maps.
           </p>
-          <div class="tags">
-            <button>Go</button>
-            <button>BigQuery</button>
-            <button>JavaScript</button>
-          </div>
         </th>
       </tr>
       <!-- AWARDS -->
@@ -191,7 +178,9 @@
           </p>
           <div class="tags">
             <a href="https://www.nsfgrfp.org/">
-              <button> <i class="fas fa-globe" /> Website </button>
+              <button class="entry-link">
+                <i class="fas fa-globe" /> Website
+              </button>
             </a>
           </div>
         </th>
@@ -209,7 +198,9 @@
             <a
               href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship"
             >
-              <button> <i class="fas fa-globe" /> Announcement </button>
+              <button class="entry-link">
+                <i class="fas fa-globe" /> Announcement
+              </button>
             </a>
           </div>
         </th>
@@ -226,7 +217,9 @@
           </p>
           <div class="tags">
             <a href="https://stampsps.gatech.edu/">
-              <button> <i class="fas fa-globe" /> Website </button>
+              <button class="entry-link">
+                <i class="fas fa-globe" /> Website
+              </button>
             </a>
           </div>
         </th>
@@ -245,7 +238,9 @@
             <a
               href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems"
             >
-              <button> <i class="far fa-newspaper" /> Press Release </button>
+              <button class="entry-link">
+                <i class="far fa-newspaper" /> Press Release
+              </button>
             </a>
           </div>
         </th>
@@ -264,7 +259,7 @@
           <h6>Graduate Research Assistant</h6>
           <div class="tags">
             <a href="https://dig.cmu.edu/">
-              <button>
+              <button class='entry-link'>
                 <i class="fas fa-globe" />
                 CMU Data Interaction Group
               </button>
@@ -280,7 +275,7 @@
           <h6>Undergraduate Research Assistant</h6>
           <div class="tags">
             <a href="https://poloclub.github.io/">
-              <button> <i class="fas fa-globe" /> Polo Club </button>
+              <button class='entry-link'> <i class="fas fa-globe" /> Polo Club </button>
             </a>
           </div>
         </th>
@@ -401,6 +396,7 @@
           <p class="desc">Interactive tagging of images.</p>
         </th>
       </tr>
+      <br />
       <tr class="item">
         <th class="date">Spring 2020 <br /> - Present</th>
         <th>
@@ -453,6 +449,20 @@
         </th>
       </tr>
       <tr>
+        <th class="date">2019 - 2021</th>
+        <th>
+          <h5 class="single">
+            IEEE Transactions on Visualization and Computer Graphics (TVCG)
+          </h5>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2020 - 2021</th>
+        <th>
+          <h5 class="single">IEEE Visualization (VIS)</h5>
+        </th>
+      </tr>
+      <tr>
         <th class="date">2021</th>
         <th>
           <h5 class="single">
@@ -466,20 +476,6 @@
         <th>
           <h5 class="single">
             ACM Conference on Human Factors in Computing Systems (CHI)
-          </h5>
-        </th>
-      </tr>
-      <tr>
-        <th class="date">2020</th>
-        <th>
-          <h5 class="single">IEEE Visualization (VIS)</h5>
-        </th>
-      </tr>
-      <tr>
-        <th class="date">2019, 2020</th>
-        <th>
-          <h5 class="single">
-            IEEE Transactions on Visualization and Computer Graphics (TVCG)
           </h5>
         </th>
       </tr>
@@ -606,6 +602,36 @@
         </th>
       </tr>
       <tr class="item">
+        <th class="date">Spring 2021</th>
+        <th>
+          <h5>Svelte + Jupyter Widgets</h5>
+          <p class="desc">
+            A framework for creating reactive data science widgets using Svelte
+            JS.
+          </p>
+          <div class="tags">
+            <a
+              href="https://cabreraalex.medium.com/creating-reactive-jupyter-widgets-with-svelte-ef2fb580c05"
+            >
+              <button class="entry-link">
+                <i class="fab fa-medium" /> Blog
+              </button>
+            </a>
+            <a href="https://github.com/cabreraalex/widget-svelte-cookiecutter">
+              <button class="entry-link">
+                <i class="fab fa-github" /> GitHub
+              </button>
+            </a>
+            <a href="https://youtu.be/fnr9XWvjJHw?t=1082">
+              <button class="entry-link">
+                <i class="fab fa-youtube" /> Video
+              </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
+      <tr class="item">
         <th class="date">Spring 2020</th>
         <th>
           <h5>COVIDCast Visualization of COVID Symptoms</h5>
@@ -615,7 +641,9 @@
           </p>
           <div class="tags">
             <a href="https://covidcast.cmu.edu/">
-              <button> <i class="fas fa-globe" /> Website </button>
+              <button class="entry-link">
+                <i class="fas fa-globe" /> Website
+              </button>
             </a>
           </div>
         </th>
@@ -635,13 +663,15 @@
           </p>
           <div class="tags">
             <a href="https://github.com/cabreraalex/private-fair-GAN">
-              <button> <i class="fab fa-github" /> GitHub </button>
+              <button class="entry-link">
+                <i class="fab fa-github" /> GitHub
+              </button>
             </a>
           </div>
         </th>
       </tr>
       <tr class="buffer" />
-      <tr class="item">
+      <!-- <tr class="item">
         <th class="date">Spring 2018</th>
         <th>
           <h5>Georgia Tech Bus System Analysis</h5>
@@ -651,15 +681,19 @@
           </p>
           <div class="tags">
             <a href="./gt_bus_analysis.pdf">
-              <button> <i class="fas fa-file-pdf" /> Poster </button>
+              <button class="entry-link">
+                <i class="fas fa-file-pdf" /> Poster
+              </button>
             </a>
             <a href="http://poloclub.gatech.edu/cse6242/2018spring/">
-              <button> <i class="fas fa-globe" /> Class </button>
+              <button class="entry-link">
+                <i class="fas fa-globe" /> Class
+              </button>
             </a>
           </div>
         </th>
       </tr>
-      <tr class="buffer" />
+      <tr class="buffer" /> -->
       <tr class="item">
         <th class="date">September 2015 <br /> - May 2017</th>
         <th>
@@ -673,15 +707,16 @@
             <a
               href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space"
             >
-              <button> <i class="fas fa-rocket" /> In space! </button>
-            </a>
-            <a href="http://prox-1.gatech.edu/">
-              <button> <i class="fas fa-globe" /> Website </button>
+              <button class="entry-link">
+                <i class="fas fa-rocket" /> In space!
+              </button>
             </a>
             <a
               href="https://www.ae.gatech.edu/news/2017/05/prox-1-launch-has-launched"
             >
-              <button> <i class="far fa-newspaper" /> Press release </button>
+              <button class="entry-link">
+                <i class="far fa-newspaper" /> Press release
+              </button>
             </a>
           </div>
         </th>
@@ -697,10 +732,14 @@
           </p>
           <div class="tags">
             <a href="http://ctfs.github.io/resources/">
-              <button> <i class="fas fa-globe" /> Website </button>
+              <button class="entry-link">
+                <i class="fas fa-globe" /> Website
+              </button>
             </a>
             <a href="https://github.com/ctfs/resources">
-              <button> <i class="fab fa-github" /> GitHub </button>
+              <button class="entry-link">
+                <i class="fab fa-github" /> GitHub
+              </button>
             </a>
           </div>
         </th>
@@ -727,7 +766,7 @@
           </p>
           <div class="tags">
             <a href="http://ssnc.stampsfoundation.org/">
-              <button>
+              <button class='entry-link'>
                 <i class="fas fa-globe" />
                 Website
               </button>
@@ -745,7 +784,7 @@
           </p>
           <div class="tags">
             <a href="http://admission.gatech.edu/gttours">
-              <button>
+              <button class='entry-link'>
                 <i class="fas fa-globe" />
                 Website
               </button>
@@ -770,7 +809,7 @@
           <div class="tags">
             <a
               href="http://www.gtsf.gatech.edu/s/1481/alumni/17/home.aspx?sid=1481&gid=42">
-              <button>
+              <button class='entry-link'>
                 <i class="fas fa-globe" />
                 Website
               </button>
@@ -814,7 +853,7 @@
         </th>
       </tr>
       <!-- SKILLS -->
-      <tr>
+      <!-- <tr>
         <th class="date" />
         <th>
           <h4 class="header">Skills</h4>
@@ -825,9 +864,9 @@
         <th>
           <h5>Languages</h5>
           <div class="tags">
-            <button>English - Native</button>
-            <button>Spanish - Native</button>
-            <button>French - Conversational (B1)</button>
+            <button class='entry-link'>English - Native</button>
+            <button class='entry-link'>Spanish - Native</button>
+            <button class='entry-link'>French - Conversational (B1)</button>
           </div>
         </th>
       </tr>
@@ -837,13 +876,13 @@
         <th>
           <h5>Programming Languages</h5>
           <div class="tags">
-            <button>Python</button>
-            <button>JavaScript</button>
-            <button>TypeScript</button>
-            <button>Java</button>
-            <button>C/C++</button>
-            <button>SQL</button>
-            <button>Go</button>
+            <button class='entry-link'>Python</button>
+            <button class='entry-link'>JavaScript</button>
+            <button class='entry-link'>TypeScript</button>
+            <button class='entry-link'>Java</button>
+            <button class='entry-link'>C/C++</button>
+            <button class='entry-link'>SQL</button>
+            <button class='entry-link'>Go</button>
           </div>
         </th>
       </tr>
@@ -853,27 +892,28 @@
         <th>
           <h5>Technologies</h5>
           <div class="tags">
-            <button>Machine Learning</button>
-            <button>Full Stack Development</button>
-            <button>PyTorch</button>
-            <button>D3</button>
-            <button>Vega</button>
-            <button>Svelte</button>
-            <button>React</button>
-            <button>Jupyter Widgets</button>
-            <button>AWS/Azure/Google Cloud</button>
-            <button>Cloud Dataflow/MapReduce</button>
-            <button>Amazon Mechanical Turk</button>
+            <button class='entry-link'>Machine Learning</button>
+            <button class='entry-link'>Full Stack Development</button>
+            <button class='entry-link'>PyTorch</button>
+            <button class='entry-link'>D3</button>
+            <button class='entry-link'>Vega</button>
+            <button class='entry-link'>Svelte</button>
+            <button class='entry-link'>React</button>
+            <button class='entry-link'>Jupyter Widgets</button>
+            <button class='entry-link'>AWS/Azure/Google Cloud</button>
+            <button class='entry-link'>Cloud Dataflow/MapReduce</button>
+            <button class='entry-link'>Amazon Mechanical Turk</button>
           </div>
         </th>
       </tr>
+    -->
       <tr class="buffer" />
-      <tr class="item">
+      <!-- <tr class="item">
         <th class="date" />
         <th>
           <p class="desc">Last updated November 5, 2020.</p>
         </th>
-      </tr>
+      </tr> -->
     </table>
   </main>
 </div>
@@ -985,13 +1025,11 @@
   .far {
     margin-right: 4px;
   }
-
-  .authors {
-    margin-top: 3px;
-    font-style: normal;
+  .press a {
+    color: black;
   }
 
-  .tags button {
-    margin-top: 1px;
+  .press a:hover {
+    color: var(--primary);
   }
 </style>

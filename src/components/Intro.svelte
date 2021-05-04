@@ -7,14 +7,9 @@
   <a href="http://perer.org">Adam Perer</a>
   and
   <a href="http://www.cs.cmu.edu/~jasonh/">Jason Hong.</a>
-  My research focus is broadly
-  <b>human-centered AI,</b>
-  specifically in applying techniques from
-  <b>HCI</b>
-  and
-  <b>visualization</b>
-  to help people better understand and improve their machine learning models. I am
-  supported by a
+  My research focus is broadly human-centered data science, specifically in applying
+  techniques from HCI and visualization to help people better understand and improve
+  their machine learning models. I am supported by a
   <a href="https://www.nsfgrfp.org/">NSF Graduate Research Fellowship.</a>
 </p>
 
@@ -46,5 +41,8 @@
   }
   .letter {
     font-size: 18px;
+  }
+  b {
+    font-weight: 600;
   }
 </style>
