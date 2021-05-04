@@ -56,6 +56,17 @@ h3 {
 .paper-title {
   color: black;
   font-weight: 500;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  /* ...and now for the proper property */
+  transition: 0.5s;
+}
+
+.paper-title:hover {
+  text-decoration: none;
+  color: var(--secondary);
 }
 
 h4 {
@@ -183,8 +194,12 @@ button p {
   margin-top: 5px;
 }
 
+hr {
+  border: 0.5px solid black;
+}
+
 .me {
-  font-weight: 500;
+  color: var(--primary);
 }
 
 .venue {
