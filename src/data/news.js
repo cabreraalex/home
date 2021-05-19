@@ -1,5 +1,9 @@
 export default [
   {
+    date: "May 17, 2021",
+    news: "First week at &#127822;!",
+  },
+  {
     date: "May 18, 2020",
     news:
       "Excited to spend the summer doing a ~virtual~ internship at Microsoft Research with <a href='https://www.microsoft.com/en-us/research/people/sdrucker/'>Steven Drucker</a> at the <a href='https://www.microsoft.com/en-us/research/group/vida/'>VIDA group.</a>",

@@ -88,6 +88,22 @@
         </th>
       </tr>
       <tr class="item">
+        <th class="date">May 2021 <br /> - Present</th>
+        <th>
+          <h5>Apple</h5>
+          <h6>Research Intern</h6>
+          <p class="desc">Design + Visualization Group.</p>
+          <div class="tags">
+            <a href="https://machinelearning.apple.com/">
+              <button class="entry-link">
+                <i class="fas fa-globe" /> Apple AI/ML
+              </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
+      <tr class="item">
         <th class="date">May 2020 <br /> - August 2020</th>
         <th>
           <h5>Microsoft Research</h5>
@@ -598,9 +614,34 @@
       <tr>
         <th class="date" />
         <th>
-          <h4 class="header">Projects</h4>
+          <h4 class="header">Projects and Open Source</h4>
         </th>
       </tr>
+      <tr class="item">
+        <th class="date">Spring 2021</th>
+        <th>
+          <h5>Svelte + Vega</h5>
+          <p class="desc">
+            A Svelte component for reactively rendering Vega and Vega-Lite
+            visualizations.
+          </p>
+          <div class="tags">
+            <a href="https://github.com/vega/svelte-vega">
+              <button class="entry-link">
+                <i class="fab fa-github" /> GitHub
+              </button>
+            </a>
+            <a
+              href="https://vega.github.io/svelte-vega/?path=/story/svelte-vega-vega--demo"
+            >
+              <button class="entry-link">
+                <i class="fas fa-globe" /> Demo
+              </button>
+            </a>
+          </div>
+        </th>
+      </tr>
+      <tr class="buffer" />
       <tr class="item">
         <th class="date">Spring 2021</th>
         <th>
@@ -634,21 +675,28 @@
       <tr class="item">
         <th class="date">Spring 2020</th>
         <th>
-          <h5>COVIDCast Visualization of COVID Symptoms</h5>
+          <h5>COVIDCast Visualization of COVID-19 Indicators</h5>
           <p class="desc">
-            An interactive visualization for multiple indicators of COVID
-            symptoms collected by the CMU Delphi research group.
+            Interactive visualization system of COVID-19 indicators gathered
+            through >20,000,000 surveys on Facebook and Google by <a
+              href="https://delphi.cmu.edu/">CMU Delphi</a
+            >.
           </p>
           <div class="tags">
             <a href="https://covidcast.cmu.edu/">
               <button class="entry-link">
                 <i class="fas fa-globe" /> Website
               </button>
+              <a href="https://github.com/cmu-delphi/www-covidcast">
+                <button class="entry-link">
+                  <i class="fab fa-github" /> GitHub
+                </button>
+              </a>
             </a>
           </div>
         </th>
       </tr>
-      <tr class="buffer" />
+      <!-- <tr class="buffer" />
       <tr class="item">
         <th class="date">Fall 2018</th>
         <th>
@@ -669,7 +717,7 @@
             </a>
           </div>
         </th>
-      </tr>
+      </tr> -->
       <tr class="buffer" />
       <!-- <tr class="item">
         <th class="date">Spring 2018</th>
@@ -728,7 +776,7 @@
           <h5>CTF Resources</h5>
           <p class="desc">
             Guide and resources for capture the flag (CTF) competitions with
-            over 1,000 stars on GitHub.
+            over 1.4k stars on GitHub.
           </p>
           <div class="tags">
             <a href="http://ctfs.github.io/resources/">
