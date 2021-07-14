@@ -1,13 +1,6 @@
 <script>
   export let home;
-  $: console.log(home);
 </script>
-
-<style>
-  h3 {
-    margin-bottom: 0px;
-  }
-</style>
 
 <div id="social">
   {#if !home}
@@ -33,3 +26,9 @@
     <h3><i class="fas fa-graduation-cap" /> &nbsp;Google Scholar</h3>
   </a>
 </div>
+
+<style>
+  h3 {
+    margin-bottom: 0px;
+  }
+</style>

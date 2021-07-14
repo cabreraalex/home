@@ -1,5 +1,4 @@
 <script>
-  import { link } from "svelte-spa-router";
   import news from "./data/news.js";
   import pubs from "./data/pubs.js";
   import other from "./data/other.js";

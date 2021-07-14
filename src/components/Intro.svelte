@@ -37,13 +37,4 @@
   p {
     margin-bottom: 20px;
   }
-  .google {
-    letter-spacing: -2px;
-  }
-  .letter {
-    font-size: 18px;
-  }
-  b {
-    font-weight: 600;
-  }
 </style>
