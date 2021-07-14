@@ -312,12 +312,14 @@
               <h5>{pub.title}</h5>
             </a>
 
-            <h6 class="authors">
+            <h6 class="authors" style="margin-top: 4px;">
               {@html pub.authors
                 .map(
                   (p) =>
                     `<a class='${
-                      p.name === "Ángel Alexander Cabrera" ? "me" : ""
+                      p.name === "Ángel Alexander Cabrera"
+                        ? "me-author-cv"
+                        : "author-cv"
                     }' href='${p.website}'>${p.name}</a>`
                 )
                 .join(", ")}
@@ -347,12 +349,14 @@
               <h5>{pub.title}</h5>
             </a>
 
-            <h6 class="authors">
+            <h6 class="authors" style="margin-top: 4px;">
               {@html pub.authors
                 .map(
                   (p) =>
                     `<a class='${
-                      p.name === "Ángel Alexander Cabrera" ? "me" : ""
+                      p.name === "Ángel Alexander Cabrera"
+                        ? "me-author-cv"
+                        : "author-cv"
                     }' href='${p.website}'>${p.name}</a>`
                 )
                 .join(", ")}
@@ -372,6 +376,13 @@
         <th class="date" />
         <th>
           <h4 class="header">Teaching</h4>
+        </th>
+      </tr>
+      <tr class="item">
+        <th class="date">Fall 2021</th>
+        <th>
+          <h5>05499:C - Data Visualization</h5>
+          <h6>Graduate Teaching Assistant @ Carnegie Mellon</h6>
         </th>
       </tr>
       <tr class="item">
@@ -409,7 +420,9 @@
         <th>
           <h5>Kazi Jawad</h5>
           <h6>B.S. in Statistics and Machine Learning, Carnegie Mellon</h6>
-          <p class="desc">Interactive tagging of images.</p>
+          <p class="desc">
+            Interactive tagging of images for AI error validation.
+          </p>
         </th>
       </tr>
       <br />
@@ -507,7 +520,19 @@
       <tr>
         <th class="date" />
         <th>
-          <h4 class="header">Press</h4>
+          <h4 class="header">Press & Talks</h4>
+        </th>
+      </tr>
+      <tr>
+        <th class="date">2021</th>
+        <th>
+          <h5 class="single press">
+            <a href="https://youtu.be/fnr9XWvjJHw?t=1082">
+              "Data Science Widgets with Svelte and Jupyter"
+            </a>
+            -
+            <i>Svelte Summit 2021</i>
+          </h5>
         </th>
       </tr>
       <tr>
@@ -968,7 +993,7 @@
 
 <style>
   #container {
-    max-width: 900px;
+    max-width: 950px;
     margin: 0px auto;
   }
 
@@ -1079,5 +1104,13 @@
 
   .press a:hover {
     color: var(--primary);
+  }
+
+  :global(.me-author-cv) {
+    font-size: 16px;
+  }
+  :global(.author-cv) {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
   }
 </style>

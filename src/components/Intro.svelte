@@ -24,7 +24,8 @@
     style="width: 16px; padding-left: 5px; margin-bottom: -2px"
     src="/images/microsoft.svg"
     alt="microsoft" /> -->
-  Microsoft Research and a few summers as a software engineering intern at
+  Apple AI/ML, Microsoft Research and a few summers as a software engineering intern
+  at
   <!-- <img
     style="width: 16px; padding-left: 5px; margin-bottom: -2px"
     src="/images/google.svg"

@@ -1,5 +1,41 @@
 export default [
   {
+    title:
+      "Discovering and Validating AI Errors With Crowdsourced Failure Reports",
+    desc:
+      "We introducec failure reports, end-user descriptions of how an AI system failed, and show how they can be used to detect systematic AI errors. We also designed and implemented Deblinder, a visual analytics system data scientists can use to explore and validate patterns from failure reports. In a user study, we found that data scientists found consistent failures and that collecting data from those failure areas significantly increased model performance.",
+    id: "deblinder",
+    teaser: "deblinder.jpg",
+    venue: "CSCW'21",
+    venuelong:
+      "ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)",
+    year: "2021",
+    month: "October",
+    location: "Virtual",
+    authors: [
+      {
+        name: "Ángel Alexander Cabrera",
+        website: "https://cabreraalex.com",
+      },
+      {
+        name: "Abraham Druck",
+      },
+      {
+        name: "Jason Hong",
+        website: "http://www.cs.cmu.edu/~jasonh/",
+      },
+      {
+        name: "Adam Perer",
+        website: "http://perer.org",
+      },
+    ],
+    abstract:
+      "AI systems can fail to learn important behaviors, leading to real-world issues like safety concerns and biases. Unfortunately, discovering these systematic failures often requires significant developer attention, from hypothesizing potential edge cases to collecting evidence and validating patterns. To scale and streamlinethis process, we introduce failure reports, end-user descriptions of how or why a model failed, and show how developers can use them to detect AI errors. We also design and implement Deblinder, a visual analytics system for synthesizing failure reports that developers can use to discover and validate systematic failures. In semi-structured interviews and think-aloud studies with 10 AI practitioners, we explore the affordances of the Deblindersystem and the applicability of failure reports in real-world settings. Lastly, we show how collecting additional data from the groups identified by developers can improve model performance.",
+    pdf: "",
+    bibtex:
+      "@article{Cabrera2021Deblinder,address = {New York, NY, USA},author = {Cabrera, Ángel Alexander and Druck, Abraham and Hong, Jason I and Perer, Adam},journal = {Proceedings of the ACM Conference on Computer Supported Cooperative Work, CSCW},publisher = {Association for Computing Machinery},title = {{Discovering and Validating AI Errors With Crowdsourced Failure Reports}},year = {2021}}",
+  },
+  {
     title: "Regularizing Black-box Models for Improved Interpretability",
     desc:
       "We introduce a new regularization method for training deep learning models that improves the stability and fidelity of post-hoc explanantion methods like LIME. Through a user study we show that the regularized model empirically improves the quality of explainations.",
