@@ -3,7 +3,7 @@ export default [
     title:
       "Discovering and Validating AI Errors With Crowdsourced Failure Reports",
     desc:
-      "We introducec failure reports, end-user descriptions of how an AI system failed, and show how they can be used to detect systematic AI errors. We also designed and implemented Deblinder, a visual analytics system data scientists can use to explore and validate patterns from failure reports. In a user study, we found that data scientists found consistent failures and that collecting data from those failure areas significantly increased model performance.",
+      "We introduce failure reports, end-user descriptions of how an AI system failed, and show how they can be used to detect systematic AI errors. We also designed and implemented Deblinder, a visual analytics system data scientists can use to explore and validate patterns from failure reports. In a user study, we found that data scientists found consistent failures and that collecting data from those failure areas significantly increased model performance.",
     id: "deblinder",
     teaser: "deblinder.jpg",
     venue: "CSCW'21",
