@@ -18,7 +18,7 @@ month: October
 location: Virtual
 authors:
   - name: Ángel Alexander Cabrera
-    website: 'http://cabreraalex.com'
+    website: 'https://cabreraalex.com'
   - name: Abraham Druck
   - name: Jason Hong
     website: 'http://www.cs.cmu.edu/~jasonh/'
@@ -38,7 +38,7 @@ abstract: >-
   affordances of the Deblindersystem and the applicability of failure reports
   in real-world settings. Lastly, we show how collecting additional data from
   the groups identified by developers can improve model performance.
-pdf: 'http://cabreraalex.com/deblinder.pdf'
+pdf: 'https://cabreraalex.com/deblinder.pdf'
 bibtex: >-
   @article{cabrera2021deblinder,author = {Cabrera, '{A}ngel Alexander and
   Druck, Abraham J. and Hong, Jason I. and Perer, Adam},title = {Discovering
