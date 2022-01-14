@@ -12,9 +12,8 @@
 body {
 	min-width: min-content;
 	margin: 0px auto;
-	margin-top: 40px;
 	padding: 20px;
-	font-family: 'Karla', sans-serif;
+	font-family: 'Karla', Roboto, sans-serif;
 	border-top: 5px solid var(--secondary);
 	border-bottom: 5px solid var(--secondary);
 }
@@ -26,7 +25,7 @@ select,
 textarea,
 .pure-g [class*='pure-u'] {
 	/* Set your content font stack here: */
-	font-family: 'Karla', Helvetica, sans-serif;
+	font-family: 'Karla', Roboto, sans-serif;
 	color: var(--black);
 }
 
@@ -90,6 +89,7 @@ h6 {
 }
 
 .entry-link {
+	color: var(--primary);
 	margin-top: 3px;
 	margin-left: 0px;
 	border: none;

@@ -4,7 +4,6 @@
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
 		<link rel="icon" href="/favicon.png" />
-		<link rel="stylesheet" href="/global.css" />
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
@@ -12,6 +11,7 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css" />
+		<link rel="stylesheet" href="/global.css" />
 
 		<link
 			rel="stylesheet"
@@ -19,22 +19,28 @@
 			integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
 			crossorigin="anonymous"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
 		<link
 			href="https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto:900,400"
 			rel="stylesheet"
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-	<link rel="stylesheet" href="/_app/assets/pages/paper/_slug_.svelte-e53b8673.css">
+	<link rel="stylesheet" href="/_app/assets/pages/paper/_slug_.svelte-f36d4894.css">
 	<link rel="stylesheet" href="/_app/assets/Footer-6c39282c.css">
-	<link rel="modulepreload" href="/_app/start-3ef280dd.js">
+	<link rel="modulepreload" href="/_app/start-b6bdd4a0.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-e42abbb2.js">
 	<link rel="modulepreload" href="/_app/layout.svelte-c11e8583.js">
-	<link rel="modulepreload" href="/_app/pages/paper/_slug_.svelte-aca8a958.js">
+	<link rel="modulepreload" href="/_app/pages/paper/_slug_.svelte-4212265e.js">
 	<link rel="modulepreload" href="/_app/chunks/Footer-b9186261.js">
 	<link rel="modulepreload" href="/_app/chunks/Links-b1d10364.js">
 			<script type="module">
-				import { start } from "/_app/start-3ef280dd.js";
+				import { start } from "/_app/start-b6bdd4a0.js";
 				start({
 					target: document.querySelector("#svelte"),
 					paths: {"base":"","assets":""},
@@ -47,7 +53,7 @@
 						error: null,
 						nodes: [
 							import("/_app/layout.svelte-c11e8583.js"),
-						import("/_app/pages/paper/_slug_.svelte-aca8a958.js")
+						import("/_app/pages/paper/_slug_.svelte-4212265e.js")
 						],
 						url: new URL("http://prerender/paper/interactive-classification"),
 						params: {slug:"interactive-classification"}
@@ -59,26 +65,25 @@
 		<div id="svelte">
 
 
-<div id="body" class="svelte-fb5nlw"><a href="/" class="home svelte-fb5nlw"><i class="fas fa-home svelte-fb5nlw" id="home"></i>
-		<h4 id="home-link" class="svelte-fb5nlw"><span class="color svelte-fb5nlw">Ángel </span>
-			<span class="color red svelte-fb5nlw">Alex</span>
-			<span class="color svelte-fb5nlw">ander </span>
-			<span class="color red svelte-fb5nlw">Cabrera</span></h4></a>
+<div id="body" class="svelte-s1lhzh"><a href="/" class="home svelte-s1lhzh"><i class="fas fa-home svelte-s1lhzh" id="home"></i>
+		<h4 id="home-link" class="svelte-s1lhzh"><span class="color svelte-s1lhzh">Ángel </span>
+			<span class="color red svelte-s1lhzh">Alex</span>
+			<span class="color svelte-s1lhzh">ander </span>
+			<span class="color red svelte-s1lhzh">Cabrera</span></h4></a>
 	<hr>
-	<h1 class="svelte-fb5nlw">Interactive Classification for Deep Learning Interpretation</h1>
-	<div id="info" class="svelte-fb5nlw"><h3 class="svelte-fb5nlw"><!-- HTML_TAG_START --><a class='me' href='https://cabreraalex.com'>Ángel Alexander Cabrera</a>, <a class='author' href='https://fredhohman.com'>Fred Hohman</a>, <a class='author' href='http://jlin.xyz'>Jason Lin</a>, <a class='author' href='https://poloclub.github.io/polochau/'>Duen Horng (Polo) Chau</a><!-- HTML_TAG_END --></h3></div>
-	<div class="flex pure-g svelte-fb5nlw"><div class="pure-u-1 pure-u-md-1-2"><img src="/images/interactive.png" class="teaser svelte-fb5nlw" alt="teaser"></div>
-		<div class="pure-u-1 pure-u-md-1-2"><p class="desc svelte-fb5nlw">We developed an interactive system that allows users to modify images to explore the weaknesses and strenghts of image classification models. Users can &#39;inpaint&#39; or remove parts of an image and see how it impacts their classification.</p></div></div>
+	<h1 class="svelte-s1lhzh">Interactive Classification for Deep Learning Interpretation</h1>
+	<div id="info" class="svelte-s1lhzh"><h3 class="svelte-s1lhzh"><!-- HTML_TAG_START --><a class='me' href='https://cabreraalex.com'>Ángel Alexander Cabrera</a>, <a class='author' href='https://fredhohman.com'>Fred Hohman</a>, <a class='author' href='http://jlin.xyz'>Jason Lin</a>, <a class='author' href='https://poloclub.github.io/polochau/'>Duen Horng (Polo) Chau</a><!-- HTML_TAG_END --></h3></div>
+	<div id="preview" class="svelte-s1lhzh"><img src="/images/interactive.png" class="teaser svelte-s1lhzh" alt="teaser">
+		<p class="desc svelte-s1lhzh">We present an interactive system enabling users to manipulate images to explore the robustness and sensitivity of deep learning image classifiers. Using modern web technologies to run in-browser inference, users can remove image features using inpainting algorithms to obtain new classifications in real time. This system allows users to compare and contrast what image regions humans and machine learning models use for classification.</p></div>
 
-	<h2 class="sec-title svelte-fb5nlw">Abstract</h2>
-	<p class="svelte-fb5nlw">We present an interactive system enabling users to manipulate images to explore the robustness and sensitivity of deep learning image classifiers. Using modern web technologies to run in-browser inference, users can remove image features using inpainting algorithms to obtain new classifications in real time. This system allows users to compare and contrast what image regions humans and machine learning models use for classification.</p>
+	
 
-	<h2 class="sec-title svelte-fb5nlw">Citation</h2>
-	<a href="https://cabreraalex.com/paper/interactive-classification" class="paper-title"><h4 class="svelte-fb5nlw">Interactive Classification for Deep Learning Interpretation</h4></a>
+	<h2 class="sec-title svelte-s1lhzh">Citation</h2>
+	<a href="https://cabreraalex.com/paper/interactive-classification" class="paper-title"><h4 class="svelte-s1lhzh">Interactive Classification for Deep Learning Interpretation</h4></a>
 
-	<h5 class="svelte-fb5nlw"><!-- HTML_TAG_START --><a class='me' href='https://cabreraalex.com'>Ángel Alexander Cabrera</a>, <a class='' href='https://fredhohman.com'>Fred Hohman</a>, <a class='' href='http://jlin.xyz'>Jason Lin</a>, <a class='' href='https://poloclub.github.io/polochau/'>Duen Horng (Polo) Chau</a><!-- HTML_TAG_END --></h5>
+	<h5 class="svelte-s1lhzh"><!-- HTML_TAG_START --><a class='me' href='https://cabreraalex.com'>Ángel Alexander Cabrera</a>, <a class='' href='https://fredhohman.com'>Fred Hohman</a>, <a class='' href='http://jlin.xyz'>Jason Lin</a>, <a class='' href='https://poloclub.github.io/polochau/'>Duen Horng (Polo) Chau</a><!-- HTML_TAG_END --></h5>
 
-	<h5 class="svelte-fb5nlw"><i>Demo at IEEE Computer Vision and Pattern Recognition (CVPR). Salt Lake City, Utah, USA, 2018.</i></h5>
+	<h5 class="svelte-s1lhzh"><i>Demo at IEEE Computer Vision and Pattern Recognition (CVPR). Salt Lake City, Utah, USA, 2018.</i></h5>
 
 	<div class="buttons"><a href="https://arxiv.org/abs/1806.05660"><button class="entry-link"><i class="fas fa-file-pdf"></i>
 				<p>PDF</p></button></a>
@@ -94,8 +99,8 @@
 	
 	<a href="https://cabreraalex.com/paper/interactive-classification"><button class="entry-link"><i class="fas fa-globe"></i>
 			<p>Website</p></button></a></div>
-	<h2 class="sec-title svelte-fb5nlw">BibTex</h2>
-	<div class="code svelte-fb5nlw"><code class="bibtex">@article{cabrera2018interactive, title={Interactive Classification for Deep Learning Interpretation}, author={Cabrera, Ángel Alexander and Hohman, Fred and Lin, Jason and Chau, Duen Horng}, journal={Demo, IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, year={2018}, organization={IEEE}}</code></div>
+	<h2 class="sec-title svelte-s1lhzh">BibTex</h2>
+	<div class="code svelte-s1lhzh"><code class="bibtex">@article{cabrera2018interactive, title={Interactive Classification for Deep Learning Interpretation}, author={Cabrera, Ángel Alexander and Hohman, Fred and Lin, Jason and Chau, Duen Horng}, journal={Demo, IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, year={2018}, organization={IEEE}}</code></div>
 	<div class="footer svelte-1ynsxf6"><p id="copyright">© 2022 Ángel Alexander Cabrera - Made with
 		<a href="https://svelte.dev">SvelteKit</a></p>
 </div>

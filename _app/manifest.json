@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-3ef280dd.js",
+    "file": "start-b6bdd4a0.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -51,7 +51,7 @@
     ]
   },
   "src/routes/paper/[slug].svelte": {
-    "file": "pages/paper/_slug_.svelte-aca8a958.js",
+    "file": "pages/paper/_slug_.svelte-4212265e.js",
     "src": "src/routes/paper/[slug].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -61,7 +61,7 @@
       "_Links-b1d10364.js"
     ],
     "css": [
-      "assets/pages/paper/_slug_.svelte-e53b8673.css"
+      "assets/pages/paper/_slug_.svelte-f36d4894.css"
     ]
   },
   "src/routes/news.svelte": {
