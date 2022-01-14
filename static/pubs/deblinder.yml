@@ -1,0 +1,50 @@
+title: Discovering and Validating AI Errors With Crowdsourced Failure Reports
+desc: >-
+  We introduce failure reports, end-user descriptions of how an AI system
+  failed, and show how they can be used to detect systematic AI errors. We
+  also designed and implemented Deblinder, a visual analytics system data
+  scientists can use to explore and validate patterns from failure reports. In
+  a user study, we found that data scientists found consistent failures and
+  that collecting data from those failure areas significantly increased model
+  performance.
+id: deblinder
+teaser: deblinder.jpg
+venue: CSCW'21
+venuelong: >-
+  ACM Conference on Computer-Supported Cooperative Work and Social Computing
+  (CSCW)
+year: '2021'
+month: October
+location: Virtual
+authors:
+  - name: Ángel Alexander Cabrera
+    website: 'https://cabreraalex.com'
+  - name: Abraham Druck
+  - name: Jason Hong
+    website: 'http://www.cs.cmu.edu/~jasonh/'
+  - name: Adam Perer
+    website: 'http://perer.org'
+abstract: >-
+  AI systems can fail to learn important behaviors, leading to real-world
+  issues like safety concerns and biases. Unfortunately, discovering these
+  systematic failures often requires significant developer attention, from
+  hypothesizing potential edge cases to collecting evidence and validating
+  patterns. To scale and streamlinethis process, we introduce failure reports,
+  end-user descriptions of how or why a model failed, and show how developers
+  can use them to detect AI errors. We also design and implement Deblinder, a
+  visual analytics system for synthesizing failure reports that developers can
+  use to discover and validate systematic failures. In semi-structured
+  interviews and think-aloud studies with 10 AI practitioners, we explore the
+  affordances of the Deblindersystem and the applicability of failure reports
+  in real-world settings. Lastly, we show how collecting additional data from
+  the groups identified by developers can improve model performance.
+pdf: 'https://cabreraalex.com/deblinder.pdf'
+bibtex: >-
+  @article{cabrera2021deblinder,author = {Cabrera, '{A}ngel Alexander and
+  Druck, Abraham J. and Hong, Jason I. and Perer, Adam},title = {Discovering
+  and Validating AI Errors With Crowdsourced Failure Reports},year =
+  {2021},issue_date = {October 2021},publisher = {Association for Computing
+  Machinery},address = {New York, NY, USA},volume = {5},number = {CSCW2},url =
+  {https://doi.org/10.1145/3479569},doi = {10.1145/3479569},journal = {Proc.
+  ACM Hum.-Comput. Interact.},month = oct,articleno = {425},numpages = {22}}
+citation: 'https://dl.acm.org/doi/10.1145/3479569'

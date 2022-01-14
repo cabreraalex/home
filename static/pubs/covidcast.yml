@@ -1,0 +1,62 @@
+title: An open repository of real-time COVID-19 indicators
+desc: 'We created an interactive dashboard for tracking COVID-19 indicators. The
+  indicators are collected from various sources such as social media surveys
+  and testing labs, and can be used to predict or better understand factors in
+  the spread and severity of COVID-19.'
+id: covidcast
+teaser: covidcast.png
+venue: PNAS'21
+venuelong: Proceedings of the National Academy of Sciences (PNAS)
+year: '2021'
+month: December
+authors:
+  - name: Alex Reinhart
+  - name: Logan Brooks
+  - name: Maria Jahja
+  - name: Aaron Rumack
+  - name: Jingjing Tang
+  - name: '[et al, including Ángel Alexander Cabrera]'
+abstract: 'The COVID-19 pandemic presented enormous data challenges in the United
+  States. Policy makers, epidemiological modelers, and health researchers all
+  require up-to-date data on the pandemic and relevant public behavior,
+  ideally at fine spatial and temporal resolution. The COVIDcast API is our
+  attempt to fill this need: Operational since April 2020, it provides open
+  access to both traditional public health surveillance signals (cases,
+  deaths, and hospitalizations) and many auxiliary indicators of COVID-19
+  activity, such as signals extracted from deidentified medical claims data,
+  massive online surveys, cell phone mobility data, and internet search
+  trends. These are available at a fine geographic resolution (mostly at the
+  county level) and are updated daily. The COVIDcast API also tracks all
+  revisions to historical data, allowing modelers to account for the frequent
+  revisions and backfill that are common for many public health data sources.
+  All of the data are available in a common format through the API and
+  accompanying R and Python software packages. This paper describes the data
+  sources and signals, and provides examples demonstrating that the auxiliary
+  signals in the COVIDcast API present information relevant to tracking COVID
+  activity, augmenting traditional public health reporting and empowering
+  research and decision-making.'
+pdf: 'https://www.pnas.org/content/pnas/118/51/e2111452118.full.pdf'
+bibtex: "@article{Reinhart2021,doi = {10.1073/pnas.2111452118},url =
+  {https://doi.org/10.1073/pnas.2111452118},year = {2021},month =
+  dec,publisher = {Proceedings of the National Academy of Sciences},volume =
+  {118},number = {51},pages = {e2111452118},author = {Alex Reinhart and Logan
+  Brooks and Maria Jahja and Aaron Rumack and Jingjing Tang and Sumit Agrawal
+  and Wael Al Saeed and Taylor Arnold and Amartya Basu and Jacob Bien and
+  {'{A}}ngel A. Cabrera and Andrew Chin and Eu Jing Chua and Brian Clark and
+  Sarah Colquhoun and Nat DeFries and David C. Farrow and Jodi Forlizzi and
+  Jed Grabman and Samuel Gratzl and Alden Green and George Haff and Robin Han
+  and Kate Harwood and Addison J. Hu and Raphael Hyde and Sangwon Hyun and
+  Ananya Joshi and Jimi Kim and Andrew Kuznetsov and Wichada La Motte-Kerr and
+  Yeon Jin Lee and Kenneth Lee and Zachary C. Lipton and Michael X. Liu and
+  Lester Mackey and Kathryn Mazaitis and Daniel J. McDonald and Phillip
+  McGuinness and Balasubramanian Narasimhan and Michael P. O'Brien and Natalia
+  L. Oliveira and Pratik Patil and Adam Perer and Collin A. Politsch and
+  Samyak Rajanala and Dawn Rucker and Chris Scott and Nigam H. Shah and Vishnu
+  Shankar and James Sharpnack and Dmitry Shemetov and Noah Simon and Benjamin
+  Y. Smith and Vishakha Srivastava and Shuyi Tan and Robert Tibshirani and
+  Elena Tuzhilina and Ana Karina Van Nortwick and Val{'{e}}rie Ventura and
+  Larry Wasserman and Benjamin Weaver and Jeremy C. Weiss and Spencer Whitman
+  and Kristin Williams and Roni Rosenfeld and Ryan J. Tibshirani},title = {An
+  open repository of real-time {COVID}-19 indicators},journal = {Proceedings
+  of the National Academy of Sciences}}"
+citation: 'https://www.doi2bib.org/bib/https://doi.org/10.1073/pnas.2111452118'

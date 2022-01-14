@@ -1,0 +1,227 @@
+:root {
+  --primary: #3c88d4;
+  --secondary: #ff3334;
+  --black: RGBA(1, 1, 1, 0.8);
+  --light-black: RGBA(1, 1, 1, 0.5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: lighter;
+}
+
+h6 {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.cv {
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 10px;
+}
+
+#pubs img {
+  border: 1px solid var(--light-black);
+}
+#intro p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.news-item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sect {
+  margin-top: 40px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none; /* no underline */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  /* ...and now for the proper property */
+  transition: 0.5s;
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+body {
+  margin: 0px auto;
+  max-width: 900px;
+  margin-top: 40px;
+  font-family: "Karla", sans-serif;
+}
+
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: "Karla", Helvetica, sans-serif;
+  color: var(--black);
+}
+
+#main-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#padded-sidebar {
+  /* padding-left: 40px; */
+}
+
+#padded-content {
+  /* margin-left: 20px;
+  padding-left: 20px; */
+  /* border-left: 2px solid var(--black); */
+}
+
+#name {
+  margin-top: 20px;
+}
+
+.name {
+  color: var(--secondary);
+}
+
+#social {
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 6px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 18px;
+}
+
+.fab {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.fas {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.date {
+  color: var(--light-black) !important;
+}
+
+#pubs img {
+  width: 100%;
+}
+
+.pub {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.venue {
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.thumb {
+  margin-right: 20px;
+}
+
+button {
+  font-size: 13px;
+  border: 1px solid RGBA(0, 0, 0, 0.6);
+  border-radius: 3px;
+  padding: 4px;
+  background-color: white;
+  margin-right: 6px;
+  margin-top: 6px;
+  display: inline-flex;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  /* ...and now for the proper property */
+  transition: 0.5s;
+  color: var(--primary);
+}
+
+button:hover {
+  background-color: white;
+  color: var(--secondary);
+}
+
+.buttons {
+  flex-flow: wrap;
+  display: inline-flex;
+  margin-top: 8px;
+}
+
+.buttons i {
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+#copyright {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.disabled {
+  background-color: #ececec80;
+  color: black;
+}
+
+.disabled:hover {
+  background-color: #ececec80;
+  color: black;
+}
+
+.g {
+  color: #4285f4;
+}
+
+.o1,
+.e {
+  color: #db4437;
+}
+
+.o2 {
+  color: #f4b400;
+}
+
+.l {
+  color: #0f9d58;
+}

@@ -1,0 +1,49 @@
+title: Regularizing Black-box Models for Improved Interpretability
+desc: >-
+  We introduce a new regularization method for training deep learning models
+  that improves the stability and fidelity of post-hoc explanantion methods
+  like LIME. Through a user study we show that the regularized model
+  empirically improves the quality of explainations.
+id: expo
+teaser: expo.png
+venue: NeurIPS'20
+venuelong: Conference on Neural Information Processing Systems (NeurIPS)
+year: '2020'
+month: December
+location: Vancouver
+authors:
+  - name: Gregory Plumb
+    website: 'https://gdplumb.github.io/'
+  - name: Maruan Al-Shedivat
+    website: 'https://www.cs.cmu.edu/~mshediva/'
+  - name: Ángel Alexander Cabrera
+    website: 'https://cabreraalex.com'
+  - name: Adam Perer
+    website: 'http://perer.org/'
+  - name: Eric Xing
+    website: 'http://www.cs.cmu.edu/~epxing/'
+  - name: Ameet Talwalkar
+    website: 'https://www.cs.cmu.edu/~atalwalk/'
+bibtex: >-
+  @inproceedings{plumb2020expo,author = {Plumb, Gregory and Al-Shedivat,
+  Maruan and Cabrera, '{A}ngel Alexander and Perer, Adam and Xing, Eric and
+  Talwalkar, Ameet},booktitle = {Advances in Neural Information Processing
+  Systems},pages = {10526--10536},publisher = {Curran Associates, Inc.},title
+  = {Regularizing Black-box Models for Improved Interpretability},url =
+  {https://proceedings.neurips.cc/paper/2020/file/770f8e448d07586afbf77bb59f698587-Paper.pdf},volume
+  = {33},year = {2020}}
+citation: 'https://proceedings.neurips.cc/paper/10607-/bibtex'
+abstract: >-
+  Most of the work on interpretable machine learning has focused on designing
+  either inherently interpretable models, which typically trade-off accuracy
+  for interpretability, or post-hoc explanation systems, which tend to lack
+  guarantees about the quality of their explanations. We explore a
+  hybridization of these approaches by directly regularizing a black-box model
+  for interpretability at training time - a method we call ExpO. We find that
+  post-hoc explanations of an ExpO-regularized model are consistently more
+  stable and of higher fidelity, which we show theoretically and support
+  empirically. Critically, we also find ExpO leads to explanations that are
+  more actionable, significantly more useful, and more intuitive as supported
+  by a user study.
+pdf: 'https://arxiv.org/pdf/1902.06787.pdf'
+code: 'https://github.com/GDPlumb/ExpO'

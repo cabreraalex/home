@@ -1,0 +1,63 @@
+title: >-
+  FairVis: Visual Analytics for Discovering Intersectional Bias in Machine
+  Learning
+desc: >-
+  FairVis is a visual analytics system that enables data scientists to find
+  potential biases in their machine learning models. It allows users to split
+  their data into subgroups of different features to see how vulnerable groups
+  are performing for various fairness metrics. Additionally, it suggests
+  groups that may be underperforming and can find similar groups.
+id: fairvis
+teaser: fairvis.png
+venue: VIS'19
+venuelong: IEEE Conference on Visual Analytics Science and Technology (VAST)
+year: '2019'
+month: October
+location: 'Vancouver, Canada'
+authors:
+  - name: Ángel Alexander Cabrera
+    website: 'https://cabreraalex.com'
+  - name: Will Epperson
+    website: 'http://willepperson.com'
+  - name: Fred Hohman
+    website: 'https://fredhohman.com'
+  - name: Minsuk Kahng
+    website: 'https://minsuk.com'
+  - name: Jamie Morgenstern
+    website: 'http://jamiemorgenstern.com'
+  - name: Duen Horng (Polo) Chau
+    website: 'https://poloclub.github.io/polochau/'
+bibtex: >-
+  @INPROCEEDINGS{cabrera2019fairvis, author={Á. A. {Cabrera} and W. {Epperson}
+  and F. {Hohman} and M. {Kahng} and J. {Morgenstern} and D. H. {Chau}},
+  booktitle={2019 IEEE Conference on Visual Analytics Science and Technology
+  (VAST)}, title={FAIRVIS: Visual Analytics for Discovering Intersectional
+  Bias in Machine Learning}, year={2019}, volume={}, number={},
+  pages={46-56},doi={10.1109/VAST47406.2019.8986948}}
+abstract: >-
+  The growing capability and accessibility of machine learning has led to its
+  application to many real-world domains and data about people. Despite the
+  benefits algorithmic systems may bring, models can reflect, inject, or
+  exacerbate implicit and explicit societal biases into their outputs,
+  disadvantaging certain demographic subgroups. Discovering which biases a
+  machine learning model has introduced is a great challenge, due to the
+  numerous definitions of fairness and the large number of potentially
+  impacted subgroups. We present FairVis, a mixed-initiative visual analytics
+  system that integrates a novel subgroup discovery technique for users to
+  audit the fairness of machine learning models. Through FairVis, users can
+  apply domain knowledge to generate and investigate known subgroups, and
+  explore suggested and similar subgroups. FairVis' coordinated views enable
+  users to explore a high-level overview of subgroup performance and
+  subsequently drill down into detailed investigation of specific subgroups.
+  We show how FairVis helps to discover biases in two real datasets used in
+  predicting income and recidivism. As a visual analytics system devoted to
+  discovering bias in machine learning, FairVis demonstrates how interactive
+  visualization may help data scientists and the general public understand and
+  create more equitable algorithmic systems.
+demo: 'https://poloclub.github.io/FairVis/'
+code: 'https://github.com/poloclub/FairVis'
+blog: >-
+  https://medium.com/@cabreraalex/fairvis-discovering-bias-in-machine-learning-using-visual-analytics-acbd362a3e2f
+pdf: 'https://arxiv.org/abs/1904.05419'
+video: 'https://vimeo.com/showcase/6524122/video/368702211'
+citation: 'https://ieeexplore.ieee.org/document/8986948'

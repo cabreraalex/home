@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Accent Map</title>
+  <!--<meta name="viewport" content="maximum-scale=1.0">-->
+  <link rel="icon" type="image/png" href="../res/favicon.png">
+  <link rel="stylesheet" href="jquery-jvectormap-1.2.2.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <script src="jquery-1.11.1.min.js"></script>
+  <script src="sorttable.js"></script>
+  <script src="jquery-jvectormap-1.2.2.min.js"></script>
+  <script src="jquery-jvectormap-world-mill-en.js"></script>
+</head>
+<body>
+
+    <div id="world-map">
+        <div id="container">
+            <audio id="audio-player" src="" controls="controls" preload="none"></audio>
+    </div>
+    </div>
+    <table id="language-table">
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        var songnames = [
+            "spanish22",
+            "portuguese8",
+            "english144",
+            "wolof2",
+            "indonesian3",
+            "hindi1",
+            "mandarin2",
+            "spanish3",
+            "bengali2",
+            "spanish21",
+            "english117",
+            "yupik1",
+            "english138",
+            "mandarin7",
+            "english43",
+            "english179",
+            "spanish35",
+            "english119",
+            "spanish16",
+            "quechua1",
+            "portuguese2",
+            "spanish1",
+            "mende1",
+            "bambara2",
+            "sarua1",
+            "yoruba1",
+            "portuguese5",
+            "agni1",
+            "english130",
+            "arabic10"
+        ];
+
+        var agesex = [
+            "Female, 32",
+            "Male, 26",
+            "Male, 24",
+            "Male, 37",
+            "Female, 32",
+            "Male, 27",
+            "Female, 38",
+            "Female, 17",
+            "Female, 25",
+            "Male, 25",
+            "Female, 60",
+            "Female, 31",
+            "Female, 25",
+            "Male, 22",
+            "Male, 47",
+            "Male, 57",
+            "Male, 28",
+            "Female, 32",
+            "Male, 44",
+            "Female, 53",
+            "Female, 18",
+            "Male, 24",
+            "Male, 35",
+            "Female, 26",
+            "Male, 21",
+            "Male, 20",
+            "Male, 31",
+            "Male, 25",
+            "Male, 32",
+            "Male, 26"
+        ]
+
+        var residence = [
+            "USA, 0.8",
+            "UK, 8.5",
+            "Canada, 24",
+            "USA, 8",
+            "USA, 0.6",
+            "UK/USA, 3.5",
+            "USA, 0.8",
+            "USA, 0.1",
+            "USA, 21",
+            "None, 0",
+            "USA, 60",
+            "Alaska, 31",
+            "USA, 25",
+            "USA, 22",
+            "Canada, 47",
+            "USA, 55",
+            "USA, 4.25",
+            "Canada, 32",
+            "USA, 19",
+            "USA, 8",
+            "USA, 0.2",
+            "USA, 0.3",
+            "Liberia/USA, 35",
+            "USA, 2",
+            "USA, 0.1",
+            "USA, 0.25",
+            "USA, 1",
+            "USA, 1.2",
+            "South Africa, 32",
+            "USA, 2"
+        ]
+
+        var nativelang = [
+            "Spanish",
+            "Portugese",
+            "English",
+            "Wolof",
+            "Indonesian",
+            "Hindi",
+            "Mandarin",
+            "Spanish",
+            "Bengali",
+            "Spanish",
+            "English",
+            "Yupik",
+            "English",
+            "Mandarin",
+            "English",
+            "English",
+            "Spanish",
+            "English",
+            "Spanish",
+            "Quechua",
+            "Portuguese",
+            "Spanish",
+            "Mende",
+            "Bambara",
+            "Sarua",
+            "Yoruba",
+            "Portuguese",
+            "Agni",
+            "English",
+            "Arabic"
+        ]
+
+        var method = [
+            "Academic, 11",
+            "Academic, 7",
+            "Naturalistic, 0",
+            "Academic, 11",
+            "Academic, 13",
+            "Academic, 2",
+            "Academic, 14",
+            "Academic, 16",
+            "Naturalistic, 2",
+            "Naturalistic, 18",
+            "Naturalistic, 0",
+            "Naturalistic, 1",
+            "Naturalistic, 0",
+            "Naturalistic, 5",
+            "Naturalistic, 0",
+            "Naturalistic, 0",
+            "Academic, 17",
+            "Naturalistic, 0",
+            "Naturalistic, 25",
+            "Academic, 15",
+            "Academic, 10",
+            "Academic, 17",
+            "Academic, 5",
+            "Academic, 18",
+            "Academic, 10",
+            "Academic, 20",
+            "Academic, 13",
+            "Academic, 15",
+            "Naturalistic, 0",
+            "Academic, 5"
+        ]
+
+        var r;
+        console.log($(document).width());
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	        r = 15;
+	    }
+        else {
+            r = 5;
+        }
+
+        $(function(){
+            var x=method.length;
+            var content="<table id='maintable'><thead><tr><td>Audio Clip</td><td>Native Language</td><td>Sex</td><td>Age</td><td>Learning Method</td><td>Age Learning Started</td><td>English-Speaking Residence</td><td>Years in Residence</td></tr></thead>";
+            for(var y = 0; y < x; y++){
+
+                var agesexthis = agesex[y].split(", ");
+                var methodthis = method[y].split(", ");
+                var residencethis = residence[y].split(", ");
+
+                content += "<tr>";
+                content += "<td><audio id='table-player' src='" + songnames[y] + ".mp3' controls='controls' preload='none'></td>";
+                content += "<td>" + nativelang[y] + "</td>";
+                content += "<td>" + agesexthis[0] + "</td>";
+                content += "<td class='right'>" + agesexthis[1] + "</td>";
+                content += "<td class='right'>" + methodthis[0] + "</td>";
+                content += "<td class='right'>" + methodthis[1] + "</td>";
+                content += "<td class='right'>" + residencethis[0] + "</td>";
+                content += "<td class='right'>" + residencethis[1] + "</td>";
+                content += "</tr>";
+            }
+            content +="</table>"
+            $('#language-table').html(content);
+            var x = document.getElementById('language-table');
+            sorttable.makeSortable(x);
+        });
+
+
+        $(function(){
+            var currentsong = -1;
+            $('#world-map').vectorMap({
+                map: 'world_mill_en',
+                normalizeFunction: 'polynomial',
+                backgroundColor: '#0071A4',
+                markerStyle: {
+                    initial: {
+                        fill: '#F8E23B',
+                        stroke: '#383f47',
+                        r: r
+                    }
+                },
+                markers: [
+                    {latLng: [40.426565, -3.703873], name: 'Madrid'},
+                    {latLng: [-3.728597, -38.527787], name: 'Fortaleza'},
+                    {latLng: [45.593056, -62.267222], name: 'Barneys River, Nova Scotia'},
+                    {latLng: [14.692778, -17.446667], name: 'Dakar'},
+                    {latLng: [-6.2, 106.8], name: 'Jakarta'},
+                    {latLng: [21.15, 79.09], name: 'Nagpur, Maharashtra'},
+                    {latLng: [32.05, 118.766667], name: 'Nanjing'},
+                    {latLng: [4.598056, -74.075833], name: 'Bogota'},
+                    {latLng: [-15.416667, 28.283333], name: 'Lusaka'},
+                    {latLng: [-33.45, -70.666667], name: 'Santiago'},
+                    {latLng: [32.542314, -86.315455], name: 'Elmore, Alabama'},
+                    {latLng: [60.792222, -161.755833], name: 'Bethel, Alaska'},
+                    {latLng: [61.601944, -149.117222], name: 'Palmer, Alaska'},
+                    {latLng: [37.871667, -122.272778], name: 'Berkeley, California'},
+                    {latLng: [49.25, -123.1], name: 'Vancouver, British Columbia'},
+                    {latLng: [44.359145, -98.218152], name: 'Huron, South Dakota'},
+                    {latLng: [19.433333, -99.133333], name: 'Mexico City'},
+                    {latLng: [52.133333, -106.683333], name: 'Saskatoon, Saskatchewan'},
+                    {latLng: [-34.603333, -58.381667], name: 'Buenos Aires'},
+                    {latLng: [-17.383333, -66.166667], name: 'Cochamba'},
+                    {latLng: [-15.798889, -47.866667], name: 'Brasilia'},
+                    {latLng: [10.5, -66.916667], name: 'Caracas'},
+                    {latLng: [6.283333, -10.35], name: 'Harbel'},
+                    {latLng: [12.65, -8], name: 'Bamako'},
+                    {latLng: [12.113056, 15.049167], name: "N'Djamena"},
+                    {latLng: [6.366667, 2.433333], name: 'Cotonou'},
+                    {latLng: [-14.916667, 13.5], name: 'Lubango'},
+                    {latLng: [7.449624,-5.396004], name: 'Diekabo'},
+                    {latLng: [-33.958056, 25.6], name: 'Port Elizabeth'},
+                    {latLng: [30.05, 31.233333], name: 'Cairo'}
+                ],
+                onMarkerLabelShow: function(event, label, index){
+                    label.html('<b>Birthplace: </b>' +  label.html() + '<br /><b>Speaker: </b>' + agesex[index] + '<br /><b>Native Language: </b>' + nativelang[index] + '<br /><b>Method/Age: </b>' + method[index] + '<br /><b>English Residence: </b>' + residence[index] + " years");
+                },
+                onMarkerClick: function(event, index){
+                    var lol = parseInt(index,10);
+                    if(currentsong==lol){
+                        var audio = document.getElementById('audio-player');
+                        if(audio.paused){
+                            audio.play();
+                        }
+                        else {
+                            audio.pause();
+                        }
+                    }
+                    else {
+                        $("#container").html("<audio id='audio-player' src='" + songnames[lol] + ".mp3' controls='controls' preload='none'>");
+                        var audio = document.getElementById('audio-player');
+                        audio.play();
+                        currentsong = lol;
+                        $('#audio-player').css('margin-left', $(document).width()/2 - $('#audio-player').width() -20);
+                    }
+                }
+            });
+        });
+        $('#world-map').css('height', $( document ).height() - 40);
+        $('#world-map').css('width', $(document).width() - 40);
+        $('#audio-player').css('margin-left', $(document).width()/2 - $('#audio-player').width() -20);
+    </script>
+</body>
+</html>
