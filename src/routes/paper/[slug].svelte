@@ -41,17 +41,15 @@
 				.join(', ')}
 		</h3>
 	</div>
-	<div class="flex pure-g">
-		<div class="pure-u-1 pure-u-md-1-2">
-			<img src={'/images/' + pub.teaser} class="teaser" alt="teaser" />
-		</div>
-		<div class="pure-u-1 pure-u-md-1-2">
-			<p class="desc">{pub.desc}</p>
-		</div>
+	<div id="preview">
+		<img src={'/images/' + pub.teaser} class="teaser" alt="teaser" />
+		<p class="desc">
+			{pub.abstract}
+		</p>
 	</div>
 
-	<h2 class="sec-title">Abstract</h2>
-	<p>{pub.abstract}</p>
+	<!-- <h2 class="sec-title">Abstract</h2>
+	<p>{pub.abstract}</p> -->
 
 	<h2 class="sec-title">Citation</h2>
 	<a href={'https://cabreraalex.com/paper/' + pub.id} class="paper-title">
@@ -87,6 +85,9 @@
 		margin: 0px auto;
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+	#preview {
+		margin-top: 30px;
 	}
 	.color {
 		font-size: 16px;
@@ -151,20 +152,16 @@
 	}
 
 	.code {
+		font-family: monospace;
+		font-size: 13px;
 		padding: 10px;
 		background: rgba(0, 0, 0, 0.05);
 	}
 
-	.flex {
-		display: flex;
-		align-items: center;
-		font-size: 20px;
-		margin-top: 30px;
-	}
-
 	.teaser {
-		width: calc(100% - 20px);
-		padding: 10px;
+		width: 40%;
+		float: right;
+		margin-left: 15px;
 		border: 1px solid rgba(0, 0, 0, 0.25);
 	}
 
@@ -175,8 +172,14 @@
 	.desc {
 		font-size: 16px;
 		font-weight: 300;
-		/* line-height: 24px; */
-		padding: 15px;
-		padding-left: 30px;
+		text-align: justify;
+	}
+
+	@media only screen and (max-width: 769px) {
+		.teaser {
+			width: 100%;
+			float: top;
+			margin-left: 0px;
+		}
 	}
 </style>

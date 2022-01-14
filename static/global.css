@@ -12,7 +12,6 @@
 body {
 	min-width: min-content;
 	margin: 0px auto;
-	margin-top: 40px;
 	padding: 20px;
 	font-family: 'Karla', sans-serif;
 	border-top: 5px solid var(--secondary);
@@ -90,6 +89,7 @@ h6 {
 }
 
 .entry-link {
+	color: var(--primary);
 	margin-top: 3px;
 	margin-left: 0px;
 	border: none;
