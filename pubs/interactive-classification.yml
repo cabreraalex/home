@@ -1,0 +1,40 @@
+title: Interactive Classification for Deep Learning Interpretation
+desc: >-
+  We developed an interactive system that allows users to modify images to
+  explore the weaknesses and strenghts of image classification models. Users
+  can 'inpaint' or remove parts of an image and see how it impacts their
+  classification.
+id: interactive-classification
+teaser: interactive.png
+venue: "Demo, CVPR'18"
+venuelong: Demo at IEEE Computer Vision and Pattern Recognition (CVPR)
+year: '2018'
+month: June
+location: 'Salt Lake City, Utah, USA'
+authors:
+  - name: Ángel Alexander Cabrera
+    website: 'http://cabreraalex.com'
+  - name: Fred Hohman
+    website: 'https://fredhohman.com'
+  - name: Jason Lin
+    website: 'http://jlin.xyz'
+  - name: Duen Horng (Polo) Chau
+    website: 'https://poloclub.github.io/polochau/'
+bibtex: >-
+  @article{cabrera2018interactive, title={Interactive Classification for Deep
+  Learning Interpretation}, author={Cabrera, Ángel Alexander and Hohman, Fred
+  and Lin, Jason and Chau, Duen Horng}, journal={Demo, IEEE Conference on
+  Computer Vision and Pattern Recognition (CVPR)}, year={2018},
+  organization={IEEE}}
+abstract: >-
+  We present an interactive system enabling users to manipulate images to
+  explore the robustness and sensitivity of deep learning image classifiers.
+  Using modern web technologies to run in-browser inference, users can remove
+  image features using inpainting algorithms to obtain new classifications in
+  real time. This system allows users to compare and contrast what image
+  regions humans and machine learning models use for classification.
+website: 'http://fredhohman.com/papers/interactive-classification'
+pdf: 'https://arxiv.org/abs/1806.05660'
+video: 'https://www.youtube.com/watch?v=llub5GcOF6w'
+demo: 'https://cabreraalex.github.io/interactive-classification'
+code: 'https://github.com/poloclub/interactive-classification'

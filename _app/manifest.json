@@ -1,0 +1,143 @@
+{
+  ".svelte-kit/build/runtime/internal/start.js": {
+    "file": "start-0e403804.js",
+    "src": ".svelte-kit/build/runtime/internal/start.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-e42abbb2.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/build/components/layout.svelte",
+      ".svelte-kit/build/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/paper/[slug].svelte",
+      "src/routes/news.svelte",
+      "src/routes/cv.svelte"
+    ]
+  },
+  ".svelte-kit/build/components/layout.svelte": {
+    "file": "layout.svelte-c11e8583.js",
+    "src": ".svelte-kit/build/components/layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-e42abbb2.js"
+    ]
+  },
+  ".svelte-kit/build/components/error.svelte": {
+    "file": "error.svelte-473c107f.js",
+    "src": ".svelte-kit/build/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-e42abbb2.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-6cdc0dd2.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-e42abbb2.js",
+      "_Sidebar-74596c03.js",
+      "_Intro-d88055b2.js",
+      "_Footer-b9186261.js",
+      "_Links-b89499bd.js",
+      "_Social-2ff7d5c5.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-6dcfd776.css"
+    ]
+  },
+  "src/routes/paper/[slug].svelte": {
+    "file": "pages/paper/_slug_.svelte-bac8f889.js",
+    "src": "src/routes/paper/[slug].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-e42abbb2.js",
+      "_Footer-b9186261.js",
+      "_Links-b89499bd.js"
+    ],
+    "css": [
+      "assets/pages/paper/_slug_.svelte-e53b8673.css"
+    ]
+  },
+  "src/routes/news.svelte": {
+    "file": "pages/news.svelte-e81b75c4.js",
+    "src": "src/routes/news.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-e42abbb2.js",
+      "_Sidebar-74596c03.js",
+      "_Footer-b9186261.js",
+      "_Social-2ff7d5c5.js"
+    ],
+    "css": [
+      "assets/pages/news.svelte-c641df08.css"
+    ]
+  },
+  "src/routes/cv.svelte": {
+    "file": "pages/cv.svelte-77ba21c9.js",
+    "src": "src/routes/cv.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-e42abbb2.js",
+      "_Intro-d88055b2.js",
+      "_Social-2ff7d5c5.js",
+      "_Links-b89499bd.js"
+    ],
+    "css": [
+      "assets/pages/cv.svelte-cce83cdc.css"
+    ]
+  },
+  "_vendor-e42abbb2.js": {
+    "file": "chunks/vendor-e42abbb2.js"
+  },
+  "_Sidebar-74596c03.js": {
+    "file": "chunks/Sidebar-74596c03.js",
+    "imports": [
+      "_vendor-e42abbb2.js",
+      "_Social-2ff7d5c5.js"
+    ],
+    "css": [
+      "assets/Sidebar-23c3a463.css"
+    ]
+  },
+  "_Intro-d88055b2.js": {
+    "file": "chunks/Intro-d88055b2.js",
+    "imports": [
+      "_vendor-e42abbb2.js"
+    ],
+    "css": [
+      "assets/Intro-3fc60a44.css"
+    ]
+  },
+  "_Footer-b9186261.js": {
+    "file": "chunks/Footer-b9186261.js",
+    "imports": [
+      "_vendor-e42abbb2.js"
+    ],
+    "css": [
+      "assets/Footer-6c39282c.css"
+    ]
+  },
+  "_Links-b89499bd.js": {
+    "file": "chunks/Links-b89499bd.js",
+    "imports": [
+      "_vendor-e42abbb2.js"
+    ]
+  },
+  "_Social-2ff7d5c5.js": {
+    "file": "chunks/Social-2ff7d5c5.js",
+    "imports": [
+      "_vendor-e42abbb2.js"
+    ],
+    "css": [
+      "assets/Social-57662bc7.css"
+    ]
+  }
+}
