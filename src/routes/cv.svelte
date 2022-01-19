@@ -488,8 +488,14 @@
 			<tr>
 				<th class="date">2022</th>
 				<th>
+					<h5 class="single">AC for ACM Fairness, Accountability, and Transparency (FAccT)</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2022</th>
+				<th>
 					<h5 class="single">
-						Late Breaking Work at ACM Conference on Human Factors in Computing Systems (CHI)
+						AC for Late Breaking Work at ACM Conference on Human Factors in Computing Systems (CHI)
 					</h5>
 				</th>
 			</tr>
@@ -520,6 +526,12 @@
 				</th>
 			</tr>
 			<tr>
+				<th class="date">2021 - 2022</th>
+				<th>
+					<h5 class="single">ACM Conference on Human Factors in Computing Systems (CHI)</h5>
+				</th>
+			</tr>
+			<tr>
 				<th class="date">2019 - 2021</th>
 				<th>
 					<h5 class="single">IEEE Transactions on Visualization and Computer Graphics (TVCG)</h5>
@@ -540,12 +552,6 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2021</th>
-				<th>
-					<h5 class="single">ACM Conference on Human Factors in Computing Systems (CHI)</h5>
-				</th>
-			</tr>
-			<tr>
 				<th class="date">2019</th>
 				<th>
 					<h5 class="single">ACM Transactions on Interactive Intelligent Systems (TiiS)</h5>
@@ -556,6 +562,12 @@
 				<th class="date" />
 				<th>
 					<h5>Department</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2022</th>
+				<th>
+					<h5 class="single">HCII REU application reviewer</h5>
 				</th>
 			</tr>
 			<tr>
@@ -939,6 +951,9 @@
 			<tr class="item">
 				<th class="date">PhD</th>
 				<th>
+					<a href="https://yonatanbisk.com/teaching/mmml-s22/">
+						<h5 class="single">MultiModal Machine Learning</h5>
+					</a>
 					<h5 class="single">Causality and Machine Learning</h5>
 					<h5 class="single">Human Judgement and Decision Making</h5>
 					<a href="https://www.hcii.cmu.edu/courses/applied-research-methods">
