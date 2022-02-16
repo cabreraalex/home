@@ -17,7 +17,7 @@
 		</h1>
 		<Social home={true} />
 		<a href="/cv"> <button class="cv">CV (web)</button> </a>
-		<a href="/cv.pdf"> <button class="cv">CV (pdf)</button> </a>
+		<a href="/cv.pdf" rel="external"> <button class="cv">CV (pdf)</button> </a>
 	</div>
 </div>
 

@@ -67,7 +67,7 @@
 			</button>
 		</a>
 	{/if}
-	<a href={'https://cabreraalex.com/paper/' + pub.id}>
+	<a href={'/paper/' + pub.id}>
 		<button class="entry-link">
 			<i class="fas fa-globe" />
 			<p>Website</p>

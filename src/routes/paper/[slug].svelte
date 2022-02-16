@@ -52,7 +52,7 @@
 	<p>{pub.abstract}</p> -->
 
 	<h2 class="sec-title">Citation</h2>
-	<a href={'https://cabreraalex.com/paper/' + pub.id} class="paper-title">
+	<a href={'/paper/' + pub.id} class="paper-title">
 		<h4>{pub.title}</h4>
 	</a>
 
