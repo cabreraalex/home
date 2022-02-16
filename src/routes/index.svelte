@@ -1,5 +1,5 @@
 <script context="module">
-	const pubsFeat = ['covidcast', 'deblinder', 'expo', 'confusion', 'fairvis'];
+	const pubsFeat = ['symphony', 'covidcast', 'deblinder', 'expo', 'confusion', 'fairvis'];
 	const otherFeat = ['publics', 'subgroup-gen', 'interactive-classification'];
 
 	import yaml from 'js-yaml';

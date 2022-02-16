@@ -1,5 +1,5 @@
 <script context="module">
-	const pubsFeat = ['covidcast', 'deblinder', 'expo', 'confusion', 'fairvis'];
+	const pubsFeat = ['symphony', 'covidcast', 'deblinder', 'expo', 'confusion', 'fairvis'];
 	const otherFeat = ['publics', 'subgroup-gen', 'interactive-classification'];
 
 	import yaml from 'js-yaml';
@@ -63,7 +63,7 @@
 				</th>
 			</tr>
 			<tr class="item">
-				<th class="date">August 2019 <br /> - Present</th>
+				<th class="date">2019 - Present</th>
 				<th>
 					<h5>PhD in Human-Computer Interaction (HCI)</h5>
 					<h6>Carnegie Mellon University</h6>
@@ -85,7 +85,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">August 2015 <br /> - May 2019</th>
+				<th class="date">2019</th>
 				<th>
 					<h5>B.S. in Computer Science</h5>
 					<h6>Georgia Institute of Technology</h6>
@@ -111,11 +111,13 @@
 				</th>
 			</tr>
 			<tr class="item">
-				<th class="date">May 2021 <br /> - Present</th>
+				<th class="date">Summer 2021</th>
 				<th>
 					<h5>Apple</h5>
 					<h6>Research Intern</h6>
-					<p class="desc">Design + Visualization Group.</p>
+					<p class="desc">
+						Design + Visualization Group, see <a href="/paper/symphony">Symphony</a>.
+					</p>
 					<div class="tags">
 						<a href="https://machinelearning.apple.com/">
 							<button class="entry-link">
@@ -127,7 +129,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">May 2020 <br /> - August 2020</th>
+				<th class="date">Summer 2020</th>
 				<th>
 					<h5>Microsoft Research</h5>
 					<h6>Research Intern</h6>
@@ -148,7 +150,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">May 2018 <br /> - August 2018</th>
+				<th class="date">Summer 2018</th>
 				<th>
 					<h5>Google</h5>
 					<h6>Software Engineering Intern</h6>
@@ -171,7 +173,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">May 2017 <br /> - August 2017</th>
+				<th class="date">Summer 2017</th>
 				<th>
 					<h5>Google</h5>
 					<h6>Software Engineering Intern</h6>
@@ -183,7 +185,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">May 2016 <br /> - August 2016</th>
+				<th class="date">Summer 2016</th>
 				<th>
 					<h5>Google</h5>
 					<h6>Engineering Practicum Intern</h6>
@@ -200,7 +202,7 @@
 				</th>
 			</tr>
 			<tr class="item">
-				<th class="date">May 2019</th>
+				<th class="date">2019 - Present</th>
 				<th>
 					<h5>National Science Foundation Graduate Research Fellowship (NSF GRFP)</h5>
 					<p class="desc">
@@ -218,7 +220,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">May 2019</th>
+				<th class="date">2019</th>
 				<th>
 					<h5>Love Family Foundation Scholarship</h5>
 					<p class="desc">
@@ -238,7 +240,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">August 2015 <br /> - May 2019</th>
+				<th class="date">2015 - 2019</th>
 				<th>
 					<h5>Stamps President's Scholar</h5>
 					<h6>Georgia Tech and the Stamps Family Charitable Foundation</h6>
@@ -257,7 +259,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">February 3, 2018</th>
+				<th class="date">2018</th>
 				<th>
 					<h5>The Data Open Datathon</h5>
 					<h6>Correlation One and Citadel Securities</h6>
@@ -318,11 +320,11 @@
 					<h4 class="header">Refereed Publications</h4>
 				</th>
 			</tr>
-			{#each pubs as pub}
+			{#each pubs as pub, i}
 				<tr class="item">
-					<th class="date">{pub.month} {pub.year}</th>
+					<th class="date">[{pubs.length - i}]</th>
 					<th>
-						<a href={'https://cabreraalex/paper/' + pub.id} class="paper-title">
+						<a href={'/paper/' + pub.id} class="paper-title">
 							<h5>{pub.title}</h5>
 						</a>
 
@@ -356,11 +358,11 @@
 					<h4 class="header">Workshops, Demos, Posters, and Preprints</h4>
 				</th>
 			</tr>
-			{#each other as pub}
+			{#each other as pub, i}
 				<tr class="item">
-					<th class="date">{pub.month} {pub.year}</th>
+					<th class="date">[{other.length - i}]</th>
 					<th>
-						<a href={'https://cabreraalex/paper/' + pub.id} class="paper-title">
+						<a href={'/paper/' + pub.id} class="paper-title">
 							<h5>{pub.title}</h5>
 						</a>
 
@@ -488,15 +490,15 @@
 			<tr>
 				<th class="date">2022</th>
 				<th>
-					<h5 class="single">AC for ACM Fairness, Accountability, and Transparency (FAccT)</h5>
+					<h5 class="single">
+						AC, ACM Conference on Human Factors in Computing Systems (CHI) Late Breaking Work
+					</h5>
 				</th>
 			</tr>
 			<tr>
 				<th class="date">2022</th>
 				<th>
-					<h5 class="single">
-						AC for Late Breaking Work at ACM Conference on Human Factors in Computing Systems (CHI)
-					</h5>
+					<h5 class="single">ACM Fairness, Accountability, and Transparency (FAccT)</h5>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -507,13 +509,13 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">October 2019</th>
+				<th class="date">2019</th>
 				<th>
 					<h5 class="single">IEEE Visualization (VIS)</h5>
 				</th>
 			</tr>
 			<tr>
-				<th class="date">January 2019</th>
+				<th class="date">2019</th>
 				<th>
 					<h5 class="single">ACM Fairness, Accountability, and Transparency (FAccT)</h5>
 				</th>
@@ -567,7 +569,7 @@
 			<tr>
 				<th class="date">2022</th>
 				<th>
-					<h5 class="single">HCII REU application reviewer</h5>
+					<h5 class="single">REU application reviewer</h5>
 				</th>
 			</tr>
 			<tr>
@@ -702,7 +704,7 @@
 				</th>
 			</tr>
 			<tr class="item">
-				<th class="date">Spring 2021</th>
+				<th class="date">2021</th>
 				<th>
 					<h5>Svelte + Vega</h5>
 					<p class="desc">
@@ -724,7 +726,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">Spring 2021</th>
+				<th class="date">2021</th>
 				<th>
 					<h5>Svelte + Jupyter Widgets</h5>
 					<p class="desc">
@@ -753,7 +755,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">Spring 2020</th>
+				<th class="date">2020</th>
 				<th>
 					<h5>COVIDCast Visualization of COVID-19 Indicators</h5>
 					<p class="desc">
@@ -821,7 +823,7 @@
       </tr>
       <tr class="buffer" /> -->
 			<tr class="item">
-				<th class="date">September 2015 <br /> - May 2017</th>
+				<th class="date">2015 - 2017</th>
 				<th>
 					<h5>PROX-1 Satellite</h5>
 					<h6>Flight Software Lead and Researcher</h6>
@@ -847,7 +849,7 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">Spring 2014</th>
+				<th class="date">2014</th>
 				<th>
 					<h5>CTF Resources</h5>
 					<p class="desc">
