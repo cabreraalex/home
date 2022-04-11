@@ -60,3 +60,4 @@ bibtex: "@article{Reinhart2021,doi = {10.1073/pnas.2111452118},url =
   open repository of real-time {COVID}-19 indicators},journal = {Proceedings
   of the National Academy of Sciences}}"
 citation: 'https://www.doi2bib.org/bib/https://doi.org/10.1073/pnas.2111452118'
+demo: 'https://delphi.cmu.edu/covidcast/'

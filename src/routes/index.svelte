@@ -65,7 +65,7 @@
 	<div id="content" class="pure-u-1 pure-u-md-3-4">
 		<div id="padded-content">
 			<div id="intro">
-				<h2 id="hello">Hi! You can call me <span class="name">Alex</span></h2>
+				<h2 class="header">Hi! You can call me <span class="name">Alex</span></h2>
 				<Intro />
 			</div>
 			<div id="news" class="sect">
@@ -185,11 +185,5 @@
 		margin-bottom: 5px;
 		margin-top: 5px;
 		font-weight: 400;
-	}
-	@media only screen and (max-width: 769px) {
-		#hello {
-			margin-top: 20px;
-			text-align: center;
-		}
 	}
 </style>

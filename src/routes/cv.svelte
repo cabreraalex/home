@@ -505,25 +505,6 @@
 			<tr class="item">
 				<th class="date" />
 				<th>
-					<h5>Student Volunteer</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2019</th>
-				<th>
-					<h5 class="single">IEEE Visualization (VIS)</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2019</th>
-				<th>
-					<h5 class="single">ACM Fairness, Accountability, and Transparency (FAccT)</h5>
-				</th>
-			</tr>
-			<tr class="buffer" />
-			<tr class="item">
-				<th class="date" />
-				<th>
 					<h5>Reviewer</h5>
 				</th>
 			</tr>
@@ -534,15 +515,27 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2019 - 2021</th>
+				<th class="date">2020 - 2022</th>
 				<th>
-					<h5 class="single">IEEE Transactions on Visualization and Computer Graphics (TVCG)</h5>
+					<h5 class="single">IEEE Visualization (VIS)</h5>
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2020 - 2021</th>
+				<th class="date">2022</th>
 				<th>
-					<h5 class="single">IEEE Visualization (VIS)</h5>
+					<h5 class="single">ACM Fairness, Accountability, and Transparency (FAccT)</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2022</th>
+				<th>
+					<h5 class="single">IEEE Computer Graphics and Applications (CGASI)</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2019 - 2021</th>
+				<th>
+					<h5 class="single">IEEE Transactions on Visualization and Computer Graphics (TVCG)</h5>
 				</th>
 			</tr>
 			<tr>
@@ -556,7 +549,26 @@
 			<tr>
 				<th class="date">2019</th>
 				<th>
-					<h5 class="single">ACM Transactions on Interactive Intelligent Systems (TiiS)</h5>
+					<h5 class="single">ACM Transactions on Interactive Intelligent Systems (TiiS)</h5>
+				</th>
+			</tr>
+			<tr class="buffer" />
+			<tr class="item">
+				<th class="date" />
+				<th>
+					<h5>Student Volunteer</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2019</th>
+				<th>
+					<h5 class="single">IEEE Visualization (VIS)</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2019</th>
+				<th>
+					<h5 class="single">ACM Fairness, Accountability, and Transparency (FAccT)</h5>
 				</th>
 			</tr>
 			<tr class="buffer" />

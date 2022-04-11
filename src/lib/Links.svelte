@@ -4,7 +4,7 @@
 
 <div class="buttons">
 	{#if pub.pdf}
-		<a href={pub.pdf}>
+		<a href={pub.pdf} rel="external">
 			<button class="entry-link">
 				<i class="fas fa-file-pdf" />
 				<p>PDF</p>
@@ -60,7 +60,7 @@
 		</a>
 	{/if}
 	{#if pub.slides}
-		<a href={pub.slides}>
+		<a href={pub.slides} rel="external">
 			<button class="entry-link">
 				<i class="fas fa-file-powerpoint" />
 				<p>Slides</p>
