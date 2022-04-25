@@ -529,6 +529,12 @@
 			<tr>
 				<th class="date">2022</th>
 				<th>
+					<h5 class="single">ACM Symposium on User Interface Software and Technology (UIST)</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2022</th>
+				<th>
 					<h5 class="single">IEEE Computer Graphics and Applications (CGASI)</h5>
 				</th>
 			</tr>
@@ -959,7 +965,7 @@
 			<tr>
 				<th class="date" />
 				<th>
-					<h4 class="header">Selected Classes</h4>
+					<h4 class="header">Selected Courses</h4>
 				</th>
 			</tr>
 			<tr class="item">
