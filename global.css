@@ -122,12 +122,12 @@ h6 {
 a {
 	color: var(--primary);
 	text-decoration: none; /* no underline */
-	-o-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
+	-o-transition: color 0.5s;
+	-ms-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-webkit-transition: color 0.5s;
 	/* ...and now for the proper property */
-	transition: 0.5s;
+	transition: color 0.5s;
 }
 
 a:hover {
