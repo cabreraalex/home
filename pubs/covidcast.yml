@@ -59,5 +59,6 @@ bibtex: "@article{Reinhart2021,doi = {10.1073/pnas.2111452118},url =
   and Kristin Williams and Roni Rosenfeld and Ryan J. Tibshirani},title = {An
   open repository of real-time {COVID}-19 indicators},journal = {Proceedings
   of the National Academy of Sciences}}"
-citation: 'https://www.doi2bib.org/bib/https://doi.org/10.1073/pnas.2111452118'
+citation: 'https://www.pnas.org/doi/10.1073/pnas.2111452118'
+code: 'https://github.com/cmu-delphi/www-covidcast'
 demo: 'https://delphi.cmu.edu/covidcast/'
