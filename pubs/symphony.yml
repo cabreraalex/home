@@ -9,10 +9,10 @@ year: '2022'
 month: May
 location: New Orleans
 authors:
-  - name: Alex Bäuerle*
-    website: https://a13x.io/
   - name: Ángel Alexander Cabrera*
     website: 'https://cabreraalex.com'
+  - name: Alex Bäuerle*
+    website: https://a13x.io/
   - name: Fred Hohman
     website: https://fredhohman.com/
   - name: Megan Maher
