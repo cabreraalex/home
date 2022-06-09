@@ -33,6 +33,8 @@ bibtex: >-
   author={Cabrera, \'{A}ngel Alexander and Ribeiro, Marco Tulio and Lee, Bongshin and DeLine, Rob and Perer, Adam and Drucker, Steven M.},
   journal={ACM Transactions on Computer-Human Interaction (TOCHI)},
   year={2022},
+  doi={10.1145/3542921},
+  url={https://doi.org/10.1145/3542921},
   publisher={ACM New York, NY, USA}
   }
 
