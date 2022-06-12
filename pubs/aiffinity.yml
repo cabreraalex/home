@@ -5,7 +5,7 @@ venue: TOCHI'22
 venuelong: >-
   ACM Transactions on Computer-Human Interaction (TOCHI)
 year: '2022'
-month: June
+month: May
 authors:
   - name: Ángel Alexander Cabrera
     website: 'https://cabreraalex.com'
@@ -26,32 +26,18 @@ abstract: >-
   To evaluate the framework, we show how existing AI analysis tools fit into this sensemaking process and use it to design AIFinnity, a system for analyzing image-and-text models. 
   Lastly, we explored how data scientists use a tool developed with the framework through a think-aloud study with 10 data scientists tasked with using AIFinnity to pick an image captioning model.
   We found that AIFinnity's sensemaking workflow reflected participants' mental processes and enabled them to discover and validate diverse AI behaviors.
-pdf: 'https://cabreraalex.com/aiffinity.pdf'
+pdf: 'https://dl.acm.org/doi/pdf/10.1145/3542921'
+citation: 'https://dl.acm.org/doi/10.1145/3542921'
 bibtex: >-
   @article{cabrera2022aiffinity,
-  title={What Did My AI Learn? How Data Scientists Make Sense of Model Behavior},
-  author={Cabrera, \'{A}ngel Alexander and Ribeiro, Marco Tulio and Lee, Bongshin and DeLine, Rob and Perer, Adam and Drucker, Steven M.},
-  journal={ACM Transactions on Computer-Human Interaction (TOCHI)},
-  year={2022},
-  doi={10.1145/3542921},
-  url={https://doi.org/10.1145/3542921},
-  publisher={ACM New York, NY, USA}
+  author = {Cabrera, \'{A}ngel Alexander and Ribeiro, Marco Tulio and Lee, Bongshin and DeLine, Rob and Perer, Adam and Drucker, Steven M.},
+  title = {What Did My AI Learn? How Data Scientists Make Sense of Model Behavior},
+  year = {2022},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  issn = {1073-0516},
+  url = {https://doi.org/10.1145/3542921},
+  doi = {10.1145/3542921},
+  journal = {ACM Trans. Comput.-Hum. Interact.},
+  month = {may}
   }
-
-# bibtex: >-
-#   @inproceedings{symphony,
-#   author = {B\"{a}uerle, Alex and Cabrera, \'{A}ngel Alexander and Hohman, Fred and Maher, Megan and Koski, David and Suau, Xavier and Barik, Titus and Moritz, Dominik},
-#   title = {Symphony: Composing Interactive Interfaces for Machine Learning},
-#   year = {2022},
-#   isbn = {9781450391573},
-#   publisher = {Association for Computing Machinery},
-#   address = {New York, NY, USA},
-#   url = {https://doi.org/10.1145/3491102.3502102},
-#   doi = {10.1145/3491102.3502102},
-#   booktitle = {CHI Conference on Human Factors in Computing Systems},
-#   articleno = {210},
-#   numpages = {14},
-#   location = {New Orleans, LA, USA},
-#   series = {CHI '22}
-#   }
-# citation: 'https://dl.acm.org/doi/10.1145/3479569'
