@@ -126,10 +126,10 @@
 				<tr class="item">
 					<th class="date">Summer 2021</th>
 					<th>
-						<h5>Apple</h5>
+						<h5>Apple AI/ML</h5>
 						<h6>Research Intern</h6>
 						<p class="desc">
-							Design + Visualization Group, see <a href="/paper/symphony">Symphony</a>.
+							Modular machine learning interfaces, see <a href="/paper/symphony">Symphony</a>.
 						</p>
 						<div class="tags">
 							<a href="https://machinelearning.apple.com/">
@@ -147,12 +147,7 @@
 						<h5>Microsoft Research</h5>
 						<h6>Research Intern</h6>
 						<p class="desc">
-							Worked on behavioral model analysis with
-							<a href="https://www.microsoft.com/en-us/research/people/sdrucker/">
-								Steven Drucker
-							</a>
-							and
-							<a href="https://homes.cs.washington.edu/~marcotcr/"> Marco Tulio Ribeiro. </a>
+							Behavioral model analysis, see <a href="/paper/aiffinity">AIFinnity</a>.
 						</p>
 						<div class="tags">
 							<a href="https://www.microsoft.com/en-us/research/group/vida/">
@@ -218,7 +213,7 @@
 					</th>
 				</tr>
 				<tr class="item">
-					<th class="date">2019 - Present</th>
+					<th class="date">2019 - 2022</th>
 					<th>
 						<h5>National Science Foundation Graduate Research Fellowship (NSF GRFP)</h5>
 						<p class="desc">
@@ -452,6 +447,39 @@
 					</th>
 				</tr>
 				<tr class="item" /><tr class="item">
+					<th class="date">Summer 2022 - Present</th>
+					<th>
+						<h5 class="press">
+							<a href="https://ericafu.me/">Erica Fu</a>
+						</h5>
+						<h6>B.S. in Information Systems, Carnegie Mellon</h6>
+						<p class="desc">UX design for an ML evaluation platform.</p>
+					</th>
+				</tr>
+				<br />
+				<tr class="item" /><tr class="item">
+					<th class="date">Summer 2022 - Present</th>
+					<th>
+						<h5 class="press">
+							<a href="https://www.linkedin.com/in/kan-sun/">Kan Sun</a>
+						</h5>
+						<h6>B.S. in Math, Carnegie Mellon.</h6>
+						<p class="desc">Algorithmic discovery of ML errors.</p>
+					</th>
+				</tr>
+				<br />
+				<tr class="item" /><tr class="item">
+					<th class="date">Summer 2022 - Present</th>
+					<th>
+						<h5 class="press">
+							<a href="https://www.donnybertucci.com/">Donny Bertucci</a>
+						</h5>
+						<h6>B.S. in Computer Science, Oregon State University. REU at Carnegie Mellon</h6>
+						<p class="desc">Interactive model debugging.</p>
+					</th>
+				</tr>
+				<br />
+				<tr class="item" /><tr class="item">
 					<th class="date">Fall 2021 <br /> - Present</th>
 					<th>
 						<h5 class="press">
@@ -545,6 +573,14 @@
 					</th>
 				</tr>
 				<tr>
+					<th class="date">2021 - 2022</th>
+					<th>
+						<h5 class="single">
+							ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)
+						</h5>
+					</th>
+				</tr>
+				<tr>
 					<th class="date">2020 - 2022</th>
 					<th>
 						<h5 class="single">IEEE Visualization (VIS)</h5>
@@ -572,14 +608,6 @@
 					<th class="date">2019 - 2021</th>
 					<th>
 						<h5 class="single">IEEE Transactions on Visualization and Computer Graphics (TVCG)</h5>
-					</th>
-				</tr>
-				<tr>
-					<th class="date">2021</th>
-					<th>
-						<h5 class="single">
-							ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)
-						</h5>
 					</th>
 				</tr>
 				<tr>
