@@ -78,7 +78,7 @@
 				<tr class="item">
 					<th class="date">2019 - Present</th>
 					<th>
-						<h5>PhD in Human-Computer Interaction (HCI)</h5>
+						<h5>Ph.D. in Human-Computer Interaction (HCI)</h5>
 						<h6>Carnegie Mellon University</h6>
 						<p class="desc">
 							Advised by
@@ -94,6 +94,14 @@
 								</button>
 							</a>
 						</div>
+					</th>
+				</tr>
+				<tr class="buffer" />
+				<tr class="item">
+					<th class="date">2022</th>
+					<th>
+						<h5>M.S. in Human-Computer Interaction</h5>
+						<h6>Carnegie Mellon University</h6>
 					</th>
 				</tr>
 				<tr class="buffer" />
@@ -405,9 +413,21 @@
 					</th>
 				</tr>
 				<tr class="item">
+					<th class="date">Fall 2022</th>
+					<th>
+						<a class="paper-title" href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/">
+							<h5>05-431/631 Software Structures for User Interfaces (SSUI)</h5>
+						</a>
+						<h6>Graduate Teaching Assistant @ Carnegie Mellon</h6>
+					</th>
+				</tr>
+				<tr class="buffer" />
+				<tr class="item">
 					<th class="date">Fall 2021</th>
 					<th>
-						<h5>05499:C - Data Visualization</h5>
+						<a class="paper-title" href="https://dig.cmu.edu/courses/2021-fall-datavis.html">
+							<h5>05-499:C - Data Visualization</h5>
+						</a>
 						<h6>Graduate Teaching Assistant @ Carnegie Mellon</h6>
 						<p class="desc">
 							Taught a D3 course and led an ethics workshop in addition to grading and course
@@ -651,7 +671,7 @@
 				<tr>
 					<th class="date">2020 - 2021</th>
 					<th>
-						<h5 class="single">PhD student faculty representative</h5>
+						<h5 class="single">Ph.D. student faculty representative</h5>
 					</th>
 				</tr>
 				<!-- PRESS -->
@@ -1027,7 +1047,7 @@
 					</th>
 				</tr>
 				<tr class="item">
-					<th class="date">PhD</th>
+					<th class="date">Ph.D.</th>
 					<th>
 						<a href="https://yonatanbisk.com/teaching/mmml-s22/">
 							<h5 class="single">MultiModal Machine Learning</h5>
