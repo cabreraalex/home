@@ -8,7 +8,7 @@
 		'confusion',
 		'fairvis'
 	];
-	const otherFeat = ['publics', 'subgroup-gen', 'interactive-classification'];
+	const otherFeat = ['spotcheck', 'publics', 'subgroup-gen', 'interactive-classification'];
 
 	import yaml from 'js-yaml';
 
