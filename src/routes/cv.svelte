@@ -576,6 +576,14 @@
 				<tr>
 					<th class="date">2022</th>
 					<th>
+						<h5 class="single">
+							PC, Workshop on Visualization for AI Explainability (VISxAI) at IEEE VIS
+						</h5>
+					</th>
+				</tr>
+				<tr>
+					<th class="date">2022</th>
+					<th>
 						<h5 class="single">PC, ACM Fairness, Accountability, and Transparency (FAccT)</h5>
 					</th>
 				</tr>
@@ -603,7 +611,7 @@
 				<tr>
 					<th class="date">2020 - 2022</th>
 					<th>
-						<h5 class="single">IEEE Visualization (VIS)</h5>
+						<h5 class="single">IEEE VIS</h5>
 					</th>
 				</tr>
 				<tr>
@@ -646,7 +654,7 @@
 				<tr>
 					<th class="date">2019</th>
 					<th>
-						<h5 class="single">IEEE Visualization (VIS)</h5>
+						<h5 class="single">IEEE VIS</h5>
 					</th>
 				</tr>
 				<tr>
