@@ -285,15 +285,6 @@
 						<p class="desc">
 							Placed third and won $2,500 for creating a ML system to predict dangerous road areas.
 						</p>
-						<div class="tags">
-							<a
-								href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems"
-							>
-								<button class="entry-link">
-									<i class="far fa-newspaper" /> Press Release
-								</button>
-							</a>
-						</div>
 					</th>
 				</tr>
 				<!-- RESEARCH -->
@@ -419,6 +410,7 @@
 							<h5>05-431/631 Software Structures for User Interfaces (SSUI)</h5>
 						</a>
 						<h6>Graduate Teaching Assistant @ Carnegie Mellon</h6>
+						<p class="desc">Teach weekly lab sections, grade tests and homeworks.</p>
 					</th>
 				</tr>
 				<tr class="buffer" />
@@ -442,8 +434,7 @@
 						<h5>CS1332 - Data Structures and Algorithms</h5>
 						<h6>Undergraduate Teaching Assistant @ Georgia Tech</h6>
 						<p class="desc">
-							Taught a 1 1/2 hour weekly recitation, graded tests and homework, and helped create
-							assignments.
+							Taught a weekly recitation, graded tests and homework, and helped create assignments.
 						</p>
 					</th>
 				</tr>
@@ -469,7 +460,7 @@
 				<tr class="item" /><tr class="item">
 					<th class="date">Summer 2022 - Present</th>
 					<th>
-						<h5 class="press">
+						<h5>
 							<a href="https://ericafu.me/">Erica Fu</a>
 						</h5>
 						<h6>B.S. in Information Systems, Carnegie Mellon</h6>
@@ -480,7 +471,7 @@
 				<tr class="item" /><tr class="item">
 					<th class="date">Summer 2022 - Present</th>
 					<th>
-						<h5 class="press">
+						<h5>
 							<a href="https://www.linkedin.com/in/kan-sun/">Kan Sun</a>
 						</h5>
 						<h6>B.S. in Math, Carnegie Mellon.</h6>
@@ -491,7 +482,7 @@
 				<tr class="item" /><tr class="item">
 					<th class="date">Summer 2022 - Present</th>
 					<th>
-						<h5 class="press">
+						<h5>
 							<a href="https://www.donnybertucci.com/">Donny Bertucci</a>
 						</h5>
 						<h6>B.S. in Computer Science, Oregon State University. REU at Carnegie Mellon</h6>
@@ -500,24 +491,24 @@
 				</tr>
 				<br />
 				<tr class="item" /><tr class="item">
-					<th class="date">Fall 2021 <br /> - Present</th>
-					<th>
-						<h5 class="press">
-							<a href="https://www.linkedin.com/in/epguo/">Emily Guo</a>
-						</h5>
-						<h6>B.S. in Statistics and Machine Learning, Carnegie Mellon</h6>
-						<p class="desc">Improving human-AI interaction with descriptions of model behavior.</p>
-					</th>
-				</tr>
-				<br />
-				<tr class="item" /><tr class="item">
 					<th class="date">Spring 2021 <br /> - Present</th>
 					<th>
-						<h5 class="press"><a href="https://kazijawad.com/">Kazi Jawad</a></h5>
+						<h5><a href="https://kazijawad.com/">Kazi Jawad</a></h5>
 						<h6>B.S. in Statistics and Machine Learning, Carnegie Mellon</h6>
 						<p class="desc">
 							Interactive exploration and debugging of image classification models.
 						</p>
+					</th>
+				</tr>
+				<br />
+				<tr class="item" /><tr class="item">
+					<th class="date">Fall 2021 <br /> - Spring 2022</th>
+					<th>
+						<h5>
+							<a href="https://www.linkedin.com/in/epguo/">Emily Guo</a>
+						</h5>
+						<h6>B.S. in Statistics and Machine Learning, Carnegie Mellon</h6>
+						<p class="desc">Improving human-AI interaction with descriptions of model behavior.</p>
 					</th>
 				</tr>
 				<br />
@@ -595,17 +586,17 @@
 					</th>
 				</tr>
 				<tr>
-					<th class="date">2021 - 2022</th>
+					<th class="date">2021 - 2023</th>
 					<th>
-						<h5 class="single">ACM Conference on Human Factors in Computing Systems (CHI)</h5>
+						<h5 class="single">
+							ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)
+						</h5>
 					</th>
 				</tr>
 				<tr>
 					<th class="date">2021 - 2022</th>
 					<th>
-						<h5 class="single">
-							ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)
-						</h5>
+						<h5 class="single">ACM Conference on Human Factors in Computing Systems (CHI)</h5>
 					</th>
 				</tr>
 				<tr>
@@ -692,7 +683,7 @@
 				<tr>
 					<th class="date">2021</th>
 					<th>
-						<h5 class="single press">
+						<h5 class="single">
 							<a href="https://youtu.be/fnr9XWvjJHw?t=1082">
 								"Data Science Widgets with Svelte and Jupyter"
 							</a>
@@ -704,7 +695,7 @@
 				<tr>
 					<th class="date">2020</th>
 					<th>
-						<h5 class="single press">
+						<h5 class="single">
 							<a
 								href="https://www.cnn.com/us/live-news/us-coronavirus-update-04-23-20/h_473c68f3d0cea263896b85e12aec7d13"
 							>
@@ -719,7 +710,7 @@
 				<tr>
 					<th class="date">2020</th>
 					<th>
-						<h5 class="single press">
+						<h5 class="single">
 							<a
 								href="https://www.wired.com/story/survey-data-facebook-google-map-covid-19-carnegie-mellon/"
 							>
@@ -733,7 +724,7 @@
 				<tr>
 					<th class="date">2020</th>
 					<th>
-						<h5 class="single press">
+						<h5 class="single">
 							<a
 								href="https://www.cmu.edu/news/stories/archives/2020/april/cmu-unveils-covidcast-maps.html"
 							>
@@ -747,7 +738,7 @@
 				<tr>
 					<th class="date">2020</th>
 					<th>
-						<h5 class="single press">
+						<h5 class="single">
 							<a
 								href="https://datastori.es/156-fairness-in-machine-learning-with-yongsu-ahn-and-alex-cabrera/"
 							>
@@ -761,7 +752,7 @@
 				<tr>
 					<th class="date">2019</th>
 					<th>
-						<h5 class="single press">
+						<h5 class="single">
 							<a
 								href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship"
 							>
@@ -775,7 +766,7 @@
 				<tr>
 					<th class="date">2019</th>
 					<th>
-						<h5 class="single press">
+						<h5 class="single">
 							<a
 								href="https://www.news.gatech.edu/2019/06/25/georgia-tech-satellite-successfully-launched-space"
 							>
@@ -789,7 +780,7 @@
 				<tr>
 					<th class="date">2018</th>
 					<th>
-						<h5 class="single press">
+						<h5 class="single">
 							<a
 								href="https://www.cc.gatech.edu/news/602004/datathon-challenges-students-create-solutions-real-world-problems"
 							>
@@ -1057,31 +1048,36 @@
 				<tr class="item">
 					<th class="date">Ph.D.</th>
 					<th>
-						<a href="https://yonatanbisk.com/teaching/mmml-s22/">
-							<h5 class="single">MultiModal Machine Learning</h5>
-						</a>
+						<h5 class="single">
+							<a href="https://yonatanbisk.com/teaching/mmml-s22/"> MultiModal Machine Learning </a>
+						</h5>
 						<h5 class="single">Causality and Machine Learning</h5>
 						<h5 class="single">Human Judgement and Decision Making</h5>
-						<a href="https://www.hcii.cmu.edu/courses/applied-research-methods">
-							<h5 class="single">Applied Research Methods</h5>
-						</a>
+						<h5 class="single">
+							<a href="https://www.hcii.cmu.edu/courses/applied-research-methods">
+								Applied Research Methods
+							</a>
+						</h5>
 					</th>
 				</tr>
 				<tr class="item">
 					<th class="date">B.S.</th>
 					<th>
-						<a href="https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/">
-							<h5 class="single">Deep Learning</h5>
-						</a>
-						<a href="http://poloclub.gatech.edu/cse6242/2018spring">
-							<h5 class="single">Data and Visual Analytics</h5>
-						</a>
-						<a href="https://www.omscs.gatech.edu/cs-7641-machine-learning">
-							<h5 class="single">Machine Learning</h5>
-						</a>
-						<a href="http://cx4230.gatech.edu/sp17/">
-							<h5 class="single">Computer Simulation</h5>
-						</a>
+						<h5 class="single">
+							<a href="https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/"> Deep Learning </a>
+						</h5>
+						<h5 class="single">
+							<a href="http://poloclub.gatech.edu/cse6242/2018spring">
+								Data and Visual Analytics
+							</a>
+						</h5>
+
+						<h5 class="single">
+							<a href="https://www.omscs.gatech.edu/cs-7641-machine-learning"> Machine Learning </a>
+						</h5>
+						<h5 class="single">
+							<a href="http://cx4230.gatech.edu/sp17/"> Computer Simulation </a>
+						</h5>
 						<h5 class="single">Honors Algorithms</h5>
 					</th>
 				</tr>
@@ -1176,11 +1172,19 @@
 		font-weight: 400;
 	}
 
+	h5 a {
+		color: black;
+	}
+	h5 a:hover {
+		color: var(--secondary);
+	}
+
 	h5 {
 		margin: 0px;
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 22px;
+		color: black;
 	}
 
 	h6 {
@@ -1262,13 +1266,6 @@
 
 	.far {
 		margin-right: 4px;
-	}
-	.press a {
-		color: black;
-	}
-
-	.press a:hover {
-		color: var(--primary);
 	}
 
 	:global(.me-author-cv) {
