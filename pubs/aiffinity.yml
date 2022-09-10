@@ -26,7 +26,7 @@ abstract: >-
   To evaluate the framework, we show how existing AI analysis tools fit into this sensemaking process and use it to design AIFinnity, a system for analyzing image-and-text models. 
   Lastly, we explored how data scientists use a tool developed with the framework through a think-aloud study with 10 data scientists tasked with using AIFinnity to pick an image captioning model.
   We found that AIFinnity's sensemaking workflow reflected participants' mental processes and enabled them to discover and validate diverse AI behaviors.
-pdf: 'https://dl.acm.org/doi/pdf/10.1145/3542921'
+pdf: '/aiffinity.pdf'
 citation: 'https://dl.acm.org/doi/10.1145/3542921'
 bibtex: >-
   @article{cabrera2022aiffinity,
