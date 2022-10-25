@@ -5,7 +5,7 @@
 <div id="sidebar" class="pure-u-1 pure-u-md-1-4">
 	<div id="padded-sidebar">
 		<a href="/">
-			<img width="170px" src="images/profile.jpg" alt="profile" />
+			<img width="180px" src="images/profile.png" alt="profile" />
 		</a>
 		<h1 id="name">
 			<span class="color">Ángel&nbsp;</span>
@@ -38,5 +38,9 @@
 		#padded-sidebar {
 			text-align: center;
 		}
+	}
+	img {
+		border-radius: 3px;
+		margin-top: 8px;
 	}
 </style>

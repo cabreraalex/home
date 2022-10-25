@@ -677,19 +677,7 @@
 				<tr>
 					<th class="date" />
 					<th>
-						<h4 class="header">Press & Talks</h4>
-					</th>
-				</tr>
-				<tr>
-					<th class="date">2021</th>
-					<th>
-						<h5 class="single">
-							<a href="https://youtu.be/fnr9XWvjJHw?t=1082">
-								"Data Science Widgets with Svelte and Jupyter"
-							</a>
-							-
-							<i>Svelte Summit 2021</i>
-						</h5>
+						<h4 class="header">Press</h4>
 					</th>
 				</tr>
 				<tr>
@@ -791,6 +779,24 @@
 						</h5>
 					</th>
 				</tr>
+				<!-- <tr>
+					<th class="date" />
+					<th>
+						<h4 class="header">Talks</h4>
+					</th>
+				</tr>
+				<tr>
+					<th class="date">2021</th>
+					<th>
+						<h5 class="single">
+							<a href="https://youtu.be/fnr9XWvjJHw?t=1082">
+								"Data Science Widgets with Svelte and Jupyter"
+							</a>
+							-
+							<i>Svelte Summit 2021</i>
+						</h5>
+					</th>
+				</tr> -->
 				<!-- PROJECTS -->
 				<tr>
 					<th class="date" />
