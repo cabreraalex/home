@@ -1,20 +1,8 @@
-<script context="module">
-	import yaml from 'js-yaml';
-
-	export async function load({ params, fetch }) {
-		const pub = await fetch('/pubs/' + params.slug + '.yml')
-			.then((r) => r.text())
-			.then((d) => yaml.load(d));
-		return {
-			props: { pub }
-		};
-	}
-</script>
-
 <script>
 	import Footer from '$lib/Footer.svelte';
 	import Links from '$lib/Links.svelte';
-	export let pub;
+
+	export let data;
 </script>
 
 <div id="body">
@@ -28,23 +16,23 @@
 		</h4>
 	</a>
 	<hr />
-	<h1>{pub.title}</h1>
+	<h1>{data.pub.title}</h1>
 	<div id="info">
 		<h3>
-			{@html pub.authors
+			{@html data.pub.authors
 				.map(
 					(p) =>
 						`<a class='${p.name.includes('Ángel Alexander Cabrera') ? 'me' : 'author'}' href='${
-							p.website
+							p.website ? p.website : ''
 						}'>${p.name}</a>`
 				)
 				.join(', ')}
 		</h3>
 	</div>
 	<div id="preview">
-		<img src={'/images/' + pub.teaser} class="teaser" alt="teaser" />
+		<img src={'/images/' + data.pub.teaser} class="teaser" alt="teaser" />
 		<p class="desc">
-			{pub.abstract}
+			{data.pub.abstract}
 		</p>
 	</div>
 
@@ -52,12 +40,12 @@
 	<p>{pub.abstract}</p> -->
 
 	<h2 class="sec-title">Citation</h2>
-	<a href={'/paper/' + pub.id} class="paper-title">
-		<h4>{pub.title}</h4>
+	<a href={'/paper/' + data.pub.id} class="paper-title">
+		<h4>{data.pub.title}</h4>
 	</a>
 
 	<h5>
-		{@html pub.authors
+		{@html data.pub.authors
 			.map(
 				(p) =>
 					`<a class='${p.name.includes('Ángel Alexander Cabrera') ? 'me' : ''}' href='${
@@ -68,13 +56,13 @@
 	</h5>
 
 	<h5>
-		<i>{pub.venuelong}. {pub.location ? pub.location + ',' : ''} {pub.year}.</i>
+		<i>{data.pub.venuelong}. {data.pub.location ? data.pub.location + ',' : ''} {data.pub.year}.</i>
 	</h5>
 
-	<Links {pub} />
+	<Links pub={data.pub} />
 	<h2 class="sec-title">BibTex</h2>
 	<div class="code">
-		<code class="bibtex">{pub.bibtex}</code>
+		<code class="bibtex">{data.pub.bibtex}</code>
 	</div>
 	<Footer />
 </div>
