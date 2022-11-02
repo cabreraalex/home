@@ -350,6 +350,97 @@
 				</tr>
 				<tr class="buffer" />
 			{/each}
+			<!-- TALKS -->
+			<tr>
+				<th class="date" />
+				<th>
+					<h4 class="header">Talks</h4>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">November 2022</th>
+				<th>
+					<h5 class="single">
+						"Designing Large Web Applications" -
+						<i>CMU 05-431/631 Software Structures for User Interfaces (SSUI)</i>
+					</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">November 2022</th>
+				<th>
+					<h5 class="single">
+						<a href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/SSUI-17-other-toolkits.pdf"
+							>"Modern Web Frameworks"</a
+						>
+						-
+						<i>CMU 05-431/631 Software Structures for User Interfaces (SSUI)</i>
+					</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">October 2022</th>
+				<th>
+					<h5 class="single">
+						"Evaluating Machine Learning" -
+						<i>CMU 05-618/318: Human-AI Interaction</i>
+					</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">October 2022</th>
+				<th>
+					<h5 class="single">
+						<a href="https://drive.google.com/file/d/17RzfAFBfxyqwkLTMPCBd8YFPLE55VxVN/view"
+							>"Evaluating Machine Learning"
+						</a>
+						-
+						<i>CMU 10-605/805: ML with Large Datasets</i>
+					</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">September 2022</th>
+				<th>
+					<h5 class="single">
+						"Visualization and Machine Learning" -
+						<i>CMU 17-428/728: ML and Sensing</i>
+					</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">September 2021</th>
+				<th>
+					<h5 class="single">
+						"Ethics in Data Visualization" -
+						<i>CMU 05-899: Data Visualization</i>
+					</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">September 2021</th>
+				<th>
+					<h5 class="single">
+						<a href="https://drive.google.com/file/d/1jNoZoP0JV94Agc97yANifrT4gE4u1qfL/edit"
+							>"D3 Deep Dive"
+						</a>
+						-
+						<i>CMU 05-899: Data Visualization</i>
+					</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">April 2021</th>
+				<th>
+					<h5 class="single">
+						<a href="https://youtu.be/fnr9XWvjJHw?t=1082">
+							"Data Science Widgets with Svelte and Jupyter"
+						</a>
+						-
+						<i>Svelte Summit 2021</i>
+					</h5>
+				</th>
+			</tr>
 			<!-- TEACHING -->
 			<tr>
 				<th class="date" />
@@ -731,24 +822,6 @@
 					</h5>
 				</th>
 			</tr>
-			<!-- <tr>
-					<th class="date" />
-					<th>
-						<h4 class="header">Talks</h4>
-					</th>
-				</tr>
-				<tr>
-					<th class="date">2021</th>
-					<th>
-						<h5 class="single">
-							<a href="https://youtu.be/fnr9XWvjJHw?t=1082">
-								"Data Science Widgets with Svelte and Jupyter"
-							</a>
-							-
-							<i>Svelte Summit 2021</i>
-						</h5>
-					</th>
-				</tr> -->
 			<!-- PROJECTS -->
 			<tr>
 				<th class="date" />
