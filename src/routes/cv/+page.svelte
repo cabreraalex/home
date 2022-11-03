@@ -361,7 +361,10 @@
 				<th class="date">November 2022</th>
 				<th>
 					<h5 class="single">
-						"Designing Large Web Applications" -
+						<a href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/SSUI-18-large-apps.pdf"
+							>"Designing Large Web Applications"
+						</a>
+						-
 						<i>CMU 05-431/631 Software Structures for User Interfaces (SSUI)</i>
 					</h5>
 				</th>
