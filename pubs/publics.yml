@@ -19,7 +19,7 @@ authors:
     website: 'https://cabreraalex.com'
   - name: Adam Perer
     website: 'http://perer.org'
-  - name: Jason Hong
+  - name: Jason I. Hong
     website: 'http://www.cs.cmu.edu/~jasonh/'
 bibtex: >-
   @article{hong2020publics, title={"Public(s)-in-the-Loop": Facilitating
