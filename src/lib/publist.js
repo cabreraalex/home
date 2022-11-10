@@ -1,4 +1,5 @@
 export const PUBS = [
+	'behavior',
 	'aiffinity',
 	'symphony',
 	'covidcast',
