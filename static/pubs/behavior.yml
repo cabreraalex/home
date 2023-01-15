@@ -18,10 +18,13 @@ authors:
   - name: Jason I. Hong
     website: 'http://www.cs.cmu.edu/~jasonh/'
 pdf: 'https://cabreraalex.com/behavior.pdf'
+url: 'https://doi.org/10.1145/3579612'
+doi: '10.1145/3579612'
+citation: 'https://dl.acm.org/doi/10.1145/3579612'
 bibtex: >-
   @article{cabrera2023behavior,author = {Cabrera, '{A}ngel Alexander and Perer, Adam and Hong, Jason I.},title = {Improving Human-AI Collaboration with Descriptions of AI Behavior},year =
   {2023},issue_date = {October 2023},publisher = {Association for Computing
   Machinery},address = {New York, NY, USA},journal = {Proc.
-  ACM Hum.-Comput. Interact.},month = oct}
+  ACM Hum.-Comput. Interact.},month = oct,doi={10.1145/3579612},url={https://doi.org/10.1145/3579612}}
 
 # citation: 'https://dl.acm.org/doi/10.1145/3479569'

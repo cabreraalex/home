@@ -634,15 +634,15 @@
 			<tr>
 				<th class="date">2021 - 2023</th>
 				<th>
-					<h5 class="single">
-						ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)
-					</h5>
+					<h5 class="single">ACM Conference on Human Factors in Computing Systems (CHI)</h5>
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2021 - 2022</th>
+				<th class="date">2021 - 2023</th>
 				<th>
-					<h5 class="single">ACM Conference on Human Factors in Computing Systems (CHI)</h5>
+					<h5 class="single">
+						ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)
+					</h5>
 				</th>
 			</tr>
 			<tr>

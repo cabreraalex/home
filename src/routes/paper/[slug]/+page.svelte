@@ -60,10 +60,12 @@
 	</h5>
 
 	<Links pub={data.pub} />
-	<h2 class="sec-title">BibTex</h2>
-	<div class="code">
-		<code class="bibtex">{data.pub.bibtex}</code>
-	</div>
+	{#if data.pub.bibtex}
+		<h2 class="sec-title">BibTex</h2>
+		<div class="code">
+			<code class="bibtex">{data.pub.bibtex}</code>
+		</div>
+	{/if}
 	<Footer />
 </div>
 

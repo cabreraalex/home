@@ -1,0 +1,32 @@
+title: 'Zeno: An Interactive Framework for Behavioral Evaluation of Machine Learning'
+id: zeno
+teaser: zeno.png
+venue: CHI'23
+venuelong: >-
+  ACM Conference on Conference on Human Factors in Computing Systems
+  (CHI)
+year: '2023'
+month: May
+location: Hamburg, Germany
+authors:
+  - name: Ángel Alexander Cabrera
+    website: 'https://cabreraalex.com'
+  - name: Erica Fu
+    website: https://ericafu.me/
+  - name: Donald Bertucci
+    website: https://www.donnybertucci.com/
+  - name: Kenneth Holstein
+    website: https://www.thecoalalab.com/kenholstein
+  - name: Ameet Talwalkar
+    website: https://www.cs.cmu.edu/~atalwalk/
+  - name: Jason I. Hong
+    website: 'http://www.cs.cmu.edu/~jasonh/'
+  - name: Adam Perer
+    website: 'http://perer.org'
+abstract: >-
+  Machine learning models with high accuracy on test data can still produce systematic failures, such as harmful biases and safety issues, when deployed in the real world.
+  To detect and mitigate such failures, practitioners run behavioral evaluation of their models, checking model outputs for specific types of inputs.
+  Behavioral evaluation is important but challenging, requiring practitioners to discover real-world patterns and validate systematic failures. 
+  We conducted 18 semi-structured interviews with ML practitioners to better understand the challenges of behavioral evaluation and found that it is a collaborative, use-case-first process that is not adequately supported by existing task- and domain-specific tools.
+  Using these findings, we designed Zeno, a general-purpose framework for visualizing and testing AI systems across diverse use cases.
+  In four case studies with participants using Zeno on real-world models, we found that practitioners were able to reproduce previous manual analyses and discover new systematic failures.
