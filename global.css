@@ -214,7 +214,7 @@ hr {
 
 .thumb {
 	height: 100%;
-	min-height: 125px;
+	min-height: 100px;
 	margin-right: 20px;
 	background-size: cover;
 	background-position: top left;
@@ -222,7 +222,7 @@ hr {
 	transition-duration: 1.5s;
 	transition-timing-function: ease;
 	transition-delay: 0s;
-	border: 1px solid var(--light-black);
+	border: 1px solid rgba(0, 0, 0, 0.25);
 	border-radius: 2px;
 }
 
