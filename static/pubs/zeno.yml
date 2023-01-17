@@ -23,6 +23,8 @@ authors:
     website: 'http://www.cs.cmu.edu/~jasonh/'
   - name: Adam Perer
     website: 'http://perer.org'
+code: https://github.com/zeno-ml/zenoml.com
+demo: http://zenoml.com
 abstract: >-
   Machine learning models with high accuracy on test data can still produce systematic failures, such as harmful biases and safety issues, when deployed in the real world.
   To detect and mitigate such failures, practitioners run behavioral evaluation of their models, checking model outputs for specific types of inputs.

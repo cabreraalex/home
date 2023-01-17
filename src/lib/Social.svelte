@@ -19,11 +19,11 @@
 			<h3><i class="fab fa-medium-m" /> &nbsp;&nbsp;Blog</h3>
 		</a>
 	{/if}
-	<a href="https://github.com/cabreraalex">
-		<h3><i class="fab fa-github" /> &nbsp;&nbsp;GitHub</h3>
-	</a>
 	<a href="https://scholar.google.com/citations?user=r89SDm0AAAAJ&hl=en">
 		<h3><i class="fas fa-graduation-cap" /> &nbsp;Google Scholar</h3>
+	</a>
+	<a href="https://github.com/cabreraalex">
+		<h3><i class="fab fa-github" /> &nbsp;&nbsp;GitHub</h3>
 	</a>
 </div>
 

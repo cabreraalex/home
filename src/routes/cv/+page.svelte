@@ -33,8 +33,10 @@
 			<tr class="item">
 				<th class="date">2019 - Present</th>
 				<th>
-					<h5>Ph.D. in Human-Computer Interaction (HCI)</h5>
-					<h6>Carnegie Mellon University</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>Ph.D. in Human-Computer Interaction (HCI)</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Carnegie Mellon University</h6>
+					</div>
 					<p class="desc">
 						Advised by
 						<a href="http://perer.org">Adam Perer</a>
@@ -55,16 +57,20 @@
 			<tr class="item">
 				<th class="date">2022</th>
 				<th>
-					<h5>M.S. in Human-Computer Interaction</h5>
-					<h6>Carnegie Mellon University</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>M.S. in Human-Computer Interaction</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Carnegie Mellon University</h6>
+					</div>
 				</th>
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
 				<th class="date">2019</th>
 				<th>
-					<h5>B.S. in Computer Science</h5>
-					<h6>Georgia Institute of Technology</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>B.S. in Computer Science</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Georgia Institute of Technology</h6>
+					</div>
 					<p class="desc">
 						Concentration in intelligence and modeling/simulation.
 						<br />
@@ -89,8 +95,10 @@
 			<tr class="item">
 				<th class="date">Summer 2021</th>
 				<th>
-					<h5>Apple AI/ML</h5>
-					<h6>Research Intern</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>Apple AI/ML</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Research Intern</h6>
+					</div>
 					<p class="desc">
 						Modular machine learning interfaces, see <a href="/paper/symphony">Symphony</a>.
 					</p>
@@ -107,8 +115,10 @@
 			<tr class="item">
 				<th class="date">Summer 2020</th>
 				<th>
-					<h5>Microsoft Research</h5>
-					<h6>Research Intern</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>Microsoft Research</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Research Intern</h6>
+					</div>
 					<p class="desc">
 						Behavioral model analysis, see <a href="/paper/aiffinity">AIFinnity</a>.
 					</p>
@@ -125,11 +135,12 @@
 			<tr class="item">
 				<th class="date">Summer 2018</th>
 				<th>
-					<h5>Google</h5>
-					<h6>Software Engineering Intern</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>Google</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Software Engineering Intern</h6>
+					</div>
 					<p class="desc">
-						Researched and prototyped improvements for automated driver assistance systems and
-						hyperlocal weather prediction for the next generation of Android Auto.
+						Automated driver assistance and hyperlocal weather prediction for Android Auto.
 					</p>
 					<div class="tags">
 						<a
@@ -148,11 +159,12 @@
 			<tr class="item">
 				<th class="date">Summer 2017</th>
 				<th>
-					<h5>Google</h5>
-					<h6>Software Engineering Intern</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>Google</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Software Engineering Intern</h6>
+					</div>
 					<p class="desc">
-						Created an anomaly detection and trend analysis system for Google's data processing
-						pipelines.
+						Anomaly detection and regression analysis system for Google's data processing pipelines.
 					</p>
 				</th>
 			</tr>
@@ -160,10 +172,12 @@
 			<tr class="item">
 				<th class="date">Summer 2016</th>
 				<th>
-					<h5>Google</h5>
-					<h6>Engineering Practicum Intern</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>Google</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Engineering Practicum Intern</h6>
+					</div>
 					<p class="desc">
-						Built an analytics platform for monitoring and catching erroneous edits to Google Maps.
+						Analytics platform for monitoring and detecting erroneous edits to Google Maps.
 					</p>
 				</th>
 			</tr>
@@ -215,8 +229,12 @@
 			<tr class="item">
 				<th class="date">2015 - 2019</th>
 				<th>
-					<h5>Stamps President's Scholar</h5>
-					<h6>Georgia Tech and the Stamps Family Charitable Foundation</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>Stamps President's Scholar</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							Georgia Tech and the Stamps Family Charitable Foundation
+						</h6>
+					</div>
 					<p class="desc">
 						Full ride scholarship with $15,000 in extracurricular funding awarded to 10 incoming
 						students.
@@ -234,8 +252,12 @@
 			<tr class="item">
 				<th class="date">2018</th>
 				<th>
-					<h5>The Data Open Datathon</h5>
-					<h6>Correlation One and Citadel Securities</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>The Data Open Datathon</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							Correlation One and Citadel Securities
+						</h6>
+					</div>
 					<p class="desc">
 						Placed third and won $2,500 for creating a ML system to predict dangerous road areas.
 					</p>
@@ -454,10 +476,14 @@
 			<tr class="item">
 				<th class="date">Fall 2022</th>
 				<th>
-					<a class="paper-title" href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/">
-						<h5>05-431/631 Software Structures for User Interfaces (SSUI)</h5>
-					</a>
-					<h6>Graduate Teaching Assistant @ Carnegie Mellon</h6>
+					<div style="display: flex; align-items: center;">
+						<a class="paper-title" href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/">
+							<h5>05-431/631 Software Structures for User Interfaces (SSUI)</h5>
+						</a>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							Graduate Teaching Assistant @ Carnegie Mellon
+						</h6>
+					</div>
 					<p class="desc">Teach weekly lab sections, grade tests and homeworks.</p>
 				</th>
 			</tr>
@@ -465,10 +491,14 @@
 			<tr class="item">
 				<th class="date">Fall 2021</th>
 				<th>
-					<a class="paper-title" href="https://dig.cmu.edu/courses/2021-fall-datavis.html">
-						<h5>05-499:C - Data Visualization</h5>
-					</a>
-					<h6>Graduate Teaching Assistant @ Carnegie Mellon</h6>
+					<div style="display: flex; align-items: center;">
+						<a class="paper-title" href="https://dig.cmu.edu/courses/2021-fall-datavis.html">
+							<h5>05-499:C - Data Visualization</h5>
+						</a>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							Graduate Teaching Assistant @ Carnegie Mellon
+						</h6>
+					</div>
 					<p class="desc">
 						Taught a D3 course and led an ethics workshop in addition to grading and course
 						management.
@@ -477,10 +507,14 @@
 			</tr>
 			<tr class="buffer" />
 			<tr class="item">
-				<th class="date">Fall 2016 <br /> Spring 2017 <br /> Spring 2018</th>
+				<th class="date">2016 - 2018</th>
 				<th>
-					<h5>CS1332 - Data Structures and Algorithms</h5>
-					<h6>Undergraduate Teaching Assistant @ Georgia Tech</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>CS1332 - Data Structures and Algorithms</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							Undergraduate Teaching Assistant @ Georgia Tech
+						</h6>
+					</div>
 					<p class="desc">
 						Taught a weekly recitation, graded tests and homework, and helped create assignments.
 					</p>
@@ -490,8 +524,10 @@
 			<tr class="item">
 				<th class="date">Fall 2016</th>
 				<th>
-					<h5>GT 1000 - First-Year Seminar</h5>
-					<h6>Team Leader @ Georgia Tech</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>GT 1000 - First-Year Seminar</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Team Leader @ Georgia Tech</h6>
+					</div>
 					<p class="desc">
 						Designed a class curriculum for incoming first years and helped lead a weekly seminar
 						class.
@@ -506,43 +542,74 @@
 				</th>
 			</tr>
 			<tr class="item" /><tr class="item">
-				<th class="date">Summer 2022 - Present</th>
+				<th class="date">Fall 2022 - Present</th>
 				<th>
-					<h5>
-						<a href="https://ericafu.me/">Erica Fu</a>
-					</h5>
-					<h6>B.S. in Information Systems, Carnegie Mellon</h6>
-					<p class="desc">UX design for an ML evaluation platform.</p>
+					<div style="display: flex; align-items: center;">
+						<h5>
+							<a href="https://tianqi-wu.github.io/">Tianqi Wu</a>
+						</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							M.S. in Computer Science, Carnegie Mellon
+						</h6>
+					</div>
+					<p class="desc">Interactive error discovery for ML.</p>
 				</th>
 			</tr>
 			<br />
 			<tr class="item" /><tr class="item">
 				<th class="date">Summer 2022 - Present</th>
 				<th>
-					<h5>
-						<a href="https://www.linkedin.com/in/kan-sun/">Kan Sun</a>
-					</h5>
-					<h6>B.S. in Math, Carnegie Mellon.</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>
+							<a href="https://ericafu.me/">Erica Fu</a>
+						</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							B.S. in Information Systems, Carnegie Mellon
+						</h6>
+					</div>
+					<p class="desc">
+						UX design for an ML evaluation platform. See <a href="/paper/zeno">Zeno.</a>
+					</p>
+				</th>
+			</tr>
+			<br />
+			<tr class="item" /><tr class="item">
+				<th class="date">Summer 2022 - Present</th>
+				<th>
+					<div style="display: flex; align-items: center;">
+						<h5>
+							<a href="https://www.donnybertucci.com/">Donny Bertucci</a>
+						</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							B.S. in Computer Science, Oregon State University. REU at Carnegie Mellon
+						</h6>
+					</div>
+					<p class="desc">Interactive model debugging. See <a href="/paper/zeno">Zeno.</a></p>
+				</th>
+			</tr>
+			<br />
+			<tr class="item" /><tr class="item">
+				<th class="date">Summer 2022 - Present</th>
+				<th>
+					<div style="display: flex; align-items: center;">
+						<h5>
+							<a href="https://www.linkedin.com/in/kan-sun/">Kan Sun</a>
+						</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">B.S. in Math, Carnegie Mellon.</h6>
+					</div>
 					<p class="desc">Algorithmic discovery of ML errors.</p>
-				</th>
-			</tr>
-			<br />
-			<tr class="item" /><tr class="item">
-				<th class="date">Summer 2022 - Present</th>
-				<th>
-					<h5>
-						<a href="https://www.donnybertucci.com/">Donny Bertucci</a>
-					</h5>
-					<h6>B.S. in Computer Science, Oregon State University. REU at Carnegie Mellon</h6>
-					<p class="desc">Interactive model debugging.</p>
 				</th>
 			</tr>
 			<br />
 			<tr class="item" /><tr class="item">
 				<th class="date">Spring 2021 <br /> - Present</th>
 				<th>
-					<h5><a href="https://kazijawad.com/">Kazi Jawad</a></h5>
-					<h6>B.S. in Statistics and Machine Learning, Carnegie Mellon</h6>
+					<div style="display: flex; align-items: center;">
+						<h5><a href="https://kazijawad.com/">Kazi Jawad</a></h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							B.S. in Statistics and Machine Learning, Carnegie Mellon
+						</h6>
+					</div>
 					<p class="desc">Interactive exploration and debugging of image classification models.</p>
 				</th>
 			</tr>
@@ -550,10 +617,14 @@
 			<tr class="item" /><tr class="item">
 				<th class="date">Fall 2021 <br /> - Spring 2022</th>
 				<th>
-					<h5>
-						<a href="https://www.linkedin.com/in/epguo/">Emily Guo</a>
-					</h5>
-					<h6>B.S. in Statistics and Machine Learning, Carnegie Mellon</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>
+							<a href="https://www.linkedin.com/in/epguo/">Emily Guo</a>
+						</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							B.S. in Statistics and Machine Learning, Carnegie Mellon
+						</h6>
+					</div>
 					<p class="desc">Improving human-AI interaction with descriptions of model behavior.</p>
 				</th>
 			</tr>
@@ -561,11 +632,13 @@
 			<tr class="item">
 				<th class="date">Spring 2020 <br /> - Spring 2021</th>
 				<th>
-					<h5>Abraham Druck</h5>
-					<h6>
-						B.S. in Mathematical Sciences, Carnegie Mellon. Now: Technology Analyst at Morgan
-						Stanely
-					</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>Abraham Druck</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							B.S. in Mathematical Sciences, Carnegie Mellon. Now: Technology Analyst at Morgan
+							Stanely
+						</h6>
+					</div>
 					<p class="desc">
 						Crowdsourced discovery of ML failures for image captioning. See <a
 							href="https://cabreraalex.com/paper/deblinder">Deblinder.</a
@@ -594,7 +667,7 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2022</th>
+				<th class="date">2022 - 2023</th>
 				<th>
 					<h5 class="single">
 						AC, ACM Conference on Human Factors in Computing Systems (CHI) Late Breaking Work
@@ -954,8 +1027,12 @@
 			<tr class="item">
 				<th class="date">2015 - 2017</th>
 				<th>
-					<h5>PROX-1 Satellite</h5>
-					<h6>Flight Software Lead and Researcher</h6>
+					<div style="display: flex; align-items: center;">
+						<h5>PROX-1 Satellite</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							Flight Software Lead and Researcher
+						</h6>
+					</div>
 					<p class="desc">
 						Led a team of engineers in developing the software for a fully undergraduate-led
 						satellite mission.
