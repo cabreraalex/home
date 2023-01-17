@@ -54,7 +54,7 @@ abstract: >-
   discovering bias in machine learning, FairVis demonstrates how interactive
   visualization may help data scientists and the general public understand and
   create more equitable algorithmic systems.
-demo: 'https://poloclub.github.io/FairVis/'
+web: 'https://poloclub.github.io/FairVis/'
 code: 'https://github.com/poloclub/FairVis'
 blog: >-
   https://medium.com/@cabreraalex/fairvis-discovering-bias-in-machine-learning-using-visual-analytics-acbd362a3e2f

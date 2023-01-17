@@ -1059,7 +1059,7 @@
 				<th>
 					<h5>CTF Resources</h5>
 					<p class="desc">
-						Guide and resources for capture the flag (CTF) competitions with over 1.4k stars on
+						Guide and resources for capture the flag (CTF) competitions with over 1.6k stars on
 						GitHub.
 					</p>
 					<div class="tags">

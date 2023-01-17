@@ -19,6 +19,14 @@
 			</button>
 		</a>
 	{/if}
+	{#if pub.web}
+		<a href={pub.web}>
+			<button class="entry-link">
+				<i class="fas fa-globe" />
+				<p>Website</p>
+			</button>
+		</a>
+	{/if}
 	{#if pub.blog}
 		<a href={pub.blog}>
 			<button class="entry-link">
@@ -43,14 +51,6 @@
 			</button>
 		</a>
 	{/if}
-	{#if pub.demo}
-		<a href={pub.demo}>
-			<button class="entry-link">
-				<i class="fas fa-globe" />
-				<p>Demo</p>
-			</button>
-		</a>
-	{/if}
 	{#if pub.code}
 		<a href={pub.code}>
 			<button class="entry-link">
@@ -69,8 +69,8 @@
 	{/if}
 	<a href={'/paper/' + pub.id}>
 		<button class="entry-link">
-			<i class="fas fa-globe" />
-			<p>Website</p>
+			<i class="fas fa-info-circle" />
+			<p>Details</p>
 		</button>
 	</a>
 </div>

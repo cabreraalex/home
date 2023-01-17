@@ -61,4 +61,4 @@ bibtex: "@article{Reinhart2021,doi = {10.1073/pnas.2111452118},url =
   of the National Academy of Sciences}}"
 citation: 'https://www.pnas.org/doi/10.1073/pnas.2111452118'
 code: 'https://github.com/cmu-delphi/www-covidcast'
-demo: 'https://delphi.cmu.edu/covidcast/'
+web: 'https://delphi.cmu.edu/covidcast/'

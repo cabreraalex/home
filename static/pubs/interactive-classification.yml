@@ -33,8 +33,7 @@ abstract: >-
   image features using inpainting algorithms to obtain new classifications in
   real time. This system allows users to compare and contrast what image
   regions humans and machine learning models use for classification.
-website: 'http://fredhohman.com/papers/interactive-classification'
 pdf: 'https://arxiv.org/abs/1806.05660'
 video: 'https://www.youtube.com/watch?v=llub5GcOF6w'
-demo: 'https://cabreraalex.github.io/interactive-classification'
+web: 'https://cabreraalex.github.io/interactive-classification'
 code: 'https://github.com/poloclub/interactive-classification'
