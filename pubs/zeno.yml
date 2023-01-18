@@ -26,6 +26,22 @@ authors:
 code: https://github.com/zeno-ml/zeno
 web: http://zenoml.com
 pdf: /zeno.pdf
+citation: https://doi.org/10.1145/3544548.3581268
+bibtex: >-
+  @inproceedings{zeno,
+  author = {Cabrera, \'{A}ngel Alexander and Fu, Erica and Bertucci, Donald and Holstein, Kenneth and Talwalkar, Ameet and Hong, Jason I. and Perer, Adam},
+  title = {Zeno: An Interactive Framework for Behavioral Evaluation of Machine Learning},
+  year = {2023},
+  isbn = {978-1-4503-9421-5/23/04}
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3544548.3581268},
+  doi = {10.1145/3544548.3581268},
+  booktitle = {CHI Conference on Human Factors in Computing Systems},
+  numpages = {22},
+  location = {Hamburg, Germany},
+  series = {CHI '23}
+  }
 abstract: >-
   Machine learning models with high accuracy on test data can still produce systematic failures, such as harmful biases and safety issues, when deployed in the real world.
   To detect and mitigate such failures, practitioners run behavioral evaluation of their models, checking model outputs for specific types of inputs.
