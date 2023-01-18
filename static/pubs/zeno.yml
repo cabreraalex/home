@@ -23,7 +23,7 @@ authors:
     website: 'http://www.cs.cmu.edu/~jasonh/'
   - name: Adam Perer
     website: 'http://perer.org'
-code: https://github.com/zeno-ml/zenoml.com
+code: https://github.com/zeno-ml/zeno
 web: http://zenoml.com
 pdf: /zeno.pdf
 abstract: >-

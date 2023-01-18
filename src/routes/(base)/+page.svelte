@@ -72,7 +72,7 @@
 		<hr />
 		{#each data.other as pub}
 			<div class="pure-g pub">
-				<div class="thumb-box pure-u-1 pure-u-md-1-3">
+				<div class="thumb-box pure-u-1 pure-u-md-1-4">
 					<a href={'/paper/' + pub.id}>
 						<div
 							style="background-image: url({'images/' + pub.teaser})"
@@ -82,7 +82,7 @@
 					</a>
 					<p class="venue">{pub.venue}</p>
 				</div>
-				<div class="pure-u-1 pure-u-md-2-3">
+				<div class="pure-u-1 pure-u-md-3-4">
 					<div class="padded">
 						<a href={'/paper/' + pub.id}>
 							<h4 class="paper-title">{pub.title}</h4>
