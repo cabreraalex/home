@@ -675,6 +675,12 @@
 				</th>
 			</tr>
 			<tr>
+				<th class="date">2022 - 2023</th>
+				<th>
+					<h5 class="single">PC, ACM Fairness, Accountability, and Transparency (FAccT)</h5>
+				</th>
+			</tr>
+			<tr>
 				<th class="date">2022</th>
 				<th>
 					<h5 class="single">
@@ -689,12 +695,6 @@
 					<h5 class="single">
 						PC, Workshop on Visualization for AI Explainability (VISxAI) at IEEE VIS
 					</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2022</th>
-				<th>
-					<h5 class="single">PC, ACM Fairness, Accountability, and Transparency (FAccT)</h5>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -725,7 +725,7 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2022</th>
+				<th class="date">2022 - 2023</th>
 				<th>
 					<h5 class="single">ACM Fairness, Accountability, and Transparency (FAccT)</h5>
 				</th>
@@ -781,7 +781,7 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2022</th>
+				<th class="date">2022 - 2023</th>
 				<th>
 					<h5 class="single">REU application reviewer</h5>
 				</th>
@@ -905,6 +905,26 @@
 					<h4 class="header">Projects and Open Source</h4>
 				</th>
 			</tr>
+			<tr class="item">
+				<th class="date">2023</th>
+				<th>
+					<h5>Zeno</h5>
+					<p class="desc">An interactive ML evaluation framework for any data or model.</p>
+					<div class="tags">
+						<a href="https://zenoml.com/">
+							<button class="entry-link">
+								<i class="fas fa-globe" /> Website
+							</button>
+						</a>
+						<a href="https://github.com/zeno-ml/zeno">
+							<button class="entry-link">
+								<i class="fab fa-github" /> GitHub
+							</button>
+						</a>
+					</div>
+				</th>
+			</tr>
+			<tr class="buffer" />
 			<tr class="item">
 				<th class="date">2021</th>
 				<th>
@@ -1309,7 +1329,7 @@
 	}
 
 	.buffer {
-		height: 20px;
+		height: 10px;
 	}
 
 	.date {
@@ -1329,8 +1349,8 @@
 	}
 
 	.item {
-		margin-top: 10px;
-		margin-bottom: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
 	}
 
 	main {
