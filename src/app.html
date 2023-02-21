@@ -32,15 +32,15 @@
 	</head>
 	<body>
 		<div>%sveltekit.body%</div>
-		<!-- Panelbear -->
-		<script async src="https://cdn.panelbear.com/analytics.js?site=F1SD7mTQIuD"></script>
+		<!-- Cronitor RUM -->
+		<script async src="https://rum.cronitor.io/script.js"></script>
 		<script>
-			window.panelbear =
-				window.panelbear ||
+			window.cronitor =
+				window.cronitor ||
 				function () {
-					(window.panelbear.q = window.panelbear.q || []).push(arguments);
+					(window.cronitor.q = window.cronitor.q || []).push(arguments);
 				};
-			panelbear('config', { site: 'F1SD7mTQIuD' });
+			cronitor('config', { clientKey: 'fc3bd3b150ba04ebd0e73c00be9eff39' });
 		</script>
 	</body>
 </html>
