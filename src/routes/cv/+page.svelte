@@ -18,9 +18,6 @@
 						<span class="color">ander&nbsp;</span>
 						<span class="color red">Cabrera</span>
 					</h3>
-
-					<Intro />
-					<Social home={false} />
 				</th>
 			</tr>
 			<!-- EDUCATION -->
@@ -71,18 +68,12 @@
 						<h5>B.S. in Computer Science</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Georgia Institute of Technology</h6>
 					</div>
-					<p class="desc">
-						Concentration in intelligence and modeling/simulation.
-						<br />
-						Minor in economics.
-					</p>
 				</th>
 			</tr>
 			<tr class="item">
 				<th class="date">Fall 2017</th>
 				<th>
 					<h6>Sciences Po - Paris, France</h6>
-					<p class="desc">Exchange program with a focus on economics and political science.</p>
 				</th>
 			</tr>
 			<!-- INDUSTRY -->
@@ -99,9 +90,6 @@
 						<h5>Apple AI/ML</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Research Intern</h6>
 					</div>
-					<p class="desc">
-						Modular machine learning interfaces, see <a href="/paper/symphony">Symphony</a>.
-					</p>
 					<div class="tags">
 						<a href="https://machinelearning.apple.com/">
 							<button class="entry-link">
@@ -119,9 +107,6 @@
 						<h5>Microsoft Research</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Research Intern</h6>
 					</div>
-					<p class="desc">
-						Behavioral model analysis, see <a href="/paper/aiffinity">AIFinnity</a>.
-					</p>
 					<div class="tags">
 						<a href="https://www.microsoft.com/en-us/research/group/vida/">
 							<button class="entry-link">
@@ -139,9 +124,6 @@
 						<h5>Google</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Software Engineering Intern</h6>
 					</div>
-					<p class="desc">
-						Automated driver assistance and hyperlocal weather prediction for Android Auto.
-					</p>
 					<div class="tags">
 						<a
 							href="https://www.wsj.com/articles/google-to-partner-with-biggest-car-alliance-1537243260
@@ -163,9 +145,6 @@
 						<h5>Google</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Software Engineering Intern</h6>
 					</div>
-					<p class="desc">
-						Anomaly detection and regression analysis system for Google's data processing pipelines.
-					</p>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -176,9 +155,6 @@
 						<h5>Google</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Engineering Practicum Intern</h6>
 					</div>
-					<p class="desc">
-						Analytics platform for monitoring and detecting erroneous edits to Google Maps.
-					</p>
 				</th>
 			</tr>
 			<!-- AWARDS -->
@@ -248,7 +224,7 @@
 					</div>
 				</th>
 			</tr>
-			<tr class="buffer" />
+			<!-- <tr class="buffer" />
 			<tr class="item">
 				<th class="date">2018</th>
 				<th>
@@ -262,7 +238,7 @@
 						Placed third and won $2,500 for creating a ML system to predict dangerous road areas.
 					</p>
 				</th>
-			</tr>
+			</tr> -->
 			<!-- RESEARCH -->
 			<!-- <tr>
         <th class="date" />
@@ -310,7 +286,7 @@
 				<tr class="item">
 					<th class="date">[{data.pubs.length - i}]</th>
 					<th>
-						<a href={'/paper/' + pub.id} class="paper-title">
+						<a href={'https://cabreraalex.com/paper/' + pub.id} class="paper-title">
 							<h5>{pub.title}</h5>
 						</a>
 
@@ -331,8 +307,6 @@
 								{pub.year}.</i
 							>
 						</p>
-
-						<Links {pub} />
 					</th>
 				</tr>
 				<tr class="buffer" />
@@ -348,7 +322,7 @@
 				<tr class="item">
 					<th class="date">[{data.other.length - i}]</th>
 					<th>
-						<a href={'/paper/' + pub.id} class="paper-title">
+						<a href={'https://cabreraalex.com/paper/' + pub.id} class="paper-title">
 							<h5>{pub.title}</h5>
 						</a>
 
@@ -366,8 +340,6 @@
 						<p class="desc">
 							<i>{pub.venuelong}. {pub.location}, {pub.year}.</i>
 						</p>
-
-						<Links {pub} />
 					</th>
 				</tr>
 				<tr class="buffer" />
@@ -443,18 +415,6 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">September 2021</th>
-				<th>
-					<h5 class="single">
-						<a href="https://drive.google.com/file/d/1jNoZoP0JV94Agc97yANifrT4gE4u1qfL/edit"
-							>"D3 Deep Dive"
-						</a>
-						-
-						<i>CMU 05-899: Data Visualization</i>
-					</h5>
-				</th>
-			</tr>
-			<tr>
 				<th class="date">April 2021</th>
 				<th>
 					<h5 class="single">
@@ -478,13 +438,12 @@
 				<th>
 					<div style="display: flex; align-items: center;">
 						<a class="paper-title" href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/">
-							<h5>05-431/631 Software Structures for User Interfaces (SSUI)</h5>
+							<h5>05-431/631 - Software Structures for User Interfaces (SSUI)</h5>
 						</a>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">
 							Graduate Teaching Assistant @ Carnegie Mellon
 						</h6>
 					</div>
-					<p class="desc">Teach weekly lab sections, grade tests and homeworks.</p>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -499,10 +458,6 @@
 							Graduate Teaching Assistant @ Carnegie Mellon
 						</h6>
 					</div>
-					<p class="desc">
-						Taught a D3 course and led an ethics workshop in addition to grading and course
-						management.
-					</p>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -515,27 +470,10 @@
 							Undergraduate Teaching Assistant @ Georgia Tech
 						</h6>
 					</div>
-					<p class="desc">
-						Taught a weekly recitation, graded tests and homework, and helped create assignments.
-					</p>
-				</th>
-			</tr>
-			<tr class="buffer" />
-			<tr class="item">
-				<th class="date">Fall 2016</th>
-				<th>
-					<div style="display: flex; align-items: center;">
-						<h5>GT 1000 - First-Year Seminar</h5>
-						<h6 style="margin-bottom: 0px; margin-left: 10px">Team Leader @ Georgia Tech</h6>
-					</div>
-					<p class="desc">
-						Designed a class curriculum for incoming first years and helped lead a weekly seminar
-						class.
-					</p>
 				</th>
 			</tr>
 			<!-- MENTORING -->
-			<tr>
+			<!-- <tr>
 				<th class="date" />
 				<th>
 					<h4 class="header">Mentoring</h4>
@@ -652,7 +590,7 @@
 				<th>
 					<h5>CMU AI Mentoring Program</h5>
 				</th>
-			</tr>
+			</tr> -->
 			<!-- SERVICE -->
 			<tr>
 				<th class="date" />
@@ -670,14 +608,16 @@
 				<th class="date">2022 - 2023</th>
 				<th>
 					<h5 class="single">
-						AC, ACM Conference on Human Factors in Computing Systems (CHI) Late Breaking Work
+						PC, ACM Conference on Fairness, Accountability, and Transparency (FAccT)
 					</h5>
 				</th>
 			</tr>
 			<tr>
 				<th class="date">2022 - 2023</th>
 				<th>
-					<h5 class="single">PC, ACM Fairness, Accountability, and Transparency (FAccT)</h5>
+					<h5 class="single">
+						AC, ACM Conference on Human Factors in Computing Systems (CHI) Late Breaking Work
+					</h5>
 				</th>
 			</tr>
 			<tr>
@@ -705,53 +645,12 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2021 - 2023</th>
-				<th>
-					<h5 class="single">ACM Conference on Human Factors in Computing Systems (CHI)</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2021 - 2023</th>
+				<th class="date" />
 				<th>
 					<h5 class="single">
-						ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)
+						FAccT (22 - 23), CHI (21 - 23), CSCW (21 - 23), VIS (20 - 22), UIST (22), CGASI (22),
+						TVCG (19 - 21), TiiS (19)
 					</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2020 - 2022</th>
-				<th>
-					<h5 class="single">IEEE VIS</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2022 - 2023</th>
-				<th>
-					<h5 class="single">ACM Fairness, Accountability, and Transparency (FAccT)</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2022</th>
-				<th>
-					<h5 class="single">ACM Symposium on User Interface Software and Technology (UIST)</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2022</th>
-				<th>
-					<h5 class="single">IEEE Computer Graphics and Applications (CGASI)</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2019 - 2021</th>
-				<th>
-					<h5 class="single">IEEE Transactions on Visualization and Computer Graphics (TVCG)</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2019</th>
-				<th>
-					<h5 class="single">ACM Transactions on Interactive Intelligent Systems (TiiS)</h5>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -762,15 +661,9 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2019</th>
+				<th class="date" />
 				<th>
-					<h5 class="single">IEEE VIS</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2019</th>
-				<th>
-					<h5 class="single">ACM Fairness, Accountability, and Transparency (FAccT)</h5>
+					<h5 class="single">FAccT (19), VIS (19)</h5>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -899,7 +792,7 @@
 				</th>
 			</tr>
 			<!-- PROJECTS -->
-			<tr>
+			<!-- <tr>
 				<th class="date" />
 				<th>
 					<h4 class="header">Projects and Open Source</h4>
@@ -997,7 +890,7 @@
 						</a>
 					</div>
 				</th>
-			</tr>
+			</tr> -->
 			<!-- <tr class="buffer" />
       <tr class="item">
         <th class="date">Fall 2018</th>
@@ -1020,7 +913,7 @@
           </div>
         </th>
       </tr> -->
-			<tr class="buffer" />
+			<!-- <tr class="buffer" /> -->
 			<!-- <tr class="item">
         <th class="date">Spring 2018</th>
         <th>
@@ -1044,7 +937,7 @@
         </th>
       </tr>
       <tr class="buffer" /> -->
-			<tr class="item">
+			<!-- <tr class="item">
 				<th class="date">2015 - 2017</th>
 				<th>
 					<div style="display: flex; align-items: center;">
@@ -1095,7 +988,7 @@
 						</a>
 					</div>
 				</th>
-			</tr>
+			</tr> -->
 			<!-- CAMPUS INVOLVEMENT
       <tr>
         <th class="date" />
@@ -1170,7 +1063,7 @@
         </th>
       </tr> -->
 			<!-- SELECT CLASSES -->
-			<tr>
+			<!-- <tr>
 				<th class="date" />
 				<th>
 					<h4 class="header">Selected Courses</h4>
@@ -1209,7 +1102,7 @@
 					</h5>
 					<h5 class="single">Honors Algorithms</h5>
 				</th>
-			</tr>
+			</tr> -->
 			<!-- SKILLS -->
 			<!-- <tr>
         <th class="date" />
@@ -1277,8 +1170,11 @@
 </div>
 
 <style>
+	button {
+		display: none;
+	}
 	#container {
-		max-width: 900px;
+		max-width: 1000px;
 		margin: 0px auto;
 	}
 
@@ -1360,7 +1256,7 @@
 	.header {
 		border-bottom: 1px solid RGBA(0, 0, 0, 0.7);
 		padding-bottom: 10px;
-		margin-top: 40px;
+		margin-top: 10px;
 		margin-bottom: 12px;
 		color: var(--secondary);
 	}
