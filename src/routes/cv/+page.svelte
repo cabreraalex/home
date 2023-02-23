@@ -37,20 +37,12 @@
 						<h5>Ph.D. in Human-Computer Interaction (HCI)</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Carnegie Mellon University</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Advised by
 						<a href="http://perer.org">Adam Perer</a>
 						and
 						<a href="http://www.cs.cmu.edu/~jasonh/">Jason Hong.</a>
 					</p>
-					<div class="tags">
-						<a href="https://dig.cmu.edu/">
-							<button class="entry-link">
-								<i class="fas fa-globe" />
-								Data Interaction Group
-							</button>
-						</a>
-					</div>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -71,18 +63,14 @@
 						<h5>B.S. in Computer Science</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Georgia Institute of Technology</h6>
 					</div>
-					<p class="desc">
-						Concentration in intelligence and modeling/simulation.
-						<br />
-						Minor in economics.
-					</p>
+					<p>Concentration in intelligence and modeling/simulation. Minor in economics.</p>
 				</th>
 			</tr>
 			<tr class="item">
 				<th class="date">Fall 2017</th>
 				<th>
 					<h6>Sciences Po - Paris, France</h6>
-					<p class="desc">Exchange program with a focus on economics and political science.</p>
+					<p>Exchange program with a focus on economics and political science.</p>
 				</th>
 			</tr>
 			<!-- INDUSTRY -->
@@ -99,16 +87,9 @@
 						<h5>Apple AI/ML</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Research Intern</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Modular machine learning interfaces, see <a href="/paper/symphony">Symphony</a>.
 					</p>
-					<div class="tags">
-						<a href="https://machinelearning.apple.com/">
-							<button class="entry-link">
-								<i class="fas fa-globe" /> Apple AI/ML
-							</button>
-						</a>
-					</div>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -119,16 +100,9 @@
 						<h5>Microsoft Research</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Research Intern</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Behavioral model analysis, see <a href="/paper/aiffinity">AIFinnity</a>.
 					</p>
-					<div class="tags">
-						<a href="https://www.microsoft.com/en-us/research/group/vida/">
-							<button class="entry-link">
-								<i class="fas fa-globe" /> VIDA Group
-							</button>
-						</a>
-					</div>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -139,20 +113,7 @@
 						<h5>Google</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Software Engineering Intern</h6>
 					</div>
-					<p class="desc">
-						Automated driver assistance and hyperlocal weather prediction for Android Auto.
-					</p>
-					<div class="tags">
-						<a
-							href="https://www.wsj.com/articles/google-to-partner-with-biggest-car-alliance-1537243260
-                "
-						>
-							<button class="entry-link">
-								<i class="far fa-newspaper" />
-								WSJ Article
-							</button>
-						</a>
-					</div>
+					<p>Automated driver assistance and hyperlocal weather prediction for Android Auto.</p>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -163,7 +124,7 @@
 						<h5>Google</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Software Engineering Intern</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Anomaly detection and regression analysis system for Google's data processing pipelines.
 					</p>
 				</th>
@@ -176,9 +137,7 @@
 						<h5>Google</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Engineering Practicum Intern</h6>
 					</div>
-					<p class="desc">
-						Analytics platform for monitoring and detecting erroneous edits to Google Maps.
-					</p>
+					<p>Analytics platform for monitoring and detecting erroneous edits to Google Maps.</p>
 				</th>
 			</tr>
 			<!-- AWARDS -->
@@ -192,17 +151,10 @@
 				<th class="date">2019 - 2022</th>
 				<th>
 					<h5>National Science Foundation Graduate Research Fellowship (NSF GRFP)</h5>
-					<p class="desc">
+					<p>
 						Three-year graduate fellowship for independent research. Full tuition with an annual
 						stipend of $34,000.
 					</p>
-					<div class="tags">
-						<a href="https://www.nsfgrfp.org/">
-							<button class="entry-link">
-								<i class="fas fa-globe" /> Website
-							</button>
-						</a>
-					</div>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -210,7 +162,7 @@
 				<th class="date">2019</th>
 				<th>
 					<h5>Love Family Foundation Scholarship</h5>
-					<p class="desc">
+					<p>
 						Co-awarded the $10,000 scholarship for the undergraduate with the most outstanding
 						scholastic record.
 					</p>
@@ -235,17 +187,10 @@
 							Georgia Tech and the Stamps Family Charitable Foundation
 						</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Full ride scholarship with $15,000 in extracurricular funding awarded to 10 incoming
 						students.
 					</p>
-					<div class="tags">
-						<a href="https://stampsps.gatech.edu/">
-							<button class="entry-link">
-								<i class="fas fa-globe" /> Website
-							</button>
-						</a>
-					</div>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -258,7 +203,7 @@
 							Correlation One and Citadel Securities
 						</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Placed third and won $2,500 for creating a ML system to predict dangerous road areas.
 					</p>
 				</th>
@@ -325,7 +270,7 @@
 								.join(', ')}
 						</h6>
 
-						<p class="desc">
+						<p>
 							<i
 								>{pub.venuelong}. {pub.location ? pub.location + ',' : ''}
 								{pub.year}.</i
@@ -363,7 +308,7 @@
 								.join(', ')}
 						</h6>
 
-						<p class="desc">
+						<p>
 							<i>{pub.venuelong}. {pub.location}, {pub.year}.</i>
 						</p>
 
@@ -380,90 +325,75 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">November 2022</th>
+				<th class="date">2022, 2023</th>
+				<th>
+					<h5 class="single">
+						<a href="https://drive.google.com/file/d/17RzfAFBfxyqwkLTMPCBd8YFPLE55VxVN/view">
+							Evaluating Machine Learning
+						</a>
+					</h5>
+					<p>
+						CMU 05-618/318: Human-AI Interaction <br /> CMU 10-605/805: ML with Large Datasets
+						<br /> CMU 17-634: Applied Machine Learning
+					</p>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2022</th>
+				<th>
+					<h5 class="single">Visualization and Machine Learning</h5>
+					<p>CMU 17-428/728: ML and Sensing</p>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2022</th>
 				<th>
 					<h5 class="single">
 						<a href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/SSUI-18-large-apps.pdf"
-							>"Designing Large Web Applications"
+							>Designing Large Web Applications
 						</a>
-						-
-						<i>CMU 05-431/631 Software Structures for User Interfaces (SSUI)</i>
 					</h5>
+					<p>CMU 05-431/631 Software Structures for User Interfaces (SSUI)</p>
 				</th>
 			</tr>
 			<tr>
-				<th class="date">November 2022</th>
+				<th class="date">2022</th>
 				<th>
 					<h5 class="single">
-						<a href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/SSUI-17-other-toolkits.pdf"
-							>"Modern Web Frameworks"</a
-						>
-						-
-						<i>CMU 05-431/631 Software Structures for User Interfaces (SSUI)</i>
-					</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">October 2022</th>
-				<th>
-					<h5 class="single">
-						"Evaluating Machine Learning" -
-						<i>CMU 05-618/318: Human-AI Interaction</i>
-					</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">October 2022</th>
-				<th>
-					<h5 class="single">
-						<a href="https://drive.google.com/file/d/17RzfAFBfxyqwkLTMPCBd8YFPLE55VxVN/view"
-							>"Evaluating Machine Learning"
+						<a href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/SSUI-17-other-toolkits.pdf">
+							Modern Web Frameworks
 						</a>
-						-
-						<i>CMU 10-605/805: ML with Large Datasets</i>
 					</h5>
+					<p>CMU 05-431/631 Software Structures for User Interfaces (SSUI)</p>
 				</th>
 			</tr>
 			<tr>
-				<th class="date">September 2022</th>
+				<th class="date">2021</th>
 				<th>
-					<h5 class="single">
-						"Visualization and Machine Learning" -
-						<i>CMU 17-428/728: ML and Sensing</i>
-					</h5>
+					<h5 class="single">Ethics in Data Visualization</h5>
+					<p>CMU 05-899: Data Visualization</p>
 				</th>
 			</tr>
 			<tr>
-				<th class="date">September 2021</th>
-				<th>
-					<h5 class="single">
-						"Ethics in Data Visualization" -
-						<i>CMU 05-899: Data Visualization</i>
-					</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">September 2021</th>
+				<th class="date">2021</th>
 				<th>
 					<h5 class="single">
 						<a href="https://drive.google.com/file/d/1jNoZoP0JV94Agc97yANifrT4gE4u1qfL/edit"
-							>"D3 Deep Dive"
+							>D3 Deep Dive
 						</a>
-						-
-						<i>CMU 05-899: Data Visualization</i>
 					</h5>
+					<p>CMU 05-899: Data Visualization</p>
 				</th>
 			</tr>
 			<tr>
-				<th class="date">April 2021</th>
+				<th class="date">2021</th>
 				<th>
 					<h5 class="single">
 						<a href="https://youtu.be/fnr9XWvjJHw?t=1082">
-							"Data Science Widgets with Svelte and Jupyter"
+							Data Science Widgets with Svelte and Jupyter
 						</a>
-						-
-						<i>Svelte Summit 2021</i>
 					</h5>
+					<p>Svelte Summit 2021</p>
 				</th>
 			</tr>
 			<!-- TEACHING -->
@@ -484,7 +414,7 @@
 							Graduate Teaching Assistant @ Carnegie Mellon
 						</h6>
 					</div>
-					<p class="desc">Teach weekly lab sections, grade tests and homeworks.</p>
+					<p>Teach weekly lab sections, grade tests and homeworks.</p>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -499,7 +429,7 @@
 							Graduate Teaching Assistant @ Carnegie Mellon
 						</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Taught a D3 course and led an ethics workshop in addition to grading and course
 						management.
 					</p>
@@ -515,12 +445,12 @@
 							Undergraduate Teaching Assistant @ Georgia Tech
 						</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Taught a weekly recitation, graded tests and homework, and helped create assignments.
 					</p>
 				</th>
 			</tr>
-			<tr class="buffer" />
+			<!-- <tr class="buffer" />
 			<tr class="item">
 				<th class="date">Fall 2016</th>
 				<th>
@@ -528,12 +458,12 @@
 						<h5>GT 1000 - First-Year Seminar</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">Team Leader @ Georgia Tech</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Designed a class curriculum for incoming first years and helped lead a weekly seminar
 						class.
 					</p>
 				</th>
-			</tr>
+			</tr> -->
 			<!-- MENTORING -->
 			<tr>
 				<th class="date" />
@@ -552,7 +482,7 @@
 							M.S. in Computer Science, Carnegie Mellon
 						</h6>
 					</div>
-					<p class="desc">Interactive error discovery for ML.</p>
+					<p>Interactive error discovery for ML.</p>
 				</th>
 			</tr>
 			<br />
@@ -567,7 +497,7 @@
 							B.S. in Information Systems, Carnegie Mellon
 						</h6>
 					</div>
-					<p class="desc">
+					<p>
 						UX design for an ML evaluation platform. See <a href="/paper/zeno">Zeno.</a>
 					</p>
 				</th>
@@ -584,12 +514,12 @@
 							B.S. in Computer Science, Oregon State University. REU at Carnegie Mellon
 						</h6>
 					</div>
-					<p class="desc">Interactive model debugging. See <a href="/paper/zeno">Zeno.</a></p>
+					<p>Interactive model debugging. See <a href="/paper/zeno">Zeno.</a></p>
 				</th>
 			</tr>
 			<br />
 			<tr class="item" /><tr class="item">
-				<th class="date">Summer 2022 - Present</th>
+				<th class="date">Summer 2022</th>
 				<th>
 					<div style="display: flex; align-items: center;">
 						<h5>
@@ -597,10 +527,10 @@
 						</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">B.S. in Math, Carnegie Mellon.</h6>
 					</div>
-					<p class="desc">Algorithmic discovery of ML errors.</p>
+					<p>Algorithmic discovery of ML errors.</p>
 				</th>
 			</tr>
-			<br />
+			<!-- <br />
 			<tr class="item" /><tr class="item">
 				<th class="date">Spring 2021 <br /> - Present</th>
 				<th>
@@ -610,9 +540,9 @@
 							B.S. in Statistics and Machine Learning, Carnegie Mellon
 						</h6>
 					</div>
-					<p class="desc">Interactive exploration and debugging of image classification models.</p>
+					<p>Interactive exploration and debugging of image classification models.</p>
 				</th>
-			</tr>
+			</tr> -->
 			<br />
 			<tr class="item" /><tr class="item">
 				<th class="date">Fall 2021 <br /> - Spring 2022</th>
@@ -625,7 +555,7 @@
 							B.S. in Statistics and Machine Learning, Carnegie Mellon
 						</h6>
 					</div>
-					<p class="desc">Improving human-AI interaction with descriptions of model behavior.</p>
+					<p>Improving human-AI interaction with descriptions of model behavior.</p>
 				</th>
 			</tr>
 			<br />
@@ -639,7 +569,7 @@
 							Stanely
 						</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Crowdsourced discovery of ML failures for image captioning. See <a
 							href="https://cabreraalex.com/paper/deblinder">Deblinder.</a
 						>
@@ -909,7 +839,7 @@
 				<th class="date">2023</th>
 				<th>
 					<h5>Zeno</h5>
-					<p class="desc">An interactive ML evaluation framework for any data or model.</p>
+					<p>An interactive ML evaluation framework for any data or model.</p>
 					<div class="tags">
 						<a href="https://zenoml.com/">
 							<button class="entry-link">
@@ -929,9 +859,7 @@
 				<th class="date">2021</th>
 				<th>
 					<h5>Svelte + Vega</h5>
-					<p class="desc">
-						A Svelte component for reactively rendering Vega and Vega-Lite visualizations.
-					</p>
+					<p>A Svelte component for reactively rendering Vega and Vega-Lite visualizations.</p>
 					<div class="tags">
 						<a href="https://github.com/vega/svelte-vega">
 							<button class="entry-link">
@@ -951,9 +879,7 @@
 				<th class="date">2021</th>
 				<th>
 					<h5>Svelte + Jupyter Widgets</h5>
-					<p class="desc">
-						A framework for creating reactive data science widgets using Svelte JS.
-					</p>
+					<p>A framework for creating reactive data science widgets using Svelte JS.</p>
 					<div class="tags">
 						<a
 							href="https://cabreraalex.medium.com/creating-reactive-jupyter-widgets-with-svelte-ef2fb580c05"
@@ -980,7 +906,7 @@
 				<th class="date">2020</th>
 				<th>
 					<h5>COVIDCast Visualization of COVID-19 Indicators</h5>
-					<p class="desc">
+					<p>
 						Interactive visualization system of COVID-19 indicators gathered through >20,000,000
 						surveys on Facebook and Google by <a href="https://delphi.cmu.edu/">CMU Delphi</a>.
 					</p>
@@ -1007,7 +933,7 @@
             Generative Adversarial Models for Learning Private and Fair
             Representations
           </h6>
-          <p class="desc">
+          <p >
             Implemented and reproduced an ICLR'19 submission using GANs to
             decorrelate sensitive data.
           </p>
@@ -1025,7 +951,7 @@
         <th class="date">Spring 2018</th>
         <th>
           <h5>Georgia Tech Bus System Analysis</h5>
-          <p class="desc">
+          <p >
             System that combines Google Maps and graph algorithms to enable
             navigation for GT buses.
           </p>
@@ -1053,7 +979,7 @@
 							Flight Software Lead and Researcher
 						</h6>
 					</div>
-					<p class="desc">
+					<p>
 						Led a team of engineers in developing the software for a fully undergraduate-led
 						satellite mission.
 					</p>
@@ -1078,7 +1004,7 @@
 				<th class="date">2014</th>
 				<th>
 					<h5>CTF Resources</h5>
-					<p class="desc">
+					<p>
 						Guide and resources for capture the flag (CTF) competitions with over 1.6k stars on
 						GitHub.
 					</p>
@@ -1112,7 +1038,7 @@
         <th>
           <h5>Stamps Scholars National Convention 2017</h5>
           <h6>Vice-chair of large events</h6>
-          <p class="desc">
+          <p >
             Directed a 13 person committee in organizing hotels, meals, and
             presentations for over 700 students.
           </p>
@@ -1131,7 +1057,7 @@
         <th class="date">Spring 2016</th>
         <th>
           <h5>Tour Guide</h5>
-          <p class="desc">
+          <p >
             Led a tour of campus for visiting families every week.
           </p>
           <div class="tags">
@@ -1154,7 +1080,7 @@
         <th>
           <h5>Georgia Tech Student Foundation</h5>
           <h6>Investments committee and Freshman Leadership Initiative</h6>
-          <p class="desc">
+          <p >
             Conducted market research to help manage a $1.2 million endowment
             and organized fundraising events.
           </p>
@@ -1269,7 +1195,7 @@
 			<!-- <tr class="item">
         <th class="date" />
         <th>
-          <p class="desc">Last updated November 5, 2020.</p>
+          <p >Last updated November 5, 2020.</p>
         </th>
       </tr> -->
 		</table>
@@ -1341,7 +1267,7 @@
 		line-height: 22px;
 	}
 
-	.desc {
+	p {
 		color: RGBA(0, 0, 0, 0.7);
 		font-size: 16px;
 		font-weight: 100;
