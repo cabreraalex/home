@@ -1,3 +1,0 @@
-import{S as y,i as g,s as S,k as h,q as m,l as c,m as _,r as u,h as n,n as p,b,G as l,B as v}from"./index-0696beeb.js";function A(x){let e,t,o,a,i;return{c(){e=h("div"),t=h("p"),o=m(`\xA9 2022 \xC1ngel Alexander Cabrera - Made with
-		`),a=h("a"),i=m("SvelteKit"),this.h()},l(s){e=c(s,"DIV",{class:!0});var r=_(e);t=c(r,"P",{id:!0});var d=_(t);o=u(d,`\xA9 2022 \xC1ngel Alexander Cabrera - Made with
-		`),a=c(d,"A",{href:!0});var f=_(a);i=u(f,"SvelteKit"),f.forEach(n),d.forEach(n),r.forEach(n),this.h()},h(){p(a,"href","https://svelte.dev"),p(t,"id","copyright"),p(e,"class","footer svelte-1ynsxf6")},m(s,r){b(s,e,r),l(e,t),l(t,o),l(t,a),l(a,i)},p:v,i:v,o:v,d(s){s&&n(e)}}}class E extends y{constructor(e){super(),g(this,e,null,A,S,{})}}export{E as F};

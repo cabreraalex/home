@@ -1,0 +1,1 @@
+import{j as a}from"./js-yaml-38530ef5.js";async function l({fetch:e,params:o}){return{pub:await e("/pubs/"+o.slug+".yml").then(t=>t.text()).then(t=>a.load(t))}}const s=Object.freeze(Object.defineProperty({__proto__:null,load:l},Symbol.toStringTag,{value:"Module"}));export{s as _,l};

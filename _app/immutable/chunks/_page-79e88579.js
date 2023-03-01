@@ -1,0 +1,1 @@
+import{j as n}from"./js-yaml-38530ef5.js";async function o({fetch:t}){return{news:await t("/news.yml").then(e=>e.text()).then(e=>n.load(e))}}const r=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{r as _,o as l};
