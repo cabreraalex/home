@@ -472,6 +472,19 @@
 				</th>
 			</tr>
 			<tr class="item" /><tr class="item">
+				<th class="date">Spring 2023 - Present</th>
+				<th>
+					<div style="display: flex; align-items: center;">
+						<h5>
+							<a href="https://www.linkedin.com/in/yh3stevenhuang/">Steven Huang</a>
+						</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Research Associate</h6>
+					</div>
+					<p>Zeno evaluation platform.</p>
+				</th>
+			</tr>
+			<br />
+			<tr class="item" /><tr class="item">
 				<th class="date">Fall 2022 - Present</th>
 				<th>
 					<div style="display: flex; align-items: center;">
@@ -611,6 +624,14 @@
 				</th>
 			</tr>
 			<tr>
+				<th class="date">2023</th>
+				<th>
+					<h5 class="single">
+						PC, CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT)
+					</h5>
+				</th>
+			</tr>
+			<tr>
 				<th class="date">2022</th>
 				<th>
 					<h5 class="single">
@@ -623,7 +644,7 @@
 				<th class="date">2022</th>
 				<th>
 					<h5 class="single">
-						PC, Workshop on Visualization for AI Explainability (VISxAI) at IEEE VIS
+						PC, IEEE VIS Workshop on Visualization for AI Explainability (VISxAI)
 					</h5>
 				</th>
 			</tr>
