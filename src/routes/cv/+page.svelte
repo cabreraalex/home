@@ -148,6 +148,16 @@
 				</th>
 			</tr>
 			<tr class="item">
+				<th class="date">2023</th>
+				<th>
+					<h5>Mozilla Technology Fund</h5>
+					<p>
+						$50,000 grant to develop <a href="https://zenoml.com">Zeno</a> as an auditing tool for AI.
+					</p>
+				</th>
+			</tr>
+			<tr class="buffer" />
+			<tr class="item">
 				<th class="date">2019 - 2022</th>
 				<th>
 					<h5>National Science Foundation Graduate Research Fellowship (NSF GRFP)</h5>
@@ -748,6 +758,20 @@
 				<th class="date" />
 				<th>
 					<h4 class="header">Press</h4>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2023</th>
+				<th>
+					<h5 class="single">
+						<a
+							href="https://foundation.mozilla.org/en/blog/auditing-ai-announcing-the-2023-mozilla-technology-fund-cohort/"
+						>
+							"Auditing AI: Announcing the 2023 Mozilla Technology Fund Cohort"
+						</a>
+						-
+						<i>Mozilla</i>
+					</h5>
 				</th>
 			</tr>
 			<tr>
