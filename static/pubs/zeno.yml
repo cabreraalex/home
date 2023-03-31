@@ -32,7 +32,7 @@ bibtex: >-
   author = {Cabrera, \'{A}ngel Alexander and Fu, Erica and Bertucci, Donald and Holstein, Kenneth and Talwalkar, Ameet and Hong, Jason I. and Perer, Adam},
   title = {Zeno: An Interactive Framework for Behavioral Evaluation of Machine Learning},
   year = {2023},
-  isbn = {978-1-4503-9421-5/23/04}
+  isbn = {978-1-4503-9421-5/23/04},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
   url = {https://doi.org/10.1145/3544548.3581268},
