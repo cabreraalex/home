@@ -488,14 +488,31 @@
 						<h5>
 							<a href="https://www.linkedin.com/in/yh3stevenhuang/">Steven Huang</a>
 						</h5>
-						<h6 style="margin-bottom: 0px; margin-left: 10px">Research Associate</h6>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							Research Associate, Carnegie Mellon
+						</h6>
 					</div>
-					<p>Zeno evaluation platform.</p>
+					<p>Chart builder for <a href="https://zenoml.com">Zeno</a>.</p>
 				</th>
 			</tr>
 			<br />
 			<tr class="item" /><tr class="item">
-				<th class="date">Fall 2022 - Present</th>
+				<th class="date">Spring 2023 - Present</th>
+				<th>
+					<div style="display: flex; align-items: center;">
+						<h5>
+							<a href="https://www.linkedin.com/in/josh-zhou-11501818b/">Josh Zhou</a>
+						</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							B.S. in Computer Science, Carnegie Mellon
+						</h6>
+					</div>
+					<p>Instance tagging for <a href="https://zenoml.com">Zeno</a>.</p>
+				</th>
+			</tr>
+			<br />
+			<tr class="item" /><tr class="item">
+				<th class="date">Fall 2022 -<br /> Present</th>
 				<th>
 					<div style="display: flex; align-items: center;">
 						<h5>
@@ -505,7 +522,7 @@
 							M.S. in Computer Science, Carnegie Mellon
 						</h6>
 					</div>
-					<p>Interactive error discovery for ML.</p>
+					<p>Interactive slice discovery for <a href="https://zenoml.com">Zeno</a>.</p>
 				</th>
 			</tr>
 			<br />
@@ -601,7 +618,7 @@
 			</tr>
 			<br />
 			<tr class="item">
-				<th class="date">Fall 2020 <br /> Spring 2020</th>
+				<th class="date">2020</th>
 				<th>
 					<h5>CMU AI Mentoring Program</h5>
 				</th>
@@ -680,7 +697,7 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2020 - 2022</th>
+				<th class="date">2020 - 2023</th>
 				<th>
 					<h5 class="single">IEEE VIS</h5>
 				</th>
