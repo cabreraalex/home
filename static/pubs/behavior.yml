@@ -17,14 +17,24 @@ authors:
     website: 'http://perer.org'
   - name: Jason I. Hong
     website: 'http://www.cs.cmu.edu/~jasonh/'
-pdf: 'https://cabreraalex.com/behavior.pdf'
+pdf: 'https://dl.acm.org/doi/pdf/10.1145/3579612'
 url: 'https://doi.org/10.1145/3579612'
 doi: '10.1145/3579612'
 citation: 'https://dl.acm.org/doi/10.1145/3579612'
 bibtex: >-
-  @article{cabrera2023behavior,author = {Cabrera, '{A}ngel Alexander and Perer, Adam and Hong, Jason I.},title = {Improving Human-AI Collaboration with Descriptions of AI Behavior},year =
-  {2023},issue_date = {October 2023},publisher = {Association for Computing
-  Machinery},address = {New York, NY, USA},journal = {Proc.
-  ACM Hum.-Comput. Interact.},month = oct,doi={10.1145/3579612},url={https://doi.org/10.1145/3579612}}
-
-# citation: 'https://dl.acm.org/doi/10.1145/3479569'
+  @article{cabrera2022behavior,
+  author = {Cabrera, \'{A}ngel Alexander and Perer, Adam and Hong, Jason I.},
+  title = {Improving Human-AI Collaboration With Descriptions of AI Behavior},
+  year = {2023},
+  issue_date = {April 2023},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {7},
+  number = {CSCW1},
+  url = {https://doi.org/10.1145/3579612},
+  doi = {10.1145/3579612},
+  journal = {Proc. ACM Hum.-Comput. Interact.},
+  month = {apr},
+  articleno = {136},
+  numpages = {21},
+  }
