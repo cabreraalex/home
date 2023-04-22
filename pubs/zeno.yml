@@ -25,20 +25,22 @@ authors:
     website: 'http://perer.org'
 code: https://github.com/zeno-ml/zeno
 web: http://zenoml.com
-pdf: /zeno.pdf
+pdf: https://dl.acm.org/doi/pdf/10.1145/3544548.3581268
 citation: https://doi.org/10.1145/3544548.3581268
 bibtex: >-
-  @inproceedings{zeno,
+  @inproceedings{cabrera2023zeno,
   author = {Cabrera, \'{A}ngel Alexander and Fu, Erica and Bertucci, Donald and Holstein, Kenneth and Talwalkar, Ameet and Hong, Jason I. and Perer, Adam},
   title = {Zeno: An Interactive Framework for Behavioral Evaluation of Machine Learning},
   year = {2023},
-  isbn = {978-1-4503-9421-5/23/04},
+  isbn = {9781450394215},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
   url = {https://doi.org/10.1145/3544548.3581268},
   doi = {10.1145/3544548.3581268},
-  booktitle = {CHI Conference on Human Factors in Computing Systems},
-  numpages = {22},
+  booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
+  articleno = {419},
+  numpages = {14},
+  keywords = {visualization, testing, machine learning, evaluation},
   location = {Hamburg, Germany},
   series = {CHI '23}
   }
