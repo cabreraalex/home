@@ -1,4 +1,6 @@
 export const PUBS = [
+	'slicing',
+	'blindspots',
 	'zeno',
 	'behavior',
 	'aiffinity',

@@ -1,7 +1,7 @@
 <script>
 	import Intro from '$lib/Intro.svelte';
-	import Social from '$lib/Social.svelte';
 	import Links from '$lib/Links.svelte';
+	import Social from '$lib/Social.svelte';
 
 	export let data;
 </script>
@@ -150,9 +150,29 @@
 			<tr class="item">
 				<th class="date">2023</th>
 				<th>
-					<h5>Mozilla Technology Fund</h5>
+					<h5>
+						<a
+							href="https://foundation.mozilla.org/en/blog/auditing-ai-announcing-the-2023-mozilla-technology-fund-cohort/"
+							>Mozilla Technology Fund</a
+						>
+					</h5>
 					<p>
 						$50,000 grant to develop <a href="https://zenoml.com">Zeno</a> as an auditing tool for AI.
+					</p>
+				</th>
+			</tr>
+			<tr class="buffer" />
+			<tr class="item">
+				<th class="date">2023</th>
+				<th>
+					<h5>
+						<a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists"
+							>Stanford HAI Audit Challenge</a
+						>
+					</h5>
+					<p>
+						<a href="https://zenoml.com">Zeno</a> was a finalist for the HAI challenge for designing
+						better AI auditing tools.
 					</p>
 				</th>
 			</tr>
@@ -171,20 +191,16 @@
 			<tr class="item">
 				<th class="date">2019</th>
 				<th>
-					<h5>Love Family Foundation Scholarship</h5>
+					<h5>
+						<a
+							href="https://foundation.mozilla.org/en/blog/auditing-ai-announcing-the-2023-mozilla-technology-fund-cohort/"
+							>Love Family Foundation Scholarship</a
+						>
+					</h5>
 					<p>
 						Co-awarded the $10,000 scholarship for the undergraduate with the most outstanding
 						scholastic record.
 					</p>
-					<div class="tags">
-						<a
-							href="https://www.scs.gatech.edu/news/620748/college-computing-student-alex-cabrera-wins-love-family-foundation-scholarship"
-						>
-							<button class="entry-link">
-								<i class="fas fa-globe" /> Announcement
-							</button>
-						</a>
-					</div>
 				</th>
 			</tr>
 			<tr class="buffer" />
@@ -363,7 +379,7 @@
 							>Designing Large Web Applications
 						</a>
 					</h5>
-					<p>CMU 05-431/631 Software Structures for User Interfaces (SSUI)</p>
+					<p>CMU 05-431/631: Software Structures for User Interfaces (SSUI)</p>
 				</th>
 			</tr>
 			<tr>
@@ -374,7 +390,7 @@
 							Modern Web Frameworks
 						</a>
 					</h5>
-					<p>CMU 05-431/631 Software Structures for User Interfaces (SSUI)</p>
+					<p>CMU 05-431/631: Software Structures for User Interfaces (SSUI)</p>
 				</th>
 			</tr>
 			<tr>
@@ -418,7 +434,7 @@
 				<th>
 					<div style="display: flex; align-items: center;">
 						<a class="paper-title" href="https://www.cs.cmu.edu/~bam/uicourse/05631fall2022/">
-							<h5>05-431/631 Software Structures for User Interfaces (SSUI)</h5>
+							<h5>05-431/631: Software Structures for User Interfaces (SSUI)</h5>
 						</a>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">
 							Graduate Teaching Assistant @ Carnegie Mellon
@@ -433,7 +449,7 @@
 				<th>
 					<div style="display: flex; align-items: center;">
 						<a class="paper-title" href="https://dig.cmu.edu/courses/2021-fall-datavis.html">
-							<h5>05-499:C - Data Visualization</h5>
+							<h5>05-499:C: Data Visualization</h5>
 						</a>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">
 							Graduate Teaching Assistant @ Carnegie Mellon
@@ -450,7 +466,7 @@
 				<th class="date">2016 - 2018</th>
 				<th>
 					<div style="display: flex; align-items: center;">
-						<h5>CS1332 - Data Structures and Algorithms</h5>
+						<h5>CS1332: Data Structures and Algorithms</h5>
 						<h6 style="margin-bottom: 0px; margin-left: 10px">
 							Undergraduate Teaching Assistant @ Georgia Tech
 						</h6>
@@ -482,7 +498,7 @@
 				</th>
 			</tr>
 			<tr class="item" /><tr class="item">
-				<th class="date">Spring 2023 - Present</th>
+				<th class="date">Spring 2023 <br /> - Summer 2023</th>
 				<th>
 					<div style="display: flex; align-items: center;">
 						<h5>
@@ -651,6 +667,23 @@
 				</th>
 			</tr>
 			<tr>
+				<th class="date">2022 - 2023</th>
+				<th>
+					<h5 class="single">
+						PC, IEEE VIS Workshop on Visualization for AI Explainability (VISxAI)
+					</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2023</th>
+				<th>
+					<h5 class="single">
+						Organizer, CSCW Workshop on Supporting User Engagement in Testing, Auditing, and
+						Contesting AI
+					</h5>
+				</th>
+			</tr>
+			<tr>
 				<th class="date">2023</th>
 				<th>
 					<h5 class="single">
@@ -664,14 +697,6 @@
 					<h5 class="single">
 						AC, ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)
 						Posters
-					</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2022</th>
-				<th>
-					<h5 class="single">
-						PC, IEEE VIS Workshop on Visualization for AI Explainability (VISxAI)
 					</h5>
 				</th>
 			</tr>
