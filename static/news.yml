@@ -1,7 +1,9 @@
+- date: 'August 10, 2023'
+  news: Apple open-sourced <a href="https://github.com/apple/ml-symphony">Symphony 🎷</a>, our platform for modular ML interfaces.
 - date: 'March 6, 2023'
   news: Zeno was selected for the <a href ="https://foundation.mozilla.org/en/blog/auditing-ai-announcing-the-2023-mozilla-technology-fund-cohort/">Mozilla Technology Fund on tools for auditing AI systems</a>.
 - date: 'February 1, 2023'
-  news: We announced <a href="https://zenoml.com">&#128160; Zeno</a>, a general-purpose ML evaluation framework.
+  news: We announced <a href="https://zenoml.com">&#128160; Zeno</a>, a general-purpose AI evaluation platform.
 - date: 'May 1, 2022'
   news: Presenting <a href='https://dl.acm.org/doi/10.1145/3491102.3502102'>Symphony</a> at CHI'22 in New Orleans &#127927;
 - date: 'May 17, 2021'
