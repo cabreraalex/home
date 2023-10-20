@@ -351,6 +351,19 @@
 				</th>
 			</tr>
 			<tr>
+				<th class="date">2023</th>
+				<th>
+					<h5 class="single">
+						<a
+							href="https://home.mlops.community/home/events/llms-in-production-part-iii-2023-10-03"
+						>
+							Authoring Interactive AI Evaluation Reports with Zeno
+						</a>
+					</h5>
+					<p>LLMs in Production - Part III</p>
+				</th>
+			</tr>
+			<tr>
 				<th class="date">2022, 2023</th>
 				<th>
 					<h5 class="single">
@@ -498,22 +511,7 @@
 				</th>
 			</tr>
 			<tr class="item" /><tr class="item">
-				<th class="date">Spring 2023 <br /> - Summer 2023</th>
-				<th>
-					<div style="display: flex; align-items: center;">
-						<h5>
-							<a href="https://www.linkedin.com/in/yh3stevenhuang/">Steven Huang</a>
-						</h5>
-						<h6 style="margin-bottom: 0px; margin-left: 10px">
-							Research Associate, Carnegie Mellon
-						</h6>
-					</div>
-					<p>Chart builder for <a href="https://zenoml.com">Zeno</a>.</p>
-				</th>
-			</tr>
-			<br />
-			<tr class="item" /><tr class="item">
-				<th class="date">Spring 2023 - Present</th>
+				<th class="date">Spring 2023 <br />- Present</th>
 				<th>
 					<div style="display: flex; align-items: center;">
 						<h5>
@@ -528,22 +526,7 @@
 			</tr>
 			<br />
 			<tr class="item" /><tr class="item">
-				<th class="date">Fall 2022 -<br /> Present</th>
-				<th>
-					<div style="display: flex; align-items: center;">
-						<h5>
-							<a href="https://tianqi-wu.github.io/">Tianqi Wu</a>
-						</h5>
-						<h6 style="margin-bottom: 0px; margin-left: 10px">
-							M.S. in Computer Science, Carnegie Mellon
-						</h6>
-					</div>
-					<p>Interactive slice discovery for <a href="https://zenoml.com">Zeno</a>.</p>
-				</th>
-			</tr>
-			<br />
-			<tr class="item" /><tr class="item">
-				<th class="date">Summer 2022 - Present</th>
+				<th class="date">Summer 2022 <br />- Present</th>
 				<th>
 					<div style="display: flex; align-items: center;">
 						<h5>
@@ -560,7 +543,37 @@
 			</tr>
 			<br />
 			<tr class="item" /><tr class="item">
-				<th class="date">Summer 2022 - Present</th>
+				<th class="date">Spring 2023 <br /> - Summer 2023</th>
+				<th>
+					<div style="display: flex; align-items: center;">
+						<h5>
+							<a href="https://www.linkedin.com/in/yh3stevenhuang/">Steven Huang</a>
+						</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							Research Associate, Carnegie Mellon
+						</h6>
+					</div>
+					<p>Chart builder for <a href="https://zenoml.com">Zeno</a>.</p>
+				</th>
+			</tr>
+			<br />
+			<tr class="item" /><tr class="item">
+				<th class="date">Fall 2022 <br />- Spring 2023</th>
+				<th>
+					<div style="display: flex; align-items: center;">
+						<h5>
+							<a href="https://tianqi-wu.github.io/">Tianqi Wu</a>
+						</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							M.S. in Computer Science, Carnegie Mellon
+						</h6>
+					</div>
+					<p>Interactive slice discovery for <a href="https://zenoml.com">Zeno</a>.</p>
+				</th>
+			</tr>
+			<br />
+			<tr class="item" /><tr class="item">
+				<th class="date">Summer 2022 <br />- Spring 2023</th>
 				<th>
 					<div style="display: flex; align-items: center;">
 						<h5>
@@ -649,6 +662,23 @@
 			<tr class="item">
 				<th class="date" />
 				<th>
+					<h5>Organizer</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2023</th>
+				<th>
+					<h5 class="single">
+						<a href="https://cscw-user-ai-auditing.github.io/">
+							CSCW Workshop on Supporting User Engagement in Testing, Auditing, and Contesting AI
+						</a>
+					</h5>
+				</th>
+			</tr>
+			<tr class="buffer" />
+			<tr class="item">
+				<th class="date" />
+				<th>
 					<h5>Program Committee</h5>
 				</th>
 			</tr>
@@ -678,15 +708,6 @@
 				<th class="date">2023</th>
 				<th>
 					<h5 class="single">
-						Organizer, CSCW Workshop on Supporting User Engagement in Testing, Auditing, and
-						Contesting AI
-					</h5>
-				</th>
-			</tr>
-			<tr>
-				<th class="date">2023</th>
-				<th>
-					<h5 class="single">
 						PC, CHI Workshop on Trust and Reliance in AI-Assisted Tasks (TRAIT)
 					</h5>
 				</th>
@@ -708,7 +729,7 @@
 				</th>
 			</tr>
 			<tr>
-				<th class="date">2021 - 2023</th>
+				<th class="date">2021 - 2024</th>
 				<th>
 					<h5 class="single">ACM Conference on Human Factors in Computing Systems (CHI)</h5>
 				</th>
