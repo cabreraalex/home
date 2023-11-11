@@ -270,6 +270,7 @@ a button:hover {
 }
 
 .buttons {
+	align-items: center;
 	flex-flow: wrap;
 	display: inline-flex;
 }
