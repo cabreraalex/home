@@ -1,4 +1,4 @@
-import{S as G,i as P,s as F,k as d,q as n,l as c,m as u,r,h,n as m,b as R,G as t,B as H}from"./index-a0c4dc22.js";function S(E){let e,f,s,I,v,o,_,y,i,A,g,l,w,C;return{c(){e=d("p"),f=n(`I am a PhD candidate in the
+import{S as G,i as P,s as F,k as d,q as n,l as c,m as u,r,h,n as m,b as R,G as t,B as H}from"./index-d9827912.js";function S(E){let e,f,s,I,v,o,_,y,i,A,g,l,w,C;return{c(){e=d("p"),f=n(`I am a PhD candidate in the
 	`),s=d("a"),I=n("Human-Computer Interaction Institute (HCII)"),v=n(`
 	at Carnegie Mellon University, advised by
 	`),o=d("a"),_=n("Adam Perer"),y=n(`
