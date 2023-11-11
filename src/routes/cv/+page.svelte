@@ -354,9 +354,7 @@
 				<th class="date">2023</th>
 				<th>
 					<h5 class="single">
-						<a
-							href="https://home.mlops.community/home/events/llms-in-production-part-iii-2023-10-03"
-						>
+						<a href="https://www.youtube.com/watch?v=fS3taBVKu_c&t=4s">
 							Authoring Interactive AI Evaluation Reports with Zeno
 						</a>
 					</h5>
@@ -954,7 +952,7 @@
 								<i class="fas fa-globe" /> Website
 							</button>
 						</a>
-						<a href="https://github.com/zeno-ml/zeno">
+						<a href="https://github.com/zeno-ml/zeno-hub">
 							<button class="entry-link">
 								<i class="fab fa-github" /> GitHub
 							</button>
