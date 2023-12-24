@@ -92,6 +92,8 @@
 		font-size: 13px;
 	}
 	.award-container {
+		margin-top: 3px;
+		margin-left: 5px;
 		fill: #b59410;
 		display: flex;
 		align-items: center;
