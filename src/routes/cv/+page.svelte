@@ -826,6 +826,20 @@
 				<th>
 					<h5 class="single">
 						<a
+							href="https://venturebeat.com/ai/google-gemini-is-not-even-as-good-as-gpt-3-5-turbo-researchers-find/"
+						>
+							"Google Gemini is not even as good as GPT-3.5 Turbo, researchers find"
+						</a>
+						-
+						<i>Venture Beat</i>
+					</h5>
+				</th>
+			</tr>
+			<tr>
+				<th class="date">2023</th>
+				<th>
+					<h5 class="single">
+						<a
 							href="https://foundation.mozilla.org/en/blog/auditing-ai-announcing-the-2023-mozilla-technology-fund-cohort/"
 						>
 							"Auditing AI: Announcing the 2023 Mozilla Technology Fund Cohort"

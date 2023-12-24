@@ -11,4 +11,10 @@ export const PUBS = [
 	'confusion',
 	'fairvis'
 ];
-export const OTHER_PUBS = ['spotcheck', 'publics', 'subgroup-gen', 'interactive-classification'];
+export const OTHER_PUBS = [
+	'gemini',
+	'spotcheck',
+	'publics',
+	'subgroup-gen',
+	'interactive-classification'
+];
