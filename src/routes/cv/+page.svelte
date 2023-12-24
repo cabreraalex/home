@@ -335,7 +335,7 @@
 						</h6>
 
 						<p>
-							<i>{pub.venuelong}. {pub.location}, {pub.year}.</i>
+							<i>{pub.venuelong}. {pub.location ? pub.location + ',' : ''} {pub.year}.</i>
 						</p>
 
 						<Links {pub} />
