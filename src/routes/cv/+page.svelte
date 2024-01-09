@@ -822,6 +822,18 @@
 				</th>
 			</tr>
 			<tr>
+				<th class="date">2024</th>
+				<th>
+					<h5 class="single">
+						<a href="https://techcrunch.com/2024/01/07/what-is-google-gemini-ai/">
+							"Google Gemini: Everything you need to know about the new generative AI platform"
+						</a>
+						-
+						<i>TechCrunch</i>
+					</h5>
+				</th>
+			</tr>
+			<tr>
 				<th class="date">2023</th>
 				<th>
 					<h5 class="single">
