@@ -1,1 +1,0 @@
-import{_ as r}from"./_page-f1fb7eed.js";import{default as t}from"../components/pages/cv/_page.svelte-c6cfbb1f.js";export{t as component,r as shared};
