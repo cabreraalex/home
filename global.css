@@ -1,19 +1,8 @@
-/* latin-ext */
-@font-face {
-	font-family: 'Karla';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Karla'), local('Karla-Regular'),
-		url(https://fonts.gstatic.com/s/karla/v8/qkBbXvYC6trAT7RbLtyG5Q.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
-		U+2C60-2C7F, U+A720-A7FF;
-}
-
 body {
 	min-width: min-content;
 	margin: 0px auto;
 	padding: 20px;
-	font-family: 'Karla', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	border-top: 5px solid var(--secondary);
 	border-bottom: 5px solid var(--secondary);
 }
@@ -25,7 +14,7 @@ select,
 textarea,
 .pure-g [class*='pure-u'] {
 	/* Set your content font stack here: */
-	font-family: 'Karla', Helvetica, sans-serif;
+	font-family: 'Roboto', Helvetica, sans-serif;
 	color: var(--black);
 }
 
