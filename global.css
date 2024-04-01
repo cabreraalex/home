@@ -42,8 +42,8 @@ h3 {
 }
 
 .paper-title {
-	color: black;
-	font-weight: 500;
+	color: #303030;
+	font-weight: 400;
 	-o-transition: 0.5s;
 	-ms-transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -86,6 +86,7 @@ h6 {
 	padding-right: 10px;
 	display: inline-flex;
 	align-items: center;
+	font-weight: 300;
 }
 
 .cv {
@@ -95,6 +96,7 @@ h6 {
 	margin-bottom: 25px;
 	margin-right: 7px;
 	font-size: 16px;
+	font-weight: 300;
 	padding: 7px;
 	border-color: rgba(0, 0, 0, 0.25);
 }
