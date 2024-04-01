@@ -20,6 +20,7 @@
 					</h3>
 
 					<Intro />
+					<br style="margin-top: 5px" />
 					<Social home={false} />
 				</th>
 			</tr>
@@ -31,7 +32,7 @@
 				</th>
 			</tr>
 			<tr class="item">
-				<th class="date">2019 - Present</th>
+				<th class="date">2024</th>
 				<th>
 					<div style="display: flex; align-items: center;">
 						<h5>Ph.D. in Human-Computer Interaction (HCI)</h5>
@@ -509,7 +510,7 @@
 				</th>
 			</tr>
 			<tr class="item" /><tr class="item">
-				<th class="date">Spring 2023 <br />- Present</th>
+				<th class="date">Spring 2023 <br />- Fall 2023</th>
 				<th>
 					<div style="display: flex; align-items: center;">
 						<h5>
@@ -524,7 +525,7 @@
 			</tr>
 			<br />
 			<tr class="item" /><tr class="item">
-				<th class="date">Summer 2022 <br />- Present</th>
+				<th class="date">Summer 2022 <br />- Fall 2023</th>
 				<th>
 					<div style="display: flex; align-items: center;">
 						<h5>
@@ -1368,9 +1369,9 @@
 	h5 {
 		margin: 0px;
 		font-size: 16px;
-		font-weight: 500;
+		font-weight: 400;
 		line-height: 22px;
-		color: black;
+		color: #303030;
 	}
 
 	h6 {
@@ -1393,8 +1394,10 @@
 	.date {
 		width: 135px;
 		padding-right: 20px;
-		font-weight: 200;
+		font-weight: 300;
+		font-size: 14px;
 		float: left;
+		color: rgba(0, 0, 0, 0.2);
 		text-align: right;
 		line-height: 22px;
 	}
@@ -1402,7 +1405,7 @@
 	p {
 		color: RGBA(0, 0, 0, 0.7);
 		font-size: 16px;
-		font-weight: 100;
+		font-weight: 300;
 		line-height: 20px;
 	}
 

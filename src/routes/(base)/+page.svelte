@@ -7,7 +7,9 @@
 
 <div id="padded-content">
 	<div id="intro">
-		<h2 class="header">Hi! You can call me <span class="name">Alex</span></h2>
+		<h2 class="header" style="font-size: 28px; font-weight: 500">
+			Hi! You can call me <span class="name">Alex</span>
+		</h2>
 		<Intro />
 	</div>
 	<div id="news" class="sect">
@@ -111,6 +113,7 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-right: 20px;
+		margin-top: 10px;
 	}
 	.thumb-box {
 		height: 100%;

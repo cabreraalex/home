@@ -36,12 +36,9 @@
 		</p>
 	</div>
 
-	<!-- <h2 class="sec-title">Abstract</h2>
-	<p>{pub.abstract}</p> -->
-
 	<h2 class="sec-title">Citation</h2>
 	<a href={'/paper/' + data.pub.id} class="paper-title">
-		<h4>{data.pub.title}</h4>
+		{data.pub.title}
 	</a>
 
 	<h5>
@@ -70,6 +67,9 @@
 </div>
 
 <style>
+	.paper-title {
+		margin-bottom: 5px;
+	}
 	#body {
 		max-width: 900px;
 		margin: 0px auto;
@@ -85,13 +85,8 @@
 	.red {
 		color: #e53935;
 	}
-	p {
-		font-size: 16px;
-		/* line-height: 23px; */
-	}
-
 	h1 {
-		font-size: 20px;
+		font-size: 24px;
 		font-weight: 500;
 		margin: 0px;
 		margin-top: 30px;
@@ -103,14 +98,9 @@
 		margin: 0px;
 	}
 
-	h4 {
-		font-size: 16px;
-		margin: 0px;
-	}
-
 	h5 {
-		font-weight: 100;
 		font-size: 16px;
+		font-weight: 300;
 	}
 
 	#home {
@@ -160,8 +150,6 @@
 	}
 
 	.desc {
-		font-size: 16px;
-		font-weight: 300;
 		text-align: justify;
 	}
 
