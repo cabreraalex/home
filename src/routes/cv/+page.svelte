@@ -82,6 +82,19 @@
 				</th>
 			</tr>
 			<tr class="item">
+				<th class="date">April 2024 - Present</th>
+				<th>
+					<div style="display: flex; align-items: center;">
+						<h5>Stealth</h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">
+							Founding Member of Technical Staff
+						</h6>
+					</div>
+					<p>AI + Bio.</p>
+				</th>
+			</tr>
+			<tr class="buffer" />
+			<tr class="item">
 				<th class="date">Summer 2021</th>
 				<th>
 					<div style="display: flex; align-items: center;">
