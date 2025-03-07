@@ -1,0 +1,39 @@
+title: Cell Painting for cytotoxicity and mode-of-action analysis in primary human hepatocytes
+abstract: >-
+  High-throughput, human-relevant approaches for predicting chemical toxicity are urgently needed for better decision-making in human health. Here, we apply image-based profiling (the Cell Painting assay) and two cytotoxicity assays (metabolic and membrane damage readouts) to primary human hepatocytes after exposure to eight concentrations of 1085 compounds that include pharmaceuticals, pesticides, and industrial chemicals with known liver toxicity-related outcomes. Three computational methods (CellProfiler, a Cell Painting-specific convolutional neural network, and a pretrained vision transformer) were compared to extract morphology features from single cells or entire images. We used these morphology features to predict activity in the measured cytotoxicity assays, as well as in 412 curated ToxCast assays that span cytotoxicity, cell-based, and cell-free categories. We found that the morphological profiles detect compound bioactivity at lower concentrations than standard cytotoxicity assays. In supervised analyses, they predict cytotoxicity and targeted cell-based assay readouts, but not cell-free assay readouts. We also found that the various feature extraction methods performed relatively similarly and that filtering out non-bioactive or cytotoxic concentrations did not boost supervised assay prediction performance for any assay endpoint category, although it did have a large influence on unsupervised cluster analysis. We envision that image-based profiling could serve as a key component of modern safety assessment.
+id: cytotox
+teaser: cytotox.png
+venue: 'Preprint, 2025'
+venuelong: Preprint
+year: '2025'
+month: January
+authors:
+  - name: Jessica D Ewald
+  - name: Katherine L Titterton
+  - name: Alex Bäuerle
+  - name: Alex Beatson
+  - name: Daniil A Boiko
+  - name: Ángel A Cabrera
+    website: 'https://cabreraalex.com'
+  - name: Jaime Cheah
+  - name: Beth A Cimini
+  - name: Bram Gorissen
+  - name: Thouis Jones
+  - name: Konrad Karczewski
+  - name: David Rouquié
+  - name: Srijit Seal
+  - name: Erin Weisbart
+  - name: Brandon White
+  - name: Anne E Carpenter
+  - name: Shantanu Singh
+bibtex: >-
+  @article{ewald2025cell,
+    title={Cell Painting for cytotoxicity and mode-of-action analysis in primary human hepatocytes},
+    author={Ewald, Jessica D and Titterton, Katherine L and B{\"a}uerle, Alex and Beatson, Alex and Boiko, Daniil A and Cabrera, {\`A}ngel A and Cheah, Jaime and Cimini, Beth A and Gorissen, Bram and Jones, Thouis and others},
+    journal={bioRxiv},
+    pages={2025--01},
+    year={2025},
+    publisher={Cold Spring Harbor Laboratory}
+  }
+
+pdf: 'https://www.biorxiv.org/content/10.1101/2025.01.22.634152v1.full.pdf'
