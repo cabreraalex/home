@@ -85,12 +85,10 @@
 				<th class="date">April 2024 - Present</th>
 				<th>
 					<div style="display: flex; align-items: center;">
-						<h5>Stealth</h5>
-						<h6 style="margin-bottom: 0px; margin-left: 10px">
-							Founding Member of Technical Staff
-						</h6>
+						<h5><a href="https://axi.om">Axiom Bio</a></h5>
+						<h6 style="margin-bottom: 0px; margin-left: 10px">Founding Engineer</h6>
 					</div>
-					<p>AI + Bio.</p>
+					<p>ML for predicting molecular toxicity.</p>
 				</th>
 			</tr>
 			<tr class="buffer" />
