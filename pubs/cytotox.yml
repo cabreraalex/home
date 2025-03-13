@@ -8,15 +8,15 @@ venuelong: Preprint
 year: '2025'
 month: January
 authors:
-  - name: Jessica D Ewald
-  - name: Katherine L Titterton
+  - name: Jessica Ewald
+  - name: Katherine Titterton
   - name: Alex Bäuerle
   - name: Alex Beatson
-  - name: Daniil A Boiko
-  - name: Ángel A Cabrera
+  - name: Daniil Boiko
+  - name: Ángel Alexander Cabrera
     website: 'https://cabreraalex.com'
   - name: Jaime Cheah
-  - name: Beth A Cimini
+  - name: Beth Cimini
   - name: Bram Gorissen
   - name: Thouis Jones
   - name: Konrad Karczewski
@@ -24,7 +24,7 @@ authors:
   - name: Srijit Seal
   - name: Erin Weisbart
   - name: Brandon White
-  - name: Anne E Carpenter
+  - name: Anne Carpenter
   - name: Shantanu Singh
 bibtex: >-
   @article{ewald2025cell,
