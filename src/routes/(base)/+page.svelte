@@ -29,7 +29,7 @@
 	</div>
 	<div id="pubs" class="sect">
 		<div class="inline">
-			<h2 class="header">Refereed Publications</h2>
+			<h2 class="header">Publications</h2>
 		</div>
 		<hr />
 		{#each data.pubs as pub}

@@ -1,0 +1,34 @@
+title: Accurate and interpretable in silico clinical risk assessment for drug-induced liver injury (DILI) from molecular structure
+abstract: >-
+  Drug-induced liver injury (DILI) is a leading cause of clinical trial failure and drug withdrawal, but
+  current methods fail to provide accurate and interpretable clinical risk at human-relevant exposure.
+  We profiled >100,000 unique molecules in primary human hepatocytes (PHHs) using a multiplexed
+  cytotoxicity assay with high content imaging & two biochemical assays (LDH & Realtime Glo/MT-Glo).
+  We train in silico models to predict dose-dependent responses for >10 distinct cell stress and death
+  features from the images solely from 2D molecular structure (SMILES string).
+  Our in silico features & thousands of clinical data points are used to train an in silico clinical risk
+  assessment model that outperforms industry-leading in vitro assays in accuracy & interpretability.
+id: sot
+teaser: sot.png
+venue: 'SOT, 2025'
+venuelong: Society of Toxicology Annual Meeting, Poster
+year: '2025'
+month: March
+authors:
+  - name: Katherine Titterton
+  - name: Daniil Boiko
+  - name: Ángel Alexander Cabrera
+    website: 'https://cabreraalex.com'
+  - name: Alex Bäuerle
+  - name: Akshit Tyagi
+  - name: Shahin Saneinejad
+  - name: Alex Beatson
+  - name: Brandon White
+bibtex: >-
+  @article{titterton2025accurate,
+    title={Accurate and interpretable in silico clinical risk assessment for drug-induced liver injury (DILI) from molecular structure},
+    author={Titterton, Katherine L and Boiko, Daniil A and Cabrera, {\`A}ngel A and B{\"a}uerle, Alex and Tyagi, Akshit and Saneinejad, Shahin and Beatson, Alex and White, Brandon},
+    year={2025},
+  }
+
+pdf: /axiom-sot.pdf

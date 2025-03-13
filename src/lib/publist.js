@@ -1,4 +1,5 @@
 export const PUBS = [
+	'sot',
 	'cytotox',
 	'slicing',
 	'blindspots',
