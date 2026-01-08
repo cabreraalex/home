@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patagonia 2026 | Cabrera & Vossler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ice-blue: #a8d5e5;
+            --glacier: #4a90a4;
+            --deep-navy: #0d1b2a;
+            --midnight: #1b263b;
+            --slate: #415a77;
+            --stone: #778da9;
+            --snow: #e0e1dd;
+            --cream: #f7f3eb;
+            --gold: #d4a373;
+            --rust: #bc6c25;
+            --alert: #e63946;
+            --success: #2a9d8f;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--deep-navy);
+            color: var(--snow);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Grain overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 1000;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 2rem;
+            background:
+                linear-gradient(180deg,
+                    rgba(13, 27, 42, 0.3) 0%,
+                    rgba(13, 27, 42, 0.6) 50%,
+                    rgba(13, 27, 42, 0.95) 100%),
+                linear-gradient(135deg, var(--midnight) 0%, var(--slate) 50%, var(--glacier) 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba(168, 213, 229, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(74, 144, 164, 0.1) 0%, transparent 50%);
+            animation: aurora 15s ease-in-out infinite alternate;
+        }
+
+        @keyframes aurora {
+            0% { opacity: 0.5; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.1); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fadeUp 1.2s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            animation: fadeUp 1.2s ease-out 0.2s both;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3.5rem, 12vw, 10rem);
+            font-weight: 900;
+            line-height: 0.9;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--snow) 0%, var(--ice-blue) 50%, var(--stone) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            color: var(--stone);
+            margin-bottom: 2rem;
+            animation: fadeUp 1.2s ease-out 0.4s both;
+        }
+
+        .hero-dates {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            color: var(--ice-blue);
+            padding: 0.75rem 2rem;
+            border: 1px solid var(--slate);
+            display: inline-block;
+            animation: fadeUp 1.2s ease-out 0.6s both;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--stone);
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+
+        .scroll-indicator svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--ice-blue);
+        }
+
+        /* Summary Section */
+        .summary {
+            padding: 6rem 2rem;
+            background: var(--midnight);
+            position: relative;
+        }
+
+        .summary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--slate), transparent);
+        }
+
+        .summary-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid var(--slate);
+            background: rgba(65, 90, 119, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background: rgba(65, 90, 119, 0.2);
+            transform: translateY(-4px);
+            border-color: var(--ice-blue);
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--ice-blue);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--stone);
+            margin-top: 0.5rem;
+        }
+
+        /* Missing Items Alert */
+        .missing-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(230, 57, 70, 0.1) 0%, rgba(13, 27, 42, 1) 100%);
+        }
+
+        .missing-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .missing-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .missing-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--alert);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.4); }
+            50% { box-shadow: 0 0 0 15px rgba(230, 57, 70, 0); }
+        }
+
+        .missing-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: white;
+        }
+
+        .missing-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--alert);
+        }
+
+        .missing-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .missing-item {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 1.5rem;
+            align-items: center;
+            padding: 1.25rem 1.5rem;
+            background: rgba(230, 57, 70, 0.08);
+            border-left: 3px solid var(--alert);
+            transition: all 0.3s ease;
+        }
+
+        .missing-item:hover {
+            background: rgba(230, 57, 70, 0.15);
+            transform: translateX(5px);
+        }
+
+        .missing-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--gold);
+            white-space: nowrap;
+        }
+
+        .missing-desc {
+            font-weight: 600;
+            color: var(--snow);
+        }
+
+        .missing-type {
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.75rem;
+            background: var(--alert);
+            color: white;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            padding: 6rem 2rem;
+            background: var(--deep-navy);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+        }
+
+        .timeline {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--glacier), var(--slate), var(--gold));
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+        }
+
+        .day-group {
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .day-marker {
+            position: sticky;
+            top: 100px;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .day-badge {
+            background: var(--midnight);
+            border: 2px solid var(--glacier);
+            padding: 0.75rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .day-badge-date {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--ice-blue);
+        }
+
+        .day-badge-day {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--stone);
+        }
+
+        .events {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .event {
+            display: grid;
+            grid-template-columns: 1fr 60px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        @media (max-width: 768px) {
+            .event {
+                grid-template-columns: 40px 1fr;
+                gap: 1rem;
+            }
+        }
+
+        .event-content {
+            padding: 1.5rem;
+            background: var(--midnight);
+            border: 1px solid var(--slate);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .event-content:hover {
+            border-color: var(--ice-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .event:nth-child(odd) .event-content {
+            grid-column: 1;
+            text-align: right;
+        }
+
+        .event:nth-child(even) .event-content {
+            grid-column: 3;
+        }
+
+        @media (max-width: 768px) {
+            .event:nth-child(odd) .event-content,
+            .event:nth-child(even) .event-content {
+                grid-column: 2;
+                text-align: left;
+            }
+        }
+
+        .event-dot {
+            grid-column: 2;
+            width: 16px;
+            height: 16px;
+            background: var(--glacier);
+            border-radius: 50%;
+            margin-top: 1.5rem;
+            justify-self: center;
+            position: relative;
+        }
+
+        .event-dot::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background: var(--ice-blue);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .event-dot {
+                grid-column: 1;
+            }
+        }
+
+        .event-type {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.5rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-type.flight { background: var(--glacier); color: white; }
+        .event-type.accommodation { background: var(--gold); color: var(--deep-navy); }
+        .event-type.activity { background: var(--success); color: white; }
+        .event-type.transport { background: var(--slate); color: white; }
+        .event-type.hike { background: #6b8f71; color: white; }
+        .event-type.missing { background: var(--alert); color: white; }
+
+        .event-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--snow);
+            margin-bottom: 0.5rem;
+        }
+
+        .event-time {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--ice-blue);
+            margin-bottom: 0.75rem;
+        }
+
+        .event-details {
+            font-size: 0.9rem;
+            color: var(--stone);
+            line-height: 1.5;
+        }
+
+        .event-details strong {
+            color: var(--snow);
+        }
+
+        .event-code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            background: rgba(168, 213, 229, 0.1);
+            padding: 0.2rem 0.5rem;
+            color: var(--ice-blue);
+        }
+
+        /* Location Headers */
+        .location-header {
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .location-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+        }
+
+        .location-header.santiago::before { background: linear-gradient(135deg, #f4a261, #e76f51); }
+        .location-header.torres::before { background: linear-gradient(135deg, #2a9d8f, #264653); }
+        .location-header.calafate::before { background: linear-gradient(135deg, #a8d5e5, #457b9d); }
+        .location-header.buenos-aires::before { background: linear-gradient(135deg, #e9c46a, #f4a261); }
+
+        .location-name {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 900;
+            position: relative;
+            z-index: 1;
+        }
+
+        .location-country {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-top: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: var(--midnight);
+            border-top: 1px solid var(--slate);
+        }
+
+        .footer-note {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: var(--stone);
+            margin-bottom: 2rem;
+        }
+
+        .travelers {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .traveler {
+            text-align: center;
+        }
+
+        .traveler-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            color: var(--snow);
+        }
+
+        .traveler-role {
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        .copyright {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--slate);
+        }
+
+        /* Animations on scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-tag">The Journey of a Lifetime</p>
+            <h1>Patagonia</h1>
+            <p class="hero-subtitle">Glaciers, Mountains & The End of the World</p>
+            <div class="hero-dates">March 28 — April 12, 2026</div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Explore</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Summary Stats -->
+    <section class="summary">
+        <div class="summary-grid">
+            <div class="stat-card fade-in">
+                <div class="stat-number">16</div>
+                <div class="stat-label">Days of Adventure</div>
+            </div>
+            <div class="stat-card fade-in">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Destinations</div>
+            </div>
+            <div class="stat-card fade-in">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Days Trekking</div>
+            </div>
+            <div class="stat-card fade-in">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Glaciers</div>
+            </div>
+            <div class="stat-card fade-in">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Flights</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Missing Reservations Alert -->
+    <section class="missing-section">
+        <div class="missing-container fade-in">
+            <div class="missing-header">
+                <div class="missing-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M12 9v4M12 17h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h2 class="missing-title">Still Need to Book</h2>
+            </div>
+            <div class="missing-grid">
+                <div class="missing-item">
+                    <span class="missing-date">Mar 29</span>
+                    <span class="missing-desc">Hotel in Santiago (1 night)</span>
+                    <span class="missing-type">Hotel</span>
+                </div>
+                <div class="missing-item">
+                    <span class="missing-date">Mar 30</span>
+                    <span class="missing-desc">Hotel in Puerto Natales (before trek)</span>
+                    <span class="missing-type">Hotel</span>
+                </div>
+                <div class="missing-item">
+                    <span class="missing-date">Apr 4</span>
+                    <span class="missing-desc">Hotel in Puerto Natales (after trek)</span>
+                    <span class="missing-type">Hotel</span>
+                </div>
+                <div class="missing-item">
+                    <span class="missing-date">Apr 7-10</span>
+                    <span class="missing-desc">Hotel in Buenos Aires (4 nights)</span>
+                    <span class="missing-type">Hotel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline-section">
+        <div class="section-header">
+            <p class="section-tag">Day by Day</p>
+            <h2 class="section-title">Your Complete Itinerary</h2>
+        </div>
+
+        <div class="timeline">
+            <!-- Day 1: March 28 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Mar 28</span>
+                        <span class="day-badge-day">Saturday · Day 1</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type flight">Flight</span>
+                            <h3 class="event-title">San Francisco → Los Angeles</h3>
+                            <p class="event-time">11:00 AM → 12:36 PM</p>
+                            <p class="event-details">
+                                <span class="event-code">DL 1715</span><br>
+                                Seats 21A, 21B<br>
+                                Confirmation: <strong>JLV73B</strong>
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                    <div class="event">
+                        <div></div>
+                        <div class="event-dot"></div>
+                        <div class="event-content fade-in">
+                            <span class="event-type flight">Flight</span>
+                            <h3 class="event-title">Los Angeles → Santiago</h3>
+                            <p class="event-time">3:05 PM → 5:35 AM +1</p>
+                            <p class="event-details">
+                                <span class="event-code">DL 6012</span> (LATAM)<br>
+                                10h 30m · Overnight flight<br>
+                                Confirmation: <strong>JLV73B</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location: Santiago -->
+            <div class="location-header santiago fade-in">
+                <h2 class="location-name">Santiago</h2>
+                <p class="location-country">Chile</p>
+            </div>
+
+            <!-- Day 2: March 29 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Mar 29</span>
+                        <span class="day-badge-day">Sunday · Day 2</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type activity">Arrival</span>
+                            <h3 class="event-title">Arrive in Santiago</h3>
+                            <p class="event-time">5:35 AM</p>
+                            <p class="event-details">
+                                Arturo Merino Benitez International Airport (SCL)<br>
+                                Free day to explore Santiago
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                    <div class="event">
+                        <div></div>
+                        <div class="event-dot"></div>
+                        <div class="event-content fade-in" style="border-color: var(--alert);">
+                            <span class="event-type missing">Need to Book</span>
+                            <h3 class="event-title">Hotel in Santiago</h3>
+                            <p class="event-details">
+                                1 night accommodation<br>
+                                Near Bellavista or Lastarria recommended
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3: March 30 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Mar 30</span>
+                        <span class="day-badge-day">Monday · Day 3</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type flight">Flight</span>
+                            <h3 class="event-title">Santiago → Puerto Natales</h3>
+                            <p class="event-time">9:50 AM → 1:06 PM</p>
+                            <p class="event-details">
+                                <span class="event-code">LA 1</span><br>
+                                Seats 11D, 11E · Economy Light<br>
+                                Confirmation: <strong>QHYRLJ</strong>
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                    <div class="event">
+                        <div></div>
+                        <div class="event-dot"></div>
+                        <div class="event-content fade-in" style="border-color: var(--alert);">
+                            <span class="event-type missing">Need to Book</span>
+                            <h3 class="event-title">Hotel in Puerto Natales</h3>
+                            <p class="event-details">
+                                1 night before trek<br>
+                                Pack for 5-day W Trek!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location: Torres del Paine -->
+            <div class="location-header torres fade-in">
+                <h2 class="location-name">Torres del Paine</h2>
+                <p class="location-country">Chile · W Trek</p>
+            </div>
+
+            <!-- Day 4: March 31 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Mar 31</span>
+                        <span class="day-badge-day">Tuesday · Day 4</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type transport">Bus</span>
+                            <h3 class="event-title">Puerto Natales → Pudeto</h3>
+                            <p class="event-time">6:45 AM → 9:45 AM</p>
+                            <p class="event-details">
+                                <span class="event-code">Bus-Sur</span><br>
+                                Seats 05, 06<br>
+                                Codes: <strong>RRD-398930, RRD-398931</strong>
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                    <div class="event">
+                        <div></div>
+                        <div class="event-dot"></div>
+                        <div class="event-content fade-in">
+                            <span class="event-type transport">Catamaran</span>
+                            <h3 class="event-title">Pudeto → Paine Grande</h3>
+                            <p class="event-time">10:30 AM</p>
+                            <p class="event-details">
+                                Hielos Patagónicos catamaran<br>
+                                Park entrance on this date
+                            </p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type hike">Hike</span>
+                            <h3 class="event-title">Paine Grande → Grey</h3>
+                            <p class="event-details">
+                                ~11 km · Views of Grey Glacier<br>
+                                First views of the massive glacier
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                    <div class="event">
+                        <div></div>
+                        <div class="event-dot"></div>
+                        <div class="event-content fade-in">
+                            <span class="event-type accommodation">Refugio</span>
+                            <h3 class="event-title">Grey Refugio</h3>
+                            <p class="event-details">
+                                Bunk bed in shared dormitory<br>
+                                <strong>Full board included</strong><br>
+                                Order: 6573721
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 5: April 1 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 1</span>
+                        <span class="day-badge-day">Wednesday · Day 5</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type hike">Hike</span>
+                            <h3 class="event-title">Grey → Paine Grande</h3>
+                            <p class="event-details">
+                                ~11 km return hike<br>
+                                Return along the glacier viewpoints
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                    <div class="event">
+                        <div></div>
+                        <div class="event-dot"></div>
+                        <div class="event-content fade-in">
+                            <span class="event-type accommodation">Refugio</span>
+                            <h3 class="event-title">Paine Grande Refugio</h3>
+                            <p class="event-details">
+                                Bunk bed in shared dormitory<br>
+                                <strong>Full board included</strong><br>
+                                Order: 6573722
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 6: April 2 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 2</span>
+                        <span class="day-badge-day">Thursday · Day 6</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type hike">Hike</span>
+                            <h3 class="event-title">Paine Grande → Valle Francés → Frances</h3>
+                            <p class="event-details">
+                                ~15 km · The heart of the W<br>
+                                Dramatic valley surrounded by peaks
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                    <div class="event">
+                        <div></div>
+                        <div class="event-dot"></div>
+                        <div class="event-content fade-in">
+                            <span class="event-type accommodation">Refugio</span>
+                            <h3 class="event-title">Mountain Hostel Frances</h3>
+                            <p class="event-details">
+                                Single bed<br>
+                                <strong>Dinner for take away included</strong><br>
+                                Ref: FSAL301557
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 7: April 3 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 3</span>
+                        <span class="day-badge-day">Friday · Day 7</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type hike">Hike</span>
+                            <h3 class="event-title">Frances → Los Cuernos → Central</h3>
+                            <p class="event-details">
+                                ~13 km · Stunning Cuernos views<br>
+                                Box lunch & breakfast included
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                    <div class="event">
+                        <div></div>
+                        <div class="event-dot"></div>
+                        <div class="event-content fade-in">
+                            <span class="event-type accommodation">Refugio</span>
+                            <h3 class="event-title">Mountain Hostel Central</h3>
+                            <p class="event-details">
+                                Single bed<br>
+                                <strong>Full board included</strong><br>
+                                Ref: FSAL301557
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 8: April 4 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 4</span>
+                        <span class="day-badge-day">Saturday · Day 8</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type hike">Hike</span>
+                            <h3 class="event-title">Central → Laguna Amarga</h3>
+                            <p class="event-details">
+                                Exit hike from the park<br>
+                                Head to bus pickup point
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                    <div class="event">
+                        <div></div>
+                        <div class="event-dot"></div>
+                        <div class="event-content fade-in">
+                            <span class="event-type transport">Bus</span>
+                            <h3 class="event-title">Laguna Amarga → Puerto Natales</h3>
+                            <p class="event-time">3:00 PM → 5:05 PM</p>
+                            <p class="event-details">
+                                <span class="event-code">Bus-Sur</span><br>
+                                Seats 05, 06<br>
+                                Codes: <strong>RRD-398928, RRD-398929</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-content fade-in" style="border-color: var(--alert);">
+                            <span class="event-type missing">Need to Book</span>
+                            <h3 class="event-title">Hotel in Puerto Natales</h3>
+                            <p class="event-details">
+                                1 night after trek<br>
+                                Celebrate completing the W!
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 9: April 5 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 5</span>
+                        <span class="day-badge-day">Sunday · Day 9</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type transport">Bus</span>
+                            <h3 class="event-title">Puerto Natales → El Calafate</h3>
+                            <p class="event-time">7:00 AM → 1:00 PM</p>
+                            <p class="event-details">
+                                <span class="event-code">Turismo Zaahj</span><br>
+                                6 hours · Cross border to Argentina<br>
+                                Seats 17 & 18<br>
+                                Tickets: <strong>000Q4C83, 0105HNFT</strong>
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location: El Calafate -->
+            <div class="location-header calafate fade-in">
+                <h2 class="location-name">El Calafate</h2>
+                <p class="location-country">Argentina · Patagonia</p>
+            </div>
+
+            <!-- Day 9 continued -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 5-7</span>
+                        <span class="day-badge-day">Sunday-Tuesday</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type accommodation">Hostel</span>
+                            <h3 class="event-title">America Del Sur Calafate Hostel</h3>
+                            <p class="event-time">Check-in: 4-5 PM</p>
+                            <p class="event-details">
+                                2 nights (Apr 5-7)<br>
+                                Confirmation: <strong>5079652224</strong>
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 10: April 6 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 6</span>
+                        <span class="day-badge-day">Monday · Day 10</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type activity">Glacier</span>
+                            <h3 class="event-title">Perito Moreno Minitrekking</h3>
+                            <p class="event-time">7:30 AM pickup</p>
+                            <p class="event-details">
+                                <strong>Hielo & Aventura</strong><br>
+                                Walk ON the glacier!<br>
+                                Pickup from America Del Sur<br>
+                                Reservation: <strong>#699376</strong>
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 11: April 7 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 7</span>
+                        <span class="day-badge-day">Tuesday · Day 11</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type flight">Flight</span>
+                            <h3 class="event-title">El Calafate → Buenos Aires</h3>
+                            <p class="event-time">8:20 AM → 11:20 AM</p>
+                            <p class="event-details">
+                                <span class="event-code">AR 1839</span><br>
+                                Aerolíneas Argentinas<br>
+                                Arrives: Aeroparque (AEP)<br>
+                                Confirmation: <strong>DDYSUV</strong>
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location: Buenos Aires -->
+            <div class="location-header buenos-aires fade-in">
+                <h2 class="location-name">Buenos Aires</h2>
+                <p class="location-country">Argentina</p>
+            </div>
+
+            <!-- Days 11-14: April 7-10 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 7-10</span>
+                        <span class="day-badge-day">Tuesday-Friday</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in" style="border-color: var(--alert);">
+                            <span class="event-type missing">Need to Book</span>
+                            <h3 class="event-title">Hotel in Buenos Aires</h3>
+                            <p class="event-details">
+                                4 nights accommodation<br>
+                                Palermo, Recoleta, or San Telmo<br>
+                                <em>Time to explore tango, steak & wine!</em>
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 15: April 11 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 11</span>
+                        <span class="day-badge-day">Saturday · Day 15</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type flight">Flight</span>
+                            <h3 class="event-title">Buenos Aires → Houston</h3>
+                            <p class="event-time">9:00 PM → 5:10 AM +1</p>
+                            <p class="event-details">
+                                <span class="event-code">UA 818</span><br>
+                                Departs: Ezeiza (EZE)<br>
+                                Seats 46E, 46F (47K, 47L)<br>
+                                Overnight flight
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 16: April 12 -->
+            <div class="day-group">
+                <div class="day-marker">
+                    <div class="day-badge">
+                        <span class="day-badge-date">Apr 12</span>
+                        <span class="day-badge-day">Sunday · Day 16</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-content fade-in">
+                            <span class="event-type flight">Flight</span>
+                            <h3 class="event-title">Houston → San Francisco</h3>
+                            <p class="event-time">8:20 AM → 10:42 AM</p>
+                            <p class="event-details">
+                                <span class="event-code">UA 2744</span><br>
+                                Seats 29D, 29E<br>
+                                Confirmation: <strong>N70F0Q</strong>
+                            </p>
+                        </div>
+                        <div class="event-dot"></div>
+                        <div></div>
+                    </div>
+                    <div class="event">
+                        <div></div>
+                        <div class="event-dot"></div>
+                        <div class="event-content fade-in">
+                            <span class="event-type activity">Home</span>
+                            <h3 class="event-title">Welcome Home!</h3>
+                            <p class="event-time">10:42 AM</p>
+                            <p class="event-details">
+                                Arrive San Francisco<br>
+                                <em>Memories for a lifetime</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-note">"The end of the world is only the beginning."</p>
+        <div class="travelers">
+            <div class="traveler">
+                <p class="traveler-name">Angel Alexander Cabrera</p>
+                <p class="traveler-role">Explorer</p>
+            </div>
+            <div class="traveler">
+                <p class="traveler-name">Kristen Vossler</p>
+                <p class="traveler-role">Explorer</p>
+            </div>
+        </div>
+        <p class="copyright">Patagonia 2026 · March 28 – April 12</p>
+    </footer>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
