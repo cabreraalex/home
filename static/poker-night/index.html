@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Poker Night — Chip Bank</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --felt:#101b13;
+    --felt2:#16241a;
+    --raise:#1c2d21;
+    --line:rgba(235,225,198,.14);
+    --line2:rgba(235,225,198,.26);
+    --cream:#efe6cf;
+    --dim:#93a292;
+    --brass:#d6a550;
+    --brass-deep:#a97f2f;
+    --rouge:#c4574a;
+    --shadow:0 10px 30px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0;background:var(--felt);color:var(--cream);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    font-size:16px;line-height:1.4;}
+  body{background:
+    radial-gradient(120% 90% at 50% 0%, #182a1d 0%, var(--felt) 62%);
+    min-height:100dvh;}
+  #app{max-width:520px;margin:0 auto;min-height:100dvh;display:flex;flex-direction:column;
+    padding:env(safe-area-inset-top) 16px calc(env(safe-area-inset-bottom) + 12px);}
+  button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;touch-action:manipulation;}
+  button:focus-visible, input:focus-visible{outline:2px solid var(--brass);outline-offset:2px;border-radius:8px;}
+  input{font:inherit;color:var(--cream);background:var(--felt2);border:1px solid var(--line);
+    border-radius:10px;padding:12px 14px;width:100%;font-size:17px;}
+  input::placeholder{color:rgba(147,162,146,.6)}
+  .serif{font-family:"Fraunces",Georgia,"Times New Roman",serif;}
+  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);}
+
+  /* ---------- header ---------- */
+  .top{display:flex;align-items:center;justify-content:space-between;padding:14px 2px 10px;}
+  .top .hand{font-size:13px;color:var(--dim);letter-spacing:.06em}
+  .top .hand b{color:var(--cream);font-weight:600}
+  .suit{color:var(--brass);font-size:15px;}
+  .live{font-size:11px;color:var(--dim);letter-spacing:.06em}
+  .live .dot{display:inline-block;width:7px;height:7px;border-radius:99px;background:var(--brass);
+    margin-right:5px;vertical-align:1px;}
+  .live.off .dot{background:var(--rouge)}
+  .iconbtn{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--dim);}
+  .iconbtn:active{background:var(--felt2)}
+  .iconbtn[disabled]{opacity:.35}
+  .topbtns{display:flex;gap:8px}
+
+  /* ---------- pot plate (signature) ---------- */
+  .pot{margin:6px 0 14px;text-align:center;padding:20px 12px 22px;border-radius:18px;
+    border:1px solid var(--line2);position:relative;background:linear-gradient(180deg,#1a2b1f, #14211a);
+    box-shadow:var(--shadow);}
+  .pot::after{content:"";position:absolute;inset:5px;border-radius:14px;
+    border:1px solid rgba(214,165,80,.28);pointer-events:none;}
+  .pot .eyebrow{color:var(--brass);}
+  .pot .amt{font-size:56px;font-weight:600;line-height:1.05;margin-top:2px;
+    font-variant-numeric:tabular-nums;color:var(--cream);}
+  .pot .sub{font-size:13px;color:var(--dim);margin-top:4px;min-height:18px;}
+
+  /* ---------- player list ---------- */
+  .plist{display:flex;flex-direction:column;gap:8px;flex:1 0 auto;}
+  .prow{display:flex;align-items:center;gap:10px;padding:12px 12px;border-radius:14px;
+    border:1px solid var(--line);background:rgba(22,36,26,.55);}
+  .prow.acting{border-color:rgba(214,165,80,.6);background:var(--raise);
+    box-shadow:inset 3px 0 0 var(--brass);}
+  .prow.out{opacity:.42}
+  .pname{flex:1;min-width:0;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .tag{font-size:10px;letter-spacing:.08em;border:1px solid var(--line2);color:var(--dim);
+    border-radius:999px;padding:2px 7px;flex:none;}
+  .tag.d{border-color:var(--brass);color:var(--brass);font-weight:700;}
+  .tag.you{border-color:transparent;background:rgba(214,165,80,.16);color:var(--brass);font-weight:700}
+  .pstack{font-variant-numeric:tabular-nums;font-weight:600;flex:none;}
+  .pbet{font-size:12px;color:var(--brass);font-variant-numeric:tabular-nums;flex:none;min-width:64px;text-align:right;}
+  .pstate{font-size:12px;color:var(--dim);flex:none;min-width:64px;text-align:right;font-style:italic;}
+  @keyframes breathe{0%,100%{box-shadow:inset 3px 0 0 var(--brass)}50%{box-shadow:inset 3px 0 0 var(--brass),0 0 0 1px rgba(214,165,80,.25)}}
+  .prow.acting{animation:breathe 2.4s ease-in-out infinite;}
+
+  /* ---------- action bar ---------- */
+  .abar{position:sticky;bottom:0;margin:14px -16px 0;padding:12px 16px calc(env(safe-area-inset-bottom) + 12px);
+    background:linear-gradient(180deg, rgba(16,27,19,0), rgba(16,27,19,.94) 30%, #0d1710 100%);}
+  .toact{display:flex;justify-content:space-between;align-items:baseline;margin:0 2px 10px;}
+  .toact .who{font-weight:700;font-size:17px;}
+  .toact .need{font-size:13px;color:var(--dim);font-variant-numeric:tabular-nums;}
+  .btnrow{display:flex;gap:8px;}
+  .act{flex:1;padding:16px 6px;border-radius:14px;font-weight:700;font-size:16px;
+    border:1px solid var(--line2);letter-spacing:.02em;}
+  .act:active{transform:translateY(1px)}
+  .act.fold{color:var(--rouge);border-color:rgba(196,87,74,.5);}
+  .act.call{background:var(--cream);color:#132018;border-color:var(--cream);}
+  .act.raise{background:linear-gradient(180deg,var(--brass),var(--brass-deep));color:#221a08;border-color:var(--brass-deep);}
+  .act[disabled]{opacity:.4}
+  .act small{display:block;font-weight:600;font-size:11px;opacity:.75;margin-top:1px;}
+  .waitbar{margin:14px 2px 6px;text-align:center;color:var(--dim);font-size:14px;font-style:italic;}
+
+  /* ---------- interstitials ---------- */
+  .moment{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;gap:14px;padding:24px 8px;}
+  .moment h2{font-size:32px;font-weight:600;margin:0;}
+  .moment p{margin:0;color:var(--dim);font-size:15px;max-width:300px;}
+  .big{padding:16px 26px;border-radius:14px;font-weight:700;font-size:17px;
+    background:linear-gradient(180deg,var(--brass),var(--brass-deep));color:#221a08;min-width:200px;}
+  .big.quiet{background:none;color:var(--cream);border:1px solid var(--line2);}
+  .big:active{transform:translateY(1px)}
+
+  /* ---------- showdown ---------- */
+  .potcard{border:1px solid var(--line2);border-radius:16px;padding:16px;margin-bottom:12px;
+    background:var(--felt2);}
+  .potcard h3{margin:0 0 2px;font-size:20px;}
+  .potcard .eyebrow{margin-bottom:10px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px;}
+  .chip{padding:12px 16px;border-radius:999px;border:1px solid var(--line2);font-weight:600;font-size:15px;}
+  .chip.on{background:var(--brass);color:#221a08;border-color:var(--brass);}
+  .chip[disabled]{opacity:.55}
+  .hint{font-size:12px;color:var(--dim);margin-top:6px;}
+
+  /* ---------- result ---------- */
+  .winline{display:flex;justify-content:space-between;padding:14px 6px;border-bottom:1px solid var(--line);
+    font-size:18px;font-weight:600;}
+  .winline span:last-child{color:var(--brass);font-variant-numeric:tabular-nums;}
+
+  /* ---------- sheets ---------- */
+  .scrim{position:fixed;inset:0;background:rgba(5,10,7,.6);backdrop-filter:blur(2px);z-index:9;}
+  .sheet{position:fixed;left:0;right:0;bottom:0;z-index:10;max-width:520px;margin:0 auto;
+    background:#152219;border:1px solid var(--line2);border-bottom:none;border-radius:20px 20px 0 0;
+    padding:18px 18px calc(env(safe-area-inset-bottom) + 18px);box-shadow:0 -12px 40px rgba(0,0,0,.5);
+    animation:up .22s ease-out;max-height:82dvh;overflow:auto;}
+  @keyframes up{from{transform:translateY(24px);opacity:.6}to{transform:none;opacity:1}}
+  .sheet h3{margin:2px 0 14px;font-size:20px;}
+  .presets{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;}
+  .preset{padding:12px 4px;border:1px solid var(--line2);border-radius:12px;font-weight:600;font-size:14px;}
+  .preset.on{background:var(--brass);color:#221a08;border-color:var(--brass);}
+  .stepper{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+  .stepper button{width:56px;height:56px;border-radius:14px;border:1px solid var(--line2);font-size:26px;flex:none;}
+  .stepper .val{flex:1;text-align:center;font-size:34px;font-weight:600;font-variant-numeric:tabular-nums;}
+  .stepper .val small{display:block;font-size:11px;color:var(--dim);letter-spacing:.15em;text-transform:uppercase;font-weight:600}
+  .menu-item{display:block;width:100%;text-align:left;padding:16px 6px;font-size:17px;font-weight:600;
+    border-bottom:1px solid var(--line);}
+  .menu-item.danger{color:var(--rouge)}
+  .stackrow{display:flex;gap:8px;align-items:center;margin-bottom:10px;}
+  .stackrow .nm{flex:1;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .stackrow input{width:100px;text-align:right;flex:none;font-variant-numeric:tabular-nums}
+  .stackrow .rebuy{flex:none;font-size:13px;font-weight:700;color:var(--brass);border:1px solid rgba(214,165,80,.45);
+    padding:10px 12px;border-radius:10px;}
+  .fieldlbl{font-size:12px;color:var(--dim);letter-spacing:.1em;text-transform:uppercase;margin:14px 0 6px;font-weight:600}
+
+  /* ---------- landing & lobby ---------- */
+  .setup{flex:1;display:flex;flex-direction:column;padding-top:7vh;}
+  .setup h1{font-size:44px;font-weight:600;margin:0;line-height:1.05;}
+  .setup .lede{color:var(--dim);margin:8px 0 26px;font-size:15px;}
+  .modecard{display:block;width:100%;text-align:left;border:1px solid var(--line2);border-radius:16px;
+    padding:16px;margin-bottom:10px;background:rgba(22,36,26,.55);}
+  .modecard b{display:block;font-size:18px;margin-bottom:2px;}
+  .modecard span{color:var(--dim);font-size:13px;}
+  .modecard:active{background:var(--raise)}
+  .codeplate{margin:10px 0 18px;text-align:center;padding:22px 12px;border-radius:18px;
+    border:1px solid var(--line2);position:relative;background:linear-gradient(180deg,#1a2b1f, #14211a);}
+  .codeplate::after{content:"";position:absolute;inset:5px;border-radius:14px;
+    border:1px solid rgba(214,165,80,.28);pointer-events:none;}
+  .codeplate .code{font-size:58px;font-weight:600;letter-spacing:.22em;color:var(--brass);
+    margin-left:.22em;line-height:1.05;}
+  .cfggrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;}
+  .namerow{display:flex;gap:8px;margin-bottom:8px;align-items:center;}
+  .namerow .rm{color:var(--dim);font-size:20px;width:44px;height:44px;flex:none;}
+  .addp{color:var(--brass);font-weight:700;padding:12px 4px;text-align:left;font-size:15px;}
+  .start{margin-top:auto;position:sticky;bottom:12px;padding-top:14px;}
+  .start .big{width:100%;}
+  .codein{font-size:30px;letter-spacing:.35em;text-align:center;text-transform:uppercase;font-weight:700;}
+  .notice{border:1px solid rgba(196,87,74,.5);color:var(--rouge);border-radius:12px;padding:12px 14px;
+    font-size:14px;margin-bottom:12px;}
+
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/*ENGINE-START*/
+function fmt(n){return (n||0).toLocaleString("en-US");}
+
+function newState(cfg, names){
+  return {
+    screen:"game", cfg:{startStack:cfg.startStack, sb:cfg.sb, bb:cfg.bb},
+    players:names.map(function(n,i){return {id:"p"+i+"_"+Date.now(), name:n, stack:cfg.startStack};}),
+    dealerId:null, handNum:0, hand:null, stalled:false
+  };
+}
+function alivePlayers(S){return S.players.filter(function(p){return p.stack>0;});}
+function potTotal(H){return H.ps.reduce(function(a,p){return a+p.total;},0);}
+function pById(S,id){for(var i=0;i<S.players.length;i++)if(S.players[i].id===id)return S.players[i];return null;}
+
+function startHand(S){
+  var alive=alivePlayers(S);
+  if(alive.length<2){S.hand=null;S.stalled=true;return;}
+  S.stalled=false;
+  S.handNum++;
+  // advance dealer to next alive player (seat order)
+  var order=S.players.map(function(p){return p.id;});
+  var start=S.dealerId?order.indexOf(S.dealerId):-1;
+  var dealerId=null;
+  for(var k=1;k<=order.length;k++){
+    var cand=S.players[(start+k)%order.length];
+    if(cand.stack>0){dealerId=cand.id;break;}
+  }
+  S.dealerId=dealerId;
+  var ps=alive.map(function(p){return {id:p.id,name:p.name,betRound:0,total:0,inHand:true,allIn:false,acted:false};});
+  var dIdx=ps.findIndex(function(p){return p.id===dealerId;});
+  var n=ps.length;
+  var sbIdx=(n===2)?dIdx:(dIdx+1)%n;
+  var bbIdx=(sbIdx+1)%n;
+  var H={ps:ps,dealer:dIdx,sb:sbIdx,bb:bbIdx,street:0,phase:"bet",
+    currentBet:S.cfg.bb,lastRaise:S.cfg.bb,acting:-1,pots:null,potIdx:0,results:[]};
+  S.hand=H;
+  commit(S,ps[sbIdx],S.cfg.sb);
+  commit(S,ps[bbIdx],S.cfg.bb);
+  var canAct=ps.filter(function(p){return p.inHand&&!p.allIn;});
+  if(canAct.length===0){H.phase="runout";return;}
+  H.acting=nextActor(S,bbIdx);
+  if(H.acting===-1){H.phase="runout";}
+}
+function commit(S,p,x){
+  var pl=pById(S,p.id);
+  x=Math.min(x,pl.stack); if(x<0)x=0;
+  pl.stack-=x; p.betRound+=x; p.total+=x;
+  if(pl.stack===0)p.allIn=true;
+}
+function stackOf(S,p){return pById(S,p.id).stack;}
+function nextActor(S,fromIdx){
+  var H=S.hand,n=H.ps.length;
+  for(var k=1;k<=n;k++){
+    var i=(fromIdx+k)%n,p=H.ps[i];
+    if(p.inHand&&!p.allIn&&(!p.acted||p.betRound<H.currentBet))return i;
+  }
+  return -1;
+}
+function legal(S){
+  var H=S.hand,p=H.ps[H.acting],st=stackOf(S,p);
+  var toCall=Math.max(0,H.currentBet-p.betRound);
+  var callAmt=Math.min(toCall,st);
+  var maxTo=p.betRound+st;
+  var minTo=H.currentBet===0?Math.min(S.cfg.bb,maxTo):Math.min(H.currentBet+H.lastRaise,maxTo);
+  var canRaise=maxTo>H.currentBet;
+  return {toCall:toCall,callAmt:callAmt,canCheck:toCall===0,minTo:minTo,maxTo:maxTo,canRaise:canRaise,
+    callAllIn:callAmt===st&&toCall>0, betWord:H.currentBet===0?"Bet":"Raise"};
+}
+function act(S,a){
+  var H=S.hand,p=H.ps[H.acting];
+  if(a.type==="fold"){p.inHand=false;p.acted=true;}
+  else if(a.type==="check"){p.acted=true;}
+  else if(a.type==="call"){commit(S,p,Math.max(0,H.currentBet-p.betRound));p.acted=true;}
+  else if(a.type==="raise"){
+    var target=Math.min(a.to,p.betRound+stackOf(S,p));
+    commit(S,p,target-p.betRound);
+    if(p.betRound>H.currentBet){
+      var size=p.betRound-H.currentBet;
+      if(size>=H.lastRaise)H.lastRaise=size;
+      H.currentBet=p.betRound;
+      H.ps.forEach(function(q){if(q!==p&&q.inHand&&!q.allIn)q.acted=false;});
+    }
+    p.acted=true;
+  }
+  afterAction(S);
+}
+function afterAction(S){
+  var H=S.hand;
+  var live=H.ps.filter(function(q){return q.inHand;});
+  if(live.length===1){endByFold(S,live[0]);return;}
+  var canAct=live.filter(function(q){return !q.allIn;});
+  var settled=canAct.every(function(q){return q.acted&&q.betRound===H.currentBet;});
+  if(settled){
+    if(H.street===3){toShowdown(S);}
+    else if(canAct.length<=1){H.phase="runout";}
+    else{H.phase="deal";}
+    return;
+  }
+  H.acting=nextActor(S,H.acting);
+  if(H.acting===-1){ if(H.street===3){toShowdown(S);} else {H.phase="runout";} }
+}
+function confirmDeal(S){
+  var H=S.hand;
+  H.street++;
+  H.currentBet=0;H.lastRaise=S.cfg.bb;
+  H.ps.forEach(function(q){q.betRound=0;if(q.inHand&&!q.allIn)q.acted=false;});
+  H.acting=nextActor(S,H.dealer);
+  H.phase="bet";
+  if(H.acting===-1){H.phase="runout";}
+}
+function applyRefund(S){
+  var H=S.hand;
+  var inH=H.ps.filter(function(q){return q.inHand;});
+  if(!inH.length)return;
+  var top=inH[0];inH.forEach(function(q){if(q.total>top.total)top=q;});
+  var otherMax=0;H.ps.forEach(function(q){if(q!==top&&q.total>otherMax)otherMax=q.total;});
+  var refund=top.total-otherMax;
+  if(refund>0){top.total-=refund;pById(S,top.id).stack+=refund;}
+}
+function buildPots(ps){
+  var inH=ps.filter(function(p){return p.inHand;});
+  var levels=[];inH.forEach(function(p){if(levels.indexOf(p.total)===-1)levels.push(p.total);});
+  levels.sort(function(a,b){return a-b;});
+  var pots=[],prev=0;
+  levels.forEach(function(L){
+    var amt=0;
+    ps.forEach(function(p){amt+=Math.max(0,Math.min(p.total,L)-prev);});
+    var elig=inH.filter(function(p){return p.total>=L;}).map(function(p){return p.id;});
+    if(amt>0)pots.push({amount:amt,eligible:elig});
+    prev=L;
+  });
+  var merged=[];
+  pots.forEach(function(pot){
+    var last=merged[merged.length-1];
+    if(last&&last.eligible.length===pot.eligible.length&&last.eligible.every(function(id,i){return id===pot.eligible[i];}))
+      last.amount+=pot.amount;
+    else merged.push({amount:pot.amount,eligible:pot.eligible.slice()});
+  });
+  return merged;
+}
+function toShowdown(S){
+  var H=S.hand;
+  applyRefund(S);
+  H.pots=buildPots(H.ps);
+  H.potIdx=0;H.results=[];H.phase="showdown";
+  if(H.pots.length===0)H.phase="result";
+}
+function award(S,winnerIds){
+  var H=S.hand,pot=H.pots[H.potIdx];
+  var n=winnerIds.length,share=Math.floor(pot.amount/n),rem=pot.amount-share*n;
+  winnerIds.forEach(function(id,i){
+    var take=share+(i<rem?1:0);
+    pById(S,id).stack+=take;
+    var r=null;H.results.forEach(function(x){if(x.id===id)r=x;});
+    if(r)r.amt+=take;else H.results.push({id:id,name:pById(S,id).name,amt:take});
+  });
+  H.potIdx++;
+  if(H.potIdx>=H.pots.length)H.phase="result";
+}
+function endByFold(S,winner){
+  var H=S.hand;
+  applyRefund(S);
+  var total=potTotal(H);
+  pById(S,winner.id).stack+=total;
+  H.results=[{id:winner.id,name:winner.name,amt:total}];
+  H.pots=[];H.phase="result";
+}
+/*ENGINE-END*/
+
+/* ================= storage (artifact -> localStorage -> memory) ================= */
+var MEM={};
+var store={
+  set:function(k,v){
+    try{if(window.storage&&window.storage.set){window.storage.set(k,v);return;}}catch(e){}
+    try{localStorage.setItem(k,v);return;}catch(e){}
+    MEM[k]=v;
+  },
+  get:async function(k){
+    try{if(window.storage&&window.storage.get){var r=await window.storage.get(k);return r?r.value:null;}}catch(e){}
+    try{var v=localStorage.getItem(k);if(v!==null)return v;}catch(e){}
+    return MEM[k]!==undefined?MEM[k]:null;
+  },
+  del:function(k){
+    try{if(window.storage&&window.storage.delete){window.storage.delete(k);return;}}catch(e){}
+    try{localStorage.removeItem(k);}catch(e){}
+    delete MEM[k];
+  }
+};
+var STORE_KEY="poker-night-v2", CLIENT_KEY="poker-night-client", DEV_KEY="poker-night-device";
+var DEV_ID=null;
+
+/* ================= app globals ================= */
+var S=null, history=[], sheet=null, raiseTo=0, pickedWinners=[], setupDraft=null;
+var SUITS=["\u2660","\u2665","\u2666","\u2663"];
+var STREETS=["Pre-flop","Flop","Turn","River"];
+var UI={screen:"landing", joinCode:"", joinName:"", err:null, savedSolo:false, savedHost:null, savedClient:null, wasMyTurn:false};
+var NET={mode:"solo", room:null, code:null, peers:0, linked:false, connecting:false};
+
+/* ================= networking (trystero over nostr) ================= */
+function makeCode(){
+  var A="ABCDEFGHJKMNPQRSTUVWXYZ23456789", c="";
+  for(var i=0;i<4;i++)c+=A[Math.floor(Math.random()*A.length)];
+  return c;
+}
+async function loadTrystero(){
+  var urls=["https://esm.sh/trystero/nostr","https://esm.run/trystero/nostr","https://cdn.jsdelivr.net/npm/trystero/+esm"];
+  for(var i=0;i<urls.length;i++){
+    try{var m=await import(urls[i]);if(m&&m.joinRoom)return m;}catch(e){}
+  }
+  return null;
+}
+async function goOnline(code, asHost){
+  NET.connecting=true;render();
+  var T=await loadTrystero();
+  if(!T){
+    NET.connecting=false;
+    UI.err="Couldn't load the link-up library. If you're previewing inside Claude, this only works once it's on your site \u2014 One-phone mode works anywhere.";
+    render();return false;
+  }
+  NET.mode=asHost?"host":"client";
+  NET.code=code;
+  NET.selfPeer=T.selfId;
+  NET.room=T.joinRoom({appId:"poker-night-chips"},"pn-"+code);
+  var st=NET.room.makeAction("state");
+  var th=NET.room.makeAction("toHost");
+  NET.sendState=st[0];NET.sendHost=th[0];
+  if(asHost){
+    th[1](function(m,peer){try{handleClientMsg(typeof m==="string"?JSON.parse(m):m,peer);}catch(e){}});
+    NET.room.onPeerJoin(function(p){NET.peers++;if(S)NET.sendState(JSON.stringify(S),p);render();});
+    NET.room.onPeerLeave(function(){NET.peers=Math.max(0,NET.peers-1);render();});
+  }else{
+    st[1](function(raw){try{onHostState(JSON.parse(raw));}catch(e){}});
+    NET.room.onPeerJoin(function(){sendHello();});
+    NET.room.onPeerLeave(function(p){if(S&&S.hostPeer===p){NET.linked=false;render();}});
+    sendHello();
+  }
+  NET.connecting=false;
+  keepAwake();
+  return true;
+}
+function broadcast(){
+  if(NET.mode==="host"&&NET.sendState){S.hostPeer=NET.selfPeer||null;NET.sendState(JSON.stringify(S));}
+}
+function sendHello(){
+  if(NET.sendHost)NET.sendHost(JSON.stringify({t:"hello",name:UI.joinName,dev:DEV_ID}));
+}
+function sendToHost(m){
+  m.dev=DEV_ID;
+  if(NET.sendHost)NET.sendHost(JSON.stringify(m));
+}
+
+/* ---------- host: handle client messages ---------- */
+function handleClientMsg(m,peer){
+  if(!m||!m.t)return;
+  if(m.t==="hello"){
+    var name=(m.name||"").trim().slice(0,20);
+    if(!S)return;
+    if(S.claims&&S.claims[m.dev]&&pById(S,S.claims[m.dev])){
+      if(name&&S.screen==="lobby")pById(S,S.claims[m.dev]).name=name;
+      persistAndSync();return;
+    }
+    if(!name)return;
+    S.claims=S.claims||{};
+    var existing=S.players.find(function(p){return p.name.toLowerCase()===name.toLowerCase()&&!claimedBySomeone(p.id);});
+    if(existing){S.claims[m.dev]=existing.id;}
+    else{
+      var np={id:"p"+S.players.length+"_"+Date.now(),name:name,stack:S.screen==="lobby"?0:S.cfg.startStack};
+      S.players.push(np);S.claims[m.dev]=np.id;
+    }
+    persistAndSync();
+  }
+  if(m.t==="claim"){
+    if(!S)return;
+    S.claims=S.claims||{};S.claims[m.dev]=m.playerId;
+    persistAndSync();
+  }
+  if(m.t==="act"){
+    if(!S||!S.hand||S.hand.phase!=="bet")return;
+    var H=S.hand,p=H.ps[H.acting];
+    if(!S.claims||S.claims[m.dev]!==p.id)return;
+    var a=m.a||{};
+    if(a.type==="raise"){
+      var L=legal(S);
+      if(!L.canRaise)return;
+      a.to=Math.max(L.minTo,Math.min(L.maxTo,Math.round(a.to||0)));
+    }
+    if(a.type==="check"&&!legal(S).canCheck)return;
+    mutate(function(){act(S,a);});
+  }
+  if(m.t==="deal"){
+    if(!S||!S.hand)return;
+    var H2=S.hand;
+    if(!S.claims||S.claims[m.dev]!==H2.ps[H2.dealer].id)return;
+    if(H2.phase==="deal")mutate(function(){confirmDeal(S);});
+    else if(H2.phase==="runout")mutate(function(){toShowdown(S);});
+    else if(H2.phase==="result")mutate(function(){startHand(S);});
+  }
+}
+function claimedBySomeone(pid){
+  if(!S.claims)return false;
+  for(var k in S.claims)if(S.claims[k]===pid)return true;
+  return false;
+}
+
+/* ---------- client: receive state ---------- */
+function onHostState(next){
+  S=next;NET.linked=true;
+  var my=myPlayerId();
+  var myTurn=!!(S.hand&&S.hand.phase==="bet"&&S.hand.acting>=0&&S.hand.ps[S.hand.acting].id===my);
+  if(myTurn&&!UI.wasMyTurn){try{if(navigator.vibrate)navigator.vibrate(80);}catch(e){}}
+  UI.wasMyTurn=myTurn;
+  if(sheet&&sheet.kind==="raise"&&!myTurn)sheet=null;
+  store.set(CLIENT_KEY,JSON.stringify({code:NET.code,name:UI.joinName,dev:DEV_ID}));
+  render();
+}
+function myPlayerId(){return (S&&S.claims)?S.claims[DEV_ID]||null:null;}
+function canDrive(){return NET.mode!=="client";}
+function amDealer(){
+  if(!S||!S.hand)return false;
+  return S.hand.ps[S.hand.dealer].id===myPlayerId();
+}
+
+/* ================= wake lock ================= */
+var WAKE=null;
+async function keepAwake(){
+  try{if(navigator.wakeLock)WAKE=await navigator.wakeLock.request("screen");}catch(e){}
+}
+document.addEventListener("visibilitychange",function(){
+  if(!document.hidden){keepAwake();if(NET.mode==="client")sendHello();}
+});
+
+/* ================= mutate / persist ================= */
+function persistAndSync(){
+  if(NET.mode!=="client")store.set(STORE_KEY,JSON.stringify({S:S,code:NET.code,mode:NET.mode}));
+  broadcast();render();
+}
+function mutate(fn){
+  if(S&&(S.screen==="game")){history.push(JSON.stringify(S));if(history.length>40)history.shift();}
+  fn();
+  persistAndSync();
+}
+function undo(){
+  if(!history.length)return;
+  S=JSON.parse(history.pop());
+  sheet=null;pickedWinners=[];
+  persistAndSync();
+}
+
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function el(html){var d=document.createElement("div");d.innerHTML=html.trim();return d.firstChild;}
+
+/* ================= render ================= */
+function render(){
+  var app=document.getElementById("app");
+  app.innerHTML="";
+  if(UI.screen==="landing"&&!S){renderLanding(app);return;}
+  if(UI.screen==="join"&&(!S||NET.mode!=="client")){renderJoin(app);return;}
+  if(NET.mode==="client"&&!S){renderClientWaiting(app);return;}
+  if(S&&S.screen==="lobby"){renderLobby(app);if(sheet)renderSheet(app);return;}
+  if(S&&S.screen==="game"){renderGame(app);if(sheet)renderSheet(app);return;}
+  renderLanding(app);
+}
+
+/* ---------- landing ---------- */
+function renderLanding(app){
+  var root=el('<div class="setup"></div>');
+  root.appendChild(el('<div><h1 class="serif">Poker Night</h1><p class="lede">Real cards on the table, chips on your phones.</p></div>'));
+  if(UI.err){root.appendChild(el('<div class="notice">'+esc(UI.err)+"</div>"));}
+
+  if(UI.savedHost){
+    var rh=el('<button class="modecard" style="border-color:rgba(214,165,80,.5)"><b>Resume your table \u2014 '+esc(UI.savedHost.code||"")+'</b><span>Pick up the saved game where it left off. Friends rejoin with the same code.</span></button>');
+    rh.onclick=async function(){
+      var d=UI.savedHost;S=d.S;history=[];
+      if(d.mode==="host"&&d.code){await goOnline(d.code,true);}
+      else NET.mode="solo";
+      UI.screen="game";persistAndSync();
+    };
+    root.appendChild(rh);
+  }
+  if(UI.savedClient){
+    var rc=el('<button class="modecard" style="border-color:rgba(214,165,80,.5)"><b>Rejoin '+esc(UI.savedClient.code)+' as '+esc(UI.savedClient.name)+'</b><span>Reconnect to the table you were at.</span></button>');
+    rc.onclick=function(){UI.joinCode=UI.savedClient.code;UI.joinName=UI.savedClient.name;doJoin();};
+    root.appendChild(rc);
+  }
+
+  var host=el('<button class="modecard"><b>Host a table</b><span>Your phone is the bank. You get a 4-letter code; everyone else joins from their own phone.</span></button>');
+  host.onclick=function(){
+    UI.err=null;setupDraft=null;
+    startHosting();
+  };
+  var join=el('<button class="modecard"><b>Join a table</b><span>Someone already hosting? Enter their code and play from your seat.</span></button>');
+  join.onclick=function(){UI.err=null;UI.screen="join";render();};
+  var solo=el('<button class="modecard"><b>One phone</b><span>Classic mode \u2014 pass a single phone around the table. Works with no connection.</span></button>');
+  solo.onclick=function(){
+    UI.err=null;NET.mode="solo";
+    S={screen:"lobby",cfg:{startStack:1000,sb:5,bb:10},players:[],claims:{},dealerId:null,handNum:0,hand:null,stalled:false};
+    setupDraft={names:["",""]};
+    persistAndSync();
+  };
+  root.appendChild(host);root.appendChild(join);root.appendChild(solo);
+  app.appendChild(root);
+}
+async function startHosting(){
+  var code=makeCode();
+  S={screen:"lobby",cfg:{startStack:1000,sb:5,bb:10},players:[],claims:{},dealerId:null,handNum:0,hand:null,stalled:false};
+  setupDraft={names:[]};
+  var ok=await goOnline(code,true);
+  if(!ok){S=null;UI.screen="landing";render();return;}
+  persistAndSync();
+}
+
+/* ---------- join ---------- */
+function renderJoin(app){
+  var root=el('<div class="setup"></div>');
+  root.appendChild(el('<div><h1 class="serif">Join a table</h1><p class="lede">Get the 4-letter code from whoever\u2019s hosting.</p></div>'));
+  if(UI.err)root.appendChild(el('<div class="notice">'+esc(UI.err)+"</div>"));
+  root.appendChild(el('<div class="fieldlbl">Table code</div>'));
+  var code=el('<input class="codein" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="\u2022\u2022\u2022\u2022">');
+  code.value=UI.joinCode;
+  code.oninput=function(){UI.joinCode=code.value.toUpperCase().replace(/[^A-Z0-9]/g,"");code.value=UI.joinCode;};
+  root.appendChild(code);
+  root.appendChild(el('<div class="fieldlbl">Your name</div>'));
+  var nm=el('<input placeholder="How the table knows you" maxlength="20">');
+  nm.value=UI.joinName;
+  nm.oninput=function(){UI.joinName=nm.value;};
+  root.appendChild(nm);
+  var wrap=el('<div class="start"></div>');
+  var go=el('<button class="big">'+(NET.connecting?"Linking\u2026":"Pull up a chair")+"</button>");
+  go.onclick=doJoin;
+  wrap.appendChild(go);
+  var back=el('<button class="big quiet" style="width:100%;margin-top:8px">Back</button>');
+  back.onclick=function(){UI.screen="landing";render();};
+  wrap.appendChild(back);
+  root.appendChild(wrap);
+  app.appendChild(root);
+}
+async function doJoin(){
+  if(UI.joinCode.length!==4||!UI.joinName.trim()){UI.err="Need the 4-letter code and a name.";render();return;}
+  UI.err=null;
+  var ok=await goOnline(UI.joinCode,false);
+  if(ok){UI.screen="game";store.set(CLIENT_KEY,JSON.stringify({code:UI.joinCode,name:UI.joinName,dev:DEV_ID}));render();}
+}
+function renderClientWaiting(app){
+  var root=el('<div class="setup"></div>');
+  root.appendChild(el('<div class="moment"><h2 class="serif">Finding the table\u2026</h2><p>Linking up with the host of <b style="color:var(--brass);letter-spacing:.15em">'+esc(NET.code||"")+'</b>. Keep this open \u2014 it usually takes a few seconds.</p></div>'));
+  var back=el('<button class="big quiet" style="margin:0 auto 20px;display:block">Cancel</button>');
+  back.onclick=function(){try{NET.room&&NET.room.leave();}catch(e){}NET.mode="solo";NET.linked=false;S=null;UI.screen="landing";render();};
+  root.appendChild(back);
+  app.appendChild(root);
+}
+
+/* ---------- lobby ---------- */
+function renderLobby(app){
+  var isHost=NET.mode==="host", isClient=NET.mode==="client", solo=NET.mode==="solo";
+  var root=el('<div class="setup" style="padding-top:3vh"></div>');
+  root.appendChild(el('<h1 class="serif" style="font-size:34px">'+(solo?"Set the table":"The table is open")+"</h1>"));
+
+  if(isHost){
+    root.appendChild(el('<div class="codeplate"><div class="eyebrow" style="color:var(--brass)">Table code</div><div class="code serif">'+esc(NET.code)+'</div><div class="hint" style="margin-top:8px">Friends open this same site, tap Join, and enter the code. Then just deal.</div></div>'));
+  }
+  if(isClient){
+    root.appendChild(el('<p class="lede">You\u2019re in. Waiting for the host to start the first hand.</p>'));
+  }
+
+  if(!isClient){
+    var cfg=el('<div class="cfggrid"></div>');
+    [["Stack","startStack"],["Small blind","sb"],["Big blind","bb"]].forEach(function(f){
+      var w=el('<div><div class="fieldlbl">'+f[0]+'</div></div>');
+      var inp=el('<input type="number" inputmode="numeric" min="0">');
+      inp.value=S.cfg[f[1]];
+      inp.oninput=function(){S.cfg[f[1]]=parseInt(inp.value)||0;};
+      w.appendChild(inp);cfg.appendChild(w);
+    });
+    root.appendChild(cfg);
+  }
+
+  root.appendChild(el('<div class="fieldlbl" style="margin-top:20px">Seats \u2014 clockwise from the first dealer</div>'));
+  var list=el('<div class="plist" style="flex:0"></div>');
+  S.players.forEach(function(p){
+    var row=el('<div class="prow"></div>');
+    row.appendChild(el('<div class="pname">'+esc(p.name)+"</div>"));
+    if(claimedBySomeone(p.id))row.appendChild(el('<span class="tag">'+(S.claims[DEV_ID]===p.id?"you":"phone in")+"</span>"));
+    if(!isClient){
+      var rm=el('<button class="rm" style="color:var(--dim);font-size:18px" aria-label="Remove">\u2715</button>');
+      rm.onclick=function(){mutate(function(){S.players=S.players.filter(function(q){return q.id!==p.id;});
+        for(var k in S.claims)if(S.claims[k]===p.id)delete S.claims[k];});};
+      row.appendChild(rm);
+    }
+    list.appendChild(row);
+  });
+  if(!S.players.length)list.appendChild(el('<div class="hint">No one seated yet.</div>'));
+  root.appendChild(list);
+
+  if(!isClient){
+    var nr=el('<div class="namerow" style="margin-top:10px"></div>');
+    var nm=el('<input placeholder="'+(isHost?"Add a name (you, or anyone without a phone)":"Add a player")+'" maxlength="20">');
+    var add=el('<button class="rebuy" style="flex:none">Seat</button>');
+    function doAdd(){
+      var v=nm.value.trim();if(!v)return;
+      mutate(function(){S.players.push({id:"p"+S.players.length+"_"+Date.now(),name:v,stack:0});});
+      nm.value="";
+    }
+    add.onclick=doAdd;
+    nm.onkeydown=function(e){if(e.key==="Enter")doAdd();};
+    nr.appendChild(nm);nr.appendChild(add);
+    root.appendChild(nr);
+    if(isHost)root.appendChild(el('<div class="hint">Names that friends enter on their own phones appear here automatically.</div>'));
+  }
+
+  var wrap=el('<div class="start"></div>');
+  if(!isClient){
+    var start=el('<button class="big">Shuffle up &amp; deal</button>');
+    start.onclick=function(){
+      if(S.players.length<2||S.cfg.startStack<1||S.cfg.bb<1)return;
+      mutate(function(){
+        S.players.forEach(function(p){p.stack=S.cfg.startStack;});
+        S.screen="game";S.handNum=0;S.dealerId=null;
+        startHand(S);
+      });
+      history=[];
+    };
+    wrap.appendChild(start);
+  }
+  var leave=el('<button class="big quiet" style="width:100%;margin-top:8px">'+(isClient?"Leave":"Back")+"</button>");
+  leave.onclick=function(){
+    try{NET.room&&NET.room.leave();}catch(e){}
+    NET.mode="solo";NET.linked=false;NET.code=null;S=null;UI.screen="landing";render();
+  };
+  wrap.appendChild(leave);
+  root.appendChild(wrap);
+  app.appendChild(root);
+}
+
+/* ---------- game ---------- */
+function renderGame(app){
+  var H=S.hand;
+  var suit=SUITS[(S.handNum-1+4)%4];
+
+  var top=el('<div class="top"></div>');
+  var left=el('<div></div>');
+  var label=S.stalled?"Table paused":("Hand <b>"+S.handNum+"</b> \u00b7 "+(H?(H.phase==="result"?"Showdown":STREETS[H.street]):"")+' <span class="suit">'+suit+"</span>");
+  left.appendChild(el('<div class="hand">'+label+"</div>"));
+  if(NET.mode==="host")left.appendChild(el('<div class="live"><span class="dot"></span>'+esc(NET.code)+" \u00b7 "+NET.peers+" linked</div>"));
+  if(NET.mode==="client")left.appendChild(el('<div class="live'+(NET.linked?"":" off")+'"><span class="dot"></span>'+(NET.linked?esc(NET.code)+" \u00b7 live":"reconnecting\u2026")+"</div>"));
+  top.appendChild(left);
+  var btns=el('<div class="topbtns"></div>');
+  if(canDrive()){
+    var u=el('<button class="iconbtn" aria-label="Undo" '+(history.length?"":"disabled")+'>\u21ba</button>');
+    u.onclick=undo;
+    btns.appendChild(u);
+  }
+  var m=el('<button class="iconbtn" aria-label="Menu">\u22ef</button>');
+  m.onclick=function(){sheet={kind:"menu"};render();};
+  btns.appendChild(m);
+  top.appendChild(btns);
+  app.appendChild(top);
+
+  if(S.stalled||!H){
+    var mo=el('<div class="moment"><h2 class="serif">Need two players</h2><p>Everyone else is felted. '+(canDrive()?"Add a rebuy to keep the game going.":"Waiting on the host for rebuys.")+"</p></div>");
+    if(canDrive()){
+      var b=el('<button class="big">Rebuys &amp; stacks</button>');
+      b.onclick=function(){sheet={kind:"stacks"};render();};
+      mo.appendChild(b);
+    }
+    app.appendChild(mo);
+    return;
+  }
+
+  // pot plate
+  var pot=el('<div class="pot"><div class="eyebrow">The pot</div><div class="amt serif">'+fmt(potTotal(H))+'</div><div class="sub"></div></div>');
+  var sub=pot.querySelector(".sub");
+  if(H.phase==="bet"&&H.acting>=0){
+    var L=legal(S);
+    sub.textContent=L.toCall>0?(fmt(L.callAmt)+" to call"):"No bet yet \u2014 check or open";
+  }else if(H.phase==="result"){sub.textContent="Settled";}
+  else{sub.textContent="";}
+  app.appendChild(pot);
+
+  if(H.phase==="deal"||H.phase==="runout"){
+    renderPlayers(app,H,true);
+    var isRun=H.phase==="runout";
+    var mayDeal=canDrive()||amDealer();
+    var title=isRun?"All in!":"Deal the "+STREETS[H.street+1].toLowerCase();
+    var body=isRun?"Betting's done. Deal out the rest of the board, then the winners get picked.":"Betting's closed on the "+STREETS[H.street].toLowerCase()+".";
+    if(!mayDeal)body+=" "+esc(H.ps[H.dealer].name)+" has the deck.";
+    var mo2=el('<div class="moment" style="flex:0;padding-top:10px"><h2 class="serif">'+title+"</h2><p>"+body+"</p></div>");
+    if(mayDeal){
+      var go=el('<button class="big">'+(isRun?"To showdown":"Cards are out")+"</button>");
+      go.onclick=function(){
+        if(canDrive())mutate(function(){if(isRun){toShowdown(S);}else{confirmDeal(S);}pickedWinners=[];});
+        else sendToHost({t:"deal"});
+      };
+      mo2.appendChild(go);
+    }
+    app.appendChild(mo2);
+    return;
+  }
+
+  if(H.phase==="showdown"){renderShowdown(app,H);return;}
+  if(H.phase==="result"){renderResult(app,H);return;}
+
+  renderPlayers(app,H,false);
+
+  var myId=myPlayerId();
+  var isMyTurn=H.acting>=0&&H.ps[H.acting].id===myId;
+  if(canDrive()||isMyTurn){renderActionBar(app,H,!canDrive());}
+  else{
+    var actor=H.ps[H.acting];
+    app.appendChild(el('<div class="waitbar">'+(myId?"Waiting on "+esc(actor.name)+"\u2026":"Spectating \u2014 claim a seat from the menu to play.")+"</div>"));
+  }
+}
+
+function renderPlayers(app,H,muted){
+  var list=el('<div class="plist"></div>');
+  var myId=myPlayerId();
+  H.ps.forEach(function(p,i){
+    var cls="prow";
+    if(H.phase==="bet"&&i===H.acting&&!muted)cls+=" acting";
+    if(!p.inHand)cls+=" out";
+    var row=el('<div class="'+cls+'"></div>');
+    row.appendChild(el('<div class="pname">'+esc(p.name)+"</div>"));
+    if(p.id===myId)row.appendChild(el('<span class="tag you">you</span>'));
+    if(i===H.dealer)row.appendChild(el('<span class="tag d">D</span>'));
+    if(i===H.sb&&H.ps.length>2)row.appendChild(el('<span class="tag">SB</span>'));
+    if(i===H.bb)row.appendChild(el('<span class="tag">BB</span>'));
+    row.appendChild(el('<div class="pstack">'+fmt(stackOf(S,p))+"</div>"));
+    if(!p.inHand)row.appendChild(el('<div class="pstate">folded</div>'));
+    else if(p.allIn)row.appendChild(el('<div class="pstate" style="color:var(--brass)">all-in</div>'));
+    else row.appendChild(el('<div class="pbet">'+(p.betRound>0?("in "+fmt(p.betRound)):"")+"</div>"));
+    list.appendChild(row);
+  });
+  app.appendChild(list);
+}
+
+function renderActionBar(app,H,remote){
+  var p=H.ps[H.acting],L=legal(S);
+  var bar=el('<div class="abar"></div>');
+  var who=remote?"Your move":esc(p.name)+"'s move";
+  bar.appendChild(el('<div class="toact"><span class="who">'+who+"</span><span class=\"need\">stack "+fmt(stackOf(S,p))+"</span></div>"));
+  var row=el('<div class="btnrow"></div>');
+
+  function go(a){
+    if(remote)sendToHost({t:"act",a:a});
+    else mutate(function(){act(S,a);});
+  }
+
+  var f=el('<button class="act fold">Fold</button>');
+  f.onclick=function(){go({type:"fold"});};
+
+  var cLabel=L.canCheck?"Check":("Call "+fmt(L.callAmt)+(L.callAllIn?'<small>all-in</small>':""));
+  var c=el('<button class="act call">'+cLabel+"</button>");
+  c.onclick=function(){go({type:L.canCheck?"check":"call"});};
+
+  var r=el('<button class="act raise" '+(L.canRaise?"":"disabled")+">"+L.betWord+"</button>");
+  r.onclick=function(){
+    if(!L.canRaise)return;
+    raiseTo=L.minTo;sheet={kind:"raise",remote:remote};render();
+  };
+  row.appendChild(f);row.appendChild(c);row.appendChild(r);
+  bar.appendChild(row);
+  app.appendChild(bar);
+}
+
+function renderShowdown(app,H){
+  var pot=H.pots[H.potIdx];
+  var multi=H.pots.length>1;
+  var mayPick=canDrive();
+  var card=el('<div class="potcard"></div>');
+  card.appendChild(el('<div class="eyebrow">'+(multi?((H.potIdx===0?"Main pot":"Side pot "+H.potIdx)+" \u00b7 "+(H.potIdx+1)+" of "+H.pots.length):"The pot")+"</div>"));
+  card.appendChild(el('<h3 class="serif">'+fmt(pot.amount)+"</h3>"));
+  card.appendChild(el('<div class="hint">'+(mayPick?"Best hand takes it \u2014 tap the winner. Tap two or more to chop.":"Cards on the table \u2014 the host settles the pot.")+"</div>"));
+  var chips=el('<div class="chips"></div>');
+  pot.eligible.forEach(function(id){
+    var pl=pById(S,id);
+    var on=pickedWinners.indexOf(id)!==-1;
+    var ch=el('<button class="chip'+(on?" on":"")+'" '+(mayPick?"":"disabled")+">"+esc(pl.name)+"</button>");
+    ch.onclick=function(){
+      if(!mayPick)return;
+      var ix=pickedWinners.indexOf(id);
+      if(ix===-1)pickedWinners.push(id);else pickedWinners.splice(ix,1);
+      render();
+    };
+    chips.appendChild(ch);
+  });
+  card.appendChild(chips);
+  app.appendChild(card);
+
+  if(mayPick){
+    var go=el('<div class="moment" style="flex:0;padding-top:6px"></div>');
+    var b=el('<button class="big" '+(pickedWinners.length?"":"disabled style=\"opacity:.4\"")+">"+(pickedWinners.length>1?"Chop it "+pickedWinners.length+" ways":"Ship it")+"</button>");
+    b.onclick=function(){
+      if(!pickedWinners.length)return;
+      mutate(function(){award(S,pickedWinners.slice());pickedWinners=[];});
+    };
+    go.appendChild(b);
+    app.appendChild(go);
+  }
+}
+
+function renderResult(app,H){
+  var mo=el('<div class="moment" style="justify-content:flex-start;padding-top:20px"><h2 class="serif">'+(H.results.length>1?"Pot chopped":esc(H.results[0]?H.results[0].name:"")+" takes it")+"</h2></div>");
+  var lines=el('<div style="width:100%;max-width:340px"></div>');
+  H.results.forEach(function(r){
+    lines.appendChild(el('<div class="winline"><span>'+esc(r.name)+"</span><span>+"+fmt(r.amt)+"</span></div>"));
+  });
+  mo.appendChild(lines);
+  var mayNext=canDrive()||amDealer();
+  if(mayNext){
+    var next=el('<button class="big" style="margin-top:22px">Next hand \u2192</button>');
+    next.onclick=function(){
+      if(canDrive())mutate(function(){startHand(S);pickedWinners=[];});
+      else sendToHost({t:"deal"});
+    };
+    mo.appendChild(next);
+  }else{
+    mo.appendChild(el('<p style="margin-top:16px">Waiting on the next deal\u2026</p>'));
+  }
+  app.appendChild(mo);
+}
+
+/* ---------- sheets ---------- */
+function closeSheet(){sheet=null;render();}
+function renderSheet(app){
+  var scrim=el('<div class="scrim"></div>');
+  scrim.onclick=closeSheet;
+  app.appendChild(scrim);
+  var sh=el('<div class="sheet"></div>');
+
+  if(sheet.kind==="menu"){
+    sh.appendChild(el('<h3 class="serif">Table</h3>'));
+    if(NET.mode==="host")sh.appendChild(el('<div class="hint" style="margin:-8px 0 12px">Code <b style="color:var(--brass);letter-spacing:.12em">'+esc(NET.code)+"</b> \u00b7 "+NET.peers+" phone"+(NET.peers===1?"":"s")+" linked</div>"));
+    if(canDrive()){
+      [["Stacks, rebuys &amp; players","stacks"],["Blinds \u2014 "+fmt(S.cfg.sb)+" / "+fmt(S.cfg.bb),"blinds"]].forEach(function(it){
+        var b=el('<button class="menu-item">'+it[0]+"</button>");
+        b.onclick=function(){sheet={kind:it[1]};render();};
+        sh.appendChild(b);
+      });
+      var ng=el('<button class="menu-item danger">End game &amp; start over</button>');
+      ng.onclick=function(){
+        if(confirm("End this game? Stacks will be lost.")){
+          store.del(STORE_KEY);try{NET.room&&NET.room.leave();}catch(e){}
+          NET.mode="solo";NET.code=null;NET.peers=0;
+          S=null;history=[];sheet=null;UI.screen="landing";render();
+        }
+      };
+      sh.appendChild(ng);
+    }else{
+      var cs=el('<button class="menu-item">Claim a seat</button>');
+      cs.onclick=function(){sheet={kind:"claim"};render();};
+      sh.appendChild(cs);
+      var lv=el('<button class="menu-item danger">Leave the table</button>');
+      lv.onclick=function(){
+        try{NET.room&&NET.room.leave();}catch(e){}
+        store.del(CLIENT_KEY);
+        NET.mode="solo";NET.linked=false;S=null;sheet=null;UI.screen="landing";render();
+      };
+      sh.appendChild(lv);
+    }
+    var cl=el('<button class="menu-item" style="border:none;color:var(--dim)">Close</button>');
+    cl.onclick=closeSheet;
+    sh.appendChild(cl);
+  }
+
+  if(sheet.kind==="claim"){
+    sh.appendChild(el('<h3 class="serif">Which seat is yours?</h3>'));
+    var ch=el('<div class="chips"></div>');
+    S.players.forEach(function(p){
+      var b=el('<button class="chip'+(myPlayerId()===p.id?" on":"")+'">'+esc(p.name)+"</button>");
+      b.onclick=function(){sendToHost({t:"claim",playerId:p.id});sheet=null;render();};
+      ch.appendChild(b);
+    });
+    sh.appendChild(ch);
+    sh.appendChild(el('<div class="hint">Your fold / call / raise buttons appear when it\u2019s this seat\u2019s turn.</div>'));
+  }
+
+  if(sheet.kind==="stacks"){
+    sh.appendChild(el('<h3 class="serif">Stacks &amp; rebuys</h3>'));
+    sh.appendChild(el('<div class="hint" style="margin-bottom:12px">Edits apply immediately \u2014 use for rebuys or fixing a misclick. Mid-hand edits adjust behind-stacks only.</div>'));
+    S.players.forEach(function(pl){
+      var row=el('<div class="stackrow"></div>');
+      row.appendChild(el('<div class="nm">'+esc(pl.name)+"</div>"));
+      var inp=el('<input type="number" inputmode="numeric" min="0">');
+      inp.value=pl.stack;
+      inp.onchange=function(){mutate(function(){pl.stack=Math.max(0,parseInt(inp.value)||0);sheet={kind:"stacks"};});};
+      var rb=el('<button class="rebuy">+'+fmt(S.cfg.startStack)+"</button>");
+      rb.onclick=function(){mutate(function(){pl.stack+=S.cfg.startStack;sheet={kind:"stacks"};});};
+      row.appendChild(inp);row.appendChild(rb);
+      sh.appendChild(row);
+    });
+    sh.appendChild(el('<div class="fieldlbl">Late arrival (no phone)</div>'));
+    var nr=el('<div class="stackrow"></div>');
+    var nm=el('<input placeholder="Name" maxlength="20">');
+    var add=el('<button class="rebuy">Seat them</button>');
+    add.onclick=function(){
+      var v=nm.value.trim();
+      if(!v)return;
+      mutate(function(){
+        S.players.push({id:"p"+S.players.length+"_"+Date.now(),name:v,stack:S.cfg.startStack});
+        sheet={kind:"stacks"};
+      });
+    };
+    nr.appendChild(nm);nr.appendChild(add);
+    sh.appendChild(nr);
+    sh.appendChild(el('<div class="hint">Friends with phones just open the site and join with the code \u2014 they\u2019re seated automatically. Everyone new joins at the next hand.</div>'));
+    var done=el('<button class="big" style="width:100%;margin-top:16px">Done</button>');
+    done.onclick=function(){
+      if(S.stalled&&alivePlayers(S).length>=2){mutate(function(){startHand(S);});sheet=null;render();}
+      else closeSheet();
+    };
+    sh.appendChild(done);
+  }
+
+  if(sheet.kind==="blinds"){
+    sh.appendChild(el('<h3 class="serif">Blinds</h3>'));
+    var g=el('<div class="cfggrid" style="grid-template-columns:1fr 1fr"></div>');
+    var sbIn,bbIn;
+    [["Small blind","sb"],["Big blind","bb"]].forEach(function(f){
+      var w=el('<div><div class="fieldlbl">'+f[0]+'</div></div>');
+      var inp=el('<input type="number" inputmode="numeric" min="0">');
+      inp.value=S.cfg[f[1]];
+      if(f[1]==="sb")sbIn=inp;else bbIn=inp;
+      w.appendChild(inp);g.appendChild(w);
+    });
+    sh.appendChild(g);
+    sh.appendChild(el('<div class="hint" style="margin-top:10px">Takes effect from the next hand.</div>'));
+    var ap=el('<button class="big" style="width:100%;margin-top:16px">Set blinds</button>');
+    ap.onclick=function(){
+      mutate(function(){
+        S.cfg.sb=Math.max(0,parseInt(sbIn.value)||0);
+        S.cfg.bb=Math.max(1,parseInt(bbIn.value)||1);
+      });
+      closeSheet();
+    };
+    sh.appendChild(ap);
+  }
+
+  if(sheet.kind==="raise"){
+    var H=S.hand,L=legal(S),p=H.ps[H.acting];
+    if(raiseTo<L.minTo)raiseTo=L.minTo;
+    if(raiseTo>L.maxTo)raiseTo=L.maxTo;
+    sh.appendChild(el('<h3 class="serif">'+esc(p.name)+" "+(L.betWord==="Bet"?"bets":"raises to")+"</h3>"));
+
+    var potNow=potTotal(H);
+    function clamp(v){return Math.max(L.minTo,Math.min(L.maxTo,Math.round(v)));}
+    var presets=[
+      ["Min",L.minTo],
+      ["\u00bd pot",clamp(H.currentBet+Math.floor((potNow+L.toCall)/2))],
+      ["Pot",clamp(H.currentBet+potNow+L.toCall)],
+      ["All-in",L.maxTo]
+    ];
+    var pr=el('<div class="presets"></div>');
+    presets.forEach(function(ps){
+      var b=el('<button class="preset'+(raiseTo===ps[1]?" on":"")+'">'+ps[0]+"</button>");
+      b.onclick=function(){raiseTo=ps[1];render();};
+      pr.appendChild(b);
+    });
+    sh.appendChild(pr);
+
+    var st=el('<div class="stepper"></div>');
+    var minus=el('<button aria-label="Decrease">\u2212</button>');
+    var plus=el('<button aria-label="Increase">+</button>');
+    var val=el('<div class="val">'+fmt(raiseTo)+"<small>"+(raiseTo===L.maxTo?"all-in":"total this street")+"</small></div>");
+    minus.onclick=function(){raiseTo=clamp(raiseTo-S.cfg.bb);render();};
+    plus.onclick=function(){raiseTo=clamp(raiseTo+S.cfg.bb);render();};
+    st.appendChild(minus);st.appendChild(val);st.appendChild(plus);
+    sh.appendChild(st);
+
+    var row=el('<div class="btnrow"></div>');
+    var cancel=el('<button class="act" style="flex:0 0 30%">Back</button>');
+    cancel.onclick=closeSheet;
+    var wasRemote=!!sheet.remote;
+    var ok=el('<button class="act raise">'+L.betWord+" "+fmt(raiseTo)+(raiseTo===L.maxTo?" \u00b7 all-in":"")+"</button>");
+    ok.onclick=function(){
+      var to=raiseTo;sheet=null;
+      if(wasRemote)sendToHost({t:"act",a:{type:"raise",to:to}});
+      else mutate(function(){act(S,{type:"raise",to:to});});
+      render();
+    };
+    row.appendChild(cancel);row.appendChild(ok);
+    sh.appendChild(row);
+  }
+
+  app.appendChild(sh);
+}
+
+/* ---------- boot ---------- */
+(async function(){
+  var dev=await store.get(DEV_KEY);
+  if(!dev){dev="d"+Math.random().toString(36).slice(2,10);store.set(DEV_KEY,dev);}
+  DEV_ID=dev;
+  try{
+    var savedHost=await store.get(STORE_KEY);
+    if(savedHost){var d=JSON.parse(savedHost);if(d&&d.S)UI.savedHost=d;}
+  }catch(e){}
+  try{
+    var savedClient=await store.get(CLIENT_KEY);
+    if(savedClient){var c=JSON.parse(savedClient);if(c&&c.code)UI.savedClient=c;}
+  }catch(e){}
+  render();
+})();
+</script>
+</body>
+</html>
