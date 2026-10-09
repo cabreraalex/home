@@ -158,6 +158,7 @@
   /* prep */
   .prep .sign h2 { font-size: 52px; }
   .todo li span:last-child { color: var(--hut); }
+  .todo li.done span:last-child { color: var(--glacier); }
   .todo li.when { grid-template-columns: 1fr; padding: 14px 0 5px; border-bottom-color: transparent; }
   .todo li.when span:first-child { font: 500 11px var(--mono); letter-spacing: .1em; color: var(--tussock); }
   .todo li.when:first-child { padding-top: 8px; }
@@ -263,13 +264,13 @@
   <!-- day signs are rendered here -->
   <section class="step prep" data-step="prep" id="prep">
     <article class="sign">
-      <div class="sign-top"><span>Before we go</span><span>Plan of Sept 28 · nothing booked</span></div>
+      <div class="sign-top"><span>Before we go</span><span>Oct 8 · flights + hut booked</span></div>
       <h2>Book in this order</h2>
       <ul class="rows todo">
         <li class="when"><span>Now · by mid-October</span></li>
-        <li class="foot"><span>Mueller Hut · Mar 4 · 2 bunks</span><span>DOC · first</span></li>
+        <li class="foot done"><span>Mueller Hut · Mar 4 · 2 bunks</span><span>✓ booked</span></li>
         <li class="boat"><span>Doubtful Sound overnight · Mar 1</span><span>12 berths</span></li>
-        <li class="air"><span>Flights · Sun Feb 21 / Sun Mar 7</span><span>UA730 / UA731</span></li>
+        <li class="air done"><span>Flights · Sun Feb 21 / Sun Mar 7</span><span>✓ booked</span></li>
         <li><span>Queenstown hotel · Feb 26 – Mar 1</span><span>NZ Open week</span></li>
         <li><span>Mt Cook village room · Mar 3</span><span>few rooms</span></li>
         <li><span>Car · airport, Feb 24 – Mar 7</span><span>free cancel</span></li>
@@ -289,7 +290,7 @@
         <li class="foot"><span>Sleeping bags for Mueller</span><span>rent or pack</span></li>
         <li><span>Last cheap Mueller cancel</span><span>~Feb 17</span></li>
       </ul>
-      <p class="body">No camping gear needed except at Mueller: the hut has mattresses and gas cookers, but we bring sleeping bags, food, a pot and headlamps. Everything else is a room, the boat or the car. Book the hut and the boat first, then cancellable rooms around them.</p>
+      <p class="body">No camping gear needed except at Mueller: the hut has mattresses and gas cookers, but we bring sleeping bags, food, a pot and headlamps. Everything else is a room, the boat or the car. Flights and the hut are booked. Next the boat, then cancellable rooms around it.</p>
       <p class="credits">Imagery © Esri, Maxar, Earthstar Geographics · Terrain: AWS Terrain Tiles · Routes: © OpenStreetMap contributors, OSRM · Photos: Wikimedia Commons</p>
     </article>
   </section>
@@ -329,7 +330,7 @@ const DAYS = [
   { date: '2027-02-21', kind: 'fly', icon: 'fly', title: 'Across the date line',
     rows: [['air', 'SFO → Christchurch', '~11,000 km · 14–18 hr']],
     body: "Leave Sunday night, land Tuesday morning. Monday the 22nd happens somewhere over the Pacific. United's nonstop runs on Sundays; Air NZ via Auckland is the backup.",
-    chips: [['Sleep', 'Plane'], ['Lands', '~10:35 am Tue'], ['Status', 'flights not booked']],
+    chips: [['Sleep', 'Plane'], ['Lands', '~10:35 am Tue'], ['Status', 'booked ✓']],
     photo: ['f/f2/South_Island.jpg', 'Satellite view of the South Island, snow along the Southern Alps'],
     legs: ['fly-out'], globe: true },
   { date: '2027-02-23', kind: 'drive', icon: 'drive', title: 'Land and sleep it off', reo: 'Ōtautahi',
@@ -390,7 +391,7 @@ const DAYS = [
   { date: '2027-03-04', kind: 'hike', icon: 'hike', title: 'Mueller Hut', reo: 'Aoraki / Mt Cook National Park',
     rows: [['foot', 'Sealy Tarns', '2.6 km · 1.5–2 hr'], ['foot', 'Mueller Hut · 1,800 m', '2.1 km · 1.5–2 hr']],
     body: "About 2,200 steps to Sealy Tarns, then loose rock and snow grass to the ridge. The afternoon and sunset are spent face to face with Aoraki, with avalanches cracking off Mt Sefton into the evening. New moon is around Mar 8, so the Milky Way should be bright over the hut. <b>Plan B</b> if the ridge is in cloud or wind: skip the hut and do Sealy Tarns, the Tasman Glacier lake, and a ski-plane landing on the Tasman Glacier.",
-    chips: [['Sleep', 'Mueller Hut'], ['Book', '2 bunks, not yet'], ['Bring', 'sleeping bags, food, headlamps'], ['Plan B', 'ski plane + Tasman lake']],
+    chips: [['Sleep', 'Mueller Hut'], ['Booked', '2 bunks ✓'], ['Bring', 'sleeping bags, food, headlamps'], ['Plan B', 'ski plane + Tasman lake']],
     photo: ['0/07/Mt_Cook_LC0247.jpg', 'Aoraki / Mt Cook'],
     legs: ['d12'], pin: [170.0646, -43.72111], name: 'Mueller Hut', hut: true, cam: { bearing: -60, pitch: 52, maxZoom: 12.9 } },
   { date: '2027-03-05', kind: 'stars', icon: 'star', title: 'Sunrise, then the stars', reo: 'Takapō',
@@ -410,7 +411,7 @@ const DAYS = [
   { date: '2027-03-07', kind: 'fly', icon: 'fly', title: 'Home the same morning',
     rows: [['foot', 'Option: Port Hills walk', 'early morning'], ['', 'Return the vehicle', 'by ~12:15'], ['air', 'Christchurch → SFO', '2:15 pm · lands same day']],
     body: "An early walk on the Port Hills if the legs allow (the Bridle Path or the summit road tracks), then hand back the car at the airport by about 12:15 and fly home. The nonstop leaves Sunday afternoon and lands Sunday morning, so the lost day comes back.",
-    chips: [['Status', 'flights not booked'], ['Option', 'Port Hills walk']],
+    chips: [['Status', 'booked ✓'], ['Option', 'Port Hills walk']],
     photo: ['b/bd/The_%22Brill%22_Tram_178.New_Regent_St_Christchurch._%2811510530335%29.jpg', 'Heritage tram on New Regent Street, Christchurch'],
     legs: ['d14', 'fly-home'], globe: true },
 ];
