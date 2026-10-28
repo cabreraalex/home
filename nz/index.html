@@ -264,36 +264,34 @@
   <!-- day signs are rendered here -->
   <section class="step prep" data-step="prep" id="prep">
     <article class="sign">
-      <div class="sign-top"><span>Before we go</span><span>Oct 8 · flights, boat + hut booked</span></div>
+      <div class="sign-top"><span>Before we go</span><span>Oct 27 · mostly booked</span></div>
       <h2>Book in this order</h2>
       <ul class="rows todo">
         <li class="when"><span>Booked</span></li>
         <li class="air done"><span>Flights · Sun Feb 21 / Sun Mar 7</span><span>✓ United</span></li>
+        <li class="done"><span>Car · Feb 23 – Mar 7</span><span>✓ Enterprise</span></li>
+        <li class="done"><span>Hotel St Moritz · Feb 26 – Mar 3</span><span>✓ Queenstown</span></li>
         <li class="boat done"><span>Doubtful Sound overnight · Feb 27</span><span>✓ RealNZ</span></li>
+        <li class="done"><span>Lakes Suites · Mar 3</span><span>✓ Twizel</span></li>
         <li class="foot done"><span>Mueller Hut · Mar 4 · 2 bunks</span><span>✓ DOC</span></li>
-        <li class="when"><span>Now · by mid-October</span></li>
-        <li><span>Travel insurance</span><span>~US$3.3k at risk</span></li>
-        <li><span>Queenstown hotel · Feb 26 + Feb 28 – Mar 3</span><span>NZ Open week</span></li>
-        <li><span>Mt Cook village room · Mar 3</span><span>few rooms</span></li>
-        <li><span>Car · airport, Feb 24 – Mar 7</span><span>free cancel</span></li>
-        <li class="air"><span>Pick seats on both flights</span><span>none yet</span></li>
-        <li class="when"><span>October</span></li>
+        <li class="done"><span>Peppers Bluewater · Mar 5</span><span>✓ Tekapo</span></li>
+        <li class="when"><span>Now</span></li>
+        <li><span>Move car pickup after landing</span><span>~12:00</span></li>
+        <li><span>Rooms: Hokitika, Fox, Wānaka, Chch (Mar 6)</span><span>cancellable</span></li>
         <li class="boat"><span>Dart River Funyaks · Mar 1</span><span>NZ$1,198</span></li>
-        <li><span>Rooms: Chch, Fox, Wānaka, Tekapo, Chch</span><span>cancellable</span></li>
+        <li class="air"><span>Pick seats on both flights</span><span>none yet</span></li>
+        <li><span>Travel insurance</span><span>flights at risk</span></li>
         <li class="when"><span>November – December</span></li>
         <li class="foot"><span>Onsen private pool · Mar 2</span><span>when released</span></li>
         <li class="foot"><span>Bike hire + winery lunch · Mar 2</span><span>reserve</span></li>
         <li class="air"><span>Mt John summit tour · Mar 5</span><span>2027 prices</span></li>
-        <li class="boat"><span>Te Anau glowworm caves · Feb 28</span><span>optional</span></li>
         <li class="when"><span>December – January</span></li>
         <li><span>Crusaders v Chiefs · Mar 6</span><span>on sale</span></li>
         <li class="air"><span>NZeTA + visitor levy</span><span>NZ$100 levy</span></li>
-        <li class="when"><span>February</span></li>
-        <li><span>Last refund on the boat</span><span>~Feb 13</span></li>
-        <li><span>Last cheap Mueller cancel</span><span>~Feb 17</span></li>
-        <li class="foot"><span>Sleeping bags for Mueller</span><span>rent or pack</span></li>
+        <li class="when"><span>Free-cancel deadlines</span></li>
+        <li><span>Tekapo · Doubtful · Twizel + Mueller · Queenstown</span><span>Feb 3 · 12 · 17 · 25</span></li>
       </ul>
-      <p class="body">No camping gear needed except at Mueller: the hut has mattresses and gas cookers, but we bring sleeping bags, food, a pot and headlamps. Flights, the boat and the hut are fixed; book cancellable rooms around them.</p>
+      <p class="body">No camping gear needed except at Mueller: the hut has mattresses and gas cookers, but we bring sleeping bags, food, a pot and headlamps. Four West Coast and Christchurch rooms left to book.</p>
       <p class="credits">Imagery © Esri, Maxar, Earthstar Geographics · Terrain: AWS Terrain Tiles · Routes: © OpenStreetMap contributors, OSRM · Photos: Wikimedia Commons</p>
     </article>
   </section>
@@ -336,28 +334,28 @@ const DAYS = [
     chips: [['Sleep', 'Plane'], ['Lands', '~10:35 am Tue'], ['Status', 'booked ✓']],
     photo: ['f/f2/South_Island.jpg', 'Satellite view of the South Island, snow along the Southern Alps'],
     legs: ['fly-out'], globe: true },
-  { date: '2027-02-23', kind: 'drive', icon: 'drive', title: 'Land and sleep it off', reo: 'Ōtautahi',
-    rows: [['', 'Taxi into the city', '13 km · 20 min'], ['foot', 'Hagley Park + Riverside Market', 'easy wander'], ['', 'Option: Port Hills gondola', 'taxi · 25 min']],
-    body: "No driving on the day we land. Taxi into town, drop the bags, walk the Avon through the botanic gardens and eat at Riverside Market. With energy to spare, ride the gondola up the Port Hills for the view over the city, the Southern Alps and Lyttelton Harbour. Stay up until it gets dark, then sleep properly before the long drive.",
-    chips: [['Sleep', 'Christchurch hotel'], ['Car', 'collect tomorrow at the airport'], ['Option', 'Port Hills gondola']],
-    photo: ['1/11/Punting_on_the_Avon_2025.jpg', 'Punting on the Avon, Christchurch'],
-    legs: ['d14:r'], pin: [172.6442, -43.5353], name: 'Christchurch', cam: { bearing: 20, pitch: 45, maxZoom: 11 } },
-  { date: '2027-02-24', kind: 'drive', icon: 'drive', title: "Arthur's Pass to glacier country", reo: 'Ōtautahi → Weheka',
-    rows: [['', "Airport car pickup → Arthur's Pass", '139 km · 2 hr'], ['foot', 'Devils Punchbowl Falls', '1.6 km · 1 hr return'], ['', 'Hokitika', '99 km · 1 hr 20'], ['', 'Franz Josef → Fox', '168 km · 2.5 hr']],
-    body: "The long one, on a full night's sleep. Taxi back to the airport (it's on the way west) and collect the car. Then the Canterbury Plains, the limestone boulders of Castle Hill, and over Arthur's Pass with a stop at the 131 m Punchbowl. Lunch on the coast at Hokitika, then south past Franz Josef to Fox.<br><br><b>Option:</b> an Okarito kiwi tour at dusk to see wild rowi, the rarest kiwi. Okarito is about 30 minutes north of Franz Josef, so we would sleep in Franz Josef instead of Fox, and Lake Matheson at dawn becomes a 35-minute drive.",
-    chips: [['Sleep', 'Fox Glacier'], ['Drive', '~405 km · 5.5 hr at the wheel'], ['Vehicle', 'car, not a campervan'], ['Option', 'Okarito kiwi · sleep Franz Josef']],
+  { date: '2027-02-23', kind: 'drive', icon: 'drive', title: 'Land and head west', reo: 'Ōtautahi → Hokitika',
+    rows: [['', "Airport car pickup → Arthur's Pass", '139 km · 2 hr'], ['foot', 'Devils Punchbowl Falls', '1.6 km · 1 hr return'], ['', 'Hokitika', '99 km · 1 hr 20']],
+    body: "Land mid-morning, collect the car at the airport and stock up, then west across the Canterbury Plains, past the limestone boulders of Castle Hill and over Arthur's Pass. Stretch the legs at the Punchbowl, which drops 131 m behind the village, then down to the coast for sunset among the driftwood on Hokitika beach, and the glowworm dell after dark if we're still awake.",
+    chips: [['Sleep', 'Hokitika'], ['Fallback', "stop at Arthur's Pass if wiped"], ['Car', 'Enterprise · booked ✓']],
     photo: ['!4/4e/NZ_arthurs_pass_SI.jpg', "Arthur's Pass village and mountains"],
-    legs: ['d14', 'd1', 'n1w', 'nAPH', 'n3'], pin: [170.0170, -43.4640], name: 'Fox Glacier', cam: { bearing: -60, pitch: 45 } },
+    legs: ['d1', 'n1w', 'nAPH'], pin: [170.9660, -42.7176], name: 'Hokitika', cam: { bearing: -60, pitch: 50 } },
+  { date: '2027-02-24', kind: 'drive', icon: 'drive', title: 'Hokitika Gorge + glacier country', reo: 'Kā Roimata o Hine Hukatere',
+    rows: [['foot', 'Hokitika Gorge', '~35 km each way'], ['', 'Franz Josef → Fox', '168 km · 2.5 hr'], ['foot', 'Franz Josef valley walk', 'to the glacier view']],
+    body: "Morning at Hokitika Gorge, a short walk to the swing bridge over startlingly blue water. Then down the coast to Franz Josef and the valley walk toward the ice (it has retreated a long way), and on to Fox, five minutes from Lake Matheson.",
+    chips: [['Sleep', 'Fox Glacier'], ['Option', 'Okarito kiwi · sleep Franz Josef']],
+    photo: ['9/9a/Lake_Matheson_reflection_of_Mount_Tasman_and_Aoraki_Mount_Cook.jpg', 'Lake Matheson reflecting Mt Tasman and Aoraki'],
+    legs: ['n3'], pin: [170.0170, -43.4640], name: 'Fox Glacier', cam: { bearing: 125, pitch: 55 } },
   { date: '2027-02-25', kind: 'drive', icon: 'drive', title: 'Mirror lake, then Haast Pass', reo: 'Te Wairere · Tioripatea',
     rows: [['foot', 'Lake Matheson at dawn', '4.4 km · 1.5 hr'], ['', 'Wānaka via Haast Pass', '262 km · 4 hr'], ['foot', 'Blue Pools', '1.5 km · 30 min']],
     body: "Up early for Lake Matheson, five minutes from Fox: on a still morning the water mirrors Aoraki and Mt Tasman. Then the coast road south and inland over the pass, with stops at Thunder Creek Falls and the Blue Pools. Fuel up before the pass.",
     chips: [['Sleep', 'Wānaka'], ['Dawn', 'best reflections before the wind']],
-    photo: ['9/9a/Lake_Matheson_reflection_of_Mount_Tasman_and_Aoraki_Mount_Cook.jpg', 'Lake Matheson reflecting Mt Tasman and Aoraki'],
+    photo: ['!6/65/Matukituki_valley.jpg', 'Matukituki valley, Mount Aspiring National Park'],
     legs: ['n4'], pin: [169.1370, -44.6970], name: 'Wānaka', cam: { bearing: 150, pitch: 50 } },
   { date: '2027-02-26', kind: 'drive', icon: 'drive', title: 'Crown Range to Queenstown', reo: 'Tāhuna',
     rows: [['', 'Queenstown via Crown Range', '103 km · 1.5 hr']],
     body: "Slow Wānaka morning, then over the Crown Range, the highest main road in the country. One night in Queenstown before Fiordland; leave the big bags with the hotel, since the boat takes an overnight bag only. Easy dinner by the lake, or the gondola and luge at sunset.",
-    chips: [['Sleep', 'Queenstown hotel'], ['Heads up', 'NZ Open in town Feb 25–28']],
+    chips: [['Sleep', 'Hotel St Moritz ✓'], ['Heads up', 'NZ Open in town Feb 25–28']],
     photo: ['e/e9/LakeWanakaNov262024_01.jpg', 'Lake Wānaka from above'],
     legs: ['n5'], pin: [168.6626, -45.0312], name: 'Queenstown', cam: { bearing: -160, pitch: 50 } },
   { date: '2027-02-27', kind: 'boat', icon: 'boat', title: 'Doubtful Sound overnight', reo: 'Patea',
@@ -369,44 +367,44 @@ const DAYS = [
   { date: '2027-02-28', kind: 'boat', icon: 'boat', title: 'Back over the pass', reo: 'Te Ana-au',
     rows: [['boat', 'Back to Deep Cove', '33 km'], ['', 'Wilmot Pass', '19 km'], ['boat', 'Lake Manapouri', '30 km · in 12:15 pm'], ['boat', 'Option: glowworm caves', 'Te Anau · 2 hr 15'], ['', 'Queenstown', '171 km · 2 hr']],
     body: "Breakfast on the fiord, then back across the pass and the lake by a quarter past twelve. If there is energy, an afternoon boat across Lake Te Anau and a punt through the glowworm caves. Then the drive back to Queenstown along the lake.",
-    chips: [['Sleep', 'Queenstown hotel'], ['Lunch', 'not included'], ['Option', 'glowworms, 2027 times TBC']],
+    chips: [['Sleep', 'Hotel St Moritz'], ['Lunch', 'not included'], ['Option', 'glowworms, 2027 times TBC']],
     photo: ['3/3e/Lake_Manapouri_towards_Turret_Range_and_West_Arm.jpg', 'Lake Manapouri toward the Turret Range and West Arm'],
     legs: ['doubtful:r', 'wilmot:r', 'manapouri:r', 'nA9', 'teanau-qt'], pin: [167.7180, -45.4145], name: 'Te Anau', cam: { bearing: -60, pitch: 45 } },
   { date: '2027-03-01', kind: 'river', icon: 'boat', title: 'Funyaks up the Dart', reo: 'Te Awa Whakatipu',
     rows: [['', 'Glenorchy', '46 km · shuttle'], ['boat', 'Jet boat up the Dart', '~20 km'], ['boat', 'Funyak paddle, side streams', 'with picnic'], ['', 'Whole day from Queenstown', '8.5–9 hr']],
     body: "Jet boat up the braided Dart into Mt Aspiring National Park, then switch to inflatable canoes and paddle the quiet side channels. The narrow Rockburn chasm is on the list if the water allows.",
-    chips: [['Sleep', 'Queenstown hotel'], ['Leaves', '8:30 am, shuttle incl.'], ['Can swap', 'with Tue']],
+    chips: [['Sleep', 'Hotel St Moritz'], ['Leaves', '8:30 am, shuttle incl.'], ['Can swap', 'with Tue']],
     photo: ['d/d0/Dart_River_upstream_towards_Mt_Earnslaw.jpg', 'The Dart River looking upstream toward Mt Earnslaw'],
     legs: ['n6', 'dart'], pin: [168.34034, -44.69672], name: 'Dart River', cam: { bearing: 5, pitch: 58, maxZoom: 11.6 } },
   { date: '2027-03-02', kind: 'ride', icon: 'bike', title: 'Bikes, a long lunch, hot pools',
     rows: [['', 'Arrowtown', '20 km · 25 min'], ['foot', 'Ride to Gibbston', '13 km · 1–1.5 hr'], ['', 'Onsen, then Queenstown', '31 km · 35 min']],
     body: "Ride from Arrowtown over the Kawarau Gorge to the Gibbston vineyards for a long winery lunch, then a private hot-pool soak above the Shotover canyon. Leave the late afternoon for doing nothing.",
-    chips: [['Sleep', 'Queenstown hotel'], ['Onsen', 'private 60 min pool'], ['Heads up', 'Mar 2 slots not open yet']],
+    chips: [['Sleep', 'Hotel St Moritz'], ['Onsen', 'private 60 min pool'], ['Heads up', 'Mar 2 slots not open yet']],
     photo: ['1/1c/Vineyard_in_Gibbston_Valley_in_South_Island%2C_New_Zealand_-_Central_Otago_wine_region.jpg', 'Vineyard in the Gibbston Valley'],
     legs: ['n7a', 'n7b', 'n7c'], pin: [168.91515, -45.01228], name: 'Gibbston', cam: { bearing: 20, pitch: 50, maxZoom: 11.2 } },
   { date: '2027-03-03', kind: 'drive', icon: 'drive', title: 'Over the Lindis to Aoraki',
     rows: [['', 'Mt Cook via Lindis Pass', '263 km · 3.5 hr'], ['foot', 'Hooker Valley at golden hour', '10 km · 3 hr']],
-    body: "Through Cromwell and the Central Otago orchards, over the tussock-gold Lindis Pass, salmon from the farm shop at Pukaki, then the first view up the lake with Aoraki at the far end. In by early afternoon; walk the Hooker Valley to the iceberg lake as the light goes.",
-    chips: [['Sleep', 'Mt Cook village room'], ['Book', 'few rooms in the valley']],
+    body: "Through Cromwell and the Central Otago orchards and over the tussock-gold Lindis Pass to Twizel. Check in before the 7 pm desk close and grab groceries, then 50 minutes up Lake Pukaki (salmon from the farm shop on the way) for the Hooker Valley walk to the iceberg lake in the evening light. Back to Twizel for an early night.",
+    chips: [['Sleep', 'Lakes Suites, Twizel ✓'], ['Check-in', '2–7 pm'], ['Mar 4', 'leave by 8 am']],
     photo: ['2/28/20250221-DJI_0950.jpg', 'The road over Lindis Pass through tussock'],
     legs: ['qt-mtcook'], pin: [170.0960, -43.7355], name: 'Aoraki / Mt Cook', cam: { bearing: 35, pitch: 45 } },
   { date: '2027-03-04', kind: 'hike', icon: 'hike', title: 'Mueller Hut', reo: 'Aoraki / Mt Cook National Park',
     rows: [['foot', 'Sealy Tarns', '2.6 km · 1.5–2 hr'], ['foot', 'Mueller Hut · 1,800 m', '2.1 km · 1.5–2 hr']],
     body: "About 2,200 steps to Sealy Tarns, then loose rock and snow grass to the ridge. The afternoon and sunset are spent face to face with Aoraki, with avalanches cracking off Mt Sefton into the evening. New moon is around Mar 8, so the Milky Way should be bright over the hut. <b>Plan B</b> if the ridge is in cloud or wind: skip the hut and do Sealy Tarns, the Tasman Glacier lake, and a ski-plane landing on the Tasman Glacier.",
-    chips: [['Sleep', 'Mueller Hut'], ['Booked', '2 bunks ✓'], ['Bring', 'sleeping bags, food, headlamps'], ['Plan B', 'ski plane + Tasman lake']],
+    chips: [['Sleep', 'Mueller Hut ✓'], ['Bring', 'sleeping bags, food, headlamps'], ['Plan B', 'ski plane + Tasman lake']],
     photo: ['0/07/Mt_Cook_LC0247.jpg', 'Aoraki / Mt Cook'],
     legs: ['d12'], pin: [170.0646, -43.72111], name: 'Mueller Hut', hut: true, cam: { bearing: -60, pitch: 52, maxZoom: 12.9 } },
   { date: '2027-03-05', kind: 'stars', icon: 'star', title: 'Sunrise, then the stars', reo: 'Takapō',
     rows: [['foot', 'Down to White Horse Hill', '4.7 km · 2–3 hr'], ['', 'Tekapo', '115 km · 1.5 hr'], ['', 'Tekapo Springs hot pools', 'afternoon'], ['', 'Mt John summit tour', '~1 hr 45']],
     body: "Sunrise from the hut, then down in good conditions only. Drive to Tekapo, shower, and soak the legs at Tekapo Springs. After dark, the summit tour on Mt John in the Aoraki Mackenzie Dark Sky Reserve, if the sky is clear. It's a few nights before new moon, so no moon to wash it out.",
-    chips: [['Sleep', 'Tekapo, somewhere comfy'], ['Weather', 'decides the tour']],
+    chips: [['Sleep', 'Peppers Bluewater ✓'], ['Weather', 'decides the tour']],
     photo: ['e/e3/Mount_John_University_Observatory_343.jpg', 'Mount John University Observatory above Lake Tekapo'],
     legs: ['d13h', 'n12'], pin: [170.4770, -44.0040], name: 'Tekapo', cam: { bearing: 110, pitch: 50 },
     event: { at: [170.46444, -43.98541], title: 'Mt John', sub: 'summit stargazing', offset: [0, -14] } },
   { date: '2027-03-06', kind: 'drive', icon: 'drive', title: 'Back to Christchurch', reo: 'Takapō → Ōtautahi',
     rows: [['', 'Christchurch', '226 km · 3 hr']],
     body: "Morning at the Church of the Good Shepherd, then across the Mackenzie Basin and down onto the Canterbury Plains. Optional: Crusaders v Chiefs at 7:05 pm.",
-    chips: [['Sleep', 'Christchurch hotel'], ['Ticket', 'Crusaders v Chiefs · optional']],
+    chips: [['Sleep', 'Christchurch hotel'], ['Ticket', 'Crusaders v Chiefs · 7:05 pm']],
     photo: ['5/57/Church_of_the_Good_Shepherd%2C_Tekapo_01.jpg', 'Church of the Good Shepherd at Lake Tekapo'],
     legs: ['n13'], pin: [172.64418, -43.53443], name: 'Christchurch', cam: { bearing: 55, pitch: 45 },
     event: { at: [172.64418, -43.53443], title: 'Crusaders v Chiefs', sub: 'Te Kaha · 7:05 pm', offset: [0, -34] } },
